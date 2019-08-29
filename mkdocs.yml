@@ -1,3 +1,4 @@
+
 site_name: emakefun文档中心
 site_url: https://emakefun.com
 site_author: emakefun document team
@@ -9,10 +10,11 @@ repo_url: https://github.com/emakefun/emakefun-doc
 theme:
    name: 'readthedocs'
    language: 'zh'
-  palette:
+
+palette:
     primary: 'Blue Grey'
     accent: 'Pink'
-  feature:
+feature:
     tabs: false
 
 extra:
@@ -44,10 +46,11 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist
   - pymdownx.tilde
+
 nav:
     - 首页: index.md
     - MicroBit积木: micro_bit/micro_bit.md
     - Arduino可编程产品: arduino/arduino.md
     - 开源硬件: open_source_hardware/open_source_hardware.md
     - MagicBlock: magicblock/magicblock.md
-    --关于我们: about.md
+    - 关于我们: about.md
