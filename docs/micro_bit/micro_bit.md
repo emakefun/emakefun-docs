@@ -1,7 +1,6 @@
 # Micro:bit产品
 
 ## MagicBit
-[English](README.md) 中文版
 
 micro:bit多功能电机驱动扩展板
 

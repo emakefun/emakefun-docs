@@ -4,8 +4,8 @@ site_url: https://emakefun.com
 site_author: emakefun document team
 site_description: 深圳易创空间科技有限公司产品资料文档中心
 copyright: emakefun copyright 2017-2022
-repo_name: Github
-repo_url: https://github.com/emakefun/emakefun-doc
+repo_name: 'Github'
+repo_url: https://github.com/emakefun/emakefun-docs
 
 theme:
    name: 'readthedocs'
@@ -37,8 +37,6 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_png
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
