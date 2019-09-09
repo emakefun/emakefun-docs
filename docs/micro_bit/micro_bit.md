@@ -1,4 +1,6 @@
-# Micro:bit产品
+# emakefun-MicroBit产品
+## 什么是Micro:Bit?
+Micro:bit是由英国BBC公司推出的面向青少年编程教育的微型计算机，别看它身材不大，但麻雀虽小五脏俱全，一块小板子上集成了加速度传感器，磁力传感器，两个可编程按钮，25个单色led，蓝牙等常用传感器设备，而尺寸只有信用卡的一半大小，采用micro usb口供电，可外接电池盒，在底部还有多个环孔连接器，可用于控制外接设备。！[image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/magicbit_hardware_front_zh.png)# Micro:bit产品
 
 ## MagicBit
 
@@ -7,7 +9,6 @@ micro:bit多功能电机驱动扩展板
 ![image](magic_bit/icon.png)
 
 ## 特点
-`#include`
 
 - 专为micro:bit设计的兼容乐高积木的机器人多功能扩展板
 - 板载micro-usb接口充电器和3.7V锂电池座
