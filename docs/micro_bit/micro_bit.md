@@ -7,6 +7,7 @@ micro:bit多功能电机驱动扩展板
 ![image](magic_bit/icon.png)
 
 ## 特点
+`#include`
 
 - 专为micro:bit设计的兼容乐高积木的机器人多功能扩展板
 - 板载micro-usb接口充电器和3.7V锂电池座
