@@ -156,16 +156,19 @@
 
   - Arduino类、串口类、传感器类、执行器类、显示器类图形块：这五类图形块都属于Arduino图形块，是我们为Arduino板写程序用到的主要图形块
 
-    ![1568255698(1)](MagicBlock_pic_zh/1568255698(1).jpg)
+    ![1568274495(1)](MagicBlock_pic_zh/1568274495(1).jpg)
 
-    ![1568255717(1)](MagicBlock_pic_zh/1568255717(1).jpg)
+    ![1568274708(1)](MagicBlock_pic_zh/1568274708(1).jpg)
 
-    ![1568255738(1)](MagicBlock_pic_zh/1568255738(1).jpg)
+    ![1568274809(1)](MagicBlock_pic_zh/1568274809(1).jpg)
     
-    ![1568255754(1)](MagicBlock_pic_zh/1568255754(1).jpg)
+    ![1568274883(1)](MagicBlock_pic_zh/1568274883(1).jpg)
     
-    
-    ![1568255770(1)](MagicBlock_pic_zh/1568255770(1).jpg)
+    ![1568274958(1)](MagicBlock_pic_zh/1568274958(1).jpg)
+	
+    ![1568275047(1)](MagicBlock_pic_zh/1568275047(1).jpg)
+	
+    ![1568275122(1)](MagicBlock_pic_zh/1568275122(1).jpg)
     
     setup和loop图形块是Arduino程序最主要的程序，每个Arduino程序都需要用到这个图形块，其中setup里面执行的是初始化程序，这些程序在整个Arduino程序里只执行一次，而loop里面的程序是无限循环执行的程序，比如我们要写一个LED一直亮的程序，我们就需要先拖拽出setup/loop图形块，然后给LED灯的引脚（假设为7引脚）初始化，那么初始化程序pinMode(7,OUTPUT);（设置7号引脚的模式为输出）就需要放进setup里面，而让LED亮的程序digitalWrite(7,HIGH);（给7号引脚高电平）就要放在loop里面，也就是让它无限循环执行从而达到一直亮着的状态
     
