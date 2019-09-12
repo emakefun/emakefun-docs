@@ -189,7 +189,8 @@
 
 **我们上传完程序，接好LED线后，给Arduino板通上电，就可以看到LED灯的实验效果了，可以看到LED灯会按照我们用MagicBlock编写上传的程序那样，每隔一秒钟就点亮两秒钟，一直循环**
 
-  <video src="MagicBlock_pic_zh/V90912-090006.mp4" muted="muted" autoplay="autoplay"  loop="loop"controls="controls"></video>
+  ![1568278012929](MagicBlock_pic_zh/1568278012929.gif)
+  
 ## 串口监视器，打开示例与导入导出功能
 
 ### 串口监视器功能
