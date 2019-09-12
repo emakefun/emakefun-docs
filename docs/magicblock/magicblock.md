@@ -39,7 +39,7 @@
 
 **点击“下一步”**
 
-  ![1568170979(1)](MagicBlock_pic_zh1568170979(1).jpg)
+  ![1568170979(1)](MagicBlock_pic_zh/1568170979(1).jpg)
 
 **选择目录，默认为C盘，继续点击“下一步”**
 
@@ -244,8 +244,8 @@
   ![1568251972](MagicBlock_pic_zh/1568251972.jpg)
 
 **接着我们还是按照Arduino模式的上传流程，把这个程序上传到Arduino板子上，再按照产品说明书接好线，当然，你也可以先接线再写程序上传，下面是实验效果**
-
-  <video src="MagicBlock_pic_zh/V90912-095500.mp4" autoplay="autoplay"loop="loop"></video>
+  
+  <video src="MagicBlock_pic_zh/V90912-095500.mp4" muted="muted" autoplay="autoplay"  loop="loop"controls="controls"></video>
   
 ### 保存程序
 
