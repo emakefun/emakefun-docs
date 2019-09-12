@@ -35,12 +35,12 @@
   ### 下载地址
   **浏览器输入www.emakefun.com 进入易创空间科技有限公司官网，在图形化编程区域找到MagicBlock，点击“立即下载”即可。**
 
-  ![1568170439(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568170439(1).jpg)
+  ![1568170439(1)](magicblock_pic_zh/1568170439(1).jpg)
 
   ### 安装MgicBlock
   **下载后双击图标进行安装**
 
-  ![1568170812(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568170812(1).jpg)
+  ![1568170812(1)](magicblock_pic_zh/1568170812(1).jpg)
 
   
 
@@ -52,13 +52,13 @@
 
   **选择目录，默认为C盘，继续点击“下一步”**
 
-  ![1568171077(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568171077(1).jpg)
+  ![1568171077(1)](magicblock_pic_zh/1568171077(1).jpg)
 
   
 
   **安装过程中可能会被360或其他杀毒软件拦截，请选择允许程序所有操作，MagicBlock是一款了绿色安全的软件，请放心安装**
 
-  ![1568173358(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568173358(1).jpg)
+  ![1568173358(1)](magicblock_pic_zh/1568173358(1).jpg)
 
   
 
@@ -70,7 +70,7 @@
 
   
 
-  ![1568171684(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568171684(1).jpg)
+  ![1568171684(1)](magicblock_pic_zh/1568171684(1).jpg)
 
   ### 安装驱动
 
@@ -78,29 +78,29 @@
 
   **1. 用usb线连接主板和电脑，右键点击“我的电脑”>“属性”>“设备管理器”>查看“其他设备”，右键单击“usb串行端口”并选择“更新驱动程序软件”选项**
 
-  ![1568172644(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568172644(1).jpg)
+  ![1568172644(1)](magicblock_pic_zh/1568172644(1).jpg)
 
   **2. 点击“浏览计算机以查找驱动程序软件”，再点击“浏览”找到驱动文件的位置，再点击“下一步”**
 
-  ![1568172827(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568172827(1).jpg)
+  ![1568172827(1)](magicblock_pic_zh/1568172827(1).jpg)
 
-  ![1568172869(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568172869(1).jpg)
+  ![1568172869(1)](magicblock_pic_zh/1568172869(1).jpg)
 
   
 
-  ![1568172952(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568172952(1).jpg)
+  ![1568172952(1)](magicblock_pic_zh/1568172952(1).jpg)
 
   **弹出弹窗点击“始终安装此驱动程序文件”**
 
-  ![1568173033(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568173033(1).jpg)
+  ![1568173033(1)](magicblock_pic_zh/1568173033(1).jpg)
 
   **此时，我们已经安装好驱动了，接下来就可以开始MagicBlock图形化编程之旅了！**
 
-  ![1568173121(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568173121(1).jpg)
+  ![1568173121(1)](magicblock_pic_zh/1568173121(1).jpg)
 
   ## MagicBlock界面介绍
 
-  ![1568187286(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568187286(1).jpg)
+  ![1568187286(1)](magicblock_pic_zh/1568187286(1).jpg)
 
   ### 标签1：菜单栏
 
@@ -143,7 +143,7 @@
 
   
 
-  ![1568188711(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568188711(1).jpg)
+  ![1568188711(1)](magicblock_pic_zh/1568188711(1).jpg)
 
   
 
@@ -153,11 +153,11 @@
 
     控制类里面是一些用来控制程序的执行顺序的图形块，如“等待”图形块，用来让程序延时执行，比如我们想让LED灯亮1秒钟，就需要这个图形块，“重复执行”图形块是用来让程序循环执行的，可以规定让程序循环执行的次数，“如果，否则”图形块是用来判断一个表达式的正确与否来让程序是否执行
 
-  ![1568189709(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568189709(1).jpg)
+  ![1568189709(1)](magicblock_pic_zh/1568189709(1).jpg)
 
-  ![1568189794(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568189794(1).jpg)
+  ![1568189794(1)](magicblock_pic_zh/1568189794(1).jpg)
 
-  ![1568189821(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568189821(1).jpg)
+  ![1568189821(1)](magicblock_pic_zh/1568189821(1).jpg)
 
   - 运算类图形块
 
@@ -165,61 +165,61 @@
 
   
 
-  ![1568190795(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568190795(1).jpg)
+  ![1568190795(1)](magicblock_pic_zh/1568190795(1).jpg)
 
   - 变量类图形块
 
     变量类里面是一些用来创建全局或局部变量和设置变量值，取变量值，数字的最大值，最小值，余数，随机数，四舍五入的图形块
 
-    ![1568191110(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568191110(1).jpg)
+    ![1568191110(1)](magicblock_pic_zh/1568191110(1).jpg)
 
-    ![1568191168(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568191168(1).jpg)
+    ![1568191168(1)](magicblock_pic_zh/1568191168(1).jpg)
 
   - 文本类图形块
 
     文本类里面是一些有关类型转换和操作字符串的图形块
 
-    ![1568191356(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568191356(1).jpg)
+    ![1568191356(1)](magicblock_pic_zh/1568191356(1).jpg)
 
   - Arduino类、串口类、传感器类、执行器类、显示器类图形块：这五类图形块都属于Arduino图形块，是我们为Arduino板写程序用到的主要图形块
 
-    ![1568255698(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568255698(1).jpg)
+    ![1568255698(1)](magicblock_pic_zh/1568255698(1).jpg)
 
-    <img src="https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568255717(1).jpg" alt="1568255717(1)" style="zoom:100%;" />
+    <img src="magicblock_pic_zh/1568255717(1).jpg" alt="1568255717(1)" style="zoom:100%;" />
 
-    ![1568255738(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568255738(1).jpg)
+    ![1568255738(1)](magicblock_pic_zh/1568255738(1).jpg)
     
-    ![1568255754(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568255754(1).jpg)
+    ![1568255754(1)](magicblock_pic_zh/1568255754(1).jpg)
     
     
     
-    ![1568255770(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568255770(1).jpg)
+    ![1568255770(1)](magicblock_pic_zh/1568255770(1).jpg)
     
     
     
     setup和loop图形块是Arduino程序最主要的程序，每个Arduino程序都需要用到这个图形块，其中setup里面执行的是初始化程序，这些程序在整个Arduino程序里只执行一次，而loop里面的程序是无限循环执行的程序，比如我们要写一个LED一直亮的程序，我们就需要先拖拽出setup/loop图形块，然后给LED灯的引脚（假设为7引脚）初始化，那么初始化程序pinMode(7,OUTPUT);（设置7号引脚的模式为输出）就需要放进setup里面，而让LED亮的程序digitalWrite(7,HIGH);（给7号引脚高电平）就要放在loop里面，也就是让它无限循环执行从而达到一直亮着的状态
     
-    ![1568192360(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568192360(1).jpg)
+    ![1568192360(1)](magicblock_pic_zh/1568192360(1).jpg)
     
     
 
-       Arduino程序常用的程序有设置引脚模式 pinMode(0,INPUT);![1568192570(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568192570(1).jpg)
+       Arduino程序常用的程序有设置引脚模式 pinMode(0,INPUT);![1568192570(1)](magicblock_pic_zh/1568192570(1).jpg)
 
-       给引脚设置高电平或低电平 digitalWrite(0,HIGH);![1568192617(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568192617(1).jpg)
+       给引脚设置高电平或低电平 digitalWrite(0,HIGH);![1568192617(1)](magicblock_pic_zh/1568192617(1).jpg)
 
-       将一个模拟数值写入PWM引脚 analogWrite(3,100);![1568192939(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568192939(1).jpg)
+       将一个模拟数值写入PWM引脚 analogWrite(3,100);![1568192939(1)](magicblock_pic_zh/1568192939(1).jpg)
 
-       读取引脚的电平状态是高还是低 digitalRead(0);![1568193201(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568193201(1).jpg)
+       读取引脚的电平状态是高还是低 digitalRead(0);![1568193201(1)](magicblock_pic_zh/1568193201(1).jpg)
 
-       读取引脚的模拟量电压值 analogRead(A0); ![1568193379(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568193379(1).jpg)
+       读取引脚的模拟量电压值 analogRead(A0); ![1568193379(1)](magicblock_pic_zh/1568193379(1).jpg)
 
-       串口常用的程序有设置串口波特率 Serial.begin(9600);![1568193486(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568193486(1).jpg)
+       串口常用的程序有设置串口波特率 Serial.begin(9600);![1568193486(1)](magicblock_pic_zh/1568193486(1).jpg)
 
-       串口打印 Serial.print(); ![1568193709(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568193709(1).jpg)
+       串口打印 Serial.print(); ![1568193709(1)](magicblock_pic_zh/1568193709(1).jpg)
 
-       判断串口是否有数据 Serial.available>0 ![1568193890(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568193890(1).jpg)
+       判断串口是否有数据 Serial.available>0 ![1568193890(1)](magicblock_pic_zh/1568193890(1).jpg)
 
-       串口读取数据 Serial.read(); ![1568194089(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568194089(1).jpg)
+       串口读取数据 Serial.read(); ![1568194089(1)](magicblock_pic_zh/1568194089(1).jpg)
 
   
 
@@ -227,13 +227,13 @@
 
   **了解了Arduino图形块的用法，我们现在可以编写一个让LED灯亮的程序了，我们让7号引脚的LED灯每隔1秒亮2秒，程序可以这么写**
 
-  ![1568194653(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568194653(1).jpg)
+  ![1568194653(1)](magicblock_pic_zh/1568194653(1).jpg)
 
   **在代码区，我们可以看到图形块程序对应的Arduino代码**
 
   
 
-  ![1568194913(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568194913(1).jpg)
+  ![1568194913(1)](magicblock_pic_zh/1568194913(1).jpg)
 
   ### 上传程序
 
@@ -241,13 +241,13 @@
 
   
 
-  ![1568195179(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568195179(1).jpg)
+  ![1568195179(1)](magicblock_pic_zh/1568195179(1).jpg)
 
   **烧录成功界面会弹出提示框“finish”，点击“确定”即可**
 
   
 
-  ![1568249650(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568249650(1).jpg)
+  ![1568249650(1)](magicblock_pic_zh/1568249650(1).jpg)
 
   
 
@@ -259,20 +259,20 @@
 
   ****
 
-  <video src="https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/V90912-090006.mp4" muted="muted" autoplay="autoplay"  loop="loop"controls="controls"></video>
+  <video src="magicblock_pic_zh/V90912-090006.mp4" muted="muted" autoplay="autoplay"  loop="loop"controls="controls"></video>
 ## 串口监视器，打开示例与导入导出功能
 
 
   ### 串口监视器功能
   **MagicBlock配备有串口监视器功能，通过观察串口监视器的输入输出来获取程序的实时反馈，这对Arduino的程序编写非常有意义，比如我们编写一个串口打印字符串的程序，我们上传好程序后就可以直接打开串口监视器通过观察串口的打印情况得到程序的反馈，现在，我们来编写这个程序**
 
-  ![1568270097(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568270097(1).jpg)
+  ![1568270097(1)](magicblock_pic_zh/1568270097(1).jpg)
 
   **我们在初始化里面需要设置串口波特率，常用的波特率有9600，8400，15200等，然后在loop（循环函数）里面让串口每隔一秒换行打印一段“Hello Arduino ！” 写好程序后上传到Arduino板子上，然后点击MagicBlock软件界面右上角的“串口监视器”，就能看到串口监视器在一秒一秒地打印“Hello Arduino ！”了**
 
   
 
-  ![1568270040(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568270040(1).jpg)
+  ![1568270040(1)](magicblock_pic_zh/1568270040(1).jpg)
 
 ****
 
@@ -282,7 +282,7 @@
 
   
 
-  ![1568251639(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568251639(1).jpg)
+  ![1568251639(1)](magicblock_pic_zh/1568251639(1).jpg)
 
   
 
@@ -290,7 +290,7 @@
 
   
 
-  ![1568251710(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568251710(1).jpg)
+  ![1568251710(1)](magicblock_pic_zh/1568251710(1).jpg)
 
   
 
@@ -298,7 +298,7 @@
 
   
 
-  ![1568251972](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568251972.jpg)
+  ![1568251972](magicblock_pic_zh/1568251972.jpg)
 
   
 
@@ -306,14 +306,14 @@
 
   
 
-  <video src="https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/V90912-095500.mp4" autoplay="autoplay"loop="loop"></video>
+  <video src="magicblock_pic_zh/V90912-095500.mp4" autoplay="autoplay"loop="loop"></video>
   ### 保存程序
 
   **当你自己完成一个实验程序后，你可以给它起一个名字，在菜单栏中间的空格内输入你的实验名字，比如“我的第一个LED灯实验”**
 
   
 
-  ![1568253786(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568253786(1).jpg)
+  ![1568253786(1)](magicblock_pic_zh/1568253786(1).jpg)
 
   
 
@@ -321,7 +321,7 @@
 
   
 
-  ![1568253884(1)](https://github.com/emakefun/emakefun-docs/raw/master/docs/magicblock/magicblock_pic_zh/1568253884(1).jpg)
+  ![1568253884(1)](magicblock_pic_zh/1568253884(1).jpg)
 
   
 
