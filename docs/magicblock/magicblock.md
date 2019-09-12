@@ -219,7 +219,7 @@
 
 **接着我们还是按照Arduino模式的上传流程，把这个程序上传到Arduino板子上，再按照产品说明书接好线，当然，你也可以先接线再写程序上传，下面是实验效果**
   
-  <video src="MagicBlock_pic_zh/V90912-095500.mp4" muted="muted" autoplay="autoplay"  loop="loop"controls="controls"></video>
+  ![1568277387646](MagicBlock_pic_zh/1568277387646.gif)
   
 ### 保存程序
 
