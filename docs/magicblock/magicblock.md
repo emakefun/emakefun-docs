@@ -158,7 +158,7 @@
 
     ![1568255698(1)](MagicBlock_pic_zh/1568255698(1).jpg)
 
-    <img src="MagicBlock_pic_zh/1568255717(1).jpg" alt="1568255717(1)" style="zoom:100%;" />
+    ![1568255717(1)](MagicBlock_pic_zh/1568255717(1).jpg)
 
     ![1568255738(1)](MagicBlock_pic_zh/1568255738(1).jpg)
     
