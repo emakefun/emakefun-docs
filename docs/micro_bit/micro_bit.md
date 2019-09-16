@@ -63,96 +63,45 @@ Makecode软件使用方便简介，图形化的编程入门要求低，提高学
 ## 硬件接口介绍
 
 ### 正面
-![magicbit_hardware_zh](magic_bit/magicbit_hardware_zh.png)
+![magicbit_hardware_zh](magic_bit/magicbit_hardware_front_zh.png)
 
 ### 背面
-![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/magicbit_hardware_back_zh.png)
+![image](magic_bit/magicbit_hardware_back_zh.png)
 
 ### 扩展版各单元模块详解
 
-#### 乐高孔 
-![magicbit_hole_zh](magic_bit/magicbit_hole_zh.png)
-- 专为micro:bit设计的兼容乐高积木的机器人多功能扩展板，可以搭配乐高积木来玩 创意无限。在刚刚拿到扩展版时，可以使用乐高积木来为扩展版搭建一个底座，保护扩展版，防止扩展版因为一些碰撞导致损坏。
+#### LEGO底座安装
+
+1. 取一些LEGO底座的乐高积木零部件，安装底座
+   ![LEGO2](magic_bit/magicbit_LEGO_2_zh.png)
+2. 底座安装完成后，和Magicbit进行拼接。
+   ![LEGO3](magic_bit/Magicbit_LEGO_3_zh.png)
 
 #### 电池座和充电口
 ![magicbit_power_zh](magic_bit/magicbit_power_zh.png)
-- 板载micro-usb接口充电器和3.7V锂电池座，在安装电池时注意电池的正负极，电池凸起的方向对应电池座的’＋‘号，另一端对应’ —‘ 号，使用接口充电器时、插拔不可用力过猛。在使用扩展版时、安装电池或者连接充电器前，扩展版上的电源开关应处于关闭状态，当电池按要求安装完毕或者使用usb线连接好后，再打开扩展版上的总开关。当电池安装在扩展版上时，可以使用usb线连接到扩展版来为电池充电。
 
-#### 8路舵机接口
-![magicbit_servo_zh](magic_bit/magicbit_servo_zh.png)
-- 同时支持驱动8路舵机，方便开发者创造功能更加复杂的产品，扩展版上舵机的接口规格统一，方便接线
+- 板载micro-usb接口充电器和3.7V锂电池座，在安装电池时注意电池的正负极，电池凸起的方向对应电池座的’＋‘号，另一端对应’ —‘ 号。
+- 在使用扩展版时、安装电池或者连接充电器前，扩展版上的电源开关应处于关闭状态，当电池按要求安装完毕或者使用usb线连接好后，再打开扩展版上的总开关。
+- 可以使用usb线连接到扩展版来为电池充电，以及为扩展版供电。
+- Magicbit还有一个外接电源接口，可以通过电源正负极导线来对Magicbit供电，供电范围为3~5v
 
-#### 步进电机接口
-![magicbit_motor_zh](magic_bit/magicbit_motor_zh.png)
-- 支持驱动2路4线步进电机
+#### 金手指介绍 
+![magicbit_hole_zh](magic_bit/magicbit_hole_zh.png)
 
-#### 蜂鸣器
-![magicbit_buzzer_zh](magic_bit/magicbit_buzzer_zh.png)
-- 板载无源蜂鸣器，可以通过蜂鸣器来实现声音报警或者唱歌。
+- Magicbit的五个洞是为了RCA香蕉插头而准备的，底下的几个金属引脚是为了鳄鱼夹而准备。
+- 5个金手指代表不同的引脚，0号代表P0引脚、1号代表P1引脚、2号代表P2引脚，3号代表3v3，GND代表接地引脚（**注意：在使用0号和1号引脚时，把跳线帽拔掉。如果不拔，0号引脚被板载蜂鸣器占用，1号引脚被红外接收头占用**）
+- 在需要使用外部元器件时，可以通过使用鳄鱼夹等来连接金手指的相应家属引脚。程序里设置相应引脚来控制。
 
-#### RGB炫彩灯
-![magicbit_RGB_zh](magic_bit/magicbit_RGB_zh.png)
-- 板载4个RGB全彩灯，通过调用micro:bit的P16来进行控制四个RGB灯亮灭和颜色。
+#### 导入软件包
 
-#### 红外接收头
-![magicbit_IR_zh](magic_bit/magicbit_IR_zh.png)
-- 板载红外接收头,可以通过拖拉相应的程序积木块设定相应的功能，再使用emakefun红外遥控器来进行控制(注意红外遥控接收头处的跳线帽，必须接好)
+##### 打开编程网页
+* 点击[makecode](https://makecode.microbit.org/)进入编程官网
 
-#### I2C接口
-![magicbit_I2C_zh](magic_bit/magicbit_I2C_zh.png)
-- 一块好的扩展版怎么能没有I2C接口？MagicBit扩展版包含1个PH2.0-4Pin i2c接口，开发者可以通过对该接口的使用来实现更具有创造性的设计。
-
-#### RGB超声波
-![magicbit_RGBCSB_zh](magic_bit/magicbit_RGBCSB_zh.png)
-- 1个PH2.0-4Pin Rgb超声波（RUS-04)模块接口，该接口有两个用途，一方面可以作为超声波的TX和RX引脚口，另一方面也可以控制超声波模块的RGB彩灯，让超声波模块更加炫彩灵性。
-
-#### 直流电机接口
-![magicbit_DCmotor_zh](magic_bit/magicbit_DCmotor_zh.png)
-- 想要开发一辆四驱车电机接口不够怎么办？MagicBit包含4个PH2.0-2Pin 直流电机接口（也可以连接到排针上），为你的想法保驾护航。
-
-### 8Pin IO口引出
-![magicbit_Pin_zh](magic_bit/magicbit_Pin_zh.png)
-- 8个引出的IO口，为更多想法被实现提供可能
-
-## 使用教程(编写控制MagicBit的RGB灯)
-
-### 硬件准备
-* 物料准备：Micro:bit主板、Micro:bit数据线、电池、MagicBit扩展版
-
-#### 电池安装
-* ___注意！！！！___在安装电池的时候，注意电池的正负极与电池座的正负极方向，电池的凸起为电池的正极，光滑的一面为负极。电池正极对应电池座的“+”号、电池的负极对应电池座的“—”号
-
-![](magic_bit/dianchi1_zh.png)
-
-![](magic_bit/dianchi2_zh.png)
-
-#### 插入micro:bit
-* 拿取microbit主板，把两个按钮的方向朝外安装到扩展版的microbit板槽里，在安装的过程中卡槽对应整齐后再插入，防止用力过猛造成损坏。
-
-![magicbit_SD_zh](magic_bit/SD_zh.png)
-
-#### 打开电源开关
-* 电源总开关建议常闭，需要时再打开
-
-![magicbit_on_off_zh](magic_bit/on_off_zh.png)
-
-#### 数据线连接micro:bit和电脑
-* 此时数据线是用来把程序从电脑下载到micro:bit
-
-![magicbit_connect_zh](magic_bit/connect_zh.png)
-
-### 程序编写
-
-
-
-#### 打开编程网页
-* 打开浏览器，输入网址`https://makecode.microbit.org/` 或者点击[makecode](https://makecode.microbit.org/)进入编程官网
-
-#### 新建项目
+##### 新建项目
 * 点击黑色箭头指向的**`新建项目`** ，进入到编程界面
 ![code_magicbit_project_zh](magic_bit/code_magicbit_project_zh.png)
 
-#### 添加包
+##### 添加包
 * 点击**`高级`**—>**`扩展`**—>输入网址搜索`https://github.com/emakefun/pxt-magicbit.git`—>点击magicbit包
 ![code_magicbit_highpackage_zh](magic_bit/code_magicbit_highpackage_zh.png)
 
@@ -164,97 +113,100 @@ Makecode软件使用方便简介，图形化的编程入门要求低，提高学
 
 ![code_magicbit_complete_zh](magic_bit/code_magicbit_complete_zh.png)
 
-#### 拖拉相应程序积木块编程
-* 在Neopixel功能模块里选择白色箭头指向的程序积木块![code_magicbit_program_zh](magic_bit/code_magicbit_program_zh.png)
-
-* 拖拽到编程页面的相应位置、注意黑色箭头所指可以调节引脚号、选择引脚为`P16`：红色箭头所指可以改变控制的LED数量、改变灯带为`4`，蓝色箭头所指可以调节RGB的模式![code_magicbit_program2_zh](magic_bit/code_magicbit_program2_zh.png)
-
-* 在Neopixel功能模块里选择白色箭头指向的程序积木块![code_magicbit_program3_zh](magic_bit/code_magicbit_program3_zh.png)
-
-* 拖拽到编程页面的相应位置，通过黑色箭头所指的位置可以选择相应的颜色，**注意两个紫色箭头指向的变量应该一样**![code_magicbit_program4_zh](magic_bit/code_magicbit_program4_zh.png)
-
-#### 点击下载按钮
+#### 程序下载
+##### 点击下载按钮
 * 点击**`下载`**,红色箭头所指的按扭![code_magicbit_datadown_zh](magic_bit/code_magicbit_datadown_zh.png)
 
-#### 保存到Microbit的U盘上，在保存过程中micro:bit指示灯会闪烁
+##### 保存到Microbit的U盘上，在保存过程中micro:bit指示灯会闪烁
 * 点击红色箭头所指的地方、选择另存为![code_magicbit_datasave1_zh](magic_bit/code_magicbit_datasave1_zh.png)
 
 * 选择MICROBIT的内存盘，红色箭头所指，点击保存，程序就开始下载![code_magicbit_datasave2_zh](magic_bit/code_magicbit_datasave2_zh.png)
 
-#### 闪烁结束表示下载完成，就可以看到实验效果
-![datacomplete_zh](magic_bit/datacomplete_zh.png)
 
-## 常用积木块讲解
+#### 蜂鸣器
+![magicbit_buzzer_zh](magic_bit/magicbit_buzzer_zh.png)
 
-### Magicbit插件包含三个功能模块，不同功能模块包含有不同的程序积木，用来控制Magicbit
-![magicbit_package_zh](magic_bit/magicbit_package_zh.png)
+* 板载无源蜂鸣器，Magicbit上的蜂鸣器接线引脚为P0，通过对蜂鸣器输出不同频率的信号，从而控制蜂鸣器播放音乐。
+* 当拔掉蜂鸣器的跳线帽时，引脚P0不能控制板载蜂鸣器，此时P0引脚可以作为普通IO引脚使用。跳线帽发货时是默认插上的。
 
-### 红外功能模块
-> 红外接收编程图形块
-![image](magic_bit/ir_block_zh.png)
+#### 直流电机接口
 
-* 红外功能模块包含两个程序积木，第一个程序积木是为了判断红外遥控器的按键是否按下，具体判断哪一个按键是根据程序积木的按键选择来确定的
-> 假如选择A，当A按键按下时就会执行该积木程序内的积木程序命令
+![magicbit_DCmotor_zh](magic_bit/magicbit_DCmotor_zh.png)
 
-* 红外功能模块的第二个程序积木是用来选择扩展版上红外接收头与microbit哪一个引脚连接，在使用红外功能时，应先拖拽第二个程序积木来初始化选择引脚为`P1`
+* MagicBit包含4个PH2.0-2Pin 直流电机接口（也可以连接到排针上）。对于乐高积木的电机，可以接在步进电机的插口上。
+> * 控制直流电机历程实验
 
-### Magicbit功能模块
-> magicbit编程图形块
-![image](magic_bit/magicbit_block_zh.png)
+![magicbit_DCmotor1_zh](magic_bit/magicbit_DCmotor1_zh.png)
+![magicbit_DCmotor2_zh](magic_bit/magicbit_DCmotor2_zh.png)
 
-* 1号程序积木是用来实现对舵机进行控制。在进行设计时、根据实际连接扩展版上的接口号选择`S1`或者`S2`等，然后再设置该号舵机的角度。
-> 如果舵机接在了扩展版的`S1`接口，并且想让舵机转到45°，那么1号程序积木就通过下拉选项选择`S1`、角度后面的白色小圆框内输入45。这样就设置成功了
+> 实验结果：当microbit主板的A按键被按下、接在M1的电机正转，按键B被按下、电机反转
 
-* 2号是英文版的1号
-* 3号程序积木是用来实现对步进电机的控制。和舵机操作类似，根据实际接线来选择`STPM1`或者`STPM2`，选择好后再通过输入设置想要的角度。
-> 如果步进电机接在扩展版上的`Stepper Moto 1`接口，并且想让电机转到20°，那么3号程序积木就通过下拉选择`STPM1`，角度后面的白色小圆框内输入20。
+#### 8路舵机接口
+![magicbit_servo_zh](magic_bit/magicbit_servo_zh.png)
 
-* 4号程序积木和3号类似，不过4号程序积木是用来设置圈数
-* 5号积木是用来设置两个步进电机的角度的
-> 如果扩展版连接两个步进电机，那么直接使用这个程序积木块，再设置两个步进电机的运动角度就可以实现相应的控制
+* 同时支持驱动8路舵机，而且扩展版上舵机的接口规格统一，方便接线
+* Magicbit舵机接口的蓝色插口代表输出pwm信号的引脚、连接三线舵机的PWM输入信号黄色线，红色插口代表电源正极、连接三线舵机的电源正极橙色线，黑色插口代表电源负极、连接三线舵机的电源负极棕色线。
+* 插口为S1~S8，在使用时，根据实际连接的插口，在程序积木中进行选择。
 
-* 6号程序积木用来控制步进小车的前进距离
-* 7号程序积木用来控制步进小车的转向角度
-* 8号程序积木是用来控制电机的。根据实际电机与扩展版的连接选择相应的`M1`等选项，通过输入设置白色小圆框内的数值来设置电机转动的速度。
-> 如果实物电机连接到扩展版上的`M1`,速度想要设置为50，那么选择程序积木的`M1`,白色圆框输入50。就实现了想要的控制
+![magicbit_servo_code_zh](magic_bit/magicbit_servo_code_zh.png)
+> 控制舵机转动到角度100，过200ms再转动到角度50，如此循环，，，
 
-* 9号积木与8号积木类似，不过9号积木可以同时控制两个电机，在使用9号积木的过程中，根据电机与扩展版连接的接口号，选择对应的`M1`或者`M2`或者`M3`或者`M4`
-* 10号程序积木比8号程序积木多了一个延时，可以通过修改延时时间，来控制该程序积木所代表的电机按照设定速度运行的时间。
-* 11号程序积木通过选择对应的`M1`或者`M2`或者`M3`或者`M4`，来停止相应电机
-* 12号程序积木会停止所有电机
+#### 步进电机接口
 
-* 13号程序积木是用来读取超声波距离值的，引脚选择`P2`，该程序积木返回一个cm距离值
- ![RgbCSB_code_zh](magic_bit/RgbCSB_code_zh.png)
+![magicbit_motor_zh](magic_bit/magicbit_motor_zh.png)
 
-* 14号程序积木是用来设置超声波模块的RGB颜色和状态的，该程序积木有三个选项，第一个选项用来选择控制超声波的哪一个RGB灯，第二个选项用来选择RGB灯的颜色，第三个选项用来选择RGB灯的特效模式
+> 注意：在使用步进电机接口控制直流电机时，应注意扩展版上的`A-`或`B-`连接直流电机负极,`A+`或`B+`连接直流电机正极
 
-### Neopixel功能模块
-> 板载RGB编程图形块
-![image](magic_bit/rgb_block_zh.png)
+* 包含2路4线步进电机、可以同时连接控制两个步进电机，或者同时连接控制4路TT马达。
+* 支持步进电机与TT马达同时使用，例如可以控制一个步进电机和两个直流电机（具体搭配可以根据需要来进行设定）
 
-* 1号程序积木对于控制EGB灯是必须的，1号积木的引脚在控制扩展版上RGB灯时、应选择为`P16`。在控制其它的灯带时可以根据需要进行改变。**注意！！！1号程序积木的第一个可选项是一个变量，这个变量代表一些设定的RGB灯**
-* 2号程序积木的第一个可选变量**`range`**与1号程序积木的变量应不同，2号程序积木的第二个可选变量与1号程序积木的变量应相同（**`strip`代表一些RGB灯，`range`代表`strip`中的部分灯**）。2号程序积木可以控制不同的RGB灯，通过设置灯的`起始`和`终止`位置的数字量，让2号程序积木的第一个变量代表这些灯。
-* 3号程序积木是用来控制**`strip`**的颜色（`strip是一个变量，代表一些设定的RGB灯`），通过下拉选项可以选择这些RGB灯的颜色
-* 4号程序积木是用来控制**`strip`**的显示彩虹特效，可以通过调节**`strip`**代表的RGB灯的数目和色相的取值域来控制颜色的变化
-* 5号程序积木可以用来做灯光柱状图，通过设定 值的初始和终止数字量、来调整**`strip`**所代表的灯的点亮数目。
-* 6号程序积木刷新**`strip`**所代表RGB灯的状态
-* 7号程序积木清除**`strip`**所代表RGB灯的状态
-* 8号程序积木可以设置**`strip`**所代表的RGB灯的色相、饱和度、亮度
+#### RGB炫彩灯
+![magicbit_RGB_zh](magic_bit/magicbit_RGB_zh.png)
 
-#### Neopixel更多功能模块
+* 板载4个RGB全彩灯，控制引脚为P16、可以通过编程控制四个RGB灯亮灭和颜色。
 
-![image](magic_bit/rgb_more_block_zh.png)
+![magicbit_RGB_code_zh](magic_bit/magicbit_RGB_code_zh.png)
+> RGB流水灯实验设计
 
-* 11号程序积木可以设置变量**`strip`**所代表的RGB灯中，像素地址为某个值（比如；‘0’，代表第一个RGB灯）的灯的颜色
-* 12号程序积木可以设置变量**`strip`**所代表的RGB灯中，像素地址为某个区间（比如；设置前一个白色圆框为’0‘，后一个白色圆框为‘2’，就代表前两个灯）的灯为白色灯。
-* 13号程序积木是变量**`strip`**所代表RGB灯的数目
-* 通过使用14号程序积木，可以设置**`strip`**所代表的灯的亮度
-* 15号程序积木的作用和4号程序积木刚好相反，是降低亮度
-* 16号程序积木代表一个数值，该数值是RGB灯的电流值
-* 17号程序积木和18号程序积木是用在矩阵RGB灯控制的
-* 如果不知道某个颜色具体的三基色数值比例怎么办·？这时19号程序积木的用处就突显出来了，可以拖拉直接把19号程序积木放到相应的白色圆框内，然后再选择19号程序积木的颜色就好了，是不是很方便。
-* 对于20号程序积木，可以发现有红绿蓝三个颜色的数值，这三个数值分别代表三种颜色的比例，不同的比例的混合，会产生不同的颜色。把20号程序积木拖拽到3号程序积木的颜色选择那里，发挥你的创造力、发现更多新的色彩吧！
-![code_Neopixel_17](magic_bit/code_Neopixel_17_zh.png)
+#### 红外接收头
+![magicbit_IR_zh](magic_bit/magicbit_IR_zh.png)
+
+* 板载红外接收头,可以通过拖拉相应的程序积木块设定相应的功能，再使用emakefun红外遥控器来进行控制。
+* 红外接收头的引脚为P1，注意红外接收头的跳线帽，在使用红外遥控功能时，红外接收头的跳线帽应当插上（默认是插上），当跳线帽拔下时，P1引脚为普通IO口引脚。
+> 红外接收例程
+
+![magicbit_IR_code_zh](magic_bit/magicbit_IR_code_zh.png)
+
+> 实验现象为：每次红外遥控器按键`A`按下时,板载RGB灯显示蓝色，1秒后，又显示黄色
+
+#### RGB超声波
+![magicbit_RGBCSB_zh](magic_bit/magicbit_RGBCSB_zh.png)
+
+* 1个PH2.0-4Pin Rgb超声波（RUS-04)模块接口，该接口有两个用途，一方面可以作为超声波的TX和RX引脚口，另一方面也可以控制超声波模块的RGB彩灯，让超声波模块更加炫彩灵性。
+* RGB超声波的IO引脚接在引脚的P2接口，RGB口与RGB口对应。
+* 超声波的RGB彩灯，可以选择控制左右，显示的颜色和显示的特效，其中特效包括呼吸灯、旋转流星、闪烁。
+
+![magicbit_RGBCSB_code_zh](magic_bit/magicbit_RGBCSB_code_zh.png)
+> 当超声波检测到前方距离小于10cm时，超声波的RGB灯 **全部**会显示**靛蓝**，并且有**闪烁**的特效
+
+>超声波数值串口打印显示实验
+
+![magicbit_RGBCSB](magic_bit/magicbit_RGBCSB_UART_code1_zh.png)
+![magicbit_RGBCSB](magic_bit/magicbit_RGBCSB_UART_code2_zh.png)
+![magicbit_RGBCSB](magic_bit/magicbit_RGBCSB_UART_code3_zh.png)
+
+### 8Pin IO口引出
+![magicbit_Pin_zh](magic_bit/magicbit_Pin_zh.png)
+
+* 8个引出的IO口，黑色插口表示电源负极、红色插口表示电源正极(3V3)，蓝色表示IO信号口
+* 引出的引脚是P0\P1\P2\P8\P12\P13\P14\P15
+
+#### I2C接口
+![magicbit_I2C_zh](magic_bit/magicbit_I2C_zh.png)
+
+* 一块好的扩展版怎么能没有I2C接口？MagicBit扩展版包含1个PH2.0-4Pin i2c接口，可以使用该接口来控制 1602液晶等。在使用I2C通信时，应注意扩展版的数据线SDA引脚连接终端数据线SDA引脚，扩展版的时钟线SCL引脚连接终端的时钟线SCL引脚
+> 点击查看控制[1602液晶](https://makecode.microbit.org/v0#)例程
+![magicbit_I2C_code_zh](magic_bit/magicbit_I2C_code_zh.png)
 
 ## 拓展学习和难题解答
 * 交流群
