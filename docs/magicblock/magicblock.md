@@ -28,7 +28,7 @@
 ## MagicBlock安装
 
 ### 下载地址
-**浏览器输入www.emakefun.com 进入易创空间科技有限公司官网，在图形化编程区域找到MagicBlock，点击“立即下载”即可。**
+**浏览器输入[www.emakefun.com](http://www.emakefun.com) 进入易创空间科技有限公司官网，在图形化编程区域找到MagicBlock，点击[立即下载](http://www.emakefun.com:8003/Download/Software/MagicBlock%20Setup%201.0.0.exe)即可。**
 
   ![1568170439(1)](MagicBlock_pic_zh/1568170439(1).jpg)
 
