@@ -6,7 +6,7 @@
 
 ![1568688432888](Arduino_pic_zh/1568688432888.png)
 
-**Hummerbot是一款多功能、可编程的Arduino智能小车**
+Hummerbot是一款多功能、可编程的Arduino智能小车
 
 ### Hummerbot的功能
 
@@ -48,7 +48,7 @@
 
 ![1568771014(1)](Arduino_pic_zh/1568771014(1).jpg)
 
-**出现选择扩展界面，鼠标左键选择Hummerbot扩展**
+出现选择扩展界面，鼠标左键选择Hummerbot扩展
 
 ![1568771111(1)](Arduino_pic_zh/1568771111(1).jpg)
 
@@ -84,7 +84,7 @@ Hummerbot的第一个图形块是setup/loop图形块，这个图形块是主图�
 
 ### 认识代码区域
 
-**通过之前的介绍，我们已经可以为Hummerbot编写一个让它前进的程序了，现在，让我们来通过图形块的真正含义—代码，来研究Hummerbot是如何动起来的，让我们把注意力放到MagicBlock界面的右边：代码区，我们用图形块为Hummerbot编程的同时，会发现每拖拽一个图形块，在代码区就会生成一段或几段代码，没错，这就是我们实际上传到Hummerbot上的程序，也就是能够让Hummerbot动起来的根本原因，还是以Hummerbot前进的程序为例，当拖拽出setup/loop图形块时，代码区出现两个函数分别是setup()和loop()函数**
+通过之前的介绍，我们已经可以为Hummerbot编写一个让它前进的程序了，现在，让我们来通过图形块的真正含义—代码，来研究Hummerbot是如何动起来的，让我们把注意力放到MagicBlock界面的右边：代码区，我们用图形块为Hummerbot编程的同时，会发现每拖拽一个图形块，在代码区就会生成一段或几段代码，没错，这就是我们实际上传到Hummerbot上的程序，也就是能够让Hummerbot动起来的根本原因，还是以Hummerbot前进的程序为例，当拖拽出setup/loop图形块时，代码区出现两个函数分别是setup()和loop()函数
 
 ![1568775791(1)](Arduino_pic_zh/1568775791(1).jpg)
 
