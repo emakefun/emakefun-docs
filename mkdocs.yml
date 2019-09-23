@@ -1,12 +1,5 @@
 
 site_name: emakefun文档中心
-pages:
--'首页':'index.md'
-- Arduino可编程产品:
- -'micro_bit/micro_bit.md'
- -'arduino/arduino.md'
-- 'MagicBlock':'magicblock/magicblock.md'
-- 关于我们: about.md
 site_url: https://emakefun.com
 site_author: emakefun document team
 site_description: 深圳易创空间科技有限公司产品资料文档中心
@@ -22,4 +15,23 @@ extra:
   search:
     language: 'jp'
 
-
+nav:
+    - 首页: index.md
+    - Micro:bit产品: 
+      - Magic:bit: micro_bit/magicbit.md
+      - Magic:bit四合一战车: micro_bit/FourInOneCar.md
+      - Magic:bit麦轮战车: micro_bit/WheatwheelCar.md
+    - Arduino可编程产品: 
+      - Hummerbot: arduino/Hummerbot.md
+      - Happybot: arduino/Happybot.md
+      - MirageTank: arduino/MirageTank.md
+    - 开源硬件: 
+      - Ble-Nano: open_source_hardware/Ble-Nano.md
+      - Ble-Uno: open_source_hardware/Ble-Uno.md
+      - RF-Nano: open_source_hardware/RF-Nano.md
+      - Uno/Mega2560多功能电机驱动板: open_source_hardware/mega2560.md
+      - Rgb超声波(RUS-04): open_source_hardware/rgb.md
+    - 软件: 
+      - MagicBlock: open_source_software/magicblock.md
+      - EmakefunApp: open_source_software/EmakefunApp.md
+    - 关于我们: about.md
