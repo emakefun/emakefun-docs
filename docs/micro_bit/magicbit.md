@@ -1,4 +1,4 @@
-# MagicBit
+# MagicBit产品
 
 ## 购买链接
 点击链接进入淘宝购买——>>[Magicbit V2.0](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-21556097790.16.545832c5PZ3CCi&id=602180967919)
@@ -41,15 +41,9 @@ micro:bit多功能电机驱动扩展板与emakefun红外遥控器
 
 ## LEGO底座安装
 
-1. 取一些LEGO底座的乐高积木零部件，安装底座
+* 取一些LEGO底座的乐高积木零部件，安装底座，底座安装完成后，和Magicbit进行拼接。
 
-![LEGO1](magic_bit/magicbit_LEGO_11_zh.gif)
-
-![LEGO2](magic_bit/magicbit_LEGO_21_zh.gif)
-
-2. 底座安装完成后，和Magicbit进行拼接。
-
-   ![LEGO3](magic_bit/magicbit_LEGO_31_zh.gif)
+   ![LEGO3](magic_bit/magicbit_LEGO_zh.gif)
 
 ## 电池座和充电口
 ![magicbit_power_zh](magic_bit/magicbit_power1_zh.png)
@@ -164,7 +158,7 @@ micro:bit多功能电机驱动扩展板与emakefun红外遥控器
 > 实验现象为：红外遥控器按键`A`按下时，板载RGB灯显示红色，按键B按下时、板载RGB显示绿色，按键C按下时、板载RGB显示蓝色   [红外实验源码](https://pan.baidu.com/s/17Q9BqekeNfqOO8MMuygspg)
 
 ## RGB超声波
-![magicbit_RGBCSB_zh](magic_bit/magicbit_RGBCSB1_zh.png)
+![magicbit_RGBCSB_zh](magic_bit/magicbit_RGBCSB2_zh.png)
 
 * 1个PH2.0-4Pin Rgb超声波（RUS-04)模块接口，该接口有两个用途，一方面可以作为超声波的TX和RX引脚口，另一方面也可以控制超声波模块的RGB彩灯，让超声波模块更加炫彩灵性。
 * RGB超声波的IO引脚接在引脚的P2接口，RGB口与RGB口对应。
@@ -193,4 +187,5 @@ micro:bit多功能电机驱动扩展板与emakefun红外遥控器
 
 ![magicbit_I2C_code_zh](magic_bit/magicbit_I2C_code1_zh.png)
 
-> 实验现象为：LCD1602液晶第一行显示**`wwllo! emakefun!`**    ，第二行显示**`2019`**       [I2C实验例程源码](https://pan.baidu.com/s/1cmqhw9N192yVCGY-jAgEhA)
+![magicbit_I2C_zh](magic_bit/magicbit_I2C2_zh.png)
+> 实验现象为：LCD1602液晶第一行显示**`Hello! emakefun!`**    ，第二行显示**`2019`**       [I2C实验例程源码](https://pan.baidu.com/s/1cmqhw9N192yVCGY-jAgEhA)
