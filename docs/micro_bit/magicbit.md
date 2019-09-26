@@ -110,7 +110,7 @@ micro:bit多功能电机驱动扩展板与emakefun红外遥控器
 
 ![magicbit_DCmotor1_zh](magic_bit/magicbit_DCmotor_code1_zh.png)
 
-> 实验结果：当microbit主板的A按键被按下、接在M1的电机正转，按键B被按下、电机反转 [直流电机实验源码](https://pan.baidu.com/s/1ys6yIR56I5om7FssEwCVGw)
+> 实验结果：当microbit主板的A按键被按下、接在M1的电机正转，按键B被按下、电机反转 [直流电机实验源码](https://github.com/song2222/microbit_code.git)
 
 ## 8路舵机接口
 ![magicbit_servo_zh](magic_bit/magicbit_ser_zh.png)
