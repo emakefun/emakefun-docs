@@ -10,6 +10,7 @@ repo_url: https://github.com/emakefun/emakefun-docs
 theme:
    name: 'readthedocs'
    language: 'zh'
+   favicon: 'favicon.ico'
 
 extra:
   search:
