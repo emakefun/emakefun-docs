@@ -121,7 +121,7 @@ micro:bit多功能电机驱动扩展板与emakefun红外遥控器
 > 舵机控制实验例程
 
 ![magicbit_servo_code_zh](magic_bit/magicbit_servo_code1_zh.png)
-> 控制舵机转动到角度100，过200ms再转动到角度50，如此循环，，， [舵机实验源码链接](https://pan.baidu.com/s/1oaP-rH26Irn8fR7tygW0Eg)
+> 控制舵机转动到角度100，过200ms再转动到角度50，如此循环，，， [舵机实验源码链接](https://makecode.microbit.org/_YtmKAe5a8C66)
 
 ## 步进电机接口
 
@@ -134,7 +134,7 @@ micro:bit多功能电机驱动扩展板与emakefun红外遥控器
 > 步进电机实验例程
 
 ![magicbit_motor_code_zh](magic_bit/magicbit_mottor_code1_zh.png)
-> 步进电机驱动实验，实验结果为：STPM1与STPM2两个步进电机转动各50°，停止延时500ms，再转动，如此循环   [实验源码链接 ](https://pan.baidu.com/s/1S-HeDQXZExl6GXfyOdwAvg)
+> 步进电机驱动实验，实验结果为：STPM1与STPM2两个步进电机转动各50°，停止延时500ms，再转动，如此循环   [实验源码链接 ](https://makecode.microbit.org/_hz1a1EijJHKt)
 
 ## RGB炫彩灯
 ![magicbit_RGB_zh](magic_bit/magicbit_RGB1_zh.png)
@@ -144,7 +144,7 @@ micro:bit多功能电机驱动扩展板与emakefun红外遥控器
 
 ![magicbit_RGB_code_zh](magic_bit/magicbit_RGB_code1_zh.png)
 
-> RGB流水灯实验设计 ，实验结果为：板载RGB灯变为绿色流水灯  [实验源码链接](https://pan.baidu.com/s/1zfReOYIc87mrb3okyXnqeQ) 
+> RGB流水灯实验设计 ，实验结果为：板载RGB灯变为绿色流水灯  [实验源码链接](https://makecode.microbit.org/_iWvFx9bvk6gb) 
 
 ## 红外接收
 ![magicbit_IR_zh](magic_bit/magicbit_IR1_zh.png)
@@ -155,7 +155,7 @@ micro:bit多功能电机驱动扩展板与emakefun红外遥控器
 
 ![magicbit_IR_code_zh](magic_bit/magicbit_IR_code1_zh.png)
 
-> 实验现象为：红外遥控器按键`A`按下时，板载RGB灯显示红色，按键B按下时、板载RGB显示绿色，按键C按下时、板载RGB显示蓝色   [红外实验源码](https://pan.baidu.com/s/17Q9BqekeNfqOO8MMuygspg)
+> 实验现象为：红外遥控器按键`A`按下时，板载RGB灯显示红色，按键B按下时、板载RGB显示绿色，按键C按下时、板载RGB显示蓝色   [红外实验源码](https://makecode.microbit.org/_7pF0aUfqYgrV)
 
 ## RGB超声波
 ![magicbit_RGBCSB_zh](magic_bit/magicbit_RGBCSB2_zh.png)
@@ -166,13 +166,13 @@ micro:bit多功能电机驱动扩展板与emakefun红外遥控器
 > 超声波RGB使用例程实验
 
 ![magicbit_RGBCSB_code_zh](magic_bit/magicbit_RGBCSB_code1_zh.png)
-> 当超声波检测到前方距离小于10cm时，超声波的RGB灯 **全部**会显示**靛蓝**，并且有**闪烁**的特效  [超声波RGB源码](https://pan.baidu.com/s/1JAlR1TOyjTzZFuLS7NVVGA)
+> 当超声波检测到前方距离小于10cm时，超声波的RGB灯 **全部**会显示**靛蓝**，并且有**闪烁**的特效  [超声波RGB源码](https://makecode.microbit.org/_gHTLRaDPXJro)
 > 超声波数值串口打印显示实验
 
 ![magicbit_RGBCSB](magic_bit/magicbit_RGBCSB_UART_code1_zh.png)
 
-> 实验结果为：串口打印出超声波数值  [超声波串口实验源码](https://pan.baidu.com/s/18A1ViMEb8936c9RrKmUyxA
-)
+> 实验结果为：串口打印出超声波数值  [超声波串口实验源码](https://makecode.microbit.org/_Ky4Jfq1JiYgF)
+
 ## 8Pin IO口引出
 ![magicbit_Pin_zh](magic_bit/magicbit_Pin1_zh.png)
 
@@ -188,4 +188,4 @@ micro:bit多功能电机驱动扩展板与emakefun红外遥控器
 ![magicbit_I2C_code_zh](magic_bit/magicbit_I2C_code1_zh.png)
 
 ![magicbit_I2C_zh](magic_bit/magicbit_I2C2_zh.png)
-> 实验现象为：LCD1602液晶第一行显示**`Hello! emakefun!`**    ，第二行显示**`2019`**       [I2C实验例程源码](https://pan.baidu.com/s/1cmqhw9N192yVCGY-jAgEhA)
+> 实验现象为：LCD1602液晶第一行显示**`Hello! emakefun!`**    ，第二行显示**`2019`**       [I2C实验例程源码](https://makecode.microbit.org/_4W9VYRez0Kga)
