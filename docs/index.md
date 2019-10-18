@@ -16,6 +16,6 @@
 - 软件
 - [MagicBlock](https://emakefun-docs.readthedocs.io/zh_CN/latest/open_source_software/magicblock)
 - [EmakefunApp](https://emakefun-docs.readthedocs.io/zh_CN/latest/open_source_software/EmakefunApp)
--关于我们
+- 关于我们
 
 所有文档请查看 [emakefun-docs](https://github.com/emakefun/emakefun-docs)

@@ -3,11 +3,14 @@
     max-width: unset;
 }
 .wy-side-nav-search img {
-	height:48px;
-	width:150px;
+	height:64px;
+	width:200px;
 	border-radius:0.1%;
-	background-color:#00A0A6;
+	background-color:#00B5BC;
 }
 .wy-side-nav-search {
-	background-color:#00A0A6;
+	background-color:#00B5BC;
+}
+.wy-side-nav-search > p{
+	line-height:10px;
 }
