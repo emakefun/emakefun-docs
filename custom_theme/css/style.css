@@ -10,7 +10,8 @@
 }
 .wy-side-nav-search {
 	background-color:#00B5BC;
+	margin-bottom:0;
 }
 .wy-side-nav-search > p{
-	line-height:10px;
+	line-height:0px;
 }
