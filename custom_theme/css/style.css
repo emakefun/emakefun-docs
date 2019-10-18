@@ -2,3 +2,12 @@
     width: 100%;
     max-width: unset;
 }
+.wy-side-nav-search img {
+	height:48px;
+	width:150px;
+	border-radius:0.1%;
+	background-color:#00A0A6;
+}
+.wy-side-nav-search {
+	background-color:#00A0A6;
+}
