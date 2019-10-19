@@ -19,3 +19,118 @@
 	color:#30C1AF;
 	font-weight:1000;
 }
+.contents{
+				height: 1500px;
+				margin-left: 8%;
+				margin-right: 8%;
+			}
+			.pic{			
+				padding-left: 5%;
+				padding-right: 3%;
+				margin-top: auto;
+				margin-bottom: 80px;
+			}
+			.tittle1,.tittle2,.tittle3{				
+				height: 150px;
+			}
+			.study,.advanced,.development{	
+				height: 41px;
+				margin-top: 55px;
+			}
+			.tittle1 p{
+				width: 600px;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				font-family: "微软雅黑";
+				font-size: 30px;
+				color: gray;
+			}
+			.tittle2 p{
+				width: 500px;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				font-family: "微软雅黑";
+				font-size: 30px;
+				color: gray;
+			}
+			.tittle3 p{
+				width: 500px;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				font-family: "微软雅黑";
+				font-size: 30px;
+				color: gray;
+			}
+			.study-en{
+				height: 55px;
+			}
+			.study-nav{				
+				height: 250px;
+			}
+			.advanced-nav{						
+				height: 400px;
+			}
+			.development-nav{				
+				height: 200px;
+			}
+			.study-nav-left,.study-nav-right,.development-nav-left,.development-nav-right{
+				float:left;
+				width:50%;
+				height:100%;
+				bolder: 1px solid;
+			}
+			.study-nav-left-a,.study-nav-left-b,.study-nav-right-a,.study-nav-right-b{
+				bolder: 1px solid;
+				width:100%;
+				height:100px;
+			}
+			.study-nav-left-a-pic,.study-nav-left-a-p,.study-nav-left-b-pic,.study-nav-left-b-p,.study-nav-right-a-pic,.study-nav-right-a-p,.study-nav-right-b-pic,.study-nav-right-b-p{
+				float:left;
+				width:50%;
+				height:100%;
+				text-align:center;
+				line-height:100px;
+				font-family:"微软雅黑";
+				font-size:30px;
+				font-weight:800;
+			}
+			.advanced-nav-left,.advanced-nav-mid,.advanced-nav-right{
+				float:left;
+				width:33.33%;
+				height:100%;
+				bolder: 1px solid;
+			}
+			.advanced-nav-left-a,.advanced-nav-mid-a,.advanced-nav-right-a{
+				width:100%;
+				height:170px;
+				text-align:center;
+				line-height:100px;
+			}
+			.advanced-nav-left-b,.advanced-nav-mid-b,.advanced-nav-right-b{
+				width:100%;
+				height:400px;
+				text-align:center;
+				line-height:100px;
+			}
+			.contents li{
+				font-family:"微软雅黑";
+				font-size:20px;
+				font-weight:800;
+				margin:20px;
+				list-style:none !important;
+			}
+			.development-nav-left-a,.development-nav-left-b,.development-nav-right-a,.development-nav-right-b{
+				width:50%;
+				height:100px;
+				float:left;
+				text-align:right;
+				line-height:100px;
+			}
+			.development-nav-left-b,.development-nav-right-b{
+				font-size:20px;
+				font-weight:800;
+				text-align:left!important;
+			}

@@ -112,6 +112,9 @@
           <div role="main">
             <div class="section">
               {% block content %}
+			  {% if page and page.is_homepage %}
+{% include "homePage.html" %}
+{% endif %}
                 {{ page.content }}
               {% endblock %}
             </div>
@@ -138,9 +141,4 @@
 
 </body>
 </html>
-{% if page and page.is_homepage %}
-<!--
-MkDocs version : {{ mkdocs_version }}
-Build Date UTC : {{ build_date_utc }}
--->
-{% endif %}
+
