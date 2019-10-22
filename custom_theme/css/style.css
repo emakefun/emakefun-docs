@@ -138,6 +138,9 @@
 				.pic img{
 					width:240px;
 				}
+				.study-nav-left-a-pic,.study-nav-left-a-p,.study-nav-left-b-pic,.study-nav-left-b-p,.study-nav-right-a-pic,.study-nav-right-a-p,.study-nav-right-b-pic,.study-nav-right-b-p{				
+				font-size:16px;				
+			}
 			}
 			@media only screen and (max-width: 1360px) {
 				.pic img{
@@ -153,4 +156,7 @@
 				.pic img{
 					width:300px;
 				}
+				.study-nav-left-a-pic,.study-nav-left-a-p,.study-nav-left-b-pic,.study-nav-left-b-p,.study-nav-right-a-pic,.study-nav-right-a-p,.study-nav-right-b-pic,.study-nav-right-b-p{				
+				font-size:20px;				
+			}
 			}
