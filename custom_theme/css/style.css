@@ -134,3 +134,8 @@
 				font-weight:800;
 				text-align:left!important;
 			}
+			@media only screen and (max-width: 1366px) {
+				.pic img{
+					width:240px;
+				}
+			}
