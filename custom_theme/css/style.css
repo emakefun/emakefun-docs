@@ -139,3 +139,18 @@
 					width:240px;
 				}
 			}
+			@media only screen and (max-width: 1360px) {
+				.pic img{
+					width:220px;
+				}
+			}
+			@media only screen and (max-width: 1200px) {
+				.pic img{
+					width:200px;
+				}
+			}
+			@media only screen and (min-width: 1400px) and (max-width: 1910px) {
+				.pic img{
+					width:300px;
+				}
+			}
