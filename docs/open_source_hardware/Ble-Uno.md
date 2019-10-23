@@ -1,4 +1,4 @@
-# 敬请期待# Ble-Uno 使用说明书
+# Ble-Uno 使用说明书
 
 ![1](Ble-Uno_pic_zh/1.jpg)
 
