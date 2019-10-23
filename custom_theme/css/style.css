@@ -142,24 +142,24 @@
 				font-size:16px;				
 			}
 			}
-			@media only screen and (max-width: 1339px) {
+			@media only screen and (min-width: 1200px) and (max-width: 1399px) {
 				.pic img{
 					width:220px;
 				}
 			}
-			@media only screen and (max-width: 1200px) {
+			@media only screen and (min-width: 1000px) and (max-width: 1199px) {
 				.pic img{
-					width:200px;
+					width:160px;
 				}
 			}
-			@media only screen and (max-width: 1000px) {
+			@media only screen and (min-width: 800px) and (max-width: 999px) {
 				.pic img{
-					width:150px;
+					width:120px;
 				}
 			}
-			@media only screen and (max-width: 800px) {
+			@media only screen and (max-width: 799px) {
 				.pic img{
-					width:100px;
+					width:90px;
 				}
 			}
 			@media only screen and (min-width: 1400px) and (max-width: 1910px) {
