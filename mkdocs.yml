@@ -28,7 +28,8 @@ nav:
       - Magic:bit四合一战车: micro_bit/FourInOneCar.md
       - Magic:bit麦轮战车: micro_bit/WheatwheelCar.md
     - Arduino可编程产品: 
-      - Hummerbot: arduino/Hummerbot.md
+      - Hummerbot: arduino/Hummerbot2.md
+      - Hummerbot图形化编程: arduino/Hummerbot.md
       - Happybot: arduino/Happybot.md
       - MirageTank: arduino/MirageTank.md
     - 开源硬件: 
