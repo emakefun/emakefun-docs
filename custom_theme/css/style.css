@@ -134,9 +134,17 @@
 				font-weight:800;
 				text-align:left!important;
 			}
-			@media only screen and (min-width: 1400px) and (max-width: 1910px) {
+			@media only screen and (min-width: 1600px) and (max-width: 1920px) {
 				.pic img{
 					width:300px;
+				}
+				.study-nav-left-a-pic,.study-nav-left-a-p,.study-nav-left-b-pic,.study-nav-left-b-p,.study-nav-right-a-pic,.study-nav-right-a-p,.study-nav-right-b-pic,.study-nav-right-b-p{				
+				font-size:20px;				
+			    }
+			}
+			@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+				.pic img{
+					width:250px;
 				}
 				.study-nav-left-a-pic,.study-nav-left-a-p,.study-nav-left-b-pic,.study-nav-left-b-p,.study-nav-right-a-pic,.study-nav-right-a-p,.study-nav-right-b-pic,.study-nav-right-b-p{				
 				font-size:20px;				
