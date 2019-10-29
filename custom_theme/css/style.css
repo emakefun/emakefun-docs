@@ -134,7 +134,23 @@
 				font-weight:800;
 				text-align:left!important;
 			}
-			@media only screen and (min-width: 1600px) and (max-width: 1920px) {
+			@media only screen and (min-width: 1865px) and (max-width: 1920px) {
+				.pic img{
+					width:370px;
+				}
+				.study-nav-left-a-pic,.study-nav-left-a-p,.study-nav-left-b-pic,.study-nav-left-b-p,.study-nav-right-a-pic,.study-nav-right-a-p,.study-nav-right-b-pic,.study-nav-right-b-p{				
+				font-size:30px;				
+			    }
+			}
+			@media only screen and (min-width: 1800px) and (max-width: 1864px) {
+				.pic img{
+					width:350px;
+				}
+				.study-nav-left-a-pic,.study-nav-left-a-p,.study-nav-left-b-pic,.study-nav-left-b-p,.study-nav-right-a-pic,.study-nav-right-a-p,.study-nav-right-b-pic,.study-nav-right-b-p{				
+				font-size:30px;				
+			    }
+			}
+			@media only screen and (min-width: 1600px) and (max-width: 1799px) {
 				.pic img{
 					width:300px;
 				}
@@ -157,12 +173,14 @@
 				.study-nav-left-a-pic,.study-nav-left-a-p,.study-nav-left-b-pic,.study-nav-left-b-p,.study-nav-right-a-pic,.study-nav-right-a-p,.study-nav-right-b-pic,.study-nav-right-b-p{				
 				font-size:16px;		
 			}
+			}
 			@media only screen and (min-width: 1200px) and (max-width: 1279px) {
 				.pic img{
 					width:190px;
 				}
 				.study-nav-left-a-pic,.study-nav-left-a-p,.study-nav-left-b-pic,.study-nav-left-b-p,.study-nav-right-a-pic,.study-nav-right-a-p,.study-nav-right-b-pic,.study-nav-right-b-p{				
 				font-size:16px;		
+			}
 			}
 			@media only screen and (min-width: 1000px) and (max-width: 1199px) {
 				.pic img{
@@ -171,12 +189,14 @@
 				.study-nav-left-a-pic,.study-nav-left-a-p,.study-nav-left-b-pic,.study-nav-left-b-p,.study-nav-right-a-pic,.study-nav-right-a-p,.study-nav-right-b-pic,.study-nav-right-b-p{				
 				font-size:16px;		
 			}
+			}
 			@media only screen and (min-width: 800px) and (max-width: 999px) {
 				.pic img{
 					width:120px;
 				}
 				.study-nav-left-a-pic,.study-nav-left-a-p,.study-nav-left-b-pic,.study-nav-left-b-p,.study-nav-right-a-pic,.study-nav-right-a-p,.study-nav-right-b-pic,.study-nav-right-b-p{				
 				font-size:16px;		
+			}
 			}
 			@media only screen and (max-width: 799px) {
 				.pic img{
@@ -185,4 +205,4 @@
 				.study-nav-left-a-pic,.study-nav-left-a-p,.study-nav-left-b-pic,.study-nav-left-b-p,.study-nav-right-a-pic,.study-nav-right-a-p,.study-nav-right-b-pic,.study-nav-right-b-p{				
 				font-size:16px;		
 			}
-			
+			}
