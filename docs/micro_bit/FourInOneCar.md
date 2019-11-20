@@ -13,18 +13,18 @@ Magic:car积木小车具有四种拼装形态，可以拼装成铁爪车、重�
 
 ## Magic:car参数
 
-主控：microbit
-扩展板：Magic:bit
-编程软件：Makecode
-输入方式：按键、蓝牙、红外、广播
-通讯方式：usb数据线、蓝牙传输
-编程语言：Microbit图形化编程
-组装后重量：292g（带电池）
-供电方式：18650锂电池供电或USB数据线供电
-充电方式：USB数据线充电
-轮子直径：50mm
-长/宽/高：21cm/15cm/13.5cm
-底盘：兼容乐高孔的高质量积木
+- 主控：microbit
+- 扩展板：Magic:bit
+- 编程软件：Makecode
+- 输入方式：按键、蓝牙、红外、广播
+- 通讯方式：usb数据线、蓝牙传输
+- 编程语言：Microbit图形化编程
+- 组装后重量：292g（带电池）
+- 供电方式：18650锂电池供电或USB数据线供电
+- 充电方式：USB数据线充电
+- 轮子直径：50mm
+- 长/宽/高：21cm/15cm/13.5cm
+- 底盘：兼容乐高孔的高质量积木
 
 ## Magic:car组装
 
@@ -59,7 +59,7 @@ Magic:car 积木小车含有一个可编程车大灯，在使用过程中，车�
 
 Magic:car编程类似与scratch，采用积木式的图形化编程方式，拖拽相应的编程积木块即可进行相应的编程
 
-![MagicCar_OOp_zh](FourInOneCar/MagicCar_OOp_zh.png)
+![MagicCar_OOp_zh](FourInOneCar/MagicCar_OOP_zh.png)
 
 编程完毕后，点击下载，直接把程序下载到小车microbit主板里，即可实现手动遥控小车或者小车自动控制功能，非常方便。
 
