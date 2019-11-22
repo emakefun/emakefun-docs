@@ -34,7 +34,7 @@ Hummerbot是一款多功能、可编程的Arduino智能小车
 
 ![1568864499(1)](Hummerbot_pic_zh/1568864499(1).jpg)
 
-## MagicBlock的Arduino模式
+## MagicBlock的Arduino模式  [进入MagicBlock使用教程](https://emakefun-docs.readthedocs.io/zh_CN/latest/open_source_software/magicblock/)
 
 在前面已经介绍过MagicBlock分为两种模式：Arduino模式和Scratch模式（在MagicBlock界面右上角切换），Arduino模式为上传模式，Scratch为实时模式，Arduino模式是我们用图形块写好程序后，图形块自动转换成Arduino C++代码，然后需要我们用usb线连接电脑和Hummerbot，通过MagicBlock把代码上传给Hummerbot，Scratch模式需要在Hummerbot里面安装固件，而且要一直与电脑通过usb线或蓝牙等连接，通过点击图形块的方式，实时地给Hummerbot发送命令来操控Hummerbot，此篇文档只介绍在MagicBlock的Arduino模式下为Hummerbot编程的流程
 
