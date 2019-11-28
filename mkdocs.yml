@@ -24,6 +24,7 @@ extra:
 nav:
     - 首页: index.md
     - Micro:bit产品: 
+      - IObit: micro_bit/IObit.md
       - Magic:bit: micro_bit/magicbit.md
       - Magic:bit四合一战车: micro_bit/FourInOneCar.md
       - Magic:bit麦轮战车: micro_bit/WheatwheelCar.md
