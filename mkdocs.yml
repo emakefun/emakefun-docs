@@ -1,4 +1,4 @@
-
+﻿
 site_name: emakefun文档中心
 site_url: https://emakefun.com
 site_author: emakefun document team
@@ -33,6 +33,7 @@ nav:
       - Hummerbot图形化编程: arduino/Hummerbot.md
       - Happybot: arduino/Happybot.md
       - MirageTank: arduino/MirageTank.md
+      - PantherTank: arduino/PantherTank.md	
     - 开源硬件: 
       - Ble-Nano: open_source_hardware/Ble-Nano.md
       - Ble-Uno: open_source_hardware/Ble-Uno.md
