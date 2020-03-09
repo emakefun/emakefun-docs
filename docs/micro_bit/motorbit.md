@@ -43,7 +43,7 @@ motor:Bit 多功能扩展板与micro:Bit 主板
 
 
 ## 蜂鸣器
-![magicbit_buzzer_zh](motorbit/motorbit_BUZZER_PCB_zh.png)
+![magicbit_buzzer_zh](motorbit/motorbit_buzzer_PCB_zh.png)
 
 * motor:bit板载无源蜂鸣器，motor:bit上的蜂鸣器接线引脚为P0，通过对蜂鸣器输出不同频率的信号，从而控制蜂鸣器播放音乐。
 * motor:bit 是通过跳线帽于microbit主板的P0引脚进行连接的，当拔掉蜂鸣器的跳线帽时，引脚P0不能控制板载蜂鸣器，此时P0引脚可以作为普通IO引脚使用。
@@ -55,7 +55,7 @@ motor:Bit 多功能扩展板与micro:Bit 主板
 
 
 ## 红外接收
-![motorbit_IR_zh](motorbit/motorbit_IR_PCB_zh.png)
+![motorbit_IR_zh](motorbit/motorbit_IR_PCB_ZH.png)
 
 * motor:bit 板载有一颗红外接收头，可以通过拖拉相应的程序积木块设定相应的功能，再使用emakefun红外遥控器来进行控制。
 * 红外接收头的引脚为P1，注意、红外接收头的跳线帽，在使用红外遥控功能时，红外接收头的跳线帽应当插上（默认是插上），当跳线帽拔下时，P1引脚为普通IO口引脚。
