@@ -3,14 +3,16 @@
 micro:bit是[易创空间](www.emakefun.com)专门针对micro:bit而开发的驱动大电流电机，舵机，步进电机的一款多功能电机驱动扩展板。解决了市面上同类驱动板支持单节3.7V电池驱动力严重不够问题。本驱动板采用DC-DC电源方案，支持DC(6~36V)宽电压输入，最大输出3A电流。驱动芯片采用4颗大电流驱动芯片H450,最大驱动电流达3.5A，轻松同时驱动4个24V支流马达或者30暴力高速马达。舵机可以通过外部电源独立供电,同时可以支持8个舵机同时控制。板子采用主板平躺设计，安装孔兼容乐高，可以非常方便安装在自己创意设计中。完善的库支持，配套开发有makecode,scratch3.0,mixly,python库和教程。
 
 ## 产品特色
-1. 接线柱和DC(5.5mm-2.1)头供电，可通过开关自由选择，输入电压：6~36V
-2. 支持同时驱动4路最大电流3.5A支流电机
-3. 支持同时驱动8路舵机，支持独立电源供电
-4. 支持驱动2路5线步进电机
-5. 板载4个全彩RGB灯，1个无源蜂鸣器，板载1个红外遥控接收头
-6. 一个PH2.0-4Pin RGB超声波接口，接口防反插，micro:bit所有引脚全部扩展出来
-7. 安装孔位兼容乐高，通过不同的积木搭建、配合motor:Bit实现更好更多更富创造性的功能，充分发挥学生的创造力
-8. 完善库支持makecode,scratch3.0,mixly,python库
+1. 供电方式有接线柱和DC头，可通过开关自由选择，亦可双供电
+2. 强力电机和舵机驱动芯片，驱动力强劲
+3. 包含多种电压引脚，满足大多数场景需要
+4. 与乐高兼容，通过不同的积木搭建、配合motor:Bit实现更好更多更富创造性的功能，充分发挥学生的创造力
+5. 同时支持驱动8路舵机和4路直流电机
+6. 支持驱动2路5线步进电机
+7. 板载4个RGB全彩灯，无源蜂鸣器
+8. 板载红外接收头，通过红外遥控器实现红外线远程控制
+9. 一个PH2.0-4Pin RGB超声波接口，接口防反插
+
 
 ## 产品参数
 * PCB板厚度：1.6mm
@@ -20,7 +22,7 @@ micro:bit是[易创空间](www.emakefun.com)专门针对micro:bit而开发的驱
 * 输入电压：6~36V
 
 ## 产品实物图
-motor:Bit多功能扩展板与micro:Bit主板安装实物
+motor:Bit 多功能扩展板与micro:Bit 主板
 ![image](motorbit/motorbit.png)
 
 ## 硬件接口介绍
@@ -31,15 +33,17 @@ motor:Bit多功能扩展板与micro:Bit主板安装实物
 # 扩展版各单元模块详解
 
 ## 电源供电口
-![image-20200305094959644](motorbit/motorbit_DC_PCB_zh.png)
-- motor:bit 有两个供电接口，一个接线柱类型，一个DC(5.5-2.1)头类型。在使用接线柱供电时，注意电源正负极的连接方向，扩展板接线柱的 + 符号所代表的接线口表示应该连接电源正极线、— 符号所代表的接线口表示应该连接电源负极线
+![motorbit_DC_PCB1_zh](motorbit/motorbit_DC_PCB1_zh.png)
+![motorbit_DC_PCB1_zh](motorbit/motorbit_DC_PCB2_zh.png)
+
+- motor:bit 有两个供电接口，一个接线柱类型( + 表示接电源正极线：— 表示接电源负极线)，一个DC头类型。在使用接线柱供电时，注意电源正负极的连接方向，扩展板接线柱的 + 符号所代表的接线口表示应该连接电源正极线、— 符号所代表的接线口表示应该连接电源负极线
 - 拨动开关向右拨动到OFF(EXT)时，motor:bit 扩展板是通过接线柱供电的，此时，DC头供电接口无效：拨动开关向左拨动到ON(DC)时，motor:bit 扩展板是通过DC头接口供电，此时若VSS接线帽接在5V上，接线柱供电接口无效，若VSS接线帽接在 + 上，那么VSS的供电是通过接在接线柱的电源直接供电，从而实现一块板、两个供电源
 - motor:bit 扩展板包含3V3，5V电源引脚，此外，还设计有一个VIN引脚，VIN引脚通过开关与供电源直接连接，VIN引脚于开关选择的供电源连接
 - motor:bit 扩展板的红色引脚，皆为正极供电引出脚：黑色引脚皆为接地GND引脚
 
 
 ## 蜂鸣器
-![magicbit_buzzer_zh](motorbit/motorbit_buzzer_PCB_zh.png)
+![magicbit_buzzer_zh](motorbit/motorbit_BUZZER_PCB_zh.png)
 
 * motor:bit板载无源蜂鸣器，motor:bit上的蜂鸣器接线引脚为P0，通过对蜂鸣器输出不同频率的信号，从而控制蜂鸣器播放音乐。
 * motor:bit 是通过跳线帽于microbit主板的P0引脚进行连接的，当拔掉蜂鸣器的跳线帽时，引脚P0不能控制板载蜂鸣器，此时P0引脚可以作为普通IO引脚使用。
@@ -51,7 +55,7 @@ motor:Bit多功能扩展板与micro:Bit主板安装实物
 
 
 ## 红外接收
-![motorbit_IR_zh](motorbit/motorbit_IR_PCB_ZH.png)
+![motorbit_IR_zh](motorbit/motorbit_IR_PCB_zh.png)
 
 * motor:bit 板载有一颗红外接收头，可以通过拖拉相应的程序积木块设定相应的功能，再使用emakefun红外遥控器来进行控制。
 * 红外接收头的引脚为P1，注意、红外接收头的跳线帽，在使用红外遥控功能时，红外接收头的跳线帽应当插上（默认是插上），当跳线帽拔下时，P1引脚为普通IO口引脚。
@@ -150,18 +154,19 @@ motor:Bit多功能扩展板与micro:Bit主板安装实物
 * 不同的I2C模块需要的电压不同，可以通过IO电压选择跳线帽对I2C红色引脚的电压进行调整
 > I2C使用例程（控制LCD1602显示）
 
-![motorbit_I2C_code_zh](motorbit/motorbit_I2C_code_zh.png)
+ ![motorbit_I2C_code_zh](motorbit/motorbit_I2C_code_zh.png)
+
 > 实验实物图，在接线时，需要注意LCD1602液晶的SDA引脚接在扩展板的SDA引脚、SCL引脚接在扩展板的SCL引脚、GND引脚接在扩展板的黑色GND引脚、VCC引脚接在扩展板的红色5V引脚，不同的I2C模块需要的电压不同，LCD1602液晶需要5V(注意调节液晶背面的旋钮、以调整显示效果达到最好的显示)
 
 ![motorbit_I2C_zh](motorbit/motorbit_I2C_zh.png)
 
-> 实验现象为：LCD1602液晶第一行显示**`Hello! emakefun!`**    ，第二行显示**`2019`** [LCD1602液晶实验源码](https://makecode.microbit.org/_6tu0c6eYJ7si)
+> 实验现象为：LCD1602液晶第一行显示**`Hello! emakefun!`**    ，第二行显示**`2019`** [LCD1602液晶实验源码](https://makecode.microbit.org/_6s8UXUHCo67w)
 
 ## 电压引脚
 
 ![image-20200305102121549](motorbit/motorbit_V_PCB_zh.png)
 
-* motor:bit 扩展板设计有三种电压引脚，分别为3V3、5V、VIN(+）
+* motor:bit 扩展板设计有三种电压引脚，分别为3V3、5V、VIN(+，没有经过降压的电压接口）
 * 对于8个IO口、可以通过IO口跳线帽进行选择不同的电压：对于8个PWM舵机接口，可以通过跳线帽选择不同的电压，需要注意，当选择5V的时候，供电来源于开关选择的电源直接相关，选择‘ +’   的时候，供电来源为接线柱电源，与开关选择无关
 
 
@@ -193,7 +198,7 @@ motor:Bit多功能扩展板与micro:Bit主板安装实物
 * 点击**`下载`**,     红色箭头所指的按扭![motorbit_datadown_zh](motorbit/motorbit_datadown_zh.png)
 
 ### 保存到Microbit的U盘上，在保存过程中micro:bit指示灯会闪烁
-* 选择**`MICROBIT`**，点击确定 (使用的是QQ浏览器进行在线的一个下载)
+* 选择**`MICROBIT`**，点击确定 (使用的是QQ浏览器进行在线的下载)
 
 ![motorbit_datasave_zh](motorbit/motorbit_datasave1_zh.png)
 
