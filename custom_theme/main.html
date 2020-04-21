@@ -12,3 +12,9 @@ the blocks defined in base.html and its included child templates.
        <a href="http://www.emakefun.com" target="_blank"><img src="https://emakefun-docs.readthedocs.io/zh_CN/latest/img/favicon.png"/></a>
 	   <p>emakefun文档中心</P>
 	  {%- endblock %}
+
+	  {% block libs %}
+    {{ super() }}
+	<script src="{{ base_url }}/js/jquery.treeview.js"></script>
+	<script src="{{ base_url }}/js/jquery.cookie.js"></script>
+{% endblock %}

@@ -10,7 +10,7 @@ repo_url: https://github.com/emakefun/emakefun-docs
 theme:
    name: 'mkdocs'
    custom_dir: 'custom_theme'
-   language: 'en'
+   language: 'cn'
   
    logo: 'url(images/favicon.jpg)'
    palette:
@@ -21,19 +21,82 @@ extra:
   search:
     language: 'jp'
 
+
 nav:
     - 首页: index.md
-    - Micro:bit产品: 
+    - 传感器/配件:
+      - 总览: sensors/index.md
+      - 基础模块:
+        - 按键模块: sensors/base_model/button.md
+        - 触摸模块: sensors/base_model/touch.md
+        - 碰触开关模块: sensors/base_model/collision.md
+        - 旋转电位器模块: sensors/base_model/rotaryPotentiometer.md
+        - 旋转编码器模块: sensors/base_model/rotaryEncoder.md
+        - 触摸钢琴模块: sensors/base_model/touchPiano.md
+        - 滑动电阻器模块: sensors/base_model/slidePotentiometer.md
+        - 摇杆模块: sensors/base_model/rocker.md
+      - 传感器: 
+        - 声音传感器: sensors/sensors/voiceSensor.md
+        - 光敏传感器: sensors/sensors/photosensitiveSensor.md
+        - 热敏传感器: sensors/sensors/thermalSensor.md
+        - 火焰传感器: sensors/sensors/flameSensor.md
+        - 土壤湿度传感器: sensors/sensors/soilMoistureSensor.md
+        - 雨滴传感器: sensors/sensors/waterDropletsSensor.md
+        - 水深传感器: sensors/sensors/waterDepthSensor.md
+        - 温湿度传感器: sensors/sensors/temperatureAndHumiditySensor.md
+        - 温度DS18B20传感器: sensors/sensors/ds18B20Sensor.md
+        - 气体传感器: sensors/sensors/MQ4Sensor.md
+        - 人体热肆电传感器: sensors/sensors/bodySensor.md
+        - 红外循迹模块传感器: sensors/sensors/trackingSensor.md
+        - MPU6050六轴陀螺仪: sensors/sensors/mpu6050Sensor.md
+        - 手势传感器: sensors/sensors/gestureRecognitionSensor.md
+        - 磁簧开关传感器: sensors/sensors/magneticSwitchSensor.md
+        - 灰度传感器: sensors/sensors/grayscaleSensor.md
+        - 震动传感器: sensors/sensors/shockSensor.md
+        - 倾斜传感器: sensors/sensors/tiltSwitchSensor.md
+        # - 普通超声波传感器: sensors/sensors/ultrasonicSensor.md
+        - RGB超声波传感器: sensors/sensors/rgbUltrasonicSensor.md
+
+      - 执行器: 
+        - 有源蜂鸣器模块: sensors/actuators/buzzerModel.md
+        - 无源蜂鸣器模块: sensors/actuators/passiveBuzzerModel.md
+        - 直流电机模块: sensors/actuators/motorModel.md
+        - 继电器模块: sensors/actuators/relayModel.md
+        - 激光发射模块: sensors/actuators/laserEmissionModel.md
+        - 红外发射模块: sensors/actuators/infraredEmissionModel.md
+        - 红外接收模块: sensors/actuators/irReceiverModel.md
+        - 4x4矩阵键盘模块: sensors/actuators/4x4MatrixKeyboardModel.md
+        # - 舵机模块: sensors/actuators/servoModel.md
+        # - 双路电机驱动模块: sensors/actuators/highSpeedMiniMotorDriveBoardModel.md
+        # - 普通红外遥控器模块: sensors/actuators/IRRemoteControlModel.md
+        # - emakefun红外遥控器模块: sensors/actuators/emakefunIRRemoteControlModel.md
+
+      - 显示器: 
+        - LED灯: sensors/shows/LED.md
+        - 1602LCD显示屏: sensors/shows/LCD1602.md
+        - TM1650四位数码管: sensors/shows/TM1650.md
+        - TM1637四位时钟数码管: sensors/shows/TM1637.md
+        - 8x8点阵屏: sensors/shows/8x8LedDisplay.md
+        - 红绿交通灯: sensors/shows/trafficLights.md
+        - RGB三色灯: sensors/shows/RGB.md
+        - RGB三色环: sensors/shows/RGBRing.md
+      - 配件: micro_bit/IObit.md
+    - Micro:bit产品:
+      - Micro:bit主板介绍: micro_bit/IObit.md
       - IObit: micro_bit/IObit.md
+      - Sensor:bit: micro_bit/IObit.md
       - Magic:bit: micro_bit/magicbit.md
       - Magic:bit四合一战车: micro_bit/FourInOneCar.md
       - Magic:bit麦轮战车: micro_bit/WheatwheelCar.md
     - Arduino可编程产品: 
+      - Arduino主板介绍: arduino/Hummerbot2.md
       - Hummerbot: arduino/Hummerbot2.md
       - Hummerbot图形化编程: arduino/Hummerbot.md
       - Happybot: arduino/Happybot.md
       - MirageTank: arduino/MirageTank.md
       - PantherTank: arduino/PantherTank.md
+    - 树莓派: 
+      - 树莓派介绍: open_source_hardware/Ble-Nano.md
     - 开源硬件: 
       - Ble-Nano: open_source_hardware/Ble-Nano.md
       - Ble-Uno: open_source_hardware/Ble-Uno.md
