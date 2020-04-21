@@ -86,6 +86,7 @@ nav:
       - IObit: micro_bit/IObit.md
       - Sensor:bit: micro_bit/IObit.md
       - Magic:bit: micro_bit/magicbit.md
+      - Motor:bit: micro_bit/motorbit.md
       - Magic:bit四合一战车: micro_bit/FourInOneCar.md
       - Magic:bit麦轮战车: micro_bit/WheatwheelCar.md
     - Arduino可编程产品: 
