@@ -76,6 +76,8 @@
     $(document).ready(function(){
       $("#treeview").treeview({
         collapsed: true,
+        persist : "cookie",
+        cookieOptions : { path: '/' },
         ExpendLevel:1,
         toggle: function() {
           // console.log("%s was toggled.", $(this).find(">span").text());
