@@ -46,7 +46,7 @@ nav:
         - 温湿度传感器: sensors/sensors/temperatureAndHumiditySensor.md
         - 温度DS18B20传感器: sensors/sensors/ds18B20Sensor.md
         - 气体传感器: sensors/sensors/MQ4Sensor.md
-        - 人体热肆电传感器: sensors/sensors/bodySensor.md
+        - 人体热释电传感器: sensors/sensors/bodySensor.md
         - 红外循迹模块传感器: sensors/sensors/trackingSensor.md
         - MPU6050六轴陀螺仪: sensors/sensors/mpu6050Sensor.md
         - 手势传感器: sensors/sensors/gestureRecognitionSensor.md
