@@ -1,6 +1,6 @@
 # LED 模块规格书
 
-![06](E:\课件文本备份\Makedown文档\LED模块\LED模块图片\06.jpg)
+![06](LED模块图片\06.jpg)
 
 ## 概述
 
@@ -23,11 +23,11 @@ LED是发光二极管的缩写，由混合化合物制成，即镓（Ga），砷
 
 ## 模块尺寸
 
-![07](E:\GitLab\sensors-kit\15.LED灯模块\LED模块图片\07.jpg)
+![07](LED模块图片\07.jpg)
 
 ## 连接方式
 
-![04](E:\课件文本备份\Makedown文档\LED模块\LED模块图片\04.jpg)
+![04](LED模块图片\04.jpg)
 
 ##  arduino 应用场景
 
@@ -50,4 +50,4 @@ void loop()
 
 ### 实验效果图
 
-![03](E:\课件文本备份\Makedown文档\LED模块\LED模块图片\03.jpg)
+![03](LED模块图片\03.jpg)

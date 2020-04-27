@@ -82,7 +82,8 @@ nav:
         - RGB三色环: sensors/shows/RGBRing.md
       - 配件: micro_bit/IObit.md
     - Micro:bit产品:
-      - Micro:bit主板介绍: micro_bit/IObit.md
+      - Micro:bit主板介绍: micro_bit/microbit.md
+      - Micro:bit编程介绍: micro_bit/microbit_code.md
       - IObit: micro_bit/IObit.md
       - Sensor:bit: micro_bit/IObit.md
       - Magic:bit: micro_bit/magicbit.md

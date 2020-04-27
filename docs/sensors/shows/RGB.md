@@ -1,6 +1,6 @@
 # RGB三色灯模块规格书
 
-![60](E:\GitLab\sensors-kit\16.RGB 三色灯模块\RGB 三色灯模块图片\60.jpg)
+![60](RGB 三色灯模块图片\60.jpg)
 
 ## 概述
 
@@ -25,11 +25,11 @@ LED是发光二极管的缩写，由混合化合物制成，即镓（Ga），砷
 
 ## 模块尺寸
 
-![05](E:\GitLab\sensors-kit\16.RGB 三色灯模块\RGB 三色灯模块图片\05.jpg)
+![05](RGB 三色灯模块图片\05.jpg)
 
 ## 连接方式
 
-![03](E:\GitLab\sensors-kit\16.RGB 三色灯模块\RGB 三色灯模块图片\03.jpg)
+![03](RGB 三色灯模块图片\03.jpg)
 
 ##  arduino 应用场景
 
@@ -65,4 +65,4 @@ void loop()
 
 ### 实验效果图
 
-![04](E:\GitLab\sensors-kit\16.RGB 三色灯模块\RGB 三色灯模块图片\04.jpg)
+![04](RGB 三色灯模块图片\04.jpg)

@@ -1,6 +1,6 @@
 # 12位RGB灯环模块规格书
 
-![01](E:\GitLab\sensors-kit\14.12位RGB灯环\12位RGB灯环图片\01.jpg)
+![01](12位RGB灯环图片\01.jpg)
 
 ## 概述
 
@@ -24,11 +24,11 @@ WS2812是一个集控制电路与发光电路于一体的智能外控LED光源�
 
 ## 模块尺寸
 
-![02](E:\GitLab\sensors-kit\14.12位RGB灯环\12位RGB灯环图片\02.jpg)
+![02](12位RGB灯环图片\02.jpg)
 
 ## 连接方式
 
-![08](E:\GitLab\sensors-kit\14.12位RGB灯环\12位RGB灯环图片\08.jpg)
+![08](12位RGB灯环图片\08.jpg)
 
 
 ##  arduino 应用场景
@@ -90,4 +90,4 @@ void loop() {
 
 ### 实验效果图
 
-![05](E:\GitLab\sensors-kit\14.12位RGB灯环\12位RGB灯环图片\05.jpg)
+![05](12位RGB灯环图片\05.jpg)
