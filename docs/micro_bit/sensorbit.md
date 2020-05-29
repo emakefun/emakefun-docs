@@ -104,7 +104,7 @@ Sensor:bit 是专为 Micro:bit 与各种传感器连接所设计的，对与 PH2
 	- 使用例程:`Rotarypotentiometer.read(1)`  #读取连接在1号引脚的旋转电位器值 
 	```
 	# Micro:bit 屏幕显示电位器值
-	from mcirobit import *
+	from microbit import *
 	from sensor import Rotarypotentiometer
 	while True:
 		display.scroll(Rotarypotentiometer.read(1))
@@ -129,16 +129,19 @@ Sensor:bit 是专为 Micro:bit 与各种传感器连接所设计的，对与 PH2
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句:`TouchPiano.read(CLK_pin, DIO_pin)`#CLK_pin/DIO_pin:引脚序号
-	- 使用例程:`TouchPiano.read(8, 12)` #读取连接在8、12引脚的触摸钢琴模块返回值
+	- 功能语句:`touch_piano.init(pin_clk, pin_dio)`   #初始化钢琴模块的CLK，DIO引脚
+	- touch_piano.get_key()  #获取钢琴按键值，返回对应键值 1 ~ 8
+	- 使用例程:`touch_piano.init(pin8, pin12)` #读取连接在P8，P12引脚的触摸钢琴模块
 	```
 	# Micro:bit 屏幕显示触摸钢琴模块返回值
 	from microbit import *
-	from microbit import TouchPiano
+	from sensor import touch_piano
+	touch_piano.init(pin8, pin12)
 	while True:
-		if TouchPiano.read(8, 12) == 1:
+		key = touch_piano.get_key()
+		if key == 1:
 			display.show(1)
-		elif TouchPiano.read(8, 12) == 2:
+		elif key == 2:
 			display.show(2)
 	```
 
@@ -151,8 +154,15 @@ Sensor:bit 是专为 Micro:bit 与各种传感器连接所设计的，对与 PH2
 	- 功能语句: 
 	- 使用例程: 
 	```
-	# Micro:bit 显示矩阵键盘被按下的键
+	from microbit import *
+	from sensor import maxtix_keypad
+	maxtix_keypad.init(pin8, pin12)
+	while True:
+    	key = maxtix_keypad.get_key()
+    	if key < 16:
+        	display.scroll(key)
 	```
+	# Micro:bit 显示矩阵键盘被按下的键
 
 ### 滑动电阻器模块
 
@@ -206,7 +216,7 @@ PS2 摇杆模块结构非常简单，它包含一个触摸按钮（Z轴）和两
 ![]()
 - micropython 编程
 	- 功能语句:  `Sound.read_digital(pin)`  #pin:引脚序号(5V电压引脚)
-	 			`Sound.read_analog(pin)` #pin:0/1/2(引脚序号)
+		 			`Sound.read_analog(pin)` #pin:0/1/2(引脚序号)
 	- 使用例程: `Sound.read_analog(1)` #读取连接在1号引脚的值
 	```
 	# Micro:bit 检测周围是否有声音
@@ -335,11 +345,20 @@ DHT11数字温度 - 湿度传感器是一种包含校准数字信号输出的复
 ![]()
 - micropython 编程
 	- 功能语句: 
+	- dht11.ini(pin)  # pin 初始化引脚
+	- dht11.temperature() #获取环境温度  摄氏度
+	- dht11.humidity()  #获取环境湿度
 	- 使用例程: 
+	- # Micro:bit 屏幕显示温湿度
+```
+from microbit import *
+from sensor import dht11
+dht11.init(pin1)
+While True:
+	display.scroll(dht11.temperature())
+	display.scroll(dht11.humidity())
 	```
-	# Micro:bit 屏幕显示温湿度
-	```
-
+	
 ### DS18B20 温度传感器
 
 DS18B20是常用的数字温度传感器，其输出的是数字信号，具有体积小，硬件开销低，抗干扰能力强，精度高的特点。[DS18B20 温度传感器]()
@@ -401,18 +420,6 @@ MQ-4天然气传感器所使用的气敏材料是在清洁空气中电导率较�
     		display.scroll('black')
     	else:
         	display.scroll('white')
-	```
-
-### MPU6050六轴陀螺仪
-
-MPU6050 集成了3轴陀螺仪与3轴加速度的 6轴运动处理组件，可以通过 I2C端口进行信息的传输。不仅可以作为检测模块，也可以作为处理模块，处理连接到 MPU6050的外接设备传输的信息。[MPU6050六轴陀螺仪规格书]()
-- makecode 编程
-![]()
-- micropython 编程
-	- 功能语句:
-	- 使用例程: 
-	```
-	# Micro:bit 显示 X轴加速度
 	```
 
 ### 手势传感器
@@ -498,20 +505,20 @@ MPU6050 集成了3轴陀螺仪与3轴加速度的 6轴运动处理组件，可�
 		sleep(1000)
 	```
 
-### RGB 超声波传感器
+###  超声波传感器
 
 RUS-04是由 深圳市易创空间科技有限公司 (www.emakefun.com )研发的一款将RGB灯珠和超声波测距模块集成在一起的全新模块。功能尺寸大小完全兼容HC-SR04模块，操作用由原来需要两个GPIO口操作，到现在只需要一个GPIO即可操作超声波收发，并且在超声波探头测距的同时，左右探头可以发出7彩炫彩灯光。[RGB 超声波传感器规格书]()
 - makecode 编程
 ![]()
 - micropython 编程，[RGB灯光控制，Micro:bit产品->Micro:bit编程介绍->RGB特效灯](https://emakefun-docs.readthedocs.io/zh_CN/latest/micro_bit/microbit_code/)
-	- 功能语句:`RGBRUS.read(pin_RX, pin_TX)`#pin_RX/pin_TX:引脚号(可以相同)
-	- 使用例程:`RGBRUS.read(8, 8)` #读取RGB超声波IO口连在 8号引脚的值
+	- 功能语句:`ultrasonic.init_hc_sr04(trig_pin, echo_pin)`# 超声波发射 接收引脚
+	- 使用例程:`ultrasonic.get_hc_sr04_distance()` #读取超声波测试距离
 	```
 	# Micro:bit 屏幕显示前方距离
 	from microbit import *
-	from sensor import RGBRUS
+	from sensor import ultrasonic
 	while True:
-		display.scroll(RGBRUS.read(8, 8))
+		display.scroll(ultrasonic.get_hc_sr04_distance())
 		sleep(1000)
 	```
 
@@ -525,18 +532,18 @@ RUS-04是由 深圳市易创空间科技有限公司 (www.emakefun.com )研发�
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句: `Buzzer.write(pin, value)`  # pin:引脚序号  value:1/0(电平)
-	- 使用例程: `Buzzer.write(1, 1)`  # 设置连接在 1号引脚的蜂鸣器为高电平
+	- 功能语句: `buzzer.sing(pin, bool)` # pin:引脚序号 bool:是否发声音True发声音，False不发声音
+	- 使用例程: `buzzer.sing(pin1, True)`  # 设置连接在 1号引脚的蜂鸣器为高电平
 	```
 	# Micro:bit 按键控制有源蜂鸣器发声
 	from microbit import *
-	from sensor import Buzzer
+	from sensor import buzzer
     while True:
         if button_a.was_pressed():
-            Buzzer.write(1, 1)
+            buzzer.sing(pin1, True)
             sleep(1000)
         else:
-            Buzzer.write(1, 0)
+            buzzer.write(pin1, False)
 	```
 
 ### 无源蜂鸣器
@@ -579,16 +586,16 @@ RUS-04是由 深圳市易创空间科技有限公司 (www.emakefun.com )研发�
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句:`Relay.write(pin, value)` #pin:引脚序号 value:0/1（电平）
-	- 使用例程:`Relay.write(1, 1)` #设置连接在 1号引脚的继电器模块引脚为高电平 
+	- 功能语句:`relay.control(pins, bool)` #pin:引脚序号 value: True:继电器吸合 False 继电器释放
+	- 使用例程:`relay.control(pin1, 1)` #控制pin1引脚的继电器 吸合
 	```
 	# Micro:bit 控制继电器开合
 	from microbit import *
-	from sensor import Relay
+	from sensor import relay
 	while True:
-    	Relay.write(1, 1)
+    	relay.control(pin1, True)
     	sleep(1000)
-		Relay.write(1, 0)
+		relay.control(pin1, False)
     	sleep(1000)
 	```
 
@@ -644,18 +651,20 @@ LED（Light Emitting Diode），发光二极管，是一种能够将电能转化
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句:`LED.write_digital(pin, value)` #pin:引脚序号 value:0/1电平
-			  `LED.write_analog(pin, value)` #pin:引脚序号 value:0~1023
-	- 使用例程:`LED.write_digital(1, 1)` #设置连接在1号引脚为高电平
-			  `LED.write_analog(1, 500)` #设置连接在1号引脚模拟值为500
+	- 功能语句:
+              `led.light(pins, value)` #pins：引脚命 value: 1点亮 0熄灭
+			  `led.brightness(value)` #pins：引脚名 value:0~1023
+	- 使用例程: `led.light(pin1, True)` #点亮连接在P1号引脚的LED灯
+			  `led.brightness(pin1, 500)` #设置连接在1号引脚亮度为500
 	```
 	# Micro:bit 按键控制 LED灯闪烁
 	from microbit import *
-	from sensor import LED
+	from sensor import led
+
 	while True:
-		LED.write_digital(1)
+		led.light(pin1, True)
     	sleep(1000)
-    	LED.write_digital(0)
+    	led.brightness(pin1, 10)
     	sleep(1000)
 	```
 
@@ -665,10 +674,24 @@ LCD1602是一种专门用于显示字母，数字和符号的字符LCD模块。 
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句: 
+	- lcd1602.init(addr)  #lcd1602地址初始化
+	- lcd1602.clear()     #清屏
+	- lcd1602.on()        #打开显示屏
+	- lcd1602.off()       #关闭显示屏
+	- lcd1602.backlight_on()   #打开背光
+	- lcd1602.backlight_off()  #关闭背光
+	- lcd1602.shift_left()     #左移
+	- lcd1602.shift_right()    #右移
+	- lcd1602.show_number(number, x, y)  #numble显示数字 x,y显示的起始位置
+	- lcd1602.show_string(str, x, y)     #str显示字符串 x,y显示的起始位置
 	- 使用例程: 
 	```
-	# 1602LCD 显示屏显示 “Hello emakefun!”
+	# 显示屏显示 “hello emakefun !”
+	from sensor import lcd1602
+	lcd1602.init(39)
+	lcd1602.on()
+	lcd1602.backlight_on()
+	lcd1602.show_string("hello emakefun !", 1, 1)
 	```
 ### TM1650 四位数码管模块
 
@@ -676,18 +699,19 @@ LCD1602是一种专门用于显示字母，数字和符号的字符LCD模块。 
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句:  `Tm1650.write(place, data, point)`  # place:1~4(数码管位) 					data:0~9(显示数字)  point:0/1(是否显示小数点)
-				`Tm1650.clear(place)`  # place:1~4(数码管位)
-	- 使用例程:  `Tm1650.write(1, 2, 1)`  # 第一位数码管显示2，小数点位显示
-				`Tm1650.clear(1)`  # 清除第一位数码管显示
+	- 功能语句:  `tm1650.on(intensity)`  # 打开数码管，intensity是亮度 0 ~8可选，默认是亮度是5
+	            `tm1650.on()`     # 关闭数码管
+				`tm1650.clear()`  # 清除数码管显示
+				`tm1650.show_digit(digit, bit)` # digit: 0~F之间的数字 bit: 显示位数
+				`tm1650.show_number(number)` # 显示数字最大9999
+				`tm1650.show_dp(bit, boole)` # bit:小数点位数 boole: True点亮 False 熄灭
+	
 	```
 	# TM1650 四位数码管显示数字
-	from microbit import *
-	from sensor import Tm1650
-	while True:
-		Tm1650.write(1, 2, 1)
-		sleep(2000)
-		Tm1650.clear(1)
+     from sensor import tm1650
+     tm1650.on(5)
+     tm1650.show_digit(4, 2)
+     tm1650.show_dp(2, True)
 	```
 
 ### TM1637 四位时钟数码管模块
@@ -719,10 +743,28 @@ LCD1602是一种专门用于显示字母，数字和符号的字符LCD模块。 
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句: 
-	- 使用例程: 
+	- 功能语句:  `matrix7219.init(din_pin, cs_pin, clk_pin)`  #初始化spi引脚 din,cs,clk引脚序号
+			    `matrix7219.set_pixel(x, y, intensity)` #x,y是显示坐标0~7 intensity是显示亮度 0~15
+			    `matrix7219.dram(image)` #绘图函数 image点阵字符串中间用冒号隔开每一行的显示  
+			    `matrix7219.clear()` # 清除显示
+	- 使用例程: # 8x8 点阵屏显示 “心型”
 	```
-	# 8x8 点阵屏显示 “你好”
+from sensor import matrix7219
+matrix7219.init(pin15, pin2, pin13)
+from microbit import *
+from sensor import matrix7219
+matrix7219.init(pin15, pin2, pin13)
+image = \
+"000000:\
+01100110:\
+11111111:\
+11111111:\
+01111110:\
+00111100:\
+00011000:\
+00000000"
+ 
+matrix7219.draw(image)
 	```
 
 ### 红绿交通灯模块
