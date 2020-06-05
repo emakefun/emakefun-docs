@@ -117,12 +117,25 @@ Sensor:bit 是专为 Micro:bit 与各种传感器连接所设计的，对与 PH2
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句: 
-	- 使用例程: 
+	- 功能语句:`encoder.is_pressed(pin)`  # pin旋转编码器按键引脚（丝印D)
+	`encoder.pulse(A_pin, B_pin)` #读取旋转编码器A B上的脉冲 顺时针为正数，逆时针转为负数 正负发生变化的时候脉冲数从零开始计数
 	```
-	# Micro:bit 屏幕显示旋转编码器值
+	# Micro:bit 串口带引电位器值
+	from microbit import *
+	from sensor import encoder
+	uart.init(115200)
+	while True:
+	    pulse = encoder.pulse(pin0, pin1)
+	    if pulse > 0:
+	        uart.write("Clockwise: ")
+	        # 顺时针转
+	        uart.write(bytes(str(pulse)+"\r\n", 'utf-8'))
+	    elif pulse < 0:
+	        uart.write("anti-clockwise: ")
+	        # 逆时针转
+	        uart.write(bytes(str(pulse)+"\r\n", 'utf-8'))
 	```
-
+![encoder_test.png](sensorbit/encoder_test.png)
 ### 触摸钢琴模块
 
 触摸钢琴模块原理是通过分布在芯片端口的电容因为手指的接触，使电容发生了改变，经芯片处理后能将微小的电容变化转化成电压信号的变化，再通过软件AD采集端口电压，根据电压的变化实现触摸的识别。[触摸钢琴模块规格书]()
@@ -182,28 +195,31 @@ Sensor:bit 是专为 Micro:bit 与各种传感器连接所设计的，对与 PH2
 
 ### PS2 遥杆模块
 
-PS2 摇杆模块结构非常简单，它包含一个触摸按钮（Z轴）和两个电位器（X轴和Y轴）。 操纵杆根据两个触点位置判断运动方向，其中一个触点向左和向右，另一个向上和向下，操纵杆移动决定了触点的位置，就像地球的纬度和经度一样，不同的位置对应不同的电压，然后控制器可以通过AD传感器读取不同的电压值，从而识别特定的远程位置。[PS2 遥感模块规格书]()
+PS2 摇杆模块结构非常简单，它包含一个触摸按钮（Z轴）和两个电位器（X轴和Y轴）。 操纵杆根据两个触点位置判断运动方向，其中一个触点向左和向右，另一个向上和向下，操纵杆移动决定了触点的位置，就像地球的纬度和经度一样，不同的位置对应不同的电压，然后控制器可以通过AD传感器读取不同的电压值，从而识别特定的远程位置。模块供电3.3V
+
+[PS2 遥感模块规格书]()
+
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句:  `Rocker.read_digital(pin)` #pin:引脚序号
-				`Rocker.read_analog(pin)`  #pin:0/1/2 (引脚序号)
-				`Rocker.read_all(pin_X, pin_Y, pin_B)`  								#pin_X/pin_Y:0/1/2(引脚序号)    pin_B:引脚序号
-	- 使用例程:  `Rocker.read_digital(0)` #读取摇杆按键值，按键引脚连接在0引脚
-				`Rocker.read_analog(1)`  #读取摇杆模拟值，摇杆X/Y连接在1引脚
-				`Rocker.read_all(0, 1, 8)`  											#读取摇杆所有返回值，摇杆X连接在0引脚、Y连接在1引脚、B连接在8引脚
-	```
-	# Micro:bit 屏幕显示摇杆值
-	from microbit import *
-	from sensor import Rocker
-	data = [0, 0, 0]
-	while True:
-    	data = Rocker.read_all(0, 1, 8)
-    	display.scroll(data[0])
-    	display.scroll(data[1])
-    	display.scroll(data[2])
-    	sleep(1000)
-	```
+	- 功能语句:  `joystick.is_pressed(pin)`   #pin:接在摇杆button(丝印B）的引脚序号
+				`joystick.read_x_analog(pin)`  #pin 读取摇杆X轴(丝印X)的引脚序号
+				`joystick.read_y_analog(pin)`  #pin 读取摇杆Y轴(丝印X)的引脚序号
+	- 使用例程:  `joystick.is_pressed(pin8)` # 读取摇杆上的按键是否按下
+				`joystick.read_x_analog(pin0)`  #读取摇杆X模拟值 返回值0~255，不操作摇杆为中间值128
+				`joystick.read_y_analog(pin1)`  #读取摇杆Y模拟值 返回值0~255，不操作摇杆为中间值128
+
+```
+# Micro:bit 屏幕显示摇杆值
+from microbit import *
+from sensor import joystick
+while True:
+    display.scroll("x:")
+    display.scroll(joystick.read_x_analog(pin0))
+    display.scroll("y:")
+    display.scroll(joystick.read_y_analog(pin1))
+    sleep(1000)
+```
 
 ## 检测类传感器
 
@@ -215,16 +231,18 @@ PS2 摇杆模块结构非常简单，它包含一个触摸按钮（Z轴）和两
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句:  `Sound.read_digital(pin)`  #pin:引脚序号(5V电压引脚)
-		 			`Sound.read_analog(pin)` #pin:0/1/2(引脚序号)
-	- 使用例程: `Sound.read_analog(1)` #读取连接在1号引脚的值
+	- 功能语句:  `sound.is_detected(pin)`  #pin:声音传感器的数字引脚
+		 		`sound.get_value(pin)`    #pin:声音传感器的模拟引脚
+	- 使用例程: 
+	- `sound.get_value(pin12)` #读取pin12引脚上的声音传感器强度值 0~ 1023
+	- `sound.is_detected(pin8)` #判断是否有声音 返回结果1检测到有声音
 	```
 	# Micro:bit 检测周围是否有声音
 	from microbit import *
-	from sensor import Sound
+	from sensor import sound
 	while True:
-		display.scroll(Sound.read_digital(8))
-		sleep(1000)
+		display.scroll(sound.is_detected(pin8))
+		sleep(100)
 	```
 
 ### 热敏传感器
@@ -308,16 +326,14 @@ PS2 摇杆模块结构非常简单，它包含一个触摸按钮（Z轴）和两
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句:  `Waterdroplets.read_digital(pin)`  # pin:引脚序号
-				`Waterdroplets.read_analog(pin)`  # pin:0/1/2(引脚序号)
-	- 使用例程:  `Waterdroplets.read_digital(0)`  # 读取连接在0号引脚传感器值
-				`Waterdroplets.read_analog(1)`  # 读取连接在1号引脚传感器值
+	- 功能语句:  `water.get_value(pin)`  # pin 模拟读引脚
+	-  			`water.is_droplets(pin)` # pin 判读是否有雨滴
 	```
 	# Micro:bit 检测是否下雨
 	from microbit import *
-	from snesor import Waterdroplets
+	from sensor import water
 	while True:
-		if not Waterdroplets.read_digital(1):
+		if not water.is_droplets(pin1):
 			display.scroll('raining')
 	```
 
@@ -327,14 +343,13 @@ PS2 摇杆模块结构非常简单，它包含一个触摸按钮（Z轴）和两
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句: `Waterdepth.read(pin)`  # pin:0/1/2(引脚序号)
-	- 使用例程: `Waterdepth.read(1)` #读取连接在1号引脚的水深传感器数据值
+	- 使用例程: `water.get_depth(pin)`  #pin 模拟读引脚 获取水深单位mm 实际有误差
 	```
 	# Micro:bit 屏幕显示水深
 	from microbit import *
-	from sensor import Waterdepth
+	from sensor import water
 	while True:
-		display.scroll(Waterdepth.read(1))
+		display.scroll(water.get_value(pin1))
 		sleep(1000)
 	```
 
@@ -354,12 +369,12 @@ DHT11数字温度 - 湿度传感器是一种包含校准数字信号输出的复
 from microbit import *
 from sensor import dht11
 dht11.init(pin1)
-While True:
+while True:
 	display.scroll(dht11.temperature())
 	display.scroll(dht11.humidity())
-	```
-	
-### DS18B20 温度传感器
+```
+
+### DS18B20 温度传感器 （暂无）
 
 DS18B20是常用的数字温度传感器，其输出的是数字信号，具有体积小，硬件开销低，抗干扰能力强，精度高的特点。[DS18B20 温度传感器]()
 - makecode 编程
@@ -377,10 +392,18 @@ MQ-4天然气传感器所使用的气敏材料是在清洁空气中电导率较�
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句: 
+	- 功能语句:  `gas_detector.is_detected(pin)`  #pin:气体传感器的数字引脚
+		 		`gas_detector.get_value(pin)`    #pin:气体传感器的模拟引脚
 	- 使用例程: 
+	- `gas_detector.get_value(pin12)` #读取pin12引脚上的气体传感器强度值0~ 1023
+	- `gas_detector.is_detected(pin8)` #判断是否检测到气体 返回结果1检测到有对应气体
 	```
-	# Micro:bit 气体报警器
+	# Micro:bit 检测周围是否有天然气，甲烷
+	from microbit import *
+	from sensor import gas_detector
+	while True:
+		display.scroll(gas_detector.is_detected(pin8))
+		sleep(100)
 	```
 
 ### 人体热释电传感器
@@ -422,7 +445,7 @@ MQ-4天然气传感器所使用的气敏材料是在清洁空气中电导率较�
         	display.scroll('white')
 	```
 
-### 手势传感器
+### 手势传感器（暂无）
 
 手势检测利用四个方向的光电二极管感应反射的红外能量（由集成LED提供），将物理运动信息（即速度、方向和距离）转换为数字信息。简单的上下左右手势或更复杂的手势可以被准确地感知。[手势传感器规格书]()
 - makecode 编程
@@ -473,16 +496,16 @@ MQ-4天然气传感器所使用的气敏材料是在清洁空气中电导率较�
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句:`Shock.read_analog(pin)`  # pin:0/1/2（引脚序号）
-			  `Shock.read_digital(pin)`  # pin:引脚序号
-	- 使用例程:`Shock.read_analog(1)`  # 读取连接在 1号引脚的震动传感器模拟值
-			  `Shock.read_digital(1)`  # 读取连接在 1号引脚的震动传感器数值
+	- 功能语句:`shock.get_value(pin)`  # pin:0/1/2（引脚序号）
+			  `shock.is_shocks(pin)`    # pin: 调节传感器的灵敏度来判断是否有震动
+	- 使用例程:`shock.get_value(pin1)`  # 读取连接在 1号引脚的震动传感器模拟值
+			  `shock.is_shocks(pin1)`  # 读取连接在 1号引脚的震动传感器数值
 	```
 	# Micro:bit 地震检测器
 	from microbit import *
-	from sensor import Shock
+	from sensor import shock
 	while True:
-		if Shock.read_analog(1) > 200:
+		if shock.get_value(pin1) > 200:
     		display.scroll('earthquake')
     	else:
         	display.show(Image.HAPPY)
@@ -505,9 +528,9 @@ MQ-4天然气传感器所使用的气敏材料是在清洁空气中电导率较�
 		sleep(1000)
 	```
 
-###  超声波传感器
+###  超声波传感器(HC_SR04)
 
-RUS-04是由 深圳市易创空间科技有限公司 (www.emakefun.com )研发的一款将RGB灯珠和超声波测距模块集成在一起的全新模块。功能尺寸大小完全兼容HC-SR04模块，操作用由原来需要两个GPIO口操作，到现在只需要一个GPIO即可操作超声波收发，并且在超声波探头测距的同时，左右探头可以发出7彩炫彩灯光。[RGB 超声波传感器规格书]()
+[RGB 超声波传感器规格书]()
 - makecode 编程
 ![]()
 - micropython 编程，[RGB灯光控制，Micro:bit产品->Micro:bit编程介绍->RGB特效灯](https://emakefun-docs.readthedocs.io/zh_CN/latest/micro_bit/microbit_code/)
@@ -517,8 +540,26 @@ RUS-04是由 深圳市易创空间科技有限公司 (www.emakefun.com )研发�
 	# Micro:bit 屏幕显示前方距离
 	from microbit import *
 	from sensor import ultrasonic
+	ultrasonic.init_hc_sr04(pin8, pin12)
 	while True:
 		display.scroll(ultrasonic.get_hc_sr04_distance())
+		sleep(1000)
+	```
+###  RGB超声波传感器(SRU-04)
+
+RUS-04是由 深圳市易创空间科技有限公司 (www.emakefun.com )研发的一款将RGB灯珠和超声波测距模块集成在一起的全新模块。功能尺寸大小完全兼容HC-SR04模块，操作用由原来需要两个GPIO口操作，到现在只需要一个GPIO即可操作超声波收发，并且在超声波探头测距的同时，左右探头可以发出7彩炫彩灯光。[RGB 超声波传感器规格书]()
+- makecode 编程
+![]()
+- micropython 编程，[RGB灯光控制，Micro:bit产品->Micro:bit编程介绍->RGB特效灯](https://emakefun-docs.readthedocs.io/zh_CN/latest/micro_bit/microbit_code/)
+	- 功能语句:`ultrasonic.init_rus_04(io_pin, rgb_pin)`# 超声波发射io引脚和rgb引脚
+	- 使用例程:`ultrasonic.get_distance()` #读取超声波测试距离
+	```
+	# Micro:bit 屏幕显示前方距离
+	from microbit import *
+	from sensor import ultrasonic
+	ultrasonic.init_rus_04(pin8, pin12)
+	while True:
+		display.scroll(ultrasonic.get_distance())
 		sleep(1000)
 	```
 
@@ -543,7 +584,7 @@ RUS-04是由 深圳市易创空间科技有限公司 (www.emakefun.com )研发�
             buzzer.sing(pin1, True)
             sleep(1000)
         else:
-            buzzer.write(pin1, False)
+            buzzer.sing(pin1, False)
 	```
 
 ### 无源蜂鸣器
@@ -565,19 +606,17 @@ RUS-04是由 深圳市易创空间科技有限公司 (www.emakefun.com )研发�
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句:`Motor.write_analog(pin, value)` #pin:引脚序号 value:0~1023
-	- 使用例程:`Motor.write_digital(pin, value)` #pin:引脚序号 value:0/1
+	- 功能语句:`dc_motor.run(INA, INB, speed)` #INA/INB引脚序号 speed:-100~100 正数代表正转 负数代表反转
+	- 使用例程:`dc_motor.run(pin8, pin12, 50)` #INA接pin8 INB接 pin12 正转速度50
 	```
 	# Micro:bit 按键控制直流电机正反转动
 	from microbit import *
-	from sensor import Motor
+	from sensor import dc_motor
     while True:
         if button_a.was_pressed():
-            Motor.write_digital(8, 0)
-            Motor.write_digital(12, 1)
+            dc_motor.run(pin8, pin12, 50)
         elif button_b.was_pressed():
-            Motor.write_digital(8, 1)
-            Motor.write_digital(12, 0)
+			dc_motor.run(pin8, pin12, -50)
 	```
 
 ### 继电器模块
@@ -639,8 +678,15 @@ RUS-04是由 深圳市易创空间科技有限公司 (www.emakefun.com )研发�
 - micropython 编程
 	- 功能语句:
 	- 使用例程: 
+	- # 红外接收模块接收信号，无线接收
 	```
-	# 红外接收模块接收信号，无线接收
+	from microbit import *
+	from sensor import nec_ir
+	nec_ir.init(pin2)
+	while True:
+    	key = nec_ir.get_code()
+    	if key != 0:
+        	display.scroll(key)
 	```
 
 ## 显示类传感器
@@ -696,22 +742,24 @@ LCD1602是一种专门用于显示字母，数字和符号的字符LCD模块。 
 ### TM1650 四位数码管模块
 
 4位7段数码管由一个12管脚的4位7段共阳极数码管和一个控制芯片TM1650构成。插口一边有大写字母IIC表示该模块采用IIC协议通信。此模块可以显示小数点位，所以经常应用在显示数字的设备上。[TM1650 四位数码管模块规格书]()
-- makecode 编程
-![]()
+
 - micropython 编程
-	- 功能语句:  `tm1650.on(intensity)`  # 打开数码管，intensity是亮度 0 ~8可选，默认是亮度是5
-	            `tm1650.on()`     # 关闭数码管
-				`tm1650.clear()`  # 清除数码管显示
-				`tm1650.show_digit(digit, bit)` # digit: 0~F之间的数字 bit: 显示位数
-				`tm1650.show_number(number)` # 显示数字最大9999
-				`tm1650.show_dp(bit, boole)` # bit:小数点位数 boole: True点亮 False 熄灭
+	- 功能语句: 
+	- `tm1650.on(intensity)`  # 打开数码管，intensity是亮度 0 ~ 7可选，默认是亮度是5
+	
+
+`tm1650.on()`     # 关闭数码管
+`tm1650.clear(bit)`  # 清除数码管第bit位， 如果默认没有参数就清除所有的位数
+`tm1650.show_digit(digit, bit)` # digit: 0~F之间的数字 bit: 显示位数
+`tm1650.show_number(number)` # 显示数字最大9999
+`tm1650.show_dp(bit, boole)` # bit:小数点位数 boole: True点亮 False 熄灭
 	
 	```
 	# TM1650 四位数码管显示数字
-     from sensor import tm1650
-     tm1650.on(5)
-     tm1650.show_digit(4, 2)
-     tm1650.show_dp(2, True)
+	 from sensor import tm1650
+	 tm1650.on(5)
+	 tm1650.show_digit(4, 2)
+	 tm1650.show_dp(2, True)
 	```
 
 ### TM1637 四位时钟数码管模块
@@ -720,16 +768,23 @@ LCD1602是一种专门用于显示字母，数字和符号的字符LCD模块。 
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句: `Tm1637.init(clk_pin, dio_pin)`  # clk_pin/dio_pin:引脚序号
-			   `Tm1637.show(place, data, point)`   #place:0~3(显示位) 						data:0~9（显示值） point:0/1（点是否显示）
-			   `Tm1637.clear(place_pin)`  # place_pin:引脚序号
-	- 使用例程: `Tm1637.init(8, 12)`  # 定义引脚，初始化
-			   `Tm1637.show(1, 0, 0)`   #在位置为 1的数码管显示0，不显示点
-			   `Tm1637.clear(1)`  # 清除位置为 1的显示
+	- 功能语句: 
+		
+
+`tm1637.init(clk_pin, dio_pin, intensity)`  # clk_pin/dio_pin:引脚序号 intensity数码管的亮度 0~7 默认是 3
+`tm1637.show_digit(hex, place, on_off)`   #hex:0~f（显示值）place:0~3(显示位)  on_off:True/Fase（点是否显示） 默认不显示时间点
+`tm1637.show_number(number, on_off)`   #number:  显示数字0~9999 ， on_off:True/False（点是否显示） 默认不显示时间点	   
+`tm1637.clear(place_pin)`  # 清除对应位数码管值，默认参数清除所有位
+`tm1637.on(intensity)`  # 清除对应位数码管值，默认参数清除所有位
+`tm1637.off()`  # 清除对应位数码管值，默认参数清除所有位
+- 使用例程: 
+`Tm1637.init(8, 12, 7)`  # 定义引脚，初始化 显示最亮
+`Tm1637.show_digit(10, 0, 0)`   #在位置为 0的数码管显示A，不显示点
+`Tm1637.clear(1)`  # 清除位置为 1的显示
 	```
 	# TM1637 四位时钟数码管显示数字
 	from microbit import *
-	from sensor improt *
+	from sensor improt tm1637
 	Tm1637.init(8, 12)
 	while True:
 		Tm1637.show(1, 0, 0)
@@ -743,14 +798,14 @@ LCD1602是一种专门用于显示字母，数字和符号的字符LCD模块。 
 - makecode 编程
 ![]()
 - micropython 编程
-	- 功能语句:  `matrix7219.init(din_pin, cs_pin, clk_pin)`  #初始化spi引脚 din,cs,clk引脚序号
-			    `matrix7219.set_pixel(x, y, intensity)` #x,y是显示坐标0~7 intensity是显示亮度 0~15
-			    `matrix7219.dram(image)` #绘图函数 image点阵字符串中间用冒号隔开每一行的显示  
-			    `matrix7219.clear()` # 清除显示
-	- 使用例程: # 8x8 点阵屏显示 “心型”
-	```
-from sensor import matrix7219
-matrix7219.init(pin15, pin2, pin13)
+	- 功能语句:  
+`matrix7219.init(din_pin, cs_pin, clk_pin, intensity)`  #初始化spi引脚 din,cs,clk引脚序号 intensity亮度默认是7
+`matrix7219.set_pixel(x, y, intensity)` #x,y是显示坐标0~7 intensity是显示亮度 0~15
+`matrix7219.draw(image)` #绘图函数 image点阵字符串中间用冒号隔开每一行的显示  
+`matrix7219.clear()` # 清除显示
+-使用例程:
+```
+# 8x8 点阵屏显示 “心型”
 from microbit import *
 from sensor import matrix7219
 matrix7219.init(pin15, pin2, pin13)
@@ -763,17 +818,14 @@ image = \
 00111100:\
 00011000:\
 00000000"
- 
 matrix7219.draw(image)
-	```
+```
 
 ### 红绿交通灯模块
-
 交通灯就是板载了3个不同颜色的LED灯，通过控制对应的引脚就可以控制灯的亮灭。[红绿交通灯规格书]()
-- makecode 编程
-![]()
 - micropython 编程
-	- 功能语句: `Waterlight.write(pin, value)`  #pin:引脚序号 value:0/1
+	- 功能语句: 
+`Waterlight.write(pin, value)`  #pin:引脚序号 value:0/1
 	- 使用例程: `Waterlight.write(1, 1023)`  #点亮连接在1号引脚的灯
 	```
 	# 控制红绿交通灯模块灯闪烁
@@ -804,7 +856,6 @@ RGB代表红色，绿色和蓝色通道，是行业颜色标准。RGB通过改�
 		RGB.write(1, 0)
 		sleep(1000)
 	```
-
 ### RGB三色环模块
 
 WS2812是一个集控制电路与发光电路于一体的智能外控LED光源。其外型与一个5050LED灯珠相同， 每个元件即为一个像素点。此外、它还具有低电压驱动，环保节能，亮度高，散射角度大，一致性好，超低功率，超长寿命等优点。[RGB三色环模块规格书]()
