@@ -98,7 +98,7 @@ nav:
       - MirageTank: arduino/MirageTank.md
       - PantherTank: arduino/PantherTank.md
     - 树莓派: 
-      - 树莓派介绍: open_source_hardware/Ble-Nano.md
+      - 树莓派介绍: RaspberryPi-Sensor-Board-master/README.md
     - 开源硬件: 
       - Ble-Nano: open_source_hardware/Ble-Nano.md
       - Ble-Uno: open_source_hardware/Ble-Uno.md
