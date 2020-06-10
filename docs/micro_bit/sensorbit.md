@@ -30,7 +30,9 @@
 
 # Sensor:bit 与 PH2.0接口传感器
 
-Sensor:bit 是专为 Micro:bit 与各种传感器连接所设计的，对与 PH2.0 接口的 Sensor:bit 、设计有一套量身定做的 PH2.0接口传感器套件。传感器种类多样，按照其作用类型可分为四大类：控制类传感器、检测类传感器、执行类传感器、显示类传感器。
+Sensor:bit 是专为 Micro:bit 与各种传感器连接所设计的，对与 PH2.0 接口的 Sensor:bit 、设计有一套量身定做的 PH2.0接口传感器套件。传感器种类多样，按照其作用类型可分为四大类：输入模块、传感器、执行类、显示器。
+
+要支持如下micropython语法需要[下载最新固件](https://raw.githubusercontent.com/emakefun/emakefun-docs/master/docs/micro_bit/sensorbit//firmware.hex)到microbit
 
 ## 输入模块
 
@@ -265,21 +267,24 @@ while True:
 ### 红外接收模块
 
 红外接收头是一种接收、放大、解调装置，内部集成电路已完成解调，输出是数字信号。红外发射二极管发出调制信号，红外接收头经过接收、解码、滤波等一系列操作后读出红外发送模块发送的数据。[红外接收模块规格书]()
-- makecode 编程
-![]()
-- micropython 编程
-	- 功能语句:
-	- 使用例程: 
-	- # 红外接收模块接收信号，无线接收
-	```
-	from microbit import *
-	from sensor import nec_ir
-	nec_ir.init(pin2)
-	while True:
-    	key = nec_ir.get_code()
-    	if key != 0:
-        	display.scroll(key)
-	```
+**makecode 编程**
+**micropython 编程**
+- 功能语句:
+> nec_ir.init(pin)          # 初始化nec协议解码 pin为引脚名字
+> nec_ir.get_code()     # 获取红外遥控器物理编码值1个字节，没有返回头码
+
+- 使用例程
+
+```
+# 红外接收模块接收信号，无线接收
+from microbit import *
+from sensor import nec_ir
+nec_ir.init(pin2)
+while True:
+    key = nec_ir.get_code()
+    if key != 0:
+        display.scroll(key)
+```
 
 ### 声音传感器
 
