@@ -206,3 +206,45 @@ motor:Bit 多功能扩展板与micro:Bit 主板
 
 ![motorbit_datasave2_zh](motorbit/motorbit_datasave2_zh.png)
 
+## micropython语法
+如果需要支持python语法，需要[下载最新固件](https://raw.githubusercontent.com/emakefun/emakefun-docs/master/docs/micro_bit/sensorbit//firmware.hex)到microbit
+
+- 直流电机控制：
+> dcmotor_run(index, speed)    # index: 1/2/3/4（电机序号）, speed: -255~255 (电机速度)
+> dcmotor_stop(index)   # 停止直流电机 index: 1/2/3/4 (电机序号)
+
+```
+#1号电机以150的速度正转 2号电机以200的速度反转
+import motor
+motorbit = motor.init()
+motorbit.dcmotor_run(1, 150)   # 支流电机M1 正向转动速度150
+motorbit.dcmotor_run(2, -200)   # 支流电机M1 反向向转动速度200
+sleep(2000)
+motorbit.dcmotor_stop(1)
+motorbit.dcmotor_stop(2)
+```
+
+- 步进电机运动：
+> stepper(index, degree)  # index: 1/2 (步进电机序号) , degree: -360~360 (转动角度)
+```
+# 控制1号步进电机转动150度
+import motor
+motorbit = motor.init()
+motorbit.stepper(1, 150)
+```
+
+- PWM舵机控制：
+> servo(index, degree, speed=10) inedx: 1/2/3/4/5/6/7/8 (舵机序号，分别对应s1/s2/s3/s4/s5/s6/s7/s8) , degree: 0~180 (角度方位) , speed: 1~10（舵机转动速度, 可以不输入）
+
+```
+# 控制连接在S1引脚的舵机转动到90°位置
+import motor
+motorbit = motor.init()
+motorbit.servo(1, 90)
+```
+```
+#控制连接在S1引脚的舵机以 5 速度转动到90°位置
+import motor
+motorbit = motor.init()
+motorbit.servo(1, 90, speed=5)
+```

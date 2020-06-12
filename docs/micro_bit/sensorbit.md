@@ -907,7 +907,7 @@ from microbit import *
 from monitor improt tm1637
 tm1637.init(pin8, pin12, 7)
 while True:
-    Tm1637.show(1, 0, 0)
+    Tm1637.show_digit(1, 0, 0)
     sleep(2000)
     Tm1637.clear(1)
 ```

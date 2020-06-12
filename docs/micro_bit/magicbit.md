@@ -189,3 +189,48 @@ micro:bit多功能电机驱动扩展板与emakefun红外遥控器
 
 ![magicbit_I2C_zh](magic_bit/magicbit_I2C2_zh.png)
 > 实验现象为：LCD1602液晶第一行显示**`Hello! emakefun!`**    ，第二行显示**`2019`**       [I2C实验例程源码](https://makecode.microbit.org/_4W9VYRez0Kga)
+
+## micropython语法
+如果需要支持python语法，需要[下载最新固件](https://raw.githubusercontent.com/emakefun/emakefun-docs/master/docs/micro_bit/sensorbit//firmware.hex)到microbit
+
+- 直流电机控制：
+> dcmotor_run(index, speed)    # index: 1/2/3/4（电机序号）, speed: -255~255 (电机速度)
+> dcmotor_stop(index)   # 停止直流电机 index: 1/2/3/4 (电机序号)
+
+```
+#1号电机以150的速度正转 2号电机以200的速度反转
+import motor
+motorbit = motor.init()
+magicbit.dcmotor_run(1, 150)   # 支流电机M1 正向转动速度150
+magicbit.dcmotor_run(2, -200)   # 支流电机M1 反向向转动速度200
+sleep(2000)
+magicbit.dcmotor_stop(1)
+magicbit.dcmotor_stop(2)
+```
+
+- 步进电机运动：
+> stepper(index, degree)  # index: 1/2 (步进电机序号) , degree: -360~360 (转动角度)
+```
+# 控制1号步进电机转动150度
+import motor
+magicbit = motor.init()
+magicbit.stepper(1, 150)
+```
+
+- PWM舵机控制：
+> servo(index, degree, speed=10) inedx: 1/2/3/4/5/6/7/8 (舵机序号，分别对应s1/s2/s3/s4/s5/s6/s7/s8) , degree: 0~180 (角度方位) , speed: 1~10（舵机转动速度, 可以不输入）
+
+```
+# 控制连接在S1引脚的舵机转动到90°位置
+import motor
+magicbit = motor.init()
+magicbit.servo(1, 90)
+```
+```
+#控制连接在S1引脚的舵机以 5 速度转动到90°位置
+import motor
+magicbit = motor.init()
+magicbit.servo(1, 90, speed=5)
+```
+
+
