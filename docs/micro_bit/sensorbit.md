@@ -323,11 +323,11 @@ while True:
 - 使用例程:
 > thermal.get_value(pin1)              #  读取连接在pin1号引脚的热敏传感器值
 ```
-# Micro:bit 屏幕显示光亮度值
+# Micro:bit 屏幕显示热度值
 from microbit import *
 from microbit import thermal
 while True:
-    display.scroll(get_value(pin1))
+    display.scroll(thermal.get_value(pin1))
     sleep(1000)
 ```
 
@@ -699,7 +699,7 @@ sleep(1000)
 from microbit import *
 from actuator import buzzer
 while True:
-    if button_a.was_pressed():
+    if button_a.is_pressed():
         buzzer.sing(pin1, True)
         sleep(1000)
     else:

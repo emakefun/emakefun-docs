@@ -200,8 +200,8 @@ micro:bit多功能电机驱动扩展板与emakefun红外遥控器
 ```
 #1号电机以150的速度正转 2号电机以200的速度反转
 import motor
-motorbit = motor.init()
-magicbit.dcmotor_run(1, 150)   # 支流电机M1 正向转动速度150
+magicbit = motor.init()
+magicbit.dcmotor_run(1, 150)    # 支流电机M1 正向转动速度150
 magicbit.dcmotor_run(2, -200)   # 支流电机M1 反向向转动速度200
 sleep(2000)
 magicbit.dcmotor_stop(1)
