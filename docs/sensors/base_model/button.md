@@ -2,7 +2,7 @@
 
 ## 按键模块图
 
-![tu1](button\tu1.png)
+![tu1](/tu1.png)
 
 ##  概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![tu3](button\tu3.png)
+![tu3](/tu3.png)
 
 ## 详细原理图
 
@@ -26,4 +26,4 @@
 
 
 
-![tu2](button\tu2.png)
+![tu2](/tu2.png)
