@@ -2,7 +2,7 @@
 
 ## 按键模块图
 
-![tu1](/tu1.png)
+![tu1](button/tu1.png)
 
 ##  概述
 
