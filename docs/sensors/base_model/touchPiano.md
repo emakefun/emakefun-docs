@@ -4,7 +4,7 @@
 
 ## 模块图
 
-![tu1](I:\GIT_kallen\基础输入模块\触摸钢琴模块\picture\tu1.png)
+![tu1](触摸钢琴模块图片\tu1.png)
 
 ## 概述
 
@@ -12,7 +12,7 @@
 
 ## 原理图
 
-![tu3](I:\GIT_kallen\基础输入模块\触摸钢琴模块\picture\tu3.png)
+![tu3](触摸钢琴模块图片\tu3.png)
 
 ## 模块参数
 
@@ -24,8 +24,8 @@
 
 ## 详细原理图
 
- [Printing 打印原理图.pdf](picture\Printing 打印原理图.pdf) 
+ [触摸钢琴模块.pdf](触摸钢琴模块图片\触摸钢琴模块.pdf) 
 
 ## 机械图
 
-![tu2](I:\GIT_kallen\基础输入模块\触摸钢琴模块\picture\tu2.png)
+![tu2](触摸钢琴模块图片\tu2.png)
