@@ -14,7 +14,7 @@
 
 ## 详细原理图
 
- [按键.pdf](button\按键.pdf) 
+ [按键.pdf](button/按键.pdf) 
 
 ## 模块参数
 
