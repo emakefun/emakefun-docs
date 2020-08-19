@@ -2,7 +2,9 @@
 
 ## 按键模块图
 
-![tu1](button/tu1.png)
+![tu1](I:/GIT_kallen/基础输入模块/按键模块/picture/tu1.svg)
+
+![图片1](I:/GIT_kallen/github/emakefun-docs/docs/sensors/base_model/button/图片1.png)
 
 ##  概述
 
@@ -10,11 +12,11 @@
 
 ## 原理图
 
-![tu3](button/tu3.png)
+![tu3](I:/GIT_kallen/基础输入模块/按键模块\picture/tu3.png)
 
 ## 详细原理图
 
- [按键.pdf](button/按键.pdf) 
+ [按键.pdf](picture/按键.pdf) 
 
 ## 模块参数
 
@@ -26,4 +28,4 @@
 
 
 
-![tu2](button/tu2.png)
+![tu2](I:/GIT_kallen/基础输入模块/按键模块/picture/tu2.png)

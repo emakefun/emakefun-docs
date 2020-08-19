@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="113.4px" height="62.4px" viewBox="0 0 113.4 62.4" style="enable-background:new 0 0 113.4 62.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EADF9C;}
+	.st1{font-family:'SourceHanSansCN-Bold-GBpc-EUC-H';}
+	.st2{font-size:4.7901px;}
+	.st3{fill:#E2E9E8;}
+	.st4{fill:#CBB084;}
+	.st5{fill:#FFFFFF;}
+	.st6{font-size:7.3495px;}
+	.st7{fill:#948C79;}
+	.st8{fill:#E6E6E2;}
+	.st9{fill:#F5F3E9;}
+	.st10{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st11{fill:#EADCC1;}
+	.st12{fill:#886830;}
+	.st13{fill:#E6E6E6;}
+	.st14{fill:#F2F2F2;}
+	.st15{fill:#F1F268;}
+	.st16{fill:none;stroke:#FFFFFF;stroke-width:0.25;stroke-miterlimit:10;}
+	.st17{font-size:3.5193px;}
+	.st18{fill:#9F9483;}
+	.st19{fill:#46605B;}
+	.st20{fill:#EFDBB5;}
+	.st21{fill:#E0E7E6;}
+	.st22{font-family:'AdobeSongStd-Light-GBpc-EUC-H';}
+	.st23{font-size:12px;}
+	.st24{fill:#D4DCDB;}
+	.st25{fill:#F2F1E9;}
+</style>
+<path d="M0,55.9V6.4C0,2.9,2.9,0,6.4,0H107c3.5,0,6.4,2.9,6.4,6.4v49.5c0,3.5-2.9,6.4-6.4,6.4H6.4C2.9,62.4,0,59.5,0,55.9z"/>
+<text transform="matrix(1 0 0 1 64.5101 57.2922)" class="st0 st1 st2">Magnetic   Switch</text>
+<rect x="36.8" y="0" class="st3" width="17.8" height="62.4"/>
+<circle class="st4" cx="45.8" cy="8.4" r="7.6"/>
+<circle class="st5" cx="45.8" cy="8.4" r="6.8"/>
+<circle class="st4" cx="45.8" cy="54.3" r="7.6"/>
+<circle class="st5" cx="45.8" cy="54.3" r="6.8"/>
+<text transform="matrix(6.123234e-17 1 -1 6.123234e-17 29.1055 20.7658)" class="st5 st1 st6">G  V  S</text>
+<rect x="21.4" y="24.3" class="st7" width="6.4" height="3"/>
+<path class="st8" d="M21.4,26v-1.7H26c0.5,0,0.8,0.4,0.8,0.8l0,0c0,0.5-0.4,0.8-0.8,0.8h-4.6V26z"/>
+<rect x="21.4" y="30.1" class="st7" width="6.4" height="3"/>
+<path class="st8" d="M21.4,31.8v-1.7H26c0.5,0,0.8,0.4,0.8,0.8l0,0c0,0.5-0.4,0.8-0.8,0.8h-4.6V31.8z"/>
+<rect x="21.4" y="36" class="st7" width="6.4" height="3"/>
+<path class="st8" d="M21.4,37.7V36H26c0.5,0,0.8,0.4,0.8,0.8l0,0c0,0.5-0.4,0.8-0.8,0.8h-4.6V37.7z"/>
+<rect y="16.9" class="st9" width="21.4" height="29.3"/>
+<rect x="19.2" y="16.9" class="st9" width="5.6" height="2.3"/>
+<rect x="19.2" y="44" class="st9" width="5.6" height="2.3"/>
+<line class="st10" x1="23.2" y1="19.2" x2="23.2" y2="24.3"/>
+<line class="st10" x1="23.2" y1="39" x2="23.2" y2="44"/>
+<polygon class="st11" points="15.3,25.8 15.3,24.3 16.8,24.3 16.8,23 21.4,23 21.4,25.8 "/>
+<polygon class="st12" points="17.4,23 17.4,24.5 15.3,24.5 15.3,25.8 9.1,25.8 9.1,23 "/>
+<polygon class="st11" points="15.3,42.9 15.3,41.4 16.8,41.4 16.9,40.2 21.4,40.2 21.4,42.9 "/>
+<polygon class="st12" points="17.4,40.2 17.4,41.7 15.3,41.7 15.3,42.9 9.1,42.9 9.1,40.2 "/>
+<g>
+	<rect x="10.9" y="4.5" class="st10" width="7.3" height="4.3"/>
+	<rect x="11.6" y="5.3" class="st13" width="1.1" height="2.9"/>
+	<rect x="16.7" y="5.3" class="st13" width="1.1" height="2.9"/>
+	<rect x="19.7" y="4.9" class="st14" width="2.4" height="3.6"/>
+	<rect x="25.4" y="4.9" class="st14" width="2.4" height="3.6"/>
+	<rect x="22.1" y="4.9" class="st15" width="3.3" height="3.6"/>
+	<rect x="19.7" y="4.9" class="st16" width="8.1" height="3.6"/>
+	<text transform="matrix(1 0 0 1 13.3141 3.5959)" class="st5 st1 st17">Power</text>
+</g>
+<rect x="100" y="8.2" class="st10" width="4.3" height="45.6"/>
+<rect x="102.5" y="2.8" class="st18" width="3.7" height="7.3"/>
+<rect x="102.1" y="10.1" class="st19" width="4.5" height="42.2"/>
+<rect x="102.5" y="52.3" class="st18" width="3.7" height="7.3"/>
+<path class="st10" d="M97.3,34.3"/>
+<path class="st10" d="M97.4,27.8"/>
+<polyline class="st16" points="95.8,34.6 93.6,34.6 93.6,27.8 "/>
+<line class="st16" x1="97.4" y1="27.8" x2="97.4" y2="34.6"/>
+<rect x="94.1" y="27.9" class="st20" width="2.9" height="1.1"/>
+<rect x="94.1" y="33" class="st20" width="2.9" height="1.1"/>
+<g>
+	<rect x="21.1" y="49" class="st21" width="9.6" height="11"/>
+	<text transform="matrix(1 0 0 1 21.4332 57.8069)" class="st22 st23">D</text>
+	<g>
+		<g>
+			<rect x="10.6" y="50.1" class="st24" width="1.4" height="1.6"/>
+		</g>
+		<g>
+			<path class="st24" d="M10.6,56.4v-4.3h1.3v4.3c0,0.8,0.9,1.5,1.9,1.5s1.9-0.7,1.9-1.5v-4.3H17v4.2c0,1.5-1.4,2.8-3.2,2.8
+				S10.6,57.9,10.6,56.4z"/>
+		</g>
+		<g>
+			<rect x="15.6" y="50.1" class="st24" width="1.4" height="1.5"/>
+		</g>
+	</g>
+</g>
+<polygon class="st25" points="13.3,27.2 13.3,38.7 6,38.7 5.6,44.4 0,44.4 0,21.5 5.7,21.5 6,27.2 "/>
+</svg>
