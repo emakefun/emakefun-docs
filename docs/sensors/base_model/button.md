@@ -2,7 +2,7 @@
 
 ## 按键模块图
 
-![tu1](I:/GIT_kallen/基础输入模块/按键模块/picture/tu1.svg)
+<img src="I:/GIT_kallen/github/emakefun-docs/docs/sensors/base_model/button/14.Button - Module（修改）.svg" alt="14.Button - Module（修改）" style="zoom:200%;" />
 
 ![图片1](I:/GIT_kallen/github/emakefun-docs/docs/sensors/base_model/button/图片1.png)
 
@@ -12,7 +12,7 @@
 
 ## 原理图
 
-![tu3](I:/GIT_kallen/基础输入模块/按键模块\picture/tu3.png)
+![tu3](I:/GIT_kallen/基础输入模块/按键模块/picture/tu3.png)
 
 ## 详细原理图
 
