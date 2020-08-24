@@ -2,9 +2,9 @@
 
 ## 按键模块图
 
-<img src="I:/GIT_kallen/github/emakefun-docs/docs/sensors/base_model/button/14.Button - Module（修改）.svg" alt="14.Button - Module（修改）" style="zoom:200%;" />
+<img src="GIT_kallen/github/emakefun-docs/docs/sensors/base_model/button/14.Button - Module（修改）.svg" alt="14.Button - Module（修改）" style="zoom:200%;" />
 
-![图片1](I:/GIT_kallen/github/emakefun-docs/docs/sensors/base_model/button/图片1.png)
+![图片1](GIT_kallen/github/emakefun-docs/docs/sensors/base_model/button/图片1.png)
 
 ##  概述
 
@@ -12,7 +12,7 @@
 
 ## 原理图
 
-![tu3](I:\GIT_kallen\github\emakefun-docs\docs\sensors\base_model\button/tu3.png)
+![tu3](GIT_kallen\github\emakefun-docs\docs\sensors\base_model\button/tu3.png)
 
 ## 详细原理图
 
@@ -28,7 +28,7 @@
 
 
 
-![tu2](I:/GIT_kallen/github/emakefun-docs/docs/sensors/base_model/button/tu2.png)
+![tu2](GIT_kallen/github/emakefun-docs/docs/sensors/base_model/button/tu2.png)
 
 
 
