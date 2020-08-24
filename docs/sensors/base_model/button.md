@@ -4,7 +4,7 @@
 
 <img src="GIT_kallen/github/emakefun-docs/docs/sensors/base_model/button/14.Button - Module（修改）.svg" alt="14.Button - Module（修改）" style="zoom:200%;" />
 
-![图片1](GIT_kallen/github/emakefun-docs/docs/sensors/base_model/button/图片1.png)
+![图片1](button/图片1.png)
 
 ##  概述
 
