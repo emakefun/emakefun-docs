@@ -12,7 +12,7 @@
 
 ## 原理图
 
-![tu3](GIT_kallen\github\emakefun-docs\docs\sensors\base_model\button/tu3.png)
+![tu3](GIT_kallen\github\emakefun-docs\docs\sensors\base_model\button\tu3.png)
 
 ## 详细原理图
 
