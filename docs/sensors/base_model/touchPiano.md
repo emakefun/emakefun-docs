@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![tu1](I:\GIT_kallen\基础输入模块\触摸钢琴模块\picture\tu1.svg)
+<img src="触摸钢琴模块图片/tu1.png" alt="tu1" style="zoom:200%;" />
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![02](I:\GIT_kallen\基础输入模块\触摸钢琴模块\picture\02.png)
+![02](触摸钢琴模块图片/02.png)
 
 ## 模块参数
 
@@ -21,8 +21,8 @@
 
 ## 详细原理图
 
-   [touch Piano.pdf](picture\touch Piano.pdf) 
+​    [touch Piano.pdf](触摸钢琴模块图片/touch Piano.pdf) 
 
 ## 机械图
 
-![03](I:\GIT_kallen\基础输入模块\触摸钢琴模块\picture\03.png)
+![03](触摸钢琴模块图片/03.png)

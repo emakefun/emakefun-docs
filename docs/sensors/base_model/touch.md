@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![13.Touch-Module](I:\GIT_kallen\基础输入模块\触摸模块\picture\13.Touch-Module.svg)
+<img src="触摸传感器模块图片/13.Touch-Module.svg" alt="13.Touch-Module" style="zoom:200%;" />
 
 ## 概述
 
@@ -12,7 +12,7 @@
 
 ## 原理图
 
-![05](I:\GIT_kallen\基础输入模块\触摸模块\picture\05.png)
+![图2](触摸传感器模块图片/05.png)
 
 
 
@@ -25,8 +25,8 @@
 
 ## 详细原理图
 
- [触摸模块.pdf](picture\触摸模块.pdf) 
+  [触摸模块.pdf](触摸传感器模块图片/触摸模块.pdf) 
 
 ## 机械尺寸
 
-![图3](I:\GIT_kallen\基础输入模块\触摸模块\picture\图3.png)
+![图3](触摸传感器模块图片/图3.png)

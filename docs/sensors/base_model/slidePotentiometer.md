@@ -2,9 +2,7 @@
 
 ## 滑动变阻器模块图
 
-
-
-![32.Slide  Potentiometer](I:\GIT_kallen\基础输入模块\滑动变阻器模块\picture\32.Slide  Potentiometer.svg)
+<img src="滑动电阻器模块图片/32.Slide  Potentiometer.svg" alt="32.Slide  Potentiometer" style="zoom:200%;" />
 
 ## 概述
 
@@ -12,7 +10,7 @@
 
 ## 原理图
 
-![tu2](I:\GIT_kallen\基础输入模块\滑动变阻器模块\picture\tu2.png)
+![tu2](滑动电阻器模块图片/tu2.png)
 
 ## 模块参数
 
@@ -22,8 +20,8 @@
 
 ## 详细原理图
 
- [滑动变阻器.pdf](滑动变阻器.pdf) 
+ [滑动变阻器.pdf](滑动电阻器模块图片/滑动变阻器.pdf) 
 
 ## 机械尺寸
 
-![tu3](I:\GIT_kallen\基础输入模块\滑动变阻器模块\picture\tu3.png)
+![tu3](滑动电阻器模块图片/tu3.png)

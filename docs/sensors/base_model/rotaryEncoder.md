@@ -2,7 +2,7 @@
 
 ## 旋转编码器模块
 
-![15.Rotary  encoder Module](I:/GIT_kallen/基础输入模块/旋转编码器/picture/15.Rotary  encoder Module.svg)
+<img src="旋转编码器模块图片/15.Rotary  encoder Module.svg" alt="15.Rotary  encoder Module" style="zoom:200%;" />
 
 ##  概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![图片2](I:/GIT_kallen/基础输入模块/旋转编码器/picture/图片2.png)
+![图片2](旋转编码器模块图片/图片2.png)
 
 ## 模块参数
 
@@ -22,11 +22,11 @@
 
 ## 详细原理图
 
- [旋转编码器.pdf](旋转编码器.pdf) 
+ [旋转编码器.pdf](旋转编码器模块图片/旋转编码器.pdf) 
 
 ## 机械尺寸
 
 
 
-![图片3](I:/GIT_kallen/基础输入模块/旋转编码器/picture/图片3.png)
+![图片3](旋转编码器模块图片/图片3.png)
 
