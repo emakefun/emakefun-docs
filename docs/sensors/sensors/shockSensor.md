@@ -2,7 +2,7 @@
 
 ## 模块图
 
-<img src="I:\GIT_kallen\传感器\震动传感器\图片\47-Shock Sensor.svg" alt="47-Shock Sensor" style="zoom:200%;" />
+![Shock Sensor](震动传感器模块图片/Shock Sensor.png)
 
 ## 概述
 
@@ -12,7 +12,7 @@
 
 ## 原理图
 
-
+![05](震动传感器模块图片/05.png)
 
 ## 模块参数
 
@@ -29,8 +29,8 @@
 
 
 
-
+ [震动传感器.pdf](震动传感器模块图片/震动传感器.pdf) 
 
 ## 模块尺寸
 
-![5](I:\GIT_kallen\传感器\震动传感器\图片\5.png)
+![5](震动传感器模块图片/5.png)

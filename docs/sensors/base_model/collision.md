@@ -2,7 +2,7 @@
 
 ## 模块图
 
-<img src="触碰开关传感器模块图片/2.Collision   Sensor.svg" alt="2.Collision   Sensor" style="zoom:200%;" />
+![Collision Module](触碰开关传感器模块图片/Collision Module.png)
 
 ## 概述
 

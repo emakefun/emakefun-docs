@@ -2,7 +2,7 @@
 
 ## 旋转编码器模块
 
-<img src="旋转编码器模块图片/15.Rotary  encoder Module.svg" alt="15.Rotary  encoder Module" style="zoom:200%;" />
+![Rotary encoder Module](旋转编码器模块图片/Rotary encoder Module.png)
 
 ##  概述
 

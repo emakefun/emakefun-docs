@@ -2,7 +2,7 @@
 
 ## 模块图
 
-<img src="I:\GIT_kallen\传感器\MPU6050六轴陀螺仪模块\图片\19.6-Axis （Gyro+Accelerometer）.svg" alt="19.6-Axis （Gyro+Accelerometer）" style="zoom:200%;" />
+![6-Axis(Gyro+Accelerometer)](mpu6050六轴陀螺仪模块图片/6-Axis(Gyro+Accelerometer).png)
 
 ## 概述
 
@@ -18,7 +18,7 @@
 
 ## 原理图
 
-![19](I:\GIT_kallen\传感器\MPU6050六轴陀螺仪模块\图片\19.png)
+![19](mpu6050六轴陀螺仪模块图片/19.png)
 
 ## 模块参数
 
@@ -31,8 +31,8 @@
 
 ## 详细原理图
 
- [MPU6050.pdf](I:\GIT_kallen\传感器\MPU6050六轴陀螺仪模块\图片\MPU6050.pdf) 
+ [MPU6050.pdf](mpu6050六轴陀螺仪模块图片/MPU6050.pdf) 
 
 ## 机械尺寸
 
-![9](I:\GIT_kallen\传感器\MPU6050六轴陀螺仪模块\图片\9.png)
+![9](mpu6050六轴陀螺仪模块图片/9.png)

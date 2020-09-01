@@ -2,7 +2,7 @@
 
 ## 滑动变阻器模块图
 
-<img src="滑动电阻器模块图片/32.Slide  Potentiometer.svg" alt="32.Slide  Potentiometer" style="zoom:200%;" />
+![Slide Potentiometer](滑动电阻器模块图片/Slide Potentiometer.png)
 
 ## 概述
 

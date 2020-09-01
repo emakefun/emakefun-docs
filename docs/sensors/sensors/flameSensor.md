@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![35.Flame Sensor](I:\GIT_kallen\传感器\火焰传感器\图片\35.Flame Sensor.svg)
+![Flame Sensor](火焰传感器模块图片/Flame Sensor.png)
 
 ## 概述
 
@@ -12,7 +12,7 @@
 
 ## 原理图
 
-![01](I:\GIT_kallen\传感器\火焰传感器\图片\01.png)
+![01](火焰传感器模块图片/01.png)
 
 ## 模块参数
 
@@ -25,8 +25,8 @@
 
 ## 详细原理图
 
- [flame.pdf](图片\flame.pdf) 
+ [flame.pdf](火焰传感器模块图片/flame.pdf) 
 
 ## 机械尺寸
 
-![03](I:\GIT_kallen\传感器\火焰传感器\图片\03.png)
+![03](火焰传感器模块图片/03.png)

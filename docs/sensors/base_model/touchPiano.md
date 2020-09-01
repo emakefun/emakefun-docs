@@ -2,7 +2,7 @@
 
 ## 模块图
 
-<img src="触摸钢琴模块图片/tu1.png" alt="tu1" style="zoom:200%;" />
+![Touch Piano](触摸钢琴模块图片/Touch Piano.png)
 
 ## 概述
 

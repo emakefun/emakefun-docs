@@ -2,7 +2,7 @@
 
 ## 模块图
 
-<img src="I:\GIT_kallen\传感器\手势传感器\图片\36.Gesture  Recognition Module.svg" alt="36.Gesture  Recognition Module" style="zoom:200%;" />
+![Gesture Recognition Module](手势传感器模块模块图片/Gesture Recognition Module.png)
 
 ##　概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![15](I:\GIT_kallen\传感器\手势传感器\图片\15.png)
+![15](手势传感器模块模块图片/15.png)
 
 ## 模块参数
 
@@ -23,8 +23,8 @@
 
 ## 详细原理图
 
- [手势传感器.pdf](图片\手势传感器.pdf) 
+  [手势传感器.pdf](手势传感器模块模块图片\手势传感器.pdf) 
 
 ## 机械尺寸
 
-![8](I:\GIT_kallen\传感器\手势传感器\图片\8.png)
+![8](手势传感器模块模块图片/8.png)

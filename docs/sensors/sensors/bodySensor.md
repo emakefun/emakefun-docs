@@ -2,7 +2,7 @@
 
 ## 模块图
 
-<img src="I:\GIT_kallen\传感器\人体热释电传感器\图片\38.Human  Body-Sensor.svg" alt="38.Human  Body-Sensor" style="zoom:250%;" />
+![Human Body Sensor](人体热释电传感器模块图片/Human Body Sensor.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![8](I:\GIT_kallen\传感器\人体热释电传感器\图片\8.png)
+![8](人体热释电传感器模块图片/8.png)
 
 ## 模块参数
 
@@ -22,9 +22,9 @@
 
 ## 详细原理图
 
- [人体.pdf](..\人体热释电传感器\图片\人体.pdf) 
+ [人体.pdf](人体热释电传感器模块图片/人体.pdf) 
 
 ## 机械尺寸
 
-![1](I:\GIT_kallen\传感器\人体热释电传感器\图片\1.png)
+![1](人体热释电传感器模块图片/1.png)
 

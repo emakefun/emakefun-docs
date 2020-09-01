@@ -2,7 +2,7 @@
 
 ## 按键模块图
 
-<img src="I:\GIT_kallen\github\emakefun-docs\docs\sensors\base_model\button\14.Button - Module（修改）.svg" alt="14.Button - Module（修改）" style="zoom:200%;" />
+<img src="button/Button Module.png" alt="Button Module" style="zoom:50%;" />
 
 ![图片1](button/图片1.png)
 

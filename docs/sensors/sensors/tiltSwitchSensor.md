@@ -2,9 +2,7 @@
 
 ## 模块图
 
-
-
-<img src="I:\GIT_kallen\传感器\倾斜传感器\图片\48-Tilt Switoh Sensor.svg" alt="48-Tilt Switoh Sensor" style="zoom:200%;" />
+![Tilt Switch Sensor](倾斜传感器模块图片/Tilt Switch Sensor.png)
 
 ## 概述
 
@@ -12,7 +10,7 @@
 
 ## 原理图
 
-![27](I:\GIT_kallen\传感器\倾斜传感器\图片\27.png)
+![27](倾斜传感器模块图片/27.png)
 
 ## 模块参数
 
@@ -25,8 +23,8 @@
 
 ## 详细原理图
 
- [倾斜传感器.pdf](I:\GIT_kallen\传感器\倾斜传感器\图片\倾斜传感器.pdf) 
+ [倾斜传感器.pdf](倾斜传感器模块图片/倾斜传感器.pdf) 
 
 ## 机械尺寸
 
-![4](I:\GIT_kallen\传感器\倾斜传感器\图片\4.png)
+![4](倾斜传感器模块图片/4.png)

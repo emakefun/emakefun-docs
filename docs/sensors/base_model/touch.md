@@ -2,7 +2,7 @@
 
 ## 模块图
 
-<img src="触摸传感器模块图片/13.Touch-Module.svg" alt="13.Touch-Module" style="zoom:200%;" />
+![Touch Module](触摸传感器模块图片/Touch Module.png)
 
 ## 概述
 

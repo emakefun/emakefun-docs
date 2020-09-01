@@ -2,7 +2,7 @@
 
 ## 模块图
 
-<img src="I:\GIT_kallen\传感器\灰度传感器模块\图片\46-Grayscale Sensor.svg" alt="46-Grayscale Sensor" style="zoom:200%;" />
+![Grayscale Sensor](灰度传感器模块图片/Grayscale Sensor.png)
 
 ## 概述
 
@@ -12,7 +12,7 @@
 
 ## 原理图
 
-![4](I:\GIT_kallen\传感器\灰度传感器模块\图片\4.png)
+![4](灰度传感器模块图片/4.png)
 
 ## 模块参数
 
@@ -24,8 +24,8 @@
 
 ## 详细原理图
 
- [灰度传感器.pdf](I:\GIT_kallen\传感器\灰度传感器模块\图片\灰度传感器.pdf) 
+ [灰度传感器.pdf](灰度传感器模块图片/灰度传感器.pdf) 
 
 ## 机械尺寸
 
-![7](I:\GIT_kallen\传感器\灰度传感器模块\图片\7.png)
+![7](灰度传感器模块图片/7.png)
