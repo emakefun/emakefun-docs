@@ -23,7 +23,7 @@
 
 ## 详细原理图
 
-  [motor.pdf](电机带风扇叶模块\motor.pdf) 
+  [motor.pdf](电机带风扇叶模块/motor.pdf) 
 
 ## 机械尺寸
 

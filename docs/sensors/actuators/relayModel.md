@@ -22,7 +22,7 @@
 
 ## 详细原理图
 
- [relay.pdf](继电器模块图片\relay.pdf) 
+ [relay.pdf](继电器模块图片/relay.pdf) 
 
 ## 机械尺寸
 
