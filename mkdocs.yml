@@ -35,7 +35,7 @@ nav:
         - 触摸钢琴模块: sensors/base_model/touchPiano.md
         - 滑动电阻器模块: sensors/base_model/slidePotentiometer.md
         - 摇杆模块: sensors/base_model/rocker.md
-        4x4矩阵键盘模块: sensors/base_model/4x4MatrixKeyboardModel.md
+        - 4x4矩阵键盘模块: sensors/base_model/4x4MatrixKeyboardModel.md
       - 传感器: 
         - 声音传感器: sensors/sensors/voiceSensor.md
         - 光敏传感器: sensors/sensors/photosensitiveSensor.md
