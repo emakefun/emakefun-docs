@@ -35,6 +35,7 @@ nav:
         - 触摸钢琴模块: sensors/base_model/touchPiano.md
         - 滑动电阻器模块: sensors/base_model/slidePotentiometer.md
         - 摇杆模块: sensors/base_model/rocker.md
+        4x4矩阵键盘模块: sensors/base_model/4x4MatrixKeyboardModel.md
       - 传感器: 
         - 声音传感器: sensors/sensors/voiceSensor.md
         - 光敏传感器: sensors/sensors/photosensitiveSensor.md
@@ -54,6 +55,9 @@ nav:
         - 灰度传感器: sensors/sensors/grayscaleSensor.md
         - 震动传感器: sensors/sensors/shockSensor.md
         - 倾斜传感器: sensors/sensors/tiltSwitchSensor.md
+        - 指南针传感器: sensors/sensors/DB5883指南针模块介绍.md
+        - DS1302传感器: sensors/sensors/DS1302电子时钟模块介绍.md
+        - 气压传感器: sensors/sensors/气压.md
         # - 普通超声波传感器: sensors/sensors/ultrasonicSensor.md
         - RGB超声波传感器: sensors/sensors/rgbUltrasonicSensor.md
 
@@ -65,7 +69,7 @@ nav:
         - 激光发射模块: sensors/actuators/laserEmissionModel.md
         - 红外发射模块: sensors/actuators/infraredEmissionModel.md
         - 红外接收模块: sensors/actuators/irReceiverModel.md
-        - 4x4矩阵键盘模块: sensors/actuators/4x4MatrixKeyboardModel.md
+        - 
         # - 舵机模块: sensors/actuators/servoModel.md
         # - 双路电机驱动模块: sensors/actuators/highSpeedMiniMotorDriveBoardModel.md
         # - 普通红外遥控器模块: sensors/actuators/IRRemoteControlModel.md
