@@ -69,7 +69,6 @@ nav:
         - 激光发射模块: sensors/actuators/laserEmissionModel.md
         - 红外发射模块: sensors/actuators/infraredEmissionModel.md
         - 红外接收模块: sensors/actuators/irReceiverModel.md
-        - 
         # - 舵机模块: sensors/actuators/servoModel.md
         # - 双路电机驱动模块: sensors/actuators/highSpeedMiniMotorDriveBoardModel.md
         # - 普通红外遥控器模块: sensors/actuators/IRRemoteControlModel.md
