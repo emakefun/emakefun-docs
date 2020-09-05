@@ -55,9 +55,9 @@ nav:
         - 灰度传感器: sensors/sensors/grayscaleSensor.md
         - 震动传感器: sensors/sensors/shockSensor.md
         - 倾斜传感器: sensors/sensors/tiltSwitchSensor.md
-        - 指南针传感器: sensors/sensors/DB5883指南针模块介绍.md
-        - DS1302传感器: sensors/sensors/DS1302电子时钟模块介绍.md
-        - 气压传感器: sensors/sensors/气压.md
+        - 指南针传感器: sensors/sensors/compass.md
+        - DS1302传感器: sensors/sensors/RTC.md
+        - 气压传感器: sensors/sensors/airpressure.md
         # - 普通超声波传感器: sensors/sensors/ultrasonicSensor.md
         - RGB超声波传感器: sensors/sensors/rgbUltrasonicSensor.md
 
