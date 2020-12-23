@@ -83,8 +83,8 @@ nav:
         - 红绿交通灯: sensors/shows/trafficLights.md
         - RGB三色灯: sensors/shows/RGB.md
         - RGB三色环: sensors/shows/RGBRing.md
-      - 通信模块: sensors/index.md
-      - 智能模块: sensors/index.md
+      - 通信模块:
+      - 智能模块:
       - 配件: micro_bit/IObit.md
     - Micro:bit产品:
       - Micro:bit主板介绍: micro_bit/microbit.md
