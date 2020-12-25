@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Gesture Recognition Module](手势传感器模块模块图片/Gesture Recognition Module.png)
+![Gesture Recognition Module](gestureRecognition_pic/Gesture Recognition Module.png)
 
 ##　概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![15](手势传感器模块模块图片/15.png)
+![15](gestureRecognition_pic/15.png)
 
 ## 模块参数
 
@@ -27,4 +27,4 @@
 
 ## 机械尺寸
 
-![8](手势传感器模块模块图片/8.png)
+![8](gestureRecognition_pic/8.png)

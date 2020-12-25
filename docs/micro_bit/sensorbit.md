@@ -32,7 +32,7 @@
 
 Sensor:bit 是专为 Micro:bit 与各种传感器连接所设计的，对与 PH2.0 接口的 Sensor:bit 、设计有一套量身定做的 PH2.0接口传感器套件。传感器种类多样，按照其作用类型可分为四大类：输入模块、传感器、执行类、显示器。
 
-要支持如下micropython语法需要[下载最新固件](https://raw.githubusercontent.com/emakefun/emakefun-docs/master/docs/micro_bit/sensorbit//firmware.hex)到microbit
+要支持如下micropython语法需要[下载最新固件](https://raw.githubusercontent.com/emakefun/emakefun-docs/master/docs/micro_bit/sensorbit/firmware.hex)到microbit
 
 ## 输入模块
 

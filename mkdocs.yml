@@ -49,16 +49,12 @@ nav:
         - 气体传感器: sensors/sensors/MQ4Sensor.md
         - 人体热释电传感器: sensors/sensors/bodySensor.md
         - 红外循迹模块传感器: sensors/sensors/trackingSensor.md
-        - MPU6050六轴陀螺仪: sensors/sensors/mpu6050Sensor.md
-        - 手势传感器: sensors/sensors/gestureRecognitionSensor.md
         - 磁簧开关传感器: sensors/sensors/magneticSwitchSensor.md
         - 灰度传感器: sensors/sensors/grayscaleSensor.md
         - 震动传感器: sensors/sensors/shockSensor.md
         - 倾斜传感器: sensors/sensors/tiltSwitchSensor.md
-        - 指南针传感器: sensors/sensors/compass.md
-        - DS1302传感器: sensors/sensors/RTC.md
         - 气压传感器: sensors/sensors/airpressure.md
-        # - 普通超声波传感器: sensors/sensors/ultrasonicSensor.md
+        # - 超声波传感器: sensors/sensors/ultrasonicSensor.md
         - RGB超声波传感器: sensors/sensors/rgbUltrasonicSensor.md
 
       - 执行器: 
@@ -80,11 +76,16 @@ nav:
         - TM1650四位数码管: sensors/shows/TM1650.md
         - TM1637四位时钟数码管: sensors/shows/TM1637.md
         - 8x8点阵屏: sensors/shows/8x8LedDisplay.md
-        - 红绿交通灯: sensors/shows/trafficLights.md
+        - 交通灯: sensors/shows/trafficLights.md
         - RGB三色灯: sensors/shows/RGB.md
-        - RGB三色环: sensors/shows/RGBRing.md
+        - WS2812B-RGB灯环: sensors/shows/RGBRing.md
       - 通信模块:
       - 智能模块:
+        - 指南针传感器: sensors/smart_module/compass.md
+        - DS1302传感器: sensors/smart_module/ds1302_rtc.md
+        - MPU6050六轴陀螺仪: sensors/smart_module/mpu6050.md
+        - 手势传感器: sensors/smart_module/gestureRecognitionSensor.md
+        - LD3320语音识别模块：sensors/smart_module/ld3320.md
       - 配件: micro_bit/IObit.md
     - Micro:bit产品:
       - Micro:bit主板介绍: micro_bit/microbit.md
