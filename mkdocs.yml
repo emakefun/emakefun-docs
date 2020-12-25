@@ -86,19 +86,19 @@ nav:
         - DS1302传感器: sensors/smart_module/ds1302_rtc.md
         - MPU6050六轴陀螺仪: sensors/smart_module/mpu6050.md
         - 手势传感器: sensors/smart_module/gestureRecognitionSensor.md
-        - LD3320语音识别模块：sensors/smart_module/ld3320.md
+        - LD3320语音识别模块: sensors/smart_module/ld3320.md
         - MPU6050六轴陀螺仪: sensors/sensors/mpu6050Sensor.md
       
       - 配件: micro_bit/IObit.md
     - Micro:bit产品:
       - Micro:bit主板介绍: micro_bit/microbit.md
       - Micro:bit编程介绍: micro_bit/microbit_code.md
-      - IObit: micro_bit/IObit.md
+      - IO:bit: micro_bit/IObit.md
       - Sensor:bit: micro_bit/sensorbit.md
       - Magic:bit: micro_bit/magicbit.md
       - Motor:bit: micro_bit/motorbit.md
-      - Magic:bit四合一战车: micro_bit/FourInOneCar.md
-      - Magic:bit麦轮战车: micro_bit/WheatwheelCar.md
+      - Magic:bit四合一小车: micro_bit/FourInOneCar.md
+      - Magic:bit麦轮小车: micro_bit/WheatwheelCar.md
     - Arduino可编程产品: 
       - Arduino主板介绍: arduino/Hummerbot2.md
       - Hummerbot: arduino/Hummerbot2.md
@@ -107,7 +107,7 @@ nav:
       - MirageTank: arduino/MirageTank.md
       - PantherTank: arduino/PantherTank.md
     - 树莓派: 
-      - 树莓派介绍: RaspberryPi-Sensor-Board-master/README.md
+      - 树莓派传感器扩展板: RaspberryPi-Sensor-Board-master/README.md
     - 开源硬件: 
       - Ble-Nano: open_source_hardware/Ble-Nano.md
       - Ble-Uno: open_source_hardware/Ble-Uno.md
