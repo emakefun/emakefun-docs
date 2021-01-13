@@ -108,6 +108,7 @@ nav:
       - PantherTank: arduino/PantherTank.md
     - 树莓派: 
       - 树莓派传感器扩展板: RaspberryPi-Sensor-Board-master/README.md
+      - 树莓派电机驱动板: RaspberryPi-MotorDriverBoard/README.md
     - 开源硬件: 
       - Ble-Nano: open_source_hardware/Ble-Nano.md
       - Ble-Uno: open_source_hardware/Ble-Uno.md
