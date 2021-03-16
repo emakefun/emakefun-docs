@@ -139,7 +139,7 @@ motor:Bit 多功能扩展板与micro:Bit 主板
 > 实物连接图，RGB超声波的引脚选择P2
 
 ![motorbit_RGBCSB_zh](motorbit/motorbit_RGBCSB_zh.png)
-> 当超声波检测到前方距离小于10cm时，超声波的RGB灯 **全部**会显示**靛蓝**，并且有**闪烁**的特效  [RGB超声波实验源码](https://makecode.microbit.org/_iJX8M084m3oJ)
+> 当超声波检测到前方距离小于10cm时，超声波的RGB灯 **全部**会显示**靛蓝**，并且有**闪烁**的特效  [RGB超声波实验源码](https://makecode.microbit.org/#editor)
 
 ## 8Pin IO口引出
 ![motorbit_Pin_zh](motorbit/motorbit_IO_PCB_zh.png)
