@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Relay Module](继电器模块图片/Relay Module.png)
+![Relay Module](E:\emakefun-docs\docs\sensors\actuators\relay module\Relay Module.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![07](继电器模块图片/07.png)
+![07](E:\emakefun-docs\docs\sensors\actuators\relay module\07.png)
 
 ## 模块参数
 
@@ -31,4 +31,4 @@
 
 ## 机械尺寸
 
-![02](继电器模块图片/02.png)
+![02](E:\emakefun-docs\docs\sensors\actuators\relay module\02.png)

@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![](C:\Users\Administrator\Desktop\给toy的照片\电机风扇.jpg)
+![电机风扇](E:\emakefun-docs\docs\sensors\actuators\High power motor module\电机风扇.jpg)
 
 ## 概述
 
@@ -12,7 +12,7 @@
 
 ## 原理图
 
-
+![1](E:\emakefun-docs\docs\sensors\actuators\High power motor module\1.png)
 
 ## 模块参数
 
@@ -33,4 +33,4 @@
 
 ## 机械尺寸
 
-![ad20d8239ab9f681c9dd04e0c8f3e6b](C:\Users\Administrator\Desktop\给toy的照片\ad20d8239ab9f681c9dd04e0c8f3e6b.png)
+![2](E:\emakefun-docs\docs\sensors\actuators\High power motor module\2.png)

@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Motor Module](电机带风扇叶模块/Motor Module.png)
+![Motor Module](E:\emakefun-docs\docs\sensors\actuators\motor module\Motor Module.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![5](电机带风扇叶模块/5.png)
+![5](E:\emakefun-docs\docs\sensors\actuators\motor module\5.png)
 
 ## 模块参数
 
@@ -32,4 +32,4 @@
 
 ## 机械尺寸
 
-![6](电机带风扇叶模块/6.png)
+![6](E:\emakefun-docs\docs\sensors\actuators\motor module\6.png)
