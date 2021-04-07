@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="113.4px" height="62.4px" viewBox="0 0 113.4 62.4" style="enable-background:new 0 0 113.4 62.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EADF9C;}
+	.st1{font-family:'SourceHanSansCN-Bold-GBpc-EUC-H';}
+	.st2{font-size:5px;}
+	.st3{opacity:0.9;fill:#FFFFFF;enable-background:new    ;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:#FBF398;}
+	.st6{fill:#E2E9E8;}
+	.st7{fill:#CBB084;}
+	.st8{font-size:7.3495px;}
+	.st9{fill:#E0E7E6;}
+	.st10{fill:#948C79;}
+	.st11{fill:#E6E6E2;}
+	.st12{fill:#F5F3E9;}
+	.st13{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st14{fill:#EADCC1;}
+	.st15{fill:#886830;}
+	.st16{fill:#F2F1E9;}
+	.st17{fill:#EFDBB5;}
+	.st18{font-size:1.7495px;}
+	.st19{fill:#75502F;}
+	.st20{fill:#DCDDDD;}
+	.st21{fill:none;stroke:#6B1313;stroke-width:0.3;stroke-miterlimit:10;}
+	.st22{fill:#DFE6E5;}
+	.st23{font-family:'AdobeSongStd-Light-GBpc-EUC-H';}
+	.st24{font-size:11.2745px;}
+</style>
+<path d="M0,55.9V6.4C0,2.9,2.9,0,6.4,0H107c3.5,0,6.4,2.9,6.4,6.4v49.5c0,3.5-2.9,6.4-6.4,6.4H6.4C2.9,62.4,0,59.5,0,55.9z"/>
+<text transform="matrix(1 0 0 1 65.7652 58.6356)" class="st0 st1 st2">Grayscale-Sensor</text>
+<g>
+	<circle class="st3" cx="90.2" cy="14.6" r="7.7"/>
+	<circle class="st4" cx="90.2" cy="14.6" r="6.6"/>
+	<circle class="st4" cx="90.2" cy="14.6" r="6.6"/>
+	<circle class="st5" cx="90.2" cy="14.6" r="2.5"/>
+</g>
+<rect x="36.8" y="0" class="st6" width="17.8" height="62.4"/>
+<circle class="st7" cx="45.8" cy="8.4" r="7.6"/>
+<circle class="st4" cx="45.8" cy="8.4" r="6.8"/>
+<circle class="st7" cx="45.8" cy="54.3" r="7.6"/>
+<circle class="st4" cx="45.8" cy="54.3" r="6.8"/>
+<text transform="matrix(6.123234e-17 1 -1 6.123234e-17 29.1055 20.7853)" class="st4 st1 st8">G  V  S</text>
+<rect x="8.4" y="48.8" class="st9" width="9.6" height="11"/>
+<rect x="21.4" y="24.3" class="st10" width="6.4" height="3"/>
+<path class="st11" d="M21.4,26v-1.7H26c0.5,0,0.8,0.4,0.8,0.8l0,0c0,0.5-0.4,0.8-0.8,0.8h-4.6V26z"/>
+<rect x="21.4" y="30.1" class="st10" width="6.4" height="3"/>
+<path class="st11" d="M21.4,31.8v-1.7H26c0.5,0,0.8,0.4,0.8,0.8l0,0c0,0.5-0.4,0.8-0.8,0.8h-4.6V31.8z"/>
+<rect x="21.4" y="36" class="st10" width="6.4" height="3"/>
+<path class="st11" d="M21.4,37.7V36H26c0.5,0,0.8,0.4,0.8,0.8l0,0c0,0.5-0.4,0.8-0.8,0.8h-4.6V37.7z"/>
+<rect y="16.9" class="st12" width="21.4" height="29.3"/>
+<rect x="19.2" y="16.9" class="st12" width="5.6" height="2.3"/>
+<rect x="19.2" y="44" class="st12" width="5.6" height="2.3"/>
+<line class="st13" x1="23.2" y1="19.2" x2="23.2" y2="24.3"/>
+<line class="st13" x1="23.2" y1="39" x2="23.2" y2="44"/>
+<polygon class="st14" points="15.3,25.8 15.3,24.3 16.8,24.3 16.8,23 21.4,23 21.4,25.8 "/>
+<polygon class="st15" points="17.4,23 17.4,24.5 15.3,24.5 15.3,25.8 9.1,25.8 9.1,23 "/>
+<polygon class="st14" points="15.3,42.9 15.3,41.4 16.8,41.4 16.9,40.2 21.4,40.2 21.4,42.9 "/>
+<polygon class="st15" points="17.4,40.2 17.4,41.7 15.3,41.7 15.3,42.9 9.1,42.9 9.1,40.2 "/>
+<polygon class="st16" points="13.3,27.2 13.3,38.7 6,38.7 5.6,44.4 0,44.4 0,21.5 5.7,21.5 6,27.2 "/>
+<g>
+	<g>
+		<rect x="70.5" y="19.6" class="st13" width="7.3" height="4.3"/>
+		<rect x="71.1" y="20.3" class="st17" width="1.1" height="2.9"/>
+		<rect x="76.2" y="20.3" class="st17" width="1.1" height="2.9"/>
+		<text transform="matrix(1 0 0 1 72.651 22.1537)" class="st4 st1 st18">103</text>
+	</g>
+	<g>
+		<rect x="70.5" y="35.4" class="st13" width="7.3" height="4.3"/>
+		<rect x="71.1" y="36.1" class="st17" width="1.1" height="2.9"/>
+		<rect x="76.2" y="36.1" class="st17" width="1.1" height="2.9"/>
+		<text transform="matrix(1 0 0 1 72.651 38.063)" class="st4 st1 st18">471</text>
+	</g>
+	<g>
+		<rect x="70.9" y="28.5" class="st19" width="6.4" height="2.6"/>
+		<rect x="70.9" y="28.5" class="st17" width="1" height="2.6"/>
+		<rect x="76.4" y="28.5" class="st17" width="1" height="2.6"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect x="83.6" y="37.2" class="st20" width="13.3" height="11.1"/>
+		<ellipse class="st20" cx="90.2" cy="37.2" rx="6.6" ry="3.7"/>
+		<ellipse class="st20" cx="90.2" cy="48.3" rx="6.6" ry="3.7"/>
+	</g>
+	<circle class="st4" cx="90.2" cy="35.2" r="1"/>
+	<circle class="st4" cx="90.2" cy="50.4" r="1"/>
+	<path class="st21" d="M83.7,48.1V37.5c0-0.4,0.3-0.7,0.7-0.7l0,0c0.4,0,0.7,0.3,0.7,0.7v10.6"/>
+	<path class="st21" d="M86.6,37.5v10.6c0,0.4-0.3,0.7-0.7,0.7l0,0c-0.4,0-0.7-0.3-0.7-0.7V37.5"/>
+	<path class="st21" d="M86.6,48.1V37.5c0-0.4,0.3-0.7,0.7-0.7l0,0c0.4,0,0.7,0.3,0.7,0.7v10.6"/>
+	<path class="st21" d="M89.4,37.5v10.6c0,0.4-0.3,0.7-0.7,0.7l0,0c-0.4,0-0.7-0.3-0.7-0.7V37.5"/>
+	<path class="st21" d="M89.4,48.1V37.5c0-0.4,0.3-0.7,0.7-0.7l0,0c0.4,0,0.7,0.3,0.7,0.7v10.6"/>
+	<path class="st21" d="M92.2,37.5v10.6c0,0.4-0.3,0.7-0.7,0.7l0,0c-0.4,0-0.7-0.3-0.7-0.7V37.5"/>
+	<path class="st21" d="M92.2,48.1V37.5c0-0.4,0.3-0.7,0.7-0.7l0,0c0.4,0,0.7,0.3,0.7,0.7v10.6"/>
+	<path class="st21" d="M95.1,37.5v10.6c0,0.4-0.3,0.7-0.7,0.7l0,0c-0.4,0-0.7-0.3-0.7-0.7V37.5"/>
+	<path class="st21" d="M95.1,48.1V37.5c0-0.4,0.3-0.7,0.7-0.7l0,0c0.4,0,0.7,0.3,0.7,0.7v11.9"/>
+</g>
+<circle class="st22" cx="25.7" cy="54.3" r="5.5"/>
+<path d="M25.7,49.5v9.6c2.6,0,4.8-2.1,4.8-4.8S28.3,49.5,25.7,49.5z"/>
+<text transform="matrix(1 0 0 1 9.3191 57.8287)" class="st23 st24">A</text>
+</svg>
