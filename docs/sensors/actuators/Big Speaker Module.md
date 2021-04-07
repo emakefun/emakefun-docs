@@ -1,6 +1,6 @@
 ## 声音输出模块
 
-![功放喇叭模块](C:\Users\Administrator\Desktop\给toy的照片\功放喇叭模块.png)
+![功放喇叭模块](E:\emakefun-docs\docs\sensors\actuators\Big Speaker Module\功放喇叭模块.png)
 
 ## 概述
 
@@ -8,7 +8,7 @@
 
 ## 原理图
 
-![微信图片_20210331113227](C:\Users\Administrator\Desktop\给toy的照片\微信图片_20210331113227.png)
+![1](E:\emakefun-docs\docs\sensors\actuators\Big Speaker Module\1.png)
 
 ## 模块参数
 
@@ -29,5 +29,5 @@
 
 ## 机械尺寸
 
-![微信图片_20210331113232](C:\Users\Administrator\Desktop\给toy的照片\微信图片_20210331113232.png)
+![2](E:\emakefun-docs\docs\sensors\actuators\Big Speaker Module\2.png)
 
