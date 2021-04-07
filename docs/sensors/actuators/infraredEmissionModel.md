@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Infrared Emission Module](红外发射模块图片/Infrared Emission Module.png)
+![07](E:\emakefun-docs\docs\sensors\actuators\Infrared emission Module\07.jpg)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![7](红外发射模块图片/7.png)
+![14](E:\emakefun-docs\docs\sensors\actuators\Infrared emission Module\14.png)
 
 ## 模块参数
 
@@ -31,4 +31,4 @@
 
 ## 机械尺寸
 
-![5](红外发射模块图片/5.png)
+![18](E:\emakefun-docs\docs\sensors\actuators\Infrared emission Module\18.png)
