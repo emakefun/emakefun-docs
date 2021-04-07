@@ -63,11 +63,10 @@ nav:
         - 直流电机模块: sensors/actuators/motorModel.md
         - 继电器模块: sensors/actuators/relayModel.md
         - 激光发射模块: sensors/actuators/laserEmissionModel.md
-        - 振动马达模块：sensors/actuators/Vibration motor module.md
-        - 大电机风扇模块：sensors/actuators/High power motor module.md
-        - 声音输出模块：sensors/actuators/Big Speaker Module.md
-        
-        
+        - 振动马达: sensors/actuators/Vibration motor module.md
+        - 大电机风扇模块: sensors/actuators/High power motor module.md
+        - 声音输出模块: sensors/actuators/Big Speaker Module.md
+
         # - 舵机模块: sensors/actuators/servoModel.md
         # - 双路电机驱动模块: sensors/actuators/highSpeedMiniMotorDriveBoardModel.md
         # - 普通红外遥控器模块: sensors/actuators/IRRemoteControlModel.md
@@ -92,7 +91,7 @@ nav:
         - 手势传感器: sensors/smart_module/gestureRecognitionSensor.md
         - LD3320语音识别模块: sensors/smart_module/ld3320.md
         - MPU6050六轴陀螺仪: sensors/sensors/mpu6050Sensor.md
-        - MQTT物联网模块：sensors/sensors/esp8266_mqtt.md
+        - MQTT物联网模块: sensors/sensors/esp8266_mqtt.md
       
       - 配件: micro_bit/IObit.md
     - Micro:bit产品:
