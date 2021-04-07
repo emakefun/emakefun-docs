@@ -1,6 +1,6 @@
 ## 振动马达模块
 
-![c28a5a2c2c11106c85a86aaf64280d5](C:\Users\Administrator\Desktop\给toy的照片\c28a5a2c2c11106c85a86aaf64280d5.png)
+![1](E:\emakefun-docs\docs\sensors\actuators\Vibration motor module\1.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![微信图片_20210331113227](C:\Users\Administrator\Desktop\给toy的照片\微信图片_20210331113227.png)
+![2](E:\emakefun-docs\docs\sensors\actuators\Vibration motor module\2.png)
 
 ## 模块参数
 
@@ -33,4 +33,4 @@
 
 
 
-![微信图片_20210331113232](C:\Users\Administrator\Desktop\给toy的照片\微信图片_20210331113232.png)
+![3](E:\emakefun-docs\docs\sensors\actuators\Vibration motor module\3.png)
