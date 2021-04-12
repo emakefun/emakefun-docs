@@ -446,30 +446,33 @@ DHT11数字温度 - 湿度传感器是一种包含校准数字信号输出的复
 **micropython 编程**
 
 - 功能语句: 
-> dht11.ini(pin)                    # pin 初始化引脚
-> dht11.temperature()       # 获取环境温度  摄氏度
-> dht11.humidity()              # 获取环境湿度
+> dht11.read_Tem(pin2)       # 获取环境温度  摄氏度
+> dht11.read_Hum(pin2)              # 获取环境湿度
 
 ```
 # Micro:bit 屏幕显示温湿度
 from microbit import *
 from sensor import dht11
-dht11.init(pin1)
 while True:
-    display.scroll(dht11.temperature())
-    display.scroll(dht11.humidity())
+    display.scroll(dht11.read_Tem(pin2))
+    display.scroll(dht11.read_Hum(pin2))
 ```
 
 ### DS18B20 温度传感器 （暂无）
 
 DS18B20是常用的数字温度传感器，其输出的是数字信号，具有体积小，硬件开销低，抗干扰能力强，精度高的特点。[DS18B20 温度传感器]()
-- makecode 编程
-![]()
-- micropython 编程
-	- 功能语句: 
-	- 使用例程: 
+
+**makecode 编程**
+**micropython 编程**
+
+- 功能语句
+	
+	> ds18b20.read_temps(pin2)            # 获取温度
+	
 	```
-	# Micro:bit 显示温度
+	from sensor import ds18b20
+	while True:
+		display.scroll(ds18b20.read_temps(pin2))
 	```
 
 ### 气体传感器
