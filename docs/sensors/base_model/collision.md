@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Collision Module](触碰开关传感器模块图片/Collision Module.png)
+![Collision Module](E:\emakefun-docs\docs\sensors\base_model\collision sensor\Collision Module.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![tu3](触碰开关传感器模块图片/tu3.png)
+![tu3](E:\emakefun-docs\docs\sensors\base_model\collision sensor\tu3.png)
 
 ## 模块参数
 
@@ -27,4 +27,30 @@
 
 
 
-![tu2](触碰开关传感器模块图片/tu2.png)
+![tu2](E:\emakefun-docs\docs\sensors\base_model\collision sensor\tu2.png)
+
+## 示例程序
+
+```c
+int led_out = A3 ;  //GPIO A3  LED pin
+int collision_pin = 3; //GPIO 3 key pin
+int value;
+void setup()
+{
+    pinMode(led_out,OUTPUT);               // init led pin output
+    pinMode(collision_pin,INPUT);          // init collision pin input
+}
+void loop()
+{
+        value = digitalRead(collision_pin);    // read collision pin vaule
+        if( value == LOW)
+        {
+            digitalWrite(led_out,HIGH);      // if collision value is down  turn on LED
+        }
+        else
+        {
+            digitalWrite(led_out,LOW);     // if collision value is down  turn off LED
+        }
+}
+```
+

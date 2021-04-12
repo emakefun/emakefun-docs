@@ -26,3 +26,37 @@
 ## 机械图
 
 ![03](触摸钢琴模块图片/03.png)
+
+## 示例程序
+
+```c
+#include"BS818A.h"
+BS818A BS;  //init BS818A piano driver
+void setup()
+{
+  Serial.begin(9600);  //set serial bps
+  BS.InitBS818A(A4, A5);  // init  A4 DIO A5 CLK port
+}
+
+void loop()
+{
+  if (BS.PressBsButton(BS_KEYCODE_1))    
+    Serial.println("1");          
+  if (BS.PressBsButton(BS_KEYCODE_2))    
+    Serial.println("2");
+  if (BS.PressBsButton(BS_KEYCODE_3))   
+    Serial.println("3");
+  if (BS.PressBsButton(BS_KEYCODE_4))
+    Serial.println("4");
+  if (BS.PressBsButton(BS_KEYCODE_5))
+    Serial.println("5");
+  if (BS.PressBsButton(BS_KEYCODE_6))
+    Serial.println("6");
+  if (BS.PressBsButton(BS_KEYCODE_7))
+    Serial.println("7");
+  if (BS.PressBsButton(BS_KEYCODE_8))
+    Serial.println("8");
+ 
+}
+```
+

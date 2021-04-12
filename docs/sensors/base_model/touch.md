@@ -30,3 +30,29 @@
 ## 机械尺寸
 
 ![图3](触摸传感器模块图片/图3.png)
+
+## 示例程序
+
+```c
+int  touch_PIN  =3 ;  //GPIO 3  touch pin
+int led_out = A3 ;   //GPIO A3  LED pin
+int  value = 0 ;
+void setup()
+{
+    pinMode(touch_PIN,INPUT);              // init touch pin output
+    pinMode(led_out,OUTPUT);               // init led pin output
+}
+void loop()
+{
+        value = digitalRead(touch_PIN);    // read touch pin vaule
+        if( value == HIGH)
+        {
+            digitalWrite(led_out,HIGH);      // if touch value is down  turn on LED
+        }
+        else
+        {
+            digitalWrite(led_out,LOW);     // if touch value is down  turn off LED
+        }
+}
+```
+

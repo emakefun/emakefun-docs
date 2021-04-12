@@ -65,3 +65,82 @@ SDO:传感器地址控制位，接GND的时候I2C中器件地址为0xEC，接高
   寄存器内固定值为0x58，读取0xD0数据的时候，传感器返回0x58，代表身份辨认完毕。
 * **复位寄存器（reset）（0xE0）：**
   写入0xB6时，所有寄存器（除身份编号寄存器）数据全部清零。
+
+## 示例程序
+
+```c
+#include <SFE_BMP180.h>
+ 
+SFE_BMP180 AirPresure;
+ 
+char presureDelayTime;
+ 
+double presureP, presureT;
+ 
+void setup() {
+ 
+  Serial.begin(9600);
+ 
+  AirPresure.begin();
+ 
+}
+ 
+void loop()
+ 
+{
+ 
+  presureDelayTime = AirPresure.startPressure(3);
+ 
+  if (presureDelayTime != 0)
+ 
+  {
+ 
+  delay(presureDelayTime);
+ 
+  presureDelayTime = AirPresure.getPressure(presureP, presureT);
+ 
+  if (presureDelayTime != 0)
+ 
+  {
+ 
+     
+ 
+    Serial.print("Current Preasure: ");
+ 
+    Serial.print(presureP);
+ 
+    Serial.println(" bar");
+ 
+    Serial.print(presureP);
+ 
+    Serial.print(" bar is");
+ 
+    Serial.print(presureP / 1000.0);
+ 
+    Serial.println(" atm");
+ 
+  }
+ 
+  else
+ 
+  {
+ 
+    Serial.println("ERROR");
+ 
+  }
+ 
+  }
+ 
+  else
+ 
+  {
+ 
+  Serial.println("ERROR");
+ 
+  }
+ 
+  delay(1000);
+ 
+}
+```
+

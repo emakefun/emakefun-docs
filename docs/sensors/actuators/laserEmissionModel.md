@@ -32,3 +32,21 @@
 ##  机械尺寸
 
 ![5](E:\emakefun-docs\docs\sensors\actuators\Laser emission module\5.png)
+
+
+
+## 示例程序
+
+
+
+```c
+#define laser_pin A3  // Set the laser port to A3
+void setup(){
+  pinMode(laser_pin, OUTPUT);  // Set the laser port to output mode
+}
+
+void loop(){
+  digitalWrite(laser_pin,HIGH); // Set the laser port to high level
+}
+```
+

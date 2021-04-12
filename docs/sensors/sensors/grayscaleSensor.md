@@ -34,3 +34,19 @@
 ## 机械尺寸
 
 ![7](灰度传感器模块图片/7.png)
+
+## 示例程序
+
+```c
+void setup(){
+  Serial.begin(9600);  // Set the serial port baud rate to 9600
+  pinMode(A3, INPUT);   // Set A3 port as input mode
+}
+
+void loop(){
+  Serial.println(analogRead(A3));  // Print the data read from A3 port
+  delay(200); // Delay 200 milliseconds
+
+}
+```
+

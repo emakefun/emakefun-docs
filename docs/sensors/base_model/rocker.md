@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![01](PS2摇杆模块图片/Rocker Module.png)
+![Rocker Module](E:\emakefun-docs\docs\sensors\base_model\rocker module\Rocker Module.png)
 
 ## 概述
 
@@ -27,3 +27,50 @@
 ## 机械尺寸
 
 ![tu3](PS2摇杆模块图片/tu3.png)
+
+## 示例程序
+
+```c
+#define JOYSTICK_X    A4  //define X pin
+#define JOYSTICK_Y    A5  //define Y pin
+#define JOYSTICK_B    2//define button pin
+
+int value_x,value_y,value_b;  //define three variables
+void setup()
+{
+    pinMode(JOYSTICK_X, INPUT);  //init X pin
+    pinMode(JOYSTICK_Y, INPUT);  //init Y pin
+    pinMode(JOYSTICK_B, INPUT_PULLUP);  //init button pin
+    Serial.begin(9600);  //set serial
+}
+
+void loop() 
+{
+    value_x=analogRead(JOYSTICK_X);  //get X pin analog value
+    value_y=analogRead(JOYSTICK_Y);  //get X pin analog value
+    value_b=digitalRead(JOYSTICK_B); //get button pin value 
+    if(value_x==0)    //
+    {
+        Serial.println("right");//print right
+
+    }
+    else if(value_x==1023)  //
+    {
+         Serial.println("left");    //print left
+    }
+    if(value_y==0)  //
+    {
+        Serial.println("up");//print up
+    }
+    else if(value_y==1023) //
+    {
+        Serial.println("down");//print down
+    }
+    if(value_b == 0 )  //
+    {
+        Serial.println("enter");//print enter
+    }
+    delay(100);
+}
+```
+

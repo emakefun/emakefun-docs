@@ -30,3 +30,50 @@
 
 ![图片3](旋转编码器模块图片/图片3.png)
 
+## 示例程序
+
+```c
+#define ENCODER_A_PIN 3
+#define ENCODER_B_PIN 5
+#define SWITCH_PIN    6
+long position, oldposition;
+
+void setup(){
+  //setup our pins 
+  pinMode(ENCODER_A_PIN, INPUT);
+  pinMode(ENCODER_B_PIN, INPUT);
+  pinMode(SWITCH_PIN, INPUT);
+
+  attachInterrupt(1, read_quadrature, CHANGE);
+  Serial.begin(9600);
+}
+
+void loop(){
+   if (digitalRead(SWITCH_PIN) == LOW){
+     delay(10);
+     if (digitalRead(SWITCH_PIN) == LOW){
+       Serial.println("Switch Pressed");
+     }
+   }
+   Serial.print("Position: ");
+   Serial.println(position, DEC);
+   //delay(1000);
+}
+
+void read_quadrature(){  
+  // found a low-to-high on channel A 
+  if (digitalRead(ENCODER_A_PIN) == LOW){   
+    // check channel B to see which way 
+    if (digitalRead(ENCODER_B_PIN) == LOW)
+      position++;
+  }
+  // found a high-to-low on channel A 
+  else {
+    // check channel B to see which way 
+    if (digitalRead(ENCODER_B_PIN) == LOW)
+      position--;
+  }
+  oldposition = position;
+}
+```
+

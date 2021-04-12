@@ -26,3 +26,26 @@
 ## 机械尺寸
 
 ![tu3](滑动电阻器模块图片/tu3.png)
+
+## 示例程序
+
+``` 
+float i=0,j=0,data;  //define data    i  j
+int analogPin = A3;//GPIO A3 pin
+void setup()
+{
+  pinMode(analogPin, INPUT);//init slideResistance pin output
+  Serial.begin(9600);//  set serial
+}
+
+void loop() {
+    data=analogRead(analogPin); //  read slideResistance pin vaule
+    i=data/1023;//A/D
+    j=(1-i)*10000;  //  get Resistance value  ;10000 is max 
+    Serial.print("Resistance value is: ");
+    Serial.print(j);//print Resistance value
+    Serial.println("Ω");
+    delay(200);
+}
+```
+

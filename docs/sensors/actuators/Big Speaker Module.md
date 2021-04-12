@@ -31,3 +31,38 @@
 
 ![2](E:\emakefun-docs\docs\sensors\actuators\Big Speaker Module\2.png)
 
+## 示例程序
+
+ [CH340驱动.rar](G:\百度网盘资料\CH340驱动.rar) 
+
+```c++
+	
+
+#define AnalogPin A1//定义声音传感器模拟接口引脚
+#define DigitalPin 8//定义声音传感器数字接口引脚
+int AnalogValue=0;
+byte DigitalValue=0;
+
+void setup()
+{
+  Serial.begin(9600);//设置串口波特率
+  pinMode(AnalogPin, INPUT);//将声音传感器模拟接口引脚设置为输入
+  pinMode(DigitalPin,INPUT);//将声传感器音数字接口引脚设置为输入
+}
+
+void loop() {
+    AnalogValue= analogRead(AnalogPin);//读取声音传感器模拟值
+    DigitalValue=digitalRead(DigitalPin);//读取声音传感器数字值
+    Serial.print("Analog Data:");
+    Serial.println(AnalogValue);//打印声音传感器模拟值
+    Serial.print("Digital Data:");
+    Serial.println(DigitalValue);//打印声音传感器数字值
+    delay(200);
+}
+
+
+
+
+
+```
+

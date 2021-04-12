@@ -34,3 +34,40 @@
 
 
 ![3](E:\emakefun-docs\docs\sensors\actuators\Vibration motor module\3.png)
+
+## 示例程序
+
+```c
+#include "Buzzer.h"
+
+#define ShockAnalogPin A0//
+#define ShockDigitalPin 7//
+#define BuzzerPin A3//
+Buzzer buzzer(BuzzerPin) ;
+
+void setup()
+{
+    Serial.begin(9600); //
+    pinMode(ShockAnalogPin, INPUT);//
+   pinMode(ShockDigitalPin, INPUT);//
+}
+
+void loop()
+{
+	buzzer.noTone();//
+	Serial.println("Shock Analog Data: ");
+	Serial.println(analogRead(ShockAnalogPin)); //
+if (digitalRead(ShockDigitalPin) == 0) {//
+     for(int i = 200; i <= 800; i++)
+     {
+       buzzer.tone(i, 10);
+     }
+     for(int i= 800; i >= 200; i--)
+     {
+        buzzer.tone(i, 10);
+     }
+    } 
+	delay(1000);
+}
+```
+

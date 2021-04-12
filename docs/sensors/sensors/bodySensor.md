@@ -33,3 +33,24 @@
 
 ![1](人体热释电传感器模块图片/1.png)
 
+## 示例程序
+
+```c
+void setup()
+{
+    Serial.begin(9600); 
+	pinMode(A3, INPUT); 
+	pinMode(3, OUTPUT); 
+}
+
+void loop()
+{
+    if (digitalRead(A3) == 1)   
+    {  
+        digitalWrite(3, HIGH);  
+    } else {
+        digitalWrite(3, LOW); 
+    }
+}
+```
+
