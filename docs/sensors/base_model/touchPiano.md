@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Touch Piano](触摸钢琴模块图片/Touch Piano.png)
+![Touch Piano](touch piano/Touch Piano.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![02](触摸钢琴模块图片/02.png)
+![02](touch piano/02.png)
 
 ## 模块参数
 
@@ -25,7 +25,7 @@
 
 ## 机械图
 
-![03](触摸钢琴模块图片/03.png)
+![03](touch piano/03.png)
 
 ## 示例程序
 

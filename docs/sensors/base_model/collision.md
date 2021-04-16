@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Collision Module](E:\emakefun-docs\docs\sensors\base_model\collision sensor\Collision Module.png)
+![Collision Module](collision sensor\Collision Module.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![tu3](E:\emakefun-docs\docs\sensors\base_model\collision sensor\tu3.png)
+![tu3](collision sensor\tu3.png)
 
 ## 模块参数
 
@@ -27,7 +27,7 @@
 
 
 
-![tu2](E:\emakefun-docs\docs\sensors\base_model\collision sensor\tu2.png)
+![tu2](collision sensor\tu2.png)
 
 ## 示例程序
 

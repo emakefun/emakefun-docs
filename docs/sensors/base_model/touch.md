@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Touch Module](触摸传感器模块图片/Touch Module.png)
+![Touch Module](touch module/Touch Module.png)
 
 ## 概述
 
@@ -12,7 +12,7 @@
 
 ## 原理图
 
-![图2](触摸传感器模块图片/05.png)
+![图2](touch module/05.png)
 
 
 
@@ -29,7 +29,7 @@
 
 ## 机械尺寸
 
-![图3](触摸传感器模块图片/图3.png)
+![图3](touch module/图3.png)
 
 ## 示例程序
 

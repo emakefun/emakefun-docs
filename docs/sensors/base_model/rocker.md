@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Rocker Module](E:\emakefun-docs\docs\sensors\base_model\rocker module\Rocker Module.png)
+![Rocker Module](rocker module\Rocker Module.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![tu2](PS2摇杆模块图片/tu2.png)
+![tu2](rocker module\tu2.png)
 
 ## 详细原理图
 
@@ -26,7 +26,7 @@
 
 ## 机械尺寸
 
-![tu3](PS2摇杆模块图片/tu3.png)
+![图片4](rocker module\图片4.png)
 
 ## 示例程序
 

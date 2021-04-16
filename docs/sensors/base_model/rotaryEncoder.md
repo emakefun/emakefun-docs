@@ -2,7 +2,7 @@
 
 ## 旋转编码器模块
 
-![Rotary encoder Module](旋转编码器模块图片/Rotary encoder Module.png)
+![Rotary encoder Module](rotaryencoder module/Rotary encoder Module.png)
 
 ##  概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![图片2](旋转编码器模块图片/图片2.png)
+![图片2](rotaryencoder module/图片2.png)
 
 ## 模块参数
 
@@ -28,7 +28,7 @@
 
 
 
-![图片3](旋转编码器模块图片/图片3.png)
+![图片3](rotaryencoder module/图片3.png)
 
 ## 示例程序
 

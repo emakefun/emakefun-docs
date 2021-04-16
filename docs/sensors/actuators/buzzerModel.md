@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Buzzer Module](E:\emakefun-docs\docs\sensors\actuators\buzzer module\Buzzer Module.png)
+![Buzzer Module](buzzer module\Buzzer Module.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![2](E:\emakefun-docs\docs\sensors\actuators\buzzer module\2.png)
+![2](buzzer module\2.png)
 
 ## 模块参数
 
@@ -33,7 +33,7 @@
 
 
 
-![15](E:\emakefun-docs\docs\sensors\actuators\buzzer module\15.png)
+![15](buzzer module\15.png)
 
 ## 示例程序
 

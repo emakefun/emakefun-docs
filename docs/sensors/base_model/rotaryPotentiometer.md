@@ -2,9 +2,9 @@
 
 ## 旋转电位器模块图        
 
-![](旋转电位器模块图片/Rotary Potentiometer.png)
+![](rotary potentiomenter/Rotary Potentiometer.png)
 
-![图片4](旋转电位器模块图片/图片4.png)
+![图片4](rotary potentiomenter/图片4.png)
 
 ## 概述
 
@@ -14,7 +14,7 @@
 
 ## 原理图
 
-![图片3](旋转电位器模块图片/02.png)
+![图片3](rotary potentiomenter/02.png)
 
 ## 模块参数
 
