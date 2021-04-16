@@ -240,14 +240,14 @@ PS2 摇杆模块结构非常简单，它包含一个触摸按钮（Z轴）和两
 **micropython 编程**
 
 - 功能语句:
-> joystick.is_pressed(pin)           # pin: 接在摇杆button(丝印B）的引脚序号
-> joystick.read_x_analog(pin)    # pin: 读取摇杆X轴(丝印X)的引脚序号
-> joystick.read_y_analog(pin)    # pin: 读取摇杆Y轴(丝印X)的引脚序号
+> joystick.is_pressed(pin)           	# pin: 接在摇杆button(丝印B）的引脚序号
+> joystick.read_x_analog(pin)    	# pin: 读取摇杆X轴(丝印X)的引脚序号
+> joystick.read_y_analog(pin)    	# pin: 读取摇杆Y轴(丝印X)的引脚序号
 
 - 使用例程:  
 > joystick.is_pressed(pin8)              # 读取摇杆上的按键是否按下
-> joystick.read_x_analog(pin0)       # 读取摇杆X模拟值 返回值0~255，不操作摇杆为中间值128
-> joystick.read_y_analog(pin1)       # 读取摇杆Y模拟值 返回值0~255，不操作摇杆为中间值128
+> joystick.read_x_analog(pin0)      	 # 读取摇杆X模拟值 返回值0~255，不操作摇杆为中间值128
+> joystick.read_y_analog(pin1)       	 # 读取摇杆Y模拟值 返回值0~255，不操作摇杆为中间值128
 
 ```
 # Micro:bit 屏幕显示摇杆值
