@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![IR Receiver](E:\emakefun-docs\docs\sensors\actuators\IR Receiver\IR Receiver.png)
+![IR Receiver](IR Receiver\IR Receiver.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![06](E:\emakefun-docs\docs\sensors\actuators\IR Receiver\06.png)
+![06](IR Receiver\06.png)
 
 ## 模块参数
 
@@ -31,4 +31,4 @@
 
 ## 机械尺寸
 
-![32](E:\emakefun-docs\docs\sensors\actuators\IR Receiver\32.png)
+![32](IR Receiver\32.png)

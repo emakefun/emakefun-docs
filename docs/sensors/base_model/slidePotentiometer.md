@@ -2,7 +2,7 @@
 
 ## 滑动变阻器模块图
 
-![Slide Potentiometer](滑动电阻器模块图片/Slide Potentiometer.png)
+![Slide Potentiometer](slide potentiometer/Slide Potentiometer.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![tu2](滑动电阻器模块图片/tu2.png)
+![tu2](slide potentiometer/tu2.png)
 
 ## 模块参数
 
@@ -25,7 +25,7 @@
 
 ## 机械尺寸
 
-![tu3](滑动电阻器模块图片/tu3.png)
+![tu3](slide potentiometer/tu3.png)
 
 ## 示例程序
 

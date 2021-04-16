@@ -2,7 +2,7 @@
 
 ## 按键模块图
 
-![Button Module](E:\emakefun-docs\docs\sensors\base_model\button\Button Module.png)
+![Button Module](button\Button Module.png)
 
 ![图片1](button/图片1.png)
 
@@ -12,7 +12,7 @@
 
 ## 原理图
 
-![tu3](E:\emakefun-docs\docs\sensors\base_model\button\tu3.png)
+![tu3](button\tu3.png)
 
 ## 详细原理图
 
@@ -28,7 +28,7 @@
 
 
 
-![tu2](E:\emakefun-docs\docs\sensors\base_model\button\tu2.png)
+![tu2](button\tu2.png)
 
 
 
