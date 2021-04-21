@@ -55,7 +55,7 @@ nav:
         - 震动传感器: sensors/sensors/shockSensor.md
         - 倾斜传感器: sensors/sensors/tiltSwitchSensor.md
         - 气压传感器: sensors/sensors/airpressure.md
-         - 超声波传感器: sensors/sensors/ultrasonicSensor.md
+        - 超声波传感器: sensors/sensors/ultrasonicSensor.md
         - RGB超声波传感器: sensors/sensors/rgbUltrasonicSensor.md
 
       - 执行器: 
@@ -67,11 +67,10 @@ nav:
         - 振动马达: sensors/actuators/Vibration motor module.md
         - 大电机风扇模块: sensors/actuators/High power motor module.md
         - 声音输出模块: sensors/actuators/Big Speaker Module.md
-
-         - 舵机模块: sensors/actuators/servoModel.md
-         - 双路电机驱动模块: sensors/actuators/highSpeedMiniMotorDriveBoardModel.md
-         - 普通红外遥控器模块: sensors/actuators/IRRemoteControlModel.md
-         - emakefun红外遥控器模块: sensors/actuators/emakefunIRRemoteControlModel.md
+        - 舵机模块: sensors/actuators/servoModel.md
+        - 双路电机驱动模块: sensors/actuators/highSpeedMiniMotorDriveBoardModel.md
+        - 普通红外遥控器模块: sensors/actuators/IRRemoteControlModel.md
+        - emakefun红外遥控器模块: sensors/actuators/emakefunIRRemoteControlModel.md
     
       - 显示器: 
         - LED灯: sensors/shows/LED.md
