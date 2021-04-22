@@ -85,13 +85,15 @@ nav:
         - 红外发射模块: sensors/actuators/infraredEmissionModel.md
         - 红外接收模块: sensors/actuators/irReceiverModel.md
       - 智能模块:
+        - 颜色识别: sensors/smart_module/color recognition.md
         - 指南针传感器: sensors/smart_module/compass.md
         - DS1302传感器: sensors/smart_module/ds1302_rtc.md
         - MPU6050六轴陀螺仪: sensors/smart_module/mpu6050.md
         - 手势传感器: sensors/smart_module/gestureRecognitionSensor.md
         - LD3320语音识别模块: sensors/smart_module/ld3320.md
-        - MPU6050六轴陀螺仪: sensors/sensors/mpu6050Sensor.md
-        - MQTT物联网模块: sensors/sensors/esp8266_mqtt.md
+        - MPU6050六轴陀螺仪: sensors/smart_module/mpu6050Sensor.md
+        - MP3播放模块: sensors/smart_module/mp3.md
+        - MQTT物联网模块: sensors/smart_module/esp8266_mqtt.md
       
       - 配件: micro_bit/IObit.md
     - Micro:bit产品:
