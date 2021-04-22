@@ -19,8 +19,9 @@
 
 ## 详细原理图和规格书
 
- [原理图](button/schematic.pdf) 
- [数据手册](button/button_datesheet.pdf) 
+ [查看原理图](button/schematic.pdf) 
+ 
+ [查看数据手册](button/button_datasheet.pdf) 
 
 ## 模块参数
 
@@ -57,5 +58,5 @@ void loop()
 }
 ```
 ## microbit示例程序
-请直接参考microbit图形化编程![链接](https://github.com/emakefun/pxt-sensorbit)
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的按键模块介绍
 
