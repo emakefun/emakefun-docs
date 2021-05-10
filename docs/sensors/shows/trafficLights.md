@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Traffic light Module](交通灯模块图片/Traffic light Module.png)
+![Traffic light Module](trafficlight module/Traffic light Module.png)
 
 ##  概述
 
@@ -10,7 +10,7 @@ LED是发光二极管的缩写，由混合化合物制成，即镓（Ga），砷
 
 ## 原理图
 
-![3](交通灯模块图片/3.png)
+![3](trafficlight module/3.png)
 
 ## 模块参数
 
@@ -24,10 +24,10 @@ LED是发光二极管的缩写，由混合化合物制成，即镓（Ga），砷
 
 ## 详细原理图
 
- [红绿交通灯.pdf](交通灯模块图片/红绿交通灯.pdf) 
+ [红绿交通灯.pdf](trafficlight module/红绿交通灯.pdf) 
 
 ## 结构尺寸
 
 
 
-![0](交通灯模块图片/0.png)
+![0](trafficlight module/0.png)

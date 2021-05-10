@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Flame Sensor](火焰传感器模块图片/Flame Sensor.png)
+![Flame Sensor](Flame-Sensor/Flame Sensor.png)
 
 ## 概述
 
@@ -12,7 +12,7 @@
 
 ## 原理图
 
-![01](火焰传感器模块图片/01.png)
+![01](Flame-Sensor/01.png)
 
 ## 模块参数
 
@@ -30,11 +30,11 @@
 
 ## 详细原理图
 
- [flame.pdf](火焰传感器模块图片/flame.pdf) 
+ [flame.pdf](Flame-Sensor/flame.pdf) 
 
 ## 机械尺寸
 
-![03](火焰传感器模块图片/03.png)
+![03](Flame-Sensor/03.png)
 
 ## 示例程序
 

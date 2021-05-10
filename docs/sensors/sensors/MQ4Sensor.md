@@ -2,7 +2,7 @@
 
 ##  模块图
 
-![MQ Gas Sensor](MQ-4气体传感器图片/MQ Gas Sensor.png)
+![MQ Gas Sensor](MQ gas-sensor/MQ Gas Sensor.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![28](MQ-4气体传感器图片/28.png)
+![28](MQ gas-sensor/28.png)
 
 ## 模块参数
 
@@ -28,10 +28,10 @@
 
 ## 详细原理图
 
- [MQ传感器.pdf](MQ-4气体传感器图片/MQ传感器.pdf) 
+ [MQ传感器.pdf](MQ gas-sensor/MQ传感器.pdf) 
 
 ## 机械尺寸
 
 
 
-![05](MQ-4气体传感器图片/05.png)
+![05](MQ gas-sensor/05.png)

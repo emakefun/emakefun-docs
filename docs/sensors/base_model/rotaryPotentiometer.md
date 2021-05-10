@@ -25,11 +25,11 @@
 
 ## 详细原理图
 
- [旋转电位器.pdf](旋转电位器模块图片\旋转电位器.pdf) 
+ [旋转电位器.pdf](rotary potentiomenter/旋转电位器.pdf) 
 
 ## 机械尺寸
 
-![图片2](旋转电位器模块图片/0.3.png)
+![图片2](rotary potentiomenter/0.3.png)
 
 ## 示例程序
 

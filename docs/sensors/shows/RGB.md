@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![RGB Module](RGB 三色灯模块图片/RGB Module.png)
+![RGB Module](RGB-Module/RGB Module.png)
 
 ##  概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![4](RGB 三色灯模块图片/4.png)
+![4](RGB-Module/4.png)
 
 ## 模块参数
 
@@ -24,10 +24,10 @@
 
 ## 详细原理图
 
- [RGB三色灯.pdf](RGB 三色灯模块图片/RGB三色灯.pdf) 
+ [RGB三色灯.pdf](RGB-Module/RGB三色灯.pdf) 
 
 ## 结构 尺寸
 
 
 
-![8](RGB 三色灯模块图片/8.png)
+![8](RGB-Module/8.png)

@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Temperature&Humidity sensor](温湿度传感器模块图片/Temperature&Humidity sensor.png)
+![Temperature&Humidity sensor](temperature&humidity sensor/Temperature&Humidity sensor.png)
 
 ## 概述
 
@@ -16,7 +16,7 @@
 
 ## 原理图
 
-![07](温湿度传感器模块图片/07.png)
+![07](temperature&humidity sensor/07.png)
 
 ## 模块参数
 
@@ -33,8 +33,8 @@
 
 ## 详细原理图
 
-  [Humidity.pdf](温湿度传感器模块图片/Humidity.pdf) 
+  [Humidity.pdf](temperature&humidity sensor/Humidity.pdf) 
 
 ## 机械尺寸图
 
-![04](温湿度传感器模块图片\04.png)
+![04](temperature&humidity sensor/04.png)

@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Photosensitive Sensor](光敏电阻传感器模块图片/Photosensitive Sensor.png)
+![Photosensitive Sensor](photosensitive sensor/Photosensitive Sensor.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![01](光敏电阻传感器模块图片/01.png)
+![01](photosensitive sensor/01.png)
 
 ## 模块参数
 
@@ -27,8 +27,8 @@
 
 ## 详细原理图
 
- [光敏传感器.pdf](光敏电阻传感器模块图片/光敏传感器.pdf) 
+ [光敏传感器.pdf](photosensitive sensor/光敏传感器.pdf) 
 
 ## 机械尺寸
 
-![03](光敏电阻传感器模块图片/03.png)
+![03](photosensitive sensor/03.png)
