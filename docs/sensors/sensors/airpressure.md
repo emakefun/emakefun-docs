@@ -1,8 +1,8 @@
-# BMP280模块介绍
+# BMP280气压传感器介绍
 
 ## 模块实物图
 
-![1](气压传感器图片/1.jpg)
+![1](airpressure/Atmospheric pressure Sensor.jpg)
 
 ## 概述
 
@@ -24,23 +24,17 @@ BMP280是专为移动应用设计的绝对气压传感器。传感器模块安�
 
   以上是主要用途：以下为BMP280的原理图
 
-  ![tu1](气压传感器图片/tu1.png)
+  ![tu1](airpressure/tu1.png)
 
 ##  模块参数
 
-工作电压：3.3V
-
-地：GND
-
-工作电流：2.5mA
-
-SCL:IIC通信模式时钟信号
-
-SDA:IIC通信模式数据信号
-
-CSB:SPI通信模式下用到的引脚
-
-SDO:传感器地址控制位，接GND的时候I2C中器件地址为0xEC，接高电平为0xEC+ 1，本次接GND
+* 工作电压：3.3V
+* 地：GND
+* 工作电流：2.5mA
+* SCL:IIC通信模式时钟信号
+* SDA:IIC通信模式数据信号
+* CSB:SPI通信模式下用到的引脚
+* SDO:传感器地址控制位，接GND的时候I2C中器件地址为0xEC，接高电平为0xEC+ 1，本次接GND
 
 温度：-45℃~+85℃
 大气压强：0~20000hPa（百帕）模块尺寸:4*2.1cm
@@ -48,15 +42,15 @@ SDO:传感器地址控制位，接GND的时候I2C中器件地址为0xEC，接高
 
 ## 详细原理图
 
- [气压.pdf](气压传感器图片/气压.pdf) 
+ [气压.pdf](BMP280 air pressure sensor/气压.pdf) 
 
 ## 机械安装图
 
-![tu3](气压传感器图片/tu3.png)
+![tu3](BMP280 air pressure sensor/tu3.png)
 
 ## 相关寄存器说明
 
-![tu2](气压传感器图片/tu2.png)
+![tu2](BMP280 air pressure sensor/tu2.png)
 
 * **测量控制寄存器（ctrl_meas）（0xF4）：**
   Bit7~Bit5：osrs_t[2:0] 控制温度采样模式，主要是采样数据的位数（位数越大，精度越高），具体配置如下（本次三位都配置为1，最大采样位数20Bit）

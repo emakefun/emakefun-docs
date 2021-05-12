@@ -21,7 +21,7 @@
 
 ## 详细原理图
 
-​    [touch Piano.pdf](触摸钢琴模块图片/touch Piano.pdf) 
+​    [touch Piano.pdf](touch piano/touch Piano.pdf) 
 
 ## 机械图
 

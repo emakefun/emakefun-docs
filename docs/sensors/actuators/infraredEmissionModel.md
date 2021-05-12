@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![07](Infrared emission Module\07.jpg)
+![07](Infrared emission Module/07.jpg)
 
 ## 概述
 
@@ -10,14 +10,14 @@
 
 ## 原理图
 
-![14](Infrared emission Module\14.png)
+![14](Infrared emission Module/14.png)
 
 ## 模块参数
 
-1.供电电压:5V
-2.连接方式:3PIN防反接杜邦线
-3.模块尺寸:4*2.1cm
-4.安装方式:M4螺钉兼容乐高插孔固定
+* 1.供电电压:5V
+* 2.连接方式:3PIN防反接杜邦线
+* 3.模块尺寸:4*2.1cm
+* 4.安装方式:M4螺钉兼容乐高插孔固定
 
 | 引脚名称 | 描述       |
 | -------- | ---------- |
@@ -27,8 +27,8 @@
 
 ## 详细原理图
 
- [红外发射.pdf](红外发射模块图片/红外发射.pdf) 
+ [红外发射.pdf](Infrared emission Module/红外发射.pdf) 
 
 ## 机械尺寸
 
-![18](Infrared emission Module\18.png)
+![18](Infrared emission Module/18.png)

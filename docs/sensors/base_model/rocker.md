@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Rocker Module](rocker module\Rocker Module.png)
+![Rocker Module](rocker module/Rocker Module.png)
 
 ## 概述
 
@@ -10,23 +10,23 @@
 
 ## 原理图
 
-![tu2](rocker module\tu2.png)
+![原理图](rocker module/tu2.png)
 
 ## 详细原理图
 
- [摇杆模块.pdf](PS2摇杆模块图片/摇杆模块.pdf) 
+ [摇杆模块.pdf](rocker module/摇杆模块.pdf) 
 
 ## 模块参数
 
-* V:电源5V
-* G:GND
-* VRX:通过获取左右
-* VRY:通过获取上下
+* V: 电源5V
+* G: GND
+* VRX: 通过获取左右
+* VRY: 通过获取上下
 * SW：通过按键的高低电平，获取是否被按下。
 
 ## 机械尺寸
 
-![图片4](rocker module\图片4.png)
+![机械尺寸](rocker module/图片4.png)
 
 ## 示例程序
 

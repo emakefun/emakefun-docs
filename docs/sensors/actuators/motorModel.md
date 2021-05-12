@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Motor Module](E:\emakefun-docs\docs\sensors\actuators\motor module\Motor Module.png)
+![Motor Module](motor module/Motor Module.png)
 
 ## 概述
 
@@ -10,14 +10,14 @@
 
 ## 原理图
 
-![5](E:\emakefun-docs\docs\sensors\actuators\motor module\5.png)
+![5](motor module/5.png)
 
 ## 模块参数
 
-1.供电电压:5V
-2.连接方式:4PIN防反接杜邦线
-3.模块尺寸:4*2.1cm
-4.安装方式:M4螺钉兼容乐高插孔固定
+* 1.供电电压:5V
+* 2.连接方式:4PIN防反接杜邦线
+* 3.模块尺寸:4*2.1cm
+* 4.安装方式:M4螺钉兼容乐高插孔固定
 
 | 引脚名称 | 描述              |
 | -------- | ----------------- |
@@ -28,11 +28,11 @@
 
 ## 详细原理图
 
-  [motor.pdf](电机带风扇叶模块/motor.pdf) 
+  [motor.pdf](motor module/motor.pdf) 
 
 ## 机械尺寸
 
-![6](E:\emakefun-docs\docs\sensors\actuators\motor module\6.png)
+![6](motor module/6.png)
 
 ## 示例程序
 

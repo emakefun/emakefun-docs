@@ -1,6 +1,6 @@
 # DS18B20数字温度传感器模块规格书
 
-![32](DS18B20数字温度传感器模块图片/32.jpg)
+![32](DS18b20 Temperature sensor/32.jpg)
 
 ## 概述
 
@@ -21,19 +21,17 @@
 | G | GND 地线 |
 | S | 信号引脚 |
 
-1.供电电压:5V
-2.连接方式:3PIN防反接杜邦线
-3.模块尺寸:4*2.1cm
-4.安装方式:M134螺钉兼容乐高插孔固定模块尺寸
+* 1.供电电压:5V
+* 2.连接方式:3PIN防反接杜邦线
+* 3.模块尺寸:4*2.1cm
+* 4.安装方式:M134螺钉兼容乐高插孔固定模块尺寸
 
-![05](DS18B20数字温度传感器模块图片/05.jpg)
+![05](DS18b20 Temperature sensor/05.jpg)
 
 ## 连接方式
 
-![01](DS18B20数字温度传感器模块图片/01.jpg)
+![01](DS18b20 Temperature sensor/04.jpg)
 
-
-##  arduino 应用场景
 
 ### arduino 程序代码
 
@@ -41,35 +39,6 @@
 #include "OneWire.h"
 #include "DallasTemperature.h"
 #define ONE_WIRE_BUS 4            
-OneWire oneWire(ONE_WIRE_BUS);    
-DallasTemperature sensors(&oneWire);
- 
-void setup()
-{
-  Serial.begin(9600);            
-  sensors.begin();                
-}
- 
-void loop(void)
-{ 
-  sensors.requestTemperatures();  
-  Serial.print("The temperature is:");         
-  Serial.print(sensors.getTempCByIndex(0)); 
-  Serial.println("℃");
-  delay(200);
-}
-```
-
-### 实验效果图
-
-![04](DS18B20数字温度传感器模块图片\04.jpg)
-
-## 示例程序
-
-```c
-#include "OneWire.h"
-#include "DallasTemperature.h"
-#define ONE_WIRE_BUS 3            
 OneWire oneWire(ONE_WIRE_BUS);    
 DallasTemperature sensors(&oneWire);
  

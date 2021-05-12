@@ -1,6 +1,6 @@
 # 水深传感器模块规格书
 
-![Water depth Sensor](水位检测传感器模块图片/Water depth Sensor.png)
+![Water depth Sensor](Water depth Sensor/Water depth Sensor.png)
 
 ## 概述
 
@@ -9,7 +9,7 @@
 
 ## 原理图
 
-![02](水位检测传感器模块图片/02.png)
+![02](Water depth Sensor/02.png)
 
 ## 模块参数
 
@@ -26,9 +26,9 @@
 
 ## 详细原理图
 
- [水深传感器.pdf](水位检测传感器模块图片/水深传感器.pdf) 
+ [水深传感器.pdf](Water depth Sensor/水深传感器.pdf) 
 
 ## 模块尺寸
 
-![03](水位检测传感器模块图片/03.png)
+![03](Water depth Sensor/03.png)
 

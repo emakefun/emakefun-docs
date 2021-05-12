@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Human Body Sensor](人体热释电传感器模块图片/Human Body Sensor.png)
+![Human Body Sensor](Human Body-Sensor/Human Body Sensor.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![8](人体热释电传感器模块图片/8.png)
+![8](Human Body-Sensor/8.png)
 
 ## 模块参数
 
@@ -20,18 +20,18 @@
 | G        | GND 地线   |
 | S        | 信号引脚   |
 
-1.供电电压:5V
-2.连接方式:3PIN防反接杜邦线
-3.模块尺寸:4*2.1cm
-4.安装方式:M4螺钉兼容乐高插孔固定
+* 1.供电电压:5V
+* 2.连接方式:3PIN防反接杜邦线
+* 3.模块尺寸:4*2.1cm
+* 4.安装方式:M4螺钉兼容乐高插孔固定
 
 ## 详细原理图
 
- [人体.pdf](人体热释电传感器模块图片/人体.pdf) 
+ [人体.pdf](Human Body-Sensor/人体.pdf) 
 
 ## 机械尺寸
 
-![1](人体热释电传感器模块图片/1.png)
+![1](Human Body-Sensor/1.png)
 
 ## 示例程序
 

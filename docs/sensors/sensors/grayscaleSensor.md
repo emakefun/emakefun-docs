@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Grayscale Sensor](灰度传感器模块图片/Grayscale Sensor.png)
+![Grayscale Sensor](Grayscale Sensor/Grayscale Sensor.png)
 
 ## 概述
 
@@ -12,7 +12,7 @@
 
 ## 原理图
 
-![4](灰度传感器模块图片/4.png)
+![4](Grayscale Sensor/4.png)
 
 ## 模块参数
 
@@ -22,18 +22,18 @@
 | G        | GND 地线   |
 | S        | 信号引脚   |
 
-1.供电电压:5V
-2.连接方式:4PIN防反接杜邦线
-3.模块尺寸:4*2.1cm
-4.安装方式:M4螺钉兼容乐高插孔固定
+* 1.供电电压:5V
+* 2.连接方式:4PIN防反接杜邦线
+* 3.模块尺寸:4*2.1cm
+* 4.安装方式:M4螺钉兼容乐高插孔固定
 
 ## 详细原理图
 
- [灰度传感器.pdf](灰度传感器模块图片/灰度传感器.pdf) 
+ [灰度传感器.pdf](Grayscale Sensor/灰度传感器.pdf) 
 
 ## 机械尺寸
 
-![7](灰度传感器模块图片/7.png)
+![7](Grayscale Sensor/7.png)
 
 ## 示例程序
 

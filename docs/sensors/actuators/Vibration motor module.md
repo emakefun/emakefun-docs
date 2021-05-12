@@ -1,6 +1,6 @@
 ## 振动马达模块
 
-![1](E:\emakefun-docs\docs\sensors\actuators\Vibration motor module\1.png)
+![1](Vibration motor module/1.png)
 
 ## 概述
 
@@ -10,14 +10,14 @@
 
 ## 原理图
 
-![2](E:\emakefun-docs\docs\sensors\actuators\Vibration motor module\2.png)
+![2](Vibration motor module/2.png)
 
 ## 模块参数
 
-1.供电电压:5V
-2.连接方式:3PIN防反接杜邦线
-3.模块尺寸:4*2.1cm
-4.安装方式:M4螺钉兼容乐高插孔固定
+* 1.供电电压:5V
+* 2.连接方式:3PIN防反接杜邦线
+* 3.模块尺寸:4*2.1cm
+* 4.安装方式:M4螺钉兼容乐高插孔固定
 
 | 引脚名称 | 描述       |
 | -------- | ---------- |
@@ -33,41 +33,28 @@
 
 
 
-![3](E:\emakefun-docs\docs\sensors\actuators\Vibration motor module\3.png)
+![3](Vibration motor module/3.png)
 
 ## 示例程序
 
 ```c
-#include "Buzzer.h"
-
-#define ShockAnalogPin A0//
-#define ShockDigitalPin 7//
-#define BuzzerPin A3//
-Buzzer buzzer(BuzzerPin) ;
+#define INB 6  //定义振动电机B端口
+#define INA 5  //定义振动电机A端口
 
 void setup()
 {
-    Serial.begin(9600); //
-    pinMode(ShockAnalogPin, INPUT);//
-   pinMode(ShockDigitalPin, INPUT);//
+    pinMode(INB, OUTPUT);  //设置振动电机B端口为输出模式
+    pinMode(INA, OUTPUT);  //设置振动电机A端口为输出模式 
 }
 
 void loop()
-{
-	buzzer.noTone();//
-	Serial.println("Shock Analog Data: ");
-	Serial.println(analogRead(ShockAnalogPin)); //
-if (digitalRead(ShockDigitalPin) == 0) {//
-     for(int i = 200; i <= 800; i++)
-     {
-       buzzer.tone(i, 10);
-     }
-     for(int i= 800; i >= 200; i--)
-     {
-        buzzer.tone(i, 10);
-     }
-    } 
-	delay(1000);
+{         
+    analogWrite(INA, 255);  //设置振动电机A端口为高电平
+	analogWrite(INB, 0); //设置振动电机B端口为低电平
+	delay(2000);               //2s之后电机反转
+    analogWrite(INA, 0);  //设置振动电机A端口为低电平
+    analogWrite(INB, 255); //设置振动电机B端口为高电平
+	delay(2000);                //振动电机反转2s然后正转
 }
 ```
 

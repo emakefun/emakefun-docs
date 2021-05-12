@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![电机风扇](High power motor module\电机风扇.jpg)
+![电机风扇](High power motor module/电机风扇.jpg)
 
 ## 概述
 
@@ -12,14 +12,14 @@
 
 ## 原理图
 
-![1](High power motor module\1.png)
+![1](High power motor module/1.png)
 
 ## 模块参数
 
-1.供电电压:5V
-2.连接方式:3PIN防反接杜邦线
-3.模块尺寸:4*2.1cm
-4.安装方式:M4螺钉兼容乐高插孔固定
+* 1.供电电压:5V
+* 2.连接方式:3PIN防反接杜邦线
+* 3.模块尺寸:4*2.1cm
+* 4.安装方式:M4螺钉兼容乐高插孔固定
 
 | 引脚名称 | 描述       |
 | -------- | ---------- |
@@ -29,11 +29,11 @@
 
 ## 详细原理图
 
-![1](High power motor module\1.png)
+![1](High power motor module/1.png)
 
 ## 机械尺寸
 
-![2](High power motor module\2.png)
+![2](High power motor module/2.png)
 
 ## 示例程序
 

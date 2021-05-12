@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Shock Sensor](震动传感器模块图片/Shock Sensor.png)
+![Shock Sensor](Shock Sensor/Shock Sensor.png)
 
 ## 概述
 
@@ -12,7 +12,7 @@
 
 ## 原理图
 
-![05](震动传感器模块图片/05.png)
+![05](Shock Sensor/05.png)
 
 ## 模块参数
 
@@ -34,8 +34,8 @@
 
 
 
- [震动传感器.pdf](震动传感器模块图片/震动传感器.pdf) 
+ [震动传感器.pdf](Shock Sensor/震动传感器.pdf) 
 
 ## 模块尺寸
 
-![5](震动传感器模块图片/5.png)
+![5](Shock Sensor/5.png)

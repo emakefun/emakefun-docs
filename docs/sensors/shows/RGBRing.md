@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![01](12位RGB灯环图片/01.jpg)
+![01](12-bit RGB lamp ring/01.jpg)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![1](12位RGB灯环图片/1.png)
+![1](12-bit RGB lamp ring/1.png)
 
 ## 模块参数
 
@@ -23,8 +23,8 @@
 
 ## 详细原理图
 
- [RGB-ring.pdf](12位RGB灯环图片/RGB-ring.pdf) 
+ [RGB-ring.pdf](12-bit RGB lamp ring/RGB-ring.pdf) 
 
 ## 机械尺寸
 
-![6](12位RGB灯环图片/6.png)
+![6](12-bit RGB lamp ring/6.png)

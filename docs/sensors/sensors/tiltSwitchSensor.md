@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Tilt Switch Sensor](倾斜传感器模块图片/Tilt Switch Sensor.png)
+![Tilt Switch Sensor](Tilt switch sensor/Tilt Switch Sensor.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![27](倾斜传感器模块图片/27.png)
+![27](Tilt switch sensor/27.png)
 
 ## 模块参数
 
@@ -21,15 +21,15 @@
 | A        | 模拟信号引脚 |
 | D        | 数字信号脚   |
 
-1.供电电压:5V
-2.连接方式:4PIN防反接杜邦线
-3.模块尺寸:4*2.1cm
-4.安装方式:M4螺钉兼容乐高插孔固定
+* 1.供电电压:5V
+* 2.连接方式:4PIN防反接杜邦线
+* 3.模块尺寸:4*2.1cm
+* 4.安装方式:M4螺钉兼容乐高插孔固定
 
 ## 详细原理图
 
- [倾斜传感器.pdf](倾斜传感器模块图片/倾斜传感器.pdf) 
+ [倾斜传感器.pdf](Tilt switch sensor/倾斜传感器.pdf) 
 
 ## 机械尺寸
 
-![4](倾斜传感器模块图片/4.png)
+![4](Tilt switch sensor/4.png)

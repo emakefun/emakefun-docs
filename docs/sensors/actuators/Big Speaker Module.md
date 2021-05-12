@@ -1,6 +1,6 @@
 ## 声音输出模块
 
-![功放喇叭模块](Big Speaker Module\功放喇叭模块.png)
+![功放喇叭模块](Big Speaker Module/功放喇叭模块.png)
 
 ## 概述
 
@@ -8,7 +8,7 @@
 
 ## 原理图
 
-![1](Big Speaker Module\1.png)
+![1](Big Speaker Module/1.png)
 
 ## 模块参数
 
@@ -29,11 +29,9 @@
 
 ## 机械尺寸
 
-![2](Big Speaker Module\2.png)
+![2](Big Speaker Module/2.png)
 
 ## 示例程序
-
- [CH340驱动.rar](G:\百度网盘资料\CH340驱动.rar) 
 
 ```c++
 	

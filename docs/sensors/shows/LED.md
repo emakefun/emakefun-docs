@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![LED Module](LED模块图片/LED Module.png)
+![LED Module](LED-Module/LED Module.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![5](LED模块图片/5.png)
+![5](LED-Module/5.png)
 
 ## 模块参数
 
@@ -22,8 +22,8 @@
 
 ## 详细原理图
 
- [LED灯.pdf](LED模块图片/LED灯.pdf) 
+ [LED灯.pdf](LED-Module/LED灯.pdf) 
 
 ## 机械尺寸
 
-![3](LED模块图片/3.png)
+![3](LED-Module/3.png)

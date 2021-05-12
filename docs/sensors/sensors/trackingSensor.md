@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Infrared tracking](红外循迹模块传感器模块图片/Infrared tracking.png)
+![Infrared tracking](Tracking module/Infrared tracking.png)
 
 ## 概述
 
@@ -14,7 +14,7 @@
 
 
 
-![6](红外循迹模块传感器模块图片/6.png)
+![6](Tracking module/6.png)
 
 
 
@@ -26,15 +26,15 @@
 | G        | GND 地线   |
 | S        | 信号引脚   |
 
-1.供电电压:5V
-2.连接方式:3PIN防反接杜邦线
-3.模块尺寸:4*1.2cm
-4.安装方式:M3螺钉
+* 1.供电电压:5V
+* 2.连接方式:3PIN防反接杜邦线
+* 3.模块尺寸:4*1.2cm
+* 4.安装方式:M3螺钉
 
 ## 详细原理图
 
-  [红外循迹传感器.pdf](红外循迹模块传感器模块图片/红外循迹传感器.pdf) 
+  [红外循迹传感器.pdf](Tracking module/红外循迹传感器.pdf) 
 
 ## 机械尺寸
 
-![7](红外循迹模块传感器模块图片/7.png)
+![7](Tracking module/7.png)

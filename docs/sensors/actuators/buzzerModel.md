@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Buzzer Module](buzzer module\Buzzer Module.png)
+![Buzzer Module](buzzer module/Buzzer Module.png)
 
 ## 概述
 
@@ -10,14 +10,14 @@
 
 ## 原理图
 
-![2](buzzer module\2.png)
+![2](buzzer module/2.png)
 
 ## 模块参数
 
-1.供电电压:5V
-2.连接方式:3PIN防反接杜邦线
-3.模块尺寸:4*2.1cm
-4.安装方式:M4螺钉兼容乐高插孔固定
+* 1.供电电压:5V
+* 2.连接方式:3PIN防反接杜邦线
+* 3.模块尺寸:4*2.1cm
+* 4.安装方式:M4螺钉兼容乐高插孔固定
 
 | 引脚名称 | 描述       |
 | -------- | ---------- |
@@ -27,13 +27,13 @@
 
 ## 详细原理图
 
- [有源蜂鸣器.pdf](有源蜂鸣器模块图片/有源蜂鸣器.pdf) 
+ [有源蜂鸣器.pdf](buzzer module/有源蜂鸣器.pdf) 
 
 ## 机械尺寸
 
 
 
-![15](buzzer module\15.png)
+![15](buzzer module/15.png)
 
 ## 示例程序
 

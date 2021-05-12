@@ -2,15 +2,15 @@
 
 ## 模块图
 
-![Collision Module](collision sensor\Collision Module.png)
+![Collision Module](collision sensor/Collision Module.png)
 
 ## 概述
 
-​        触摸传感器模块是一个基于触摸检测IC（TTP223B）的电容式点动型触摸开关模块。可以将模块安装在非金属材料如塑料、玻璃的表面，另外将薄薄的纸片（非金属）覆盖在模块的表面，只要触摸的位置正确，即可做成隐藏在墙壁、桌面等地方的按键
+​	碰撞开关模块实质为一个微型快动开关，即广为人知的微型开关，是一种由很小的物理力启动的电子开关。它能够直接连在单片机上。它将负载电阻同LED指示灯整合在一起。这使得对他进行测试更为简单。当有物理压力触发开关闭合时，板上的LED指示灯会亮起。碰撞开关的原理比较简单，如下原理图，当被外力触发闭合时，开关闭合，模块输出低电平；当撤销外力时，开关被打开，模块输出高电平。
 
 ## 原理图
 
-![tu3](collision sensor\tu3.png)
+![tu3](collision sensor/tu3.png)
 
 ## 模块参数
 
@@ -21,13 +21,13 @@
 
 ## 详细原理图
 
- [触碰开关.pdf](触碰开关传感器模块图片/触碰开关.pdf) 
+ [触碰开关.pdf](collision sensor/触碰开关.pdf) 
 
 ## 机械尺寸
 
 
 
-![tu2](collision sensor\tu2.png)
+![tu2](collision sensor/tu2.png)
 
 ## 示例程序
 
