@@ -55,6 +55,7 @@ nav:
         - 震动传感器: sensors/sensors/shockSensor.md
         - 倾斜传感器: sensors/sensors/tiltSwitchSensor.md
         - 气压传感器: sensors/sensors/airpressure.md
+        - 压力传感器: sensors/sensors/Pressure sensor module.md
         # - 超声波传感器: sensors/sensors/ultrasonicSensor.md
         # - RGB超声波传感器: sensors/sensors/rgbUltrasonicSensor.md
 
