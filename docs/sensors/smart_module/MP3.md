@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![123.jpg](E:\emakefun-docs\docs\sensors\smart_module\MP3 module\123.jpg.png)
+![mp3 module](MP3 module/mp3 module.png)
 
 ## 概述
 
@@ -41,4 +41,4 @@ Emakefun MP3语音模块内置8 MB存储空间，无需外接SD卡，若一个�
 
 ## 机械尺寸
 
-![微信图片_20210331113232](E:\emakefun-docs\docs\sensors\smart_module\MP3 module\微信图片_20210331113232.png)
+![微信图片_20210331113232](MP3 module/1.png)
