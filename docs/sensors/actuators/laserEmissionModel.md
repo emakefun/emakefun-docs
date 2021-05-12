@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Infrared Emission Module](Laser emission module/Infrared Emission Module.png)
+![Infrared Emission Module](Laser emission module/07.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![7](Laser emission module/7.png)
+![7](Laser emission module/14.png)
 
 ## 模块参数
 
@@ -31,7 +31,7 @@
 
 ##  机械尺寸
 
-![5](Laser emission module/5.png)
+![5](Laser emission module/18.png)
 
 
 
