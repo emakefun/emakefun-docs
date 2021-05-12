@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![07](Infrared emission Module/Infrared Emission Module.jpg)
+![07](Infrared emission Module/Infrared Emission Module.png)
 
 ## 概述
 
