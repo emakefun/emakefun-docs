@@ -2,7 +2,7 @@
 
 ## 模块实物图
 
-![1](airpressure/Atmospheric pressure Sensor.jpg)
+![1](BMP280 air pressure sensor/Atmospheric pressure Sensor.jpg)
 
 ## 概述
 
@@ -24,7 +24,7 @@ BMP280是专为移动应用设计的绝对气压传感器。传感器模块安�
 
   以上是主要用途：以下为BMP280的原理图
 
-  ![tu1](airpressure/tu1.png)
+  ![tu1](BMP280 air pressure sensor/tu1.png)
 
 ##  模块参数
 
