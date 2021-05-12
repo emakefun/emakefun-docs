@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Infrared Emission Module](E:\emakefun-docs\docs\sensors\actuators\Laser emission module\Infrared Emission Module.png)
+![Infrared Emission Module](Laser emission module/Infrared Emission Module.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![7](E:\emakefun-docs\docs\sensors\actuators\Laser emission module\7.png)
+![7](Laser emission module/7.png)
 
 ## 模块参数
 
@@ -27,11 +27,11 @@
 
 ## 详细原理图
 
- [laser.pdf](激光发射模块图片-无模块图/laser.pdf) 
+ [laser.pdf](Laser emission module/laser.pdf) 
 
 ##  机械尺寸
 
-![5](E:\emakefun-docs\docs\sensors\actuators\Laser emission module\5.png)
+![5](Laser emission module/5.png)
 
 
 

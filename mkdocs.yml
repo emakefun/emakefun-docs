@@ -63,7 +63,7 @@ nav:
         - 无源蜂鸣器模块: sensors/actuators/passiveBuzzerModel.md
         - 直流电机模块: sensors/actuators/motorModel.md
         - 继电器模块: sensors/actuators/relayModel.md
-        # - 激光发射模块: sensors/actuators/laserEmissionModel.md
+        - 激光发射模块: sensors/actuators/laserEmissionModel.md
         - 振动马达: sensors/actuators/Vibration motor module.md
         - 大电机风扇模块: sensors/actuators/High power motor module.md
         # - 声音输出模块: sensors/actuators/Big Speaker Module.md
