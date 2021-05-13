@@ -19,15 +19,25 @@
 
 ## 详细原理图和规格书
 
- [查看原理图](button_module/button_module_schematic.pdf) 
+ [查看原理图](button_module/button_module_schematic.pdf)
 
- [查看数据手册](button_module/button_datasheet.pdf) 
+ [查看数据手册](button_module/button_datasheet.pdf)
 
 ## 模块参数
 
-* G:GND
-* V:5V/3.3V电源
-* S:信号输出引脚，按下时输出低电平，板子蓝色信号灯亮起
+| 引脚名称 |                       描述                       |
+| :------: | :----------------------------------------------: |
+|    G     |                       GND                        |
+|    V     |                      5V电源                      |
+|    S     | 信号输出引脚，按下时输出低电平，松开时输出高电平 |
+
+- 供电电压：5V
+
+- 连接方式：3PIN防反接杜邦线
+
+- 模块尺寸：40x22.5mm
+
+- 安装方式：M4螺钉兼容乐高插孔固定
 
 ## 模块装配图
 
@@ -36,7 +46,7 @@
 ## Arduino示例程序
 
 ```c
-int led_out = 13 ;//定义LED引脚
+int led_out = 13;//定义LED引脚
 int keypad_pin = A3; //定义按键引脚
 int value;
 void setup()
@@ -47,13 +57,13 @@ void setup()
 void loop()
 {
   value = digitalRead(keypad_pin); //读取按键输入引脚的值
-  if (value == HIGH) 
+  if (value == LOW) 
   {
-      digitalWrite(led_out,LOW); //如果读取值为高即按键没有按下去，LED亮
+      digitalWrite(led_out,HIGH); //如果读取值为低即按键按下去了，LED亮
   }
   else
   {
-      digitalWrite(led_out,HIGH); //如果读取值为低即按键按下去了，LED灭
+      digitalWrite(led_out,LOW); //如果读取值为低即按键没有按下，LED灭
   }
 }
 ```
