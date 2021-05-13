@@ -2,7 +2,7 @@
 
 ## 按键模块实物图
 
-![Button Module](button_module/Button_Module.png)
+![Button Module](button_module/button_module.png)
 
 ## 按键物理机械图
 
