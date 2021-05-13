@@ -27,16 +27,16 @@ nav:
     - 传感器/配件:
       - 总览: sensors/index.md
       - 基础模块:
-        - 按键模块: sensors/base_model/button.md
-        - 触摸模块: sensors/base_model/touch.md
-        - 碰触开关模块: sensors/base_model/collision.md
-        - 旋转电位器模块: sensors/base_model/rotaryPotentiometer.md
-        - 旋转编码器模块: sensors/base_model/rotaryEncoder.md
-        - 触摸钢琴模块: sensors/base_model/touchPiano.md
-        - 滑动电阻器模块: sensors/base_model/slidePotentiometer.md
-        - 摇杆模块: sensors/base_model/rocker.md
-        - 4x4矩阵键盘模块: sensors/base_model/4x4MatrixKeyboardModel.md
-        - PH2.0摇杆模块: sensors/base_model/joystick_handle.md
+        - 按键模块: sensors/base_modules/button_module.md
+        - 触摸模块: sensors/base_modules/touch.md
+        - 碰触开关模块: sensors/base_modules/collision.md
+        - 旋转电位器模块: sensors/base_modules/rotaryPotentiometer.md
+        - 旋转编码器模块: sensors/base_modules/rotaryEncoder.md
+        - 触摸钢琴模块: sensors/base_modules/touchPiano.md
+        - 滑动电阻器模块: sensors/base_modules/slidePotentiometer.md
+        - 摇杆模块: sensors/base_modules/rocker.md
+        - 4x4矩阵键盘模块: sensors/base_modules/4x4MatrixKeyboardModel.md
+        - PH2.0摇杆模块: sensors/base_modules/joystick_handle.md
       - 传感器: 
         - 声音传感器: sensors/sensors/voiceSensor.md
         - 光敏传感器: sensors/sensors/photosensitiveSensor.md
@@ -74,26 +74,26 @@ nav:
         # - emakefun红外遥控器模块: sensors/actuators/emakefunIRRemoteControlModel.md
     
       - 显示器: 
-        - LED灯: sensors/shows/LED.md
-        - 1602LCD显示屏: sensors/shows/LCD1602.md
-        - TM1650四位数码管: sensors/shows/TM1650.md
-        - TM1637四位时钟数码管: sensors/shows/TM1637.md
-        - 8x8点阵屏: sensors/shows/8x8LedDisplay.md
-        - 交通灯: sensors/shows/trafficLights.md
-        - RGB三色灯: sensors/shows/RGB.md
-        - WS2812B-RGB灯环: sensors/shows/RGBRing.md
+        - LED灯: sensors/displayers/LED.md
+        - 1602LCD显示屏: sensors/displayers/LCD1602.md
+        - TM1650四位数码管: sensors/displayers/TM1650.md
+        - TM1637四位时钟数码管: sensors/displayers/TM1637.md
+        - 8x8点阵屏: sensors/displayers/8x8LedDisplay.md
+        - 交通灯: sensors/displayers/trafficLights.md
+        - RGB三色灯: sensors/displayers/RGB.md
+        - WS2812B-RGB灯环: sensors/displayers/RGBRing.md
       - 通信模块:
         - 红外发射模块: sensors/actuators/infraredEmissionModel.md
         - 红外接收模块: sensors/actuators/irReceiverModel.md
       - 智能模块:
-        - 颜色识别: sensors/smart_module/color recognition.md
-        - 指南针传感器: sensors/smart_module/compass.md
-        - DS1302传感器: sensors/smart_module/ds1302_rtc.md
-        - MPU6050六轴陀螺仪: sensors/smart_module/mpu6050.md
-        - 手势传感器: sensors/smart_module/gestureRecognitionSensor.md
-        - LD3320语音识别模块: sensors/smart_module/ld3320.md
-        - MP3播放模块: sensors/smart_module/MP3.md
-        - MQTT物联网模块: sensors/smart_module/esp8266_mqtt.md
+        - 颜色识别: sensors/smart_modules/color recognition.md
+        - 指南针传感器: sensors/smart_modules/compass.md
+        - DS1302传感器: sensors/smart_modules/ds1302_rtc.md
+        - MPU6050六轴陀螺仪: sensors/smart_modules/mpu6050.md
+        - 手势传感器: sensors/smart_modules/gestureRecognitionSensor.md
+        - LD3320语音识别模块: sensors/smart_modules/ld3320.md
+        - MP3播放模块: sensors/smart_modules/MP3.md
+        - MQTT物联网模块: sensors/smart_modules/esp8266_mqtt.md
       
       - 配件: micro_bit/IObit.md
     - Micro:bit产品:
