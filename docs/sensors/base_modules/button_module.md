@@ -1,12 +1,12 @@
 # 按键模块
 
-## 按键模块实物图
+## 实物图
 
-![Button Module](button_module/button_module.png)
+![实物图](button_module/button_module.png)
 
-## 按键物理机械图
+## 按键机械结构图
 
-![button_structure](button_module/button_structure.png)
+![按键机械结构图](button_module/button_structure.png)
 
 ##  概述
 
@@ -15,7 +15,7 @@
 
 ## 原理图
 
-![button_module_schematic](button_module/button_module_schematic.png)
+![原理图](button_module/button_module_schematic.png)
 
 ## 详细原理图和规格书
 
@@ -39,9 +39,9 @@
 
 - 安装方式：M4螺钉兼容乐高插孔固定
 
-## 模块装配图
+## 装配尺寸图
 
-![button_assembly](button_module/button_assembly.png)
+![装配尺寸图](button_module/button_assembly.png)
 
 ## Arduino示例程序
 
@@ -68,5 +68,5 @@ void loop()
 }
 ```
 ## microbit示例程序
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的按键模块介绍
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的按键模块
 

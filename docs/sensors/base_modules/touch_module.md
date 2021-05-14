@@ -64,5 +64,5 @@ void loop()
 ```
 
 ## microbit示例程序
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入部分触摸按键介绍
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入部分触摸按键
 

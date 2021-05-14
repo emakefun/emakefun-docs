@@ -1,8 +1,8 @@
 # 碰触开关
 
-## 模块图
+## 实物图
 
-![collision_sensor](collision_sensor/collision_sensor.png)
+![实物图](collision_sensor/collision_sensor.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![collision_sensor_schematic](collision_sensor/collision_sensor_schematic.png)
+![原理图](collision_sensor/collision_sensor_schematic.png)
 
 ## 模块参数
 
@@ -30,15 +30,15 @@
 
 ## 详细原理图
 
- [查看原理图](collision_sensor/collision_sensor.pdf) 
+ [查看原理图](collision_sensor/collision_sensor_schematic.pdf) 
 
-## 机械尺寸
+## 装配尺寸图
 
 
 
-![tu2](collision_sensor/collision_sensor_assembly.png)
+![装配尺寸图](collision_sensor/collision_sensor_assembly.png)
 
-## 示例程序
+## Arduino示例程序
 
 ```c
 int led_out = 13;//定义LED引脚
