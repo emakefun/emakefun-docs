@@ -1,7 +1,7 @@
-# 4x4矩阵键盘模块
+# 触摸矩阵键盘
 
 ## 实物图
-![Passive Buzzer Module](Touch Matrix keyboard/Matrix keyboard Module.png)
+![实物图](matrix_keyboard_module/matrix_keyboard_module.png)
 
 ## 概述
 
@@ -9,7 +9,7 @@
 
 ## 原理图
 
-![15](Touch Matrix keyboard/15.png)
+![原理图](matrix_keyboard_module/matrix_keyboard_module_schematic.png)
 
 ## 模块参数
 
@@ -28,13 +28,15 @@
 
 ## 详细原理图和数据手册
 
- [矩阵.pdf](Touch Matrix keyboard/矩阵.pdf) 
+ [查看原理图](matrix_keyboard_module/matrix_keyboard_module_schematic.pdf) 
 
 ## 机械尺寸图
 
-![机械尺寸图](Touch Matrix keyboard/49.png)
+![机械尺寸图](matrix_keyboard_module/matrix_keyboard_module_assembly.png)
 
 ## Arduino示例程序
+
+[下载示例程序](matrix_keyboard_module/matrix_keyboard_module.zip)
 
 ```c
 //#include <Wire.h>
@@ -63,4 +65,5 @@ delay(300);
 
 ## microbit示例程序
 
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的4x4矩阵键盘。
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的执行器的触摸矩阵键盘。
+

@@ -2,7 +2,9 @@
 
 ## 实物图
 
-## ![手柄](joystick_handle\手柄.png)概述
+![手柄](joystick_handle\joystick_handle.png)、
+
+## 概述
 
 PH2.0小手柄包含两个电位器（X轴和Y轴）操纵杆和五个按键（A、B、C、D、摇杆按键Z）。操纵杆根据两个触点控制运动，其中一个触点向左和向右，另一个向上和向下。操纵杆通过AD传感器读取不同的电压值，从而识别特定的位置。X轴和Y轴的模拟值都是从0到255，分别表示从左到右的位置和从上到下的位置。当没有操作时，X和Y轴方向的模拟值都为128。A、B、C、D和摇杆按键Z五个按键都有5种状态（按下、释放、单击、双击、长按）。通过I2C连接Arduino主板发送数据。
 
@@ -28,9 +30,11 @@ PH2.0小手柄包含两个电位器（X轴和Y轴）操纵杆和五个按键（A
 
 ## 机械尺寸图
 
-![机械尺寸图](joystick_handle\11.jpg)
+![机械尺寸图](joystick_handle\joystick_handle_assembly.jpg)
 
 ### Arduino示例程序
+
+[下载示例程序](joystick_handle/joystick_handle.zip)
 
 
 ```
@@ -86,4 +90,4 @@ void loop()
 
 ## microbit示例程序
 
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的摇杆模块。
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的PH2.0小手柄。

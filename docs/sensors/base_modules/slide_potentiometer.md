@@ -2,7 +2,7 @@
 
 ## 实物图
 
-![Slide Potentiometer](slide potentiometer/Slide Potentiometer.png)
+![实物图](slide_potentiometer/slide_potentiometer.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![tu2](slide potentiometer/tu2.png)
+![原理图](slide_potentiometer/slide_potentiometer_schematic.png)
 
 ## 模块参数
 
@@ -21,13 +21,15 @@
 
 ## 详细原理图和数据手册
 
- [滑动变阻器.pdf](slide potentiometer/滑动变阻器.pdf) 
+ [查看原理图](slide_potentiometer/slide_potentiometer_schematic.pdf) 
 
 ## 机械尺寸图
 
-![机械尺寸图](slide potentiometer/tu3.png)
+![机械尺寸图](slide_potentiometer/slide_potentiometer_assenbly.png)
 
 ## Arduino示例程序
+
+[下载示例程序](slide_potentiometer/slide_potentiometer.zip)
 
 ``` 
 float i=0,j=0,data;  //define data    i  j
@@ -51,4 +53,4 @@ void loop() {
 
 ## microbit示例程序
 
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的旋转电位器。
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的滑动变阻器。

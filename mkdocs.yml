@@ -29,14 +29,14 @@ nav:
       - 基础模块:
         - 按键模块: sensors/base_modules/button_module.md
         - 触摸模块: sensors/base_modules/touch_module.md
-        - 碰触开关模块: sensors/base_modules/collision_sensor.md
-        - 旋转电位器模块: sensors/base_modules/rotary_potentiometer.md
-        - 旋转编码器模块: sensors/base_modules/rotary_encoder_module.md
-        - 触摸钢琴模块: sensors/base_modules/touch_piano.md
-        - 滑动电阻器模块: sensors/base_modules/slidePotentiometer.md
-        - 摇杆模块: sensors/base_modules/rocker.md
-        - 4x4矩阵键盘模块: sensors/base_modules/4x4MatrixKeyboardModel.md
-        - PH2.0摇杆模块: sensors/base_modules/joystick_handle.md
+        - 碰触开关: sensors/base_modules/collision_module.md
+        - 旋转电位器: sensors/base_modules/rotary_potentiometer.md
+        - 旋转编码器: sensors/base_modules/rotary_encoder_module.md
+        - 触摸钢琴: sensors/base_modules/touch_piano.md
+        - 滑动电阻器: sensors/base_modules/slide_potentiometer.md
+        - 摇杆模块: sensors/base_modules/rocker_module.md
+        - 触摸矩阵键盘: sensors/base_modules/matrix_keyboard_module.md
+        - PH2.0小手柄: sensors/base_modules/joystick_handle.md
       - 传感器: 
         - 声音传感器: sensors/sensors/voiceSensor.md
         - 光敏传感器: sensors/sensors/photosensitiveSensor.md

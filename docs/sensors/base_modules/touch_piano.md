@@ -1,4 +1,4 @@
-# 触摸钢琴模块
+# 触摸钢琴
 
 ## 实物图
 
@@ -21,7 +21,7 @@
 
 ## 原理图
 
-![02](touch_piano/touch_piano_schematic.png)
+![原理图](touch_piano/touch_piano_schematic.png)
 
 ## 模块参数
 
@@ -50,9 +50,11 @@
 
 ## 机械尺寸图
 
-![03](touch_piano/touch_piano_assembly.png)
+![机械尺寸图](touch_piano/touch_piano_assembly.png)
 
 ## Arduino示例程序
+
+[下载示例程序](touch_piano/touch_piano.zip)
 
 ```c
 #include"BS818A.h"
@@ -87,4 +89,4 @@ void loop()
 
 ## microbit示例程序
 
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入部分触摸按键。
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入部分触摸钢琴。

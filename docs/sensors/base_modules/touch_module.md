@@ -40,6 +40,8 @@
 
 ## Arduino示例程序
 
+[下载示例程序](touch_module/touch_module.zip)
+
 ```c
 int touch_pin = A3; //定义触摸按键引脚
 int led_out = 13; //定义Arduino LED引脚
@@ -64,5 +66,5 @@ void loop()
 ```
 
 ## microbit示例程序
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入部分触摸按键
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的触摸模块。
 

@@ -32,7 +32,9 @@
 
 ## 详细原理图和数据手册
 
- [查看原理图](rotary_encoder_module/rotary_encoder_module_schematic.pdf) 
+ [查看原理图](rotary_encoder_module/rotary_encoder_module_schematic.pdf)
+
+[查看数据手册](rotary_encoder_module/ec11.pdf)
 
 ## 机械尺寸图
 
@@ -41,6 +43,8 @@
 ![机械尺寸图](rotary_encoder_module/rotary_encoder_module_assembly.png)
 
 ## Arduino示例程序
+
+[下载示例程序](rotary_encoder_module/rotary_encoder_module.zip)
 
 ```c
 #define encoder_A 3 //A端口输入引脚3
@@ -87,4 +91,4 @@ void loop()
 
 ## microbit示例程序
 
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的按键模块
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的旋转编码器。

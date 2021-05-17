@@ -1,8 +1,8 @@
-# PS2摇杆模块
+# 摇杆模块
 
 ## 实物图
 
-![Rocker Module](rocker module/Rocker Module.png)
+![实物图](rocker_module/rocker_module.png)
 
 ## 概述
 
@@ -10,11 +10,11 @@
 
 ## 原理图
 
-![原理图](rocker module/tu2.png)
+![原理图](rocker_module/rocker_module_schematic.png)
 
 ## 详细原理图和数据手册
 
- [摇杆模块.pdf](rocker module/摇杆模块.pdf) 
+ [查看原理图](rocker_module/rocker_module_schematic.pdf) 
 
 ## 模块参数
 
@@ -26,9 +26,11 @@
 
 ## 机械尺寸图
 
-![机械尺寸图](rocker module/图片4.png)
+![机械尺寸图](rocker_module/rocker_module_assembly.png)
 
 ## Arduino示例程序
+
+[下载示例程序](rocker_module/rocker_module.zip)
 
 ```c
 #define JOYSTICK_X    A4  //define X pin
@@ -76,4 +78,4 @@ void loop()
 
 ## microbit示例程序
 
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的按键模块
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的摇杆模块。

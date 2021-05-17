@@ -1,6 +1,6 @@
 # 旋转电位器
 
-## 实物图        
+## 实物图
 
 ![实物图](rotary_potentiometer/rotary_potentiometer.png)
 
@@ -35,13 +35,17 @@
 
 ## 详细原理图
 
-[查看原理图](rotary potentiometer/rotary potentiometer_schematic.pdf) 
+[查看原理图](rotary_potentiometer/rotary_potentiometer_schematic.pdf)
+
+[查看数据手册](rotary_potentiometer/potentiometer.pdf)
 
 ## 机械尺寸图
 
 ![机械尺寸图](rotary_potentiometer/rotary_potentiometer_assembly.png)
 
 ## Arduino示例程序
+
+[下载示例程序](rotary_potentiometer/rotary_potentiometer.zip)
 
 ```c
 float Voltage = 0,data; //定义电压和模拟值变量

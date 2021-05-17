@@ -45,6 +45,8 @@
 
 ## Arduino示例程序
 
+[下载示例程序](button_module/button_module.zip)
+
 ```c
 int led_out = 13;//定义Arduino LED引脚
 int keypad_pin = A3; //定义按键引脚
@@ -68,5 +70,5 @@ void loop()
 }
 ```
 ## microbit示例程序
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的按键开关。
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的按键模块。
 
