@@ -30,7 +30,7 @@
 
 ## 详细原理图和数据手册
 
-[查看原理图](collision_module/collision_sensor_schematic.pdf) 
+[查看原理图](collision_module/collision_module_schematic.pdf) 
 
 [查看数据手册](collision_module/JL007-010_datasheet.pdf)
 

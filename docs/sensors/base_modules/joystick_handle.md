@@ -2,7 +2,9 @@
 
 ## 实物图
 
-![手柄](joystick_handle\joystick_handle.png)
+![PH2.0小手柄](joystick_handle/joystick_handle.png)
+
+
 
 ## 概述
 
@@ -30,7 +32,7 @@ PH2.0小手柄包含两个电位器（X轴和Y轴）操纵杆和五个按键（A
 
 ## 机械尺寸图
 
-![机械尺寸图](joystick_handle\joystick_handle_assembly.jpg)
+![机械尺寸图](joystick_handle/joystick_handle_assembly.jpg)
 
 ### Arduino示例程序
 

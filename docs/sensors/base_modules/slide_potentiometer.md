@@ -13,11 +13,19 @@
 ![原理图](slide_potentiometer/slide_potentiometer_schematic.png)
 
 ## 模块参数
+| 引脚名称 |     描述     |
+| :------: | :----------: |
+|    G     |     GND      |
+|    V     |    5V电源    |
+|    A     | 信号输出引脚 |
 
-* 1.供电电压:5V
-* 2.连接方式:3PIN防反接杜邦线
-* 3.模块尺寸:6.7*2.1cm
-* 4.安装方式:M4螺钉兼容乐高插孔固定
+- 供电电压：5V
+
+- 连接方式：3PIN防反接杜邦线
+
+- 模块尺寸：67.4*22.5cm
+
+- 安装方式：M4螺钉兼容乐高插孔固定
 
 ## 详细原理图和数据手册
 
@@ -34,22 +42,21 @@
 [下载示例程序](slide_potentiometer/slide_potentiometer.zip)
 
 ``` 
-float i=0,j=0,data;  //define data    i  j
-int analogPin = A3;//GPIO A3 pin
+float i=0,data; //定义刚获取的模拟值 data 模数转化后的数值 i 实际的电阻大小 j
+int r=0;
+int analogPin = A0; //定义滑动变阻器接口
 void setup()
 {
-  pinMode(analogPin, INPUT);//init slideResistance pin output
-  Serial.begin(9600);//  set serial
+ pinMode(analogPin, INPUT); //设置端口输入
+ Serial.begin(9600); // 设置串口波特率
 }
-
 void loop() {
-    data=analogRead(analogPin); //  read slideResistance pin vaule
-    i=data/1023;//A/D
-    j=(1-i)*10000;  //  get Resistance value  ;10000 is max 
-    Serial.print("Resistance value is: ");
-    Serial.print(j);//print Resistance value
-    Serial.println("Ω");
-    delay(200);
+ data=analogRead(analogPin); // 获取端口的模拟值
+ i=data/1023; //模拟值转数字值
+r=(1-i)*100; // 获取滑杆位置
+Serial.print("Slider position(0~100): ");
+ Serial.println(r); //打印电阻值
+ delay(200);
 }
 ```
 
