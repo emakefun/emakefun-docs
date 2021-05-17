@@ -45,7 +45,7 @@
 [下载示例程序](collision_module/collision_module.zip)
 
 ```c
-int led_out = 13;//定义Arduino LED引脚
+int led_out = A2;//定义LED引脚
 int keypad_pin = A3; //定义碰触开关引脚
 int value;
 void setup()

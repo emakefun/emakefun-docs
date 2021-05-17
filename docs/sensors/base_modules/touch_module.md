@@ -44,7 +44,7 @@
 
 ```c
 int touch_pin = A3; //定义触摸按键引脚
-int led_out = 13; //定义Arduino LED引脚
+int led_out = A2; //定义LED引脚
 int value = 0 ;
 void setup()
 {
