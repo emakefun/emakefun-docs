@@ -1,6 +1,6 @@
 # 滑动变阻器
 
-## 滑动变阻器模块图
+## 实物图
 
 ![Slide Potentiometer](slide potentiometer/Slide Potentiometer.png)
 
@@ -19,15 +19,15 @@
 * 3.模块尺寸:6.7*2.1cm
 * 4.安装方式:M4螺钉兼容乐高插孔固定
 
-## 详细原理图
+## 详细原理图和数据手册
 
  [滑动变阻器.pdf](slide potentiometer/滑动变阻器.pdf) 
 
-## 机械尺寸
+## 机械尺寸图
 
-![tu3](slide potentiometer/tu3.png)
+![机械尺寸图](slide potentiometer/tu3.png)
 
-## 示例程序
+## Arduino示例程序
 
 ``` 
 float i=0,j=0,data;  //define data    i  j
@@ -49,3 +49,6 @@ void loop() {
 }
 ```
 
+## microbit示例程序
+
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的旋转电位器。

@@ -1,8 +1,8 @@
 # 触摸模块
 
-## 模块图
+## 实物图
 
-![touch_module](touch_module/touch_module.png)
+![实物图](touch_module/touch_module.png)
 
 ## 概述
 
@@ -30,19 +30,19 @@
 
 ## 原理图和数据手册
 
-  [查看原理图](touch_module/touch_module_schematic.pdf) 
+[查看原理图](touch_module/touch_module_schematic.pdf) 
 
-  [查看数据手册](touch_module/ttp223_datasheet.pdf) 
+[查看数据手册](touch_module/ttp223_datasheet.pdf) 
 
-## 装配尺寸图
+## 机械尺寸图
 
-![装配](touch_module/touch_module_assembly.png)
+![机械尺寸图](touch_module/touch_module_assembly.png)
 
-## 示例程序
+## Arduino示例程序
 
 ```c
 int touch_pin = A3; //定义触摸按键引脚
-int led_out = 13; //定义LED引脚
+int led_out = 13; //定义Arduino LED引脚
 int value = 0 ;
 void setup()
 {

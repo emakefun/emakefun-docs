@@ -1,6 +1,6 @@
 # PS2摇杆模块
 
-## 模块图
+## 实物图
 
 ![Rocker Module](rocker module/Rocker Module.png)
 
@@ -12,7 +12,7 @@
 
 ![原理图](rocker module/tu2.png)
 
-## 详细原理图
+## 详细原理图和数据手册
 
  [摇杆模块.pdf](rocker module/摇杆模块.pdf) 
 
@@ -24,11 +24,11 @@
 * VRY: 通过获取上下
 * SW：通过按键的高低电平，获取是否被按下。
 
-## 机械尺寸
+## 机械尺寸图
 
-![机械尺寸](rocker module/图片4.png)
+![机械尺寸图](rocker module/图片4.png)
 
-## 示例程序
+## Arduino示例程序
 
 ```c
 #define JOYSTICK_X    A4  //define X pin
@@ -74,3 +74,6 @@ void loop()
 }
 ```
 
+## microbit示例程序
+
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的按键模块

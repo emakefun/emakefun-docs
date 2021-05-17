@@ -35,39 +35,28 @@
 
 ## 详细原理图
 
- [查看原理图](rotary potentiometer/rotary potentiometer_schmatic.pdf) 
+[查看原理图](rotary potentiometer/rotary potentiometer_schematic.pdf) 
 
-## 装配尺寸图
+## 机械尺寸图
 
-![装配尺寸图](rotary_potentiometer/rotary_potentiometer_assembly.png)
+![机械尺寸图](rotary_potentiometer/rotary_potentiometer_assembly.png)
 
-## 示例程序
+## Arduino示例程序
 
 ```c
 float Voltage = 0,data; //定义电压和模拟值变量
-float Rmax = 10; //定义电位器最大阻值为10k，实际阻值有误差，需要具体测量
-float RG; //定义电位器中间引脚到GND的阻值为RG
-float RV; //定义电位器中间引脚到V引脚的阻值为RV
 int analogPin = A3; //定义电位器接口接收电压模拟值
 void setup()
 {
  pinMode(analogPin, INPUT); //电压输出接口
- Serial.begin(9600); // 设置串口波特率
+ Serial.begin(9600); //设置串口波特率
 }
 void loop() {
  data = analogRead(analogPin); //获取电压模拟值
- Voltage = (data/1024)*5; //模拟值和数字值转换 * 电压得到当前电压
- RG = Voltage/5.0*Rmax; //计算电位器中间引脚到GND的电阻
- RV = Rmax-RG; //计算电位器中间引脚到V引脚的阻值
+ Voltage = (data/1023)*5; //模拟值和数字值转换 * 电压 得到当前电压
  Serial.print("Voltage is: ");
- Serial.print(Voltage);
- Serial.print("V,"); //串口打印电压值
- Serial.print("RG is: ");
- Serial.print(RG);
- Serial.print("KΩ,");//串口打印RG的值
- Serial.print("RV is: ");
- Serial.print(RV);
- Serial.print("KΩ\n"); //串口打印RV的值
+ Serial.print(Voltage); //打印获取到的电压
+ Serial.println("V");
  delay(200);
 }
 ```

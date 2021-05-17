@@ -28,20 +28,22 @@
 
 - 安装方式：M4螺钉兼容乐高插孔固定
 
-## 详细原理图
+## 详细原理图和数据手册
 
- [查看原理图](collision_sensor/collision_sensor_schematic.pdf) 
+[查看原理图](collision_sensor/collision_sensor_schematic.pdf) 
 
-## 装配尺寸图
+[查看数据手册](collision_sensor/JL007-010_datasheet.pdf)
+
+## 机械尺寸图
 
 
 
-![装配尺寸图](collision_sensor/collision_sensor_assembly.png)
+![机械尺寸图](collision_sensor/collision_sensor_assembly.png)
 
 ## Arduino示例程序
 
 ```c
-int led_out = 13;//定义LED引脚
+int led_out = 13;//定义Arduino LED引脚
 int keypad_pin = A3; //定义碰触开关引脚
 int value;
 void setup()
@@ -65,4 +67,4 @@ void loop()
 
 ## microbit示例程序
 
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的碰触开关
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的碰撞开关。

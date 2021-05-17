@@ -17,11 +17,11 @@
 
 ![原理图](button_module/button_module_schematic.png)
 
-## 详细原理图和规格书
+## 详细原理图和数据手册
 
- [查看原理图](button_module/button_module_schematic.pdf)
+[查看原理图](button_module/button_module_schematic.pdf)
 
- [查看数据手册](button_module/button_datasheet.pdf)
+[查看数据手册](button_module/button_datasheet.pdf)
 
 ## 模块参数
 
@@ -39,14 +39,14 @@
 
 - 安装方式：M4螺钉兼容乐高插孔固定
 
-## 装配尺寸图
+## 机械尺寸图
 
-![装配尺寸图](button_module/button_assembly.png)
+![机械尺寸图](button_module/button_assembly.png)
 
 ## Arduino示例程序
 
 ```c
-int led_out = 13;//定义LED引脚
+int led_out = 13;//定义Arduino LED引脚
 int keypad_pin = A3; //定义按键引脚
 int value;
 void setup()
@@ -68,5 +68,5 @@ void loop()
 }
 ```
 ## microbit示例程序
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的按键模块
+请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的按键开关。
 
