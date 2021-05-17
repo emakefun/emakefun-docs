@@ -2,7 +2,7 @@
 
 ## 实物图
 
-![手柄](joystick_handle\joystick_handle.png)、
+![手柄](joystick_handle\joystick_handle.png)
 
 ## 概述
 

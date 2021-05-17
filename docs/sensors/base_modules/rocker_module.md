@@ -2,6 +2,10 @@
 
 ## 实物图
 
+### A款
+
+### B款
+
 ![实物图](rocker_module/rocker_module.png)
 
 ## 概述
@@ -10,21 +14,45 @@
 
 ## 原理图
 
+### A款
+
+### B款
+
 ![原理图](rocker_module/rocker_module_schematic.png)
 
 ## 详细原理图和数据手册
 
- [查看原理图](rocker_module/rocker_module_schematic.pdf) 
+[查看A款原理图](rocker_module/rocker_module_schematic.pdf) 
+
+[查看B款原理图](rocker_module/rocker_module_schematic.pdf) 
+
+[查看A款数据手册]() 
+
+[查看B款数据手册]() 
 
 ## 模块参数
 
-* V: 电源5V
-* G: GND
-* VRX: 通过获取左右
-* VRY: 通过获取上下
-* SW：通过按键的高低电平，获取是否被按下。
+| 引脚名称 |               描述               |
+| :------: | :------------------------------: |
+|    G     |               GND                |
+|    V     |              5V电源              |
+|    X     |       获取摇杆上下动的数据       |
+|    Y     |       获取摇杆左右动的数据       |
+|    B     | 通过高低电平，判断按键是否被按下 |
+
+- 供电电压：5V
+
+- 连接方式：4PIN/5PIN防反接杜邦线
+
+- 模块尺寸：40x22.5mm/40x32mm
+
+- 安装方式：M4螺钉兼容乐高插孔固定
 
 ## 机械尺寸图
+
+### A款
+
+### B款
 
 ![机械尺寸图](rocker_module/rocker_module_assembly.png)
 
@@ -51,24 +79,24 @@ void loop()
     value_x=analogRead(JOYSTICK_X);  //get X pin analog value
     value_y=analogRead(JOYSTICK_Y);  //get X pin analog value
     value_b=digitalRead(JOYSTICK_B); //get button pin value 
-    if(value_x==0)    //
+    if(value_x<=25)    //
     {
         Serial.println("right");//print right
 
     }
-    else if(value_x==1023)  //
+    else if(value_x>=990)  //
     {
          Serial.println("left");    //print left
     }
-    if(value_y==0)  //
+    if(value_y<=50)  //
     {
         Serial.println("up");//print up
     }
-    else if(value_y==1023) //
+    else if(value_y>=990) //
     {
         Serial.println("down");//print down
     }
-    if(value_b == 0 )  //
+    if(value_b>= 25 )  //
     {
         Serial.println("enter");//print enter
     }

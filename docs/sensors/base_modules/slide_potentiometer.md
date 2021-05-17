@@ -21,7 +21,9 @@
 
 ## 详细原理图和数据手册
 
- [查看原理图](slide_potentiometer/slide_potentiometer_schematic.pdf) 
+ [查看原理图](slide_potentiometer/slide_potentiometer_schematic.pdf)
+
+ [查看数据手册](slide_potentiometer/slide_potentiometer.pdf)
 
 ## 机械尺寸图
 

@@ -43,7 +43,9 @@
 
 [查看原理图](touch_piano/touch_piano_schematic.pdf) 
 
-[查看数据手册]()
+[查看数据手册1](touch_piano/bs818a.pdf)
+
+[查看数据手册2](touch_piano/ttp229.pdf)
 
 ## 机械尺寸图
 
