@@ -4,9 +4,11 @@
 
 ### A款
 
+![实物图](rocker_module/rocker_module_a.png)
+
 ### B款
 
-![实物图](rocker_module/rocker_module.png)
+![实物图](rocker_module/rocker_module_b.png)
 
 ## 概述
 
@@ -16,15 +18,17 @@
 
 ### A款
 
+![原理图A](rocker_module/rocker_module_schematic_b.png)
+
 ### B款
 
-![原理图](rocker_module/rocker_module_schematic.png)
+![原理图B](rocker_module/rocker_module_schematic_a.png)
 
 ## 详细原理图和数据手册
 
-[查看A款原理图](rocker_module/rocker_module_schematic.pdf) 
+[查看A款原理图](rocker_module/rocker_module_schematic_a.pdf) 
 
-[查看B款原理图](rocker_module/rocker_module_schematic.pdf) 
+[查看B款原理图](rocker_module/rocker_module_schematic_b.pdf) 
 
 [查看A款数据手册]() 
 
@@ -42,7 +46,7 @@
 
 - 供电电压：5V
 
-- 连接方式：4PIN/5PIN防反接杜邦线
+- 连接方式：PH2.0 4PIN/5PIN防反接线
 
 - 模块尺寸：40x22.5mm/40x32mm
 
@@ -52,9 +56,11 @@
 
 ### A款
 
+![机械尺寸图](rocker_module/rocker_module_assembly_a.png)
+
 ### B款
 
-![机械尺寸图](rocker_module/rocker_module_assembly.png)
+![机械尺寸图](rocker_module/rocker_module_assembly_b.png)
 
 ## Arduino示例程序
 

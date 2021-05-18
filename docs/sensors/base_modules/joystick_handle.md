@@ -2,7 +2,7 @@
 
 ## 实物图
 
-![PH2.0小手柄](joystick_handle/joystick_handle.png)
+![实物图](joystick_handle/joystick_handle.png)
 
 
 
@@ -12,23 +12,29 @@ PH2.0小手柄包含两个电位器（X轴和Y轴）操纵杆和五个按键（A
 
 ## 原理图
 
+![原理图](joystick_handle/joystick_handle_schematic.png)
 
+## 详细原理图和数据手册
+
+[查看原理图](joystick_handle/joystick_handle_schematic.pdf)
+
+[查看数据手册]()
 
 ## 模块参数
 
-* 电源要求：+3.3-5V
-* 通信方式：IIC
-* 接口模式：pH2.0-4
-* 外形尺寸：90*40mm
-* 安装方式:M4螺钉兼容乐高插孔固定
-* I2C通讯方式，地址0x5A
 
-| 引脚名称 | 描述            |
-| -------- | --------------- |
-| G        | GND地线         |
-| V        | 5V电源引脚      |
-| SCL      | I2C通信时钟引脚 |
-| SDA      | I2C通信数据引脚 |
+| 引脚名称 |      描述       |
+| :------: | :-------------: |
+|    G     |     GND地线     |
+|    V     |   5V电源引脚    |
+|   SCL    | I2C通信时钟引脚 |
+|   SDA    | I2C通信数据引脚 |
+
+- 供电电压：+3.3-5V
+- 通信方式：IIC，地址0x5A
+- 连接方式：PH2.0 4PIN防反接线
+- 外形尺寸：90*40mm
+- 安装方式：M4螺钉兼容乐高插孔固定
 
 ## 机械尺寸图
 
@@ -64,8 +70,8 @@ void loop()
 /******************TEST joystick_X_Y VAL ********************************/
 
     Serial.print("val_x: ");
-    Serial.println(val_x);
-    Serial.print("val_y: ");
+    Serial.print(val_x);
+    Serial.print(" val_y: ");
     Serial.println(val_y);
 
 /*************TEST ButtonPressed OR ButtonReleased************/
