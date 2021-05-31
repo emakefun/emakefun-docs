@@ -176,7 +176,7 @@ AT+MQTTCONN:<LinkID>,<state>,<scheme><"host">,<port>,<"path">,<reconnect>
 - 4: 已建立连接
 - 5: 已连接, 但未订阅 topic
 - 6: 已连接, 已订阅过 topic
-- scheme:
+scheme:
 - 1: MQTT over TCP
 - 2: MQTT over TLS(no certificate verify)
 - 3: MQTT over TLS(verify server certificate)
@@ -288,14 +288,14 @@ OK或ERROR
 - +MQTTSUB:<LinkID>,<state>,<"topic1">,<qos>
 - +MQTTSUB:<LinkID>,<state>,<"topic2">,<qos>
 - +MQTTSUB:<LinkID>,<state>,<"topic3">,<qos>
-...
-OK
-1
-2
-3
-4
-5
-或ERROR
+
+- OK
+- 1
+- 2
+- 3
+- 4
+- 5
+- 或ERROR
 
 参数说明:
 
@@ -325,8 +325,8 @@ OK或ERROR
 
 参数说明:
 
-LinkID: 当前只支持 0
-topic: 取消订阅主题, 最长 64 字节
+- LinkID: 当前只支持 0
+- topic: 取消订阅主题, 最长 64 字节
 如果取消未订阅的主题, 仍无条件向 MQTT broker 取消订阅, Log 口打印 NO UNSUBSCRIBE
 
 ### AT+MQTTCLEAN
@@ -349,13 +349,16 @@ LinkID: 当前只支持 0
 ## 模块尺寸
 ![size](esp8266_mqtt_pic/esp_8266_SMD.png)
 
+## 接线示例
+![size](esp8266_mqtt_pic/esp8266_jiexian.png)
+
 ##  arduino 应用场景
 
 AT串口测试
 ```
 #include "Arduino.h"
 #include "SoftwareSerial.h"
-SoftwareSerial Serial1(6, 7); // RX, TX
+SoftwareSerial Serial1(5, 6); // RX, TX
 
 void setup()
 {
