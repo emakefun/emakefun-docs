@@ -45,22 +45,22 @@ OK或ERROR
 
 LinkID: 当前只支持 0
 scheme:
-1: MQTT over TCP
-2: MQTT over TLS(no certificate verify)
-3: MQTT over TLS(verify server certificate)
-4: MQTT over TLS(provide client certificate)
-5: MQTT over TLS(verify server certificate and provide client certificate)
-6: MQTT over WebSocket(based on TCP)
-7: MQTT over WebSocket Secure(based on TLS, no certificate verify)
-8: MQTT over WebSocket Secure(based on TLS, verify server certificate)
-9: MQTT over WebSocket Secure(based on TLS, provide client certificate)
-10: MQTT over WebSocket Secure(based on TLS, verify server certificate and provide client certificate)
-client_id: 对应 MQTT client ID, 用于标志 client 身份, 最长 256 字节
-username: 用于登录 MQTT broker 的 username, 最长 64 字节
-password: 用于登录 MQTT broker 的 password, 最长 64 字节
-cert_key_ID: 证书 ID, 目前支持一套 cert 证书, 参数为 0
-CA_ID: CA ID, 目前支持一套 CA 证书, 参数为 0
-path: 资源路径, 最长 32 字节
+- 1: MQTT over TCP
+- 2: MQTT over TLS(no certificate verify)
+- 3: MQTT over TLS(verify server certificate)
+- 4: MQTT over TLS(provide client certificate)
+- 5: MQTT over TLS(verify server certificate and provide client certificate)
+- 6: MQTT over WebSocket(based on TCP)
+- 7: MQTT over WebSocket Secure(based on TLS, no certificate verify)
+- 8: MQTT over WebSocket Secure(based on TLS, verify server certificate)
+- 9: MQTT over WebSocket Secure(based on TLS, provide client certificate)
+- 10: MQTT over WebSocket Secure(based on TLS, verify server certificate and provide client certificate)
+- client_id: 对应 MQTT client ID, 用于标志 client 身份, 最长 256 字节
+- username: 用于登录 MQTT broker 的 username, 最长 64 字节
+- password: 用于登录 MQTT broker 的 password, 最长 64 字节
+- cert_key_ID: 证书 ID, 目前支持一套 cert 证书, 参数为 0
+- CA_ID: CA ID, 目前支持一套 CA 证书, 参数为 0
+- path: 资源路径, 最长 32 字节
 
 ### AT+MQTTCLIENTID - 配置 MQTT 客户端 ID
 设置指令:
@@ -77,8 +77,8 @@ OK或ERROR
 
 参数说明:
 
-LinkID: 当前只支持 0
-client_id: 对应 MQTT client ID, 用于标志 client 身份, 最长 256 字节
+- LinkID: 当前只支持 0
+- client_id: 对应 MQTT client ID, 用于标志 client 身份, 最长 256 字节
 
 ### AT+MQTTUSERNAME - 配置 MQTT 登录用户名
 设置指令:
@@ -130,13 +130,13 @@ OK或ERROR
 
 参数说明:
 
-LinkID: 当前只支持 0
-keepalive: MQTT PING 超时时间,范围为 [60, 7200], 单位为秒. 默认 120
-disable_clean_session: MQTT 清理会话标志, 参数为 0 或 1, 默认为 0
-lwt_topic: 遗嘱 topic, 最长 64 字节
-lwt_msg: 遗嘱 message, 最长 64 字节
-lwt_qos: 遗嘱 QoS, 参数可选 0, 1, 2, 默认为 0
-lwt_retain: 遗嘱 retain, 参数可选 0, 1, 默认为 0
+- LinkID: 当前只支持 0
+- keepalive: MQTT PING 超时时间,范围为 [60, 7200], 单位为秒. 默认 120
+- disable_clean_session: MQTT 清理会话标志, 参数为 0 或 1, 默认为 0
+- lwt_topic: 遗嘱 topic, 最长 64 字节
+- lwt_msg: 遗嘱 message, 最长 64 字节
+- lwt_qos: 遗嘱 QoS, 参数可选 0, 1, 2, 默认为 0
+- lwt_retain: 遗嘱 retain, 参数可选 0, 1, 默认为 0
 
 ### AT+MQTTCONN
 设置指令:
@@ -163,30 +163,51 @@ AT+MQTTCONN:<LinkID>,<state>,<scheme><"host">,<port>,<"path">,<reconnect>
 
 参数说明:
 
-LinkID: 当前只支持 0
-host: 连接 MQTT broker 域名, 最大 128 字节
-port: 连接 MQTT broker 端口, 最大 65535
-path: 资源路径, 最长 32 字节
-reconnect: 是否重连 MQTT, 若设置为 1, 需要消耗较多内存资源
-state: MQTT 当前状态, 状态说明如下:
-0: 连接未初始化
-1: 已设置 MQTTUSERCFG
-2: 已设置 MQTTCONNCFG
-3: 连接已断开
-4: 已建立连接
-5: 已连接, 但未订阅 topic
-6: 已连接, 已订阅过 topic
-scheme:
-1: MQTT over TCP
-2: MQTT over TLS(no certificate verify)
-3: MQTT over TLS(verify server certificate)
-4: MQTT over TLS(provide client certificate)
-5: MQTT over TLS(verify server certificate and provide client certificate)
-6: MQTT over WebSocket(based on TCP)
-7: MQTT over WebSocket Secure(based on TLS, no certificate verify)
-8: MQTT over WebSocket Secure(based on TLS, verify server certificate)
-9: MQTT over WebSocket Secure(based on TLS, provide client certificate)
-10: MQTT over WebSocket Secure(based on TLS, verify server certificate and provide client certificate)
+- LinkID: 当前只支持 0
+- host: 连接 MQTT broker 域名, 最大 128 字节
+- port: 连接 MQTT broker 端口, 最大 65535
+- path: 资源路径, 最长 32 字节
+- reconnect: 是否重连 MQTT, 若设置为 1, 需要消耗较多内存资源
+- state: MQTT 当前状态, 状态说明如下:
+- 0: 连接未初始化
+- 1: 已设置 MQTTUSERCFG
+- 2: 已设置 MQTTCONNCFG
+- 3: 连接已断开
+- 4: 已建立连接
+- 5: 已连接, 但未订阅 topic
+- 6: 已连接, 已订阅过 topic
+- scheme:
+- 1: MQTT over TCP
+- 2: MQTT over TLS(no certificate verify)
+- 3: MQTT over TLS(verify server certificate)
+- 4: MQTT over TLS(provide client certificate)
+- 5: MQTT over TLS(verify server certificate and provide client certificate)
+- 6: MQTT over WebSocket(based on TCP)
+- 7: MQTT over WebSocket Secure(based on TLS, no certificate verify)
+- 8: MQTT over WebSocket Secure(based on TLS, verify server certificate)
+- 9: MQTT over WebSocket Secure(based on TLS, provide client certificate)
+- 10: MQTT over WebSocket Secure(based on TLS, verify server certificate and provide client certificate)
+
+### AT+ALIYUN_MQTTCONN?
+
+设置指令:
+
+AT+ALIYUN_MQTTCONN=<"host">,<port>,<"ProductKey">,<"DeviceName">,<"DeviceSecret">
+
+功能:
+连接指定的阿里云MQTT broker
+
+参数说明:
+- host: 连接阿里云的MQTT broker 域名, 详情请参考[**阿里云域名格式**](https://help.aliyun.com/document_detail/147356.html?spm=a2c4g.11186623.6.587.253b4006W32crS)
+- port: 连接 MQTT broker 端口, 最大 65535 默认 1883
+- ProductKey: 设备所属产品的ProductKey，即物联网平台为产品颁发的全局唯一标识符
+- DeviceName: 设备在产品内的唯一标识符。DeviceName与设备所属产品的ProductKey组合，作为设备标识，用来与物联网平台进行连接认证和通信。
+- DeviceSecret: 物联网平台为设备颁发的设备密钥，用于认证加密。需与DeviceName成对使用。
+
+响应:
+
+OK或ERROR
+
 
 ### AT+MQTTPUB
 设置指令:
@@ -202,11 +223,11 @@ OK或ERROR
 
 参数说明:
 
-LinkID: 当前只支持 0
-topic: 发布主题, 最长 64 字节
-data: 发布消息, data 不能包含 \0, 请确保整条 AT+MQTTPUB 不超过 AT 指令的最大长度限制
-qos: 发布服务质量, 参数可选 0,1,2, 默认为 0
-retain: 发布 retain
+- LinkID: 当前只支持 0
+- topic: 发布主题, 最长 64 字节
+- data: 发布消息, data 不能包含 \0, 请确保整条 AT+MQTTPUB 不超过 AT 指令的最大长度限制
+- qos: 发布服务质量, 参数可选 0,1,2, 默认为 0
+- retain: 发布 retain
 
 ### AT+MQTTPUBRAW
 设置指令:
@@ -230,12 +251,12 @@ OK或ERROR
 
 参数说明:
 
-LinkID: 当前只支持 0
-topic: 发布主题, 最长 64 字节
-length: 要发布消息长度, 长度受限于当前可用内存
-qos: 发布服务质量, 参数可选 0,1,2, 默认为 0
-retain: 发布 retain
-AT port 未收到指定 length 长度的数据, 将一直等待, 在此期间接收到的数据都会当成普通数据
+- LinkID: 当前只支持 0
+- topic: 发布主题, 最长 64 字节
+- length: 要发布消息长度, 长度受限于当前可用内存
+- qos: 发布服务质量, 参数可选 0,1,2, 默认为 0
+- retain: 发布 retain
+- AT port 未收到指定 length 长度的数据, 将一直等待, 在此期间接收到的数据都会当成普通数据
 
 ### AT+MQTTSUB
 设置指令:
@@ -264,9 +285,9 @@ OK或ERROR
 
 响应:
 
-+MQTTSUB:<LinkID>,<state>,<"topic1">,<qos>
-+MQTTSUB:<LinkID>,<state>,<"topic2">,<qos>
-+MQTTSUB:<LinkID>,<state>,<"topic3">,<qos>
+- +MQTTSUB:<LinkID>,<state>,<"topic1">,<qos>
+- +MQTTSUB:<LinkID>,<state>,<"topic2">,<qos>
+- +MQTTSUB:<LinkID>,<state>,<"topic3">,<qos>
 ...
 OK
 1
@@ -278,17 +299,17 @@ OK
 
 参数说明:
 
-LinkID: 当前只支持 0
-state: MQTT 当前状态, 状态说明如下:
-0: 连接未初始化
-1: 已设置 MQTTUSERCFG
-2: 已设置 MQTTCONNCFG
-3: 连接已断开
-4: 已建立连接
-5: 已连接, 但未订阅 topic
-6: 已连接, 已订阅过 topic
-topic*: 订阅过的主题
-qos: 订阅过的 QoS
+- LinkID: 当前只支持 0
+- state: MQTT 当前状态, 状态说明如下:
+- 0: 连接未初始化
+- 1: 已设置 MQTTUSERCFG
+- 2: 已设置 MQTTCONNCFG
+- 3: 连接已断开
+- 4: 已建立连接
+- 5: 已连接, 但未订阅 topic
+- 6: 已连接, 已订阅过 topic
+- topic*: 订阅过的主题
+- qos: 订阅过的 QoS
 
 ### AT+MQTTUNSUB
 设置指令:
