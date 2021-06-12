@@ -207,6 +207,7 @@ AT+ALIYUN_MQTTCONN=<"host">,<port>,<"ProductKey">,<"DeviceName">,<"DeviceSecret"
 连接指定的阿里云MQTT broker
 
 参数说明:
+
 - host: 连接阿里云的MQTT broker 域名, 详情请参考[**阿里云域名格式**](https://help.aliyun.com/document_detail/147356.html?spm=a2c4g.11186623.6.587.253b4006W32crS)
 - port: 连接 MQTT broker 端口, 最大 65535 默认 1883
 - ProductKey: 设备所属产品的ProductKey，即物联网平台为产品颁发的全局唯一标识符
