@@ -17,7 +17,7 @@
 
 ## Sensor:bit 引脚介绍
 
-![Sensorbit_face.png](sensorbit/sensorbit_face.png)
+![Sensorbit_face.png](sensorbit/sensorbit_face_v2.png)
 
 - Sensor:bit 有8个3pin 接口、引出的 Micro:bit IO口分别为：P0、P1、P2、P8、P12、P13、P14、P15。其中只有 P0、P1、P2 引脚为模拟口。
 - Sensor:bit 设计有6个4pin 接口、引出的 Micro:bit IO口分别为：P1 和 P12、P8 和 P2、P13 和 P14、P15 和 P16、以及两个I2C接口。
@@ -31,8 +31,10 @@
 Sensor:bit 是专为 Micro:bit 与各种传感器连接所设计的，对与 PH2.0 接口的 Sensor:bit 、设计有一套量身定做的 PH2.0接口传感器套件。传感器种类多样，按照其作用类型可分为四大类：输入模块、传感器、执行类、显示器。
 
 要支持如下micropython语法需要下载最新固件到microbit
-[Microbit V1固件](http://www.emakefun.com/firmware/firmware_v1.hex)
-[Microbit V2固件](http://www.emakefun.com/firmware/firmware_v2.hex)
+
+[Micro:bit V1固件](http://www.emakefun.com/firmware/firmware_v1.hex)
+
+[Micro:bit V2固件](http://www.emakefun.com/firmware/firmware_v2.hex)
 
 ## 输入模块
 
