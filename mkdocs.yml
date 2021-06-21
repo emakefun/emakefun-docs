@@ -105,10 +105,11 @@ nav:
       - Motor:bit: micro_bit/motorbit.md
       - Magic:bit四合一小车: micro_bit/FourInOneCar.md
       - Magic:bit麦轮小车: micro_bit/WheatwheelCar.md
-    - Arduino可编程产品: 
+    - Arduino产品: 
       - Arduino主板介绍: arduino/Hummerbot2.md
+      - PH2.0传感器扩展板: arduino/SensorKit.md
       - Hummerbot: arduino/Hummerbot2.md
-      - Hummerbot图形化编程: arduino/Hummerbot.md
+      # - Hummerbot图形化编程: arduino/Hummerbot.md
       - Happybot: arduino/Happybot.md
       - MirageTank: arduino/MirageTank.md
       - PantherTank: arduino/PantherTank.md
