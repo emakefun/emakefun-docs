@@ -894,13 +894,28 @@ while True:
     sleep(1000)
 ```
 
-### 红外发射模块(暂无)
+### 红外发射模块（V2版本）
 
 红外发射模块在我们的日常生活中发挥着重要的作用。现在被广泛应用于许多家用电器中，如空调、电视、DVD等，它是基于无线遥感的，也是一种遥控。[红外发射模块规格书]()
 **makecode 编程**
 **micropython 编程**
 
+- 功能语句:
 
+> ir_send.nec_code(pins, value)    # pins：引脚命  value:  发送数据
+
+- 使用例程: 
+
+> > ir_send.nec_code(pin1,255)         # P1引脚发送255
+
+```
+# Micro:bit 按键控制红外发送
+from microbit import *
+from actuator import ir_send
+while True:
+    if button_a.was_pressed():
+        ir_send.nec_code(pin1,255)
+```
 
 ## 显示器模块
 
