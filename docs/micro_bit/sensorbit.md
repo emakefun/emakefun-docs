@@ -1013,12 +1013,12 @@ tm1637.clear(1)   # 清除位置为 1的显示
 ```
 # tM1637 四位时钟数码管显示数字
 from microbit import *
-from monitor improt tm1637
+from monitor import tm1637
 tm1637.init(pin8, pin12, 7)
 while True:
-    Tm1637.show_digit(1, 0, 0)
+    tm1637.show_digit(1, 0, 0)
     sleep(2000)
-    Tm1637.clear(1)
+    tm1637.clear(1)
 ```
 
 ### 8x8 点阵屏模块
