@@ -500,16 +500,18 @@ DHT11数字温度 - 湿度传感器是一种包含校准数字信号输出的复
 **micropython 编程**
 
 - 功能语句: 
-> dht11.read_Tem(pin2)       # 获取环境温度  摄氏度
-> dht11.read_Hum(pin2)              # 获取环境湿度
+> dht11.init(pin1)      	#设置dht11引脚
+> dht11.temperature()      # 获取环境温度  摄氏度
+> dht11.humidity()            # 获取环境湿度
 
 ```
 # Micro:bit 屏幕显示温湿度
 from microbit import *
 from sensor import dht11
+dht11.init(pin1)
 while True:
-    display.scroll(dht11.read_Tem(pin2))
-    display.scroll(dht11.read_Hum(pin2))
+    display.scroll(dht11.temperature())
+    display.scroll(dht11.humidity())
 ```
 
 ### DS18B20 温度传感器
