@@ -16,7 +16,7 @@
 
 ## MCU specifications
 -Onboard DC-DC step-down chip Wide voltage input: 5 ~ 36V Voltage output: 5V Maximum current output: 3A
-- MCU :STM32
+- MCU :STM32/STC8G
 - IO: 8-channel ADC detection
 - Communication method with Raspberry Pi: I2C
 - I2C address: 0x04
@@ -59,9 +59,9 @@
 
 ## Read ADC analog value
 
-&ensp;&ensp;&ensp;&ensp;As we all know, there is no ADC in Raspberry Pi, so the analog value of the sensor cannot be read directly. With the help of the MCU STM32 built into the expansion board, a 12-bit ADC can be read. This means that analog sensors can be used on the Raspberry Pi, and there are a total of 8 available interfaces.
+&ensp;&ensp;&ensp;&ensp;As we all know, there is no ADC in Raspberry Pi, so the analog value of the sensor cannot be read directly. With the help of the MCU STM32 built into the expansion board, a 10-bit ADC can be read. This means that analog sensors can be used on the Raspberry Pi, and there are a total of 8 available interfaces.
 
-&ensp;&ensp;&ensp;&ensp;The analog sensor inputs the analog voltage to the 12-bit analog-to-digital converter. After the analog-to-digital converter converts the analog data to digital data, the digital data is input to the Raspberry Pi via I2C.
+&ensp;&ensp;&ensp;&ensp;The analog sensor inputs the analog voltage to the 10-bit analog-to-digital converter. After the analog-to-digital converter converts the analog data to digital data, the digital data is input to the Raspberry Pi via I2C.
 
 
 ### Python code
@@ -72,9 +72,9 @@
     ADC=smbus.SMBus(1)#Declare to use I2C 1
     
     while True:
-     ADC.write_byte(0x04,0x20)#Write a byte to the slave
-     print(ADC.read_word_data(0x04,0x20))#Raspberry Pi reads the data returned by the expansion board and prints it out
-     tiem.sleep(1)#Delay 1 second
+     ADC.write_byte(0x04,0x10)#Write a byte to the slave
+     print(ADC.read_word_data(0x04,0x10))#Raspberry Pi reads the data returned by the expansion board and prints it out
+     time.sleep(1)#Delay 1 second
 ```
 
 ### C code
@@ -88,8 +88,8 @@
         wiringPiSetup();//Initialize WiringPi encoding.
         wiringPiI2CSetup(0x04);//Open the I2C device, 0x04 is the MCU I2C address on the expansion board
         while(1){
-            wiringPiI2CWrite(0x04,0x20);//Write a byte to the slave
-            value = wiringPiI2CReadReg16(0x04,0x20);//Read two bytes from the specified address of the slave and assign it to value
+            wiringPiI2CWrite(0x04,0x10);//Write a byte to the slave
+            value = wiringPiI2CReadReg16(0x04,0x10);//Read two bytes from the specified address of the slave and assign it to value
             printf("%d\r\n",value);//Print value
             delay(100);
         }

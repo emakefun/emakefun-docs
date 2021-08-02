@@ -15,7 +15,7 @@
 
 ## MCU规格
 - 工作电压：3.3V
-- MCU :STM32
+- MCU :STM32/STC8G
 - IO: 8路ADC检测
 - 与树莓派通信方式: I2C
 - I2C地址： 0x04
@@ -57,9 +57,9 @@
 
 ## 读取ADC模拟值
 
-&ensp;&ensp;&ensp;&ensp;众所周知，Raspberry Pi中没有ADC，因此不能直接读取传感器的模拟值。在扩展板内置的MCU STM32的帮助下可以读取12位ADC这就意味着可以在树莓派上使用模拟传感器，且一共有8个可用的接口。
+&ensp;&ensp;&ensp;&ensp;众所周知，Raspberry Pi中没有ADC，因此不能直接读取传感器的模拟值。在扩展板内置的MCU 的帮助下可以读取10位ADC这就意味着可以在树莓派上使用模拟传感器，且一共有8个可用的接口。
 
-&ensp;&ensp;&ensp;&ensp;模拟传感器将模拟电压输入12位模数转换器。模数转换器将模拟数据转换成数字数据后，通过I2C将数字数据输入到树莓派中。
+&ensp;&ensp;&ensp;&ensp;模拟传感器将模拟电压输入10位模数转换器。模数转换器将模拟数据转换成数字数据后，通过I2C将数字数据输入到树莓派中。
 
 
 ### Python代码
@@ -70,9 +70,9 @@
     ADC=smbus.SMBus(1)#声明使用I2C 1
     
     while True:
-     ADC.write_byte(0x04,0x20)#往从机写一个字节
-     print(ADC.read_word_data(0x04,0x20))#树莓派读取扩展板返回回来的数据并打印出来
-     tiem.sleep(1)#延时1秒
+     ADC.write_byte(0x04,0x10)#往从机写一个字节
+     print(ADC.read_word_data(0x04,0x10))#树莓派读取扩展板返回回来的数据并打印出来
+     time.sleep(1)#延时1秒
 ```
 
 ### C代码
@@ -86,8 +86,8 @@
         wiringPiSetup();//初始化WiringPi编码。
         wiringPiI2CSetup(0x04);//打开I2C设备,0x04为扩展板上MCU I2C地址
         while(1){
-            wiringPiI2CWrite(0x04,0x20);//往从机写一个字节
-            value = wiringPiI2CReadReg16(0x04,0x20);//读取从机指定地址的两个字节，并赋值给value
+            wiringPiI2CWrite(0x04,0x10);//往从机写一个字节
+            value = wiringPiI2CReadReg16(0x04,0x10);//读取从机指定地址的两个字节，并赋值给value
             printf("%d\r\n",value);//打印value
             delay(100);
         }

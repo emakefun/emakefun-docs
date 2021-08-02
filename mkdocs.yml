@@ -26,7 +26,7 @@ nav:
     - 首页: index.md
     - 传感器/配件:
       - 总览: sensors/index.md
-      - 基础模块:
+      - 基础输入模块:
         - 按键模块: sensors/base_modules/button_module.md
         - 触摸模块: sensors/base_modules/touch_module.md
         - 碰触开关: sensors/base_modules/collision_module.md
@@ -105,10 +105,11 @@ nav:
       - Motor:bit: micro_bit/motorbit.md
       - Magic:bit四合一小车: micro_bit/FourInOneCar.md
       - Magic:bit麦轮小车: micro_bit/WheatwheelCar.md
-    - Arduino可编程产品: 
+    - Arduino产品: 
       - Arduino主板介绍: arduino/Hummerbot2.md
+      - PH2.0传感器扩展板: arduino/SensorKit.md
       - Hummerbot: arduino/Hummerbot2.md
-      - Hummerbot图形化编程: arduino/Hummerbot.md
+      # - Hummerbot图形化编程: arduino/Hummerbot.md
       - Happybot: arduino/Happybot.md
       - MirageTank: arduino/MirageTank.md
       - PantherTank: arduino/PantherTank.md
