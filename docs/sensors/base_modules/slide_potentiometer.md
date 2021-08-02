@@ -47,14 +47,14 @@ int r=0;
 int analogPin = A0; //定义滑动变阻器接口
 void setup()
 {
- pinMode(analogPin, INPUT); //设置端口输入
- Serial.begin(9600); // 设置串口波特率
+  pinMode(analogPin, INPUT); //设置端口输入
+  Serial.begin(9600); // 设置串口波特率
 }
 void loop() {
  data=analogRead(analogPin); // 获取端口的模拟值
  i=data/1023; //模拟值转数字值
-r=(1-i)*100; // 获取滑杆位置
-Serial.print("Slider position(0~100): ");
+ r=(1-i)*100; // 获取滑杆位置
+ Serial.print("Slider position(0~100): ");
  Serial.println(r); //打印电阻值
  delay(200);
 }

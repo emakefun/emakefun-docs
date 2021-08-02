@@ -33,7 +33,7 @@ nav:
         - 旋转电位器: sensors/base_modules/rotary_potentiometer.md
         - 旋转编码器: sensors/base_modules/rotary_encoder_module.md
         - 触摸钢琴: sensors/base_modules/touch_piano.md
-        - 滑动电阻器: sensors/base_modules/slide_potentiometer.md
+        - 滑动变阻器: sensors/base_modules/slide_potentiometer.md
         - 摇杆模块: sensors/base_modules/rocker_module.md
         - 触摸矩阵键盘: sensors/base_modules/matrix_keyboard_module.md
         - PH2.0小手柄: sensors/base_modules/joystick_handle.md

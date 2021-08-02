@@ -12,7 +12,7 @@
 
 ## 概述
 
-​       PS2摇杆结构非常简单，它包含一个触摸按钮（Z轴）和两个电位器（X轴和Y轴）。 操纵杆根据两个触点控制运动，其中一个触点向左和向右，另一个向上和向下。 操纵杆移动决定了触点的位置，就像地球的纬度和经度一样，不同的位置对应不同的电压，然后控制器可以通过AD传感器读取不同的电压值，从而识别特定的远程位置。模拟信号从上方操纵杆的X和Y轴引脚输入.B的值从0到1023表示从左到右的位置，或者从上到下的位置，如果没有按下按钮，则两个值都是512，这是中间值。
+​       PS2摇杆包含一个触摸按钮（B款没有）和两个电位器（X轴和Y轴）。 操纵杆根据两个触点控制运动，其中一个触点向左和向右，另一个向上和向下。 操纵杆移动决定了触点的位置，就像地球的纬度和经度一样，不同的位置对应不同的电压，然后控制器可以通过AD传感器读取不同的电压值，从而识别特定的远程位置。当没有操作时，X 和 Y 轴方向输出的模拟值为中间值，即最大值的一半。
 
 ## 原理图
 
@@ -30,9 +30,9 @@
 
 [查看B款原理图](rocker_module/rocker_module_schematic_b.pdf) 
 
-[查看A款数据手册]() 
+[查看A款数据手册](rocker_module/rocker_datasheet_a.pdf) 
 
-[查看B款数据手册]() 
+[查看B款数据手册](rocker_module/rocker_datasheet_b.pdf) 
 
 ## 模块参数
 
@@ -64,47 +64,94 @@
 
 ## Arduino示例程序
 
-[下载示例程序](rocker_module/rocker_module.zip)
+### A款
+
+![方向图](/rocker_module/rocker_module1.png)
+
+[下载示例程序A](rocker_module/rocker_module_a.zip)
 
 ```c
-#define JOYSTICK_X    A4  //define X pin
-#define JOYSTICK_Y    A5  //define Y pin
-#define JOYSTICK_B    2//define button pin
+#define JOYSTICK_X    A5  //定义X输入引脚
+#define JOYSTICK_Y    A4  //定义Y输入引脚
+#define JOYSTICK_B    2   //定义按键输入引脚
 
-int value_x,value_y,value_b;  //define three variables
+int value_x,value_y,value_b;  //定义记录模拟输入的变量
 void setup()
 {
-    pinMode(JOYSTICK_X, INPUT);  //init X pin
-    pinMode(JOYSTICK_Y, INPUT);  //init Y pin
-    pinMode(JOYSTICK_B, INPUT_PULLUP);  //init button pin
-    Serial.begin(9600);  //set serial
+    pinMode(JOYSTICK_X, INPUT);  //初始化X引脚
+    pinMode(JOYSTICK_Y, INPUT);  //初始化Y引脚
+    pinMode(JOYSTICK_B, INPUT_PULLUP);  //初始化按键引脚
+    Serial.begin(9600);  //设置波特率
 }
 
 void loop() 
 {
-    value_x=analogRead(JOYSTICK_X);  //get X pin analog value
-    value_y=analogRead(JOYSTICK_Y);  //get X pin analog value
-    value_b=digitalRead(JOYSTICK_B); //get button pin value 
-    if(value_x<=25)    //
+    value_x=analogRead(JOYSTICK_X);  //读取X模拟值
+    value_y=analogRead(JOYSTICK_Y);  //读取Y模拟值
+    value_b=digitalRead(JOYSTICK_B); //读取按键输入 
+    if(value_x<=25)
     {
-        Serial.println("right");//print right
+        Serial.println("right"); //print right
 
     }
-    else if(value_x>=990)  //
+    else if(value_x>=990)
     {
-         Serial.println("left");    //print left
+         Serial.println("left"); //打印left
     }
     if(value_y<=50)  //
     {
-        Serial.println("up");//print up
+        Serial.println("down"); //打印up
     }
     else if(value_y>=990) //
     {
-        Serial.println("down");//print down
+        Serial.println("up"); //打印down
     }
-    if(value_b>= 25 )  //
+    if(value_b == LOW)  //
     {
-        Serial.println("enter");//print enter
+        Serial.println("enter");//打印enter
+    }
+    delay(100);
+}
+```
+
+### B款
+
+![方向图](/rocker_module/rocker_module2.png)
+
+[下载示例程序B](rocker_module/rocker_module_b.zip)
+
+```c
+#define JOYSTICK_X    A4  //定义X输入引脚
+#define JOYSTICK_Y    A5  //定义Y输入引脚
+
+int value_x,value_y;  //定义记录模拟输入的变量
+void setup()
+{
+    pinMode(JOYSTICK_X, INPUT);  //初始化X引脚
+    pinMode(JOYSTICK_Y, INPUT);  //初始化Y引脚
+    Serial.begin(9600);  //设置波特率
+}
+
+void loop() 
+{
+    value_x=analogRead(JOYSTICK_X);  //读取X模拟值
+    value_y=analogRead(JOYSTICK_Y);  //读取Y模拟值
+    if(value_x<=25)
+    {
+        Serial.println("right"); //print right
+
+    }
+    else if(value_x>=990)
+    {
+         Serial.println("left"); //打印left
+    }
+    if(value_y<=50)  //
+    {
+        Serial.println("up"); //打印up
+    }
+    else if(value_y>=990) //
+    {
+        Serial.println("down"); //打印down
     }
     delay(100);
 }
