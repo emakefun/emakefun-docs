@@ -38,24 +38,24 @@ nav:
         - 触摸矩阵键盘: sensors/base_modules/matrix_keyboard_module.md
         - PH2.0小手柄: sensors/base_modules/joystick_handle.md
       - 传感器: 
-        - 声音传感器: sensors/sensors/voiceSensor.md
-        - 光敏传感器: sensors/sensors/photosensitiveSensor.md
-        - 热敏传感器: sensors/sensors/thermalSensor.md
-        - 火焰传感器: sensors/sensors/flameSensor.md
-        - 土壤湿度传感器: sensors/sensors/soilMoistureSensor.md
-        - 雨滴传感器: sensors/sensors/waterDropletsSensor.md
-        - 水深传感器: sensors/sensors/waterDepthSensor.md
-        - 温湿度传感器: sensors/sensors/temperatureAndHumiditySensor.md
-        - 温度DS18B20传感器: sensors/sensors/ds18B20Sensor.md
-        - 气体传感器: sensors/sensors/MQ4Sensor.md
-        - 人体热释电传感器: sensors/sensors/bodySensor.md
-        - 红外循迹模块传感器: sensors/sensors/trackingSensor.md
-        - 磁簧开关传感器: sensors/sensors/magneticSwitchSensor.md
-        - 灰度传感器: sensors/sensors/grayscaleSensor.md
-        - 震动传感器: sensors/sensors/shockSensor.md
-        - 倾斜传感器: sensors/sensors/tiltSwitchSensor.md
-        - 气压传感器: sensors/sensors/airpressure.md
-        - 压力传感器: sensors/sensors/Pressure sensor module.md
+        - 声音传感器: sensors/sensors/sound_sensor.md
+        - 光敏传感器: sensors/sensors/photo_sensitive_sensor.md
+        - 热敏传感器: sensors/sensors/thermal_sensor.md
+        - 火焰传感器: sensors/sensors/flame_sensor.md
+        - 土壤湿度传感器: sensors/sensors/soil_moisture_sensor.md
+        - 雨滴传感器: sensors/sensors/water_droplets_sensor.md
+        - 水深传感器: sensors/sensors/water_depth_sensor.md
+        - 温湿度传感器: sensors/sensors/temperature_humidity_sensor.md
+        - 温度DS18B20传感器: sensors/sensors/ds18b20_sensor.md
+        - 气体传感器: sensors/sensors/mq_gas_sensor.md
+        - 人体热释电传感器: sensors/sensors/human_body_sensor.md
+        - 红外循迹模块传感器: sensors/sensors/tracking_sensor.md
+        - 磁簧开关传感器: sensors/sensors/magnetic-switch_sensor.md
+        - 灰度传感器: sensors/sensors/grayscale_sensor.md
+        - 震动传感器: sensors/sensors/shock_sensor.md
+        - 倾斜传感器: sensors/sensors/tilt_switch_sensor.md
+        - 气压传感器: sensors/sensors/atmospheric_pressure_sensor.md
+        - 压力传感器: sensors/sensors/pressure_sensor.md
         # - 超声波传感器: sensors/sensors/ultrasonicSensor.md
         # - RGB超声波传感器: sensors/sensors/rgbUltrasonicSensor.md
 

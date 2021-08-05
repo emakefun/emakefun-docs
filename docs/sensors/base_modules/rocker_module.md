@@ -66,7 +66,7 @@
 
 ### A款
 
-![方向图](/rocker_module/rocker_module1.png)
+![方向图](rocker_module/rocker_module1.png)
 
 [下载示例程序A](rocker_module/rocker_module_a.zip)
 
@@ -116,7 +116,7 @@ void loop()
 
 ### B款
 
-![方向图](/rocker_module/rocker_module2.png)
+![方向图](rocker_module/rocker_module2.png)
 
 [下载示例程序B](rocker_module/rocker_module_b.zip)
 
