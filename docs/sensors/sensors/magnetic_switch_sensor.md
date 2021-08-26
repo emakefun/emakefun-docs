@@ -1,6 +1,6 @@
 # 磁簧开关模块规格书
 
-## 模块图
+## 实物图
 
 ![22](magnetic_switch_sensor/22.jpg)
 

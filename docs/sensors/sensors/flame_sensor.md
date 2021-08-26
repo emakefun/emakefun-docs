@@ -1,6 +1,6 @@
 # 火焰传感器模块规格书
 
-## 模块图
+## 实物图
 
 ![Flame Sensor](flame_sensor/Flame Sensor.png)
 
@@ -23,14 +23,17 @@
 | A        | 模拟信号引脚 |
 | D        | 数字信号引脚 |
 
-* 1.供电电压:5V
-* 2.连接方式:4PIN防反接杜邦线
-* 3.模块尺寸:4*2.1cm
-* 4.安装方式:M4螺钉兼容乐高插孔固定
+- 供电电压:5V
+
+- 连接方式:4PIN防反接杜邦线
+
+- 模块尺寸:4*2.1cm
+
+- 安装方式:M4螺钉兼容乐高插孔固定
 
 ## 详细原理图
 
- [flame.pdf](flame_sensor/flame.pdf) 
+ [查看原理图](flame_sensor/flame.pdf) 
 
 ## 机械尺寸
 

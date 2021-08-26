@@ -1,6 +1,6 @@
 # 红外避障传感器模块
 
-## 红外避障传感器模块图
+## 实物图
 
 ![避障](Infrared obstacle avoidance module/避障.jpg)
 
@@ -20,16 +20,19 @@
 
 ## 模块参数
 
-* 1.供电电压:5V
-* 2.连接方式:4PIN防反接杜邦线
-* 3.模块尺寸:4*2.1cm
-* 4.安装方式:M4螺钉兼容乐高插孔固定
+- 供电电压:5V
+
+- 连接方式:4PIN防反接杜邦线
+
+- 模块尺寸:4*2.1cm
+
+- 安装方式:M4螺钉兼容乐高插孔固定
 
 
 
 ## 详细原理图
 
- [雨滴传感器.pdf](Infrared obstacle avoidance module/雨滴传感器.pdf) 
+ [查看原理图](Infrared obstacle avoidance module/雨滴传感器.pdf) 
 
 ## 机械尺寸
 

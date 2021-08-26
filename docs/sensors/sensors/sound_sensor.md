@@ -1,6 +1,6 @@
 # 声音传感器模块规格书
 
-## 模块图
+## 实物图
 
 ![Sound Sensor](sound_sensor/Sound Sensor.png)
 
@@ -28,7 +28,7 @@
 
 ## 详细原理图
 
- [详细原理图](sound_sensor/11.pdf) 
+ [查看原理图](sound_sensor/11.pdf) 
 
 ## 机械尺寸
 

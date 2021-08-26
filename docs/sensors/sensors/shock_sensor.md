@@ -1,6 +1,6 @@
 # 震动传感器
 
-## 模块图
+## 实物图
 
 ![Shock Sensor](shock_sensor/Shock Sensor.png)
 
@@ -32,9 +32,7 @@
 
 ## 详细原理图
 
-
-
- [震动传感器.pdf](shock_sensor/震动传感器.pdf) 
+ [查看原理图](shock_sensor/震动传感器.pdf) 
 
 ## 模块尺寸
 

@@ -1,6 +1,6 @@
 # 土壤湿度传感器规格书
 
-## 模块图
+## 实物图
 
 ![Soil moisture](soil_moisture_sensor/Soil moisture.png)
 
@@ -22,7 +22,7 @@
 
 ## 详细原理图
 
- [土壤湿度传感器.pdf](soil_moisture_sensor/土壤湿度传感器.pdf) 
+ [查看原理图](soil_moisture_sensor/土壤湿度传感器.pdf) 
 
 ## 机械尺寸
 

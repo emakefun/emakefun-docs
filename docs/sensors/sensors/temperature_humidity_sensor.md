@@ -1,6 +1,6 @@
 # 温湿度传感器
 
-## 模块图
+## 实物图
 
 ![Temperature&Humidity sensor](temperature_humidity_sensor/Temperature&Humidity sensor.png)
 
@@ -33,7 +33,7 @@
 
 ## 详细原理图
 
-  [Humidity.pdf](temperature_humidity_sensor/Humidity.pdf) 
+  [查看原理图](temperature_humidity_sensor/Humidity.pdf) 
 
 ## 机械尺寸图
 

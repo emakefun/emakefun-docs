@@ -1,6 +1,6 @@
 # MQ-4气体传感器规格书
 
-##  模块图
+##  实物图
 
 ![MQ Gas Sensor](mq_gas_sensor/MQ Gas Sensor.png)
 
@@ -28,7 +28,7 @@
 
 ## 详细原理图
 
- [MQ传感器.pdf](mq_gas_sensor/MQ传感器.pdf) 
+ [查看原理图](mq_gas_sensor/MQ传感器.pdf) 
 
 ## 机械尺寸
 

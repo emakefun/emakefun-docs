@@ -1,6 +1,6 @@
 # 热敏传感器
 
-## 模块图
+## 实物图
 
 ![Thermal Sensor](thermal_sensor/Thermal Sensor.png)
 
@@ -27,7 +27,7 @@
 
 ## 详细原理图
 
- [热敏传感器.pdf](thermal_sensor/热敏传感器.pdf) 
+ [查看原理图](thermal_sensor/热敏传感器.pdf) 
 
 ## 机械尺寸
 
