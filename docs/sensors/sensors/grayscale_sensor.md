@@ -1,4 +1,4 @@
-# 灰度传感器模块
+# 灰度传感器
 
 ## 实物图
 
@@ -30,15 +30,19 @@
 
 - 安装方式:M4螺钉兼容乐高插孔固定
 
-## 详细原理图
+## 详细原理图和数据手册
 
  [查看原理图](grayscale_sensor/灰度传感器.pdf) 
+
+ [查看数据手册](grayscale_sensor/灰度传感器.pdf) 
 
 ## 机械尺寸
 
 ![7](grayscale_sensor/7.png)
 
-## 示例程序
+## Arduino示例程序
+
+[下载示例程序](grayscale_sensor/灰度传感器.pdf) 
 
 ```c
 void setup(){

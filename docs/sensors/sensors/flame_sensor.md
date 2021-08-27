@@ -1,4 +1,4 @@
-# 火焰传感器模块规格书
+# 火焰传感器
 
 ## 实物图
 
@@ -31,15 +31,19 @@
 
 - 安装方式:M4螺钉兼容乐高插孔固定
 
-## 详细原理图
+## 详细原理图和数据手册
 
  [查看原理图](flame_sensor/flame.pdf) 
+
+ [查看数据手册](flame_sensor/flame.pdf) 
 
 ## 机械尺寸
 
 ![03](flame_sensor/03.png)
 
 ## 示例程序
+
+[下载示例程序](flame_sensor/flame.pdf) 
 
 ```c
 #include "Buzzer.h"

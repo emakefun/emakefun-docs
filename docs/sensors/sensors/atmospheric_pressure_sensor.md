@@ -22,7 +22,7 @@ BMP280是专为移动应用设计的绝对气压传感器。传感器模块安�
 
 * 风扇功率控制。
 
-  以上是主要用途：以下为BMP280的原理图
+## 原理图
 
   ![原理图](atmospheric_pressure_sensor/atmospheric_pressure_sensor_schematic.png)
 
@@ -45,7 +45,7 @@ BMP280是专为移动应用设计的绝对气压传感器。传感器模块安�
 - 连接方式：PH23.0 4PIN防反接线
 - 安装方式：M4螺钉兼容乐高插孔固定
 
-## 详细原理图
+## 详细原理图和数据手册
 
 [查看原理图](atmospheric_pressure_sensor/atmospheric_pressure_sensor_schematic.pdf) 
 
