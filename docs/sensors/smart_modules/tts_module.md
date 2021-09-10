@@ -24,11 +24,46 @@
 
 ## 机械尺寸图
 
-![机械尺寸图]()
+![机械尺寸图](/tts_module/tts_assembly.png)
 
-## 示例程序
+## Arduino示例程序
+
+```c++
+#include "tts.h"
+//新建一个ttl对象，rx:6,tx:5
 
 
+TTS tt(6, 5);
 
-[下载示例程序]()
+ 
+void setup() {
+  // put your setup code here, to run once:
+  tt.begin(115200);
+  Serial.begin(115200);
+  strcpy(tt.buff,"小易同学");
+  tt.buff_size=strlen(tt.buff);
+}
+//发送命令帧头
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  tt.StartCmd();
+  Serial.println("Start_Cmd");
+  tt.ReturnStatus();
+  delay(3000);
+
+  
+  tt.TextCacheCmd();
+  Serial.println("Text_Cache_Cmd");
+  tt.ReturnStatus();
+  delay(1000);
+  tt.SpeechSynthesisCmd();
+  Serial.println("Speech_Synthesis_Cmd");
+  tt.ReturnStatus();
+  delay(3000);
+}
+```
+
+[下载示例程序](tts_module/tts.zip)
 
