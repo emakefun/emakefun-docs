@@ -7,10 +7,18 @@
 ## 硬件参数
 
 - 工作电压：5V
-- 通信方式：IIC
+- 通信方式：IIC 
 - 接口类型：PH2.0-4Pin (G V SDA SCL)
+- 有效高度：0.5cm ~ 4 cm
 
-## 模块特点：
+## 寄存器地址
+| 地址 | 描述                                                         |
+| :--- | :----------------------------------------------------------- |
+| 0x00 | 阈值寄存器（当传感器读到的值大于此值灯亮查对应状态位为1）    |
+| 0x01 | 传感器模拟数据的起始地址，使用时请求10字节数据<br>每两字节表示一路输出0~1023（高8位在后，低8位在前） |
+| 0x02 | 传感器状态位地址，读取一字节数据<br/>     bit0  bit1  bit2  bit3  bit4<br/>     inf1  inf2  inf3  inf4  inf5<br/>分别对用五路循迹状态 |
+| 0x50 | 五路循迹模块的 IIC 地址                                      |
+
 
 ## 引脚定义：
 | 引脚名称 | 描述       |
@@ -21,6 +29,7 @@
 | SCL       | IIC时钟引脚 |
 
 ## 模块尺寸
+![infraredtracking](five_way_tracking_sensor/infraredtracking.png)
 
 ## 接线示例
 
@@ -38,7 +47,7 @@ void setup() {
 *** 设置高度（模块底端到地面的垂直距离）
 *** 有效距离 0.5cm ~ 4 cm
 *******************************************/
-  inf.Set_High(4);
+  inf.SetHigh(4);
 }
 
 void loop() {
@@ -69,26 +78,26 @@ void loop() {
   Serial.println();
   Serial.print(inf.Threshold);
   Serial.println();
-  delay(200);
+  delay(500);
 }
 ```
 ### arduino函数介绍
 
 ```
 设置模块到地面的高度(有效距离 0.5cm ~ 4cm)
-void Set_High(double high);
+void SetHigh(double high);
 
 设置模拟值的阈值函数，输入参数 threshold ，范围 0 ~ 1023
 当对应通道的循迹管脚输出的模拟值高于此阈值时，对应通道的灯亮和状态位置1
-void Set_Threshold(uint16_t threshold);
+void SetThreshold(uint16_t threshold);
 
 获取当前阈值
-uint16_t Get_Threshold();
+uint16_t GetThreshold();
 
 获取当前状态位（返回值 bit0 ~ bit4 分别对应红外通道 1 ~ 5）
 bit0  bit1  bit2  bit3  bit4
 inf1  inf2  inf3  inf4  inf5
-uint8_t Get_State();
+uint8_t GetState();
 
 读取全部数据前需要调用 flush() 刷新数据
 void flush();
@@ -108,7 +117,7 @@ void setup() {
 *** 设置高度（模块底端到地面的垂直距离）
 *** 有效距离 0.5cm ~ 4 cm
 *******************************************/
-  inf.Set_High(4);
+  inf.SetHigh(4);
 }
 
 void loop() {
@@ -142,23 +151,23 @@ void loop() {
 //  Serial.println();
 
 /*******************************************
-*** Set_Threshold 设置五路循迹模块的阈值(高于此值模块上对应的灯亮)
+*** SetThreshold 设置五路循迹模块的阈值(高于此值模块上对应的灯亮)
 *** 阈值范围（0~1023）
 *******************************************/
-//  inf.Set_Threshold(300);
+//  inf.SetThreshold(300);
   
 /*******************************************
-*** Get_Threshold 获取五路循迹模块的阈值
+*** GetThreshold 获取五路循迹模块的阈值
 *******************************************/ 
-//  int data = inf.Get_Threshold();
+//  int data = inf.GetThreshold();
 //  Serial.println(data);
 
 /*******************************************
-*** Get_State 获取五路循迹模块状态的数字值(高于设置的阈值对应位置1)
+*** GetState 获取五路循迹模块状态的数字值(高于设置的阈值对应位置1)
 ***     bit0  bit1  bit2  bit3  bit4
 ***     inf1  inf2  inf3  inf4  inf5
 *******************************************/ 
-//  uint8_t state = inf.Get_State();
+//  uint8_t state = inf.GetState();
 //  Serial.println(state); 
 }
 ```
