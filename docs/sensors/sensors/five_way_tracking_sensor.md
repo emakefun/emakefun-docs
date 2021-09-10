@@ -104,7 +104,7 @@ void flush();
 ```
 ### arduino示例程序
 
-[下载最新库程序](http://www.emakefun.com/sources/five_way_tracking_sensor.zip)
+[下载最新库程序](five_way_tracking_sensor/five_way_tracking_sensor.zip)
 
 ```
 #include "InfraredTracking.h"
