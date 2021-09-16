@@ -2,7 +2,7 @@
 
 ## 实物图
 
-![Tilt Switch Sensor](tilt_switch_sensor/Tilt Switch Sensor.png)
+![实物图](tilt_switch_sensor/tilt_switch_sensor.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![27](tilt_switch_sensor/27.png)
+![原理图](tilt_switch_sensor/tilt_switch_sensor_schematic.png)
 
 ## 模块参数
 
@@ -31,9 +31,9 @@
 
 ## 详细原理图
 
- [查看原理图](tilt_switch_sensor/倾斜传感器.pdf) 
+ [查看原理图](tilt_switch_sensor/tilt_switch_sensor_schematic.pdf) 
 
 ## 机械尺寸
 
-![4](tilt_switch_sensor/4.png)
+![机械尺寸图](tilt_switch_sensor/tilt_switch_sensor_assembly.png)
 

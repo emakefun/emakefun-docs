@@ -2,7 +2,7 @@
 
 ## 实物图
 
-![Temperature&Humidity sensor](temperature_humidity_sensor/Temperature&Humidity sensor.png)
+![实物图](temperature_humidity_sensor/temperature_humidity_sensor.png)
 
 ## 概述
 
@@ -16,7 +16,7 @@
 
 ## 原理图
 
-![07](temperature_humidity_sensor/07.png)
+![原理图](temperature_humidity_sensor/temperature_humidity_sensor_schematic.png)
 
 ## 模块参数
 
@@ -26,16 +26,19 @@
 | G        | GND 地线   |
 | S        | 信号引脚   |
 
-* 1.供电电压:5V
-* 2.连接方式:4PIN防反接杜邦线
-* 3.模块尺寸:4*2.1cm
-* 4.安装方式:M4螺钉兼容乐高插孔固定
+- 供电电压:5V
+
+- 连接方式:4PIN防反接杜邦线
+
+- 模块尺寸:4*2.1cm
+
+- 安装方式:M4螺钉兼容乐高插孔固定
 
 ## 详细原理图
 
-  [查看原理图](temperature_humidity_sensor/Humidity.pdf) 
+  [查看原理图](temperature_humidity_sensor/temperature_humidity_sensor_schematic.pdf) 
 
 ## 机械尺寸图
 
-![04](temperature_humidity_sensor/04.png)
+![机械尺寸图](temperature_humidity_sensor/temperature_humidity_sensor_assembly.png)
 

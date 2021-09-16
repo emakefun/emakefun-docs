@@ -2,7 +2,7 @@
 
 ##  实物图
 
-![MQ Gas Sensor](mq_gas_sensor/MQ Gas Sensor.png)
+![实物图](mq_gas_sensor/mq_gas_sensor.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![28](mq_gas_sensor/28.png)
+![原理图](mq_gas_sensor/mq_gas_sensor_schematic.png)
 
 ## 模块参数
 
@@ -28,10 +28,10 @@
 
 ## 详细原理图
 
- [查看原理图](mq_gas_sensor/MQ传感器.pdf) 
+ [查看原理图](mq_gas_sensor/mq_gas_sensor_schematic.pdf) 
 
-## 机械尺寸
+## 机械尺寸图
 
 
 
-![05](mq_gas_sensor/05.png)
+![机械尺寸图](mq_gas_sensor/mq_gas_sensor_assembly.png)

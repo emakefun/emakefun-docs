@@ -29,7 +29,7 @@
 | SCL       | IIC时钟引脚 |
 
 ## 模块尺寸
-![infraredtracking](five_way_tracking_sensor/infraredtracking.png)
+![模块尺寸](five_way_tracking_sensor/infraredtracking.png)
 
 
 

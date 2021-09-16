@@ -1,6 +1,6 @@
 # 水深传感器
 
-![Water depth Sensor](water_depth_sensor/Water depth Sensor.png)
+![实物图](water_depth_sensor/water_depth_sensor.png)
 
 ## 概述
 
@@ -9,7 +9,7 @@
 
 ## 原理图
 
-![02](water_depth_sensor/02.png)
+![原理图](water_depth_sensor/water_depth_sensor_schematic.png)
 
 ## 模块参数
 
@@ -29,9 +29,9 @@
 
 ## 详细原理图
 
- [查看原理图](water_depth_sensor/水深传感器.pdf) 
+ [查看原理图](water_depth_sensor/water_depth_sensor_schematic.pdf) 
 
-## 模块尺寸
+## 机械尺寸图
 
-![03](water_depth_sensor/03.png)
+![机械尺寸图](water_depth_sensor/water_depth_sensor_assembly.png)
 

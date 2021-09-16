@@ -2,7 +2,7 @@
 
 ## 实物图
 
-![Infrared tracking](tracking_sensor/Infrared tracking.png)
+![原理图](tracking_sensor/infrared_tracking.png)
 
 ## 概述
 
@@ -14,7 +14,7 @@
 
 
 
-![6](tracking_sensor/6.png)
+![原理图](tracking_sensor/infrared_tracking_schematic.png)
 
 
 
@@ -36,8 +36,8 @@
 
 ## 详细原理图
 
-  [查看原理图](tracking_sensor/红外循迹传感器.pdf) 
+  [查看原理图](tracking_sensor/infrared_tracking_schematic.pdf) 
 
-## 机械尺寸
+## 机械尺寸图
 
-![7](tracking_sensor/7.png)
+![机械尺寸图](tracking_sensor/infrared_tracking_assembly.png)

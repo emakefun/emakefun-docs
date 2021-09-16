@@ -1,8 +1,8 @@
 # 雨滴传感器 
 
-## 模块图
+## 实物图
 
-![Water droplets Sensor](water_droplets_sensor/Water droplets Sensor.png)
+![实物图](water_droplets_sensor/water_droplets_sensor.png)
 
 ## 概述
 
@@ -10,22 +10,24 @@
 
 ## 原理图
 
-![01](water_droplets_sensor/01.png)
+![原理图](water_droplets_sensor/water_droplets_sensor_schematic.png)
 
 ## 模块参数
 
-* 1.供电电压:5V
-* 2.输出形式：数字值输出（0和1）和模拟值AO电压输出
-* 2.连接方式:4PIN防反接杜邦线
-* 3.模块尺寸:5.6*4cm
-* 4.安装方式:M3螺钉兼容乐高插孔固定
+- 供电电压:5V
+
+- 输出形式：数字值输出（0和1）和模拟值AO电压输出
+
+- 连接方式:4PIN防反接杜邦线
+
+- 模块尺寸:5.6*4cm
+
+- 安装方式:M3螺钉兼容乐高插孔固定
 
 ## 详细原理图
 
- [查看原理图](water_droplets_sensor/雨滴传感器.pdf) 
+ [查看原理图](water_droplets_sensor/water_droplets_sensor_schematic.pdf) 
 
-## 机械尺寸
+## 机械尺寸图
 
-
-
-![02](water_droplets_sensor/02.png)
+![机械尺寸图](water_droplets_sensor/water_droplets_sensor_assembly.png)

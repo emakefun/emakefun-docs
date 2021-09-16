@@ -2,7 +2,7 @@
 
 ## 实物图
 
-![22](magnetic_switch_sensor/22.jpg)
+![实物图](magnetic_switch_sensor/magnetic_switch_sensor.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![4](magnetic_switch_sensor/4.png)
+![原理图](magnetic_switch_sensor/magnetic_switch_sensor_schematic.png)
 
 ## 模块参数
 
@@ -20,20 +20,23 @@
 | G        | GND 地线   |
 | S        | 信号引脚   |
 
-* 1.供电电压:5V
-* 2.连接方式:3PIN防反接杜邦线
-* 3.模块尺寸:4*2.1cm
-* 4.安装方式:M4螺钉兼容乐高插孔固定
+- 供电电压:5V
+
+- 连接方式:3PIN防反接杜邦线
+
+- 模块尺寸:4*2.1cm
+
+- 安装方式:M4螺钉兼容乐高插孔固定
 
 ## 详细原理图
 
-  [磁簧开关传感器.pdf](magnetic_switch_sensor/磁簧开关传感器.pdf) 
+  [查看原理图](magnetic_switch_sensor/magnetic_switch_sensor_schematic.pdf) 
 
-## 机械尺寸
+## 机械尺寸图
 
 
 
-![14](magnetic_switch_sensor/14.png)
+![机械尺寸图](magnetic_switch_sensor/magnetic_switch_sensor_assembly.png)
 
 
 

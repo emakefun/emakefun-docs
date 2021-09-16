@@ -2,7 +2,7 @@
 
 ## 实物图
 
-![Sound Sensor](sound_sensor/Sound Sensor.png)
+![实物图](sound_sensor/sound_sensor.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![原理图](sound_sensor/19.png)
+![原理图](sound_sensor/sound_sensor_schematic.png)
 
 ## 模块参数
 
@@ -21,15 +21,15 @@
 | A        | 模拟信号引脚 |
 | D        | 数字信号引脚 |
 
-*  1.供电电压:5V
-*  2.连接方式:3PIN防反接杜邦线
-*  3.模块尺寸:4*2.1cm
-*  4.安装方式:M4螺钉兼容乐高插孔固定
+*  供电电压:5V
+*  连接方式:3PIN防反接杜邦线
+*  模块尺寸:4*2.1cm
+*  安装方式:M4螺钉兼容乐高插孔固定
 
 ## 详细原理图
 
- [查看原理图](sound_sensor/11.pdf) 
+ [查看原理图](sound_sensor/sound_sensor_schematic.pdf) 
 
-## 机械尺寸
+## 机械尺寸图
 
-![机械尺寸图](sound_sensor/13.png)
+![机械尺寸图](sound_sensor/sound_sensor_assembly.png)

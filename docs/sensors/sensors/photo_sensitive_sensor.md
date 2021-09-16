@@ -2,7 +2,7 @@
 
 ## 实物图
 
-![Photosensitive Sensor](photo_sensitive_sensor/Photosensitive Sensor.png)
+![实物图](photo_sensitive_sensor/photo_sensitive_sensor.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![01](photo_sensitive_sensor/01.png)
+![原理图](photo_sensitive_sensor/photo_sensitive_sensor_schematic.png)
 
 ## 模块参数
 
@@ -27,8 +27,8 @@
 
 ## 详细原理图
 
- [查看原理图](photo_sensitive_sensor/光敏传感器.pdf) 
+ [查看原理图](photo_sensitive_sensor/photo_sensitive_sensor_schematic.pdf) 
 
-## 机械尺寸
+## 机械尺寸图
 
-![03](photo_sensitive_sensor/03.png)
+![机械尺寸图](photo_sensitive_sensor/photo_sensitive_sensor_assembly.png)

@@ -2,7 +2,7 @@
 
 ## 实物图
 
-![Human Body Sensor](human_body_sensor/Human Body Sensor.png)
+![实物图](human_body_sensor/human_body_sensor.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![8](human_body_sensor/8.png)
+![原理图](human_body_sensor/human_body_sensor_schematic.png)
 
 ## 模块参数
 
@@ -30,11 +30,11 @@
 
 ## 详细原理图
 
- [查看原理图](human_body_sensor/人体.pdf) 
+ [查看原理图](human_body_sensor/human_body_sensor_schematic.pdf) 
 
-## 机械尺寸
+## 机械尺寸图
 
-![1](human_body_sensor/1.png)
+![机械尺寸图](human_body_sensor/human_body_sensor_assembly.png)
 
 ## 示例程序
 

@@ -2,7 +2,7 @@
 
 ## 实物图
 
-![模块实物图](atmospheric_pressure_sensor/atmospheric_pressure_sensor.png)
+![实物图](atmospheric_pressure_sensor/atmospheric_pressure_sensor.png)
 
 ## 概述
 

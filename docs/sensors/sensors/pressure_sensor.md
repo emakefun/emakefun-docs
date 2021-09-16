@@ -2,7 +2,7 @@
 
 ## 实物图
 
-![压力模块](pressure_sensor/Pressure sensor module.jpg)
+![实物图](pressure_sensor/pressure_sensor_module.jpg)
 
 ## 概述
 
@@ -25,8 +25,8 @@
 
 ## 原理图
 
-![原理图](pressure_sensor/1.png)
+![原理图](pressure_sensor/pressure_sensor_module_schematic.png)
 
-## 模块尺寸
+## 机械尺寸图
 
-![模块尺寸图](pressure_sensor/2.png)
+![机械尺寸图](pressure_sensor/pressure_sensor_module_assembly.png)
