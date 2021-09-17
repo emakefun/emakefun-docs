@@ -32,9 +32,7 @@
 
 ## 详细原理图和数据手册
 
- [查看原理图](grayscale_sensor/grayscale_sensor_schematic.pdf) 
-
- [查看数据手册](grayscale_sensor/灰度传感器.pdf) 
+ [查看原理图](grayscale_sensor/grayscale_sensor_schematic.pdf)
 
 ## 机械尺寸图
 
@@ -42,7 +40,7 @@
 
 ## Arduino示例程序
 
-[下载示例程序](grayscale_sensor/灰度传感器.pdf) 
+[下载示例程序](grayscale_sensor/grayscale_sensor.zip) 
 
 ```c
 void setup(){

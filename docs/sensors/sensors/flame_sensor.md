@@ -43,7 +43,7 @@
 
 ## 示例程序
 
-[下载示例程序](flame_sensor/flame.pdf) 
+[下载示例程序](flame_sensor/flame_sensor.rar) 
 
 ```c
 #include "Buzzer.h"

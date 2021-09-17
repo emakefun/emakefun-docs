@@ -2,7 +2,7 @@
 
 ## 实物图
 
-![32](ds18b20_sensor/ds18b20_sensor.jpg)
+![实物图](ds18b20_sensor/ds18b20_sensor.jpg)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-
+![实物图](ds18b20_sensor/ds18b20_sensor_schematic.png)
 
 ## 模块参数
 
@@ -27,13 +27,13 @@
 
 ## 机械尺寸图
 
-![机械尺寸图](ds18b20_sensor/05.jpg)
+![机械尺寸图](ds18b20_sensor/ds18b20_sensor_assembly.png)
 
 
 
 ## 详细原理图和数据手册
 
-[查看原理图]() 
+[查看原理图](ds18b20_sensor/ds18b20_sensor_schematic.pdf) 
 
 [查看数据手册]() 
 

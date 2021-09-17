@@ -36,7 +36,9 @@
 
 ![机械尺寸图](human_body_sensor/human_body_sensor_assembly.png)
 
-## 示例程序
+## Arduino示例程序
+
+[下载示例程序](human_body_sensor/human_body_sensor.zip) 
 
 ```c
 void setup()
