@@ -40,9 +40,24 @@
 
 
 
-## 示例程序
+## Arduino示例程序
+
+ [下载示例程序](magnetic_switch_sensor/magnetic_switch_sensor.zip) 
 
 ```
+void setup()
+{
+    Serial.begin(9600); // Set the serial port baud rate to 9600
+    pinMode(A3, INPUT);  // Set A3 port as input mode
+}
 
+void loop()
+{
+    if (analogRead(A3) == 0) // Determine if the spring switch is on
+    {  
+        Serial.println("Switch on");  // Print the text Switch on
+    }
+
+}
 ```
 

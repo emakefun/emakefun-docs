@@ -33,3 +33,32 @@
 ## 机械尺寸图
 
 ![机械尺寸图](sound_sensor/sound_sensor_assembly.png)
+
+## Arduino示例程序
+
+[下载示例程序](sound_sensor.zip)
+
+```c++
+#define AnalogPin A1//定义声音传感器模拟接口引脚
+#define DigitalPin 8//定义声音传感器数字接口引脚
+int AnalogValue=0;
+byte DigitalValue=0;
+
+void setup()
+{
+  Serial.begin(9600);//设置串口波特率
+  pinMode(AnalogPin, INPUT);//将声音传感器模拟接口引脚设置为输入
+  pinMode(DigitalPin,INPUT);//将声传感器音数字接口引脚设置为输入
+}
+
+void loop() {
+    AnalogValue= analogRead(AnalogPin);//读取声音传感器模拟值
+    DigitalValue=digitalRead(DigitalPin);//读取声音传感器数字值
+    Serial.print("Analog Data:");
+    Serial.println(AnalogValue);//打印声音传感器模拟值
+    Serial.print("Digital Data:");
+    Serial.println(DigitalValue);//打印声音传感器数字值
+    delay(200);
+}
+```
+

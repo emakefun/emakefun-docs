@@ -27,3 +27,34 @@
 ## 机械尺寸图
 
 ![机械尺寸图](soil_moisture_sensor/soil_moisture_assembly.png)
+
+## Arduino示例程序
+
+[下载示例程序](soil_moisture_sensor/soil_moisture.zip) 
+
+```c++
+#include <Wire.h> 
+#include "LCD.h" 
+#include "LiquidCrystal_I2C.h"
+#define SoilMosturePin  A3//define soil sensor pin
+
+LiquidCrystal_I2C lcd(0x27,2,1,0,4,5,6,7); // 0x27 is the I2C bus address for an unmodified backpack 
+void setup() 
+{ // activate LCD module 
+  lcd.begin (16,2); // for 16 x 2 LCD module 
+  lcd.setBacklightPin(3,POSITIVE); 
+  lcd.setBacklight(HIGH); 
+  pinMode(SoilMosturePin,INPUT);
+  Serial.begin(9600);
+} 
+
+void loop() {
+  lcd.setCursor(1-1, 1-1);
+  lcd.print("Soil moisture:");
+  lcd.setCursor(1-1, 2-1);
+  lcd.println(analogRead(SoilMosturePin));//print value
+  delay(1000);
+
+}
+```
+
