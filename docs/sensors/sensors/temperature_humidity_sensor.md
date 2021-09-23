@@ -42,3 +42,31 @@
 
 ![机械尺寸图](temperature_humidity_sensor/temperature_humidity_sensor_assembly.png)
 
+## Arduino示例程序
+
+[下载示例程序](temperature_humidity_sensor/temperature_humidity_sensor)
+
+```c++
+#include <Wire.h>//导入通信库
+#include"dht11.h"//导入DHT11库
+
+#define DHT11Pin 3 //定义温湿度传感器引脚
+
+dht11 DHT11;//创建DHT11对象
+
+void setup() {
+  Serial.begin(9600);//设置串口波特率
+}
+
+void loop() {
+  DHT11.read(DHT11Pin);//初始化温湿度引脚
+  Serial.print("Tep: ");
+  Serial.print((float)DHT11.temperature);//打印温度
+  Serial.print("C"); 
+  Serial.print("     Hum: ");
+  Serial.print((float)DHT11.humidity);//打印湿度
+  Serial.println("%");
+  delay(200);
+}
+```
+

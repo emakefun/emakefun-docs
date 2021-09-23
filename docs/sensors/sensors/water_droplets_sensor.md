@@ -31,3 +31,37 @@
 ## 机械尺寸图
 
 ![机械尺寸图](water_droplets_sensor/water_droplets_sensor_assembly.png)
+
+## Arduino示例程序
+
+[下载示例程序](water_droplets_sensor/water_droplets_sensor.zip)
+
+```c++
+#include <Servo.h>
+#define RaindropAnalogPin A0
+#define RaindropDigitalPin 7
+int  RaindropAnalogValue;
+int RaindropDigitalValue;
+Servo servo_3;
+void setup()
+{
+  Serial.begin(9600);
+  servo_3.attach(3);
+  pinMode(RaindropAnalogPin, INPUT);
+  pinMode(RaindropDigitalPin, INPUT);
+}
+
+void loop() {
+    RaindropAnalogValue= analogRead(RaindropAnalogPin);
+    RaindropDigitalValue= digitalRead(RaindropDigitalPin);
+    Serial.println("Raindrop Analog Data: ");
+    Serial.print(RaindropAnalogValue);
+    if (RaindropDigitalValue == 0) {
+      servo_3.write(0);
+    } else {
+      servo_3.write(90);
+    }
+    delay(200);
+}
+```
+

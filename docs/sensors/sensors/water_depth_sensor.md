@@ -35,3 +35,36 @@
 
 ![机械尺寸图](water_depth_sensor/water_depth_sensor_assembly.png)
 
+## Arduino示例程序
+
+[下载示例程序](water_depth_sensor/water_depth_sensor.zip)
+
+```c++
+#define DepthPin A3
+#define BuzzerPin 3
+
+int DepthValue; 
+Buzzer buzzer(BuzzerPin) ;
+
+void setup() {
+    Serial.begin(9600);
+    pinMode(DepthPin,INPUT);
+}
+
+void loop() {   
+  buzzer.noTone();
+    DepthValue=analogRead(DepthPin);
+if (DepthValue > 500) {
+      for(int i = 200; i <= 800; i++)
+     {
+       buzzer.tone(i, 10);
+     }
+     for(int i= 800; i >= 200; i--)
+     {
+        buzzer.tone(i, 10);
+     }
+  } 
+    delay(200);
+}
+```
+
