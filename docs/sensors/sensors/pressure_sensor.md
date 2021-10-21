@@ -33,6 +33,24 @@
 
 ## Arduino示例程序
 
+[下载示例程序](pressure_sensor/pressure_sensor.zip)
+
 ```c++
+#define AnalogPin   A0//定义压力传感器模拟引脚
+
+int  AnalogValue = 0 ;//定义数字变量,读取火焰模拟值
+
+void setup()
+{
+  Serial.begin(9600);//设置串口波特率
+  pinMode(AnalogPin, INPUT);//设置压力传感器模拟引脚为输入
+}
+void loop()
+{
+  AnalogValue = analogRead(AnalogPin);//读取压力传感器模拟值
+  Serial.print("Analog Data:  ");
+  Serial.print(AnalogValue);//打印压力传感器模拟值
+  delay(200);
+}
 ```
 
