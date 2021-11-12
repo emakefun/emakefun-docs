@@ -31,9 +31,7 @@ micro:bit是[易创空间](http://www.emakefun.com/) 专门针对micro:bit而开
 # 扩展版各单元模块详解
 
 ## 电源供电口
-![motorbit_DC_PCB1_zh](motorbit/motorbit_DC_PCB1_zh.jpg)
 ![motorbit_DC_PCB1_zh](motorbit/motorbit_DC_PCB2_zh.jpg)
-
 - motor:bit 有两个供电接口，一个接线柱类型( + 表示接电源正极线：— 表示接电源负极线)，一个DC头类型。在使用接线柱供电时，注意电源正负极的连接方向，扩展板接线柱的 + 符号所代表的接线口表示应该连接电源正极线、— 符号所代表的接线口表示应该连接电源负极线
 - 拨动开关向右拨动到OFF(EXT)时，motor:bit 扩展板是通过接线柱供电的，此时，DC头供电接口无效：拨动开关向左拨动到ON(DC)时，motor:bit 扩展板是通过DC头接口供电，此时若VSS接线帽接在5V上，接线柱供电接口无效，若VSS接线帽接在 + 上，那么VSS的供电是通过接在接线柱的电源直接供电，从而实现一块板、两个供电源
 - motor:bit 扩展板包含3V3，5V电源引脚，此外，还设计有一个VIN引脚，VIN引脚通过开关与供电源直接连接，VIN引脚于开关选择的供电源连接
