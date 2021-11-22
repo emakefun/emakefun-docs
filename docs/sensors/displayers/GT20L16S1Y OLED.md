@@ -59,7 +59,7 @@ void loop() {
 uint8_t ShowFont(uint8_t x, uint8_t y, uint8_t *str);
 ```
 ### arduino示例程序
-[下载最新库程序](GT20L16S1Y OLED/GT20L16S1Y_OLED.zip)
+[下载最新库程序](GT20L16S1Y%20OLED/GT20L16S1Y_OLED.zip)
 ### MagicBlock图形化编程块
 
 ### Mixly图形化块（暂不支持）
