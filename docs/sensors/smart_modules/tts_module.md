@@ -10,12 +10,12 @@
 
 ##  模块参数
 
-| 引脚名称 |     描述     |
-| :------: | :----------: |
-|    G     |     GND      |
-|    V     |    5V电源    |
-|    RX    | UART接收引脚 |
-|    TX    | UART发送引脚 |
+| 引脚名称 |           描述           |
+| :------: | :----------------------: |
+|    G     |           GND            |
+|    V     |          5V电源          |
+| RX(SDA)  | UART接收引脚/I2C SDA引脚 |
+| TX(SCL)  | UART发送引脚/I2C SCL引脚 |
 
 - 供电电压：5V
 - 连接方式：PH2.0 4PIN防反接线
@@ -172,39 +172,85 @@
 
 ## Arduino示例程序
 
-[下载示例程序](tts_module/tts.zip)
+[下载示例程序](tts_module/tts_i2c.zip)
 
 ```c++
-#include "tts.h"
-//新建一个ttl对象，rx:6,tx:5
+#include <Wire.h>
 
-TTS tt(6, 5);
+uint8_t buff[0xFF];
 
 void setup() {
   // put your setup code here, to run once:
-  tt.begin(115200);
-  Serial.begin(115200);
-  strcpy(tt.buff,"小易同学");
-  tt.buff_size=strlen(tt.buff);
+Serial.begin(115200);
+Wire.begin();
 }
-//发送命令帧头
+
+void Send_Heard_Cmd()
+{
+  Wire.write(0xFD);
+  Wire.write(0x00);
+}
+  
+void Start_Cmd(uint8_t *p_buff, uint8_t buff_size)
+{
+  Wire.beginTransmission(0x40);
+  Send_Heard_Cmd();
+  Wire.write(buff_size + 2);
+  Wire.write(0x01);
+  Wire.write(0x04);
+  for(uint8_t i = 0; i < buff_size; i++){
+    Wire.write(p_buff[i]);
+  }
+  Wire.endTransmission();
+}
+
+void Text_Cache_Cmd(uint8_t *p_buff, uint8_t buff_size)
+{
+  Send_Heard_Cmd();
+  Wire.write(buff_size + 2);
+  Wire.write(0x31);
+  Wire.write(0x04);
+  for(uint8_t i = 0; i < buff_size; i++){
+    Wire.write(p_buff[i]);
+  }
+  Wire.endTransmission();
+}
+
+void Speech_Synthesis_Cmd()
+{
+  Wire.beginTransmission(0x40);
+  Wire.write(0xFD);
+  Wire.write(0x00);
+  Wire.write(0x02);
+  Wire.write(0x32);
+  Wire.write(0x14);
+  Wire.endTransmission();
+}
+
+void return_status()
+{
+  Wire.requestFrom(0x40, 1);    // request 6 bytes from slave device #8
+
+  while (Wire.available()) { // slave may send less than requested
+    uint8_t c = Wire.read(); // receive a byte as character
+    Serial.println(c, HEX);         // print the character
+  }  
+}
 
 void loop() {
   // put your main code here, to run repeatedly:
 
-  tt.StartCmd();
+  Start_Cmd("小爱同学", strlen("小爱同学"));
   Serial.println("Start_Cmd");
-  tt.ReturnStatus();
-  delay(3000);
-
-  
-  tt.TextCacheCmd();
+  return_status();
+//  delay(1000);
+  Text_Cache_Cmd("小爱同学", strlen("小爱同学"));
   Serial.println("Text_Cache_Cmd");
-  tt.ReturnStatus();
-  delay(1000);
-  tt.SpeechSynthesisCmd();
+  return_status();
+//  delay(1000);
+  Speech_Synthesis_Cmd();
   Serial.println("Speech_Synthesis_Cmd");
-  tt.ReturnStatus();
+  return_status();
   delay(3000);
 }
 ```
