@@ -97,8 +97,13 @@ nav:
         - MP3播放模块: sensors/smart_modules/MP3.md
         - MQTT物联网模块: sensors/smart_modules/esp8266_mqtt.md
         - 语音合成模块: sensors/smart_modules/tts_module.md
+        
+      - 电源模块:
+        - 7.4V充电电池模块: sensors/power_module/2xcr123a_li_ion_battery_module.md
+        - 3.7V升压充电模块: sensors/power_module/3.7v_module.md
       
-      - 配件: micro_bit/IObit.md
+      
+      #- 配件: micro_bit/IObit.md
     - Micro:bit产品:
       - Micro:bit主板介绍: micro_bit/microbit.md
       - Micro:bit编程介绍: micro_bit/microbit_code.md
