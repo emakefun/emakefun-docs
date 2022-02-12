@@ -12,10 +12,10 @@
 - Support Raspberry Pi 2B/3B/3B+/4/zero
 - 5.5x2.1 DC head and terminal power supply
 - Freely switch between external sensor voltage 3V3 and 5V
-- Onboard DC-DC step-down chip Wide voltage input: 5 ~ 36V Voltage output: 5V Maximum current output: 3A
+- Onboard DC-DC step-down chip Wide voltage input: 6 ~ 36V Voltage output: 5V Maximum current output: 3A
 
 ## MCU specifications
--Onboard DC-DC step-down chip Wide voltage input: 5 ~ 36V Voltage output: 5V Maximum current output: 3A
+-Onboard DC-DC step-down chip Wide voltage input: 6 ~ 36V Voltage output: 5V Maximum current output: 3A
 - MCU :STM32/STC8G
 - IO: 8-channel ADC detection
 - Communication method with Raspberry Pi: I2C
