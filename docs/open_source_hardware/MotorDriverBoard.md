@@ -22,7 +22,7 @@ MotorDriverBoard是由 [深圳市易创空间科技有限公司](www.emakefun.co
 
 [Mind+库下载]()
 
-[MaigcBlock下载]()
+[MagicBlock下载]()
 
 ## 特点
 
