@@ -70,3 +70,52 @@
 
 3、控制寄存器（8Fh、8Eh）的位7是写保护位（WP），其它7位均置为0。在任何的对时钟和RAM的写操作之前，WP位必须为0。当WP位为1时，写保护位防止对任一寄存器的写操作。也就是说在电路上电的初始态WP是1，这时是不能改写上面任何一个时间寄存器的，只有首先将WP改写为0，才能进行其它寄存器的写操作。
 
+### Arduino示例程序
+
+```
+#include <EEPROM.h>
+#include "ThreeWire.h"
+#include "RtcDS1302.h"
+#include "SevenSegmentTM1637.h"
+#include "SevenSegmentExtended.h"
+
+volatile int isSetTime;
+// 初始化DS1302时钟模块
+ThreeWire myWire(5, 3, 6);
+RtcDS1302<ThreeWire> Rtc(myWire);
+// 初始化TM1637时钟数码管模块  CLK-->A5  DIO-->A4
+SevenSegmentExtended  display(A5, A4);
+
+void setup(){
+  isSetTime = 0;
+  Rtc.Begin();
+  Rtc.SetIsRunning(true);
+  display.begin();
+  // 从EEPROM中获取是否已经设置了时间的状态
+  EEPROM.get(0x03, isSetTime);
+  // 判断是否已经设置过时间
+  if (isSetTime != 0xff) {
+    Rtc.SetDateTime(RtcDateTime("May/06/2020", "09:55:13"));
+    // 标注设置了时间
+    EEPROM.put(0x03, 0xff);
+  }
+}
+
+void loop(){
+  // 数码管显示时 分
+  display.printTime(Rtc.GetDateTime().Hour(), Rtc.GetDateTime().Minute(), true);
+
+}
+
+```
+
+[源码下载](./ds1302_pic/DS1302_Clock.zip)
+
+### Mixly示例程序
+
+![ds1302_mixly](./ds1302_pic/ds1302_mixly.png)
+
+程序解析：从EEPROM里面获取是否为DS1302时钟模块设置过时间的标记，如果没有设置过则重新设置，否则不再设置时间，再通过获取时钟模块的时分到数码管上显示出来。
+
+[Mixly示例下载](./ds1302_pic/DS1302_Mixly.zip)
+
