@@ -601,11 +601,3 @@ void fail(const char* test, int actual, int expected)
 
 [下载最新示例程序](http://www.emakefun.com/sources/AliyunMqttSendReceive.7z)
 
-### MagicBlock图形化编程块
-
-### Mixly图形化块（暂不支持）
-
-### microbit makecode块
-
-### microbit micropython支持
-敬请期待。。。。。
