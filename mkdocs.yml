@@ -113,6 +113,7 @@ nav:
       - Motor:bit: micro_bit/motorbit.md
       - Magic:bit四合一小车: micro_bit/FourInOneCar.md
       - Magic:bit麦轮小车: micro_bit/WheatwheelCar.md
+      - Joysitck:Bit: micro_bit/joystickbit.md
     - Arduino产品: 
       - Arduino主板介绍: arduino/Hummerbot2.md
       - PH2.0传感器扩展板: arduino/SensorKit.md
