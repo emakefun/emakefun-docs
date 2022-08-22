@@ -1,7 +1,7 @@
 # Joystick:Bit
 [English](README.md) 中文版
 
-joystick:bit为   [深圳市易创空间科技有限公司](www.emakefun.com)出品的针对micro:bit开发的无线可编程手柄，支持micro:Bit V1、 V2; **MakeCode**导入链接为: **https://github.com/emakefun/pxt-joystickbit**
+Joystick:Bit为   [深圳市易创空间科技有限公司](www.emakefun.com)出品的针对micro:bit开发的无线可编程手柄，支持micro:Bit V1、 V2; **MakeCode**导入链接为: **https://github.com/emakefun/pxt-joystickbit**
 
 ![image](joystickbit/joystickbit.jpg)
 
