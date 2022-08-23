@@ -14,10 +14,6 @@ Emakefun,easy to make your ideas fun!
 
 - Emakefun Service
 
-## 官方邮箱
-
-- richard@emakefun.com
-
 ## 咨询热线
 
-- 商务+86 15986700612  技术+86 13242991035
+- 技术+86 13242991035(微信同号)
