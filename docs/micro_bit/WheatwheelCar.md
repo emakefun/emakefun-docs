@@ -94,4 +94,4 @@ Magic:bit小麦战车有配套的IOS和安卓APP，APP与Magic:bit小麦战车�
 
 ## 购买链接
 
-点击链接进入淘宝购买——>>[Magicbit小麦战车](https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w5003-21606389903.4.515c2f14qUryXY&id=606792377860&scene=taobao_shop)
+点击链接进入淘宝购买——>>[Magicbit小麦战车](https://emakefun-steam.taobao.com/index.htm?spm=2013.1.w5002-22376313165.2.3ad211214BSqqg)
