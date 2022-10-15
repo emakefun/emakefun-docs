@@ -4,6 +4,8 @@
 
 [English](README.md) 中文版
 
+[淘宝购买链接](https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-22376313182.2.6330bc63YWvWxB&id=591988262536)
+
 MotorDriverBoard是由 [深圳市易创空间科技有限公司](www.emakefun.com)，专门针对Arduino Uno(兼容Mega2560)机器人，电机驱动，多路舵机控制而研发的一款多功能电机驱动扩展板。本驱动板采用I2C方式控制[PCA9685](./doc/PCA9685.pdf)(16路PWM输出芯片)。所以本驱动板电机或者舵机和arduino主板IO口不存在对应关系，是通过I2C扩展PWM控制，详情请见[**驱动板原理图**](./doc/MotorDriverBoard_V5.1.pdf)。
 
 **MotorDriverBoard for Arduino  Uno(Arduino Mega2560)**
@@ -386,3 +388,7 @@ d、前面正确后下载PS2控制四驱小车程序，并按按键控制电机
 2、4个直流电机里面其中一部分转，一部分不转，有可能对应的驱动芯片烧坏
 
 3、四个电机，舵机都不转，使用I2C 扫描程序测试，看是否能扫描到PCA968A的I2C地址，如果扫描不到PCA8685损坏
+
+## 联系我们
+
+**技术 + 合作：TEL:  13242991035(WX同号)**
