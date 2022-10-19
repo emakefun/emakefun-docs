@@ -1,18 +1,16 @@
 # Maker-ESP32 使用说明书
 
+## [淘宝购买链接](https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.3c3a3d0dhaSOlC&ft=t&id=688324885925)
+
 ![1](./esp32/ESP32.jpg)
 
 ## 产品简介
 
-​		 Maker-ESP32是基于乐鑫科技的ESP32的低功耗UART-WiFi芯片模组基础上开发的一款适用于创客教育的标志性产品，Flash大小4MB，集成 2.4 GHz、Wi-Fi 和蓝牙双模的单芯片方案，采用台积电 (TSMC) 超低功耗的 40 纳米工艺，具有超高的射频性能、稳定性、通用性和可靠性，以及超低的功耗。Xtensa® 32-bit LX6 单/双核处理器，运算能力高达 600 MIPS。采用东芝的电机驱动芯片，电流最大可达3.5A。
+​		 Maker-ESP32是基于乐鑫科技的 [ESP32-WROOM-32](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_cn.pdf) 模组基础上开发的一款适用于创客教育的标志性产品，Flash大小4MB，集成 2.4 GHz、Wi-Fi 和蓝牙双模的单芯片方案。采用东芝的电机驱动芯片，电流最大可达3.5A。
 
-## 芯片参数
+## ESP32模组参数
 
-* 448 KB ROM
-
-* 520 KB SRAM
-
-* 16 KB RTC SRAM
+* 448 KB ROM,520 KB SRAM,16 KB RTC SRAM
 
 * QSPI 支持多个 flash/SRAM
 
@@ -42,15 +40,12 @@
 
 * 4个PH2.0电机端口；4个接线柱电机端口，可以接两个步进电机；电流最大达到3.5A
 * 板载4个RGB灯(16引脚)
-* 5个I2C插针接口
+* 5个I2C插针接口,1个SPI插针接口
 * 4个舵机接口（25、26、32、33）
-* 1个SPI插针接口
 * 8个IO引脚(12、14、15、17、34、35、36、39)
 * 输入电压： 6-16V
-* 产品尺寸：80mm×57mm×12mm
+* 产品尺寸：80mm×57mm×12mm；PCB厚度：1.6mm；净重：35g
 * 大圆孔直径：4.6mm，兼容乐高
-* PCB板厚度：1.6mm
-* 净重：35g
 * 软件支持Mixly、Arduino IDE、Python等
 
 ## 引脚说明 
