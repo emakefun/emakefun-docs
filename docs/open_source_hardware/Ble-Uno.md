@@ -111,7 +111,7 @@ Ble-Uno烧写最新版本Bootloader所以需要使用最新IDE（1.8.8版本以�
 
 ![19](Ble-Uno_pic_zh/19.png)
 
-3. 手机安装BLE_TOOL.apk，打开测试APP。找到对应的蓝牙名（Ble-Uno）并点击进行连接,连接后，此时会出现4个选项，分别用于测试不同的功能，因为这里我们只测试蓝牙是否可以正常收发数据，所以我们选择SK Service,再选择SK_KEYPRESSED
+3. 手机安装[BLETestTools.apk](./Ble-Uno_pic_zh/BLETestTools.apk)，打开测试APP。找到对应的蓝牙名（Ble-Uno）并点击进行连接,连接后，此时会出现4个选项，分别用于测试不同的功能，因为这里我们只测试蓝牙是否可以正常收发数据，所以我们选择SK Service,再选择SK_KEYPRESSED
 
 ![20](Ble-Uno_pic_zh/20.png)
 
