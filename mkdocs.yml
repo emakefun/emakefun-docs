@@ -125,11 +125,12 @@ nav:
     - 树莓派: 
       - 树莓派传感器扩展板: RaspberryPi-Sensor-Board-master/README.md
       - 树莓派电机驱动板: RaspberryPi-MotorDriverBoard/README.md
+    - ESP32产品:
+      - ESP32: esp32/ESP32.md
     - 开源硬件: 
       - Ble-Nano: open_source_hardware/Ble-Nano.md
       - Ble-Uno: open_source_hardware/Ble-Uno.md
       - RF-Nano: open_source_hardware/RF-Nano.md
-      - ESP32: open_source_hardware/ESP32.md
       - MotorDriverBoard: open_source_hardware/MotorDriverBoard.md
       - Rgb超声波(RUS-04): open_source_hardware/rgb.md
     - 软件: 
