@@ -165,7 +165,9 @@
 
 [点击下载RGB测试程序](./esp32/esp32 RGB Test.zip)
 
-[点击下载舵机测试程序](esp32 Servo Test.zip)
+[点击下载舵机测试程序](./esp32/esp32 Servo Test.zip)
+
+[点击下载OLED测试程序](./esp32/esp32 OLED Test.zip)
 
 ## 联系我们
 
