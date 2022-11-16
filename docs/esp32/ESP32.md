@@ -54,7 +54,7 @@
 
 <font color="red" size="5">**注:**</font>  Motor and IO Switch: 当拨码开关打到IO口端时，M3、M4电机端口不工作，不能驱动电机，引脚为普通端口；当拨码开关打到M3A/M3B/M4A/M4B时，M3、M4为电机端口，可以驱动电机。
 
-#### **[产品原理图](./esp32/Esp32_V1.5.pdf)**
+#### **[产品原理图](./esp32/ESP32_V1.5.pdf)**
 
 ## Maker-ESP32驱动安装
 
