@@ -296,6 +296,46 @@ MsTimer2::start(); 					/*启动定时器2*/
 
 ### MotorDriverBoard 编程图形块
 
+#### Mixly库安装(以Mixly2.0为例，默认主板为Arduino UNO)
+
+1. **Mixly云端安装(只适合mixly2.0)**
+
+   第一步
+
+   ![mixly guanliku](./doc/picture/ZH/mixly/mixly guanliku.png)第二步
+
+   ![mixly kuanzhuang](./doc/picture/ZH/mixly/mixly kuanzhuang.png)
+
+   第三步
+
+   ![install success](./doc/picture/ZH/mixly/install success.png)
+
+   第四步 当看到一下界面，就证明安装成功。
+
+   ![mixly success](./doc/picture/ZH/mixly/mixly success.png)
+
+2. **本地安装**
+
+   2.1 下载Mixly扩展包，解压；
+
+   2.2 导入本地库；步骤如下：
+
+   步骤一
+
+   ![mixly guanliku](./doc/picture/ZH/mixly/mixly guanliku.png)
+
+   步骤二
+
+   ![local install](./doc/picture/ZH/mixly/local install.png)
+
+   步骤三
+
+   ![select xml](./doc/picture/ZH/mixly/select xml.png)
+
+   当看到一下界面，就证明安装成功。
+
+   ![mixly success](./doc/picture/ZH/mixly/mixly success.png)
+
 #### Mixly块表述
 
 1.[Mixly扩展包和案例下载](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mixly.zip)
@@ -322,15 +362,23 @@ MsTimer2::start(); 					/*启动定时器2*/
 | 14   | ![servo_init](./doc/picture/ZH/mixly/servo_init.png)     | 初始化舵机                                                   |
 | 15   | ![run_servo](./doc/picture/ZH/mixly/run_servo.png)       | 设置选择的舵机的旋转角度和旋转的速度，速度范围为0-100        |
 
-<font color="red" size="5">**注:**</font> PS2、RGB等、蜂鸣器等模块模块请使用Mixly自带的模块。
+<font color="red" size="5">**注:**</font> PS2、RGB灯、蜂鸣器等模块请使用Mixly自带的模块。
 
-#### mBlock5
+#### Mblock5
 
-1.[mBlock5库和案例下载](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mblock5.zip)
+1. Mblock5库安装
+
+   1.1 下载[Mblock5库](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mblock5.zip)，解压
+
+   1.2  将解压后的ext_motordriverboard.mext扩展包拖到Mblock5软件里面，能看到以下界面，证明安装成功。
+
+   ![mblock install success](./doc/picture/ZH/mblock/mblock install success.png)
+
+2. [Mblock5库和案例下载](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mblock5.zip)
 
 ![download](./doc/picture/ZH/mblock/download.png)
 
-2.积木描述
+3. 积木描述
 
 | 序号 | 积木                                                      | 说明                                                         |
 | ---- | :-------------------------------------------------------- | ------------------------------------------------------------ |
