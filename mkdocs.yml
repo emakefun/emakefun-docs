@@ -109,7 +109,7 @@ nav:
       - Micro:bit编程介绍: micro_bit/microbit_code.md
       - IO:bit: micro_bit/IObit.md
       - Sensor:bit: micro_bit/sensorbit.md
-      - Magic:bit: micro_bit/magicbit.md
+      # - Magic:bit: micro_bit/magicbit.md
       - Motor:bit: micro_bit/motorbit.md
       - Magic:bit四合一小车: micro_bit/FourInOneCar.md
       - Magic:bit麦轮小车: micro_bit/WheatwheelCar.md
