@@ -302,7 +302,9 @@ MsTimer2::start(); 					/*启动定时器2*/
 
    第一步
 
-   ![mixly guanliku](./doc/picture/ZH/mixly/mixly guanliku.png)第二步
+   ![mixly guanliku](./doc/picture/ZH/mixly/mixly guanliku.png)
+
+   第二步
 
    ![mixly kuanzhuang](./doc/picture/ZH/mixly/mixly kuanzhuang.png)
 
