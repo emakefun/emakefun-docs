@@ -25,7 +25,7 @@
 
 ## 引脚说明 
 
-![ ](./Maker_UNO/Maker_UNO_标注图.png)
+![ ](./Maker_UNO/Maker_UNO_1.png)
 
 
 
