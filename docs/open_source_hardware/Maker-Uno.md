@@ -62,9 +62,9 @@
 
       3）最后选择名为“CH341SER_for_64bit_win7”的驱动程序文件，下载[CH340驱动](https://github.com/emakefun/maker-uno/releases/download/v1.0.0/CH340_Driver.zip)，请根据自己的电脑系统型号选择相应的驱动版本！
 
-      <img src="./Maker_UNO/CH340 Driver.png" alt="1" />
+      <img src="./Maker_UNO/CH340_Driver.png" alt="1" />
 
-      ​             ![1](./Maker_UNO/CH340 Driver1.png) 
+      ​             ![1](./Maker_UNO/CH340_Driver1.png) 
 
       4）成功安装之后便会出现下图所示的界面，通知你驱动成功。
 
