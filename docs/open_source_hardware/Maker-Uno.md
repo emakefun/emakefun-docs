@@ -1,4 +1,4 @@
-# Maker-ESP32 使用说明书
+# Maker-UNO 使用说明书
 
 ## [淘宝购买链接](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-21556097795.26.23ae6b0dJkBCqZ&id=680974076367)
 
