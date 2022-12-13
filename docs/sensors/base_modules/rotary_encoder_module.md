@@ -2,15 +2,17 @@
 
 ## 实物图
 
-![实物图](rotary_encoder_module/rotary_encoder_module.png)
+<img src="rotary_encoder_module/rotary_encoder_module.png" alt="实物图" style="zoom: 50%;" />
 
 ##  概述
 
-​       编码器是一种将旋转位移转换为一连串数字脉冲信号的旋转式传感器，旋转编码器可通过旋转可以计数正方向和反方向转动过程中输出脉冲的次数，旋转计数不像电位计，这种转动计数是没有限制的。配合旋转编码器上的按键，可以实现某些特定功能。读数系统通常采用差分方式，即将两个波形一样但相位差为180°的不同信号进行比较，以便提高输出信号的质量和稳定性。编码器广泛用于汽车音量、空调调节等应用场景。
+​		编码器是一种将旋转位移转换为一连串数字脉冲信号的旋转式传感器，旋转编码器可通过旋转可以计数正方向和反方向转动过程中输出脉冲的次数，旋转计数不像电位计，这种转动计数是没有限制的。配合旋转编码器上的按键，可以实现某些特定功能。读数系统通常采用差分方式，即将两个波形一样但相位差为180°的不同信号进行比较，以便提高输出信号的质量和稳定性。编码器广泛用于汽车音量、空调调节等应用场景。
 
 ## 原理图
 
-![原理图](rotary_encoder_module/rotary_encoder_module_schematic.png)
+ [下载原理图](rotary_encoder_module/rotary_encoder_module_schematic.pdf)
+
+<img src="rotary_encoder_module/rotary_encoder_module_schematic.png" alt="原理图" style="zoom: 67%;" />
 
 ## 模块参数
 
@@ -30,17 +32,9 @@
 
 - 安装方式：M4螺钉兼容乐高插孔固定；
 
-## 详细原理图和数据手册
-
- [查看原理图](rotary_encoder_module/rotary_encoder_module_schematic.pdf)
-
-[查看数据手册](rotary_encoder_module/ec11.pdf)
-
 ## 机械尺寸图
 
-
-
-![机械尺寸图](rotary_encoder_module/rotary_encoder_module_assembly.png)
+<img src="rotary_encoder_module/rotary_encoder_module_assembly.png" alt="机械尺寸图" style="zoom:67%;" />
 
 ## Arduino示例程序
 
@@ -68,7 +62,7 @@ void loop()
     delay(10);
     if (digitalRead(switch_pin) == LOW)
     {
-  		Serial.println("Switch Pressed"); //如果按键被按下，串口打印Switch Pressed 
+      Serial.println("Switch Pressed"); //如果按键被按下，串口打印Switch Pressed 
     }
   }    
  aState = digitalRead(encoder_A); //读取A端口状态
@@ -88,6 +82,11 @@ void loop()
  aLastState = aState; //更新A端口当前状态
 }
 ```
+## Mixly示例程序
+
+[下载示例程序](rotary_encoder_module/rotary_encoder_Mixly_demo.zip)
+
+<img src="rotary_encoder_module/Mixly_demo.png" alt="机械尺寸图" style="zoom:67%;" />
 
 ## microbit示例程序
 
