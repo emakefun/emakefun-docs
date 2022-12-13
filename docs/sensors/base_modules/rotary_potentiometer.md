@@ -2,11 +2,11 @@
 
 ## 实物图
 
-<img src="rotary_potentiometer/rotary_potentiometer.png" alt="实物图" style="zoom: 50%;" />
+![实物图](rotary_potentiometer/rotary_potentiometer.png)
 
 ## 原理示意图
 
-<img src="rotary_potentiometer/rotary_potentiometer_schematic2.png" alt="原理示意图" style="zoom:33%;" />
+![原理示意图](rotary_potentiometer/rotary_potentiometer_schematic2.png)
 
 ## 概述
 
@@ -16,7 +16,7 @@
 
 [原理图下载](rotary_potentiometer/rotary_potentiometer_schematic.pdf)
 
-<img src="rotary_potentiometer/rotary_potentiometer_schematic.png" alt="原理图" style="zoom: 67%;" />
+![原理图](rotary_potentiometer/rotary_potentiometer_schematic.png)
 
 ## 模块参数
 
@@ -36,7 +36,9 @@
 
 ## 机械尺寸图
 
-<img src="rotary_potentiometer/rotary_potentiometer_assembly.png" alt="机械尺寸图" style="zoom: 67%;" />
+
+![机械尺寸图](rotary_potentiometer/rotary_potentiometer_assembly.png)
+
 
 ## Arduino示例程序
 
@@ -64,7 +66,7 @@ void loop() {
 
 [下载示例程序](rotary_potentiometer/rotary_potentiometer_Mixly_demo.zip)
 
-<img src="rotary_potentiometer/Mixly_demo.png" alt="机械尺寸图" style="zoom: 80%;" />
+![Mixly示例程序](rotary_potentiometer/Mixly_demo.png)
 
 ## microbit示例程序
 

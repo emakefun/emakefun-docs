@@ -2,10 +2,7 @@
 
 ## 实物图
 
-
-
-<img src="rocker_module/rocker_module.png" alt="实物图" style="zoom: 50%;" />
-
+![实物图](rocker_module/rocker_module.png)
 
 ## 概述
 
@@ -15,7 +12,7 @@
 
 [原理图下载](rocker_module/rocker_module_schematic.pdf) 
 
-<img src="rocker_module/rocker_module_schematic.png" alt="原理图A" style="zoom:50%;" />
+![原理图](rocker_module/rocker_module_schematic.png)
 
 ## 模块参数
 
@@ -37,10 +34,7 @@
 
 ## 机械尺寸图
 
-
-
-<img src="rocker_module/rocker_module_assembly.png" alt="机械尺寸图" style="zoom: 67%;" />
-
+![机械尺寸图](rocker_module/rocker_module_assembly.png)
 
 ## Arduino示例程序
 
@@ -77,7 +71,7 @@ void loop()
 
 [下载示例程序](rocker_module/rocker_Mixly_demo.zip)
 
-<img src="rocker_module/Mixly_demo.png" alt="机械尺寸图" style="zoom: 80%;" />
+![Mixly示例程序](rocker_module/Mixly_demo.png)
 
 ## microbit示例程序
 

@@ -2,19 +2,17 @@
 
 ## 实物图
 
-<img src="joystick_handle/joystick_handle.png" alt="实物图" style="zoom: 67%;" />
-
-
+![实物图](joystick_handle/joystick_handle.png)
 
 ## 概述
 
-​		PH2.0小手柄包含两个电位器（X轴和Y轴）操纵杆和五个按键（A、B、C、D、摇杆按键Z）。操纵杆根据两个触点控制运动，其中一个触点向左和向右，另一个向上和向下。操纵杆通过AD传感器读取不同的电压值，从而识别特定的位置。X轴和Y轴的模拟值都是从0到255，分别表示从左到右的位置和从上到下的位置。当没有操作时，X和Y轴方向的模拟值都为128。A、B、C、D和摇杆按键Z五个按键都有5种状态（按下、释放、单击、双击、长按）。通过I2C连接Arduino主板发送数据。
+​		PH2.0小手柄包含两个电位器（X轴和Y轴）操纵/杆和五个按键（A、B、C、D、摇杆按键Z）。操纵杆根据两个触点控制运动，其中一个触点向左和向右，另一个向上和向下。操纵杆通过AD传感器读取不同的电压值，从而识别特定的位置。X轴和Y轴的模拟值都是从0到255，分别表示从左到右的位置和从上到下的位置。当没有操作时，X和Y轴方向的模拟值都为128。A、B、C、D和摇杆按键Z五个按键都有5种状态（按下、释放、单击、双击、长按）。通过I2C连接Arduino主板发送数据。
 
 ## 原理图
 
 [原理图下载](joystick_handle/joystick_handle_schematic.pdf)
 
-<img src="joystick_handle/joystick_handle_schematic.png" alt="原理图" style="zoom:67%;" />
+![原理图](joystick_handle/joystick_handle_schematic.png)
 
 ## 模块参数
 
@@ -34,7 +32,7 @@
 
 ## 机械尺寸图
 
-<img src="joystick_handle/joystick_handle_assembly.png" alt="机械尺寸图" style="zoom: 67%;" />
+![机械尺寸图](joystick_handle/joystick_handle_assembly.png)
 
 ### Arduino示例程序
 
@@ -77,7 +75,7 @@ void loop(){
 
 [下载示例程序](joystick_handle/joystick_handle_Mixly_demo.zip)
 
-<img src="joystick_handle/Mixly_demo.png" alt="Mixly示例程序" style="zoom:80%;" />
+![Mixly示例程序](joystick_handle/Mixly_demo.png)
 
 ## microbit示例程序
 

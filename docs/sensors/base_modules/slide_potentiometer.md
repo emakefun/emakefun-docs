@@ -2,7 +2,7 @@
 
 ## 实物图
 
-<img src="slide_potentiometer/slide_potentiometer.png" alt="实物图" style="zoom: 50%;" />
+![实物图](slide_potentiometer/slide_potentiometer.png)
 
 ## 概述
 
@@ -10,9 +10,9 @@
 
 ## 原理图
 
- [下载原理图](slide_potentiometer/slide_potentiometer_schematic.pdf)
+[下载原理图](slide_potentiometer/slide_potentiometer_schematic.pdf)
 
-<img src="slide_potentiometer/slide_potentiometer_schematic.png" alt="原理图" style="zoom:67%;" />
+![原理图](slide_potentiometer/slide_potentiometer_schematic.png)
 
 ## 模块参数
 | 引脚名称 |     描述     |
@@ -31,7 +31,7 @@
 
 ## 机械尺寸图
 
-<img src="slide_potentiometer/slide_potentiometer_assenbly.png" alt="机械尺寸图" style="zoom:80%;" />
+![机械尺寸图](slide_potentiometer/slide_potentiometer_assenbly.png)
 
 ## Arduino示例程序
 
@@ -63,8 +63,7 @@ void loop() {
 
 [下载示例程序](slide_potentiometer/slide_potentiometer_Mixly_demo.zip)
 
-<img src="slide_potentiometer/Mixly_demo.png" alt="机械尺寸图" style="zoom:80%;" />
-
+![Mixly示例程序](slide_potentiometer/Mixly_demo.png)
 
 ## microbit示例程序
 

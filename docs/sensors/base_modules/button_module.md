@@ -2,11 +2,12 @@
 
 ## 实物图
 
-<img src="button_module/button_module.png" alt="实物图" style="zoom:33%;" />
+![实物图](button_module/button_module.png)
 
 ## 按键机械结构图
 
-<img src="button_module/button_structure.png" alt="按键机械结构图" style="zoom: 50%;" />
+![按键机械结构图](button_module/button_structure.png)
+
 
 ##  概述
 
@@ -17,7 +18,7 @@
 
 [原理图下载](button_module/button_module_schematic.pdf)
 
-<img src="button_module/button_module_schematic.png" alt="原理图" style="zoom:67%;" />
+![原理图](button_module/button_module_schematic.png)
 
 ## 模块参数
 
@@ -37,7 +38,7 @@
 
 ## 机械尺寸图
 
-<img src="button_module/button_assembly.png" alt="机械尺寸图" style="zoom:50%;" />
+![机械尺寸图](button_module/button_assembly.png)
 
 ## Arduino示例程序
 
@@ -69,7 +70,7 @@ void loop()
 
 [下载示例程序](button_module/Button_Mixly_demo.zip)
 
-<img src="button_module/Mixly_demo.png" alt="Mixly示例程序" style="zoom: 80%;" />
+![Mixly示例程序](button_module/Mixly_demo.png)
 
 ## microbit示例程序
 

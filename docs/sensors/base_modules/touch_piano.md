@@ -2,7 +2,7 @@
 
 ## 实物图
 
-<img src="touch_piano/touch_piano.png" alt="实物图" style="zoom: 67%;" />
+![实物图](touch_piano/touch_piano.png)
 
 ## 概述
 
@@ -46,7 +46,7 @@
 
 ## 机械尺寸图
 
-<img src="touch_piano/touch_piano_assembly.png" alt="机械尺寸图" style="zoom: 67%;" />
+![原理图](touch_piano/touch_piano_assembly.png)
 
 ## Arduino示例程序
 
@@ -98,7 +98,7 @@ void loop()
 
 [下载示例程序](touch_piano/touch_piano_Mixly_demo.zip)
 
-<img src="touch_piano/Mixly_demo.png" alt="机械尺寸图" style="zoom: 80%;" />
+![Mixly示例程序](touch_piano/Mixly_demo.png)
 
 ## microbit示例程序
 

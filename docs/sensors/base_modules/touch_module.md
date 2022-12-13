@@ -2,7 +2,7 @@
 
 ## 实物图
 
-<img src="touch_module/touch_module.png" alt="实物图" style="zoom:50%;" />
+![实物图](touch_module/touch_module.png)
 
 ## 概述
 
@@ -12,7 +12,7 @@
 ## 原理图
 [下载原理图](touch_module/touch_module_schematic.pdf) 
 
-<img src="touch_module/touch_module_schematic.png" alt="原理图" style="zoom:50%;" />
+![原理图](touch_module/touch_module_schematic.png)
 
 ## 模块参数
 
@@ -31,7 +31,7 @@
 
 ## 机械尺寸图
 
-<img src="touch_module/touch_module_assembly.png" alt="机械尺寸图" style="zoom:67%;" />
+![机械尺寸图](touch_module/touch_module_assembly.png)
 
 ## Arduino示例程序
 
@@ -63,7 +63,7 @@ void loop()
 
 [下载示例程序](touch_module/touch_Mixly_demo.zip)
 
-<img src="touch_module/Mixly_demo.png" alt="Mixly示例程序" style="zoom:80%;" />
+![Mixly示例程序](touch_module/Mixly_demo.png)
 
 ## microbit示例程序
 请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的触摸模块。

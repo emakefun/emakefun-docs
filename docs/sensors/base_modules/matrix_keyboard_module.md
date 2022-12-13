@@ -1,7 +1,8 @@
 # 触摸矩阵键盘
 
 ## 实物图
-<img src="matrix_keyboard_module/matrix_keyboard_module.png" alt="实物图" style="zoom: 50%;" />
+
+![实物图](matrix_keyboard_module/matrix_keyboard_module.png)
 
 ## 概述
 
@@ -9,9 +10,9 @@
 
 ## 原理图
 
- [原理图下载](matrix_keyboard_module/matrix_keyboard_module_schematic.pdf) 
+[原理图下载](matrix_keyboard_module/matrix_keyboard_module_schematic.pdf) 
 
-<img src="matrix_keyboard_module/matrix_keyboard_module_schematic.png" alt="原理图" style="zoom:67%;" />
+![原理图](matrix_keyboard_module/matrix_keyboard_module_schematic.png)
 
 ## 模块参数
 
@@ -35,7 +36,7 @@
 
 ## 机械尺寸图
 
-<img src="matrix_keyboard_module/matrix_keyboard_module_assembly.png" alt="机械尺寸图" style="zoom:67%;" />
+![机械尺寸图](matrix_keyboard_module/matrix_keyboard_module_assembly.png)
 
 ## Arduino示例程序
 
@@ -69,7 +70,7 @@ void loop()
 
 [下载示例程序](matrix_keyboard_module/matrix_keyboard_Mixly_demo.zip)
 
-<img src="matrix_keyboard_module/Mixly_demo.png" alt="Mixly示例程序" style="zoom: 80%;" />
+![Mixly示例程序](matrix_keyboard_module/Mixly_demo.png)
 
 ## microbit示例程序
 

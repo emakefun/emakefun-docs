@@ -2,7 +2,7 @@
 
 ## 实物图
 
-<img src="rotary_encoder_module/rotary_encoder_module.png" alt="实物图" style="zoom: 50%;" />
+![实物图](rotary_encoder_module/rotary_encoder_module.png)
 
 ##  概述
 
@@ -10,9 +10,9 @@
 
 ## 原理图
 
- [下载原理图](rotary_encoder_module/rotary_encoder_module_schematic.pdf)
+[下载原理图](rotary_encoder_module/rotary_encoder_module_schematic.pdf)
 
-<img src="rotary_encoder_module/rotary_encoder_module_schematic.png" alt="原理图" style="zoom: 67%;" />
+![原理图](rotary_encoder_module/rotary_encoder_module_schematic.png)
 
 ## 模块参数
 
@@ -34,7 +34,7 @@
 
 ## 机械尺寸图
 
-<img src="rotary_encoder_module/rotary_encoder_module_assembly.png" alt="机械尺寸图" style="zoom:67%;" />
+![机械尺寸图](rotary_encoder_module/rotary_encoder_module_assembly.png)
 
 ## Arduino示例程序
 
@@ -86,7 +86,7 @@ void loop()
 
 [下载示例程序](rotary_encoder_module/rotary_encoder_Mixly_demo.zip)
 
-<img src="rotary_encoder_module/Mixly_demo.png" alt="机械尺寸图" style="zoom:67%;" />
+![Mixly示例程序](rotary_encoder_module/Mixly_demo.png)
 
 ## microbit示例程序
 
