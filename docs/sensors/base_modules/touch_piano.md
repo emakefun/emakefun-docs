@@ -2,6 +2,7 @@
 
 ## 实物图
 
+
 ![实物图](touch_piano/touch_piano.png)
 
 ## 概述
@@ -53,44 +54,35 @@
 [下载示例程序](touch_piano/touch_piano.zip)
 
 ```c
-#include"EM_Piano.h"
-#include "Buzzer.h"
 
-Buzzer buzzer(A3);
+#include <EM_Piano.h>
 
-int SCLPin = A5, SDOPin = A4;   // Define SCL clock and SDO data port
-unsigned int h = 0, oldh = 0;
-Piano mPiano;
-char str[128];
-void setup()
-{
-  Serial.begin(9600);  // Set the serial port baud rate to 9600
-  mPiano.initPiano(SCLPin, SDOPin); //初始话钢琴模块
+Piano mPiano_A4A5;
+
+void setup(){
+  mPiano_A4A5.initPiano(A4, A5);  //初始化触摸钢琴模块
+  Serial.begin(9600);
 }
 
-void loop()
-{
-  uint16_t keycode = mPiano.GetKeyCode(); //获取钢琴模块键值
-  if (keycode != 0xFFFF) {   // 判断按键是否按下
-    String key_name = mPiano.GetKeyMap();
-    if (key_name == "1") {   //判断按键1是否按下
-      buzzer.tone(A3, 262, 100);
-    }else if (key_name == "2") {  //判断按键2是否按下
-      buzzer.tone(A3, 294, 100);
-    }else if (key_name == "3") {  //判断按键3是否按下
-       buzzer.tone(A3, 330, 100);
-    }else if (key_name == "4") {  //判断按键4是否按下
-       buzzer.tone(A3, 349, 100);
-    }else if (key_name == "5") {  //判断按键5是否按下
-       buzzer.tone(A3, 392, 100);
-    }else if (key_name == "6") {  //判断按键6是否按下
-       buzzer.tone(A3, 440, 100);
-    }else if (key_name == "7") {  //判断按键7是否按下
-       buzzer.tone(A3, 494, 100);
-    }else if (key_name == "8") {  //判断按键8是否按下
-       buzzer.tone(A3, 523, 100);
-    }
+void loop(){
+  if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_1)) {  // 判断钢琴模块按键1是被触摸，如果被触摸则打印Touch key 1
+    Serial.println("Touch key 1");
+  } else if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_2)) {  // 判断钢琴模块按键2是被触摸，如果被触摸则打印Touch key 2
+    Serial.println("Touch key 2");
+  } else if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_3)) {  // 判断钢琴模块按键3是被触摸，如果被触摸则打印Touch key 3
+    Serial.println("Touch key 3");
+  } else if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_4)) {  // 判断钢琴模块按键4是被触摸，如果被触摸则打印Touch key 4
+    Serial.println("Touch key 4");
+  } else if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_5)) {  // 判断钢琴模块按键5是被触摸，如果被触摸则打印Touch key 5
+    Serial.println("Touch key 5");
+  } else if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_6)) {  // 判断钢琴模块按键6是被触摸，如果被触摸则打印Touch key 6
+    Serial.println("Touch key 6");
+  } else if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_7)) {  // 判断钢琴模块按键7是被触摸，如果被触摸则打印Touch key 7
+    Serial.println("Touch key 7");
+  } else if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_8)) {  // 判断钢琴模块按键8是被触摸，如果被触摸则打印Touch key 8
+    Serial.println("Touch key 8");
   }
+
 }
 ```
 

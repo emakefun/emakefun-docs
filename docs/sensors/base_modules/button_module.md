@@ -2,12 +2,11 @@
 
 ## 实物图
 
-![实物图](button_module/button_module.png)
+![原理图](button_module/button_module.png)
 
 ## 按键机械结构图
 
-![按键机械结构图](button_module/button_structure.png)
-
+![原理图](button_module/button_structure.png)
 
 ##  概述
 
