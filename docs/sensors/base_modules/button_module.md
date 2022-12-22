@@ -2,11 +2,11 @@
 
 ## 实物图
 
-![实物图](button_module/button_module.png)
+![原理图](button_module/button_module.png)
 
 ## 按键机械结构图
 
-![按键机械结构图](button_module/button_structure.png)
+![原理图](button_module/button_structure.png)
 
 ##  概述
 
@@ -15,13 +15,9 @@
 
 ## 原理图
 
+[原理图下载](button_module/button_module_schematic.pdf)
+
 ![原理图](button_module/button_module_schematic.png)
-
-## 详细原理图和数据手册
-
-[查看原理图](button_module/button_module_schematic.pdf)
-
-[查看数据手册](button_module/button_datasheet.pdf)
 
 ## 模块参数
 
@@ -48,9 +44,9 @@
 [下载示例程序](button_module/button_module.zip)
 
 ```c
-int led_out = A2;//定义LED引脚
-int keypad_pin = A3; //定义按键引脚
-int value;
+int led_out = 4;//定义LED引脚
+int keypad_pin = 3; //定义按键引脚
+int Button_value;
 void setup()
 {
   pinMode(led_out,OUTPUT); //初始化LED连接的引脚为输出引脚
@@ -58,8 +54,8 @@ void setup()
 }
 void loop()
 {
-  value = digitalRead(keypad_pin); //读取按键输入引脚的值
-  if (value == LOW) 
+  Button_value = digitalRead(keypad_pin); //读取按键输入引脚的值
+  if (Button_value == LOW) 
   {
       digitalWrite(led_out,HIGH); //如果读取值为低即按键按下去了，LED亮
   }
@@ -69,6 +65,13 @@ void loop()
   }
 }
 ```
+## Mixly示例程序
+
+[下载示例程序](button_module/Button_Mixly_demo.zip)
+
+![Mixly示例程序](button_module/Mixly_demo.png)
+
 ## microbit示例程序
+
 请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的按键模块。
 

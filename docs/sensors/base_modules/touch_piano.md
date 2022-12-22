@@ -2,13 +2,8 @@
 
 ## 实物图
 
-### A款
 
 ![实物图](touch_piano/touch_piano.png)
-
-### B款
-
-
 
 ## 概述
 
@@ -29,13 +24,9 @@
 
 ## 原理图
 
-### A款
+[下载原理图](touch_piano/touch_piano_schematic.pdf) 
 
 ![原理图](touch_piano/touch_piano_schematic.png)
-
-### B款
-
-
 
 ## 模块参数
 
@@ -48,62 +39,58 @@
 
 - 供电电压：5V
 
-- 连接方式：PH23.0 4PIN防反接线
+- 连接方式：PH2.0 4PIN防反接线
 
 - 模块尺寸：109x36mm
 
 - 安装方式：M4螺钉兼容乐高插孔固定
-## 详细原理图
-
-[查看原理图A](touch_piano/touch_piano_schematic_a.pdf) 
-
-[查看原理图B](touch_piano/touch_piano_schematic_b.pdf) 
-
-[查看数据手册A](touch_piano/bs818a.pdf)
-
-[查看数据手册B](touch_piano/ttp229.pdf)
 
 ## 机械尺寸图
 
-![机械尺寸图](touch_piano/touch_piano_assembly.png)
+![原理图](touch_piano/touch_piano_assembly.png)
 
 ## Arduino示例程序
 
 [下载示例程序](touch_piano/touch_piano.zip)
 
 ```c
-#include "Buzzer.h"
-#include "BS818A.h"
 
-BS818A BS; //定义一个BS818A对象BS
-Buzzer buzzer(A3); //定义一个Buzzer对象buzzer，输出引脚为A3
+#include <EM_Piano.h>
 
-void setup() {
-  Serial.begin(9600); //设置波特率9600
-  BS.InitBS818A(A4, A5); //初始化BS对象
+Piano mPiano_A4A5;
+
+void setup(){
+  mPiano_A4A5.initPiano(A4, A5);  //初始化触摸钢琴模块
+  Serial.begin(9600);
 }
 
-void loop()  {
-   if (BS.PressBsButton(BS_KEYCODE_1)) {
-    buzzer.tone(A3, 262, 100); //如果1键被按下，让A3引脚输出音符1对应频率的波形，持续100ms
-  } else if (BS.PressBsButton(BS_KEYCODE_2)) {
-    buzzer.tone(A3, 294, 100); //如果2键被按下，让A3引脚输出音符2对应频率的波形
-  } else if (BS.PressBsButton(BS_KEYCODE_3)) {
-    buzzer.tone(A3, 330, 100);//如果3键被按下，让A3引脚输出音符3对应频率的波形
-  } else if (BS.PressBsButton(BS_KEYCODE_4)) {
-    buzzer.tone(A3, 349, 100);//如果4键被按下，让A3引脚输出音符4对应频率的波形
-  } else if (BS.PressBsButton(BS_KEYCODE_5)) {
-    buzzer.tone(A3, 392, 100);//如果5键被按下，让A3引脚输出音符5对应频率的波形
-  } else if (BS.PressBsButton(BS_KEYCODE_6)) {
-    buzzer.tone(A3, 440, 100);//如果6键被按下，让A3引脚输出音符6对应频率的波形
-  } else if (BS.PressBsButton(BS_KEYCODE_7)) {
-    buzzer.tone(A3, 494, 100);//如果7键被按下，让A3引脚输出音符7对应频率的波形
-  } else if (BS.PressBsButton(BS_KEYCODE_8)) {
-    buzzer.tone(A3, 523, 100);//如果8键被按下，让A3引脚输出音符8对应频率的波形
+void loop(){
+  if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_1)) {  // 判断钢琴模块按键1是被触摸，如果被触摸则打印Touch key 1
+    Serial.println("Touch key 1");
+  } else if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_2)) {  // 判断钢琴模块按键2是被触摸，如果被触摸则打印Touch key 2
+    Serial.println("Touch key 2");
+  } else if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_3)) {  // 判断钢琴模块按键3是被触摸，如果被触摸则打印Touch key 3
+    Serial.println("Touch key 3");
+  } else if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_4)) {  // 判断钢琴模块按键4是被触摸，如果被触摸则打印Touch key 4
+    Serial.println("Touch key 4");
+  } else if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_5)) {  // 判断钢琴模块按键5是被触摸，如果被触摸则打印Touch key 5
+    Serial.println("Touch key 5");
+  } else if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_6)) {  // 判断钢琴模块按键6是被触摸，如果被触摸则打印Touch key 6
+    Serial.println("Touch key 6");
+  } else if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_7)) {  // 判断钢琴模块按键7是被触摸，如果被触摸则打印Touch key 7
+    Serial.println("Touch key 7");
+  } else if (mPiano_A4A5.PressBsButton(EM_PIANO_KEYCODE_8)) {  // 判断钢琴模块按键8是被触摸，如果被触摸则打印Touch key 8
+    Serial.println("Touch key 8");
   }
-  delay(200);
-} 
+
+}
 ```
+
+## Mixly示例程序
+
+[下载示例程序](touch_piano/touch_piano_Mixly_demo.zip)
+
+![Mixly示例程序](touch_piano/Mixly_demo.png)
 
 ## microbit示例程序
 

@@ -14,6 +14,8 @@
 
 ## 原理图
 
+[原理图下载](rotary_potentiometer/rotary_potentiometer_schematic.pdf)
+
 ![原理图](rotary_potentiometer/rotary_potentiometer_schematic.png)
 
 ## 模块参数
@@ -32,16 +34,11 @@
 
 - 安装方式：M4螺钉兼容乐高插孔固定
 
-
-## 详细原理图
-
-[查看原理图](rotary_potentiometer/rotary_potentiometer_schematic.pdf)
-
-[查看数据手册](rotary_potentiometer/potentiometer.pdf)
-
 ## 机械尺寸图
 
+
 ![机械尺寸图](rotary_potentiometer/rotary_potentiometer_assembly.png)
+
 
 ## Arduino示例程序
 
@@ -64,6 +61,12 @@ void loop() {
  delay(200);
 }
 ```
+
+## Mixly示例程序
+
+[下载示例程序](rotary_potentiometer/rotary_potentiometer_Mixly_demo.zip)
+
+![Mixly示例程序](rotary_potentiometer/Mixly_demo.png)
 
 ## microbit示例程序
 

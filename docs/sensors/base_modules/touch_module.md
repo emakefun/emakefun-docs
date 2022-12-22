@@ -10,6 +10,7 @@
 
 
 ## 原理图
+[下载原理图](touch_module/touch_module_schematic.pdf) 
 
 ![原理图](touch_module/touch_module_schematic.png)
 
@@ -28,12 +29,6 @@
 
 - 安装方式：M4螺钉兼容乐高插孔固定
 
-## 原理图和数据手册
-
-[查看原理图](touch_module/touch_module_schematic.pdf) 
-
-[查看数据手册](touch_module/ttp223_datasheet.pdf) 
-
 ## 机械尺寸图
 
 ![机械尺寸图](touch_module/touch_module_assembly.png)
@@ -43,8 +38,8 @@
 [下载示例程序](touch_module/touch_module.zip)
 
 ```c
-int touch_pin = A3; //定义触摸按键引脚
-int led_out = A2; //定义LED引脚
+int touch_pin = 4; //定义触摸按键引脚
+int led_out = 3; //定义Arduino LED引脚
 int value = 0 ;
 void setup()
 {
@@ -53,7 +48,7 @@ void setup()
 }
 void loop()
 {
-  value = digitalRead(touch_pin); //读取按键输入引脚的值
+  value = digitalRead(touch_pin); //读取触摸按键输入引脚的值
    if (value == LOW)
    {
     digitalWrite(led_out,HIGH); //如果读取值为低即被触摸到了，LED亮
@@ -64,6 +59,11 @@ void loop()
     }
 }
 ```
+## Mixly示例程序
+
+[下载示例程序](touch_module/touch_Mixly_demo.zip)
+
+![Mixly示例程序](touch_module/Mixly_demo.png)
 
 ## microbit示例程序
 请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的触摸模块。
