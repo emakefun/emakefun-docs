@@ -90,4 +90,4 @@ void loop()
 
 ## microbit示例程序
 
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的旋转编码器。
+<a href="xxx" target="_blank">动手试一试</a>
