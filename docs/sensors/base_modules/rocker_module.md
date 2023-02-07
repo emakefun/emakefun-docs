@@ -75,4 +75,4 @@ void loop()
 
 ## microbit示例程序
 
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的摇杆模块。
+<a href="https://makecode.microbit.org/_ahq11cX1E6JT" target="_blank">动手试一试</a>

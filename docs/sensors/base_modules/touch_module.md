@@ -66,5 +66,5 @@ void loop()
 ![Mixly示例程序](touch_module/Mixly_demo.png)
 
 ## microbit示例程序
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入模块的触摸模块。
 
+<a href="https://makecode.microbit.org/_5bXfq63TiM3m" target="_blank">动手试一试</a>
