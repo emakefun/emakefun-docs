@@ -314,13 +314,20 @@ motorbit = motor.init()
 motorbit.servo(1, 90, speed=5)
 ```
 
+### 经典案例
+
+1. [红外遥控器控制麦轮小车](https://makecode.microbit.org/_iX6Toq4saVHL)
+2. JOYSTICKBIT手柄无线控制麦轮小车    [手柄程序](https://makecode.microbit.org/_bVj0r32qUaVo)   [麦轮小车程序](https://makecode.microbit.org/_5CzePW2wTTm8)
 
 # FAQ:
-1. 电机不转？
+1. 电机/风扇/水泵不动需要怎么解决？
 
-答：MotorMotor:Bit V1.0检查电池是否有电，检查电源开关。MotorMotor:Bit V2.0检查拨码开关是否拨动到相对应的位置。
+答：1. 确认程序和实物的引脚是不是保持一致，确保程序上传成功;
+    2. 是否有外接6-15V电源，可用万用表测量电源的电压，是否有电；如果没有万用表可以用家用6-15V的DC电源，比如路由器、机顶盒等满足要求的电源;
+    3. 开关是否打到ON档，Micro:Bit主板是否插反了;
+    4. 电路外围是否有短路的情况，扩展板电源灯是否正常亮；扩展板是否存在烧焦味道，确认扩展板没有被烧坏。
 
-2. 供电方式?
+2. 该驱动板的供电方式是怎样的?
 
 答： Motor:Bit V1.0第一种供电方式为14500锂电池供电，第二种供电方式为PH2.0接口供电，两种供电方式的供电电压范围为3.7V-4.2V。MotorMotor:Bit V1.0第一种供电方式为3.5mm接线柱供电,第二种供电方式为3.5mmDC头供电,两种供电方式的供电电压范围为6V-15V。具体详情请看电源供电口
 
