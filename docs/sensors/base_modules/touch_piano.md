@@ -94,4 +94,5 @@ void loop(){
 
 ## microbit示例程序
 
-请直接参考microbit图形化编程[makecode库链接](https://github.com/emakefun/pxt-sensorbit)里面的基础输入部分触摸钢琴。
+钢琴模块 V1：<a href="https://makecode.microbit.org/_Ve9WmrP1k6WE" target="_blank">动手试一试</a>
+钢琴模块 V2：<a href="https://makecode.microbit.org/_c0cAijCb05w1" target="_blank">动手试一试</a>

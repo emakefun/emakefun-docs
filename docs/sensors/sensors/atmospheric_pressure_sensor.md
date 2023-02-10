@@ -124,3 +124,6 @@ void loop()
 }
 ```
 
+## microbit示例程序
+
+<a href="https://makecode.microbit.org/_b7fLPi2myAEa" target="_blank">动手试一试</a>

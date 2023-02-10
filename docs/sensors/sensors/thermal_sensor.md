@@ -74,3 +74,7 @@ buzzer.noTone();//蜂鸣器停止
 }
 ```
 
+## microbit示例程序
+
+<a href="https://makecode.microbit.org/_56L5cVTJ5hU4" target="_blank">动手试一试</a>
+

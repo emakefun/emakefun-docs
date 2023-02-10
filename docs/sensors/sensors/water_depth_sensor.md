@@ -68,3 +68,7 @@ if (DepthValue > 500) {
 }
 ```
 
+## microbit示例程序
+
+<a href="https://makecode.microbit.org/_i1ALFJiz18yE" target="_blank">动手试一试</a>
+

@@ -31,3 +31,7 @@ LED是发光二极管的缩写，由混合化合物制成，即镓（Ga），砷
 
 
 ![0](trafficlight module/0.png)
+
+## microbit示例程序
+
+<a href="https://makecode.microbit.org/_Kt8FkrJfR85T" target="_blank">动手试一试</a>

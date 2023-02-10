@@ -74,3 +74,8 @@ RUS-04为了使用方便采用了直接集成了LED驱动控制芯片的RGB灯�
 
 RUS-04收发探头分别各集成了3个RGB灯珠。只需一条信号线来控制各个RGB灯发光
 Arduino需要控制探头的发光，需要专门的RGB库支持。
+
+
+## microbit示例程序
+
+<a href="https://makecode.microbit.org/_PtqVy7dDj4PJ" target="_blank">动手试一试</a>

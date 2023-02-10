@@ -39,3 +39,8 @@
 
 
 ![2](Infrared obstacle avoidance module/2.png)
+
+
+## microbit示例程序
+
+<a href="https://makecode.microbit.org/_hHeEbt5H048T" target="_blank">动手试一试</a>
