@@ -19,7 +19,7 @@
 | 引脚名称 |              描述              |
 | :------: | :----------------------------: |
 |    G     |              GND               |
-|    V     |             5V电源             |
+|    V     |               5V               |
 |    A     |   A端口输出引脚，对应A相输出   |
 |    B     |   B端口输出引脚，对应B相输出   |
 |    D     | D端口输出引脚,对应带的按键输出 |
@@ -30,7 +30,7 @@
 
 - 模块尺寸：40x22.5mm
 
-- 安装方式：M4螺钉兼容乐高插孔固定；
+- 安装方式：M4螺钉兼容乐高插孔固定
 
 ## 机械尺寸图
 
@@ -85,8 +85,6 @@ void loop()
 ## Mixly示例程序
 
 [下载示例程序](rotary_encoder_module/rotary_encoder_Mixly_demo.zip)
-
-![Mixly示例程序](rotary_encoder_module/Mixly_demo.png)
 
 ## microbit示例程序
 

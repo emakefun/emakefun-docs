@@ -16,12 +16,12 @@
 
 ## 模块参数
 
-| 引脚名称 |    描述    |
-| :------: | :--------: |
-|    G     |  GND 地线  |
-|    V     | 5V电源引脚 |
-|   SCL    |  时钟引脚  |
-|   SDO    |  数据引脚  |
+| 引脚名称 |   描述   |
+| :------: | :------: |
+|    G     | GND 地线 |
+|    V     |   VCC    |
+|   SCL    | 时钟引脚 |
+|   SDO    | 数据引脚 |
 
 - 供电电压:5V
 
@@ -69,8 +69,6 @@ void loop()
 ## Mixly示例程序
 
 [下载示例程序](matrix_keyboard_module/matrix_keyboard_Mixly_demo.zip)
-
-![Mixly示例程序](matrix_keyboard_module/Mixly_demo.png)
 
 ## microbit示例程序
 
