@@ -51,3 +51,6 @@ void loop()  {
 }
 ```
 
+## microbit示例程序
+
+<a href="https://makecode.microbit.org/_49YhAp1C2f4d" target="_blank">动手试一试</a>
