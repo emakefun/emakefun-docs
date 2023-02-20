@@ -19,16 +19,15 @@
 
 | 引脚名称 |      描述       |
 | :------: | :-------------: |
-|    G     |     GND地线     |
-|    V     |   5V电源引脚    |
+|    G     |       GND       |
+|    V     |       VCC       |
 |   SCL    | I2C通信时钟引脚 |
 |   SDA    | I2C通信数据引脚 |
 
-- 供电电压：+3.3-5V
+- 供电电压：3V3/5V
 - 通信方式：IIC，地址0x5A
 - 连接方式：PH2.0 4PIN防反接线
 - 外形尺寸：90*40mm
-- 安装方式：M4螺钉兼容乐高插孔固定
 
 ## 机械尺寸图
 
@@ -75,7 +74,6 @@ void loop(){
 
 [下载示例程序](joystick_handle/joystick_handle_Mixly_demo.zip)
 
-![Mixly示例程序](joystick_handle/Mixly_demo.png)
 
 ## microbit示例程序
 

@@ -15,13 +15,13 @@
 ![原理图](slide_potentiometer/slide_potentiometer_schematic.png)
 
 ## 模块参数
-| 引脚名称 |     描述     |
-| :------: | :----------: |
-|    G     |     GND      |
-|    V     |    5V电源    |
-|    A     | 信号输出引脚 |
+| 引脚名称 |                   描述                   |
+| :------: | :--------------------------------------: |
+|    G     |                   GND                    |
+|    V     |                   VCC                    |
+|    A     | 信号输出引脚，输出电位器中间引脚的电压值 |
 
-- 供电电压：5V
+- 供电电压：3V3/5V
 
 - 连接方式：PH2.0 3PIN防反接线
 
@@ -62,8 +62,6 @@ void loop() {
 ## Mixly示例程序
 
 [下载示例程序](slide_potentiometer/slide_potentiometer_Mixly_demo.zip)
-
-![Mixly示例程序](slide_potentiometer/Mixly_demo.png)
 
 ## microbit示例程序
 

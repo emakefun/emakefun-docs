@@ -90,8 +90,6 @@ void loop(){
 
 [下载示例程序](touch_piano/touch_piano_Mixly_demo.zip)
 
-![Mixly示例程序](touch_piano/Mixly_demo.png)
-
 ## microbit示例程序
 
 钢琴模块 V1：<a href="https://makecode.microbit.org/_Ve9WmrP1k6WE" target="_blank">动手试一试</a>

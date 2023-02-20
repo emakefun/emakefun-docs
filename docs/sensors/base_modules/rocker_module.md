@@ -19,12 +19,12 @@
 | 引脚名称 |               描述               |
 | :------: | :------------------------------: |
 |    G     |               GND                |
-|    V     |              5V电源              |
+|    V     |               VCC                |
 |    X     |       获取摇杆上下动的数据       |
 |    Y     |       获取摇杆左右动的数据       |
 |    B     | 通过高低电平，判断按键是否被按下 |
 
-- 供电电压：5V
+- 供电电压：3V3/5V
 
 - 连接方式：PH2.0 5PIN防反接线
 
@@ -71,7 +71,6 @@ void loop()
 
 [下载示例程序](rocker_module/rocker_Mixly_demo.zip)
 
-![Mixly示例程序](rocker_module/Mixly_demo.png)
 
 ## microbit示例程序
 
