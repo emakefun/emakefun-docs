@@ -1,7 +1,7 @@
 # RaspberryPi-Sensor-Board
 [中文版](README_zh.md)
 
- [Emakefun]](http://www.emakefun.com)
+ [Emakefun]](https://www.emakefun.com)
 
 ![picture0.jpg](./picture/picture0.jpg)
 

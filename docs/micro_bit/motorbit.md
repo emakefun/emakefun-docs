@@ -24,7 +24,7 @@
 - [程序下载](#程序下载)
 - [FAQ](#FAQ) 
 
-Micro:Bit是[易创空间](http://www.emakefun.com/) 专门针对Micro:Bit而开发的驱动电机，舵机，步进电机的一款多功能电机驱动扩展板。Micro:Bit V2.0解决了市面上同类驱动板支持单节3.7V电池驱动力严重不够问题。本驱动板采用控制电路电源和舵机电源分开，单独供电方案，使用大电流输出的电源芯片对舵机独立供电，支持DC(6~15V)电压输入，驱动芯片采用4颗大电流驱动芯片，最大驱动电流达4A，轻松同时驱动4个24V直流马达或者30暴力高速马达。舵机也可以通过外部电源独立供电，同时可以支持8个舵机同时控制。板子采用可选择直插和卧插两种方式，直插可以兼容掌控板。安装孔兼容乐高，可以非常方便安装在自己创意设计中。完善的库支持，配套开发有MakeCode、Scratch3.0、MicroPython库和教程。
+Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而开发的驱动电机，舵机，步进电机的一款多功能电机驱动扩展板。Micro:Bit V2.0解决了市面上同类驱动板支持单节3.7V电池驱动力严重不够问题。本驱动板采用控制电路电源和舵机电源分开，单独供电方案，使用大电流输出的电源芯片对舵机独立供电，支持DC(6~15V)电压输入，驱动芯片采用4颗大电流驱动芯片，最大驱动电流达4A，轻松同时驱动4个24V直流马达或者30暴力高速马达。舵机也可以通过外部电源独立供电，同时可以支持8个舵机同时控制。板子采用可选择直插和卧插两种方式，直插可以兼容掌控板。安装孔兼容乐高，可以非常方便安装在自己创意设计中。完善的库支持，配套开发有MakeCode、Scratch3.0、MicroPython库和教程。
 
 ## 产品特色
 | 特点 | Motor:Bit V1.0|Motor:Bit V2.0|
@@ -270,9 +270,9 @@ Micro:Bit是[易创空间](http://www.emakefun.com/) 专门针对Micro:Bit而开
 ## micropython语法
 如果需要支持python语法，需要将固件下载到Micro:Bit
 
-[点击下载Micro:Bit V1最新固件](http://www.emakefun.com/firmware/firmware_v2.hex)
+[点击下载Micro:Bit V1最新固件](https://www.emakefun.com/firmware/firmware_v2.hex)
 
-[点击下载Micro:Bit V2最新固件](http://www.emakefun.com/firmware/firmware_v2.hex)
+[点击下载Micro:Bit V2最新固件](https://www.emakefun.com/firmware/firmware_v2.hex)
 
 - 直流电机控制：
 > dcmotor_run(index, speed)    # index: 1/2/3/4（电机序号）, speed: -255~255 (电机速度)

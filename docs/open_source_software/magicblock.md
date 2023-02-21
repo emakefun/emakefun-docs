@@ -29,7 +29,7 @@
 ## MagicBlock安装
 
 ### 下载地址
-**浏览器输入[www.emakefun.com/download](http://www.emakefun.com/download) 进入易创空间科技有限公司官网的软件下载页面，选择Windows版或Mac版的MagicBlock，单击即可下载**
+**浏览器输入[www.emakefun.com/download](https://www.emakefun.com/download) 进入易创空间科技有限公司官网的软件下载页面，选择Windows版或Mac版的MagicBlock，单击即可下载**
 
 ### 安装Windows版MgicBlock
 

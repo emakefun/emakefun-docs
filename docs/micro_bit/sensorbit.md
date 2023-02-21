@@ -32,9 +32,9 @@ Sensor:bit 是专为 Micro:bit 与各种传感器连接所设计的，对与 PH2
 
 要支持如下micropython语法需要下载最新固件到microbit
 
-[Micro:bit V1固件](http://www.emakefun.com/firmware/firmware_v1.hex)
+[Micro:bit V1固件](https://www.emakefun.com/firmware/firmware_v1.hex)
 
-[Micro:bit V2固件](http://www.emakefun.com/firmware/firmware_v2.hex)
+[Micro:bit V2固件](https://www.emakefun.com/firmware/firmware_v2.hex)
 
 ## 输入模块
 

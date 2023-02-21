@@ -2,7 +2,7 @@
   This is a library for our Emakefun 16-channel PWM & Servo driver
 
   Pick one up today in the Emakefun shop!
-  ------> http://www.Emakefun.com/products/815
+  ------> https://www.emakefun.com/products/815
 
   These displays use I2C to communicate, 2 pins are required to
   interface. For Arduino UNOs, thats SCL -> Analog 5, SDA -> Analog 4
