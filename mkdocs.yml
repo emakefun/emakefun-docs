@@ -24,6 +24,9 @@ extra:
 
 nav:
     - 首页: index.md
+    - 软件指导: 
+        - 软件下载: softwareDownload.md
+        - 驱动安装:
     - 传感器/配件:
       - 总览: sensors/index.md
       - 基础输入模块:
