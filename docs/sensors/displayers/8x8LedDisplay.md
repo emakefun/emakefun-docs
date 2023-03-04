@@ -34,3 +34,7 @@
 ## 机械尺寸
 
 ![2](8x8 dot matrix/2.png)
+
+## microbit示例程序
+
+<a href="https://makecode.microbit.org/_Yrt4JwWuKV8b" target="_blank">动手试一试</a>
