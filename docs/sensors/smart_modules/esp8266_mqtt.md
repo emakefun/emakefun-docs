@@ -4,11 +4,17 @@
 
 ## 概述
 
-esp8266-mqtt无线模块是emakefun公司基于乐鑫科技的wifi芯片ESP8266基础上重新研发的串口转wifi的物联网模块，该模块采用AT配置方式来支持wifi无线通信，AT指令全面兼容[乐鑫官方指令库（V3.0.0）](https://www.espressif.com/sites/default/files/documentation/4a-esp8266_at_instruction_set_cn.pdf)，在此基础上添加了MQTT指令，并且全部封装成scratch，mixly，Makecode图形化编程块支持arduino，micro:bit。让用户非常容易接收和发送物联网信息，远程物联网控制从未如此简单。
+​		esp8266-mqtt无线模块是emakefun公司基于乐鑫科技的wifi芯片ESP8266基础上重新研发的串口转wifi的物联网模块，该模块采用AT配置方式来支持wifi无线通信，AT指令全面兼容[乐鑫官方指令库（V3.0.0）](https://www.espressif.com/sites/default/files/documentation/4a-esp8266_at_instruction_set_cn.pdf)，在此基础上添加了MQTT指令，并且全部封装成scratch，mixly，Makecode图形化编程块支持arduino，micro:bit。让用户非常容易接收和发送物联网信息，远程物联网控制从未如此简单。
 
+## 模块特点：
 
-## 硬件参数
+- 内置低功率 32 位 CPU：可以兼作应用处理器
+- 内置协议：TCP/IP 协议栈
+- 加密类型：WPA WPA2/WPA2–PSK
+- 支持乐鑫官方AT标准指令集
+- 支持连接标准MQTT协议和TTL串口到无线的应用
 
+## 模块参数
 - 工作电压：5V
 - 接口速率：9600 bps
 - 无线频率：2.4GHz
@@ -19,27 +25,39 @@ esp8266-mqtt无线模块是emakefun公司基于乐鑫科技的wifi芯片ESP8266�
 - 支持低功耗：<240mA
 - 模块尺寸：4 * 2.1cm
 - 安装方式：M4螺钉螺母固定
-
-## 模块特点：
-
-- 内置低功率 32 位 CPU：可以兼作应用处理器
-- 内置协议：TCP/IP 协议栈
-- 加密类型：WPA WPA2/WPA2–PSK
-- 支持乐鑫官方AT标准指令集
-- 支持连接标准MQTT协议和TTL串口到无线的应用
-
-## 引脚定义：
 | 引脚名称 | 描述         |
-| -------- | ------------ |
-| V        | 5V电源引脚   |
-| G        | GND 地线     |
+| :------: | :----------: |
+| G      |    GND     |
+| V       | 5V    |
 | TX        | 串口发送端 |
 | RX        | 串口接收端 |
-
+## 机械尺寸图
+![size](esp8266_mqtt_pic/esp_8266_SMD.png)
 
 ## MQTT扩展AT指令
 
+| 序号 | 指令 | 描述 |详情|
+| --------| -------- | ------------ |------------ |
+| 1 | AT+MQTTUSERCFG | 配置 MQTT 用户属性 | [查看详情](#AT+MQTTUSERCFG - 配置 MQTT 用户属性) |
+| 2       | AT+MQTTCLIENTID |配置 MQTT 客户端 ID|[查看详情](#AT+MQTTCLIENTID - 配置 MQTT 客户端 ID) |
+| 3       | AT+MQTTUSERNAME |配置 MQTT 登录用户名|[查看详情](#AT+MQTTUSERNAME - 配置 MQTT 登录用户名) |
+| 4       | AT+MQTTPASSWORD |配置 MQTT 登录密码|[查看详情](#AT+MQTTPASSWORD - 配置 MQTT 登录密码)|
+| 5       | AT+MQTTCONNCFG  |配置 MQTT 连接属性|[查看详情](# AT+MQTTCONNCFG - 配置 MQTT 连接属性)|
+| 6      | AT+MQTTCONN |连接指定 MQTT broker|[查看详情](#AT+MQTTCONN)|
+| 7     | AT+MQTTCONN? |查询 AT 已连接的 MQTT broker|[查看详情](#AT+MQTTCONN?)|
+| 7      | AT+ALIYUN_MQTTCONN? |连接指定的阿里云MQTT broker|[查看详情](#AT+ALIYUN_MQTTCONN?)|
+| 8     | AT+MQTTPUB |在 LinkID上通过 topic 发布数据 data，<br>data 为字符串消息|[查看详情](#AT+MQTTPUB)|
+| 9     | AT+MQTTPUBRAW |在 LinkID 上通过 topic 发布数据 data，<br> data 为二进制数据|[查看详情](#AT+MQTTPUBRAW)|
+| 10    | AT+MQTTSUB |订阅指定连接的 MQTT 主题, 可重复多次<br>订阅不同 topic|[查看详情](#AT+MQTTSUB)|
+| 11    | AT+MQTTSUB? |查询 MQTT 所有连接上已订阅的 topic|[查看详情](#AT+MQTTSUB?)|
+| 12     | AT+MQTTUNSUB |取消订阅指定连接的 MQTT 主题, 可多次<br>取消不同订阅 topic|[查看详情](#AT+MQTTUNSUB)|
+|13     | AT+MQTTCLEAN |关闭 MQTT Client 为 LinkID 的连接, 并释<br>放内部占用的资源|[查看详情](#AT+MQTTCLEAN)|
+
+
+
+
 ### AT+MQTTUSERCFG - 配置 MQTT 用户属性
+
 设置指令:
 AT+MQTTUSERCFG=<LinkID>,<scheme>,<"client_id">,<"username">,<"password">,<cert_key_ID>,<CA_ID>,<"path">
 
@@ -355,13 +373,6 @@ OK或者ERROR
 
 LinkID: 当前只支持 0
 
-
-## 模块尺寸
-![size](esp8266_mqtt_pic/esp_8266_SMD.png)
-
-## 接线示例
-![size](esp8266_mqtt_pic/esp8266_jiexian.png)
-
 ##  arduino 应用场景
 
 AT串口测试
@@ -409,11 +420,6 @@ void loop()
   }
 }
 ```
-### arduino函数介绍
-
-```
-
-```
 ### arduino示例程序
 
 [下载最新库程序]()
@@ -457,7 +463,7 @@ void loop()
      Serial.println(esp8266.mqtt_topic);
      Serial.print("message:");
      Serial.println(esp8266.mqtt_message);
-
+    
     }
 }
 ```
@@ -467,7 +473,7 @@ void loop()
 ```
 /*
  WiFiEsp test: BasicTest
- 
+
  Performs basic connectivity test and checks.
 */
 
@@ -517,7 +523,7 @@ void loop()
      Serial.println(esp8266.mqtt_topic);    // 打印订阅的topic
      Serial.print("message:");
      Serial.println(esp8266.mqtt_message);  // 打印订阅的topic的数据
-
+    
     }
 }
 
@@ -601,3 +607,7 @@ void fail(const char* test, int actual, int expected)
 
 [下载最新示例程序](https://www.emakefun.com/sources/AliyunMqttSendReceive.7z)
 
+
+```
+
+```
