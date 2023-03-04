@@ -30,4 +30,4 @@
 
 ## microbit示例程序
 
-<a href="https://makecode.microbit.org/_AH6JqT4trAid" target="_blank">动手试一试</a>
+<a href="https://makecode.microbit.org/_AEiDicRK06Rh" target="_blank">动手试一试</a>
