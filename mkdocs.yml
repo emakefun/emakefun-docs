@@ -103,7 +103,7 @@ nav:
         
       - 电源模块:
         - 7.4V充电电池模块: sensors/power_module/2xcr123a_li_ion_battery_module.md
-        - 3.7V升压充电模块: sensors/power_module/3.7v_module.md
+        - 3.7V升压充电模块: sensors/power_module/3.7V_Battery_Module.md
       
       
       #- 配件: micro_bit/IObit.md
