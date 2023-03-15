@@ -2,11 +2,24 @@
 
 ## 模块实物图
 
-待补充
+![实物图](i2c_expansion_board/i2c_expansion_board.png)
 
 ## 概述
 
-该模块是 emakefun 为了解决一些主板的 ADC/IO/I2c 不够用的场景而开发的一个扩展板，可以扩展出 8 路 ADC/IO、4 路 I2C
+  该模块是 emakefun 为了解决创客在使用中，主板的 adc/io/i2c 不够用的场景而开发的一块扩展板，可以扩展4 路 i2c接口，8路io口可以通过软件分别配置成adc，输入，输出模式。配置接口为I2C接口，地址为0x24
+
+## 模块参数
+
+| 引脚名称 | 描述         |
+| -------- | ------------ |
+| G        | GND 地线     |
+| V        | 3~5V电源引脚 |
+| SDA      | I2C数据引脚  |
+| SDL      | I2C时钟引脚  |
+
+## 硬件尺寸图
+
+
 
 ## arduino 应用场景
 
@@ -98,7 +111,7 @@ class I2cExpansionBoard {
 
 ### arduino 示例程序
 
-[下载最新固件](i2c_expansion_board/i2c_expansion_board_arduino.zip)
+[下载arduino库](i2c_expansion_board/i2c_expansion_board_arduino.zip)
 
 ```c++
 #include "i2c_expansion_board.h"
@@ -113,7 +126,7 @@ void setup() {
 
 void loop() {
   // 设置GPIO E7为输出模式
-  i2c_expansion_board.SetGpioMode(I2cExpansionBoard::kGpioPinE7, I2cExpansionBoard::kGpioModeOutput);
+  i2c_expansion_board.SetGpioMode(I2cExpansionBoard::kGpioPinE7,         	 I2cExpansionBoard::kGpioModeOutput);
 
   // 设置GPIO E7输出高电平
   i2c_expansion_board.SetGpioLevel(I2cExpansionBoard::kGpioPinE7, 1);
