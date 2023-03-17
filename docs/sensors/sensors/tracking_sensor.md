@@ -10,31 +10,25 @@
 
 ## 原理图
 
-
-
+[查看原理图](tracking_sensor/infrared_tracking_schematic.pdf) 
 ![原理图](tracking_sensor/infrared_tracking_schematic.png)
-
-
 
 ## 模块参数
 
-| 引脚名称 | 描述       |
-| -------- | ---------- |
-| V        | 5V电源引脚 |
-| G        | GND 地线   |
-| S        | 信号引脚   |
+| 引脚名称 |                       描述                       |
+| :------: | :----------------------------------------------: |
+|    G     |                       GND                        |
+|    V     |                       VCC                        |
+|    S     | 当遇到黑色时输出高电平当没有遇到黑色时输出低电平 |
 
-- 供电电压:5V
+- 供电电压:3v3/5V
 
 - 连接方式:3PIN防反接杜邦线
 
-- 模块尺寸:4*1.2cm
+- 模块尺寸:40 x 22.5 mm
 
-- 安装方式:M3螺钉
+- 安装方式: M4螺钉兼容乐高插孔固定 
 
-## 详细原理图
-
-  [查看原理图](tracking_sensor/infrared_tracking_schematic.pdf) 
 
 ## 机械尺寸图
 

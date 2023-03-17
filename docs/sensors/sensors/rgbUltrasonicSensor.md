@@ -2,7 +2,7 @@
 
 #  概述
 
-![1](RGB ultrasonic Module/1.jpg)
+![1](RGB ultrasonic Module/1.png)
 
 
 

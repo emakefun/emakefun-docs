@@ -10,24 +10,21 @@
 
 ## 原理图
 
+ [查看原理图](photo_sensitive_sensor/photo_sensitive_sensor_schematic.pdf) 
 ![原理图](photo_sensitive_sensor/photo_sensitive_sensor_schematic.png)
 
 ## 模块参数
 
-| 引脚名称 | 描述       |
-| -------- | ---------- |
-| V        | 5V电源引脚 |
-| G        | GND 地线   |
-| S        | 信号引脚   |
+| 引脚名称 |            描述             |
+| :------: | :-------------------------: |
+|    G     |             GND             |
+|    V     |             VCC             |
+|    S     | 光线强时,读取的模拟值则越大 |
 
-* 1.供电电压:5V
-* 2.连接方式:3PIN防反接杜邦线
-* 3.模块尺寸:4*2.1cm
-* 4.安装方式:M4螺钉兼容乐高插孔固定
-
-## 详细原理图
-
- [查看原理图](photo_sensitive_sensor/photo_sensitive_sensor_schematic.pdf) 
+- 供电电压:3v3/5V
+-  连接方式:3PIN防反接杜邦线
+-  模块尺寸:40 x 22.5 mm
+-  安装方式:M4螺钉兼容乐高插孔固定
 
 ## 机械尺寸图 
 
