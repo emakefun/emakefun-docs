@@ -2,7 +2,7 @@
 
 ## 模块实物图
 
-![ds1302](ds1302_pic/Clock Module.jpg)
+![ds1302](./ds1302_pic/Clock_Module.png)
 
 ## 概述
 
