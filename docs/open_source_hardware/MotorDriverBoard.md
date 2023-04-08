@@ -1,61 +1,33 @@
+
+
 # MotorDriverBoard V5.2
+
+[English](README.md) 中文版
+
+### [淘宝购买链接](https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-22376313182.2.6330bc63YWvWxB&id=591988262536)
 
 MotorDriverBoard是由 [深圳市易创空间科技有限公司](www.emakefun.com)，专门针对Arduino Uno(兼容Mega2560)机器人，电机驱动，多路舵机控制而研发的一款多功能电机驱动扩展板。本驱动板采用I2C方式控制[PCA9685](./doc/PCA9685.pdf)(16路PWM输出芯片)。所以本驱动板电机或者舵机和arduino主板IO口不存在对应关系，是通过I2C扩展PWM控制，详情请见[**驱动板原理图**](./doc/MotorDriverBoard_V5.1.pdf)。
 
-<p align="center">
-  <a>
-    <img src="./doc/picture/ZH/MotorDriverBoard_show0.jpg" alt="Logo" width="500" height="500">
-  </a>
+**MotorDriverBoard for Arduino  Uno(Arduino Mega2560)**
 
-<h3 align="center">MotorDriverBoard for Arduino  Uno(Arduino Mega2560)</h3>
-  <p align="center">
-    <a href="https://item.taobao.com/item.htm?spm=a1z10.1-c.w4004-22376313182.2.6330bc63YWvWxB&id=591988262536"><strong>淘宝购买链接 »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard.zip">Arduino ide库文件下载</a>
-    ·
-    <a href="https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mixly.zip">Mixly库下载</a>
-    ·
-    <a href="https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mblock5.zip">Mblock5库下载</a>
-    ·
-    <a href="https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_mindplus-V1.0.0.zip">Mind+库下载</a>
-    ·
-    <a href="">MagicBlock下载(敬请期待)</a>
-  </p>
+![MotorDriverBoard_0](./doc/picture/ZH/MotorDriverBoard_show0.jpg)
 
-</p>
+### 快速链接
 
-## 目录
-<!-- TOC -->
-- [MotorDriverBoard V5.2](#motordriverboard-v52)
-  - [目录](#目录)
-  - [特点](#特点)
-  - [硬件功能介绍](#硬件功能介绍)
-    - [供电说明](#供电说明)
-      - [1、只通过Uno的DC（7~12V）头单一电源给Uno主板，驱动板，舵机同时供电。](#1只通过uno的dc712v头单一电源给uno主板驱动板舵机同时供电)
-      - [2、只通过接线柱供单一电源给驱动板，Uno主板和舵机供电。将驱动板的5V电源输出到Uno主板](#2只通过接线柱供单一电源给驱动板uno主板和舵机供电将驱动板的5v电源输出到uno主板)
-      - [3、Uno主板通过DC头供电，舵机通过接线柱独立供电](#3uno主板通过dc头供电舵机通过接线柱独立供电)
-  - [驱动库使用](#驱动库使用)
-  - [基础示例程序](#基础示例程序)
-  - [电机测试示例](#电机测试示例)
-      - [**DC**四路直流电机测试程序](#dc四路直流电机测试程序)
-      - [**Servo**八路舵机测试程序](#servo八路舵机测试程序)
-      - [**Stepper** 步进电机测试程序](#stepper-步进电机测试程序)
-      - [**Encoder**四路编码电机测试程序](#encoder四路编码电机测试程序)
-  - [综合应用](#综合应用)
-  - [图像化编程块说明](#图像化编程块说明)
-    - [MotorDriverBoard 编程图形块](#motordriverboard-编程图形块)
-      - [Mixly库安装(以Mixly2.0为例，默认主板为Arduino UNO)](#mixly库安装以mixly20为例默认主板为arduino-uno)
-      - [Mixly块表述](#mixly块表述)
-      - [Mblock5](#mblock5)
-      - [Mind+](#mind)
-      - [MagicBlock](#magicblock)
-  - [FAQ](#faq)
-  - [联系我们](#联系我们)
-<!-- TOC -->
+[**常见问题**](#FAQ)
+
+[**Arduino ide库文件下载**](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard.zip)
+
+[**Mixly库下载**](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mixly.zip)
+
+[**Mblock5库下载**](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mblock5.zip)
+
+[**Mind+库下载**](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_mindplus-V1.0.0.zip)
+
+[MagicBlock下载(敬请期待)]()
 
 ## 特点
-![MotorDriverBoard_show1](./doc/picture/ZH/MotorDriverBoard_show1.png)
+
 - 支持4路直流电机，最大驱动电流3A
 - 支持驱动8路舵机，带自恢复保险丝，防止舵机堵转
 - 支持驱动2路4线步进电机
@@ -67,7 +39,10 @@ MotorDriverBoard是由 [深圳市易创空间科技有限公司](www.emakefun.co
 - 舵机电源可切换到外部供电
 - 软件支持Arduino IDE，Mixly，Mind+，Mblock5，MagicBlock(基于Scratch3.0可定制)
 
+![MotorDriverBoard_1](./doc/picture/ZH/MotorDriverBoard_show1.png)
+
 ## 硬件功能介绍
+### 正面
 ![hardware_introduction](./doc/picture/ZH/hardwareIntroduction.png)
 
 ### 供电说明
@@ -76,37 +51,39 @@ MotorDriverBoard是由 [深圳市易创空间科技有限公司](www.emakefun.co
 
 我们设计了如下几种供电方案，**注意驱动板必须通过锂电池或者8.4V 3A以上的UPS电源供电，不能只Uno主板usb供电或者干电池供电**
 
+
+
 #### 1、只通过Uno的DC（7~12V）头单一电源给Uno主板，驱动板，舵机同时供电。
 
-应用场景:
+  应用场景:
 
-a、**驱动9V以下得直流电机比如TT马达积木电机灯，外加sg90/mg90这种舵机**；
+  a、**驱动9V以下得直流电机比如TT马达积木电机灯，外加sg90/mg90这种舵机**；
 
-b、**PS2控制9V~12V的电机时，为了确保PS2不断连，建议使用航模电池或者大电流21700锂电池，两节18650供电不稳定**。
+  b、**PS2控制9V~12V的电机时，为了确保PS2不断连，建议使用航模电池或者大电流21700锂电池，两节18650供电不稳定**。
 
-c、电源切换开关达到**IN(DC)**位置，跳线帽**短接5V位置**
+  c、电源切换开关达到**IN(DC)**位置，跳线帽**短接5V位置**
 
 ![MotorDriverBoard_dc_power_supply](./doc/picture/ZH/dc_power_supply.png)
 
 #### 2、只通过接线柱供单一电源给驱动板，Uno主板和舵机供电。将驱动板的5V电源输出到Uno主板
 
-适应场景
+  适应场景
 
-a、驱动4路12V以上的电机时比如370电机，520电机，此时舵机为sg90/mg90这种小功率舵机;
+  a、驱动4路12V以上的电机时比如370电机，520电机，此时舵机为sg90/mg90这种小功率舵机;
 
-b、供电超过Uno DC头12V电压，所以我们需要用接线柱供电，供电范围6~25V;
+  b、供电超过Uno DC头12V电压，所以我们需要用接线柱供电，供电范围6~25V;
 
-c、电源切换开关打到**EX**，跳线帽短接到**5V位置**，需要短接背面**R24电阻位**。
+  c、电源切换开关打到**EX**，跳线帽短接到**5V位置**，需要短接背面**R24电阻位**。
 
 ![MotorDriverBoard_terminal_power_supply](./doc/picture/ZH/terminal_power_supply.png)
 
 #### 3、Uno主板通过DC头供电，舵机通过接线柱独立供电
 
-a、外部使用MG995/MG996/DS3235/DS3238等大力矩舵机时，数量超过2个时（需要根据实际情况测试），我们需要给舵机独立供电
+  a、外部使用MG995/MG996/DS3235/DS3238等大力矩舵机时，数量超过2个时（需要根据实际情况测试），我们需要给舵机独立供电
 
-b、舵机供电电压电流根据舵机参数提供
+  b、舵机供电电压电流根据舵机参数提供
 
-c、电源切换开关达到**IN(DC)**位置，跳线帽**短接EX位置**
+  c、电源切换开关达到**IN(DC)**位置，跳线帽**短接EX位置**
 
 ![MotorDriverBoard_terminal_power_supply](./doc/picture/ZH/terminal_power_servo.png)
 
@@ -401,7 +378,7 @@ MsTimer2::start(); 					/*启动定时器2*/
 
 2. [Mblock5库和案例下载](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mblock5.zip)
 
-    ![download](./doc/picture/ZH/mblock/download.png)
+![download](./doc/picture/ZH/mblock/download.png)
 
 3. 积木描述
 
@@ -426,75 +403,41 @@ MsTimer2::start(); 					/*启动定时器2*/
 <font color="red" size="5">**注:**</font> PS2、RGB灯、蜂鸣器等模块可以去Mblock扩展库找对应的扩展，这里不做解释。
 
 #### Mind+
-1. 下载[Mind+库扩展包](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_mindplus-V1.0.0.zip)
-2. 将解压后的emakefun-motordriverboard-thirdex-V0.0.3.mpext扩展包导入到Mind+软件里面
-    > 第一步：点击扩展
-    ![user-lib-step01.png](doc/picture/ZH/mind+/user-lib-step01.png)
-    第二步：选择主控板
-    ![user-lib-step02.png](doc/picture/ZH/mind+/user-lib-step02.png)
-    第三步：导入用户库
-    ![user-lib-step03.png](doc/picture/ZH/mind+/user-lib-step03.png)
-    第四步：加载并返回
-    ![user-lib-step04.png](doc/picture/ZH/mind+/user-lib-step04.png)
-    第五步：查看并使用用户库，看到如下界面，说明已成功导入电机驱动板扩展包。
-    ![user-lib-step05.png](doc/picture/ZH/mind+/user-lib-step05.png)
 
-3. 积木描述
-
-| 序号  | 积木                                                       | 说明                                                       |
-|-----|:---------------------------------------------------------|----------------------------------------------------------|
-| 1   | ![init](./doc/picture/ZH/mind+/init.png)                 | 初始化积木，使用所有积木的前提                                          |
-| 2   | ![set_freq](./doc/picture/ZH/mind+/set_freq.png)         | 设置IO口输出频率，输出范围1-1600HZ                                   |
-| 3   | ![set_mode](./doc/picture/ZH/mind+/set_mode.png)         | 控制IO口输出高低电平，IO口有八个，分别为S1-S8                              |
-| 4   | ![pwm](./doc/picture/ZH/mind+/pwm.png)                   | 控制IO口输出PWM，输出范围0-4096                                    |
-| 5   | ![dc_init](./doc/picture/ZH/mind+/dc_init.png)           | 初始化直流电机接口，电机包含M1\M2\M3\M4四个                              |
-| 6   | ![run_dc](./doc/picture/ZH/mind+/run_dc.png)             | 设置直流电机的转动方向和速度，方向分为正转、反转、刹车、释放，速度范围为0-255                |
-| 7   | ![stop_dc](./doc/picture/ZH/mind+/stop_dc.png)           | 停止直流电机                                                   |
-| 8   | ![init_encoder](./doc/picture/ZH/mind+/init_encoder.png) | 初始化编码电机，编码电机有四个，分为Encoder1\Encoder2\Encoder3\Encoder4    |
-| 9   | ![run_encoder](./doc/picture/ZH/mind+/run_encoder.png)   | 设置编码电机运动方向和速度，方向分为正/反转，速度范围为0-255                        |
-| 10  | ![stop_encoder](./doc/picture/ZH/mind+/stop_encoder.png) | 停止编码电机                                                   |
-| 11  | ![stepper](./doc/picture/ZH/mind+/stepper.png)           | 初始化步进电机，不同的步进电机转一圈的步数是不同的，并设置每分钟需要转的圈数，即旋转速度             |
-| 12  | ![run_stepper](./doc/picture/ZH/mind+/run_stepper.png)   | 设置步进电机运动方向、驱动方式和运动步数；方向分为正、反转，驱动方式分为全步、半步和单步；运动步数即需要运动步数 |
-| 13  | ![stop_stepper](./doc/picture/ZH/mind+/stop_stepper.png) | 停止步进电机                                                   |
-| 14  | ![servo_init](./doc/picture/ZH/mind+/servo_init.png)     | 初始化舵机                                                    |
-| 15  | ![readDegrees](./doc/picture/ZH/mind+/readDegrees.png)   | 读取当前舵机角度                                                 |
-| 16  | ![run_servo](./doc/picture/ZH/mind+/run_servo.png)       | 设置选择的舵机的旋转角度和旋转的速度，速度范围为0-100                            |
+敬请期待
 
 #### MagicBlock
 敬请期待
 
 ## FAQ
+####  Q：驱动板arduino IO对应关系?
+##### A ：本驱动板采用I2C方式控制[PCA9685](./doc/PCA9685.pdf)(16路PWM输出芯片)。所以本驱动板电机或者舵机和arduino主板IO口不存在对应关系，是通过I2C扩展PWM控制
 
-> Q：驱动板arduino IO对应关系? 
->
-> A ：本驱动板采用I2C方式控制[PCA9685](./doc/PCA9685.pdf)(16路PWM输出芯片)。所以本驱动板电机或者舵机和arduino主板IO口不存在对应关系，是通过I2C扩展PWM控制
+####  Q：驱动板该如何接电?
+##### A ：请先判断手里是用什么电源，驱动什么样的电机，需要多大电压和电流，还有舵机，然后根据实际情况采用对应的电池，不建议使用干电池供电
 
-> Q：驱动板该如何接电?
->
-> A ：请先判断手里是用什么电源，驱动什么样的电机，需要多大电压和电流，还有舵机，然后根据实际情况采用对应的电池，不建议使用干电池供电
+####  Q：驱动板驱动不了电机?
+##### A ：请先判断驱动板是否有供电，并且开关有打开，只通过usb口供电是驱动不了电机的，另外主板还得烧录对应的驱动程序
 
-> Q：驱动板驱动不了电机?
->
-> A ：请先判断驱动板是否有供电，并且开关有打开，只通过usb口供电是驱动不了电机的，另外主板还得烧录对应的驱动程序
+####  Q：PS2遥控不了驱动板?
+##### A ：在使用驱动板的时候，如果是新手用户，请一定要一步步来熟悉使用，不要一上来就全部功能一起使用，然后问的问题很大。针对这个问题需要做如下三个测试才行
+a、驱动板是否使用7V以上锂电池供电且正常，板子上灯是否亮
+b、下载直流电机驱动测试程序**确保要上传成功**，电机接线正确，来确定板子驱动正常
+c、测试PS2接收测试程序，来证明PS2遥控器是好的
+d、前面正确后下载PS2控制四驱小车程序，并按按键控制电机
 
-> Q：PS2遥控不了驱动板?
->
-> A ：在使用驱动板的时候，如果是新手用户，请一定要一步步来熟悉使用，不要一上来就全部功能一起使用，然后问的问题很大。针对这个问题参考如下建议排查解决
->1. 驱动板是否使用7V以上锂电池供电且正常，板子上灯是否亮
->2. 下载直流电机驱动测试程序**确保要上传成功**，电机接线正确，来确定板子驱动正常
->3. 测试PS2接收测试程序，来证明PS2遥控器是好的
->4. 前面正确后下载PS2控制四驱小车程序，并按按键控制电机
+####  Q：驱动板是否有原理图?
+##### A ：有，点击这里[**驱动板原理图**](./doc/MotorDriverBoard_V5.1.pdf)。
 
-> Q：驱动板是否有原理图?
->
-> A ：有，点击这里[**驱动板原理图**](./doc/MotorDriverBoard_V5.1.pdf)。
+####  Q：如何分析并判断驱动板是否损坏?
 
-> Q：如何分析并判断驱动板是否损坏?
->
-> A ：先外观判断是否有芯片烧黑，冒烟，等情况。如果已经很熟练操作此板子，如果程序下载正确，供电也正确，板子就是驱动不了电机，那么有三种情况
->1. 电源切换开关接触不良，用万用表点一下确定，检测是否有5V电源输出
->2. 4个直流电机里面其中一部分转，一部分不转，有可能对应的驱动芯片烧坏
->3. 四个电机，舵机都不转，使用I2C 扫描程序测试，看是否能扫描到PCA968A的I2C地址，如果扫描不到PCA8685损坏
+##### A ：先外观判断是否有芯片烧黑，冒烟，等情况。如果已经很熟练操作此板子，如果程序下载正确，供电也正确，板子就是驱动不了电机，那么有三种情况
+
+1、电源切换开关接触不良，用万用表点一下确定，检测是否有5V电源输出
+
+2、4个直流电机里面其中一部分转，一部分不转，有可能对应的驱动芯片烧坏
+
+3、四个电机，舵机都不转，使用I2C 扫描程序测试，看是否能扫描到PCA968A的I2C地址，如果扫描不到PCA8685损坏
 
 ## 联系我们
 
