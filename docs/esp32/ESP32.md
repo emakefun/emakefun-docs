@@ -161,15 +161,55 @@
 
 ![1](./esp32/serial.png)
 
-## 测试程序
+## Mixly使用(以Mixly2.0为例)
+
+1. ### 板卡选择
+
+   ![select_board](./esp32/Mixly_Board.png)
+
+2. ### 主板选择
+
+   ![esp32_main_board](./esp32/esp32_main_board.png)
+
+3. ### 导入案例
+
+   ![export_example](./esp32/esp32_open_example.png)
+
+4. ### 下载
+
+   ![download_success](./esp32/esp32_mixly_download_success.png)
+
+   
+
+## Mixly测试程序
 
 [点击下载电机测试程序](./esp32/esp32 Motor Test.zip)
 
-[点击下载RGB测试程序](./esp32/esp32 RGB Test.zip)
+[点击下载RGB灯测试程序](./esp32/esp32 RGB Test.zip)
 
 [点击下载舵机测试程序](./esp32/esp32 Servo Test.zip)
 
 [点击下载OLED测试程序](./esp32/esp32 OLED Test.zip)
+
+### FAQ
+
+**Q**: Mixly下载程序不成功？
+
+**A**：1. Mixly的安装路径不要包含中文、空格等特殊字符；放在电脑的根目录下，层级目录不要太深；比如 D:\mixly2.0-win32-x64就是根目录安装；
+
+	   2. 查看串口是否选择正确，如果没有串口，请先安装CH340G驱动；串口不要被其他应用占用；
+   3. 检查程序是否有错误；
+
+**Q**: 电机程序上传成功，但是电机不转？
+
+**A**: 1. 电机需要DC头供电，6-24V，建议使用两节3.7V锂电池，电源开关是否打到ON；
+
+   2. 第一步已经完成的话，还出现问题，请检查Motor and IO Switch开关是否拨到电机方向(即 标有ON的方       向)；
+   3. 检测程序设置的电机引脚是否和电机实际引脚一一对应；
+
+**A**: ESP32发烫是否属于正常?
+
+**Q**: 正常；
 
 ## 联系我们
 
