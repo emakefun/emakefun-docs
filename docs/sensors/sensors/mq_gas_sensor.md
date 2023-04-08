@@ -10,28 +10,25 @@
 
 ## 原理图
 
+[查看原理图](mq_gas_sensor/mq_gas_sensor_schematic.pdf) 
 ![原理图](mq_gas_sensor/mq_gas_sensor_schematic.png)
 
 ## 模块参数
 
-| 引脚名称 | 描述         |
-| -------- | ------------ |
-| V        | 5V电源引脚   |
-| G        | GND 地线     |
-| A        | 模拟信号引脚 |
-| D        | 数字信号引脚 |
+| 引脚名称 |     描述     |
+| :------: | :----------: |
+|    G     |     GND      |
+|    V     |     VCC      |
+|    A     | 模拟信号引脚 |
+|    D     | 数字信号引脚 |
 
-- 供电电压:5V
+- 供电电压:3v3/5V
 
 - 连接方式:4PIN防反接杜邦线
 
-- 模块尺寸:4*2.1cm
+- 模块尺寸:40 x 22.5 mm
 
 - 安装方式:M4螺钉兼容乐高插孔固定
-
-## 详细原理图
-
- [查看原理图](mq_gas_sensor/mq_gas_sensor_schematic.pdf) 
 
 ## 机械尺寸图
 
@@ -39,7 +36,7 @@
 
 ## Arduino示例程序
 
- [查看原理图](mq_gas_sensor/mq_gas_sensor.zip)
+ [下载示例程序](mq_gas_sensor/mq_gas_sensor.zip)
 
 ```c++
 #include "Buzzer.h"

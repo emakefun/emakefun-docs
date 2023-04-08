@@ -87,7 +87,60 @@ Joystick:Bit为   [深圳市易创空间科技有限公司](www.emakefun.com)出
 
 ### python支持
 
-(敬请期待.....)
+- 获取游戏手柄摇杆 x 或 y 轴值
+
+  - 功能语句:
+
+    > joystick.get_rocker_x_axis_value(rocker) # 获取游戏手柄摇杆 x 轴值
+    > joystick.get_rocker_y_axis_value(rocker) # 获取游戏手柄摇杆 y 轴值
+
+  - 使用例程:
+    > joystick.get_rocker_x_axis_value(joystick.ROCKER_LEFT) # 获取游戏手柄左边摇杆 x 轴值，返回数值范围 0~255，对应摇杆从左往右的位置
+    > joystick.get_rocker_y_axis_value(joystick.ROCKER_LEFT) # 获取游戏手柄左边摇杆 y 轴值，返回数值范围 0~255，对应摇杆从下往上的位置
+    > joystick.get_rocker_x_axis_value(joystick.ROCKER_RIGHT) # 获取游戏手柄右边摇杆 x 轴值，返回数值范围 0~255，对应摇杆从左往右的位置
+    > joystick.get_rocker_y_axis_value(joystick.ROCKER_RIGHT) # 获取游戏手柄右边摇杆 y 轴值，返回数值范围 0~255，对应摇杆从下往上的位置
+
+```
+# 获取游戏手柄左边摇杆的x值并将其数值通过LED显示屏显示出来
+from microbit import *
+from input import joystick
+
+while True:
+  x = joystick.get_rocker_x_axis_value(joystick.ROCKER_LEFT) # 获取游戏手柄左边摇杆x轴值赋值给变量x
+  display.scroll(x)
+```
+
+- 按键 L/R/左摇杆按键/右摇杆按键 是否是 按下/释放/弹起/单击/双击/空闲 等状态
+
+  - 功能语句:
+
+    > joystick.get_button_state(button) # 获取手柄上按键的状态
+    > 返回值：
+    > joystick.BUTTON_STATE_PRESSED: 按键按下
+    > joystick.BUTTON_STATE_RELEASED: 按键弹起
+    > joystick.BUTTON_STATE_SINGLE_CLICK: 按键单击
+    > joystick.BUTTON_STATE_DOUBLE_CLICK: 按键双击
+    > joystick.BUTTON_STATE_PRESS_AND_HOLD: 按键长按
+    > joystick.BUTTON_STATE_BUTTON_STATE_IDLE: 按键空闲
+    > joystick.BUTTON_STATE_UNKNOWN: 获取按键状态失败，比如未连接手柄等
+
+  - 使用例程:
+    > joystick.get_button_state(joystick.BUTTON_ROCKER_LEFT) # 获取游戏手柄左边摇杆按键状态
+    > joystick.get_button_state(joystick.BUTTON_ROCKER_RIGHT) # 获取游戏手柄右边摇杆按键状态
+    > joystick.get_button_state(joystick.BUTTON_LEFT) # 获取游戏手柄左边按键 L 状态
+    > joystick.get_button_state(joystick.BUTTON_RIGHT) # 获取游戏手柄右边按键 R 状态
+
+```
+# 判断游戏手柄左边摇杆按键是否按下，如果按下则显示1，没有则显示0
+from microbit import *
+from input import joystick
+
+while True:
+  if joystick.BUTTON_STATE_PRESSED == joystick.get_button_state(joystick.BUTTON_ROCKER_LEFT):
+    display.show(1)
+  else:
+    display.show(0)
+```
 
 ## 开源许可
 MIT
