@@ -405,8 +405,8 @@ MsTimer2::start(); 					/*启动定时器2*/
 #### Mind+
 1. 下载[Mind+库扩展包](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_mindplus-V1.0.0.zip)
     ![extention-pkg.png](doc/picture/ZH/mind+/extention-pkg.png)
-2. 将解压后的emakefun-motordriverboard-thirdex-V0.0.3.mpext扩展包导入到Mind+软件里面
-    > 第一步：点击扩展
+2. 将解压后的emakefun-motordriverboard-thirdex-V0.0.3.mpext扩展包导入到Mind+软件里面  
+    第一步：点击扩展
     ![user-lib-step01.png](doc/picture/ZH/mind+/user-lib-step01.png)
     第二步：选择主控板
     ![user-lib-step02.png](doc/picture/ZH/mind+/user-lib-step02.png)
