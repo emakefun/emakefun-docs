@@ -19,7 +19,7 @@
 - MCU :STM32/STC8G
 - IO: 8-channel ADC detection
 - Communication method with Raspberry Pi: I2C
-- I2C address: 0x04
+- I2C address: 0x24
 
 ## Hardware Preview
 
@@ -27,7 +27,7 @@
 
 ## Register
 
-&ensp;&ensp;&ensp;&ensp;The MCU I2C address of the expansion board is 0x04, and the registered address is explained as follows:
+&ensp;&ensp;&ensp;&ensp;The MCU I2C address of the expansion board is 0x24, and the registered address is explained as follows:
 
 ![picture9-1.jpg](./picture/picture9—1.jpg)
 
