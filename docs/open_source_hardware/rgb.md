@@ -191,4 +191,4 @@ void SetRgbEffect(E_RGB_INDEX index, long Color, uint8_t effect);
 
 # Micro:Bit程序
 
-[点击打开Microbit示例程序](https://makecode.microbit.org/_PtqVy7dDj4PJ)
+[点击打开Microbit示例程序](https://makecode.microbit.org/_Pu0Vuj18R7FL)
