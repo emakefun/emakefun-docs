@@ -91,7 +91,7 @@ nav:
         - 红外发射模块: sensors/actuators/infraredEmissionModel.md
         - 红外接收模块: sensors/actuators/irReceiverModel.md
       - 智能模块:
-        - 颜色识别: sensors/smart_modules/color recognition.md
+        - 颜色识别: sensors/smart_modules/color_recognition.md
         - 指南针传感器: sensors/smart_modules/compass.md
         - DS1302传感器: sensors/smart_modules/ds1302_rtc.md
         - MPU6050六轴陀螺仪: sensors/smart_modules/mpu6050.md

@@ -188,3 +188,7 @@ void SetRgbEffect(E_RGB_INDEX index, long Color, uint8_t effect);
 ##　实验二：RGB灯光测试
 
 ![15](rgb_pic_zh/15.png)
+
+# Micro:Bit程序
+
+[点击打开Microbit示例程序](https://makecode.microbit.org/_Pu0Vuj18R7FL)

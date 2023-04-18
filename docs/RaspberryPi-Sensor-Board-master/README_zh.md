@@ -18,14 +18,14 @@
 - MCU :STM32/STC8G
 - IO: 8路ADC检测
 - 与树莓派通信方式: I2C
-- I2C地址： 0x04
+- I2C地址： 0x24
 
 ## 硬件概述
 ![pic_1.jpg](./picture/pic_1.jpg)
 
 ## 寄存器
 
-&ensp;&ensp;&ensp;&ensp;扩展板MCU I2C地址为0x04，寄存地址说明如下：
+&ensp;&ensp;&ensp;&ensp;扩展板MCU I2C地址为0x24，寄存地址说明如下：
 
 ![picture9.png](./picture/picture9.png)
 
