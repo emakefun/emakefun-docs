@@ -32,3 +32,7 @@
 ## 机械尺寸
 
 ![32](IR Receiver/32.png)
+
+## Microbit示例程序
+
+[点击打开Microbit示例](https://makecode.microbit.org/_eAv9yiUC2VV3)
