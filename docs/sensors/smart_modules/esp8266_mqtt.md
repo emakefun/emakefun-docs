@@ -607,6 +607,12 @@ void fail(const char* test, int actual, int expected)
 
 [下载最新示例程序](https://www.emakefun.com/sources/AliyunMqttSendReceive.7z)
 
+MQTT物联网需要先导入或者更新最新PH2.0的Mixly图形化库具体请看
+
+[物联网模块的mixly参考链接](https://github.com/emakefun/emakefun_sensors_graphical_lib#MQTT物联网模块 )
+
+[microbit使用参考示例]( https://github.com/emakefun/pxt-mqtt )
+
 
 ```
 
