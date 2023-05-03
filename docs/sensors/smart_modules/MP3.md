@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![mp3 module](MP3 module/mp3 module.png)
+![mp3 module](MP3_module/mp3_module.png)
 
 ## 概述
 
@@ -27,7 +27,7 @@
 
 ## 机械尺寸
 
-![MP3 module size](MP3 module/MP3.png)
+![MP3 module size](MP3_module/MP3.png)
 
 ## 串口通讯格式
 
@@ -120,5 +120,32 @@ para1 para2: 00 0E 表示音量大小<br>
 说明：0x4D，0x4F 指令无缝循环：是指同一首音频文件循环播放时没有首尾接头的卡顿，主要用于白噪音播放。
 例如，设置音量大小，发送:7E 03 31 1E EF 7E 起始地址 03 位长度，31指令，1E 为 30，EF 结束地址 音量设定 30。
 
-### Mixly图形化块，使用的库为系统自带的执行器-->声音-->GD5800MP3模块，直接使用
+## Arduino示例程序
 
+#include "GD5800_Serial.h"
+
+GD5800_Serial mp345(5, 6);                           // 初始化MP3
+
+void setup() {
+  mp345.begin(9600);
+  mp345.setVolume(50);                                   // 设置音量为50
+  mp356.setLoopMode(MP3_LOOP_ALL);      // 设置循环模式为全部循环
+  mp356.setEqualizer(MP3_EQ_NORMAL);    // 设置音效为普通
+}
+void loop()  {
+   mp345.play();                                                  //  播放音乐
+}
+
+[Arduino程序下载](./MP3_module/Mp3_experiment.zip)
+
+### Mixly图形化块示例
+
+![MP3_mixly](./MP3_module/mp3_mixly.png)
+
+程序解析：MP3模块的TX管脚接Arduino的5引脚，RX管脚接Arduino的6引脚，并且音量设置为50；设置音乐的循环模式为全部循环(循环模式分为：全部循环、文件夹内循环、单曲循环、随机循环)，并且音效为普通(音效分为：普通、流行、摇滚、爵士、古典、低音)，然后播放文件。
+
+[点击下载Mixly示例](./MP3_module/MP3.zip)
+
+## Microbit测试程序
+
+[点击打开Microbit示例](https://makecode.microbit.org/_3fwbxTici47R)

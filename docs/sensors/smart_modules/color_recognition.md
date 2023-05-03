@@ -83,6 +83,14 @@ void loop()  {
 
   [点击下载Arduino示例](color_recognition/Experiment_of_color_recognition_sensor.zip)
 
+## Mixly图形化示例
+
+![color_mixly](./color_recognition/color_recognition_mixly.png)
+
+程序解析：颜色识别模块为I2C通信，将模块与Arduino Uno主板的I2C接口相连，将程序上传到主板中，就可以读取颜色的三色值。
+
+[点击下载Mixly示例](./color_recognition/color_recognition_mixly.zip)
+
 ## Micro:Bit示例程序
 
   [点击打开MicroBit示例](https://makecode.microbit.org/_9Rk2LufUED6j)
