@@ -60,6 +60,7 @@ nav:
         - 气压传感器: sensors/sensors/atmospheric_pressure_sensor.md
         - 压力传感器: sensors/sensors/pressure_sensor.md
         - 五路循迹传感器: sensors/sensors/five_way_tracking_sensor.md
+        - 五路循迹传感器v2.0: sensors/sensors/five_way_tracking_sensor_v2.0.md
         # - 超声波传感器: sensors/sensors/ultrasonicSensor.md
         # - RGB超声波传感器: sensors/sensors/rgbUltrasonicSensor.md
 
