@@ -340,7 +340,7 @@ MsTimer2::start(); 					/*启动定时器2*/
 
 #### Mixly块表述
 
-1.[Mixly扩展包和案例下载](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mixly.zip)
+1.[点击下载Mixly扩展包和案例](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mixly.zip)
 
 ![download](./doc/picture/ZH/mixly/download.png)
 
