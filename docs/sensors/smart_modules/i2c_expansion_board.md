@@ -109,9 +109,9 @@ class I2cExpansionBoard {
 };
 ```
 
-### arduino 示例程序
+### Arduino 示例程序
 
-[下载arduino库](i2c_expansion_board/i2c_expansion_board_arduino.zip)
+[下载Arduino库](i2c_expansion_board/i2c_expansion_board_demo.zip)
 
 ```c++
 #include "i2c_expansion_board.h"
@@ -141,3 +141,9 @@ void loop() {
   delay(100);
 }
 ```
+
+### Mixly示例程序
+
+![](i2c_expansion_board/i2c_expansion_board_mixly.png)
+
+[下载mixly示例程序](i2c_expansion_board/i2c_expansion_board_mixly.zip)
