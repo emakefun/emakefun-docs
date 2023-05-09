@@ -155,5 +155,5 @@ void loop()  {
 [点击下载Mixly示例](./MP3_module/MP3.zip)
 
 ## Microbit测试程序
-
+Microbit扩展链接：https://github.com/emakefun/pxt-mp3 
 [点击打开Microbit示例](https://makecode.microbit.org/_3fwbxTici47R)

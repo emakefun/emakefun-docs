@@ -125,5 +125,6 @@ void loop()
 ```
 
 ## Micro:Bit示例程序
+Microbit扩展链接：https://github.com/emakefun/pxt-bmp280 
 
 <a href="https://makecode.microbit.org/_4h2bHVd8L25z" target="_blank">动手试一试</a>

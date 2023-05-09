@@ -48,7 +48,7 @@ Arduino IDE 1.8.19版本
 
 ## 五、Micro:Bit
 
- MicroBit [MakeCode在线编程链接]( https://makecode.microbit.org/ ):  https://makecode.microbit.org/ 
+MicroBit [MakeCode在线编程链接]( https://makecode.microbit.org/ ):  https://makecode.microbit.org/ 
 
 MakeCode传感器插件库：https://github.com/emakefun/pxt-sensorbit
 
@@ -67,3 +67,5 @@ MakeCode MotorBit插件库： https://github.com/emakefun/pxt-motorbit
 MakeCode JoystickBit插件库： https://github.com/emakefun/pxt-joystickbit 
 
 MakeCode 颜色识别插件库： https://github.com/emakefun/pxt-colorsensor
+
+MakeCode 大气压传感器(BMP280)插件库: https://github.com/emakefun/pxt-bmp280
