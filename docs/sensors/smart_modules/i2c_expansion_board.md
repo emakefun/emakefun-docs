@@ -40,11 +40,14 @@ class I2cExpansionBoard {
    * @enum GpioMode
    * @brief 扩展板GPIO模式类型
    */
-  enum GpioMode {
-    kGpioModeAdc = 0,       /**< ADC模式*/
-    kGpioModeInputPullUp,   /**< 输入模式，默认拉高电平*/
-    kGpioModeInputPullDown, /**< 输入模式，默认拉低电平*/
-    kGpioModeOutput,        /**< 输出模式*/
+  enum GpioMode : uint8_t {
+    kNone = 0,
+    kInputPullUp = 1 << 0,   /**< 输入模式，默认拉高电平*/
+    kInputPullDown = 1 << 1, /**< 输入模式，默认拉低电平*/
+    kInputFloating = 1 << 2, /**< 浮空输入模式*/
+    kOutput = 1 << 3,        /**< 输出模式*/
+    kAdc = 1 << 4,           /**< ADC模式*/
+    kPwm = 1 << 5,           /**< PWM输出模式*/
   };
 
   /**
@@ -69,8 +72,7 @@ class I2cExpansionBoard {
 
   /**
    * @brief 构造函数
-   * @param [in] device_i2c_address 扩展板I2C地址，默认值为0x24, @see
-   * kDeviceI2cAddressDefault
+   * @param [in] device_i2c_address 扩展板I2C地址，默认值为0x24, @see kDeviceI2cAddressDefault
    */
   I2cExpansionBoard(uint8_t device_i2c_address = kDeviceI2cAddressDefault);
 
@@ -104,6 +106,19 @@ class I2cExpansionBoard {
    */
   uint16_t GetGpioAdcValue(GpioPin gpio_pin);
 
+  bool SetPwmFrequency(uint32_t frequency);
+
+  bool SetPwmDuty(GpioPin gpio_pin, uint8_t duty);
+
+  /**
+   * @brief 驱动舵机转动到指定角度
+   * @note 只支持E1 ~ E2
+   * @param [in] gpio_pin GPIO引脚 @see GpioPin
+   * @param [in] angle 角度值，范围0 ~ 180
+   * @return bool 成功返回true，失败返回false
+   */
+  bool SetServoAngle(GpioPin gpio_pin, float angle);
+
  private:
   uint8_t device_i2c_address_;
 };
@@ -111,35 +126,140 @@ class I2cExpansionBoard {
 
 ### Arduino 示例程序
 
-[下载Arduino库](i2c_expansion_board/i2c_expansion_board_demo.zip)
+[下载Arduino库](i2c_expansion_board/emakefun_i2c_expansion_board.zip)
+
+#### ADC输入
 
 ```c++
+#include <Arduino.h>
+
 #include "i2c_expansion_board.h"
 
-// 定义一个I2C扩展板对象
+// 创建 I2cExpansionBoard 实例
 I2cExpansionBoard i2c_expansion_board;
 
 void setup() {
-  // put your setup code here, to run once:
+  // 初始化串口通信
   Serial.begin(115200);
+  Serial.println("setup");
+
+  // 配置E0为ADC模式
+  i2c_expansion_board.SetGpioMode(I2cExpansionBoard::kGpioPinE0, I2cExpansionBoard::kAdc);
 }
 
 void loop() {
-  // 设置GPIO E7为输出模式
-  i2c_expansion_board.SetGpioMode(I2cExpansionBoard::kGpioPinE7,         	 I2cExpansionBoard::kGpioModeOutput);
-
-  // 设置GPIO E7输出高电平
-  i2c_expansion_board.SetGpioLevel(I2cExpansionBoard::kGpioPinE7, 1);
-
-  // 设置GPIO E0为输入模式，默认拉低电平
-  i2c_expansion_board.SetGpioMode(I2cExpansionBoard::kGpioPinE0, I2cExpansionBoard::kGpioModeInputPullDown);
-
-  // 获取GPIO E0的电平值并输出到串口打印
-  Serial.println(i2c_expansion_board.GetGpioLevel(I2cExpansionBoard::kGpioPinE0));
-
-  // 延时100ms
+  Serial.print("adc value:");
+  // 读取E0的ADC值并打印
+  Serial.println(i2c_expansion_board.GetGpioAdcValue(I2cExpansionBoard::kGpioPinE0));
   delay(100);
 }
+
+```
+
+#### 数字高低电平输入
+
+```c++
+
+#include <Arduino.h>
+
+#include "i2c_expansion_board.h"
+
+// 创建 I2cExpansionBoard 实例
+I2cExpansionBoard i2c_expansion_board;
+
+void setup() {
+  // 初始化串口通信
+  Serial.begin(115200);
+  Serial.println("setup");
+
+  // 配置E0为输入模式，默认拉高电平
+  i2c_expansion_board.SetGpioMode(I2cExpansionBoard::kGpioPinE0, I2cExpansionBoard::kInputPullDown);
+}
+
+void loop() {
+  Serial.print("digital value:");
+  // 读取E0的数字值并打印
+  Serial.println(i2c_expansion_board.GetGpioLevel(I2cExpansionBoard::kGpioPinE0));
+  delay(100);
+}
+
+```
+
+#### 数字高低电平输出
+
+```c++
+
+#include <Arduino.h>
+
+#include "i2c_expansion_board.h"
+
+// 创建 I2cExpansionBoard 实例
+I2cExpansionBoard i2c_expansion_board;
+
+void setup() {
+  // 初始化串口通信
+  Serial.begin(115200);
+  Serial.println("setup");
+
+  // 配置E0为输出模式
+  i2c_expansion_board.SetGpioMode(I2cExpansionBoard::kGpioPinE0, I2cExpansionBoard::kOutput);
+}
+
+void loop() {
+  // 设置E0的输出高电平
+  i2c_expansion_board.SetGpioLevel(I2cExpansionBoard::kGpioPinE0, 1);
+  delay(100);
+  // 设置E0的输出低电平
+  i2c_expansion_board.SetGpioLevel(I2cExpansionBoard::kGpioPinE0, 0);
+  delay(100);
+}
+
+```
+
+#### 舵机控制(只支持E1 ~ E2)
+
+```c++
+
+#include <Arduino.h>
+
+#include "i2c_expansion_board.h"
+
+// 创建 I2cExpansionBoard 实例
+I2cExpansionBoard i2c_expansion_board;
+
+void setup() {
+  // 初始化串口通信
+  Serial.begin(115200);
+  Serial.println("setup");
+}
+
+// 注意，舵机控制只支持E1 ~ E2
+void loop() {
+  // 设置E1舵机转动到0度位置
+  i2c_expansion_board.SetServoAngle(I2cExpansionBoard::kGpioPinE1, 0);
+  delay(500);
+
+  // 设置E2舵机转动到0度位置
+  i2c_expansion_board.SetServoAngle(I2cExpansionBoard::kGpioPinE2, 0);
+  delay(500);
+
+  // 设置E1舵机转动到90度位置
+  i2c_expansion_board.SetServoAngle(I2cExpansionBoard::kGpioPinE1, 90);
+  delay(500);
+
+  // 设置E2舵机转动到90度位置
+  i2c_expansion_board.SetServoAngle(I2cExpansionBoard::kGpioPinE2, 90);
+  delay(500);
+
+  // 设置E1舵机转动到180度位置
+  i2c_expansion_board.SetServoAngle(I2cExpansionBoard::kGpioPinE1, 180);
+  delay(500);
+
+  // 设置E2舵机转动到180度位置
+  i2c_expansion_board.SetServoAngle(I2cExpansionBoard::kGpioPinE2, 180);
+  delay(500);
+}
+
 ```
 
 ### Mixly示例程序
