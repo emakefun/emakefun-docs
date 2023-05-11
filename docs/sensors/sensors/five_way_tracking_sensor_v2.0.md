@@ -41,7 +41,7 @@
 
 #### 安装库文件
 
-[点击这里下载库文件:https://github.com/emakefun/emakefun_line_tracker](https://github.com/emakefun/emakefun_line_tracker)
+[下载Arduino库](five_way_tracking_sensor_v2.0/emakefun_line_tracker.zip)
 
 #### 函数说明
 
