@@ -19,8 +19,6 @@
 
 ## 硬件尺寸图
 
-
-
 ## arduino 应用场景
 
 ### arduino 函数介绍
@@ -54,7 +52,7 @@ class I2cExpansionBoard {
    * @enum GpioPin
    * @brief 扩展板GPIO引脚
    */
-  enum GpioPin {
+  enum GpioPin : uint8_t {
     kGpioPinE0 = 0, /**< 引脚E0*/
     kGpioPinE1 = 1, /**< 引脚E1*/
     kGpioPinE2 = 2, /**< 引脚E2*/
@@ -122,6 +120,7 @@ class I2cExpansionBoard {
  private:
   uint8_t device_i2c_address_;
 };
+
 ```
 
 ### Arduino 示例程序
