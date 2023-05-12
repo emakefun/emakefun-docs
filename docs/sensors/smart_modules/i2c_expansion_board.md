@@ -230,6 +230,8 @@ void setup() {
   // 初始化串口通信
   Serial.begin(115200);
   Serial.println("setup");
+  i2c_expansion_board.SetGpioMode(I2cExpansionBoard::kGpioPinE1, I2cExpansionBoard::kPwm);
+  i2c_expansion_board.SetGpioMode(I2cExpansionBoard::kGpioPinE2, I2cExpansionBoard::kPwm);
 }
 
 // 注意，舵机控制只支持E1 ~ E2
