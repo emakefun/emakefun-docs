@@ -101,7 +101,7 @@ nav:
         - MP3播放模块: sensors/smart_modules/MP3.md
         - MQTT物联网模块: sensors/smart_modules/esp8266_mqtt.md
         - 语音合成模块: sensors/smart_modules/tts_module.md
-        - I2C扩展板模块: sensors/smart_modules/i2c_expansion_board.md
+        - I2C扩展板模块: sensors/smart_modules/gpio_expansion_board.md
         
       - 电源模块:
         - 7.4V充电电池模块: sensors/power_module/2xcr123a_li_ion_battery_module.md
