@@ -37,84 +37,19 @@
 
 ![模块尺寸](five_way_tracking_sensor/infraredtracking.png)
 
-### Arduino使用教程
+## Arduino应用场景
 
-#### 安装库文件
+### Arduino 示例程序
 
-[下载Arduino库](five_way_tracking_sensor_v2.0/emakefun_line_tracker.zip)
+[下载Arduino库](https://github.com/emakefun/emakefun_five_line_tracker/archive/refs/tags/release.zip)，包含Arduino库文件和示例代码
 
-#### 函数说明
+### Arduino 库使用文档
 
-##### 创建 LineTracker 对象
+[说明文档](https://github.com/emakefun/emakefun_five_line_tracker#linetracker-library-v20)
 
-```c++
-LineTracker line_tracker;
-```
+### Arduino 库示例程序
 
-##### 设置敏感度
-
-```c++
-line_tracker.SetSensitivity(sensitivity);
-```
-
-其中 `sensitivity` 为敏感度值，取值范围为 1 ~ 1023。敏感度越高，模块对黑色物体的检测越敏感。
-
-##### 获取传感器值
-
-```c++
-const uint16_t* sensor_values = line_tracker.GetSensorValues();
-```
-
-获取包含传感器值的数组，数组长度为 5，分别表示5个传感器的电压值，sensor_values[0] ~ sensor_values[4]对应硬件上面**从右到左**5个传感器。电压值越大表示反光越弱，即传感器越接近黑线。
-
-##### 获取传感器状态
-
-```c++
-uint8_t sensor_states = line_tracker.GetSensorStates();
-```
-
-获取一个字节的值，表示寻迹模块的传感器状态。每个位表示一个传感器的状态，**1 表示传感器不在黑线上，0 表示在黑线上**。
-状态值的低位到高位(bit0 ~ bit4)分别对应硬件上面**从右到左**5个传感器状态值
-
-#### 示例代码
-
-```c++
-#include <Arduino.h>
-#include <line_tracker.h>
-
-// 创建 LineTracker 实例
-LineTracker line_tracker;
-
-void setup() {
-  // 初始化串口通信
-  Serial.begin(115200);
-  Serial.println("setup");
-
-  // 设置 LineTracker 的敏感度为 500
-  line_tracker.SetSensitivity(500);
-}
-
-void loop() {
-  String log;
-  log += "sensor_states: 0x";
-
-  // 获取传感器状态并转换为 16 进制格式字符串
-  log += String(line_tracker.GetSensorStates(), HEX);
-  log += " ";
-
-  // 获取传感器值数组并逐一添加到 log 字符串中
-  auto* sensor_values = line_tracker.GetSensorValues();
-  for (uint8_t i = 0; i < LineTracker::LINE_NUMBER; i++) {
-    log += i;
-    log += ":";
-    log += sensor_values[i]; // 获取一路传感器的值加到日志log变量中
-    log += " ";
-  }
-
-  // 输出 log 字符串到串口
-  Serial.println(log);
-}
-```
+[示例程序](https://github.com/emakefun/emakefun_five_line_tracker#%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81)
 
 ### MagicBlock图形化编程块
 
