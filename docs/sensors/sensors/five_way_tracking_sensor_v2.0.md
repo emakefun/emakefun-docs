@@ -41,15 +41,15 @@
 
 ### Arduino 示例程序
 
-[下载Arduino库](https://github.com/emakefun/emakefun_five_line_tracker/archive/refs/tags/release.zip)，包含Arduino库文件和示例代码
+[下载Arduino库](https://github.com/emakefun-arduino-library/emakefun_five_line_tracker/archive/refs/tags/release.zip)，包含Arduino库文件和示例代码
 
 ### Arduino 库使用文档
 
-[说明文档](https://github.com/emakefun/emakefun_five_line_tracker#linetracker-library-v20)
+[说明文档](https://github.com/emakefun-arduino-library/emakefun_five_line_tracker#linetracker-library-v20)
 
 ### Arduino 库示例程序
 
-[示例程序](https://github.com/emakefun/emakefun_five_line_tracker#%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81)
+[示例程序](https://github.com/emakefun-arduino-library/emakefun_five_line_tracker#%E7%A4%BA%E4%BE%8B%E4%BB%A3%E7%A0%81)
 
 ### MagicBlock图形化编程块
 
