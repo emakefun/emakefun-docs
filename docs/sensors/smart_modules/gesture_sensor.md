@@ -44,7 +44,7 @@
 
 ### Arduino 示例程序
 
-[下载Arduino库](https://github.com/emakefun/emakefun_gesture_sensor/archive/refs/tags/v2.0.zip)，包含Arduino库文件和示例代码
+[下载Arduino库](https://github.com/emakefun/emakefun_gesture_sensor/archive/refs/tags/release.zip)，包含Arduino库文件和示例代码
 
 ### Arduino 库使用文档
 
