@@ -101,7 +101,7 @@ nav:
         - LD3320语音识别模块: sensors/smart_modules/ld3320.md
         - MP3播放模块: sensors/smart_modules/MP3.md
         - MQTT物联网模块: sensors/smart_modules/esp8266_mqtt.md
-        - 语音合成模块: sensors/smart_modules/tts_module.md
+        - 语音合成模块: sensors/smart_modules/voice_synthesizer.md
         - GPIO/I2C扩展板模块: sensors/smart_modules/gpio_expansion_board.md
         
       - 电源模块:
