@@ -40,11 +40,15 @@
 
 ### Arduino 库使用文档
 
-[说明文档](https://github.com/emakefun-arduino-library/emakefun_text_to_speech_synthesizer#texttospeechsynthesizer)
+[API使用文档](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/classTextToSpeechSynthesizer.html)
 
 ### Arduino 库示例程序
 
-[示例程序](https://github.com/emakefun-arduino-library/emakefun_text_to_speech_synthesizer#%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F)
+[合成播放文本](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/synthesize_text_8ino-example.html)
+
+[从缓存区域合成播放文本](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/synthesize_from_cache_8ino-example.html)
+
+[合成播放流程控制](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/synthesizing_control_8ino-example.html)
 
 ## 高阶用法
 
