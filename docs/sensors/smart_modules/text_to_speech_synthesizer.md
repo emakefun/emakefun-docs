@@ -16,12 +16,12 @@
 
 ## 模块参数
 
-| 引脚名称 |           描述           |
-| :------: | :----------------------: |
-|    G     |           GND            |
-|    V     |          5V电源          |
-| RX(SDA)  | UART接收引脚/I2C SDA引脚 |
-| TX(SCL)  | UART发送引脚/I2C SCL引脚 |
+| 引脚名称 | 描述 | Arduino Uno
+| --- | --- | --- |
+| G | GND | |
+| V | 5V电源| |
+| SDA | I2C SDA引脚 | A4 |
+| SCL | I2C SCL引脚 | A5 |
 
 - 供电电压：5V
 - 连接方式：PH2.0 4PIN防反接线
@@ -32,29 +32,30 @@
 
 ![机械尺寸图](tts_module/tts_assembly.png)
 
-## Arduino应用场景
+## 合成文本播放详细参数设置
 
-### Arduino 示例程序
-
-[下载Arduino库](https://github.com/emakefun-arduino-library/emakefun_text_to_speech_synthesizer/archive/refs/tags/release.zip)，包含Arduino库文件和示例代码
-
-### Arduino 库使用文档
-
-[API使用文档](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/classTextToSpeechSynthesizer.html)
-
-### Arduino 库示例程序
-
-[合成播放文本](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/synthesize_text_8ino-example.html)
-
-[从缓存区域合成播放文本](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/synthesize_from_cache_8ino-example.html)
-
-[合成播放流程控制](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/synthesizing_control_8ino-example.html)
-
-## 高阶用法
+如需对合成播放效果进行设置，如**语调**，**语速**，**音量**，**音效**等，以下提供一套标注方式，用户可以通过标注的方式，达到想要的合成效果，修复机器合成在自然度、流畅度方面的不足。
 
 ### 文本标注方法
 
-为了确保 TTS 合成效果，以下提供一套标注方式，用户可以通过标注的方式，达到想要的合成效果，修复机器合成在自然度、流畅度方面的不足。
+正常文本:
+
+```c++
+"一二三四五"
+```
+
+增加音量标准的文本，正常文本任意位置添加`[详细参数]`，例如文本前增加`[v10]`，代表以音量为10来合成播放这段文本，如下所示:
+
+```c++
+"[v10]一二三四五"
+```
+
+可以在任一位置进行标注，比如`"一二三"`以音量为10进行合成播放，`"四五六"`以音量为5进行合成播放，如下所示：
+
+```c++
+"[v10]一二三[v5]四五六"
+```
+
 文本控制标记的格式一般是半角中括号（即“[]”）内一个小写字母、一个阿拉伯数字。需要注意的是：**文本标记符全部是半角，字母必须是小写的英文字母，不符合要求的不作为文本标记**。
 
 设置文本标记时，标记的位置很重要，除标记`[n*]`、`[r*]`、`[o*]`、`[y*]`外，其余在标记处会强制分句处理，因此在使用时，尽量将其放在句首位置。
@@ -81,3 +82,23 @@
 | 14   | 强制停顿边界                       | [w*]  | *=0/1/3   <br />0–强制标记位置位 L0 边界，无停顿   <br />1–强制标记位置位 L1（韵律词）边界，短停顿   3–强制标记位置位 L3（韵律短语）边界，长停顿 | ——                                                           |
 | 15   | 设置韵律标注处 理策略              | [z*]  | *=0/1 0–不处理韵律标 注 1–处理韵律标注                       | 默认不处理韵律 标注。韵律标注使 用“*”标出 L1 划 分位置，使用“#” 标出 L3 划分位 置。 |
 | 16   | 为单个汉字/单词 强制指定拼音/音 标 | [=*]  | *=拼音/音标 为前一个汉字/单 词设定的拼音/音 标               | 汉字：声调用后接 一位数字 1~5 分 别表示阴平、阳 平、上声、去声和 轻声 5 个声调。 6~9 分别对应阴 平、阳平、上声、 去声的轻 度，该标记只 能放在非汉语拼 音的汉语音节之 后指定拼音，连续 出现时以最后一 个为准。 示例： “着 [=zhuo2]手”，“着” 字将读作“zhuó” |
+
+## Arduino应用场景
+
+### Arduino 示例程序
+
+[下载Arduino库](https://github.com/emakefun-arduino-library/emakefun_text_to_speech_synthesizer/archive/refs/tags/release.zip)，包含Arduino库文件和示例代码
+
+### Arduino 库使用文档
+
+[API使用文档](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/classTextToSpeechSynthesizer.html)
+
+### Arduino 库示例程序
+
+[合成播放文本](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/synthesize_text_8ino-example.html)
+
+[从缓存区域合成播放文本](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/synthesize_from_cache_8ino-example.html)
+
+[合成播放流程控制](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/synthesizing_control_8ino-example.html)
+
+[合成文本播放的详细参数设置](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/configure_synthesizing_parameter_8ino-example.html)
