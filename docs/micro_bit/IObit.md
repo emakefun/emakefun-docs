@@ -6,21 +6,26 @@ IO:bit扩展板是一款功能强大的microbit扩展板，其引出microbit主�
 
 - PCB板厚度：1.6mm
 - 小圆孔直径：3.0mm
-- 大圆孔直径：4.6mm（兼容乐高孔）
-- 产品    尺寸：57mm/39mm/15mm
+- 大圆孔直径：4.7mm（兼容乐高孔）
+- 产品    尺寸：56mm/40mm/15mm
 - 净            重：18.7g
 - USB  输入电压：5V
 - DC头输入电压：6-12V
+
+## 机械尺寸图
+![IO:bit](IObit/dimension.png)
 
 ## 产品实物图
 IO:bit扩展板与microbit主板
 ![IO:bit](IObit/IObit.png)
 
-## IO:bit 引脚介绍
+## 硬件接口介绍
+![](IObit/Annotation_diagram.png)
+### IO:bit 引脚介绍
 
 IO:bit扩展板正面功能图
 
-![](IObit/IObit_front_zh.png)
+![](IObit/IObit_power_zh.png)
 
 ### 19路PIN引脚
 
