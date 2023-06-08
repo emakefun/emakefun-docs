@@ -181,7 +181,7 @@
 
    
 
-## Mixly测试程序
+## Mixly示例程序
 
 [点击下载电机测试程序](./esp32/esp32 Motor Test.zip)
 
@@ -191,14 +191,24 @@
 
 [点击下载OLED测试程序](./esp32/esp32 OLED Test.zip)
 
+## Arduino示例程序
+
+[点击下载电机测试程序](./esp32/esp32_arduino/motorTest.zip)
+
+[点击下载RGB灯测试程序](./esp32/esp32_arduino/rgbTest.zip)
+
+[点击下载舵机测试程序](./esp32/esp32_arduino/servoTest.zip)
+
+[点击下载OLED测试程序](./esp32/esp32_arduino/oledTest.zip)
+
 ### FAQ
 
 **Q**: Mixly下载程序不成功？
 
 **A**：1. Mixly的安装路径不要包含中文、空格等特殊字符；放在电脑的根目录下，层级目录不要太深；比如                          D:\mixly2.0-win32-x64就是根目录安装；  
 
-	   2. 查看串口是否选择正确，如果没有串口，请先安装CH340G驱动；串口不要被其他应用占用；
-   3. 检查程序是否有错误；
+2. 查看串口是否选择正确，如果没有串口，请先安装CH340G驱动；串口不要被其他应用占用；
+3. 检查程序是否有错误；
 
 **Q**: 电机程序上传成功，但是电机不转？
 
