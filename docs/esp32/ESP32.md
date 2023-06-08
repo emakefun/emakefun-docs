@@ -183,23 +183,23 @@
 
 ## Mixly示例程序
 
-[点击下载电机测试程序](./esp32/esp32 Motor Test.zip)
+[点击下载电机示例程序](./esp32/esp32 Motor Test.zip)
 
-[点击下载RGB灯测试程序](./esp32/esp32 RGB Test.zip)
+[点击下载RGB灯示例程序](./esp32/esp32 RGB Test.zip)
 
-[点击下载舵机测试程序](./esp32/esp32 Servo Test.zip)
+[点击下载舵机示例程序](./esp32/esp32 Servo Test.zip)
 
-[点击下载OLED测试程序](./esp32/esp32 OLED Test.zip)
+[点击下载OLED示例程序](./esp32/esp32 OLED Test.zip)
 
 ## Arduino示例程序
 
-[点击下载电机测试程序](./esp32/esp32_arduino/motorTest.zip)
+[点击下载电机示例程序](./esp32/esp32_arduino/motorTest.zip)
 
-[点击下载RGB灯测试程序](./esp32/esp32_arduino/rgbTest.zip)
+[点击下载RGB灯示例程序](./esp32/esp32_arduino/rgbTest.zip)
 
-[点击下载舵机测试程序](./esp32/esp32_arduino/servoTest.zip)
+[点击下载舵机示例程序](./esp32/esp32_arduino/servoTest.zip)
 
-[点击下载OLED测试程序](./esp32/esp32_arduino/oledTest.zip)
+[点击下载OLED示例程序](./esp32/esp32_arduino/oledTest.zip)
 
 ### FAQ
 
