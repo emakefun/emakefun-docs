@@ -65,7 +65,7 @@
 
   ![gif](./arduino/driver.gif)
 
-  ### Windows安装CH340G（改进版）驱动
+### Windows安装CH340G（改进版）驱动
 
   1. 首先，在操作系统的设备管理器中查看CH340G设备是否已经安装驱动程序。可以在“端口（COM和LPT）”或“USB控制器”中找到。
   2. 下载CH340G驱动程序。可以从官方网站下载，也可以从第三方网站或CD中获取。建议从官方网站下载以避免下载恶意软件或病毒。CH340G官方下载地址[https://www.wch.cn/downloads/CH341SER_EXE.html](https://www.wch.cn/downloads/CH341SER_EXE.html)
