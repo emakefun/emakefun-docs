@@ -109,12 +109,12 @@
 
 I/O参考电压。其他设备可通过该引脚识别开发板I/O参考电压。
 
-#### 存储空间
+### 存储空间
 
 ATmega328p 有32KB Flash存储空间（其中0.5KB被用于存储bootloader），2KB 的SRAM和1KB 的EEPROM。
 可以使用官方提供的EEPROM库读写EEPROM空间。
 
-#### 输入输出
+### 输入输出
 
 Arduino Uno有14个数字输入输出引脚，可使用 pinMode()、digitalWrite() 和 digitalRead() 控制。
 其中一些带有特殊功能，这些引脚如下
@@ -175,7 +175,7 @@ Arduino Uno R3带有4个LED指示灯，作用分别如下：
 
 可编程控制指示灯。该LED通过特殊电路连接到Arduino的13号引脚，当13号引脚为高电平或高阻态时，该LED 会点亮；低电平时，不会点亮。可以通过程序或者外部输入信号，控制该LED亮灭。
 
-##### 通信
+### 通信
 
 Arduino Uno具备多种通信接口，可以和计算机、其他Arduino或者其他控制器通信。
 
@@ -185,17 +185,17 @@ SoftwareSerial库可以将Uno的任意数字引脚模拟成串口，从而进行
 
 ATmega328p也支持I2C (TWI)和SPI通信。Arduino IDE自带的Wire库，可用于驱动I2C总线，自带的SPI库，可用于SPI通信。
 
-##### 自动复位
+### 自动复位
 
 一些开发板在上传程序前需要手动复位，而Arduino Uno的设计不需要如此，在Arduino Uno连接电脑后可以由程序控制其复位。在ATmega16U2/CH340G等串口驱动芯片上的DTR信号端，经过一个100nf 的电容，连接到ATmega328p 的复位引脚。
 
 当计算机发出DTR信号时（低电平），复位端将得到一个足够长的脉冲信号，从而复位ATmega328p。在Arduino IDE中点击上传程序，在上传前即会触发复位，从而运行引导程序，完成程序上传。
 
-##### 注意事项
+### 注意事项
 
 Arduino Uno上有一个自恢复保险丝，当短路或过流时，电流超过500mA，其可以自动断开供电，从而保护计算机的USB端口和Arduino。虽然大多数计算机USB端口都提供了内部保护，但是此保险丝可以提供了额外的保护。
 
-##### 编程
+### 编程
 
 可通过Arduino IDE对Arduino Uno编程。
 在Arduino Uno使用ATmega328p 芯片上，存储有bootloader程序，使得用户可以上传程序到开发板上，而不需要使用额外的编程器。这个上传程序的过程使用STK500协议完成。
