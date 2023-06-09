@@ -96,7 +96,7 @@ nav:
         - 指南针传感器: sensors/smart_modules/compass.md
         - DS1302传感器: sensors/smart_modules/ds1302_rtc.md
         - MPU6050六轴陀螺仪: sensors/smart_modules/mpu6050.md
-        - 手势传感器: sensors/smart_modules/gestureRecognitionSensor.md
+        - 手势传感器: sensors/smart_modules/gesture_recognizer.md
         - LD3320语音识别模块: sensors/smart_modules/ld3320.md
         - MP3播放模块: sensors/smart_modules/MP3.md
         - MQTT物联网模块: sensors/smart_modules/esp8266_mqtt.md

@@ -2,6 +2,8 @@
 
 ## 模块图
 
+![picture](gesture_recognizer/gesture_recognizer.png)
+
 ## 概述
 
 该传感器集成了YS4006手势识别传感器，它采用红外成像的原理实现隔空手势识别，使用高性能 RISC CPU，通过内部实时高速的手势采集与运算处理，实现了手势的快速检测识别、信号输出指示，产品可应用于人工智能、工业控制、医疗设备、消费电子、智能穿戴、智能家居、仪器仪表、汽车电子、虚拟现实等领域。
@@ -38,20 +40,24 @@
 
 ## 模块参数
 
+**TODO**
+
 ## 硬件尺寸图
+
+**TODO**
 
 ## Arduino应用场景
 
-### Arduino 示例程序
+### Arduino库和示例程序
 
-[下载Arduino库](https://github.com/emakefun-arduino-library/emakefun_gesture_sensor/archive/refs/tags/release.zip)，包含Arduino库文件和示例代码
+[点击下载Arduino库和示例程序](https://github.com/emakefun-arduino-library/emakefun_gesture_recognizer/archive/refs/tags/latest.zip)，包含Arduino库文件和示例代码
 
-### Arduino 库使用文档
+### Arduino库使用文档
 
-[说明文档](https://github.com/emakefun-arduino-library/emakefun_gesture_sensor#gesturesensor%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3)
+[点击此处打开文档链接](https://emakefun-arduino-library.github.io/emakefun_gesture_recognizer/class_gesture_recognizer.html)
 
-### Arduino 库示例程序
+### Arduino示例程序
 
-[示例程序](https://github.com/emakefun-arduino-library/emakefun_gesture_sensor#%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F)
+[点开此处查看Arduino示例程序](https://emakefun-arduino-library.github.io/emakefun_gesture_recognizer/get_gesture_8ino-example.html)
 
 ## Mixly应用场景
