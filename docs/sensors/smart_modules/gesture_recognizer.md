@@ -61,3 +61,7 @@
 [点开此处查看Arduino示例程序](https://emakefun-arduino-library.github.io/emakefun_gesture_recognizer/get_gesture_8ino-example.html)
 
 ## Mixly应用场景
+
+![gesture_recognizer_8_8_matrix_mixly](gesture_recognizer/gesture_recognizer_8_8_matrix_mixly.png)
+
+[点击下载米思齐程序](gesture_recognizer/gesture_recognizer_8_8_matrix_mixly.zip)
