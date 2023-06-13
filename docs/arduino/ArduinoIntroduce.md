@@ -200,3 +200,6 @@ Arduino Uno上有一个自恢复保险丝，当短路或过流时，电流超过
 可通过Arduino IDE对Arduino Uno编程。
 在Arduino Uno使用ATmega328p 芯片上，存储有bootloader程序，使得用户可以上传程序到开发板上，而不需要使用额外的编程器。这个上传程序的过程使用STK500协议完成。
 你也可以不使用bootloader，通过ICSP接口连接编程器给Arduino Uno上传程序。
+
+[点击下载《Arduino语法手册》](./arduino/ArduinoGrammarHandbook.pdf)
+
