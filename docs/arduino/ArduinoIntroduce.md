@@ -203,3 +203,8 @@ Arduino Uno上有一个自恢复保险丝，当短路或过流时，电流超过
 
 [点击下载《Arduino语法手册》](./arduino/ArduinoGrammarHandbook.pdf)
 
+##### Arduino IDE上传Blink程序
+
+![download](./arduino/download.gif))
+
+[](./arduino/download.gif)
