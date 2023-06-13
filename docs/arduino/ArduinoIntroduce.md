@@ -205,6 +205,7 @@ Arduino Uno上有一个自恢复保险丝，当短路或过流时，电流超过
 
 ##### Arduino IDE上传Blink程序
 
-![download](./arduino/download.gif))
+![download](./arduino/download.gif)
 
-[](./arduino/download.gif)
+上传成功之后，我们可以看到主板的D13引脚指示灯亮1秒，灭1秒，如此循环。(不同的电脑端口不一样，请选择对应的端口)
+
