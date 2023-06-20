@@ -62,7 +62,7 @@ nav:
         - 五路循迹传感器: sensors/sensors/five_way_tracking_sensor.md
         - 五路循迹传感器v2.0: sensors/sensors/five_way_tracking_sensor_v2.0.md
         # - 超声波传感器: sensors/sensors/ultrasonicSensor.md
-        # - RGB超声波传感器: sensors/sensors/rgbUltrasonicSensor.md
+        - RGB超声波传感器: open_source_hardware/rgb.md
 
       - 执行器: 
         - 有源蜂鸣器模块: sensors/actuators/buzzerModel.md
