@@ -65,3 +65,7 @@
 ![gesture_recognizer_8_8_matrix_mixly](gesture_recognizer/gesture_recognizer_8_8_matrix_mixly.png)
 
 [点击下载米思齐程序](gesture_recognizer/gesture_recognizer_8_8_matrix_mixly.zip)
+
+## 产品购买链接
+
+- [点击此处跳转到产品淘宝链接](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-21556097795.18.6e82cf7fTuvA6J&id=726583339665)
