@@ -198,4 +198,3 @@ void SetRgbEffect(E_RGB_INDEX index, long Color, uint8_t effect);
 # Arduino Esp32程序
 
 [点击下载Arduino Esp32程序](rgb_pic_zh/RGBUltrasonicModule.zip)
-

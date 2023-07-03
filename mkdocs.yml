@@ -121,7 +121,8 @@ nav:
       - Magic:bit麦轮小车: micro_bit/WheatwheelCar.md
       - Joysitck:Bit: micro_bit/joystickbit.md
     - Arduino产品: 
-      - Arduino主板介绍: arduino/ArduinoIntroduce.md
+      - Arduino Uno主板介绍: arduino/ArduinoIntroduce.md
+      - Arduino Nano主板介绍: arduino/ArduinoNanoIntroduce.md
       - PH2.0传感器扩展板: arduino/SensorKit.md
       - Hummerbot: arduino/Hummerbot2.md
       # - Hummerbot图形化编程: arduino/Hummerbot.md
