@@ -95,7 +95,7 @@ nav:
         - 颜色识别: sensors/smart_modules/color_recognition.md
         - 指南针传感器: sensors/smart_modules/compass.md
         - DS1302传感器: sensors/smart_modules/ds1302_rtc.md
-        - MPU6050六轴陀螺仪: sensors/smart_modules/mpu6050.md
+        - MPU6050六轴陀螺仪: sensors/smart_modules/mpu6050/detail.md
         - 手势传感器: sensors/smart_modules/gesture_recognizer.md
         - LD3320语音识别模块: sensors/smart_modules/ld3320.md
         - 语音识别模块2.0: sensors/smart_modules/speech_recognizer.md
