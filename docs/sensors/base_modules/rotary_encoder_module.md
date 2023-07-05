@@ -88,4 +88,6 @@ void loop()
 
 ## microbit示例程序
 
-<a href="xxx" target="_blank">动手试一试</a>
+<a href="https://makecode.microbit.org/_Aspg3ah3sXL0" target="_blank">动手试一试</a>
+
+将旋转编码器A引脚接MicrobitP1引脚，B引脚接P2引脚，D引脚接P8引脚,通过往一个方向旋转旋转编码器时，Microbit显示屏显示1，当按下按钮往一个方向旋转Microbit显示屏显示2；往逆方向旋转Microbit显示屏显示-1，按下按钮往逆方向旋转Microbit显示屏显示-2，按下松开不旋转Microbit显示屏显示3
