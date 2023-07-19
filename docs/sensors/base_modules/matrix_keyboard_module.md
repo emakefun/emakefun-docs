@@ -70,7 +70,14 @@ void loop()
 
 [下载示例程序](matrix_keyboard_module/matrix_keyboard_Mixly_demo.zip)
 
-## microbit示例程序
+## Microbit示例程序
 
 <a href="https://makecode.microbit.org/_7TtfV5XKvH50" target="_blank">动手试一试</a>
 
+## MicroBit经典案例
+
+<a href="https://makecode.microbit.org/_KbfXs2JcUir9" target="_blank">矩阵键盘+RGB超声波+LCD1602</a>
+
+**程序讲解**：RGB超声波RGB引脚与Microbit P8引脚相连，IO引脚与P2引脚相连，矩阵键盘的SDO引脚与Microbit P1引脚相连，SCL引脚与P12引脚相连，LCD1602模块接Microbit  I2C接口（SDA引脚与Microbit P20引脚相连，SCL引脚与P19引脚相连）
+
+**现象**：程序上传之后，RGB超声波模块的探头先依次亮红、绿、蓝三种颜色；然后LCD1602显示屏第一行显示超声波测出的距离，第二行显示按下的键盘值。
