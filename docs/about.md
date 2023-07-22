@@ -23,7 +23,7 @@
 
 - 直接扫二维码
 
-  <img src="./images/EM_VX.jpg" alt="EM_VX" style="zoom:50%;" />
+  ![EM_VX](./images/EM_VX.jpg)
 
 ### 咨询热线
 
