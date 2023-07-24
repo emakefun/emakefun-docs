@@ -39,6 +39,7 @@ nav:
         - 滑动变阻器: sensors/base_modules/slide_potentiometer.md
         - 摇杆模块: sensors/base_modules/rocker_module.md
         - 触摸矩阵键盘: sensors/base_modules/matrix_keyboard_module.md
+        - 触摸矩阵键盘v2.0: sensors/base_modules/matrix_keyboard_module_v2.0.md
         - PH2.0小手柄: sensors/base_modules/joystick_handle.md
       - 传感器: 
         - 声音传感器: sensors/sensors/sound_sensor.md
@@ -82,6 +83,7 @@ nav:
         - LED灯: sensors/displayers/LED.md
         - 1602LCD显示屏: sensors/displayers/LCD1602.md
         - TM1650四位数码管: sensors/displayers/TM1650.md
+        - VK16K33四位数码管: sensors/displayers/4-digit 7 segment_v2.0.md
         - TM1637四位时钟数码管: sensors/displayers/TM1637.md
         - 8x8点阵屏: sensors/displayers/8x8LedDisplay.md
         - 交通灯: sensors/displayers/trafficLights.md
