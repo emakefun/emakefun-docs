@@ -83,7 +83,7 @@ nav:
         - LED灯: sensors/displayers/LED.md
         - 1602LCD显示屏: sensors/displayers/LCD1602.md
         - TM1650四位数码管: sensors/displayers/TM1650.md
-        - VK16K33四位数码管: sensors/displayers/4-digit 7 segment_v2.0.md
+        - VK16K33四位数码管: sensors/displayers/4_digit_7_segment_v2.0.md
         - TM1637四位时钟数码管: sensors/displayers/TM1637.md
         - 8x8点阵屏: sensors/displayers/8x8LedDisplay.md
         - 交通灯: sensors/displayers/trafficLights.md
