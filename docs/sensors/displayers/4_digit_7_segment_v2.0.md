@@ -6,7 +6,7 @@
 
 ## 模块图
 
-![模块图](4-digit_7_segment_v2.0/4-digit_7_segment_v2.0.png)
+![模块图](4_digit_7_segment_v2.0/4-digit_7_segment_v2.0.png)
 
 ## 原理图
 
