@@ -137,7 +137,7 @@ nav:
     - ESP32产品:
       - ESP32: esp32/ESP32.md
     - 开源硬件: 
-      - Ble-Nano: open_source_hardware/Ble-Nano.md
+      - Ble-Nano: open_source_hardware/ble-nano.md
       - Ble-Uno: open_source_hardware/Ble-Uno.md
       - Maker-Uno: open_source_hardware/Maker-Uno.md
       - RF-Nano: open_source_hardware/RF-Nano.md
