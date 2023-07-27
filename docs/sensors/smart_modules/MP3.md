@@ -135,8 +135,8 @@ GD5800_Serial mp345(5, 6);                           // 初始化MP3
 void setup() {
   mp345.begin(9600);
   mp345.setVolume(50);                                   // 设置音量为50
-  mp356.setLoopMode(MP3_LOOP_ALL);      // 设置循环模式为全部循环
-  mp356.setEqualizer(MP3_EQ_NORMAL);    // 设置音效为普通
+  mp345.setLoopMode(MP3_LOOP_ALL);      // 设置循环模式为全部循环
+  mp345.setEqualizer(MP3_EQ_NORMAL);    // 设置音效为普通
 }
 void loop()  {
    mp345.play();                                                  //  播放音乐
