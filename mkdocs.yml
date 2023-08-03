@@ -3,7 +3,7 @@ site_name: emakefun文档中心
 site_url: https://emakefun.com
 site_author: emakefun document team
 site_description: 深圳易创空间科技有限公司产品资料文档中心
-copyright: emakefun copyright 2017-2022
+copyright: emakefun copyright 2017-2023
 repo_name: 'Github'
 repo_url: https://github.com/emakefun/emakefun-docs
 
@@ -38,8 +38,8 @@ nav:
         - 触摸钢琴: sensors/base_modules/touch_piano.md
         - 滑动变阻器: sensors/base_modules/slide_potentiometer.md
         - 摇杆模块: sensors/base_modules/rocker_module.md
-        - 触摸矩阵键盘: sensors/base_modules/matrix_keyboard_module.md
-        - 触摸矩阵键盘v2.0: sensors/base_modules/matrix_keyboard_module_v2.0.md
+        - TTP229触摸矩阵键盘: sensors/base_modules/matrix_keyboard_module.md
+        - I2C触摸矩阵键盘v2.0: sensors/base_modules/matrix_keyboard_module_v2.0.md
         - PH2.0小手柄: sensors/base_modules/joystick_handle.md
       - 传感器: 
         - 声音传感器: sensors/sensors/sound_sensor.md
@@ -62,8 +62,7 @@ nav:
         - 压力传感器: sensors/sensors/pressure_sensor.md
         - 五路循迹传感器: sensors/sensors/five_way_tracking_sensor.md
         - 五路循迹传感器v2.0: sensors/sensors/five_way_tracking_sensor_v2.0.md
-        # - 超声波传感器: sensors/sensors/ultrasonicSensor.md
-        - RGB超声波传感器: open_source_hardware/rgb.md
+        - RGB超声波传感器: sensors/sensors/rus_04.md
 
       - 执行器: 
         - 有源蜂鸣器模块: sensors/actuators/buzzerModel.md
@@ -74,10 +73,9 @@ nav:
         - 振动马达: sensors/actuators/Vibration motor module.md
         - 大电机风扇模块: sensors/actuators/High power motor module.md
         # - 声音输出模块: sensors/actuators/Big Speaker Module.md
-        # - 舵机模块: sensors/actuators/servoModel.md
+        - 舵机扩展模块: sensors/actuators/servoModel.md
         - 双路电机驱动模块: sensors/actuators/highSpeedMiniMotorDriveBoardModel.md
         # - 普通红外遥控器模块: sensors/actuators/IRRemoteControlModel.md
-        # - emakefun红外遥控器模块: sensors/actuators/emakefunIRRemoteControlModel.md
     
       - 显示器: 
         - LED灯: sensors/displayers/LED.md
@@ -89,7 +87,7 @@ nav:
         - 交通灯: sensors/displayers/trafficLights.md
         - RGB三色灯: sensors/displayers/RGB.md
         - WS2812B-RGB灯环: sensors/displayers/RGBRing.md
-        - GT20L16S1Y OLED: sensors/displayers/GT20L16S1Y_OLED.md
+        - 中文字库OLED（I2C）: sensors/displayers/GT20L16S1Y_OLED.md
       - 通信模块:
         - 红外发射模块: sensors/actuators/infraredEmissionModel.md
         - 红外接收模块: sensors/actuators/irReceiverModel.md
@@ -109,8 +107,7 @@ nav:
       - 电源模块:
         - 7.4V充电电池模块: sensors/power_module/2xcr123a_li_ion_battery_module.md
         - 3.7V升压充电模块: sensors/power_module/3.7V_Battery_Module.md
-      
-      
+
       #- 配件: micro_bit/IObit.md
     - Micro:bit产品:
       - Micro:bit主板介绍: micro_bit/microbit.md
@@ -132,17 +129,16 @@ nav:
       - MirageTank: arduino/MirageTank.md
       - PantherTank: arduino/PantherTank.md
     - 树莓派: 
-      - 树莓派传感器扩展板: RaspberryPi-Sensor-Board-master/README.md
-      - 树莓派电机驱动板: RaspberryPi-MotorDriverBoard/README.md
+      - 树莓派传感器扩展板: raspberrypi/RaspberryPi-Sensor-Board-master/README_zh.md
+      - 树莓派电机驱动板: raspberrypi/RaspberryPi-MotorDriverBoard/README.md
     - ESP32产品:
-      - ESP32: esp32/ESP32.md
+      - maker-esp32: esp32/ESP32.md
     - 开源硬件: 
-      - Ble-Nano: open_source_hardware/ble-nano/ble_nano.md
-      - Ble-Uno: open_source_hardware/Ble-Uno.md
-      - Maker-Uno: open_source_hardware/Maker-Uno.md
-      - RF-Nano: open_source_hardware/RF-Nano.md
+      - ble-nano: open_source_hardware/ble-nano/ble_nano.md
+      - ble-uno: open_source_hardware/Ble-Uno.md
+      - maker-uno: open_source_hardware/maker-uno/README_ZH.md
+      - rf-nano: open_source_hardware/RF-Nano.md
       - MotorDriverBoard: open_source_hardware/MotorDriverBoard.md
-      - Rgb超声波(RUS-04): open_source_hardware/rgb.md
     - 软件: 
       - MagicBlock: open_source_software/magicblock.md
       - EmakefunApp: open_source_software/EmakefunApp.md
