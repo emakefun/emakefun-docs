@@ -18,7 +18,7 @@
 
 下图为串口打印I2C获取五个探讨的模拟值，左边是黑色底面，右边是白色底面。
 
-![模块尺寸](five_way_tracking_sensor/infraredtracking_output.jpg)
+![模块尺寸](five_way_tracking_sensor/infraredtracking_output.png)
 
 ## 产品参数
 
