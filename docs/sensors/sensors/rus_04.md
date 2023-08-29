@@ -4,7 +4,7 @@
 
 |RUS-04(黑色款)|RUS-04蓝色款|
 | :-: | :-: |
-| ![RUS-04_Black](RGB_ultrasonic_Module/RUS-04_Black.png) | ![RUS-04_Blue](RGB_ultrasonic_Module/RUS-04_Blue.png) |
+| ![RUS-04_Black](rus_04/rus_04_top.png) | ![RUS-04_Blue](rus_04/rus_04_blue.png) |
 
 
 ## 产品简介
@@ -15,20 +15,19 @@
 
 |型号|HC-04|RUS-04（蓝色）|US-04|RUS-04（黑色）|
 | :-: | :-: | :-: | :-: | --- |
-|图片|||||
-| 工作电压 |  | 4.5V~5.5V | 3.5V~5.5V |4.5V~5.5V|
-|  |  |  |  ||
-| 功耗电流|  | 不开灯珠15mA<br/>开灯珠65mA | 开灯珠65mA |不开灯珠15mA<br/>开灯珠65mA|
-| RGB灯珠数量 |  | 6颗 | 6颗 |0颗|
-| 谐振频率 |  | 40K | 40K |40K|
-| 探测距离范围 |  | 2cm～4米 | 2cm～4米 |2cm～4米|
-| 探测精度 |  | 1cm±2% |        1cm±2%        |1cm±2%|
-| 探测角度 |  | < ±15-20° | < ±15-20° |< ±15-20°|
-| 测量周期时间 |  | 60ms | 60ms |60ms|
-| 工作温度范围 |  | -10℃~80℃ |       -10℃~80℃       |-10℃~80℃|
-| 外形尺寸 |  | 48mm x 32mm x20mm | 45.2mm x 20.4mm x20mm |一款与RUS-04一样<br>二款与RUS-04(黑色款)一样|
-| 接口 |  | PH2.0/Grove/插针接口 | PH2.0/Grove/RJ25接口 |PH2.0/Grove/RJ25接口|
-| 通讯引脚 |  | IO：超声波引脚 <br> RGB:RGB灯珠引脚 | IO：超声波引脚 <br>RGB:RGB灯珠引脚 ||
+|图片|![HC-04](./rus_04/HC-04.jpg)|![rus_04_blue](./rus_04/rus_04_blue.png)|![US-04](./rus_04/US-04.jpg)|![rus_04_top](./rus_04/rus_04_top.png)|
+| 工作电压 | 3~5.5V | 4.5V~5.5V | 3.5V~5.5V |4.5V~5.5V|
+| 功耗电流| 3mA | 不开灯珠15mA<br/>开灯珠65mA | 开灯珠65mA |不开灯珠15mA<br/>开灯珠65mA|
+| RGB灯珠数量 | 0颗 | 6颗 | 6颗 |0颗|
+| 谐振频率 | 40K | 40K | 40K |40K|
+| 探测距离范围 | 3.5~6米 | 2cm～4米 | 2cm～4米 |2cm～4米|
+| 探测精度 | 1cm±2% | 1cm±2% |        1cm±2%        |1cm±2%|
+| 探测角度 | < ±15-20° | < ±15-20° | < ±15-20° |< ±15-20°|
+| 测量周期时间 | 200ms | 50ms | 50ms |60ms|
+| 工作温度范围 | -10℃~60℃ | -10℃~80℃ |       -10℃~80℃       |-10℃~80℃|
+| 外形尺寸 | 45.2*20.4mm | 45.2*20.4mm | 48*24mm |一款与RUS-04一样<br>二款与RUS-04(黑色款)一样|
+| 接口 | 4pin-2.54mm | PH2.0/Grove/插针接口 | PH2.0/Grove/RJ25接口 |PH2.0/Grove/RJ25接口|
+| 通讯引脚 | VCC/Trig/Echo/GND | G/V/IO/RGB |        G/V/Trig/Echo         |G/V/IO/RGB|
 
 ## 接口定义
 
@@ -38,9 +37,9 @@
 
 ### RUS-04（蓝色款）尺寸图
 
-​													![RGB](RGB_ultrasonic_Module/RGB.png) 
-### RUS-04（黑色版）尺寸图
-![RUS-04](RGB_ultrasonic_Module/RUS-04.png)
+​													![RGB](rus_04/rus_04_blue_cad.png) 
+### RUS-04（蓝色款）尺寸图
+![RUS-04](rus_04/rus_04_cad.png)
 
 
 
@@ -48,13 +47,13 @@
 
 ## 超声波部分测量操作
 
-![5](RGB_ultrasonic_Module/5.png)
+![5](rus_04/5.png)
 
 ​		外部 MCU 初始设置为输出，给模块 I/O 脚一个大于 10uS 的高电平脉冲；输出脉冲信号后，MCU 设置 为输入模式，等待模块给出的一个与距离等比的高电平脉冲信号；测量结束后 MCU 设置为输出模式，进行下次测量。声速可根据脉宽时间“T”算出：
 
 #### 距离=T（从发送信号至接收到信号的时间）*340/2 （ 340m/s是声音在空气中的传播速度） 
 
-![6](RGB_ultrasonic_Module/6.png)
+![6](rus_04/6.png)
 
 
 # RGB灯珠介绍
@@ -67,7 +66,23 @@ Arduino需要控制探头的发光，需要专门的RGB库支持。
 
 ####  详情可以看 [WS2812B规格书](./RGB_ultrasonic_Module/WS2812B.PDF)
 
-应用注意
+### 应用注意
+
+- 供电必须要要在4.5~5V之间否则 rgb灯控制不对
+- 测量周期时间在60ms以上
+- 在测量距离时，手或者其他金属物体不可接触探头，否则影响发射和接收波形从而导致距离测量错误
+
+### Arduino Uno示例程序
+
+ [点击下载](./rus_04/RGBUltrasonicModule.zip) 
+
+### Mixly
+
+ToDo
+
+### ESP8266/ESP32示例程序
+
+ [点击下载](./rus_04/ESP32_RGBUltrasonicModule.zip) 
 
 ## microbit示例程序
 
