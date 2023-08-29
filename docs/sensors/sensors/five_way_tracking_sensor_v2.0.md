@@ -18,7 +18,7 @@
 
 下图为串口打印I2C获取五个探讨的模拟值，左边是黑色底面，右边是白色底面。
 
-<img src="./five_way_tracking_sensor/infraredtracking_output.jpg" alt="infraredtracking_output"  />
+![模块尺寸](five_way_tracking_sensor/infraredtracking_output.png)
 
 ## 产品参数
 
@@ -66,7 +66,9 @@
 
 ### MagicBlock图形化编程块
 
-### Mixly图形化块（暂不支持）
+### Mixly图形化块
+
+[点击下载示例程序](five_way_tracking_sensor/line_tracker.zip)
 
 ### microbit makecode块
 
