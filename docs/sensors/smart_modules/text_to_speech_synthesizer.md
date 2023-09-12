@@ -102,3 +102,11 @@
 [合成播放流程控制](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/synthesizing_control_8ino-example.html)
 
 [合成文本播放的详细参数设置](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/configure_synthesizing_parameter_8ino-example.html)
+
+### Mixly示例程序
+
+![tts_mixly](./tts_module/tts_mixly.png)
+
+程序解析：语音合成模块先播放程序设定的"小爱同学"文字，然后将"你好，世界"上传到缓存块中，再播放一次。
+
+[点击下载Mixly示例](./tts_module/tts_mixly_example.zip)

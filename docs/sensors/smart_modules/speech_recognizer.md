@@ -106,7 +106,12 @@ TODO
 
 ### Mixly示例程序
 
-TODO
+![speech_recognizer_mixly](./speech_recognizer/speech_recognizer_example.png)
+
+程序解析：语音识别模块的接Arduino的I2C引脚(SDA---A4, SCL---A5)；设置语音识别模块需要识别的词条和该词条对应的编号，当时别出对应的词条时，串口打印出该词条对应的编号。
+
+[点击下载Mixly示例](./speech_recognizer/speech_recognizer_example.zip)
+
 
 ## microbit示例程序
 
