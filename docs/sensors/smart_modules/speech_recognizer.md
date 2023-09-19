@@ -116,3 +116,7 @@ TODO
 ## microbit示例程序
 
 TODO
+
+## 语音识别模块和语音合成模块的综合程序(Arduino)
+
+[点击查看](../../examples/example_tts_and_speech_recognizer/example_tts_and_speech_recognizer.md)

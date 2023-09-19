@@ -110,3 +110,7 @@
 程序解析：语音合成模块先播放程序设定的"小爱同学"文字，然后将"你好，世界"上传到缓存块中，再播放一次。
 
 [点击下载Mixly示例](./tts_module/tts_mixly_example.zip)
+
+## 语音识别模块和语音合成模块的综合程序(Arduino)
+
+[点击查看](../../examples/example_tts_and_speech_recognizer/example_tts_and_speech_recognizer.md)
