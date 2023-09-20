@@ -111,6 +111,16 @@
 
 [点击下载Mixly示例](./tts_module/tts_mixly_example.zip)
 
+[点击下载语音识别和语音识别Mixly综合程序](./tts_module/ttsAndLD3320.zip)
+
+### Mind+示例程序
+
+![tts_mixly](./tts_module/tts_mindplus.png)
+
+程序解析：语音合成模块初始化播放"hello world"和"我爱创客"，之后一直播报当前的温度。
+
+[点击下载Mind+示例](./tts_module/tts_mindplus.zip)
+
 ## 语音识别模块和语音合成模块的综合程序(Arduino)
 
 [点击查看](../../examples/example_tts_and_speech_recognizer/example_tts_and_speech_recognizer.md)
