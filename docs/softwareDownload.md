@@ -60,7 +60,9 @@ MakeCode智能模块插件库：https://github.com/emakefun/pxt-smartModule
 
 MakeCode MP3模块插件库： https://github.com/emakefun/pxt-mp3 
 
-MakeCode TTS语音合成模块插件库： https://github.com/emakefun/pxt-tts 
+MakeCode TTS语音合成模块插件库： https://github.com/emakefun-makecode-extensions/emakefun_text_to_speech
+
+MakeCode 语音识别模块插件库： https://github.com/emakefun-makecode-extensions/emakefun_speech_recognizer
 
 MakeCode MotorBit插件库： https://github.com/emakefun/pxt-motorbit
 
