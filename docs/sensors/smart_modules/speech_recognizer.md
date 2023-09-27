@@ -115,7 +115,11 @@ TODO
 
 ## microbit示例程序
 
-TODO
+语音识别模块MakeCode用户库链接：https://github.com/emakefun-makecode-extensions/emakefun_speech_recognizer
+
+[点击查看Micro:bit示例](https://makecode.microbit.org/_b1TdFzTME7Py)
+
+程序解析：语音识别模块的接Microbit的I2C引脚(SDA---P20, SCL---P19)；设置语音识别模块需要识别的词条和该词条对应的编号，编号0为"kai deng", 编号1为"guan deng", P2引脚接LED模块，当语音识别模块识别到"开灯"，LED模块亮灯，识别到"关灯"，LED模块熄灭。
 
 ## 语音识别模块和语音合成模块的综合程序(Arduino)
 
