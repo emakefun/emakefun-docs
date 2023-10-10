@@ -104,9 +104,9 @@ nav:
         - 语音合成模块: sensors/smart_modules/text_to_speech_synthesizer.md
         - I2C扩展板模块: sensors/smart_modules/gpio_expansion_board.md
         
-      - 电源模块: sensors/power_module/power_module.md
-#        - 3.7V升压充电模块: sensors/power_module/3.7v_battery_module.md
-#        - 7.4V充电电池模块: sensors/power_module/16340_2s_li_battery_module.md
+      - 电源模块: 
+        - 3.7V升压充电模块: sensors/power_module/3.7v_battery_module.md
+        - 7.4V充电电池模块: sensors/power_module/16340_2s_li_battery_module.md
         - 双节18650锂电池充电模块: sensors/power_module/18650_2s_li_battery_module.md
 
       #- 配件: micro_bit/IObit.md
