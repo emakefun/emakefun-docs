@@ -106,7 +106,7 @@ nav:
         
       - 电源模块: sensors/power_module/power_module.md
 #        - 3.7V升压充电模块: sensors/power_module/3.7v_battery_module.md
-        - 7.4V充电电池模块: sensors/power_module/16340_2s_li_battery_module.md
+#        - 7.4V充电电池模块: sensors/power_module/16340_2s_li_battery_module.md
         - 双节18650锂电池充电模块: sensors/power_module/18650_2s_li_battery_module.md
 
       #- 配件: micro_bit/IObit.md
