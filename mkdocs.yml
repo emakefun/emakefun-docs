@@ -98,16 +98,17 @@ nav:
         - MPU6050六轴陀螺仪: sensors/smart_modules/mpu6050/detail.md
         - 手势传感器: sensors/smart_modules/gesture_recognizer.md
         - LD3320语音识别模块: sensors/smart_modules/ld3320.md
-        - 语音识别模块2.0: sensors/smart_modules/speech_recognizer.md
+        - LD3320语音识别模块V2.0: sensors/smart_modules/speech_recognizer.md
         - MP3播放模块: sensors/smart_modules/MP3.md
         - MQTT物联网模块: sensors/smart_modules/esp8266_mqtt.md
         - 语音合成模块: sensors/smart_modules/text_to_speech_synthesizer.md
         - I2C扩展板模块: sensors/smart_modules/gpio_expansion_board.md
         
-      - 电源模块:
+      - 电源模块: sensors/power_module/power_module.md
+        - 3.7V升压充电模块: sensors/power_module/3.7v_battery_module.md
         - 7.4V充电电池模块: sensors/power_module/16340_2s_li_battery_module.md
-        - 3.7V升压充电模块: sensors/power_module/3.7V_Battery_Module.md
         - 双节18650锂电池充电模块: sensors/power_module/18650_2s_li_battery_module.md
+
       #- 配件: micro_bit/IObit.md
     - Micro:bit产品:
       - Micro:bit主板介绍: micro_bit/microbit.md
