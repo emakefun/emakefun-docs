@@ -5,9 +5,13 @@
 [English](README.md) 中文版
 
 - [产品特色](#产品特色) 
+
 - [产品实物图](#产品实物图)
+
 - [硬件接口介绍](#硬件接口介绍) 
+
 - [电机功能说明](#电机功能说明) 
+
 - [扩展板各单元模块详解](#扩展板各单元模块详解) 
     - [电源供电口](#电源供电口)
     - [蜂鸣器](#蜂鸣器)
@@ -20,11 +24,19 @@
     - [8Pin_IO口引出](#8Pin_IO口引出)
     - [I2C接口](#I2C接口)
     - [电压引脚](#电压引脚)
+    
 - [导入软件包](#导入软件包)
+
 - [程序下载](#程序下载)
+
 - [FAQ](#FAQ) 
 
-Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而开发的驱动电机，舵机，步进电机的一款多功能电机驱动扩展板。Micro:Bit V2.0解决了市面上同类驱动板支持单节3.7V电池驱动力严重不够问题。本驱动板采用控制电路电源和舵机电源分开，单独供电方案，使用大电流输出的电源芯片对舵机独立供电，支持DC(6~15V)电压输入，驱动芯片采用4颗大电流驱动芯片，最大驱动电流达4A，轻松同时驱动4个24V直流马达或者30暴力高速马达。舵机也可以通过外部电源独立供电，同时可以支持8个舵机同时控制。板子采用可选择直插和卧插两种方式，直插可以兼容掌控板。安装孔兼容乐高，可以非常方便安装在自己创意设计中。完善的库支持，配套开发有MakeCode、Scratch3.0、MicroPython库和教程。
+#  使用该扩展板时，先导入扩展板Makecode链接：https://github.com/emakefun/pxt-motorbit.git，具体操作请查看下方的“导入软件包”
+
+
+
+
+Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而开发的驱动电机，舵机，步进电机的一款多功能电机驱动扩展板。Micro:Bit V2.0解决了市面上同类驱动板支持单节3.7V电池驱动力严重不够问题。本驱动板采用控制电路电源和舵机电源分开，单独供电方案，使用大电	流输出的电源芯片对舵机独立供电，支持DC(6~15V)电压输入，驱动芯片采用4颗大电流驱动芯片，最大驱动电流达4A，轻松同时驱动4个24V直流马达或者30暴力高速马达。舵机也可以通过外部电源独立供电，同时可以支持8个舵机同时控制。板子采用可选择直插和卧插两种方式，直插可以兼容掌控板。安装孔兼容乐高，可以非常方便安装在自己创意设计中。完善的库支持，配套开发有MakeCode、Scratch3.0、MicroPython库和教程。
 
 ## 产品特色
 | 特点 | Motor:Bit V1.0|Motor:Bit V2.0|
@@ -58,6 +70,8 @@ Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而�
 ### Motor:Bit V2.0
 ![image](motorbit/MotorBit_V2.0.png)
 
+## 库说明
+
 ## 硬件接口介绍
 
 ### 正面
@@ -89,8 +103,6 @@ Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而�
 * Motor:Bit V1.0/V2.0板载无源蜂鸣器接线引脚为P0
 * Motor:Bit V1.0/V2 .0是通过拨码开关与Micro:Bit主板的P0引脚进行连接和断开的，当拨动到关闭时，引脚P0不能控制板载蜂鸣器，此时P0引脚可以作为普通IO引脚使用。
 > 无源蜂鸣器播放音乐 例程实验
->
-> [导入软件包](#导入软件包)
 
 ![motorbit_buzzer_code_zh](motorbit/motorbit_buzzer_code_zh.png)
 
@@ -98,15 +110,11 @@ Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而�
 
 ## 红外接收
 
-#### **MakeCode红外扩展库: https://github.com/emakefun/pxt-motorbit
-
 ![motorbit_IR_zh](motorbit/IR.png)
 
 * Motor:Bit V1.0/V2.0 板载红外接收头接线引脚为P5
 * 红外接收头，是通过拨码开关与microbit主板的P5引脚进行连接和断开的，当拨动到关闭时，引脚P5不能控制红外接收头，此时P0引脚可以作为普通IO引脚使用。
 > 红外接收实验例程
->
-> [导入软件包](#导入软件包)
 
 ![motorbit_IR_code_zh](motorbit/irRemote_1.png)
 
@@ -118,8 +126,6 @@ Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而�
 
 * Motor:Bit V1.0/V2.0板载4个RGB全彩灯，连接在Micro:Bit主板的P16引脚，可以通过对P16引脚编程控制四个RGB灯亮灭和颜色。
 > 板载RGB实验例程
->
-> [导入软件包](#导入软件包)
 
 ![motorbit_RGB_code_zh](motorbit/motorbit_RGB_code_zh.png)
 
@@ -130,12 +136,7 @@ Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而�
 
 ![motorbit_DCmotor_zh](motorbit/DC_motor.png)
 
-* Motor:Bit V1.0/V2.0扩展板设计有4个PH2.0直流电机接线柱接口，分别为：M1,M2,M3,M4
-* Motor:Bit V1.0扩展板也可以从步进电机的排针位置接M1(A01,A02),M2(A03,A04)和M3(B01,B02)M4(B03,B0)
-* Motor:Bit V2.0扩展板也可以从步进电机的接线端子位置接M1(A01,A02),M2(A03,A04)和M3(B01,B02)M4(B03,B04)
 > 控制直流电机例程实验
->
-> [导入软件包](#导入软件包)
 
 ![motorbit_DCmotor_code_zh](motorbit/motorbit_DCmotor_code_zh.png)
 
@@ -148,9 +149,7 @@ Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而�
 ## 8路舵机接口
 ![motorbit_servo_zh](./motorbit/Servo.png)
 
-* Motor:Bit V1.0/V2.0 同时支持驱动8路PWM舵机
 * Motor:Bit V1.0/V2.0  舵机引脚的蓝色插口代表输出pwm信号的引脚、连接三线舵机的PWM输入信号线，红色插口代表电源正极、连接三线舵机的电源正极线，黑色插口代表电源GND极、连接三线舵机的电源负极线
-* 插口为S1~S8，在使用时，根据实际连接的插口，在程序积木中进行选择
 * Motor:Bit V2.0驱动舵机时，可以通过跳线帽选择不同的供电方式。如果大舵机(例如：MG996等)的数量超过4个时，蓝色接线柱必须接外部电源为舵机供电（外部供电电压和电流需要根据舵机型号需要提供），且DC头也需要接电源为扩展板供电，拨动开关拨向ON端。
 
 > 实物连接图如下
@@ -158,7 +157,6 @@ Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而�
 > ![motorbit_servo_zh](motorbit/servo_power_connect.png)
 
 > 舵机控制实验例程
-> [导入软件包](#导入软件包)
 
 ![motorbit_servo_code_zh](motorbit/motorbit_servo_code_zh.png)
 
@@ -172,10 +170,8 @@ Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而�
 ![motorbit_motor_zh](motorbit/Stepper_motor.png)
 
 * 包含2路5线步进电机、可以同时连接控制两个步进电机。接线从左到右依次为蓝色线、粉色线、黄色线、橙色线、红色线。
-* 支持步进电机与TT马达同时使用，例如可以控制一个步进电机和两个直流电机（具体搭配可以根据需要来进行设定）
 
 > 步进电机实验例程
-> [导入软件包](#导入软件包)
 
 ![motorbit_motor_code_zh](motorbit/motorbit_stepper_code_zh.png)
 
@@ -191,9 +187,8 @@ Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而�
 * RGB超声波的IO引脚接在引脚的P2接口，RGB口与RGB灯口对应：RGB超声波的RGB灯是扩展板灯的延伸，都是通过P16引脚控制，控制原理与控制扩展板RGB灯相同，RGB超声波内含有六个RGB灯，左右探头各三个。
 
 > 超声波RGB使用例程实验
-> [导入软件包](#导入软件包)
 
-![motorbit_RGBCSB_code_zh](motorbit/motorbit_RGBCSB_code_zh.png)
+![motorbit_RGBCSB_code_zh](motorbit/motorbit_rgbcsb_code_zh.png)
 
 > 实物连接图，RGB超声波的引脚选择P2
 
@@ -204,19 +199,16 @@ Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而�
 ![motorbit_Pin_zh](motorbit/IO.png)
 
 * Motor:Bit V1.0/V2.0 有8个引出的IO口，黑色引脚表示电源负极、红色引脚表示电源正极，蓝色表示IO信号口
-* Motor:Bit V1.0/V2.0 引出的引脚是P0\P1\P2\P8\P12\P13\P14\P15
 * Motor:Bit V1.0的红色引脚电压为3.3V
 * Motor:Bit V2.0的红色引脚电压通过IO电压选择跳线帽选择，跳线帽插在5V与VCC上时红色引脚电压为5V,跳线帽插在3V3与VCC上时红色引脚电压为3.3V。
 
 ## I2C接口
 ![motorbit_I2C_zh](motorbit/I2C.png)
 
-* Motor:Bit V1.0包含2个PH2.0-4Pin I2C接口，可以使用该接口来控制LCD 1602液晶屏等。在使用I2C通信时，应注意扩展板的数据线SDA引脚连接终端数据线SDA引脚，扩展版的时钟线SCL引脚连接终端的时钟线SCL引脚
-* Motor:Bit V2.0包含1个i2c接口，可以使用该接口来控制LCD 1602液晶屏等。在使用I2C通信时，应注意扩展版的数据线SDA引脚连接终端数据线SDA引脚，扩展版的时钟线SCL引脚连接终端的时钟线SCL引脚
 * 不同的I2C模块需要的电压不同，可以通过IO电压选择跳线帽对I2C红色引脚的电压进行调整
 > I2C使用例程（控制LCD1602显示）
 
- ![motorbit_I2C_code_zh](motorbit/motorbit_I2C_code_zh.png)
+ ![motorbit_I2C_code_zh](motorbit/motorbit_i2c_code_zh.png)
 
 > 实验实物图，在接线时，需要注意LCD1602液晶的SDA引脚接在扩展板的SDA引脚、SCL引脚接在扩展板的SCL引脚、GND引脚接在扩展板的黑色GND引脚、VCC引脚接在扩展板的红色5V引脚，不同的I2C模块需要的电压不同，LCD1602液晶需要5V(注意调节液晶背面的旋钮、以调整显示效果达到最好的显示)
 
