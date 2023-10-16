@@ -56,7 +56,7 @@ The ESP32's Bluetooth MAC address is: 48:e7:29:07:e6:a6
 
 #### 运行ESP32示例代码
 
-Arduino IDE打开`PS3 Controller Host`的**连接**示例代码：Arduino IDE -> 文件 -> 示例 -> PS3 Controller Host -> Ps3Connect
+Arduino IDE打开`PS3 Controller Host`的**连接**示例代码：**Arduino IDE -> 文件 -> 示例 -> PS3 Controller Host -> Ps3Connect**
 
 **注意**，这里需要修改测试代码，把`setup`函数中`Ps3.begin("01:02:03:04:05:06");`修改为`Ps3.begin();`，如下：
 
