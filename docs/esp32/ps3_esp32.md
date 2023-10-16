@@ -6,7 +6,7 @@
 
 PS3手柄与ESP32是通过`蓝牙`连接的，每个PS3手柄作为从机都会存储主机的蓝牙MAC地址，这是PS3唯一可以连接的设备，那么要想让PS3与ESP32连接，需要把PS3内部存储的主机蓝牙MAC地址改为对应的ESP32的蓝牙MAC地址，这样就可以自动连接了。
 
-开始前需要准备
+开始前需要准备:
 
 - 带蓝牙的ESP32开发板
 
@@ -22,7 +22,7 @@ PS3手柄与ESP32是通过`蓝牙`连接的，每个PS3手柄作为从机都会�
 
 ### 获取ESP32的蓝牙MAC地址
 
-运行`PS3 Controller Host`示例代码进行获取：Arduino IDE -> 文件 -> 示例 -> PS3 Controller Host -> Ps3Address
+运行`PS3 Controller Host`示例代码进行获取：**Arduino IDE -> 文件 -> 示例 -> PS3 Controller Host -> Ps3Address**
 
 代码运行在ESP32上成功运行后，串口会打印如下信息：
 
@@ -30,7 +30,7 @@ PS3手柄与ESP32是通过`蓝牙`连接的，每个PS3手柄作为从机都会�
 The ESP32's Bluetooth MAC address is: 48:e7:29:07:e6:a6
 ```
 
-其中`48:e7:29:07:e6:a6`就是EPS32的蓝牙MAX地址，这个地址每个ESP32都不一样，请获取需要连接的ESP32的地址
+其中`48:e7:29:07:e6:a6`就是EPS32的蓝牙MAC地址，这个地址每个ESP32都不一样，请获取需要连接的ESP32的地址
 
 ### 修改PS3的主机蓝牙MAC地址
 
@@ -94,9 +94,9 @@ Connected
 
 PS3的按键摇杆等测试，请自行运行和学习`PS3 Controller Host`的测试代码
 
-- 测试手柄右边4个按键的测试代码：Arduino IDE -> 文件 -> 示例 -> PS3 Controller Host -> Ps3Data
+- 测试手柄右边4个按键的测试代码：**Arduino IDE -> 文件 -> 示例 -> PS3 Controller Host -> Ps3Data**
 
-- 测试手柄所有按键的测试代码：Arduino IDE -> 文件 -> 示例 -> PS3 Controller Host -> Ps3Demo
+- 测试手柄所有按键的测试代码：**Arduino IDE -> 文件 -> 示例 -> PS3 Controller Host -> Ps3Demo**
 
   **注意**，运行这些测试代码，都需要将`setup`函数中`Ps3.begin("01:02:03:04:05:06");`修改为`Ps3.begin();`，如下所示：
 
@@ -114,6 +114,6 @@ Ps3.begin();
 
 ## FAQ
 
-- 连接成功后手柄有时候会自动断开
+**Q** 连接成功后手柄有时候会自动断开
 
-  请先将手柄插上数据线和电源进行充电，充电几分钟后再进行测试，有时候手柄没电了会有这种现象
+**A** 请先将手柄插上数据线和电源进行充电，充电几分钟后再进行测试，有时候手柄没电了会有这种现象
