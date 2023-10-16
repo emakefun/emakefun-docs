@@ -6,7 +6,7 @@
 
 ## 产品简介
 
-​		 Maker-ESP32是基于乐鑫科技的 [ESP32-WROOM-32](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_cn.pdf) 模组基础上开发的一款适用于创客教育的标志性产品，Flash大小4MB，集成 2.4 GHz、Wi-Fi 和蓝牙双模的单芯片方案。采用东芝的电机驱动芯片，电流最大可达3.5A。
+​   Maker-ESP32是基于乐鑫科技的 [ESP32-WROOM-32](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_cn.pdf) 模组基础上开发的一款适用于创客教育的标志性产品，Flash大小4MB，集成 2.4 GHz、Wi-Fi 和蓝牙双模的单芯片方案。采用东芝的电机驱动芯片，电流最大可达3.5A。
 
 ## ESP32模组参数
 
@@ -48,13 +48,13 @@
 * M4定位孔直径：4.6mm，兼容乐高
 * 软件支持Mixly、Arduino IDE、Python
 
-## 引脚说明 
+## 引脚说明
 
 ![ ](./esp32/esp32_pic.png)
 
 <font color="red" size="5">**注:**</font>  1.  Motor and IO Switch: 当拨码开关打到IO口端时，M3、M4电机端口不工作，不能驱动电机，引脚为普通端口；当拨码开关打到M3A/M3B/M4A/M4B时，M3、M4为电机端口，可以驱动电机。
 
-2.  因为ESP32芯片特性，在Arduino框架下，主板的34、35、36、39引脚不能作为输出；并且34、35、36、39引脚做为输入时，不能设置上拉或下拉模式。
+2. 因为ESP32芯片特性，在Arduino框架下，主板的34、35、36、39引脚不能作为输出；并且34、35、36、39引脚做为输入时，不能设置上拉或下拉模式。
 
 #### **[产品原理图](./esp32/Esp32_V1.5.pdf)**
 
@@ -74,25 +74,25 @@
 
    1）右键点击“我的电脑-->打开设备管理器-->端口（COM和LPT）。 此时你会看到一个“USB串行端口”，如下图"USB2.0-Serial"，右键单击“USB串行端口(USB2.0-Serial)”并选择“更新驱动程序软件”选项。
 
-   ![1](./esp32/step1.jpg) 
+   ![1](./esp32/step1.jpg)
 
    2）接下来，选择“浏览计算机以查找驱动程序软件”选项。
 
-   ![1](./esp32/step2.jpg) 
+   ![1](./esp32/step2.jpg)
 
    3）最后选择名为“CH341SER_for_64bit_win7”的驱动程序文件，下载[CH340驱动](./esp32/CH340驱动.zip)，请根据自己的电脑系统型号选择相应的驱动版本！
 
    ![1](./esp32/CH340_Driver.png)
 
-   ![1](./esp32/CH340_Driver1.png) 
+   ![1](./esp32/CH340_Driver1.png)
 
    4）成功安装之后便会出现下图所示的界面，通知你驱动成功。
 
-   ![1](./esp32/step5.jpg) 
+   ![1](./esp32/step5.jpg)
 
    此时，我们再返回“设备管理器”界面，可以看到电脑已成功识别到端口,如下图。接下来打开编译环境，就可开启编程之旅了。
 
-   ![1](./esp32/step6.jpg) 
+   ![1](./esp32/step6.jpg)
 
    **注意：**在Win10系统中，系统会自动下载相对应的驱动，无需自己安装驱动，但是如果系统没有识别到，就需要按照上述的步骤手动安装驱动。
 
@@ -126,10 +126,9 @@
 
 ## Maker-ESP32通过Arduino IDE下载程序
 
-
 请前往 [Arduino官网](https://www.arduino.cc/en/Main/Software)  下载最新IDE
 
-1. 打开Ardunio IDE; 
+1. 打开Ardunio IDE;
 
 2. 安装ESP32库；
 
@@ -181,8 +180,6 @@
 
    ![download_success](./esp32/esp32_mixly_download_success.png)
 
-   
-
 ## Mixly示例程序
 
 [点击下载电机示例程序](./esp32/esp32_Motor_Test.zip)
@@ -233,7 +230,11 @@
 |    蓝色     |                   A03                  |
 |    黄色     |                   A04                  |
 
-### FAQ
+## ESP32系列连接和使用PS3蓝牙无线手柄
+
+[点击查看ESP32系列连接和使用PS3蓝牙无线手柄](./ps3_esp32.md)
+
+## FAQ
 
 **Q**: Mixly下载程序不成功？
 
