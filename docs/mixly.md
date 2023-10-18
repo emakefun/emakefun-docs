@@ -10,7 +10,8 @@
 
 ![mixlyDownload](./mixly/mixlyDownload.png)
 
-点击Mixly2.0文件夹，显示以下文件，![mixlyDownloadPackage](./mixly/mixlyDownloadPackage.png)
+点击Mixly2.0文件夹，显示以下文件:
+![mixlyDownloadPackage](./mixly/mixlyDownloadPackage.png)
 
 下载完之后，将文件解压，解压的目录最好不要有中文、空格等，目录最好放到每个电脑盘的根目录.
 
