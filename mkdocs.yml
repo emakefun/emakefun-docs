@@ -26,6 +26,7 @@ nav:
     - 首页: index.md
     - 软件指导: 
       - 软件下载: softwareDownload.md
+      - Mixly2.0使用方法: mixly.md
       # - 驱动安装:
     - 传感器/配件:
       - 总览: sensors/index.md
