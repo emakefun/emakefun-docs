@@ -41,7 +41,9 @@
 ### 获取速度PID
 
 `float GetSpeedPidP() const;`
+
 `float GetSpeedPidI() const;`
+
 `float GetSpeedPidD() const;`
 
 获取已设置的速度PID参数。
@@ -55,7 +57,9 @@
 ### 获取位置PID
 
 `float GetPositionPidP() const;`
+
 `float GetPositionPidI() const;`
+
 `float GetPositionPidD() const;`
 
 获取已设置的位置PID参数。
