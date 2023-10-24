@@ -112,10 +112,9 @@ TODO
 
 [点击下载Mixly示例](./speech_recognizer/speech_recognizer_example.zip)
 
-
 ## microbit示例程序
 
-语音识别模块MakeCode用户库链接：https://github.com/emakefun-makecode-extensions/emakefun_speech_recognizer
+语音识别模块MakeCode用户库链接：<https://github.com/emakefun-makecode-extensions/emakefun_speech_recognizer>
 
 [点击查看Micro:bit示例](https://makecode.microbit.org/_b1TdFzTME7Py)
 
