@@ -45,7 +45,14 @@ TODO
 
 ## arduino应用场景
 
-- Arduino库和示例程序下载链接 [点击此处链接下载](https://github.com/emakefun-arduino-library/emakefun_speech_recognizer/archive/refs/tags/latest.zip)
+| 支持开发板系列 |
+| ---- |
+| Arduino UNO R3 |
+| Arduino Nano |
+| Arduino Mega 2560 |
+| ESP32 |
+
+- Arduino库和示例程序下载链接: [点击此处链接下载](https://github.com/emakefun-arduino-library/emakefun_speech_recognizer/archive/refs/tags/latest.zip)
 
 - [点击此处文档链接查看API说明](https://emakefun-arduino-library.github.io/emakefun_speech_recognizer/classemakefun_1_1_speech_recognizer.html)
 
