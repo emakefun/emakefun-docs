@@ -85,23 +85,26 @@
 
 ## Arduino应用场景
 
-### Arduino 示例程序
+| 支持开发板系列 |
+| ---- |
+| Arduino UNO R3 |
+| Arduino Nano |
+| Arduino Mega 2560 |
+| ESP32 |
 
-[下载Arduino库](https://github.com/emakefun-arduino-library/emakefun_text_to_speech_synthesizer/archive/refs/tags/release.zip)，包含Arduino库文件和示例代码
+- Arduino库和示例程序下载链接: [点击此处链接下载](https://github.com/emakefun-arduino-library/emakefun_tts/archive/refs/tags/latest.zip)，包含Arduino库文件和示例代码
 
-### Arduino 库使用文档
-
-[API使用文档](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/classTextToSpeechSynthesizer.html)
+- [点击此处文档链接查看API说明](https://emakefun-arduino-library.github.io/emakefun_tts/classemakefun_1_1_tts.html)
 
 ### Arduino 库示例程序
 
-[合成播放文本](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/synthesize_text_8ino-example.html)
+- 文本播放 [点击此处链接查看](https://emakefun-arduino-library.github.io/emakefun_tts/play_8ino-example.html)
 
-[从缓存区域合成播放文本](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/synthesize_from_cache_8ino-example.html)
+- 缓存文本播放 [点击此处链接查看](https://emakefun-arduino-library.github.io/emakefun_tts/play_from_cache_8ino-example.html)
 
-[合成播放流程控制](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/synthesizing_control_8ino-example.html)
+- 播放流程控制 [点击此处链接查看](https://emakefun-arduino-library.github.io/emakefun_tts/play_flow_control_8ino-example.html)
 
-[合成文本播放的详细参数设置](https://emakefun-arduino-library.github.io/emakefun_text_to_speech_synthesizer/configure_synthesizing_parameter_8ino-example.html)
+- 设置播放参数 [点击此处链接查看](https://emakefun-arduino-library.github.io/emakefun_tts/play_with_parameters_8ino-example.html)
 
 ### Mixly示例程序
 
