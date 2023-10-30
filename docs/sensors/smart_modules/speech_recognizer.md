@@ -100,7 +100,7 @@ TODO
 
 ![work_flow_trigger_button_and_keyword.svg](speech_recognizer/work_flow_trigger_button_and_keyword.svg)
 
-## arduino应用场景
+## Arduino应用场景
 
 | 支持开发板系列 |
 | ---- |
@@ -109,11 +109,16 @@ TODO
 | Arduino Mega 2560 |
 | ESP32 |
 
-- Arduino库和示例程序下载链接: [点击此处链接下载](https://github.com/emakefun-arduino-library/emakefun_speech_recognizer/archive/refs/tags/latest.zip)
+注意: 以下列出的库包含依赖库，需要一起下载安装，否则无法编译运行。如果已经安装过某些库，使用Arduino IDE再次安装会提示"安装失败，库已经安装"，那么直接忽略该库即可。
+
+| Arduino库 | 下载链接 |
+| --- | --- |
+| I2C设备(emakefun i2c device) | [点击此处链接下载](https://github.com/emakefun-arduino-library/emakefun_i2c_device/archive/refs/tags/latest.zip) |
+| 语音识别(emakefun speech recognizer) | [点击此处链接下载](https://github.com/emakefun-arduino-library/emakefun_speech_recognizer/archive/refs/tags/latest.zip) |
 
 - [点击此处文档链接查看API说明](https://emakefun-arduino-library.github.io/emakefun_speech_recognizer/classemakefun_1_1_speech_recognizer.html)
 
-### arduino示例程序
+### Arduino示例程序
 
 - 自动循环识别 [点击此处链接查看](https://emakefun-arduino-library.github.io/emakefun_speech_recognizer/simple_example_8ino-example.html)
 - 按键触发识别 [点击此处链接查看](https://emakefun-arduino-library.github.io/emakefun_speech_recognizer/button_trigger_mode_8ino-example.html)
@@ -136,4 +141,4 @@ TODO
 
 ## 语音识别模块和语音合成模块的综合程序(Arduino)
 
-TODO
+[点击查看](../../examples/example_tts_and_speech_recognizer/example_tts_and_speech_recognizer.md)

@@ -92,7 +92,12 @@
 | Arduino Mega 2560 |
 | ESP32 |
 
-- Arduino库和示例程序下载链接: [点击此处链接下载](https://github.com/emakefun-arduino-library/emakefun_tts/archive/refs/tags/latest.zip)，包含Arduino库文件和示例代码
+注意: 以下列出的库包含依赖库，需要一起下载安装，否则无法编译运行
+
+| Arduino库 | 下载链接 |
+| --- | --- |
+| I2C设备(emakefun i2c device) | [点击此处链接下载](https://github.com/emakefun-arduino-library/emakefun_i2c_device/archive/refs/tags/latest.zip) |
+| 语音合成(emakefun tts) | [点击此处链接下载](https://github.com/emakefun-arduino-library/emakefun_tts/archive/refs/tags/latest.zip) |
 
 - [点击此处文档链接查看API说明](https://emakefun-arduino-library.github.io/emakefun_tts/classemakefun_1_1_tts.html)
 
