@@ -128,9 +128,41 @@ TODO
 
 ## Mixly示例程序
 
-TODO
+用Mixly2.0通过云端导入PH2.0 Sensors库，如下图
 
-## microbit示例程序
+**自动循环识别模式**
+
+![ld3320_mixly](./speech_recognizer/ld3320_mixly.png)
+
+**程序解析：** 语音识别模块接Arduino Uno R3主板的I2C接口，当对语音识别模块说“xiao yi xiao yi”时，串口打印0，当对语音识别模块说“bei jing”时，串口打印1。
+
+**语音识别和语音合成综合示例**
+
+![ld3320_tts_mixly_example](./speech_recognizer/ld3320_tts_mixly_example.png)
+
+**程序解析：** 语音识别模块接Arduino Uno R3主板的I2C接口，当对语音识别模块说“xiao yi xiao yi”时，语音合成模块播报“你好，我在，请问有什么可以帮您？”，当对语音识别模块说“qing kai deng”时，主板上的13引脚指示灯亮，并且语音合成模块播报“灯已打开”，当对语音识别模块说“qing guan deng”时，主板上的13引脚指示灯熄灭，并且语音合成模块播报“灯已关闭”。当对语音识别模块说“qing kai men”时，连接主板3引脚的舵机转到0°，并且语音合成模块播报“门已打开”，当对语音识别模块说“qing guan men”时，主板上的3引脚的舵机转到180°，并且语音合成模块播报“门已关闭”。
+
+[**点击下载米思齐案例**](./speech_recognizer/ld3320_mixly_example.zip)
+
+## Mind+示例程序
+
+[**点击下载Mind+用户库**](speech_recognizer/ld3320_mindplus.zip)  用户库包含需要导入的Mind+的用户库和语音识别的案例，如下图。
+
+![mindplus_example](./speech_recognizer/mindplus_example.png)
+
+##### 自动循环识别模式
+
+![ld3320](./speech_recognizer/speech_recognizer_mindplus_example.png)
+
+**程序解析：** 语音识别模块接Arduino Uno R3主板的I2C接口，当对语音识别模块说“xiao yi xiao yi”时，串口打印0，当对语音识别模块说“bei jing”时，串口打印1。
+
+##### 语音识别和语音合成综合示例
+
+![ld3320_tts](./speech_recognizer/speech_recognizer_and_tts_mindplus_example.png)
+
+**程序解析：** 语音识别模块接Arduino Uno R3主板的I2C接口，当对语音识别模块说“xiao yi xiao yi”时，语音合成模块播报“你好，我在，请问有什么可以帮您？”，当对语音识别模块说“qing kai deng”时，主板上的13引脚指示灯亮，并且语音合成模块播报“灯已打开”，当对语音识别模块说“qing guan deng”时，主板上的13引脚指示灯熄灭，并且语音合成模块播报“灯已关闭”。
+
+## Microbit示例程序
 
 语音识别模块MakeCode用户库链接: <https://github.com/emakefun-makecode-extensions/emakefun_speech_recognizer>
 
