@@ -6,7 +6,7 @@
 
 ## 产品简介
 
-​   Maker-ESP32是基于乐鑫科技的 [ESP32-WROOM-32](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_cn.pdf) 模组基础上开发的一款适用于创客教育的标志性产品，Flash大小4MB，集成 2.4 GHz、Wi-Fi 和蓝牙双模的单芯片方案。采用东芝的电机驱动芯片，电流最大可达3.5A。
+   Maker-ESP32是基于乐鑫科技的 [ESP32-WROOM-32](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_cn.pdf) 模组基础上开发的一款适用于创客教育的标志性产品，Flash大小4MB，集成 2.4 GHz、Wi-Fi 和蓝牙双模的单芯片方案。采用东芝的电机驱动芯片，电流最大可达3.5A。
 
 ## ESP32模组参数
 
@@ -138,7 +138,7 @@
 
    ![1](./esp32/select_link.png)
 
-​   2) 菜单栏点击 【工具】->【开发板】->【开发板管理器】搜索esp32，然后安装，如下图：
+   2) 菜单栏点击 【工具】->【开发板】->【开发板管理器】搜索esp32，然后安装，如下图：
 
 ![1](./esp32/esp32_install.png)
 
@@ -182,19 +182,19 @@
 
 ## Mixly示例程序
 
-[点击下载电机示例程序](./esp32/esp32_Motor_Test.zip)
+[点击下载电机示例程序](./esp32/esp32_mixly/esp32_motor_test.zip)
 
-[点击下载RGB灯示例程序](./esp32/esp32_RGB_Test.zip)
+[点击下载RGB灯示例程序](./esp32/esp32_mixly/esp32_rgb_test.zip)
 
-[点击下载舵机示例程序](./esp32/esp32_Servo_Test.zip)
+[点击下载舵机示例程序](./esp32/esp32_mixly/esp32_servo_test.zip)
 
-[点击下载OLED示例程序](./esp32/esp32_OLED_Test.zip)
+[点击下载OLED示例程序](./esp32/esp32_mixly/esp32_oled_test.zip)
 
-[点击下载电机舵机综合示例程序](./esp32/esp32_motor_servo_example.zip)
+[点击下载电机舵机综合示例程序](./esp32/esp32_mixly/esp32_motor_servo_test.zip)
 
 电机舵机一起用时，不要用Mixly自带的电机驱动块，需使用操作引脚来控制，因为舵机电机一起使用时，mixly自带的驱动块PWM管道冲突，属于mixly软件库本身的问题。
 
-[点击下载步进电机示例程序](./esp32/esp32_stepper.zip)
+[点击下载步进电机示例程序](./esp32/esp32_mixly/esp32_stepper_test.zip)
 
 以28BYJ-48步进电机，接Stepper1接口为例, 接线方式如下表格：
 
@@ -233,6 +233,8 @@
 ## ESP32系列连接使用PS3蓝牙无线手柄
 
 [点击查看ESP32系列连接使用PS3蓝牙无线手柄](./ps3_esp32.md)
+
+[点击下载PS3控制电机舵机案例](./esp32/esp32_arduino/esp32PS3ControlTest.zip)
 
 ## FAQ
 

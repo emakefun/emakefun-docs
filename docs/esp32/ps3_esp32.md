@@ -112,6 +112,10 @@ Ps3.begin();
 
 - `PS3 Controller Host`是Arduino官方库，其他`PS3 Controller Host`的相关知识请自行搜索学习
 
+### PS3控制ESP32案例
+
+[点击下载PS3控制电机舵机案例](./esp32/esp32PS3ControlTest.zip)
+
 ## FAQ
 
 **Q** 连接成功后手柄有时候会自动断开
