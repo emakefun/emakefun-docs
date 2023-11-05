@@ -139,7 +139,7 @@ nav:
       - ble-nano: open_source_hardware/ble-nano/ble_nano.md
       - ble-uno: open_source_hardware/Ble-Uno.md
       - maker-uno: open_source_hardware/maker-uno/README_ZH.md
-      - rf-nano: open_source_hardware/RF-Nano.md
+      - rf-nano: open_source_hardware/rf-nano_v3_0.md
       - MotorDriverBoard: open_source_hardware/MotorDriverBoard.md
     - 软件: 
       - MagicBlock: open_source_software/magicblock.md
