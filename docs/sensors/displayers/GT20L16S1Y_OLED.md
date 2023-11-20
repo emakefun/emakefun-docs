@@ -9,6 +9,8 @@ SSD1306是一款用于有机/聚合物发光二极管点阵图形显示系统的
 - 接口支持最大速率：400k
 - 通信方式：IIC (SSD1306 地址0x3C，MCU地址0x51)
 - 接口类型：PH2.0-4Pin (G V SDA SCL)
+- [点击下载SSD1306数据手册](./GT20L16S1Y_OLED/SSD1306.pdf)
+- [点击下载字库芯片GT20L16S1Y数据手册](./GT20L16S1Y_OLED/GT20L16S1Ydatasheet.pdf)
 
 ## 模块特点：
 
