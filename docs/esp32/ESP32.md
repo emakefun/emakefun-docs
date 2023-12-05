@@ -236,6 +236,8 @@
 
 [点击下载PS3控制电机舵机案例](./esp32/esp32_arduino/esp32PS3ControlTest.zip)
 
+[点击下载Mixly库PS3手柄](./esp32/esp32_mixly/esp32_emakefun_sensors_mixly.zip)
+
 ## FAQ
 
 **Q**: Mixly下载程序不成功？

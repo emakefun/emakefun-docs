@@ -114,7 +114,7 @@ Ps3.begin();
 
 ### PS3控制ESP32案例
 
-[点击下载PS3控制电机舵机案例](./esp32/esp32PS3ControlTest.zip)
+[点击下载PS3控制电机舵机案例](./esp32/esp32_arduino/esp32PS3ControlTest.zip)
 
 ## FAQ
 

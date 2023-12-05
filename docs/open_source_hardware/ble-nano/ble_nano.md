@@ -478,7 +478,7 @@ void setup() {
   Serial.println("AT+BLEUSB=0");  // 设置数据通信模式为0
   delay(10);
   Serial.println("AT+CON=83:46:8c:e4:c2:84");  //连接mac地址的蓝牙从机
-  //delay(10);
+  delay(100);
   ble_data = "";
   while (Serial.available() > 0)  
   {
@@ -501,9 +501,9 @@ void loop() {
 
   if (ble_status)
   {
-	  Serial.println("on");
+	  Serial.write("on");
 	  delay(1000);
-	  Serial.println("off");
+	  Serial.write("off");
 	  delay(1000);
   }
 }
@@ -518,7 +518,7 @@ int led_pin = 13;
 void setup() {
   Serial.begin(115200);
   pinMode(led_pin, OUTPUT);
-  Serial.println("AT+ROLE=1");  // 设置蓝牙为主机
+  Serial.println("AT+ROLE=1");  // 设置蓝牙为从机
   delay(10);
   Serial.println("AT+BLEUSB=0");  //设置数据通信模式为0
   //delay(10);
@@ -542,7 +542,7 @@ void loop() {
 }
 ```
 
-成功后，我们可以看到从机的L灯每一秒闪烁一次
+成功后，我们可以看到从机的L灯每一秒闪烁一次。(如果显示不出效果，请主、从机都断下电)
 
 ## 常见问题FAQ
 

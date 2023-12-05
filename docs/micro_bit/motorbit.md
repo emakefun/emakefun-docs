@@ -188,7 +188,7 @@ Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而�
 
 > 超声波RGB使用例程实验
 
-![motorbit_RGBCSB_code_zh](motorbit/motorbit_rgbcsb_code_zh.png)
+![motorbit_RGBCSB_code_zh](motorbit/motorbit_RGBCSB_code_zh.png)
 
 > 实物连接图，RGB超声波的引脚选择P2
 
@@ -208,7 +208,7 @@ Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而�
 * 不同的I2C模块需要的电压不同，可以通过IO电压选择跳线帽对I2C红色引脚的电压进行调整
 > I2C使用例程（控制LCD1602显示）
 
- ![motorbit_I2C_code_zh](motorbit/motorbit_i2c_code_zh.png)
+ ![motorbit_I2C_code_zh](motorbit/motorbit_I2C_code_zh.png)
 
 > 实验实物图，在接线时，需要注意LCD1602液晶的SDA引脚接在扩展板的SDA引脚、SCL引脚接在扩展板的SCL引脚、GND引脚接在扩展板的黑色GND引脚、VCC引脚接在扩展板的红色5V引脚，不同的I2C模块需要的电压不同，LCD1602液晶需要5V(注意调节液晶背面的旋钮、以调整显示效果达到最好的显示)
 
