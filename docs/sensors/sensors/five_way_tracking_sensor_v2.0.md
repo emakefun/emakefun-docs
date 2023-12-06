@@ -70,6 +70,10 @@
 
 [点击下载示例程序](five_way_tracking_sensor/line_tracker.zip)
 
+### Mind+图形化
+
+[点击下载Mind+库](five_way_tracking_sensor/emakefun-em_five_tracker-thirdex-V0.0.1.mpext)
+
 ### microbit makecode块
 
 ### microbit micropython支持
