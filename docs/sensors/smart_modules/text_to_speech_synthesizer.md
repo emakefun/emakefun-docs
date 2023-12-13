@@ -14,6 +14,8 @@
 | UTF16LE |
 | UTF8 |
 
+[点击查看芯片手册](tts_module/ttsDataSheet.pdf)
+
 ## 模块参数
 
 | 引脚名称 | 描述 | Arduino Uno

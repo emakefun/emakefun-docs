@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![电机风扇](High power motor module/电机风扇.jpg)
+![电机风扇](highPowerMotorModule/bigMotor.jpg)
 
 ## 概述
 
@@ -12,7 +12,7 @@
 
 ## 原理图
 
-![1](High power motor module/1.png)
+![1](highPowerMotorModule/1.png)
 
 ## 模块参数
 
@@ -29,11 +29,11 @@
 
 ## 详细原理图
 
-![1](High power motor module/1.png)
+![1](highPowerMotorModule/1.png)
 
 ## 机械尺寸
 
-![2](High power motor module/2.png)
+![2](highPowerMotorModule/2.png)
 
 ## 示例程序
 

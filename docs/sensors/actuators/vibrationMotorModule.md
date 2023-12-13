@@ -1,6 +1,6 @@
 ## 振动马达模块
 
-![1](Vibration motor module/1.png)
+![1](vibrationMotorModule/1.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![2](Vibration motor module/2.png)
+![2](vibrationMotorModule/2.png)
 
 ## 模块参数
 
@@ -33,7 +33,7 @@
 
 
 
-![3](Vibration motor module/3.png)
+![3](vibrationMotorModule/3.png)
 
 ## 示例程序
 

@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Motor Module](motorModule/motorModule.png)
+![Motor Module](motor module/Motor Module.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![5](motorModule/5.png)
+![5](motor module/5.png)
 
 ## 模块参数
 
@@ -28,11 +28,11 @@
 
 ## 详细原理图
 
-  [motor.pdf](motorModule/motor.pdf) 
+  [motor.pdf](motor module/motor.pdf) 
 
 ## 机械尺寸
 
-![6](motorModule/6.png)
+![6](motor module/6.png)
 
 ## 示例程序
 

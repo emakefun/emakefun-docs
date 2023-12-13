@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![Buzzer Module](buzzer module/Buzzer Module.png)
+![Buzzer Module](buzzerModule/BuzzerModule.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![2](buzzer module/2.png)
+![2](buzzerModule/2.png)
 
 ## 模块参数
 
@@ -27,13 +27,13 @@
 
 ## 详细原理图
 
- [有源蜂鸣器.pdf](buzzer module/有源蜂鸣器.pdf) 
+ [有源蜂鸣器.pdf](buzzerModule/有源蜂鸣器.pdf) 
 
 ## 机械尺寸
 
 
 
-![15](buzzer module/15.png)
+![15](buzzerModule/15.png)
 
 ## 示例程序
 

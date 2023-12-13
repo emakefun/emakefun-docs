@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![07](Infrared emission Module/Infrared Emission Module.png)
+![07](InfraredEmissionModule/InfraredEmissionModule.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![14](Infrared emission Module/7.png)
+![14](InfraredEmissionModule/7.png)
 
 ## 模块参数
 
@@ -27,8 +27,8 @@
 
 ## 详细原理图
 
- [红外发射.pdf](Infrared emission Module/红外发射.pdf) 
+ [红外发射.pdf](InfraredEmissionModule/红外发射.pdf) 
 
 ## 机械尺寸
 
-![18](Infrared emission Module/5.png)
+![18](InfraredEmissionModule/5.png)

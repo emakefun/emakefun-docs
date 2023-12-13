@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![IR Receiver](IR Receiver/IR Receiver.png)
+![IR Receiver](irReceiver/IRReceiver.png)
 
 ## 概述
 
@@ -10,7 +10,7 @@
 
 ## 原理图
 
-![06](IR Receiver/06.png)
+![06](irReceiver/06.png)
 
 ## 模块参数
 
@@ -27,11 +27,11 @@
 
 ## 详细原理图
 
- [红外接收.pdf](IR Receiver/红外接收.pdf) 
+ [红外接收.pdf](irReceiver/红外接收.pdf) 
 
 ## 机械尺寸
 
-![32](IR Receiver/32.png)
+![32](irReceiver/32.png)
 
 ## Microbit示例程序
 
