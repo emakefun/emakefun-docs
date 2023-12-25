@@ -263,9 +263,9 @@ Micro:Bit是[易创空间](https://www.emakefun.com/) 专门针对Micro:Bit而�
 ## micropython语法
 如果需要支持python语法，需要将固件下载到Micro:Bit
 
-[点击下载Micro:Bit V1最新固件](https://www.emakefun.com/firmware/firmware_v2.hex)
+[点击下载Micro:Bit V1最新固件](sensorbit//firmware_v1.hex)
 
-[点击下载Micro:Bit V2最新固件](https://www.emakefun.com/firmware/firmware_v2.hex)
+[点击下载Micro:Bit V2最新固件](sensorbit//firmware_v2.hex)
 
 - 直流电机控制：
 > dcmotor_run(index, speed)    # index: 1/2/3/4（电机序号）, speed: -255~255 (电机速度)
