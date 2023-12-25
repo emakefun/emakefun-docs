@@ -41,6 +41,7 @@ nav:
         - 摇杆模块: sensors/base_modules/rocker_module.md
         - TTP229触摸矩阵键盘: sensors/base_modules/matrix_keyboard_module.md
         - I2C触摸矩阵键盘v2.0: sensors/base_modules/matrix_keyboard_module_v2.0.md
+        - I2C触摸矩阵键盘v3.0: sensors/base_modules/matrix_keyboard_module_v3.0/README.md
         - PH2.0小手柄: sensors/base_modules/joystick_handle.md
       - 传感器: 
         - 声音传感器: sensors/sensors/sound_sensor.md
