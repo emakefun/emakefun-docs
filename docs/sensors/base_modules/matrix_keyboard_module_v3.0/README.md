@@ -56,6 +56,22 @@ TODO
 
 [点击此处查看示例程序](https://emakefun-arduino-library.github.io/emakefun_matrix_keyboard_v3/get_touched_key_8ino-example.html)
 
+#### Mixly示例程序
+
+ 用Mixly2.0通过云端导入PH2.0 Sensors库，导入成功后，点击EmakefunSensors库，选择基础输入模块，找到
+
+矩阵键盘V3.0块，如下图：
+
+![mixly](./matrix_keyboard_v3.0_mixly.png)
+
+矩阵键盘Mixly案例
+
+![mixly_example](./matrix_keyboard_v3.0_mixly_example.png)
+
+通过连接线连接矩阵键盘的I2C接口，将程序下载到Arduino主板，触摸键盘Arduino串口打印相对应的键盘值。
+
+[点击下载mixly案例](./mixly_example.zip)
+
 ### Micropython
 
 | 支持开发板系列 |
