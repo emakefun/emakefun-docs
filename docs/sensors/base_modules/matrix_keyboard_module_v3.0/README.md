@@ -51,7 +51,7 @@ TODO
 
 [点击此处查看API说明文档](https://emakefun-arduino-library.github.io/emakefun_matrix_keyboard_v3/class_matrix_keyboard.html)
 
-#### 示例程序
+#### Arduino示例程序
 
 [点击此处查看示例程序](https://emakefun-arduino-library.github.io/emakefun_matrix_keyboard_v3/get_touched_key_8ino-example.html)
 
@@ -62,7 +62,7 @@ TODO
 | ESP32 |
 | ESP32S3 |
 
-#### Micropython 库文件
+#### Micropython库文件
 
 | 库文件名 | 链接 |
 | --- | --- |
@@ -71,6 +71,30 @@ TODO
 
 请将以上的库文件上传到板子上
 
-#### Micropython example
+#### Micropython示例程序
 
 示例1：[获取按键值: https://github.com/emakefun-org/micropython_examples/blob/main/matrix_keyboard_v3/main.py](https://github.com/emakefun-org/micropython_examples/blob/main/matrix_keyboard_v3/main.py)
+
+### MakeCode
+
+| 支持开发板系列 |
+| --- |
+| Microbit |
+
+#### MakeCode扩展包
+
+扩展包地址:
+
+```text
+https://github.com/emakefun-makecode-extensions/emakefun_matrix_keyboard_v3
+```
+
+#### MakeCode示例程序
+
+[点击此处查看示例程序](https://makecode.microbit.org/_3hACYz2fgJKd)
+
+示例程序说明：将矩阵键盘和板子I2C接口进行连接，示例程序成功编译运行后，按下键盘上的按键，microbit点阵屏上会显示按键按下的值，如按下"1"，点阵屏会显示"1"，再按下"A"会显示"A"。
+
+**请注意，由于该示例程序中有使用点阵屏显示块，然而Microbit的点阵屏显示块会有500毫秒的阻塞，所以在显示过程中按下新的按键不会马上显示新的值，会有不太灵敏的效果，但是这并不是由矩阵键盘硬件或者软件引起的**
+
+如果将点阵屏显示换成串口输出显示，效果会好很多，[点击查看按键串口显示程序](https://makecode.microbit.org/_3EsMz4hvKXFc)
