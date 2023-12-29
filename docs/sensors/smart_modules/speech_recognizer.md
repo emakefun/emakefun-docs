@@ -165,10 +165,10 @@ TODO
 
 语音识别模块MakeCode用户库链接: <https://github.com/emakefun-makecode-extensions/emakefun_speech_recognizer>
 
-- 自动循环识别 [点击此处链接查看](https://makecode.microbit.org/_ieFfCh9Rs9fh)
-- 按键触发识别 [点击此处链接查看](https://makecode.microbit.org/_7oCgom060Axt)
-- 关键词触发识别 [点击此处链接查看](https://makecode.microbit.org/_HPF8jX1E7CTk)
-- 关键字或者按键触发识别 [点击此处链接查看](https://makecode.microbit.org/_VRbTqFK2TW45)
+- 自动循环识别 [点击此处链接查看](https://makecode.microbit.org/_2gU7MeXsxTL2)
+- 按键触发识别 [点击此处链接查看](https://makecode.microbit.org/_iuqfvwMksiT6)
+- 关键词触发识别 [点击此处链接查看](https://makecode.microbit.org/_DRR8M5ETkVJe)
+- 关键字或者按键触发识别 [点击此处链接查看](https://makecode.microbit.org/_Fv2Rh7VAWW02)
 
 ## 语音识别模块和语音合成模块的综合程序(Arduino)
 
