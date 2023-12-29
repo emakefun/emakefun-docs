@@ -108,10 +108,10 @@ https://github.com/emakefun-makecode-extensions/emakefun_matrix_keyboard_v3
 
 #### MakeCode示例程序
 
-[点击此处查看示例程序](https://makecode.microbit.org/_3hACYz2fgJKd)
+[点击此处查看示例程序](https://makecode.microbit.org/_E4Rdk21MdCzL)
 
 示例程序说明：将矩阵键盘和板子I2C接口进行连接，示例程序成功编译运行后，按下键盘上的按键，microbit点阵屏上会显示按键按下的值，如按下"1"，点阵屏会显示"1"，再按下"A"会显示"A"。
 
 **请注意，由于该示例程序中有使用点阵屏显示块，然而Microbit的点阵屏显示块会有500毫秒的阻塞，所以在显示过程中按下新的按键不会马上显示新的值，会有不太灵敏的效果，但是这并不是由矩阵键盘硬件或者软件引起的**
 
-如果将点阵屏显示换成串口输出显示，效果会好很多，[点击查看按键串口显示程序](https://makecode.microbit.org/_3EsMz4hvKXFc)
+如果将点阵屏显示换成串口输出显示，效果会好很多，[点击查看按键串口显示程序](https://makecode.microbit.org/_54m4wjYdUX6e)
