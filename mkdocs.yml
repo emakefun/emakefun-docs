@@ -73,8 +73,8 @@ nav:
         - 直流电机模块V2: sensors/actuators/motorModelV2.md
         - 继电器模块: sensors/actuators/relayModel.md
         - 激光发射模块: sensors/actuators/laserEmissionModel.md
-        - 振动马达: sensors/actuators/Vibration motor module.md
-        - 大电机风扇模块: sensors/actuators/High power motor module.md
+        - 振动马达: sensors/actuators/vibrationMotorModule.md
+        - 大电机风扇模块: sensors/actuators/highPowerMotorModule.md
         - 声音输出模块: sensors/actuators/bigSpeakerModule.md
         - 舵机扩展模块: sensors/actuators/servoModel.md
         - 双路电机驱动模块: sensors/actuators/highSpeedMiniMotorDriveBoardModel.md
