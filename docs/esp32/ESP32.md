@@ -238,6 +238,16 @@
 
 [点击下载Mixly库PS3手柄](./esp32/esp32_mixly/esp32_emakefun_sensors_mixly.zip)
 
+## Mind+示例程序
+
+1. ### 主板选择
+
+   点击选择FireBeetle ESP32-E主板，如下图
+
+   ![](./esp32/mindplusSelectMainBoard.png)
+
+   [点击下载电机示例程序](./esp32/esp32_mindplus/esp32MindplusMotor.zip)
+
 ## FAQ
 
 **Q**: Mixly下载程序不成功？
