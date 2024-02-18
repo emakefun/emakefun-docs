@@ -137,7 +137,7 @@
 [点击查看](../../examples/example_tts_and_speech_recognizer/example_tts_and_speech_recognizer.md)
 
 ## Micro:Bit扩展库链接
-https://github.com/emakefun-makecode-extensions/emakefun_text_to_speech
+语音识别模块MakeCode用户库链接: <https://github.com/emakefun-makecode-extensions/emakefun_text_to_speech>
 
 ## Micro:Bit示例程序
 
