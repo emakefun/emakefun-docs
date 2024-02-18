@@ -169,6 +169,7 @@ TODO
 - 按键触发识别 [点击此处链接查看](https://makecode.microbit.org/_iuqfvwMksiT6)
 - 关键词触发识别 [点击此处链接查看](https://makecode.microbit.org/_DRR8M5ETkVJe)
 - 关键字或者按键触发识别 [点击此处链接查看](https://makecode.microbit.org/_Fv2Rh7VAWW02)
+- 语音识别和语音合成综合示例 [点击此处链接查看](https://makecode.microbit.org/_5W9gtHP0V96u)
 
 ## 语音识别模块和语音合成模块的综合程序(Arduino)
 
