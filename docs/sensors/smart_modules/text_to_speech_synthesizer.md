@@ -93,6 +93,7 @@
 | Arduino Nano |
 | Arduino Mega 2560 |
 | ESP32 |
+| Micro:Bit |
 
 注意: 以下列出的库包含依赖库，需要全部下载安装，否则无法编译运行。如果已经安装过某些库，使用Arduino IDE再次安装会提示"安装失败，库已经安装"，那么直接忽略该库即可。
 
@@ -134,3 +135,11 @@
 ## 语音识别模块和语音合成模块的综合程序(Arduino)
 
 [点击查看](../../examples/example_tts_and_speech_recognizer/example_tts_and_speech_recognizer.md)
+
+## Micro:Bit扩展库链接
+https://github.com/emakefun-makecode-extensions/emakefun_text_to_speech
+
+## Micro:Bit示例程序
+
+[点击打开Micro:Bit示例](https://makecode.microbit.org/_UF1dX0M0zi4E)
+[点击打开Micro:Bit语音识别和语音合成综合示例](https://makecode.microbit.org/_5W9gtHP0V96u)
