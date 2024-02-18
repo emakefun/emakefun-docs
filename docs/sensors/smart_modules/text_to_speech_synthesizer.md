@@ -142,4 +142,5 @@
 ## Micro:Bit示例程序
 
 [点击打开Micro:Bit示例](https://makecode.microbit.org/_UF1dX0M0zi4E)
+
 [点击打开Micro:Bit语音识别和语音合成综合示例](https://makecode.microbit.org/_5W9gtHP0V96u)
