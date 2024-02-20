@@ -112,8 +112,8 @@ TODO
 
 | Arduino库 | 下载链接 |
 | --- | --- |
-| I2C设备(emakefun i2c device) | [点击此处链接下载](https://github.com/emakefun-arduino-library/emakefun_i2c_device/archive/refs/tags/latest.zip) |
-| 语音识别(emakefun speech recognizer) | [点击此处链接下载](https://github.com/emakefun-arduino-library/emakefun_speech_recognizer/archive/refs/tags/latest.zip) |
+| I2C设备(emakefun i2c device) | [点击此处链接下载](https://521github.com/emakefun-arduino-library/emakefun_i2c_device/archive/refs/tags/latest.zip) |
+| 语音识别(emakefun speech recognizer) | [点击此处链接下载](https://521github.com/emakefun-arduino-library/emakefun_speech_recognizer/archive/refs/tags/latest.zip) |
 
 - [点击此处文档链接查看API说明](https://emakefun-arduino-library.github.io/emakefun_speech_recognizer/classemakefun_1_1_speech_recognizer.html)
 
@@ -169,6 +169,7 @@ TODO
 - 按键触发识别 [点击此处链接查看](https://makecode.microbit.org/_iuqfvwMksiT6)
 - 关键词触发识别 [点击此处链接查看](https://makecode.microbit.org/_DRR8M5ETkVJe)
 - 关键字或者按键触发识别 [点击此处链接查看](https://makecode.microbit.org/_Fv2Rh7VAWW02)
+- 语音识别和语音合成综合示例 [点击此处链接查看](https://makecode.microbit.org/_5W9gtHP0V96u)
 
 ## 语音识别模块和语音合成模块的综合程序(Arduino)
 
