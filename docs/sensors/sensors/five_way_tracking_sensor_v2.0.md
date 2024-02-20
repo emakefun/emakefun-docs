@@ -72,7 +72,9 @@
 
 ### Mind+图形化
 
-[点击下载Mind+库](five_way_tracking_sensor/emakefun-em_five_tracker-thirdex-V0.0.1.mpext)
+[点击下载Mind+库](five_way_tracking_sensor/emakefun-five-tracker-V0.0.1.mpext)
+
+[点击下载Mind+示例程序](five_way_tracking_sensor/five_line_tracker_test.zip)
 
 ### microbit makecode块
 
