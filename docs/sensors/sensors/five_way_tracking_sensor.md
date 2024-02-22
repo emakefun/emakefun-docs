@@ -7,11 +7,12 @@
 ## 硬件参数
 
 - 工作电压：5V
-- 通信方式：IIC 
+- 通信方式：IIC
 - 接口类型：PH2.0-4Pin (G V SDA SCL)
 - 有效高度：0.5cm ~ 4 cm
 
 ## 寄存器地址
+
 | 地址   | 描述                                                                                                          |
 |:-----|:------------------------------------------------------------------------------------------------------------|
 | 0x50 | 模块的 IIC地址                                                                                                   |
@@ -19,8 +20,8 @@
 | 0x01 | 传感器模拟数据的起始地址，使用时请求10字节数据<br>每两字节表示一路输出0~1023（高8位在后，低8位在前）                                                   |
 | 0x02 | 传感器状态位地址，读取一字节数据<br/>     bit0  bit1  bit2  bit3  bit4<br/>     inf1  inf2  inf3  inf4  inf5<br/>分别对用五路循迹状态 |
 
+## 引脚定义
 
-## 引脚定义：
 | 引脚名称 | 描述      |
 |------|---------|
 | V    | 5V电源引脚  |
@@ -29,9 +30,8 @@
 | SCL  | IIC时钟引脚 |
 
 ## 模块尺寸
+
 ![模块尺寸](five_way_tracking_sensor/infraredtracking.png)
-
-
 
 ### arduino函数介绍
 
@@ -49,6 +49,7 @@ uint8_t GetState();
 读取全部数据前需要调用GetRawDat刷新数据
 void GetRawDat();
 ```
+
 ### arduino示例程序
 
 [下载最新库程序](five_way_tracking_sensor/five_way_tracking_sensor.zip)
@@ -112,4 +113,5 @@ void loop() {
 ### microbit makecode块
 
 ### microbit micropython支持
+
 敬请期待。。。。。

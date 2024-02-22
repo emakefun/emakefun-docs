@@ -76,7 +76,11 @@
 
 [点击下载Mind+示例程序](five_way_tracking_sensor/five_line_tracker_test.zip)
 
-### microbit makecode块
+### Microbit示例程序
+
+MakeCode用户库链接: <https://github.com/emakefun-makecode-extensions/emakefun_five_line_tracker>
+
+- 示例程序: 打印0到4路的数字值和模拟值 [点击此处链接查看](https://makecode.microbit.org/_HJogdWHd7LA4)
 
 ### microbit micropython支持
 
