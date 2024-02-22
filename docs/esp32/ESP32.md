@@ -238,6 +238,8 @@
 
 [点击下载Mixly库PS3手柄](./esp32/esp32_mixly/esp32_emakefun_sensors_mixly.zip)
 
+[点击下载PS3手柄Mixly示例](./esp32/esp32_mixly/esp32_ps3_rock_test.zip)
+
 [点击下载PS3手柄 Mind+库](./esp32/esp32_mindplus/emakefun-ps3-V0.0.1.zip)
 
 [点击下载PS3手柄 Mind+示例](./esp32/esp32_mindplus/ps3_test.zip)
