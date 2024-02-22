@@ -68,7 +68,7 @@
 
 ### Mixly图形化块
 
-[点击下载示例程序](five_way_tracking_sensor/line_tracker.zip)
+[点击下载示例程序](five_way_tracking_sensor/five_line_tracker_analog_test.zip)
 
 ### Mind+图形化
 
