@@ -80,7 +80,7 @@
 
 MakeCode用户库链接: <https://github.com/emakefun-makecode-extensions/emakefun_five_line_tracker>
 
-- 示例程序: 打印0到4路的数字值和模拟值 [点击此处链接查看](https://makecode.microbit.org/_HJogdWHd7LA4)
+- 示例程序: 打印传感器每个探头的数字值和模拟值 [点击此处链接查看](https://makecode.microbit.org/_2pgLPc6Ks7gD)
 
 ### microbit micropython支持
 

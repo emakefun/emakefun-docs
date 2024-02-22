@@ -1,118 +1,116 @@
-﻿
 site_name: emakefun文档中心
 site_url: https://emakefun.com
 site_author: emakefun document team
 site_description: 深圳易创空间科技有限公司产品资料文档中心
 copyright: emakefun copyright 2017-2023
-repo_name: 'Github'
+repo_name: "Github"
 repo_url: https://github.com/emakefun/emakefun-docs
 
 theme:
-   name: 'mkdocs'
-   custom_dir: 'custom_theme'
-   language: 'cn'
+  name: "mkdocs"
+  custom_dir: "custom_theme"
+  language: "cn"
 
-   logo: 'url(images/favicon.jpg)'
-   palette:
-     primary: 'Teal'
-     accent: 'Pink'
+  logo: "url(images/favicon.jpg)"
+  palette:
+    primary: "Teal"
+    accent: "Pink"
 
 extra:
   search:
-    language: 'jp'
-
+    language: "jp"
 
 nav:
-    - 首页: index.md
-    - 软件指导: 
+  - 首页: index.md
+  - 软件指导:
       - 软件下载: softwareDownload.md
       - Mixly2.0使用方法: mixly.md
-      # - 驱动安装:
-    - 传感器/配件:
+    # - 驱动安装:
+  - 传感器/配件:
       - 总览: sensors/index.md
       - 基础输入模块:
-        - 按键模块: sensors/base_modules/button_module.md
-        - 触摸模块: sensors/base_modules/touch_module.md
-        - 碰触开关: sensors/base_modules/collision_module.md
-        - 旋转电位器: sensors/base_modules/rotary_potentiometer.md
-        - 旋转编码器: sensors/base_modules/rotary_encoder_module.md
-        - 触摸钢琴: sensors/base_modules/touch_piano.md
-        - 滑动变阻器: sensors/base_modules/slide_potentiometer.md
-        - 摇杆模块: sensors/base_modules/rocker_module.md
-        - TTP229触摸矩阵键盘: sensors/base_modules/matrix_keyboard_module.md
-        - I2C触摸矩阵键盘v2.0: sensors/base_modules/matrix_keyboard_module_v2.0.md
-        - I2C触摸矩阵键盘v3.0: sensors/base_modules/matrix_keyboard_module_v3.0/README.md
-        - PH2.0小手柄: sensors/base_modules/joystick_handle.md
-      - 传感器: 
-        - 声音传感器: sensors/sensors/sound_sensor.md
-        - 光敏传感器: sensors/sensors/photo_sensitive_sensor.md
-        - 热敏传感器: sensors/sensors/thermal_sensor.md
-        - 火焰传感器: sensors/sensors/flame_sensor.md
-        - 土壤湿度传感器: sensors/sensors/soil_moisture_sensor.md
-        - 雨滴传感器: sensors/sensors/water_droplets_sensor.md
-        - 水深传感器: sensors/sensors/water_depth_sensor.md
-        - 温湿度传感器: sensors/sensors/temperature_humidity_sensor.md
-        - 温度DS18B20传感器: sensors/sensors/ds18b20_sensor.md
-        - 气体传感器: sensors/sensors/mq_gas_sensor.md
-        - 人体热释电传感器: sensors/sensors/human_body_sensor.md
-        - 红外循迹模块传感器: sensors/sensors/tracking_sensor.md
-        - 磁簧开关传感器: sensors/sensors/magnetic-switch_sensor.md
-        - 灰度传感器: sensors/sensors/grayscale_sensor.md
-        - 震动传感器: sensors/sensors/shock_sensor.md
-        - 倾斜传感器: sensors/sensors/tilt_switch_sensor.md
-        - 气压传感器: sensors/sensors/atmospheric_pressure_sensor.md
-        - 压力传感器: sensors/sensors/pressure_sensor.md
-        # - 五路循迹传感器: sensors/sensors/five_way_tracking_sensor.md
-        - 五路循迹传感器v2.0: sensors/sensors/five_way_tracking_sensor_v2.0.md
-        - RGB超声波传感器: sensors/sensors/rus_04.md
+          - 按键模块: sensors/base_modules/button_module.md
+          - 触摸模块: sensors/base_modules/touch_module.md
+          - 碰触开关: sensors/base_modules/collision_module.md
+          - 旋转电位器: sensors/base_modules/rotary_potentiometer.md
+          - 旋转编码器: sensors/base_modules/rotary_encoder_module.md
+          - 触摸钢琴: sensors/base_modules/touch_piano.md
+          - 滑动变阻器: sensors/base_modules/slide_potentiometer.md
+          - 摇杆模块: sensors/base_modules/rocker_module.md
+          - TTP229触摸矩阵键盘: sensors/base_modules/matrix_keyboard_module.md
+          - I2C触摸矩阵键盘v2.0: sensors/base_modules/matrix_keyboard_module_v2.0.md
+          - I2C触摸矩阵键盘v3.0: sensors/base_modules/matrix_keyboard_module_v3.0/README.md
+          - PH2.0小手柄: sensors/base_modules/joystick_handle.md
+      - 传感器:
+          - 声音传感器: sensors/sensors/sound_sensor.md
+          - 光敏传感器: sensors/sensors/photo_sensitive_sensor.md
+          - 热敏传感器: sensors/sensors/thermal_sensor.md
+          - 火焰传感器: sensors/sensors/flame_sensor.md
+          - 土壤湿度传感器: sensors/sensors/soil_moisture_sensor.md
+          - 雨滴传感器: sensors/sensors/water_droplets_sensor.md
+          - 水深传感器: sensors/sensors/water_depth_sensor.md
+          - 温湿度传感器: sensors/sensors/temperature_humidity_sensor.md
+          - 温度DS18B20传感器: sensors/sensors/ds18b20_sensor.md
+          - 气体传感器: sensors/sensors/mq_gas_sensor.md
+          - 人体热释电传感器: sensors/sensors/human_body_sensor.md
+          - 红外循迹模块传感器: sensors/sensors/tracking_sensor.md
+          - 磁簧开关传感器: sensors/sensors/magnetic-switch_sensor.md
+          - 灰度传感器: sensors/sensors/grayscale_sensor.md
+          - 震动传感器: sensors/sensors/shock_sensor.md
+          - 倾斜传感器: sensors/sensors/tilt_switch_sensor.md
+          - 气压传感器: sensors/sensors/atmospheric_pressure_sensor.md
+          - 压力传感器: sensors/sensors/pressure_sensor.md
+          # - 五路循迹传感器: sensors/sensors/five_way_tracking_sensor.md
+          - 五路循迹传感器v2.0: sensors/sensors/five_way_tracking_sensor_v2.0.md
+          - RGB超声波传感器: sensors/sensors/rus_04.md
 
-      - 执行器: 
-        - 有源蜂鸣器模块: sensors/actuators/buzzerModel.md
-        - 无源蜂鸣器模块: sensors/actuators/passiveBuzzerModel.md
-        - 直流电机模块: sensors/actuators/motorModel.md
-        - 直流电机模块V2: sensors/actuators/motorModelV2.md
-        - 继电器模块: sensors/actuators/relayModel.md
-        - 激光发射模块: sensors/actuators/laserEmissionModel.md
-        - 振动马达: sensors/actuators/vibrationMotorModule.md
-        - 大电机风扇模块: sensors/actuators/highPowerMotorModule.md
-        - 声音输出模块: sensors/actuators/bigSpeakerModule.md
-        - 舵机扩展模块: sensors/actuators/servoModel.md
-        - 双路电机驱动模块: sensors/actuators/highSpeedMiniMotorDriveBoardModel.md
+      - 执行器:
+          - 有源蜂鸣器模块: sensors/actuators/buzzerModel.md
+          - 无源蜂鸣器模块: sensors/actuators/passiveBuzzerModel.md
+          - 直流电机模块: sensors/actuators/motorModel.md
+          - 直流电机模块V2: sensors/actuators/motorModelV2.md
+          - 继电器模块: sensors/actuators/relayModel.md
+          - 激光发射模块: sensors/actuators/laserEmissionModel.md
+          - 振动马达: sensors/actuators/vibrationMotorModule.md
+          - 大电机风扇模块: sensors/actuators/highPowerMotorModule.md
+          - 声音输出模块: sensors/actuators/bigSpeakerModule.md
+          - 舵机扩展模块: sensors/actuators/servoModel.md
+          - 双路电机驱动模块: sensors/actuators/highSpeedMiniMotorDriveBoardModel.md
         # - 普通红外遥控器模块: sensors/actuators/IRRemoteControlModel.md
-    
-      - 显示器: 
-        - LED灯: sensors/displayers/LED.md
-        - 1602LCD显示屏: sensors/displayers/LCD1602.md
-        - TM1650四位数码管: sensors/displayers/TM1650.md
-        - VK16K33四位数码管: sensors/displayers/4_digit_7_segment_v2.0.md
-        - TM1637四位时钟数码管: sensors/displayers/TM1637.md
-        - 8x8点阵屏: sensors/displayers/8x8LedDisplay.md
-        - 交通灯: sensors/displayers/trafficLights.md
-        - RGB三色灯: sensors/displayers/RGB.md
-        - WS2812B-RGB灯环: sensors/displayers/RGBRing.md
-        - 中文字库OLED（I2C）: sensors/displayers/GT20L16S1Y_OLED.md
+
+      - 显示器:
+          - LED灯: sensors/displayers/LED.md
+          - 1602LCD显示屏: sensors/displayers/LCD1602.md
+          - TM1650四位数码管: sensors/displayers/TM1650.md
+          - VK16K33四位数码管: sensors/displayers/4_digit_7_segment_v2.0.md
+          - TM1637四位时钟数码管: sensors/displayers/TM1637.md
+          - 8x8点阵屏: sensors/displayers/8x8LedDisplay.md
+          - 交通灯: sensors/displayers/trafficLights.md
+          - RGB三色灯: sensors/displayers/RGB.md
+          - WS2812B-RGB灯环: sensors/displayers/RGBRing.md
+          - 中文字库OLED（I2C）: sensors/displayers/GT20L16S1Y_OLED.md
       - 通信模块:
-        - 红外发射模块: sensors/actuators/infraredEmissionModel.md
-        - 红外接收模块: sensors/actuators/irReceiverModel.md
+          - 红外发射模块: sensors/actuators/infraredEmissionModel.md
+          - 红外接收模块: sensors/actuators/irReceiverModel.md
       - 智能模块:
-        - 颜色识别: sensors/smart_modules/color_recognition.md
-        - 指南针传感器: sensors/smart_modules/compass.md
-        - DS1302传感器: sensors/smart_modules/ds1302_rtc.md
-        - MPU6050六轴陀螺仪: sensors/smart_modules/mpu6050/detail.md
-        - 手势传感器: sensors/smart_modules/gesture_recognizer.md
-        - LD3320语音识别模块V2.1: sensors/smart_modules/speech_recognizer.md
-        - MP3播放模块: sensors/smart_modules/MP3.md
-        - MQTT物联网模块: sensors/smart_modules/esp8266_mqtt.md
-        - 语音合成模块: sensors/smart_modules/text_to_speech_synthesizer.md
-        - I2C扩展板模块: sensors/smart_modules/gpio_expansion_board.md
+          - 颜色识别: sensors/smart_modules/color_recognition.md
+          - 指南针传感器: sensors/smart_modules/compass.md
+          - DS1302传感器: sensors/smart_modules/ds1302_rtc.md
+          - MPU6050六轴陀螺仪: sensors/smart_modules/mpu6050/detail.md
+          - 手势传感器: sensors/smart_modules/gesture_recognizer.md
+          - LD3320语音识别模块V2.1: sensors/smart_modules/speech_recognizer.md
+          - MP3播放模块: sensors/smart_modules/MP3.md
+          - MQTT物联网模块: sensors/smart_modules/esp8266_mqtt.md
+          - 语音合成模块: sensors/smart_modules/text_to_speech_synthesizer.md
+          - I2C扩展板模块: sensors/smart_modules/gpio_expansion_board.md
 
-      - 电源模块: 
-        - 3.7V升压充电模块: sensors/power_module/3.7v_battery_module.md
-        - 7.4V充电电池模块: sensors/power_module/16340_2s_li_battery_module.md
-        - 双节18650锂电池充电模块: sensors/power_module/18650_2s_li_battery_module.md
+      - 电源模块:
+          - 3.7V升压充电模块: sensors/power_module/3.7v_battery_module.md
+          - 7.4V充电电池模块: sensors/power_module/16340_2s_li_battery_module.md
+          - 双节18650锂电池充电模块: sensors/power_module/18650_2s_li_battery_module.md
 
-      #- 配件: micro_bit/IObit.md
-    - Micro:bit产品:
+    #- 配件: micro_bit/IObit.md
+  - Micro:bit产品:
       - Micro:bit主板介绍: micro_bit/microbit.md
       - Micro:bit编程介绍: micro_bit/microbit_code.md
       - IO:bit: micro_bit/IObit.md
@@ -122,7 +120,7 @@ nav:
       - Magic:bit四合一小车: micro_bit/FourInOneCar.md
       - Magic:bit麦轮小车: micro_bit/WheatwheelCar.md
       - Joysitck:Bit: micro_bit/joystickbit.md
-    - Arduino产品: 
+  - Arduino产品:
       - Arduino Uno主板介绍: arduino/ArduinoIntroduce.md
       - Arduino Nano主板介绍: arduino/ArduinoNanoIntroduce.md
       - PH2.0传感器扩展板: arduino/SensorKit.md
@@ -131,18 +129,18 @@ nav:
       - Happybot: arduino/Happybot.md
       - MirageTank: arduino/MirageTank.md
       - PantherTank: arduino/PantherTank.md
-    - 树莓派: 
+  - 树莓派:
       - 树莓派传感器扩展板: raspberrypi/RaspberryPi-Sensor-Board/README_zh.md
       - 树莓派电机驱动板: raspberrypi/RaspberryPi-MotorDriverBoard/README.md
-    - ESP32产品:
+  - ESP32产品:
       - maker-esp32: esp32/ESP32.md
-    - 开源硬件: 
+  - 开源硬件:
       - ble-nano: open_source_hardware/ble-nano/ble_nano.md
       - ble-uno: open_source_hardware/Ble-Uno.md
       - maker-uno: open_source_hardware/maker-uno/README_ZH.md
       - rf-nano: open_source_hardware/rf-nano_v3_0.md
       - MotorDriverBoard: open_source_hardware/MotorDriverBoard.md
-    - 软件: 
+  - 软件:
       - MagicBlock: open_source_software/magicblock.md
       - EmakefunApp: open_source_software/EmakefunApp.md
-    - 关于我们: about.md
+  - 关于我们: about.md
