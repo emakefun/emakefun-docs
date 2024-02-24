@@ -66,6 +66,12 @@
 
 [点击下载米思齐程序](gesture_recognizer/gesture_recognizer_8_8_matrix_mixly.zip)
 
+## Microbit MakeCode示例程序
+
+MakeCode用户库链接: <https://github.com/emakefun-makecode-extensions/emakefun_gesture_recognizer>
+
+- 示例程序: 识别手势并显示图标和串口打印 [点击此处链接查看](https://makecode.microbit.org/_8wKYfX8z6KJA)
+
 ## 产品购买链接
 
 - [点击此处跳转到产品淘宝链接](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-21556097795.18.6e82cf7fTuvA6J&id=726583339665)
