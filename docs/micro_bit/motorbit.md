@@ -312,6 +312,16 @@ motorbit.servo(1, 90, speed=5)
 1. [红外遥控器控制麦轮小车](https://makecode.microbit.org/_iX6Toq4saVHL)
 2. JOYSTICKBIT手柄无线控制麦轮小车    [手柄程序](https://makecode.microbit.org/_bVj0r32qUaVo)   [麦轮小车程序](https://makecode.microbit.org/_5CzePW2wTTm8)
 
+
+
+### Motorbit独立micropython库支持
+
+ [**点击下载motorbit microbit micropython库**](./motorbit/motorbit_microbit_micropython_library.zip) 
+
+### Motorbit也支持掌控板（ESP32) micropython库支持
+
+ [**点击下载moborbit esp32 micropython库**](./motorbit/moborbit_esp32_micropython_library.zip) 
+
 # FAQ:
 1. 电机/风扇/水泵不动需要怎么解决？
 
