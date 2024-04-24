@@ -108,6 +108,8 @@ ESP32 IOT是基于乐鑫科技的 [ESP32-WROOM-32](https://www.espressif.com/sit
 
 ![up_esp32](./pictures/up_esp32.png)
 
+![1713923885399](pictures\1713923885399.png)
+
 将写好程序点击上传按钮，等待程序上传成功，如下图。
 
 ![download](./pictures/download.png)
@@ -120,7 +122,7 @@ ESP32 IOT是基于乐鑫科技的 [ESP32-WROOM-32](https://www.espressif.com/sit
 
 ### Mixly使用(以Mixly2.0为例)
 
-#### **注：**Mixly的版本必须选择2.0 RC4版本，米思齐的安装包的路径不要有中文、空格等非法字符，安装路径不要太长，最好放在某个盘符的第一层下面。比如：D：/mixly
+**注：Mixly的版本必须选择2.0 RC4版本，米思齐的安装包的路径不要有中文、空格等非法字符，安装路径不要太长，最好放在某个盘符的第一层下面。比如：D：/mixly**
 
 #### 	1.板卡选择
 
