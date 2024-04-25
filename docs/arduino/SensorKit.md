@@ -16,20 +16,20 @@ PH2.0 Sensor Board V3.0 是一套为 Arduino Uno R3主板设计的全部PH2.0**�
 
 - 引脚口类型：PH2.0 接口 
 
-  ![sensorkit](sensorkit\sensorkit.png)
+  ![sensorkit](sensorkit/sensorkit.png)
 
 ### 2. 引脚介绍
 
-该扩展板包含八个 3pin 接口、四个 4pin 接口、三个 5pin 接口、一个 6pin 接口，两个舵机接口，一个UART接口，一个超声波接口，一个SPI通信接口。
+该扩展板包含八个 3pin 接口、四个 4pin 接口、三个 5pin 接口、一个 6pin 接口，两个舵机接口，一个UART接口，二个I2C接口，一个SPI通信接口。
 
-![sensorkit2](sensorkit\sensorkit2.png)
+![sensorkit2](sensorkit/sensorkit2.png)
 
 - 8个3pin 接口, P1、P2、P3、P4、P9、P10、P11、P12; 分别为对应Arduino的A3、A2、A1、A0、3、4、11、2。
 - 4个4pin 接口, P5, P6, P7, P8; 分别为7和A0, 8和A1, 13和12, 6和5。
 - 3个5pin 接口, P14, P15, P16。分别为7、A1和A0,   11、10和9，  11、2和3。
 - 1个6pin 接口, P13。分别为10、9、6和5。
-- **1个超声波接口, 对应Arduino的D4、D2。**
 - 2个舵机接口，对应Arduino的4、12.
+- 2个4pin I2C接口。对应A5、A4.
 - 1个UART接口。
 - 1个SPI接口。
 
@@ -45,27 +45,25 @@ PH2.0 Motor Sensor Board是在兼容PH2.0 Sensor Board扩展板的基础上增�
 - 输出电压：5V
 - 引脚口类型：PH2.0 接口 
 
-![Motor ](sensorkit\Motor .png)
+![Motor ](sensorkit/Motor .png)
 
 ### 2.引脚介绍
 
-该驱动板包含八个 3pin 接口、四个 4pin 接口、三个 5pin 接口、一个 6pin 接口，二个电机接口，四个I2C接口，一个UART接口，一个SPI通信接口，16个IO口插针引脚。
+该驱动板包含八个 3pin 接口、四个 4pin 接口、三个 5pin 接口、一个 6pin 接口，二个电机接口，四个I2C接口，一个UART接口，一个NRF24L01+接口，16个IO口插针引脚。
 
-![Motor 2](sensorkit\Motor 2.png)
+![Motor 2](sensorkit/Motor 2.png)
 
 - 8个3pin 接口, P1、P2、P3、P4、P9、P10、P11、P12。 分别为对应Arduino的A3、A2、A1、A0、3、4、11、2。
 - 4个4pin 接口, P5, P6, P7, P8。分别为6和5, 13和12,8和A1, 7和A0。
 - 3个5pin 接口, P14, P15, P16。分别为7、A1和A0,   11、10和9，  11、2和3。
 - 1个6pin 接口, P13。分别为10、9、6和5。
-- **1个超声波接口, 对应Arduino的D4、D2。**
+- 2个直流电机接口。M1对应5和6，M2对应9和10.
 - 2个4pin I2C接口，2个插针I2C接口。对应A5、A4
 - 1个UART接口。
 - 1个SPI接口。
 - 16个IO口插针引脚
 
 ## 三：参数对比
-
-**为什么有了PH2.0 Sensor Board还要设计PH2.0 Motor Sensor Boar？**
 
 | **产品名称**   | PH2.0 Sensor Board                    | PH2.0 Motor Sensor Board              |
 | -------------- | ------------------------------------- | ------------------------------------- |
@@ -80,7 +78,7 @@ PH2.0 Motor Sensor Board是在兼容PH2.0 Sensor Board扩展板的基础上增�
 
 ### 1.相同之处
 
-![1713968719225](sensorkit\1713968719225.png)
+![1713968719225](sensorkit/1713968719225.png)
 
 ### 2.不同之处
 
@@ -96,12 +94,12 @@ PH2.0 Motor Sensor Board是在兼容PH2.0 Sensor Board扩展板的基础上增�
 
 ####  1.当使用大于5V的电机时，跳线帽短接VIN
 
-![1713968938017](sensorkit\1713968938017.png)
+![1713968938017](sensorkit/1713968938017.png)
 
 #### 2.当使用电机5V时，跳线帽短接5V
 
-![1713968975433](sensorkit\1713968975433.png)
+![1713968975433](sensorkit/1713968975433.png)
 
 #### 3.驱动扩展板与Arduino uno R3主板安装动态图
 
-![O1C](sensorkit\O1C.gif)
+![O1C](sensorkit/O1C.gif)
