@@ -25,6 +25,7 @@ nav:
   - 软件指导:
       - 软件下载: softwareDownload.md
       - Mixly2.0使用方法: mixly.md
+      - Thonny使用方法: thonny/thonny.md
     # - 驱动安装:
   - 传感器/配件:
       - 总览: sensors/index.md
