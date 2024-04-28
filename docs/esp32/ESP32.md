@@ -253,6 +253,8 @@
    ![](./esp32/mindplusSelectMainBoard.png)
 
    [点击下载电机示例程序](./esp32/esp32_mindplus/esp32MindplusMotor.zip)
+   
+   [点击下载Mind+库文件](.esp32/esp32_mindplus/eamkefun-em_maker_esp32-thirdex-V0.0.1.mpext)
 
 ## FAQ
 
