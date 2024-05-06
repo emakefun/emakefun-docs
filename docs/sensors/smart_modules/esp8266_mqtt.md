@@ -39,190 +39,169 @@
 | 序号 | 指令 | 描述 |详情|
 | --------| -------- | ------------ |------------ |
 | 1 | AT+MQTTUSERCFG | 配置 MQTT 用户属性 | [查看详情](#AT+MQTTUSERCFG - 配置 MQTT 用户属性) |
-| 2       | AT+MQTTCLIENTID |配置 MQTT 客户端 ID|[查看详情](#AT+MQTTCLIENTID - 配置 MQTT 客户端 ID) |
-| 3       | AT+MQTTUSERNAME |配置 MQTT 登录用户名|[查看详情](#AT+MQTTUSERNAME - 配置 MQTT 登录用户名) |
-| 4       | AT+MQTTPASSWORD |配置 MQTT 登录密码|[查看详情](#AT+MQTTPASSWORD - 配置 MQTT 登录密码)|
-| 5       | AT+MQTTCONNCFG  |配置 MQTT 连接属性|[查看详情](# AT+MQTTCONNCFG - 配置 MQTT 连接属性)|
-| 6      | AT+MQTTCONN |连接指定 MQTT broker|[查看详情](#AT+MQTTCONN)|
-| 7     | AT+MQTTCONN? |查询 AT 已连接的 MQTT broker|[查看详情](#AT+MQTTCONN?)|
-| 7      | AT+ALIYUN_MQTTCONN? |连接指定的阿里云MQTT broker|[查看详情](#AT+ALIYUN_MQTTCONN?)|
-| 8     | AT+MQTTPUB |在 LinkID上通过 topic 发布数据 data，<br>data 为字符串消息|[查看详情](#AT+MQTTPUB)|
-| 9     | AT+MQTTPUBRAW |在 LinkID 上通过 topic 发布数据 data，<br> data 为二进制数据|[查看详情](#AT+MQTTPUBRAW)|
-| 10    | AT+MQTTSUB |订阅指定连接的 MQTT 主题, 可重复多次<br>订阅不同 topic|[查看详情](#AT+MQTTSUB)|
-| 11    | AT+MQTTSUB? |查询 MQTT 所有连接上已订阅的 topic|[查看详情](#AT+MQTTSUB?)|
-| 12     | AT+MQTTUNSUB |取消订阅指定连接的 MQTT 主题, 可多次<br>取消不同订阅 topic|[查看详情](#AT+MQTTUNSUB)|
-|13     | AT+MQTTCLEAN |关闭 MQTT Client 为 LinkID 的连接, 并释<br>放内部占用的资源|[查看详情](#AT+MQTTCLEAN)|
+| 2      | AT+MQTTCONNCFG  |配置 MQTT 连接属性|[查看详情](# AT+MQTTCONNCFG - 配置 MQTT 连接属性)|
+| 3     | AT+MQTTCONN |连接指定 MQTT broker|[查看详情](#AT+MQTTCONN)|
+| 4    | AT+MQTTCONN? |查询 AT 已连接的 MQTT broker|[查看详情](#AT+MQTTCONN?)|
+| 5     | AT+ALIYUN_MQTTCONN? |连接指定的阿里云MQTT broker|[查看详情](#AT+ALIYUN_MQTTCONN?)|
+| 6    | AT+MQTTPUB |在 LinkID上通过 topic 发布数据 data，<br>data 为字符串消息|[查看详情](#AT+MQTTPUB)|
+| 7    | AT+MQTTPUBRAW |在 LinkID 上通过 topic 发布数据 data，<br> data 为二进制数据|[查看详情](#AT+MQTTPUBRAW)|
+| 8   | AT+MQTTSUB |订阅指定连接的 MQTT 主题, 可重复多次<br>订阅不同 topic|[查看详情](#AT+MQTTSUB)|
+| 9   | AT+MQTTSUB? |查询 MQTT 所有连接上已订阅的 topic|[查看详情](#AT+MQTTSUB?)|
+| 10   | AT+MQTTUNSUB |取消订阅指定连接的 MQTT 主题, 可多次<br>取消不同订阅 topic|[查看详情](#AT+MQTTUNSUB)|
+|11     | AT+MQTTCLEAN |关闭 MQTT Client 为 LinkID 的连接, 并释<br>放内部占用的资源|[查看详情](#AT+MQTTCLEAN)|
 
 
 
 
 ### AT+MQTTUSERCFG - 配置 MQTT 用户属性
 
-设置指令:
-AT+MQTTUSERCFG=<LinkID>,<scheme>,<"client_id">,<"username">,<"password">,<cert_key_ID>,<CA_ID>,<"path">
+设置指令:AT+MQTTUSERCFG=<LinkID>,<scheme>,<"client_id">,<"username">,<"password">,<cert_key_ID>,<CA_ID>,<"path">
 
-功能:
-设置 MQTT 用户配置
+功能:设置 MQTT 用户配置
 
-响应:
-
-OK或ERROR
+响应:OK或ERROR
 
 参数说明:
 
-LinkID: 当前只支持 0
-scheme:
-- 1: MQTT over TCP
-- 2: MQTT over TLS(no certificate verify)
-- 3: MQTT over TLS(verify server certificate)
-- 4: MQTT over TLS(provide client certificate)
-- 5: MQTT over TLS(verify server certificate and provide client certificate)
-- 6: MQTT over WebSocket(based on TCP)
-- 7: MQTT over WebSocket Secure(based on TLS, no certificate verify)
-- 8: MQTT over WebSocket Secure(based on TLS, verify server certificate)
-- 9: MQTT over WebSocket Secure(based on TLS, provide client certificate)
-- 10: MQTT over WebSocket Secure(based on TLS, verify server certificate and provide client certificate)
 - client_id: 对应 MQTT client ID, 用于标志 client 身份, 最长 256 字节
-- username: 用于登录 MQTT broker 的 username, 最长 64 字节
-- password: 用于登录 MQTT broker 的 password, 最长 64 字节
+
+- username: 用于登录 MQTT broker 的 用户名, 最长 64 字节
+
+- password: 用于登录 MQTT broker 的 密码, 最长 64 字节
+
 - cert_key_ID: 证书 ID, 目前支持一套 cert 证书, 参数为 0
+
 - CA_ID: CA ID, 目前支持一套 CA 证书, 参数为 0
+
 - path: 资源路径, 最长 32 字节
 
-### AT+MQTTCLIENTID - 配置 MQTT 客户端 ID
-设置指令:
-
-AT+MQTTCLIENTID=<LinkID><"client_id">
-
-功能:
-设置 MQTT 客户端 ID, 将会覆盖 AT+MQTTUSERCFG 中 clientID 参数,
-用户可通过 AT+MQTTCLIENTID 设置较长的 clientID.
-
-响应:
-
-OK或ERROR
-
-参数说明:
-
 - LinkID: 当前只支持 0
-- client_id: 对应 MQTT client ID, 用于标志 client 身份, 最长 256 字节
 
-### AT+MQTTUSERNAME - 配置 MQTT 登录用户名
-设置指令:
+  **举例：**AT+MQTTUSERCFG=0,1,"ESP8266","emakefun","1234567890",0,0,""
 
-AT+MQTTUSERNAME=<LinkID><"username">
+  **解析：**“ESP8266”是对应主板的名称——<"client_id">
 
-功能:
-设置 MQTT 登录用户名, 将会覆盖 AT+MQTTUSERCFG 中 username 参数,
-用户可通过 AT+MQTTUSERNAME 设置较长的用户名.
+  ​			“emakefun”是用户名——<"username">
 
-响应:
+  ​			“1234567890”是用户密码——<"password">
 
-OK或ERROR
+  ​			“0”默认的——<cert_key_ID>
 
-参数说明:
+  ​			“0”默认的——<CA_ID>
 
-LinkID: 当前只支持 0
-username: 对应 MQTT username, 用于登录 MQTT broker, 最长 256 字节
-
-### AT+MQTTPASSWORD - 配置 MQTT 登录密码
-设置指令:
-
-AT+MQTTPASSWORD=<LinkID><"password">
-
-功能:
-设置 MQTT 登录密码, 将会覆盖 AT+MQTTUSERCFG 中 password 参数,
-用户可通过 AT+MQTTPASSWORD 设置较长的密码.
-
-响应:
-
-OK或ERROR
-
-参数说明:
-
-LinkID: 当前只支持 0
-password: 对应 MQTT password, 用于登录 MQTT broker, 最长 256 字节
+  ​			“ ”中间是路径——<"path">
 
 ### AT+MQTTCONNCFG - 配置 MQTT 连接属性
-设置指令:
+设置指令:AT+MQTTCONNCFG=<LinkID>,<keepalive>,<disable_clean_session>,<"lwt_topic">,<"lwt_msg">,<lwt_qos>,<lwt_retain>
 
-AT+MQTTCONNCFG=<LinkID>,<keepalive>,<disable_clean_session>,<"lwt_topic">,<"lwt_msg">,<lwt_qos>,<lwt_retain>
+功能:设置 MQTT 连接配置
 
-功能:
-设置 MQTT 连接配置
-
-响应:
-
-OK或ERROR
+响应:OK或ERROR
 
 参数说明:
 
 - LinkID: 当前只支持 0
+
 - keepalive: MQTT PING 超时时间,范围为 [60, 7200], 单位为秒. 默认 120
+
 - disable_clean_session: MQTT 清理会话标志, 参数为 0 或 1, 默认为 0
+
 - lwt_topic: 遗嘱 topic, 最长 64 字节
+
 - lwt_msg: 遗嘱 message, 最长 64 字节
+
 - lwt_qos: 遗嘱 QoS, 参数可选 0, 1, 2, 默认为 0
+
 - lwt_retain: 遗嘱 retain, 参数可选 0, 1, 默认为 0
 
-### AT+MQTTCONN
-设置指令:
+  **举例：**AT+MQTTCONNCFG=0,120,0,topic,msg,0,0
 
-AT+MQTTCONN=<LinkID>,<"host">,<port>,<reconnect>
+  **解析：**120 超时时间，范围60-7200——<keepalive>
 
-功能:
-连接指定 MQTT broker
+  ​			0  MQTT 清理会话——<disable_clean_session>
 
-响应:
+  ​			topic 主题——<"lwt_topic">
 
-OK或ERROR
+  ​			msg 内容——<"lwt_msg">
 
-查询指令:
+### AT+MQTTCONN - 连接服务器的IP地址
+设置指令:AT+MQTTCONN=<LinkID>,<"host">,<port>,<reconnect>
 
-### AT+MQTTCONN?
+功能:连接指定 MQTT broker
 
-功能:
-查询 AT 已连接的 MQTT broker
+响应:OK或ERROR
 
-响应:
+**举例：**AT+MQTTCONN=0,"47.111.117.220",1883,0 
 
-AT+MQTTCONN:<LinkID>,<state>,<scheme><"host">,<port>,<"path">,<reconnect>
+**解析：**"47.111.117.220"  MQTT域名，IP地址——<"host">
+
+​			1883  MQTT端口，一般情况下默认1833——<port>
+
+​			0  代表不重连MQTT，1 会一直重连——<reconnect>
+
+### AT+MQTTCONN? - 查询连接状态
+
+功能:查询 AT 已连接的 MQTT broker
+
+设置指令:AT+MQTTCONN=<LinkID>,<state>,<scheme><"host">,<port>,<"path">,<reconnect>
 
 参数说明:
 
 - LinkID: 当前只支持 0
+
 - host: 连接 MQTT broker 域名, 最大 128 字节
+
 - port: 连接 MQTT broker 端口, 最大 65535
+
 - path: 资源路径, 最长 32 字节
+
 - reconnect: 是否重连 MQTT, 若设置为 1, 需要消耗较多内存资源
+
 - state: MQTT 当前状态, 状态说明如下:
-- 0: 连接未初始化
-- 1: 已设置 MQTTUSERCFG
-- 2: 已设置 MQTTCONNCFG
-- 3: 连接已断开
-- 4: 已建立连接
-- 5: 已连接, 但未订阅 topic
-- 6: 已连接, 已订阅过 topic
-scheme:
-- 1: MQTT over TCP
-- 2: MQTT over TLS(no certificate verify)
-- 3: MQTT over TLS(verify server certificate)
-- 4: MQTT over TLS(provide client certificate)
-- 5: MQTT over TLS(verify server certificate and provide client certificate)
-- 6: MQTT over WebSocket(based on TCP)
-- 7: MQTT over WebSocket Secure(based on TLS, no certificate verify)
-- 8: MQTT over WebSocket Secure(based on TLS, verify server certificate)
-- 9: MQTT over WebSocket Secure(based on TLS, provide client certificate)
-- 10: MQTT over WebSocket Secure(based on TLS, verify server certificate and provide client certificate)
+
+   	0: 连接未初始化
+
+   	1: 已设置 MQTTUSERCFG
+
+   	2: 已设置 MQTTCONNCFG
+
+   	3: 连接已断开
+
+   	4: 已建立连接
+
+   	5: 已连接, 但未订阅 topic
+
+   	6: 已连接, 已订阅过 topic
+
+  scheme:
+
+   	1: MQTT over TCP
+
+   	2: MQTT over TLS(no certificate verify)  无验证
+
+   	3: MQTT over TLS(verify server certificate)  验证服务器证书
+
+   	4: MQTT over TLS(provide client certificate)  提供客户端证书
+
+   	5: MQTT over TLS(verify server certificate and provide client certificate)  验证服务器证书，提供客户端证书
+
+   	6: MQTT over WebSocket(based on TCP)  基于TCP
+
+   	7: MQTT over WebSocket Secure(based on TLS, no certificate verify)  基于TLS，没有证书验证
+
+   	8: MQTT over WebSocket Secure(based on TLS, verify server certificate)  基于TLS，验证服务器证书
+
+   	9: MQTT over WebSocket Secure(based on TLS, provide client certificate)  基于TLS，提供客户端证书
+
+   	10: MQTT over WebSocket Secure(based on TLS, verify server certificate and provide client certificate)  基于TLS，验证服务器证书并提供客户端证书
+
+  **举例：**AT+MQTTCONN=0,2,2,"47.111.117.220",1883,"",0
 
 ### AT+ALIYUN_MQTTCONN?
 
-设置指令:
+设置指令:AT+ALIYUN_MQTTCONN=<"host">,<port>,<"ProductKey">,<"DeviceName">,<"DeviceSecret">
 
-AT+ALIYUN_MQTTCONN=<"host">,<port>,<"ProductKey">,<"DeviceName">,<"DeviceSecret">
-
-功能:
-连接指定的阿里云MQTT broker
+功能:连接指定的阿里云MQTT broker
 
 参数说明:
 
@@ -232,73 +211,61 @@ AT+ALIYUN_MQTTCONN=<"host">,<port>,<"ProductKey">,<"DeviceName">,<"DeviceSecret"
 - DeviceName: 设备在产品内的唯一标识符。DeviceName与设备所属产品的ProductKey组合，作为设备标识，用来与物联网平台进行连接认证和通信。
 - DeviceSecret: 物联网平台为设备颁发的设备密钥，用于认证加密。需与DeviceName成对使用。
 
-响应:
+响应:OK或ERROR
 
-OK或ERROR
+**举例：**AT+MQTTCONN=0,"192.168.1.17",1883,0
 
 
 ### AT+MQTTPUB
-设置指令:
+设置指令:AT+MQTTPUB=<LinkID>,<"topic">,<"data">,<qos>,<retain>
 
-AT+MQTTPUB=<LinkID>,<"topic">,<"data">,<qos>,<retain>
+功能:在 LinkID上通过 topic 发布数据 data, 其中 data 为字符串消息, 若要发布二进制,请使用 AT+MQTTPUBRAW
 
-功能:
-在 LinkID上通过 topic 发布数据 data, 其中 data 为字符串消息, 若要发布二进制,请使用 AT+MQTTPUBRAW
-
-响应:
-
-OK或ERROR
+响应:OK或ERROR
 
 参数说明:
 
 - LinkID: 当前只支持 0
+
 - topic: 发布主题, 最长 64 字节
+
 - data: 发布消息, data 不能包含 \0, 请确保整条 AT+MQTTPUB 不超过 AT 指令的最大长度限制
+
 - qos: 发布服务质量, 参数可选 0,1,2, 默认为 0
+
 - retain: 发布 retain
+
+  **举例：**AT+MQTTPUB=0,"topic","test",0,retain
 
 ### AT+MQTTPUBRAW
-设置指令:
+设置指令:AT+MQTTPUBRAW=<LinkID>,<"topic">,<length>,<qos>,<retain>
 
-AT+MQTTPUBRAW=<LinkID>,<"topic">,<length>,<qos>,<retain>
+功能:在 LinkID 上通过 topic 发布数据 data, 其中 data 为二进制数据
 
-功能:
-在 LinkID 上通过 topic 发布数据 data, 其中 data 为二进制数据
-
-响应:
-
-OK或ERROR
-
-等待用户输入 length 大小数据, 之后响应如下:
-
-+MQTTPUB:FAIL
-
-或
-
-+MQTTPUB:OK
+响应:OK或ERROR，等待用户输入 length 大小数据, 之后响应如下:+MQTTPUB:FAIL或+MQTTPUB:OK
 
 参数说明:
 
 - LinkID: 当前只支持 0
+
 - topic: 发布主题, 最长 64 字节
+
 - length: 要发布消息长度, 长度受限于当前可用内存
+
 - qos: 发布服务质量, 参数可选 0,1,2, 默认为 0
+
 - retain: 发布 retain
+
 - AT port 未收到指定 length 长度的数据, 将一直等待, 在此期间接收到的数据都会当成普通数据
 
+  **举例：**AT+MQTTPUBRAW=0,"topic",2,0,retain
+
 ### AT+MQTTSUB
-设置指令:
+设置指令:AT+MQTTSUB=<LinkID>,<"topic">,<qos>
 
-AT+MQTTSUB=<LinkID>,<"topic">,<qos>
+功能:订阅指定连接的 MQTT 主题, 可重复多次订阅不同 topic
 
-功能:
-订阅指定连接的 MQTT 主题, 可重复多次订阅不同 topic
-
-响应:
-
-OK或ERROR
-
-当收到对应主题订阅的 MQTT 消息时, 将按照如下格式打印消息内容
+响应:OK或ERROR，当收到对应主题订阅的 MQTT 消息时, 将按照如下格式打印消息内容
 
 +MQTTSUBRECV:<LinkID>,<"topic">,<data_length>,data
 
@@ -306,10 +273,11 @@ OK或ERROR
 
 查询指令:
 
+**举例：**AT+MQTTSUB=0,"topic",0
+
 ### AT+MQTTSUB?
 
-### 功能:
-查询 MQTT 所有连接上已订阅的 topic
+功能:查询 MQTT 所有连接上已订阅的 topic
 
 响应:
 
@@ -340,38 +308,33 @@ OK或ERROR
 - qos: 订阅过的 QoS
 
 ### AT+MQTTUNSUB
-设置指令:
+设置指令:AT+MQTTUNSUB=<LinkID>,<"topic">
 
-AT+MQTTUNSUB=<LinkID>,<"topic">
+功能:取消订阅指定连接的 MQTT 主题, 可多次取消不同订阅 topic
 
-功能:
-取消订阅指定连接的 MQTT 主题, 可多次取消不同订阅 topic
-
-响应:
-
-OK或ERROR
+响应:OK或ERROR
 
 参数说明:
 
 - LinkID: 当前只支持 0
+
 - topic: 取消订阅主题, 最长 64 字节
-如果取消未订阅的主题, 仍无条件向 MQTT broker 取消订阅, Log 口打印 NO UNSUBSCRIBE
+  如果取消未订阅的主题, 仍无条件向 MQTT broker 取消订阅, Log 口打印 NO UNSUBSCRIBE
+
+  举例：AT+MQTTUNSUB=0,"topic"
 
 ### AT+MQTTCLEAN
-设置指令:
+设置指令:AT+MQTTCLEAN=<LinkID>
 
-AT+MQTTCLEAN=<LinkID>
+功能:关闭 MQTT Client 为 LinkID 的连接, 并释放内部占用的资源
 
-功能:
-关闭 MQTT Client 为 LinkID 的连接, 并释放内部占用的资源
-
-响应:
-
-OK或者ERROR
+响应:OK或者ERROR
 
 参数说明:
 
 LinkID: 当前只支持 0
+
+**举例：**AT+MQTTCLEAN=0
 
 ##  arduino 应用场景
 
