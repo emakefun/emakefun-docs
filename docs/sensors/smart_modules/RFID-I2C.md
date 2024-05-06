@@ -26,8 +26,6 @@ RFID 的应用非常广泛，目前典型应用有动物晶片、汽车晶片防
 
 RFID模块接在拓展板I2C端口上。
 
-**接线端口可自行更改，只需注意编程时调节端口，本教程全按照示例接口进行。**
-
 ![all](RFID-I2C/all.png)
 
 ## 1.3 在线运行代码
@@ -83,7 +81,7 @@ void loop() {
 ```
 ### 1.3.3.在Mind+中运行
 
-打开Mind+软件，选择Arduino UNO 主板型号，点击右上角的用户库。[Mind+示例程序下载](./RFID-I2C/Mind+/Mind+.zip)
+打开Mind+软件，选择Arduino UNO 主板型号，点击右上角的用户库。[Mind+示例程序以及库文件下载](./RFID-I2C/Mind+/Mind+.zip)
 
 ![Mind+](RFID-I2C/Mind+.gif)
 
