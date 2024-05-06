@@ -41,14 +41,13 @@
 | 1 | AT+MQTTUSERCFG | 配置 MQTT 用户属性 | [查看详情](#AT+MQTTUSERCFG - 配置 MQTT 用户属性) |
 | 2      | AT+MQTTCONNCFG  |配置 MQTT 连接属性|[查看详情](# AT+MQTTCONNCFG - 配置 MQTT 连接属性)|
 | 3     | AT+MQTTCONN |连接指定 MQTT broker|[查看详情](#AT+MQTTCONN)|
-| 4    | AT+MQTTCONN? |查询 AT 已连接的 MQTT broker|[查看详情](#AT+MQTTCONN?)|
-| 5     | AT+ALIYUN_MQTTCONN? |连接指定的阿里云MQTT broker|[查看详情](#AT+ALIYUN_MQTTCONN?)|
-| 6    | AT+MQTTPUB |在 LinkID上通过 topic 发布数据 data，<br>data 为字符串消息|[查看详情](#AT+MQTTPUB)|
-| 7    | AT+MQTTPUBRAW |在 LinkID 上通过 topic 发布数据 data，<br> data 为二进制数据|[查看详情](#AT+MQTTPUBRAW)|
-| 8   | AT+MQTTSUB |订阅指定连接的 MQTT 主题, 可重复多次<br>订阅不同 topic|[查看详情](#AT+MQTTSUB)|
-| 9   | AT+MQTTSUB? |查询 MQTT 所有连接上已订阅的 topic|[查看详情](#AT+MQTTSUB?)|
-| 10   | AT+MQTTUNSUB |取消订阅指定连接的 MQTT 主题, 可多次<br>取消不同订阅 topic|[查看详情](#AT+MQTTUNSUB)|
-|11     | AT+MQTTCLEAN |关闭 MQTT Client 为 LinkID 的连接, 并释<br>放内部占用的资源|[查看详情](#AT+MQTTCLEAN)|
+| 4    | AT+ALIYUN_MQTTCONN? |连接指定的阿里云MQTT broker|[查看详情](#AT+ALIYUN_MQTTCONN?)|
+| 5   | AT+MQTTPUB |在 LinkID上通过 topic 发布数据 data，<br>data 为字符串消息|[查看详情](#AT+MQTTPUB)|
+| 6   | AT+MQTTPUBRAW |在 LinkID 上通过 topic 发布数据 data，<br> data 为二进制数据|[查看详情](#AT+MQTTPUBRAW)|
+| 7  | AT+MQTTSUB |订阅指定连接的 MQTT 主题, 可重复多次<br>订阅不同 topic|[查看详情](#AT+MQTTSUB)|
+| 8  | AT+MQTTSUB? |查询 MQTT 所有连接上已订阅的 topic|[查看详情](#AT+MQTTSUB?)|
+| 9  | AT+MQTTUNSUB |取消订阅指定连接的 MQTT 主题, 可多次<br>取消不同订阅 topic|[查看详情](#AT+MQTTUNSUB)|
+|10     | AT+MQTTCLEAN |关闭 MQTT Client 为 LinkID 的连接, 并释<br>放内部占用的资源|[查看详情](#AT+MQTTCLEAN)|
 
 
 
@@ -79,17 +78,17 @@
 
   **举例：**AT+MQTTUSERCFG=0,1,"ESP8266","emakefun","1234567890",0,0,""
 
-  **解析：**“ESP8266”是对应主板的名称——<"client_id">
+  **解析：**“ESP8266”是对应主板的名称——"client_id"
 
-  ​			“emakefun”是用户名——<"username">
+  ​			“emakefun”是用户名——"username"
 
-  ​			“1234567890”是用户密码——<"password">
+  ​			“1234567890”是用户密码——"password"
 
-  ​			“0”默认的——<cert_key_ID>
+  ​			“0”默认的——cert_key_ID
 
-  ​			“0”默认的——<CA_ID>
+  ​			“0”默认的——CA_ID
 
-  ​			“ ”中间是路径——<"path">
+  ​			“ ”中间是路径——"path">
 
 ### AT+MQTTCONNCFG - 配置 MQTT 连接属性
 设置指令:AT+MQTTCONNCFG=<LinkID>,<keepalive>,<disable_clean_session>,<"lwt_topic">,<"lwt_msg">,<lwt_qos>,<lwt_retain>
@@ -116,13 +115,13 @@
 
   **举例：**AT+MQTTCONNCFG=0,120,0,topic,msg,0,0
 
-  **解析：**120 超时时间，范围60-7200——<keepalive>
+  **解析：**"120 "超时时间，范围60-7200——keepalive
 
-  ​			0  MQTT 清理会话——<disable_clean_session>
+  ​			"0 " MQTT 清理会话——disable_clean_session
 
-  ​			topic 主题——<"lwt_topic">
+  ​			"topic "主题——"lwt_topic"
 
-  ​			msg 内容——<"lwt_msg">
+  ​			"msg 内容"——"lwt_msg"
 
 ### AT+MQTTCONN - 连接服务器的IP地址
 设置指令:AT+MQTTCONN=<LinkID>,<"host">,<port>,<reconnect>
@@ -133,69 +132,11 @@
 
 **举例：**AT+MQTTCONN=0,"47.111.117.220",1883,0 
 
-**解析：**"47.111.117.220"  MQTT域名，IP地址——<"host">
+**解析：**"47.111.117.220"  MQTT域名，IP地址——"host"
 
-​			1883  MQTT端口，一般情况下默认1833——<port>
+​			"1883"  MQTT端口，一般情况下默认1833——port
 
-​			0  代表不重连MQTT，1 会一直重连——<reconnect>
-
-### AT+MQTTCONN? - 查询连接状态
-
-功能:查询 AT 已连接的 MQTT broker
-
-设置指令:AT+MQTTCONN=<LinkID>,<state>,<scheme><"host">,<port>,<"path">,<reconnect>
-
-参数说明:
-
-- LinkID: 当前只支持 0
-
-- host: 连接 MQTT broker 域名, 最大 128 字节
-
-- port: 连接 MQTT broker 端口, 最大 65535
-
-- path: 资源路径, 最长 32 字节
-
-- reconnect: 是否重连 MQTT, 若设置为 1, 需要消耗较多内存资源
-
-- state: MQTT 当前状态, 状态说明如下:
-
-   	0: 连接未初始化
-
-   	1: 已设置 MQTTUSERCFG
-
-   	2: 已设置 MQTTCONNCFG
-
-   	3: 连接已断开
-
-   	4: 已建立连接
-
-   	5: 已连接, 但未订阅 topic
-
-   	6: 已连接, 已订阅过 topic
-
-  scheme:
-
-   	1: MQTT over TCP
-
-   	2: MQTT over TLS(no certificate verify)  无验证
-
-   	3: MQTT over TLS(verify server certificate)  验证服务器证书
-
-   	4: MQTT over TLS(provide client certificate)  提供客户端证书
-
-   	5: MQTT over TLS(verify server certificate and provide client certificate)  验证服务器证书，提供客户端证书
-
-   	6: MQTT over WebSocket(based on TCP)  基于TCP
-
-   	7: MQTT over WebSocket Secure(based on TLS, no certificate verify)  基于TLS，没有证书验证
-
-   	8: MQTT over WebSocket Secure(based on TLS, verify server certificate)  基于TLS，验证服务器证书
-
-   	9: MQTT over WebSocket Secure(based on TLS, provide client certificate)  基于TLS，提供客户端证书
-
-   	10: MQTT over WebSocket Secure(based on TLS, verify server certificate and provide client certificate)  基于TLS，验证服务器证书并提供客户端证书
-
-  **举例：**AT+MQTTCONN=0,2,2,"47.111.117.220",1883,"",0
+​			"0"  代表不重连MQTT，1 会一直重连——reconnect
 
 ### AT+ALIYUN_MQTTCONN?
 
@@ -214,6 +155,10 @@
 响应:OK或ERROR
 
 **举例：**AT+MQTTCONN=0,"192.168.1.17",1883,0
+
+**解析：**"192.168.1.17" ——host
+
+​			"1883" ——port
 
 
 ### AT+MQTTPUB
@@ -236,6 +181,16 @@
 - retain: 发布 retain
 
   **举例：**AT+MQTTPUB=0,"topic","test",0,retain
+  
+  **解析：**0 ——linKID
+  
+  ​			"topic" ——topic发布的主题
+  
+  ​			"test" —— 发布的消息"data"
+  
+  ​			0 ——发布服务质量,默认0
+  
+  ​			retain ——发布
 
 ### AT+MQTTPUBRAW
 设置指令:AT+MQTTPUBRAW=<LinkID>,<"topic">,<length>,<qos>,<retain>
@@ -259,6 +214,16 @@
 - AT port 未收到指定 length 长度的数据, 将一直等待, 在此期间接收到的数据都会当成普通数据
 
   **举例：**AT+MQTTPUBRAW=0,"topic",2,0,retain
+  
+  **解析：**0 ——linKID
+  
+  ​			"topic" ——topic发布的主题
+  
+  ​			2 ——length消息长度
+  
+   		   0 ——发布服务质量,默认0
+  
+  ​			retain ——发布
 
 ### AT+MQTTSUB
 设置指令:AT+MQTTSUB=<LinkID>,<"topic">,<qos>
@@ -274,6 +239,12 @@
 查询指令:
 
 **举例：**AT+MQTTSUB=0,"topic",0
+
+**解析：**0 ——linKID
+
+​			"topic" ——topic发布的主题
+
+ 		   0 ——发布服务质量,默认0
 
 ### AT+MQTTSUB?
 
@@ -321,7 +292,11 @@
 - topic: 取消订阅主题, 最长 64 字节
   如果取消未订阅的主题, 仍无条件向 MQTT broker 取消订阅, Log 口打印 NO UNSUBSCRIBE
 
-  举例：AT+MQTTUNSUB=0,"topic"
+  **举例：**AT+MQTTUNSUB=0,"topic"
+  
+  **解析：**0 ——linKID
+  
+  ​			"topic" ——topic发布的主题
 
 ### AT+MQTTCLEAN
 设置指令:AT+MQTTCLEAN=<LinkID>
@@ -335,6 +310,8 @@
 LinkID: 当前只支持 0
 
 **举例：**AT+MQTTCLEAN=0
+
+**解析：**0 ——linKID
 
 ##  arduino 应用场景
 
