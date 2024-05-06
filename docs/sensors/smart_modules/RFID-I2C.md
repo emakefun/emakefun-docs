@@ -36,7 +36,7 @@ RFID模块接在拓展板I2C端口上。
 
 ### 1.5.1.在Mixly中运行
 
-打开Mixly软件，选择Arduino AVR 主板型号。
+打开Mixly软件，选择Arduino AVR 主板型号。[Mixly示例程序下载](./RFID-I2C/Mixly/RFID_test.zip)
 
 ![1714958842210](RFID-I2C/1714958842210.png)
 
@@ -52,7 +52,7 @@ RFID模块接在拓展板I2C端口上。
 
 ### 1.5.2.在Arduino IDE中运行
 
-打开Arduino IDE软件，在工具-开发板中选择Arduino Uno主板型号。
+打开Arduino IDE软件，在工具-开发板中选择Arduino Uno主板型号。[IDE示例程序下载](./RFID-I2C/Arduino/RFID_test.zip)
 
 ![1714959582531](RFID-I2C/1714959582531.png)
 
@@ -87,7 +87,7 @@ void loop() {
 
 ### 1.5.3.在Mind+中运行
 
-打开Mind+软件，选择Arduino UNO 主板型号，点击右上角的用户库。
+打开Mind+软件，选择Arduino UNO 主板型号，点击右上角的用户库。[Mind+示例程序下载](./RFID-I2C/Mind+/Mind+.zip)
 
 ![1714960700924](RFID-I2C/1714960700924.png)
 
