@@ -36,7 +36,7 @@ RFID模块接在拓展板I2C端口上。
 
 ### 1.5.1.在Mixly中运行
 
-打开Mixly软件，选择Arduino AVR 主板型号。[Mixly示例程序下载](./RFID-I2C/Mixly/RFID_test.zip)
+打开Mixly软件，选择Arduino AVR 主板型号。[Mixly示例程序下载](./RFID-I2C/Milxy/FRID-I2C.zip)
 
 ![1714958842210](RFID-I2C/1714958842210.png)
 
