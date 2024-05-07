@@ -73,7 +73,7 @@
 
 ## 串口助手调试AT指令
 
-下载并安装[安信可串口调试助手](./esp8266_mqtt_pic/AiThinker Serial Tool V1.2.3.zip)，同时下载[AT指令txt文档](./esp8266_mqtt_pic/SendList_20240228.txt)。
+下载并安装[安信可串口调试助手](./esp8266_mqtt_pic/AiThinker Serial Tool V1.2.3.zip)，同时下载[AT指令txt文档](./esp8266_mqtt_pic/SendList_20240228.zip)。
 
 ![1715069426282](esp8266_mqtt_pic/1715069426282.png)
 
