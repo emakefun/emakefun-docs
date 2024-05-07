@@ -71,11 +71,35 @@
 | 8 | AT+MQTTUNSUB |取消订阅指定连接的 MQTT 主题, 可多次<br>取消不同订阅 topic|[查看详情](#AT+MQTTUNSUB)|
 |9     | AT+MQTTCLEAN |关闭 MQTT Client 为 LinkID 的连接, 并释<br>放内部占用的资源|[查看详情](#AT+MQTTCLEAN)|
 
+## 串口助手调试AT指令
+
+下载并安装[安信可串口调试助手](./esp8266_mqtt_pic/AiThinker Serial Tool V1.2.3.zip)，同时下载[AT指令txt文档](./esp8266_mqtt_pic/SendList_20240228.txt)。
+
+![1715069426282](esp8266_mqtt_pic/1715069426282.png)
+
+打开txt文档，对重要参数进行修改，注意文档中不能打中文。如下图：
+
+![1715070636108](esp8266_mqtt_pic/1715070636108.png)
+
+点击串口助手的载入，选择txt文档,电脑插上烧录器和MQTT模块，然后点击打开串口。
+
+![1715070958781](esp8266_mqtt_pic/1715070958781.png)
+
+![1715070987915](esp8266_mqtt_pic/1715070987915.png)
+
+依次点击数字1、2、3、4、5，接收端会弹出连接信息OK，这代表重置后wifi连接成功，用户名设置成功，连接服务器成功。
+
+![1715071494501](esp8266_mqtt_pic/1715071494501.png)
+
+在浏览器打开[服务器网址](http://remote.microprinttech.com:19825/#/clients)，刷新后在客户端可看到ESP8266已连接。
+
+![1715071936312](esp8266_mqtt_pic/1715071936312.png)
+
 
 
 ### 1.AT+MQTTUSERCFG - 配置 MQTT 用户属性
 
-| 指令：AT+MQTTUSERCFG=<LinkID>,<scheme>,<"client_id">,<"username">,<"password">,<cert_key_ID>,<CA_ID>,<"path"> |
+| 指令：AT+MQTTUSERCFG=LinkID,scheme,"client_id","username","password",cert_key_ID,CA_ID,"path" |
 | ------------------------------------------------------------ |
 | **功能：**设置 MQTT 用户配置                                 |
 | **响应：**OK或ERROR                                          |
@@ -84,22 +108,22 @@
 
 **结果：**将示例复制在串口发送后，串口返回  OK
 
-| 代码          | 含义                                                     | 举例     |
-| ------------- | -------------------------------------------------------- | -------- |
-| <LinkID>      | 当前只支持 0                                             | 0        |
-| <scheme>      |                                                          | 1        |
-| <"client_id"> | 对应 MQTT client ID, 用于标志 client 身份, 最长 256 字节 | ESP8266  |
-| <"username">  | 用于登录 MQTT broker 的 用户名, 最长 64 字节             | Emakefun |
-| <"password">  | 用于登录 MQTT broker 的 密码, 最长 64 字节               | 12345678 |
-| <cert_key_ID> | 证书 ID, 目前支持一套 cert 证书, 参数为 0                | 0        |
-| <CA_ID>       | CA ID, 目前支持一套 CA 证书, 参数为 0                    | 0        |
-| <"path">      | 资源路径, 最长 32 字节                                   |          |
+| 代码        | 含义                                                     | 举例     |
+| ----------- | -------------------------------------------------------- | -------- |
+| LinkID      | 当前只支持 0                                             | 0        |
+| scheme      |                                                          | 1        |
+| "client_id" | 对应 MQTT client ID, 用于标志 client 身份, 最长 256 字节 | ESP8266  |
+| "username"  | 用于登录 MQTT broker 的 用户名, 最长 64 字节             | Emakefun |
+| "password"  | 用于登录 MQTT broker 的 密码, 最长 64 字节               | 12345678 |
+| cert_key_ID | 证书 ID, 目前支持一套 cert 证书, 参数为 0                | 0        |
+| CA_ID       | CA ID, 目前支持一套 CA 证书, 参数为 0                    | 0        |
+| "path"      | 资源路径, 最长 32 字节                                   |          |
 
 
 
 ### **2.AT+MQTTCONNCFG - 配置 MQTT 连接属性**
 
-| 指令：AT+MQTTCONNCFG=<LinkID>,<keepalive>,<disable_clean_session>,<"lwt_topic">,<"lwt_msg">,<lwt_qos>,<lwt_retain> |
+| 指令：AT+MQTTCONNCFG=LinkID,keepalive,disable_clean_session,"lwt_topic","lwt_msg",lwt_qos,lwt_retain |
 | ------------------------------------------------------------ |
 | **功能：**设置 MQTT 连接配置                                 |
 | **响应：**OK或ERROR                                          |
@@ -108,41 +132,41 @@
 
 **结果：**将示例复制在串口发送后，串口返回  OK
 
-| 代码                    | 含义                                                     | 举例     |
-| ----------------------- | -------------------------------------------------------- | -------- |
-| <LinkID>                | 当前只支持 0                                             | 0        |
-| <keepalive>             | MQTT PING 超时时间,范围为 [60, 7200], 单位为秒. 默认 120 | 120      |
-| <disable_clean_session> | MQTT 清理会话标志, 参数为 0 或 1, 默认为 0               | 0        |
-| <"lwt_topic">           | 主题 topic, 最长 64 字节                                 | Emakefun |
-| <"lwt_msg">             | 主题 message, 最长 64 字节                               | 12345678 |
-| <lwt_qos>               | 主题 QoS, 参数可选 0, 1, 2, 默认为 0                     | 0        |
-| <lwt_retain>            | 主题 retain, 参数可选 0, 1, 默认为 0                     | 0        |
+| 代码                  | 含义                                                     | 举例     |
+| --------------------- | -------------------------------------------------------- | -------- |
+| LinkID                | 当前只支持 0                                             | 0        |
+| keepalive             | MQTT PING 超时时间,范围为 [60, 7200], 单位为秒. 默认 120 | 120      |
+| disable_clean_session | MQTT 清理会话标志, 参数为 0 或 1, 默认为 0               | 0        |
+| "lwt_topic"           | 主题 topic, 最长 64 字节                                 | Emakefun |
+| "lwt_msg"             | 主题 message, 最长 64 字节                               | 12345678 |
+| lwt_qos               | 主题 QoS, 参数可选 0, 1, 2, 默认为 0                     | 0        |
+| lwt_retain            | 主题 retain, 参数可选 0, 1, 默认为 0                     | 0        |
 
 
 
 ### **3.AT+MQTTCONN - 连接服务器的IP地址**
 
-| 指令：AT+MQTTCONN=<LinkID>,<"host">,<port>,<reconnect> |
-| ------------------------------------------------------ |
-| **功能：**连接指定 MQTT broker                         |
-| **响应：**OK或ERROR                                    |
+| 指令：AT+MQTTCONN=LinkID,"host",port,reconnect |
+| ---------------------------------------------- |
+| **功能：**连接指定 MQTT broker                 |
+| **响应：**OK或ERROR                            |
 
 **举例：**AT+MQTTCONN=0,"47.111.117.220",1883,0
 
 **结果：**将示例复制在串口发送后，串口返回  OK
 
-| 代码        | 含义                           | 举例           |
-| ----------- | ------------------------------ | -------------- |
-| <LinkID>    | 当前只支持 0                   | 0              |
-| <"host">    | MQTT域名，IP地址               | 47.111.117.220 |
-| <port>      | MQTT端口，一般情况下默认1833   | 1833           |
-| <reconnect> | 0 代表不重连MQTT，1 会一直重连 | 0              |
+| 代码      | 含义                           | 举例           |
+| --------- | ------------------------------ | -------------- |
+| LinkID    | 当前只支持 0                   | 0              |
+| "host"    | MQTT域名，IP地址               | 47.111.117.220 |
+| port      | MQTT端口，一般情况下默认1833   | 1833           |
+| reconnect | 0 代表不重连MQTT，1 会一直重连 | 0              |
 
 
 
 ### **4.AT+ALIYUN_MQTTCONN?**
 
-| 指令：AT+ALIYUN_MQTTCONN=<"host">,<port>,<"ProductKey">,<"DeviceName">,<"DeviceSecret"> |
+| 指令：AT+ALIYUN_MQTTCONN="host",port,"ProductKey","DeviceName","DeviceSecret" |
 | ------------------------------------------------------------ |
 | **功能：**连接指定的阿里云MQTT broker                        |
 | **响应：**OK或ERROR                                          |
@@ -151,19 +175,19 @@
 
 **结果：**将示例复制在串口发送后，串口返回  OK
 
-| 代码             | 含义                                                         | 举例         |
-| ---------------- | ------------------------------------------------------------ | ------------ |
-| <"host">         | 连接阿里云的MQTT broker 域名, 详情请参考阿里云域名格式       | 192.168.1.17 |
-| <port>           | 连接 MQTT broker 端口, 最大 65535 默认 1883                  | 1883         |
-| <"ProductKey">   | 设备所属产品的ProductKey，即物联网平台为产品颁发的全局唯一标识符 | 0            |
-| <"DeviceName">   | 设备在产品内的唯一标识符。DeviceName与设备所属产品的ProductKey组合，作为设备标识，用来与物联网平台进行连接认证和通信。 | 0            |
-| <"DeviceSecret"> | 物联网平台为设备颁发的设备密钥，用于认证加密。需与DeviceName成对使用 |              |
+| 代码           | 含义                                                         | 举例         |
+| -------------- | ------------------------------------------------------------ | ------------ |
+| "host"         | 连接阿里云的MQTT broker 域名, 详情请参考阿里云域名格式       | 192.168.1.17 |
+| port           | 连接 MQTT broker 端口, 最大 65535 默认 1883                  | 1883         |
+| "ProductKey"   | 设备所属产品的ProductKey，即物联网平台为产品颁发的全局唯一标识符 | 0            |
+| "DeviceName"   | 设备在产品内的唯一标识符。DeviceName与设备所属产品的ProductKey组合，作为设备标识，用来与物联网平台进行连接认证和通信。 | 0            |
+| "DeviceSecret" | 物联网平台为设备颁发的设备密钥，用于认证加密。需与DeviceName成对使用 |              |
 
 
 
 ### **5.AT+MQTTPUB**
 
-| **指令：AT+MQTTPUB=<LinkID>,<"topic">,<"data">,<qos>,<retain>** |
+| 指令：AT+MQTTPUB=LinkID,"topic","data",qos,retain            |
 | ------------------------------------------------------------ |
 | **功能：**在 LinkID上通过 topic 发布数据 data, 其中 data 为字符串消息, 若要发布二进制,请使用 AT+MQTTPUBRAW |
 | **响应：**OK或ERROR                                          |
@@ -172,19 +196,19 @@
 
 **结果：**将示例复制在串口发送后，串口返回  OK
 
-| 代码      | 含义                                                         | 举例   |
-| --------- | ------------------------------------------------------------ | ------ |
-| <LinkID>  | 当前只支持 0                                                 | 0      |
-| <"topic"> | 发布主题, 最长 64 字节                                       | topic  |
-| <"data">  | 发布消息, data 不能包含 \0, 请确保整条 AT+MQTTPUB 不超过 AT 指令的最大长度限制 | test   |
-| <qos>     | 发布服务质量, 参数可选 0,1,2, 默认为 0                       | 0      |
-| <retain>  | 发布 retain                                                  | retain |
+| 代码    | 含义                                                         | 举例   |
+| ------- | ------------------------------------------------------------ | ------ |
+| LinkID  | 当前只支持 0                                                 | 0      |
+| "topic" | 发布主题, 最长 64 字节                                       | topic  |
+| "data"  | 发布消息, data 不能包含 \0, 请确保整条 AT+MQTTPUB 不超过 AT 指令的最大长度限制 | test   |
+| qos     | 发布服务质量, 参数可选 0,1,2, 默认为 0                       | 0      |
+| retain  | 发布 retain                                                  | retain |
 
 
 
 ### **6.AT+MQTTPUBRAW**
 
-| 指令：AT+MQTTPUBRAW=<LinkID>,<"topic">,<length>,<qos>,<retain> |
+| 指令：AT+MQTTPUBRAW=LinkID,"topic",length,qos,retain         |
 | ------------------------------------------------------------ |
 | **功能：**在 LinkID 上通过 topic 发布数据 data, 其中 data 为二进制数据 |
 | **响应：**OK或ERROR,等待用户输入 length 大小数据, 之后响应如下:+MQTTPUB:FAIL或+MQTTPUB:OK |
@@ -193,38 +217,38 @@
 
 **结果：**将示例复制在串口发送后，串口返回  OK
 
-| 代码      | 含义                                   | 举例   |
-| --------- | -------------------------------------- | ------ |
-| <LinkID>  | 当前只支持 0                           | 0      |
-| <"topic"> | 发布主题, 最长 64 字节                 | topic  |
-| <length>  | 要发布消息长度, 长度受限于当前可用内存 | 2      |
-| <qos>     | 发布服务质量, 参数可选 0,1,2, 默认为 0 | 0      |
-| <retain>  | 发布 retain                            | retain |
+| 代码    | 含义                                   | 举例   |
+| ------- | -------------------------------------- | ------ |
+| LinkID  | 当前只支持 0                           | 0      |
+| "topic" | 发布主题, 最长 64 字节                 | topic  |
+| length  | 要发布消息长度, 长度受限于当前可用内存 | 2      |
+| qos     | 发布服务质量, 参数可选 0,1,2, 默认为 0 | 0      |
+| retain  | 发布 retain                            | retain |
 
 
 
 ### **7.AT+MQTTSUB**
 
-| 指令：AT+MQTTSUB=<LinkID>,<"topic">,<qos>                    |
+| 指令：AT+MQTTSUB=LinkID,"topic",qos                          |
 | ------------------------------------------------------------ |
 | **功能：**订阅指定连接的 MQTT 主题, 可重复多次订阅不同 topic |
-| **响应：**OK或ERROR，当收到对应主题订阅的 MQTT 消息时, 将按照如下格式打印消息内容+MQTTSUBRECV:<LinkID>,<"topic">,<data_length>,data  如果订阅已订阅过的主题, 仍无条件向 MQTT broker 订阅, Log 口打印 ALREADY SUBSCRIBE |
+| **响应：**OK或ERROR，当收到对应主题订阅的 MQTT 消息时, 将按照如下格式打印消息内容+MQTTSUBRECV:LinkID,"topic",data_length,data  如果订阅已订阅过的主题, 仍无条件向 MQTT broker 订阅, Log 口打印 ALREADY SUBSCRIBE |
 
 **举例：**AT+MQTTSUB=0,"topic",0
 
 **结果：**将示例复制在串口发送后，串口返回  OK
 
-| 代码      | 含义                                   | 举例  |
-| --------- | -------------------------------------- | ----- |
-| <LinkID>  | 当前只支持 0                           | 0     |
-| <"topic"> | 订阅主题, 最长 64 字节                 | topic |
-| <qos>     | 订阅服务质量, 参数可选 0,1,2, 默认为 0 | 0     |
+| 代码    | 含义                                   | 举例  |
+| ------- | -------------------------------------- | ----- |
+| LinkID  | 当前只支持 0                           | 0     |
+| "topic" | 订阅主题, 最长 64 字节                 | topic |
+| qos     | 订阅服务质量, 参数可选 0,1,2, 默认为 0 | 0     |
 
 
 
 ### **8.AT+MQTTUNSUB**
 
-| 指令：AT+MQTTUNSUB=<LinkID>,<"topic">                        |
+| 指令：AT+MQTTUNSUB=LinkID,"topic"                            |
 | ------------------------------------------------------------ |
 | **功能：**取消订阅指定连接的 MQTT 主题, 可多次取消不同订阅 topic |
 | **响应：**OK或ERROR                                          |
@@ -233,16 +257,16 @@
 
 **结果：**将示例复制在串口发送后，串口返回  ERROR
 
-| 代码      | 含义                   | 举例  |
-| --------- | ---------------------- | ----- |
-| <LinkID>  | 当前只支持 0           | 0     |
-| <"topic"> | 订阅主题, 最长 64 字节 | topic |
+| 代码    | 含义                   | 举例  |
+| ------- | ---------------------- | ----- |
+| LinkID  | 当前只支持 0           | 0     |
+| "topic" | 订阅主题, 最长 64 字节 | topic |
 
 
 
 ### **9.AT+MQTTCLEAN**
 
-| 指令：AT+MQTTCLEAN=<LinkID>                                  |
+| 指令：AT+MQTTCLEAN=LinkID                                    |
 | ------------------------------------------------------------ |
 | **功能：**关闭 MQTT Client 为 LinkID 的连接, 并释放内部占用的资源 |
 | **响应：**OK或ERROR                                          |
@@ -251,15 +275,18 @@
 
 **结果：**将示例复制在串口发送后，串口返回  OK
 
-| 代码     | 含义         | 举例 |
-| -------- | ------------ | ---- |
-| <LinkID> | 当前只支持 0 | 0    |
+| 代码   | 含义         | 举例 |
+| ------ | ------------ | ---- |
+| LinkID | 当前只支持 0 | 0    |
 
 
 
 ##  **arduino 应用场景**
 
 **AT串口测试**
+
+[下载最新示例程序](./esp8266_mqtt_pic/AT test.zip)
+
 ```
 #include "Arduino.h"
 #include "SoftwareSerial.h"
@@ -306,7 +333,7 @@ void loop()
 ```
 ### **arduino示例程序**
 
-**[下载最新库程序]()**
+**[下载最新库程序](./esp8266_mqtt_pic/Emakefun_Mqtt.zip)**
 
 ```
 #include "WiFiEsp.h"
