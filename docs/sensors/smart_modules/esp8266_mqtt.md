@@ -38,12 +38,12 @@
 
 ## AT 指令可以细分为四种类型：
 
-| 类型     | 指令格式   | 描述                                                   |
-| -------- | ---------- | ------------------------------------------------------ |
-| 测试指令 | AT+<x>=?   | 该命令⽤于该命令⽤于查询设置指令的参数以及取值范围。   |
-| 查询指令 | AT+<x>?    | 该命令⽤于返回参数的当前值。                           |
-| 设置指令 | AT+<x>=<…> | 该命令⽤于设置⽤户⾃定义的参数值。                     |
-| 执⾏指令 | AT+<x>     | 该命令⽤于执⾏受模块内部程序控制的变参数不可变的功能。 |
+| 类型     | 指令格式     | 描述                                                   |
+| -------- | ------------ | ------------------------------------------------------ |
+| 测试指令 | AT+< x >=?   | 该命令⽤于该命令⽤于查询设置指令的参数以及取值范围。   |
+| 查询指令 | AT+< x >?    | 该命令⽤于返回参数的当前值。                           |
+| 设置指令 | AT+< x >=<…> | 该命令⽤于设置⽤户⾃定义的参数值。                     |
+| 执⾏指令 | AT+< x >     | 该命令⽤于执⾏受模块内部程序控制的变参数不可变的功能。 |
 
 **注意：**
 
@@ -57,19 +57,21 @@
 
 ## MQTT扩展AT指令
 
-
-
 | 序号 | 指令 | 描述 |详情|
 | --------| -------- | ------------ |------------ |
-| 1 | AT+MQTTUSERCFG | 配置 MQTT 用户属性 | [查看详情](#AT+MQTTUSERCFG - 配置 MQTT 用户属性) |
-| 2      | AT+MQTTCONNCFG  |配置 MQTT 连接属性|[查看详情](# AT+MQTTCONNCFG - 配置 MQTT 连接属性)|
-| 3     | AT+MQTTCONN |连接指定 MQTT broker|[查看详情](#AT+MQTTCONN)|
-| 4    | AT+ALIYUN_MQTTCONN? |连接指定的阿里云MQTT broker|[查看详情](#AT+ALIYUN_MQTTCONN?)|
-| 5   | AT+MQTTPUB |在 LinkID上通过 topic 发布数据 data，<br>data 为字符串消息|[查看详情](#AT+MQTTPUB)|
-| 6   | AT+MQTTPUBRAW |在 LinkID 上通过 topic 发布数据 data，<br> data 为二进制数据|[查看详情](#AT+MQTTPUBRAW)|
-| 7  | AT+MQTTSUB |订阅指定连接的 MQTT 主题, 可重复多次<br>订阅不同 topic|[查看详情](#AT+MQTTSUB)|
-| 8 | AT+MQTTUNSUB |取消订阅指定连接的 MQTT 主题, 可多次<br>取消不同订阅 topic|[查看详情](#AT+MQTTUNSUB)|
-|9     | AT+MQTTCLEAN |关闭 MQTT Client 为 LinkID 的连接, 并释<br>放内部占用的资源|[查看详情](#AT+MQTTCLEAN)|
+| 1 | AT+CWMODE=1 | 重置 ||
+| 2 | AT+RST | 复位 ||
+| 3 | AT+CWJAP_DEF="EmakeFun","12345678" | wifi设置 ||
+| 4 | AT+MQTTUSERCFG=0,1,"ESP8266","kxmqttp1","public985",0,0,"" | 设置用户名和密码 ||
+| 5 | AT+MQTTUSERCFG | 配置 MQTT 用户属性 | [查看详情](#AT+MQTTUSERCFG - 配置 MQTT 用户属性) |
+| 6      | AT+MQTTCONNCFG  |配置 MQTT 连接属性|[查看详情](# AT+MQTTCONNCFG - 配置 MQTT 连接属性)|
+| 7     | AT+MQTTCONN |连接指定 MQTT broker|[查看详情](#AT+MQTTCONN)|
+| 8    | AT+ALIYUN_MQTTCONN? |连接指定的阿里云MQTT broker|[查看详情](#AT+ALIYUN_MQTTCONN?)|
+| 9   | AT+MQTTPUB |在 LinkID上通过 topic 发布数据 data，< br >data 为字符串消息|[查看详情](#AT+MQTTPUB)|
+| 10  | AT+MQTTPUBRAW |在 LinkID 上通过 topic 发布数据 data，< br > data 为二进制数据|[查看详情](#AT+MQTTPUBRAW)|
+| 11 | AT+MQTTSUB |订阅指定连接的 MQTT 主题, 可重复多次< br >订阅不同 topic|[查看详情](#AT+MQTTSUB)|
+| 12 | AT+MQTTUNSUB |取消订阅指定连接的 MQTT 主题, 可多次< br >取消不同订阅 topic|[查看详情](#AT+MQTTUNSUB)|
+|13     | AT+MQTTCLEAN |关闭 MQTT Client 为 LinkID 的连接, 并释< br >放内部占用的资源|[查看详情](#AT+MQTTCLEAN)|
 
 ## 串口助手调试AT指令
 
@@ -91,11 +93,21 @@
 
 ![1715071494501](esp8266_mqtt_pic/1715071494501.png)
 
-在浏览器打开[服务器网址](http://remote.microprinttech.com:19825/#/clients)，刷新后在客户端可看到ESP8266已连接。
+在浏览器打开[服务器网址](http://remote.microprinttech.com:19825/#/clients)，刷新后在客户端可看到ESP8266已连接。同时MQTT模块的第二个LED灯常亮。
 
 ![1715071936312](esp8266_mqtt_pic/1715071936312.png)
 
+在此我们提供[服务器地址](remote.microprinttech.com:19825 )，端口19825
 
+user:  admin
+
+passwd: Anynod2022514
+
+账号1：kxmqttp1  密码  public985
+
+账号2：kxmqttp2  密码  public211
+
+## 其他AT指令
 
 ### 1.AT+MQTTUSERCFG - 配置 MQTT 用户属性
 
@@ -339,44 +351,36 @@ void loop()
 #include "WiFiEsp.h"
 #include "WifiEspMqtt.h"
 #include "SoftwareSerial.h"
-SoftwareSerial esp8266_serial(5, 6); // RX, TX
+SoftwareSerial esp8266_serial(5, 6);  // RX, TX
 uint32_t _startMillis = 0;
 
 WiFiEspMqtt esp8266;
 
-void setup()
-{
+void setup() {
   Serial.begin(115200);
   esp8266_serial.begin(9600);
   WiFi.init(&esp8266_serial);
-  assertEquals("Firmware version", WiFi.firmwareVersion(), "3.0.2");
-  assertEquals("Status is (WL_DISCONNECTED)", WiFi.status(), WL_DISCONNECTED);
-
-  esp8266.mqtt_connect("192.168.2.65", 1883, 0);
-  // esp8266.mqtt_connect_cfg(120, 1, "lws_topic", "lws_kill", 0);
-  esp8266.mqtt_usercfg("esp8266_client", "emakefun123", "12345678");
-
-  if (WiFi.begin("emakefun", "501416wf") == WL_CONNECTED)
-  {
-     Serial.println("wifi connected");
-     esp8266.mqtt_sub("topic_1", 0); //订阅topic_1主题，qos为0
+  if (WiFi.begin("Emakefun", "12345678") == WL_CONNECTED) {    //在此设置wifi和密码
+    Serial.println("wifi connected");
+    esp8266.mqtt_usercfg("esp8266_client333", "kxmqttp1", "public985");    //个人账号和密码
+    delay(1000);
+    esp8266.mqtt_connect("remote.microprinttech.com", 19824, 0);    //服务器地址和端口
+    delay(1000);
+    esp8266.mqtt_sub("topic_1", 0);  //订阅topic_1主题，qos为0
   }
   esp8266.mqtt_public("topic_led", "on", 0);
-  delay(30000);
+  delay(3000);
 }
 
-void loop()
-{
-    if (esp8266.mqtt_receive())
-    {
-
-     Serial.print("topic:");
-     Serial.println(esp8266.mqtt_topic);
-     Serial.print("message:");
-     Serial.println(esp8266.mqtt_message);
-    
-    }
+void loop() {
+  if (esp8266.mqtt_receive()) {
+    Serial.print("topic:");
+    Serial.println(esp8266.mqtt_topic);
+    Serial.print("message:");
+    Serial.println(esp8266.mqtt_message);
+  }
 }
+
 ```
 
 ### **Arduino连接阿里云案例分析**
