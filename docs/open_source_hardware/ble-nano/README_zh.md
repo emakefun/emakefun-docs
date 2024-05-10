@@ -2,17 +2,7 @@
 
 # ble-nano介绍
 
-
-
-
-
-<img src="./image/ble-nano_top_view.png" alt="top view" style="zoom: 150%;" />
-
-
-
-
-
-
+![ble-nano_top_view](image/ble-nano_top_view.png)
 
 ## 什么是ble-nano
 
@@ -22,7 +12,7 @@
 
 ## 系统架构图
 
- ![diagram](./image/diagram.png)
+ ![diagram](image/diagram.png)
 
 
 
@@ -57,14 +47,14 @@
 
 arduino nano , ble-nano3.0,  ble-nano4.2  ble-nano5.3 四款产品对比表格
 
-| 名字     | nano                           | ble-nano3.0                                      | ble-nano4.2                                                  | ble-nano5.3                                            |
-| -------- | ------------------------------ | ------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------ |
-| 图片     | ![](image/nano3.0.png)         | ![](image/ble-nano3.0.png)                       | <img src="./image/ble-nano_top_view.png"  style="zoom: 92%;" /> | <img src="./image/ble-nano.png"  style="zoom: 89%;" /> |
-| 主控芯片 | ATmega328P-AU(QFP32)           | ATmega328P-MU(QFN32)                             | ATmega328P-MU(QFN32)                                         | ATmega328P-MU(QFN32)                                   |
-| BLE      | 无                             | TI CC2540蓝牙4.0<br />0dBm发射 距离30米 功耗24mA | WCH CH571F BLE4.2<br />0dBm距离150m  发射功耗6mA             | BLE5.3<br />距离300m                                   |
-| 驱动     | CH340G串口芯片                 | CC2540驱动                                       | 兼容Arduio Uno驱动                                           | 兼容Arduio Uno驱动                                     |
-| 参数     | PCB尺寸：45x18mm<br />双面贴片 | PCB尺寸：49x19mm<br />双面贴片                   | PCB尺寸：48x18mm<br />单面贴片                               | PCB尺寸：48x18mm<br />单面贴片<br />邮票孔             |
-| 接口     | Mini-Usb接口                   | Micro-Usb接口                                    | Type C                                                       | Type C                                                 |
+| 名字     | nano                           | ble-nano3.0                                      | ble-nano4.2                                       | ble-nano5.3                                |
+| -------- | ------------------------------ | ------------------------------------------------ | ------------------------------------------------- | ------------------------------------------ |
+| 图片     | ![](image/nano3.0.png)         | ![](image/ble-nano3.0.png)                       | ![ble-nano_top_view](image/ble-nano_top_view.png) | ![ble-nano](image/ble-nano.png)            |
+| 主控芯片 | ATmega328P-AU(QFP32)           | ATmega328P-MU(QFN32)                             | ATmega328P-MU(QFN32)                              | ATmega328P-MU(QFN32)                       |
+| BLE      | 无                             | TI CC2540蓝牙4.0<br />0dBm发射 距离30米 功耗24mA | WCH CH571F BLE4.2<br />0dBm距离150m  发射功耗6mA  | BLE5.3<br />距离300m                       |
+| 驱动     | CH340G串口芯片                 | CC2540驱动                                       | 兼容Arduio Uno驱动                                | 兼容Arduio Uno驱动                         |
+| 参数     | PCB尺寸：45x18mm<br />双面贴片 | PCB尺寸：49x19mm<br />双面贴片                   | PCB尺寸：48x18mm<br />单面贴片                    | PCB尺寸：48x18mm<br />单面贴片<br />邮票孔 |
+| 接口     | Mini-Usb接口                   | Micro-Usb接口                                    | Type C                                            | Type C                                     |
 
 ### 引脚说明
 
@@ -143,25 +133,25 @@ void loop() {
 
 2、安卓或苹果手机系统设置中是无法连接使用的，因为手机设置都是只能连接经典蓝牙兼容蓝牙耳机，蓝牙麦克风等外设，不能连接低功耗蓝牙。安卓手机（安卓4.2系统版本以上）安装[BleToolsTest](https://github.com/nulllaborg/BleTools/raw/master/NulllabBlutooth/app/release/BleToolsTest.apk) 可以参考开源[Android源代码](https://github.com/nulllaborg/BleTools)  (注意需要打开蓝牙，和定位权限)如下图操作）
 
-| 打开手机定位                                                 | 允许BLE测试工具定位权限                                      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./image/location_permissions1.png" alt="location_permissions1" style="zoom: 33%;" /> | <img src="./image/location_permissions2.png" alt="location_permissions2" style="zoom: 33%;" /> |
+| 打开手机定位                                              | 允许BLE测试工具定位权限                                   |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| ![location_permissions1](image/location_permissions1.png) | ![location_permissions2](image/location_permissions2.png) |
 
 3、打开测试APP,界面。找到对应的蓝牙名（ble-nano4.2/ble-nano5.3）并点击进行连接，此时会出现4个选项，分别用于测试不同的功能，因为这里我们只测试蓝牙是否可以正常收发数据，所以我们选择SK Service入，再选择SK_KEYPRESSED
 
 
 
-| 连接蓝牙名字                                                 | 选择service                                                  | 选择char service                                             |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./image/android_app_test1.jpg" alt="location_permissions1" style="zoom: 33%;" /> | <img src="./image/android_app_test2.jpg" alt="location_permissions1" style="zoom: 33%;" /> | <img src="./image/android_app_test1-1.jpg" alt="location_permissions1" style="zoom: 33%;" /> |
+| 连接蓝牙名字                                      | 选择service                                       | 选择char service                                      |
+| ------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------- |
+| ![android_app_test1](image/android_app_test1.jpg) | ![android_app_test2](image/android_app_test2.jpg) | ![android_app_test1-1](image/android_app_test1-1.jpg) |
 
 4、我们选择“SK-KEYPRESSED”,点击后如图3.1.9我们可以看到有一个“写入”按键，点击即可进入，我们点击“红色框”即可输入想发送的数据，输入完成后点击“发送”即可将数据发出去
 
 
 
-|                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./image/android_app_test3.jpg" alt="location_permissions1" style="zoom: 33%;" /> | <img src="./image/android_app_test4.jpg" alt="location_permissions1" style="zoom: 33%;" /> |
+|                                                   |                                                   |
+| ------------------------------------------------- | ------------------------------------------------- |
+| ![android_app_test3](image/android_app_test3.jpg) | ![android_app_test4](image/android_app_test4.jpg) |
 
 5、点击发送字符串"on"后，打开ArduinoIDE的串口监视器上打印 turn on led，同时观察ble-nano上的L灯点亮，代表app蓝牙控制主板上的L灯成功，同样的方法发送字符串“off”后，ble-nano上的L灯会熄灭。到此我们安卓手机蓝牙测试完成。
 
@@ -170,21 +160,21 @@ void loop() {
 
 1、在APP store 中搜索LightBlue,下载软件LightBlue RExplorer，并打开。
 
-|                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./image/ios_app_test1.png" alt="location_permissions1"  /> | <img src="./image/ios_app_test2.png" alt="location_permissions1"  /> |
+|                                           |                                           |
+| ----------------------------------------- | ----------------------------------------- |
+| ![ios_app_test1](image/ios_app_test1.png) | ![ios_app_test2](image/ios_app_test2.png) |
 
 2、安装APP后，打开APP扫描到ble-nano,并连接
 
-|                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./image/ios_app_test3.jpg" alt="location_permissions1" style="zoom:33%;" /> | <img src="./image/ios_app_test4.jpg" alt="location_permissions1" style="zoom:33%;" /> |
+|                                           |                                           |
+| ----------------------------------------- | ----------------------------------------- |
+| ![ios_app_test3](image/ios_app_test3.jpg) | ![ios_app_test4](image/ios_app_test4.jpg) |
 
 3、选择字符类型，并点击Write  new value，输入字符即可给ble-nano发送数据。
 
-|                                                              |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./image/ios_app_test5.jpg" alt="location_permissions1" style="zoom:33%;" /> | <img src="./image/ios_app_test6.jpg" alt="location_permissions1" style="zoom:33%;" /> | <img src="./image/ios_app_test7.jpg" alt="location_permissions1" style="zoom:33%;" /> |
+|                                           |                                           |                                           |
+| ----------------------------------------- | ----------------------------------------- | ----------------------------------------- |
+| ![ios_app_test5](image/ios_app_test5.jpg) | ![ios_app_test6](image/ios_app_test6.jpg) | ![ios_app_test7](image/ios_app_test7.jpg) |
 
 4、点击done后会发送字符串"on"后，打开ArduinoIDE的串口监视器上打印 turn on led，同时观察ble-nano上的L灯点亮，代表app蓝牙控制主板上的L灯成功，同样的方法发送字符串“off”后，ble-nano上的L灯会熄灭。到此我们IOS蓝牙测试完成。
 
@@ -417,9 +407,7 @@ ble-nano支持三种AT指令配置方式：
 
 串口波特率为115200，选择回车换行（NL和NR）作为结束符。
 
-<img src="./image/arduino_at_cmd.png" alt="18" style="zoom: 67%;" />
-
-
+![arduino_at_cmd](image/arduino_at_cmd.png)
 
 2、代码中如何使用AT指令
 
@@ -474,7 +462,7 @@ void loop() {
 
 设置两个ble-nano的USB和蓝牙数据传输模式设置为USB串口数据和BLE透传即AT+BLEUSB=3
 
-<img src="./image/AT+BLEUSB.png" alt="48" style="zoom:80%;" />
+![AT+BLEUSB](image/AT+BLEUSB.png)
 
 从机烧录[ble_control_led.ino](./example/ble_contorl_led/ble_contorl_led.ino) 
 
