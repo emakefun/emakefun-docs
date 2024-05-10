@@ -137,8 +137,8 @@ nav:
       - maker-esp32: esp32/ESP32.md
       - esp32-iot-board: esp32/esp32_iot_board.md
   - 开源硬件:
-      - ble-nano: open_source_hardware/ble-nano/ble_nano.md
-      - ble-uno: open_source_hardware/Ble-Uno.md
+      - ble-nano: open_source_hardware/ble-nano/README_zh.md
+      - ble-uno: open_source_hardware/ble-uno/README_zh.md
       - maker-uno: open_source_hardware/maker-uno/README_ZH.md
       - rf-nano: open_source_hardware/rf-nano_v3_0.md
       - MotorDriverBoard: open_source_hardware/MotorDriverBoard.md

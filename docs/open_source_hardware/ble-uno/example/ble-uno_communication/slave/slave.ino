@@ -1,15 +1,16 @@
 String ble_data;
 int led_pin = 13;
 
-void setup(){
+void setup() {
   Serial.begin(115200);
-  Serial.println("ble control led");
-  ble_data = "";
   pinMode(led_pin, OUTPUT);
-  digitalWrite(led_pin, HIGH);
+  Serial.println("AT+ROLE=1");  // 设置蓝牙为主机
+  delay(10);
+  Serial.println("AT+BLEUSB=0");  //设置数据通信模式为0
+  //delay(10);
 }
 
-void loop(){
+void loop() {
   while (Serial.available() > 0)  
   {
       ble_data += char(Serial.read());
