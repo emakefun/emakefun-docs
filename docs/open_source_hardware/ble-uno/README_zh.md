@@ -2,11 +2,7 @@
 
 # ble-uno介绍
 
-
-
-
-
-<img src="./image/ble_uno.png" alt="top view"  />
+![ble_uno](image/ble_uno.png)
 
 
 
@@ -53,18 +49,18 @@
 
 arduino uno, ble-uno 3.0,  ble-uno4.2  ble-uno5.3 四款产品对比表格
 
-| 名   字  | uno r3                                           | ble-uno 3.0                                                  | ble-uno 4.2                                                  | ble-uno 5.3                              |
-| -------- | ------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------------------- |
-| 图片     | <img src="image/uno_r3.png" style="zoom:78%;" /> | ![](image/Ble_Uno_V3.0.png)                                  | <img src="./image/Ble_Uno_V4.2.png"   />                     | <img src="./image/Ble_Uno_V5.3.png"   /> |
-| 主控芯片 | ATmega328P-PU(DIP28)                             | ATmega328P-PU(DIP28)                                         | ATmega328P-AU(TQFP32)                                        | ATmega328P-AU(TQFP32)                    |
-| BLE      | 无                                               | TI CC2540蓝牙4.0<br />0dBm发射 距离30米 功耗24mA<br />不支持蓝牙上传 | WCH CH571F BLE4.2<br />0dBm距离150m  发射功耗6mA<br />支持蓝牙上传 | BLE5.3<br />距离300m<br />支持蓝牙上传   |
-| 驱动     | CH340G串口芯片                                   | CC2540驱动                                                   | 兼容Arduio Uno驱动                                           | 兼容Arduio Uno驱动                       |
-| 参数     | PCB尺寸：53.4x68.6mm                             | PCB尺寸：53.4x68.6mm                                         | PCB尺寸：53.4x68.6mm                                         | PCB尺寸：53.4x68.6mm                     |
-| 接口     | Type-B                                           | Micro-Usb                                                    | Micro-Usb                                                    | Type C                                   |
+| 名   字  | uno r3                      | ble-uno 3.0                                                  | ble-uno 4.2                                                  | ble-uno 5.3                             |
+| -------- | --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | --------------------------------------- |
+| 图片     | ![uno_r3](image/uno_r3.png) | ![Ble_Uno_V3.0](image/Ble_Uno_V3.0.png)                      | ![Ble_Uno_V4.2](image/Ble_Uno_V4.2.png)                      | ![Ble_Uno_V5.3](image/Ble_Uno_V5.3.png) |
+| 主控芯片 | ATmega328P-PU(DIP28)        | ATmega328P-PU(DIP28)                                         | ATmega328P-AU(TQFP32)                                        | ATmega328P-AU(TQFP32)                   |
+| BLE      | 无                          | TI CC2540蓝牙4.0<br />0dBm发射 距离30米 功耗24mA<br />不支持蓝牙上传 | WCH CH571F BLE4.2<br />0dBm距离150m  发射功耗6mA<br />支持蓝牙上传 | BLE5.3<br />距离300m<br />支持蓝牙上传  |
+| 驱动     | CH340G串口芯片              | CC2540驱动                                                   | 兼容Arduio Uno驱动                                           | 兼容Arduio Uno驱动                      |
+| 参数     | PCB尺寸：53.4x68.6mm        | PCB尺寸：53.4x68.6mm                                         | PCB尺寸：53.4x68.6mm                                         | PCB尺寸：53.4x68.6mm                    |
+| 接口     | Type-B                      | Micro-Usb                                                    | Micro-Usb                                                    | Type C                                  |
 
 ### 引脚说明
 
-![type_c_usb_ble_uno_annotation_diagram](./image/type_c_usb_ble_uno_annotation_diagram.png)
+![type_c_usb_ble_uno_annotation_diagram](image/type_c_usb_ble_uno_annotation_diagram.png)
 
 ###  原理图
 
@@ -139,25 +135,21 @@ void loop() {
 
 2)	安卓或则IOS从设置中是无法连接使用的，因为手机设置都是只能连接经典蓝牙兼容蓝牙耳机，蓝牙麦克风等外设，不能连接低功耗蓝牙。安卓手机（android4.2系统版本以上）安装[BleToolsTest](https://github.com/nulllaborg/BleTools/raw/master/NulllabBlutooth/app/release/BleToolsTest.apk) 可以参考开源[Android源代码](https://github.com/nulllaborg/BleTools)  (注意需要打开蓝牙，和定位权限)如下图操作）
 
-| 打开手机定位                                                 | 允许BLE测试工具定位权限                                      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./image/location_permissions1.png" alt="location_permissions1" style="zoom: 33%;" /> | <img src="./image/location_permissions2.png" alt="location_permissions2" style="zoom: 33%;" /> |
+| 打开手机定位                                              | 允许BLE测试工具定位权限                                   |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| ![location_permissions1](image/location_permissions1.png) | ![location_permissions2](image/location_permissions2.png) |
 
 3）打开测试APP,界面。找到对应的蓝牙名（ble-uno4.2/ble-uno5.3）并点击进行连接，此时会出现4个选项，分别用于测试不同的功能，因为这里我们只测试蓝牙是否可以正常收发数据，所以我们选择SK Service入，再选择SK_KEYPRESSED
 
-
-
-| 连接蓝牙名字                                                 | 选择service                                                  | 选择char service                                             |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./image/android_app_test1.jpg" alt="location_permissions1" style="zoom: 33%;" /> | <img src="./image/android_app_test2.jpg" alt="location_permissions1" style="zoom: 33%;" /> | <img src="./image/android_app_test1-1.jpg" alt="location_permissions1" style="zoom: 33%;" /> |
+| 连接蓝牙名字                                      | 选择service                                       | 选择char service                                      |
+| ------------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------- |
+| ![android_app_test1](image/android_app_test1.jpg) | ![android_app_test2](image/android_app_test2.jpg) | ![android_app_test1-1](image/android_app_test1-1.jpg) |
 
 4)	我们选择“SK-KEYPRESSED”,点击后如图3.1.9我们可以看到有一个“写入”按键，点击即可进入，我们点击“红色框”即可输入想发送的数据，输入完成后点击“发送”即可将数据发出去
 
-
-
-|                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./image/android_app_test3.jpg" alt="location_permissions1" style="zoom: 33%;" /> | <img src="./image/android_app_test4.jpg" alt="location_permissions1" style="zoom: 33%;" /> |
+|                                                   |                                                   |
+| ------------------------------------------------- | ------------------------------------------------- |
+| ![android_app_test3](image/android_app_test3.jpg) | ![android_app_test4](image/android_app_test4.jpg) |
 
 5)	点击发送字符串"on"后，打开ArduinoIDE的串口监视器上打印 turn on led，同时观察ble-uno上的L灯点亮，代表app蓝牙控制主板上的L灯成功，同样的方法发送字符串“off”后，ble-uno上的L灯会熄灭。到此我们安卓手机蓝牙测试完成。
 
@@ -166,21 +158,21 @@ void loop() {
 
 1)	在APP store 中搜索LightBlue,下载软件LightBlue RExplorer，并打开。
 
-|                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./image/ios_app_test1.png" alt="location_permissions1"  /> | <img src="./image/ios_app_test2.png" alt="location_permissions1"  /> |
+|                                           |                                           |
+| ----------------------------------------- | ----------------------------------------- |
+| ![ios_app_test1](image/ios_app_test1.png) | ![ios_app_test2](image/ios_app_test2.png) |
 
 2)	安装APP后，打开APP扫描到ble-uno,并连接
 
-|                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./image/ios_app_test3.jpg" alt="location_permissions1" style="zoom:33%;" /> | <img src="./image/ios_app_test4.jpg" alt="location_permissions1" style="zoom:33%;" /> |
+|                                           |                                           |
+| ----------------------------------------- | ----------------------------------------- |
+| ![ios_app_test3](image/ios_app_test3.jpg) | ![ios_app_test4](image\ios_app_test4.jpg) |
 
 4)	选择字符类型，并点击Write  new value，输入字符即可给ble-uno发送数据。
 
-|                                                              |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="./image/ios_app_test5.jpg" alt="location_permissions1" style="zoom:33%;" /> | <img src="./image/ios_app_test6.jpg" alt="location_permissions1" style="zoom:33%;" /> | <img src="./image/ios_app_test7.jpg" alt="location_permissions1" style="zoom:33%;" /> |
+|                                           |                                           |                                           |
+| ----------------------------------------- | ----------------------------------------- | ----------------------------------------- |
+| ![ios_app_test5](image/ios_app_test5.jpg) | ![ios_app_test6](image/ios_app_test6.jpg) | ![ios_app_test7](image/ios_app_test7.jpg) |
 
 5) 点击done后会发送字符串"on"后，打开ArduinoIDE的串口监视器上打印 turn on led，同时观察ble-uno上的L灯点亮，代表app蓝牙控制主板上的L灯成功，同样的方法发送字符串“off”后，ble-uno上的L灯会熄灭。到此我们IOS蓝牙测试完成。
 
@@ -321,16 +313,27 @@ AT指令还可以通过直连TypeC数据线直连控制和APP的为0xFFE2的char
 | AT+CON=< Param > | OK+CON=< Param > | 从机蓝牙地址 |
 
 +SCAN
+
 OK
+
 mac[1] 3e:bb:9e:e4:e9:9a
+
 mac[2] 8c:5a:f8:ef:5c:f8
+
 mac[3] 6b:9c:b3:c4:4b:0c
+
 mac[4] 17:cc:ef:66:40:b1
+
 mac[5] fd:e2:4e:af:ea:da
+
 mac[6] 67:3a:b1:45:c2:e8
+
 mac[7] d0:44:7a:9e:e4:e4
+
 OK
+
 AT+CONN=1代表连接扫描得到的第二个蓝牙设备
+
 AT+CON=d0:44:7a:9e:e4:e4直接连接Mac地址为d0:44:7a:9e:e4:e4的设备
 
 15、开启蓝牙自动连接模式    开启后，蓝牙模块将自动连接上次成功连接过的设备
@@ -414,7 +417,7 @@ ble-uno支持三种AT指令配置方式：
 
 串口波特率为115200，选择回车换行（NL和NR）作为结束符。
 
-<img src="./image/arduino_at_cmd.png" alt="18" style="zoom: 67%;" />
+![arduino_at_cmd](image/arduino_at_cmd.png)
 
 
 
@@ -470,7 +473,7 @@ void loop() {
 
 设置两个ble-uno的USB和蓝牙数据传输模式设置为USB串口数据和BLE透传即AT+BLEUSB=3
 
-<img src="./image/AT+BLEUSB.png" alt="48" style="zoom:80%;" />
+![AT+BLEUSB](image/AT+BLEUSB.png)
 
 从机烧录[ble_control_led.ino](./example/ble_contorl_led/ble_contorl_led.ino) 
 
