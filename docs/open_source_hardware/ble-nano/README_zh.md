@@ -315,16 +315,27 @@ AT指令还可以通过直连TypeC数据线直连控制或者APP里面为0xFFE2�
 | AT+CON=< Param > |	OK+CON=< Param > |	从机蓝牙地址 |
 
 +SCAN
+
 OK
+
 mac[1] 3e:bb:9e:e4:e9:9a
+
 mac[2] 8c:5a:f8:ef:5c:f8
+
 mac[3] 6b:9c:b3:c4:4b:0c
+
 mac[4] 17:cc:ef:66:40:b1
+
 mac[5] fd:e2:4e:af:ea:da
+
 mac[6] 67:3a:b1:45:c2:e8
+
 mac[7] d0:44:7a:9e:e4:e4
+
 OK
+
 AT+CONN=1代表连接扫描得到的第二个蓝牙设备
+
 AT+CON=d0:44:7a:9e:e4:e4直接连接Mac地址为d0:44:7a:9e:e4:e4的设备
 
 15、开启蓝牙自动连接模式    开启后，蓝牙模块将自动连接上次成功连接过的设备
