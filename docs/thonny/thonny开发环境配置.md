@@ -188,7 +188,7 @@ https://www.wch.cn/downloads/CH341SER_EXE.html
 
 ESP32需要连接到计算机时，是在线运行的。用户可以使用Thonny编写和调试程序。
 
-（1）打开Tonny并单击![image62](pictures\image62.jpeg) ，然后单击“**此电脑**”。
+（1）打开Tonny并单击![image62](pictures/image62.jpeg) ，然后单击“**此电脑**”。
 
 ![image63](pictures/image63.jpeg)
 
@@ -196,7 +196,7 @@ ESP32需要连接到计算机时，是在线运行的。用户可以使用Thonny
 
 ![image64](pictures/image64.jpeg)
 
-（3）单击![image65](pictures\image65.jpeg)或按下“F5”键，Shell窗口将打印出”**Hello World**“。
+（3）单击![image65](pictures/image65.jpeg)或按下“F5”键，Shell窗口将打印出”**Hello World**“。
 
 ![image66](pictures/image66.jpeg)
 
