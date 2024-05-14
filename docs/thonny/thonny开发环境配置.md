@@ -99,17 +99,9 @@ Thonny是一个免费、开源的软件平台，体积小，界面简单，操�
 
 ## 三、 安装驱动
 
-### 3.1 Windows系统
+参考[CH340驱动说明](https://docs.emakefun.com/CH340/CH340/)文档进行安装。
 
-参考ESP32 IOT说明文档的驱动安装步骤。
 
-### 3.2 Mac系统
-
-请参考以下链接:
-
-https://www.wch.cn/downloads/CH341SER_EXE.html
-
-![image44](pictures/image44.jpeg)
 
 ## 四、烧录固件
 
@@ -118,11 +110,14 @@ https://www.wch.cn/downloads/CH341SER_EXE.html
 ### 4.1 下载Micropython固件
 
 - [microPython官方网站](http://micropython.org/)
+
 - [microPython的ESP32固件](https://micropython.org/download/esp32/)   打开microPython的ESP32固件网址，下载固件。
+
+  **注意：本教程以官网V1.20.0固件为示例，现已更新到“ESP32_GENERIC-20231005-v1.21.0”版本，增加了蓝牙下载功能，后期更新的固件以同样的方法进行烧录！！！**
 
 ![image48](pictures/image48.jpeg)
 
-本教程中使用的固件是：**esp32-20230426-v1.20.0.bin** 。我们的资料中也提供了此版本的固件，路径如下图。
+本教程中使用的固件是：**esp32-20230426-v1.20.0.bin** 。我们的资料中也提供了此版本的固件，路径如下图，另外**建议使用 V1.21版本固件**。
 
 ![image49](pictures/image49.jpeg)
 
