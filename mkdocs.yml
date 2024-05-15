@@ -136,8 +136,8 @@ nav:
       - 树莓派电机驱动板: raspberrypi/RaspberryPi-MotorDriverBoard/README.md
   - ESP32产品:
       - maker-esp32: esp32/ESP32.md
+      - esp32-dev: esp32/esp32 devkit 32e/esp32 devkit 32e.md
       - esp32-iot-board: esp32/esp32_iot_board.md
-      - esp32-dev: esp32/esp32-dev/esp32-dev.md
   - 开源硬件:
       - ble-nano: open_source_hardware/ble-nano/README_zh.md
       - ble-uno: open_source_hardware/ble-uno/README_zh.md
