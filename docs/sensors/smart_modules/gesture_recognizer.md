@@ -48,17 +48,20 @@
 
 ## Arduino应用场景
 
-### Arduino库和示例程序
+| 支持开发板系列 |
+| ---- |
+| Arduino UNO R3 |
+| Arduino Nano |
+| Arduino Mega 2560 |
+| ESP32 |
 
-[点击下载Arduino库和示例程序](https://github.com/emakefun-arduino-library/emakefun_gesture_recognizer/archive/refs/tags/latest.zip)，包含Arduino库文件和示例代码
+- Arduino库和示例程序：[点击此处链接下载](gesture_recognizer/gesture_recognizer.png)
 
-### Arduino库使用文档
-
-[点击此处打开文档链接](https://emakefun-arduino-library.github.io/emakefun_gesture_recognizer/class_gesture_recognizer.html)
+- 主类和接口说明：[点击此处链接查看](https://emakefun-arduino-library.github.io/emakefun_tts/classemakefun_1_1_tts.html)
 
 ### Arduino示例程序
 
-[点开此处查看Arduino示例程序](https://emakefun-arduino-library.github.io/emakefun_gesture_recognizer/get_gesture_8ino-example.html)
+- 识别手势并打印：[点击此处链接查看](https://emakefun-arduino-library.github.io/emakefun_gesture_recognizer/get_gesture_8ino-example.html)
 
 ## Mixly应用场景
 
