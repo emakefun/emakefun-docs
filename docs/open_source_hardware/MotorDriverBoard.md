@@ -15,13 +15,13 @@ MotorDriverBoard是由 [深圳市易创空间科技有限公司](www.emakefun.co
 
 [**常见问题**](#faq)
 
-[**Arduino ide库文件下载**](https://521github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard.zip)
+[**Arduino ide库文件下载**](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard.zip)
 
-[**Mixly库下载**](https://521github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mixly.zip)
+[**Mixly库下载**](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mixly.zip)
 
-[**Mblock5库下载**](https://521github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mblock5.zip)
+[**Mblock5库下载**](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mblock5.zip)
 
-[**Mind+库下载**](https://521github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_mindplus-V1.0.0.zip)
+[**Mind+库下载**](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_mindplus-V1.0.0.zip)
 
 [MagicBlock下载(敬请期待)]()
 
@@ -88,7 +88,21 @@ MotorDriverBoard是由 [深圳市易创空间科技有限公司](www.emakefun.co
 
 ## 驱动库使用
 
-[**下载Arduino库**](https://521github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard.zip) 解压放置Arduino IDE安装目录下的libraries目录下，然后通过点击文件-->示例-->Emakefun_MotorDriverBoard，打开示例程序。![examples](./doc/picture/ZH/examples.png)
+[**下载Arduino库**](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard.zip) ，打开IDE，点击左上角项目-->包含库-->添加.ZIP库，选中你所下载的压缩包，打开。
+
+![1716167973006](doc/picture/ZH/1716167973006.png)
+
+![1716168840943](doc/picture/ZH/1716168840943.png)
+
+然后打开IDE，通过点击文件-->示例-->Emakefun_MotorDriverBoard，打开示例程序。![examples](./doc/picture/ZH/examples.png)
+
+示例程序解析。
+
+![1716169252803](doc/picture/ZH/1716169252803.png)
+
+![1716169302656](doc/picture/ZH/1716169302656.png)
+
+![1716169352693](doc/picture/ZH/1716169352693.png)
 
 ## 基础示例程序
 
@@ -331,7 +345,7 @@ MsTimer2::start();      /*启动定时器2*/
 
 #### Mixly块表述
 
-1.[点击下载Mixly扩展包和案例](https://521github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mixly.zip)
+1.[点击下载Mixly扩展包和案例](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mixly.zip)
 
 ![download](./doc/picture/ZH/mixly/download.png)
 
@@ -361,13 +375,13 @@ MsTimer2::start();      /*启动定时器2*/
 
 1. Mblock5库安装
 
-   1.1 下载[Mblock5库](https://521github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mblock5.zip)，解压
+   1.1 下载[Mblock5库](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mblock5.zip)，解压
 
    1.2  将解压后的ext_motordriverboard.mext扩展包拖到Mblock5软件里面，能看到以下界面，证明安装成功。
 
    ![mblock install success](./doc/picture/ZH/mblock/mblock install success.png)
 
-2. [Mblock5库和案例下载](https://521github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mblock5.zip)
+2. [Mblock5库和案例下载](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_Mblock5.zip)
 
 ![download](./doc/picture/ZH/mblock/download.png)
 
@@ -395,7 +409,7 @@ MsTimer2::start();      /*启动定时器2*/
 
 #### Mind+
 
-1. 下载[Mind+库扩展包](https://521github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_mindplus-V1.0.0.zip)
+1. 下载[Mind+库扩展包](https://github.com/emakefun/MotorDriverBoard/releases/download/v1.0/MotorDriverBoard_mindplus-V1.0.0.zip)
     ![extention-pkg.png](doc/picture/ZH/mind+/extention-pkg.png)
 2. 将解压后的emakefun-motordriverboard-thirdex-V0.0.3.mpext扩展包导入到Mind+软件里面  
     第一步：点击扩展
