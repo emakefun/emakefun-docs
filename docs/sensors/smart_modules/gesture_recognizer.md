@@ -55,7 +55,7 @@
 | Arduino Mega 2560 |
 | ESP32 |
 
-- Arduino库和示例程序：[点击此处链接下载](gesture_recognizer/gesture_recognizer.png)
+- Arduino库和示例程序：[点击此处链接下载](gesture_recognizer/emakefun_gesture_recognizer-latest.zip)
 
 - 主类和接口说明：[点击此处链接查看](https://emakefun-arduino-library.github.io/emakefun_tts/classemakefun_1_1_tts.html)
 
