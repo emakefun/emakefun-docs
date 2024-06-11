@@ -4,7 +4,7 @@
 
 ## 介绍
   
-  此款手柄是使用蓝牙与ESP32进行连接，ESP32自带蓝牙功能，用户可以直接在ESP32端输入手柄背部的蓝牙配对码连接使用。相对于上一个版本手柄，省去了读取ESP32蓝牙MAC地址再配置到手柄的这一繁琐的过程。
+此款手柄是使用蓝牙与ESP32进行连接，ESP32自带蓝牙功能，用户可以直接在ESP32端输入手柄背部的蓝牙配对码连接使用。相对于上一个版本手柄，省去了读取ESP32蓝牙MAC地址再配置到手柄的这一繁琐的过程。
 
 ## 规格参数
 
@@ -24,31 +24,31 @@
 
 #### 安装库
   
-  先下载安装库`PS3 Controller Host`，这是Arduino官方库，使用Arduino IDE搜索并安装`PS3 Controller Host`，该库的相关介绍可以参考官网：<https://www.arduino.cc/reference/en/libraries/ps3-controller-host/>
+先下载安装库`PS3 Controller Host`，这是Arduino官方库，使用Arduino IDE搜索并安装`PS3 Controller Host`，该库的相关介绍可以参考官网：<https://www.arduino.cc/reference/en/libraries/ps3-controller-host/>
 
 #### 输入蓝牙配对码并运行示例代码
   
-  Arduino IDE打开`PS3 Controller Host`的**连接**示例代码：**Arduino IDE -> 文件 -> 示例 -> PS3 Controller Host -> Ps3Connect**
+Arduino IDE打开`PS3 Controller Host`的**连接**示例代码：**Arduino IDE -> 文件 -> 示例 -> PS3 Controller Host -> Ps3Connect**
 
-  将手柄背部的`蓝牙配对码`输入到代码中运行，例如手柄蓝牙配对码为`02:00:01:23:45:67`
+将手柄背部的`蓝牙配对码`输入到代码中运行，例如手柄蓝牙配对码为`02:00:01:23:45:67`
 
-  在示例代码中，找到`setup`函数中的代码`Ps3.begin("01:02:03:04:05:06");`，将其修改为`Ps3.begin("02:00:01:23:45:67");`，如下所示：
+在示例代码中，找到`setup`函数中的代码`Ps3.begin("01:02:03:04:05:06");`，将其修改为`Ps3.begin("02:00:01:23:45:67");`，如下所示：
 
-  ```c++
+```c++
   Ps3.begin("01:02:03:04:05:06");
-  ```
+```
 
   改为：
 
-  ```c++
+```c++
   Ps3.begin("02:00:01:23:45:67");
-  ```
+```
 
   保存后编译烧录，烧录完成按下板子复位键进行复位，运行成功后串口（示例代码中设置的串口波特率为115200）会有如下打印：
 
-  ```text
+```text
   Ready.
-  ```
+```
 
 #### 配对连接
 
@@ -58,9 +58,9 @@
 
 - 连接到ESP32后，ESP32串口会循环打印Connected，这样就代表连接成功，如下所示：
 
-  ```text
+```text
   Connected
-  ```
+```
 
 - 连接成功后4个指示灯会一直闪烁，断线后约10秒会自动关机
 
