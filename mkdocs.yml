@@ -139,6 +139,8 @@ nav:
       - maker-esp32: esp32/ESP32.md
       - esp32-iot-board: esp32/esp32_iot_board.md
       - esp32连接PS3手柄方法: esp32/ps3_esp32.md
+  - 外设:
+      - 蓝牙手柄: peripheral/bluetooth_gamepad/main.md
   - 开源硬件:
       - ble-nano: open_source_hardware/ble-nano/README_zh.md
       - ble-uno: open_source_hardware/ble-uno/README_zh.md
