@@ -117,7 +117,7 @@
 
 ![1716255127748](esp8266_mqtt_pic/1716255127748.png)
 
-2. 编程端硬件连接物联网，[地址](remote.microprinttech.com)remote.microprinttech.com（此网址智能是MQTT连接，复制到浏览器是打不开的），端口19824，用户名和密码如下：注意！！！**一定是用这两个账号**！！！
+2. 编程端硬件连接物联网，[地址](remote.microprinttech.com)remote.microprinttech.com（此网址智能是MQTT连接，复制到浏览器是打不开的），端口19824，用户名和密码如下。
 
    账号1：kxmqttp1  密码  public985
 
