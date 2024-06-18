@@ -93,7 +93,7 @@
 
 打开txt文档，对重要参数进行修改，注意文档中不能打中文。如下图：
 
-![1715070636108](esp8266_mqtt_pic/1715070636108.png)
+![1718703576922](esp8266_mqtt_pic/1718703576922.png)
 
 点击串口助手的载入，选择txt文档,电脑插上烧录器和MQTT模块，然后点击打开串口。
 
@@ -108,34 +108,6 @@
 在浏览器打开[服务器网址](http://remote.microprinttech.com:19825/#/clients)，刷新后在客户端可看到ESP8266已连接。同时MQTT模块的MQTT灯常亮。
 
 ![1715071936312](esp8266_mqtt_pic/1715071936312.png)
-
-## 使用小结：
-
-为正常使用MQTT连接物联网并显示数据，我们需要执行两部分操作:登陆客户端查看和硬件联网。在执行完这两个操作后，重启硬件等待一会，刷新客户端查看数据。
-
-1. 网页端登陆查看，在此我们提供[服务器地址](http://remote.microprinttech.com:19825/#/clients)，端口19825，用户名admin，密码Anynod2022514 ，打开后并登陆，如下图。
-
-![1716255127748](esp8266_mqtt_pic/1716255127748.png)
-
-2. 编程端硬件连接物联网，[地址](remote.microprinttech.com)remote.microprinttech.com（此网址智能是MQTT连接，复制到浏览器是打不开的），端口19824，用户名和密码如下：注意！！！**一定是用这两个账号**！！！
-
-   账号1：kxmqttp1  密码  public985
-
-   账号2：kxmqttp2  密码  public211
-   
-   ![1716262064934](esp8266_mqtt_pic/1716262064934.png)
-
-3. 点击工具，选择 websocket，然后再点击“连接”，使客户端也连接服务器。
-
-   ![1716344674813](esp8266_mqtt_pic/1716344674813.png)
-
-4. 然后在主题栏输入你测试的主题，点击订阅，会提示订阅成功；然后让硬件发送信息，可以看到订阅消息列表中收到相关的消息。此时说明硬件已经成功连接物联网，且可以发送消息。
-
-![1716270156455](esp8266_mqtt_pic/1716270156455.png)
-
-5. 再在消息栏的主题里输入订阅的主题，然后输入测试的消息，点击发送，发送成功后，即可在发布消息列表栏看到已发送的消息，表明客户端可以远程控制了硬件。
-
-![1716270300767](esp8266_mqtt_pic/1716270300767.png)
 
 ## AT指令详解
 
@@ -457,152 +429,6 @@ void loop() {
 
 ```
 
-### **Arduino连接阿里云案例分析**
+## Arduino UNO主板、MicroBit主板、阿里云服务器使用教程
 
-```
-/*
- WiFiEsp test: BasicTest
-
- Performs basic connectivity test and checks.
-*/
-
-#include "WiFiEsp.h"
-#include "WifiEspMqtt.h"
-#include "SoftwareSerial.h"
-SoftwareSerial esp8266_serial(5, 6); // RX, TX
-uint32_t _startMillis = 0;
-
-WiFiEspMqtt esp8266;
-
-char ssid[] = "emakefun";        // your network SSID (name)
-char passwd[] = "501416wf";        // your network password
-
-char aliyun_mqtt_host[] = "a1gVfAJo2pv.iot-as-mqtt.cn-shanghai.aliyuncs.com";  // 阿里云物联网服务器host
-uint16_t aliyun_mqtt_port = 1883;    // 阿里云物联网服务器端口
-char product_key[] = "a1gVfAJo2pv";  // 设备所属产品的ProductKey，即物联网平台为产品颁发的全局唯一标识符
-char device_name[] = "emakefun";     // 设备在产品内的唯一标识符。DeviceName与设备所属产品的ProductKey组合，作为设备标识，用来与物联网平台进行连接认证和通信。
-char device_secret[] = "8412c9a3a13d5398fb33afc91a5f4c0c";  // 物联网平台为设备颁发的设备密钥，用于认证加密。需与DeviceName成对使用。
-
-void setup()
-{
-  Serial.begin(115200);
-  esp8266_serial.begin(9600);
-  Serial.println("Aliyun MqttSendReveive Test");
-  WiFi.init(&esp8266_serial);
-  assertEquals("Firmware version", WiFi.firmwareVersion(), "3.0.2");
-  assertEquals("Status is (WL_DISCONNECTED)", WiFi.status(), WL_DISCONNECTED);
-  esp8266.mqtt_connect_aliyun(aliyun_mqtt_host, aliyun_mqtt_port, product_key, device_name, device_secret, 0);
-
-  if (WiFi.begin(ssid, passwd) == WL_CONNECTED)
-  {
-     Serial.println("wifi connected");
-     
-     esp8266.mqtt_sub("/a1gVfAJo2pv/emakefun/user/get", 0);   // 订阅topic
-  }
-  esp8266.mqtt_public("/a1gVfAJo2pv/emakefun/user/add", "on", 0); // 发布topic 数据为 "on"
-  delay(10000);
-}
-
-void loop()
-{
-    if (esp8266.mqtt_receive())
-    {
-
-     Serial.print("topic:");
-     Serial.println(esp8266.mqtt_topic);    // 打印订阅的topic
-     Serial.print("message:");
-     Serial.println(esp8266.mqtt_message);  // 打印订阅的topic的数据
-    
-    }
-}
-
-void assertNotEquals(const char* test, int actual, int expected)
-{
-  if(actual!=expected)
-    pass(test);
-  else
-    fail(test, actual, expected);
-}
-
-void assertEquals(const char* test, int actual, int expected)
-{
-  if(actual==expected)
-    pass(test);
-  else
-    fail(test, actual, expected);
-}
-
-void assertEquals(const char* test, char* actual, char* expected)
-{
-  if(strcmp(actual, expected) == 0)
-    pass(test);
-  else
-    fail(test, actual, expected);
-}
-
-
-void pass(const char* test)
-{
-  Serial.print(F("********** "));
-  Serial.print(test);
-  Serial.println(" > PASSED");
-  Serial.println();
-}
-
-void fail(const char* test, char* actual, char* expected)
-{
-  Serial.print(F("********** "));
-  Serial.print(test);
-  Serial.print(" > FAILED");
-  Serial.print(" (actual=\"");
-  Serial.print(actual);
-  Serial.print("\", expected=\"");
-  Serial.print(expected);
-  Serial.println("\")");
-  Serial.println();
-  delay(10000);
-}
-
-void fail(const char* test, int actual, int expected)
-{
-  Serial.print(F("********** "));
-  Serial.print(test);
-  Serial.print(" > FAILED");
-  Serial.print(" (actual=");
-  Serial.print(actual);
-  Serial.print(", expected=");
-  Serial.print(expected);
-  Serial.println(")");
-  Serial.println();
-  delay(10000);
-}
-```
-**当连接上WIFI时，物联网模块的蓝灯会常亮，否则蓝灯会闪烁，同时串口监视器会显示WiFi connected,如下图所示。**
-**![size](esp8266_mqtt_pic/mqtt_connect_picture.png)**
-**当连上阿里云服务器时，选择阿里云设备菜单时，会显示当前在线的设备数量，并且所连接的设备的状态为在线状态，如下图所示。**
-**![size](esp8266_mqtt_pic/mqtt_aliyun_driver_connected.png)**
-**同时在串口监视器里面可以看到是否连接成功，如下图所示。**
-**![size](esp8266_mqtt_pic/mqtt_connect_aliyun_success_serial_print.png)**
-**当前程序会在连接阿里云服务器成功之后，会向服务器发布和订阅相关的主题(topic)。**
-**发布: 向云端发送数据。比如温度、湿度、气压值、停车位......** 
-     **可以在阿里云的监控运维->日志服务里面可以看到当前发布的记录，并且点击查看可以看到发送的数据。**
-**![size](esp8266_mqtt_pic/mqtt_aliyun_subdata.png)**	 
-**![size](esp8266_mqtt_pic/mqtt_aliyun_sub_data.png)**	 
-**订阅: 获取云端的数据。比如天气预报.....**
-     **可在设备的topic列表里找到相应的topic，并且点击发布消息，发布想要发布的数据。**
-**![size](esp8266_mqtt_pic/mqtt_pub_data.png)**
-	 **同时在串口监视器里面我们可以看到订阅的数据。**
-**![size](esp8266_mqtt_pic/mqtt_arduino_sub_serialdata.png)**
-
-**[下载最新示例程序](https://www.emakefun.com/sources/AliyunMqttSendReceive.7z)**
-
-**MQTT物联网需要先导入或者更新最新PH2.0的Mixly图形化库具体请看**
-
-**[物联网模块的mixly参考链接](https://github.com/emakefun/emakefun_sensors_graphical_lib#MQTT物联网模块 )**
-
-**[microbit使用参考示例]( https://github.com/emakefun/pxt-mqtt )**
-
-
-```
-
-```
+硬件的连接与编程使用请点击[此链接]()查看。
