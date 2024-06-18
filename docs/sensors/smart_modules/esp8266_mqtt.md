@@ -431,4 +431,4 @@ void loop() {
 
 ## Arduino UNO主板、MicroBit主板、阿里云服务器使用教程
 
-硬件的连接与编程使用请点击[此链接]()查看。
+硬件的连接与编程使用请点击[此链接](https://emakefun-docs.readthedocs.io/zh-cn/latest/sensors/smart_modules/esp8266_mqtt_pic/esp8266%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/)查看。
