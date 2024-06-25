@@ -4,7 +4,7 @@
 
 以下是您可以在 Arduino Nano 板上找到的所有引脚的全局视觉描述。
 
-![](D:/coding/arduino-dev-kit/Nano/02.Arduino%20IO%E4%BB%8B%E7%BB%8D/picture/5.png)
+![](picture/5.png)
 
 一开始你可能会发现这很难理解。那么，让我们一一分解每种引脚。
 
@@ -22,7 +22,7 @@
 
 ### 1.2 Arduino 电源引脚
 
-![1718937121802](D:/coding/arduino-dev-kit/Nano/02.Arduino%20IO%E4%BB%8B%E7%BB%8D/picture/4.png)
+![1718937121802](picture/4.png)
 
 电源有两种方式：
 
@@ -63,7 +63,7 @@
 
 低电平表示该引脚上的电压为 0V。HIGH 表示 Vcc，对于 Arduino Uno 来说是 5V。
 
-![](D:/coding/arduino-dev-kit/Nano/02.Arduino%20IO%E4%BB%8B%E7%BB%8D/picture/6.jpg)
+![](picture/6.jpg)
 
 在实际使用数字引脚之前，您需要配置其模式。数字引脚可以处于输入模式或输出模式。当处于输入模式时，您将使用它来读取数据。当处于输出模式时，您将使用它来写入数据。
 
@@ -112,7 +112,7 @@ pinMode(5,INPUT_PULLUP) ; // set pin to input using built in pull up resistor
 
 PWM（脉冲宽度调制）基本上是一种仅具有高/低 (5V/0V) 状态的特定电压（例如：4.1V）的方法。PWM 产生一个以给定频率运行的脉冲——Arduino Nano 为 500Hz。然后，占空比参数将告知每个脉冲处于高状态或低状态的百分比。
 
-![](D:/coding/arduino-dev-kit/Nano/02.Arduino%20IO%E4%BB%8B%E7%BB%8D/picture/7.jpg)
+![](picture/7.jpg)
 
 高/低状态的频繁变化产生平均电压输出。例如，在 50% 占空比（50% 的时间为高电平，50% 的时间为低电平）时，输出电压将为 2.5V。
 
@@ -140,7 +140,7 @@ PWM（脉冲宽度调制）基本上是一种仅具有高/低 (5V/0V) 状态的�
 
 ### 1.5 Arduino 模拟引脚
 
-![](D:/coding/arduino-dev-kit/Nano/02.Arduino%20IO%E4%BB%8B%E7%BB%8D/picture/8.png)
+![](picture/8.png)
 
 您可以在 Arduino Nano 板上找到 8 个模拟引脚。您会在电源引脚附近找到它们，并且它们很容易识别，从 A0 到 A7。
 
@@ -154,7 +154,7 @@ PWM（脉冲宽度调制）基本上是一种仅具有高/低 (5V/0V) 状态的�
 
 首先，它将接收输入电压并读取该电压。假设引脚读数为 2.5V。然后，ADC（模拟数字转换器）会将模拟值转换为 Arduino 程序可以理解的数字值。
 
-![](D:/coding/arduino-dev-kit/Nano/02.Arduino%20IO%E4%BB%8B%E7%BB%8D/picture/9.png)
+![](picture/9.png)
 
 Arduino Nano 板有一个 10 位 ADC。如果您使用其他 Arduino 板，分辨率可能会有所不同。那么，10 位是什么意思呢？简而言之，分辨率为 2^10 = 1024。因此，从模拟输入引脚读取数据时获得的值在 0 到 1024 之间。
 
@@ -190,7 +190,7 @@ UART 是 Arduino 最常用的协议——至少在您开始使用时是这样。
 
 您还可以直接在 Arduino Nano 板上找到 UART 所需的 2 个引脚，即引脚 0 和 1：RX 和 TX。R代表“接收”，T代表“发送”。这是双向通信。
 
-![1718941409575](D:/coding/arduino-dev-kit/Nano/02.Arduino%20IO%E4%BB%8B%E7%BB%8D/picture/10.png)
+![](picture/10.png)
 
 请注意，USB 使用的串行与引脚 0 和 1 使用的串行相同。因此，如果您想将另一个设备连接到主板的 RX/TX 引脚，请记住不要通过 USB 使用串行。
 
@@ -219,7 +219,7 @@ I2C是一种总线协议，具有多主/多从架构。但为了简单起见（�
 
 对于 I2C，您无法直接在电路板上看到任何指示。
 
-![1718941520924](D:/coding/arduino-dev-kit/Nano/02.Arduino%20IO%E4%BB%8B%E7%BB%8D/picture/11.png)
+![1718941520924](picture/11.png)
 
 您需要 4 根电缆才能使用 I2C 总线：
 
@@ -242,7 +242,7 @@ SPI 是另一种基于主从架构的协议。
 
 当您使用 SPI 设备并希望将其连接到 Arduino 板上的某些引脚时，以下是您需要使用的引脚：
 
-![](D:/coding/arduino-dev-kit/Nano/02.Arduino%20IO%E4%BB%8B%E7%BB%8D/picture/12.png)
+![](picture/12.png)
 
 用于连接具有 SPI 引脚的设备的电缆系统稍微复杂一些。您至少需要 6 根电缆：
 
