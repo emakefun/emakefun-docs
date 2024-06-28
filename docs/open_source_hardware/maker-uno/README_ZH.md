@@ -24,7 +24,7 @@ Maker-Uno是基于Arduino Uno R3基础上开发的一款适用于创客的标志
 
 以下是您可以在 Maker Uno 板上找到的所有引脚的全局视觉描述。
 
-![Maker_Uno_CalloutDrawing](picture/Maker_Uno_CalloutDrawing.png)
+![Maker_Uno_CalloutDrawing](./picture/Maker_Uno_CalloutDrawing.png)
 
 一开始你可能会发现这很难理解。那么，让我们一一分解每种引脚。
 
