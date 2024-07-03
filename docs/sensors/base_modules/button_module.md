@@ -37,15 +37,23 @@
 
 ## 6. 示例
 
-### 6.1 R3系列主板
+### 6.1 Arduino UNO使用教程
 
-#### Arduino示例程序
+#### 6.1.1 接线
+
+按键模块接P1(A3口），LED模块接P9（3口）；
+
+**接线端口可自行更改，只需注意编程时调节端口，本教程全按照示例接口进行。**
+
+![1719974529464](button_module/1719974529464.png)
+
+#### 6.1.2 Arduino示例程序
 
 [下载示例程序](button_module/button_module.zip)
 
 ```c
-int led_out = 4;//定义LED引脚
-int keypad_pin = 3; //定义按键引脚
+int led_out = 3;//定义LED引脚
+int keypad_pin = A3; //定义按键引脚
 int Button_value;
 void setup()
 {
@@ -65,7 +73,9 @@ void loop()
   }
 }
 ```
-#### Mixly示例程序
+#### 6.1.3 Mixly示例程序
+
+![1719974799216](button_module/1719974799216.png)
 
 [下载示例程序](button_module/Button_Mixly_demo.zip)
 
@@ -73,11 +83,21 @@ void loop()
 
 ### 6.2 microbit示例程序
 
+
+
 <a href="https://makecode.microbit.org/_bHkRLAeXDeMo" target="_blank">动手试一试</a>
 
 
 
 ### 6.3 ESP32-MicroPython示例程序
+
+按钮模块通过3Pin线接在主板P1（5号）口；
+
+LED模块通过3Pin线接在主板P2（2号）口；
+
+**接线端口可自行更改，只需注意编程时调节端口，本教程全按照示例接口进行。**
+
+![all](button_module/all.png)
 
 [示例程序下载](button_module/MicroPython.zip)
 
