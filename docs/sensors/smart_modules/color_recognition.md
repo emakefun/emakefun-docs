@@ -47,35 +47,22 @@ TCS34725是一款低成本，高性价比的RGB全彩颜色识别传感器，传
 #include "EM_TCS34725.h"
 
 EM_TCS34725 tcs34725;  // 初始化颜色识别 I2C地址为 0x29
-int  R;
-int  G;
-int  B;
-
-#define RGB_RED      5      // 设置RGB三色灯R引脚
-#define RGB_GREEN    6      // 设置RGB三色灯G引脚
-#define RGB_BLUE     3      // 设置RGB三色灯B引脚
 
 void setup() {
 
-tcs34725.begin();
-  pinMode(RGB_RED, OUTPUT);
-  pinMode(RGB_GREEN, OUTPUT);
-  pinMode(RGB_BLUE, OUTPUT);   
-  Serial.begin(9600);
+tcs34725.begin();  
+  Serial.begin(115200);
 }
 
 void loop()  {
-  R = tcs34725.getRedToGamma();                   // 颜色识别传感器读取颜色 并获取Red色值
-  G = tcs34725.getGreenToGamma();                 // 颜色识别传感器读取颜色 并获取Green色值
-  B = tcs34725.getBlueToGamma();                  // 颜色识别传感器读取颜色 并获取Blue色值
+  int  R = tcs34725.getRedToGamma();                   // 颜色识别传感器读取颜色 并获取Red色值
+  int  G = tcs34725.getGreenToGamma();                 // 颜色识别传感器读取颜色 并获取Green色值
+  int  B = tcs34725.getBlueToGamma();                  // 颜色识别传感器读取颜色 并获取Blue色值
   Serial.print(String("R:") + String(R));         // 串口打印三原色
   Serial.print(",");
   Serial.print(String("G:") + String(G));
   Serial.print(",");
   Serial.println(String("B:") + String(B));
-  analogWrite(RGB_BLUE, B);                        // RGB三色灯显示三原色
-  analogWrite(RGB_RED, R);
-  analogWrite(RGB_GREEN, G);
   delay(500);
 }
 
