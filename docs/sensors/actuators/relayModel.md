@@ -8,6 +8,8 @@
 
 ​         继电器是一种电控制器件。它具有控制系统（又称输入回路）和被控制系统（又称输出回路）之间的互动关系。通常应用于自动化的控制电路中，它实际上是用小电流去控制大电流运作的一种“自动开关” 。故在电路中起着自动调节、安全保护、转换电路等作用。特别适合于单片机控制强电装置。实际应用中，通常继电器可以通过低电压控制高电压的一个器件。继电器左侧(单片机)信号控制端输入低电压的控制信号，当左侧信号输入高电平时，继电器闭合，右侧2，3号端口连通，当左侧输入低电平时，继电器断开，右侧1，2号端口连通，从而实现低电压控制高电压。
 
+​		本继电器模块采用高电平触发。
+
 ## 原理图
 
 ![07](relayModule/07.png)
@@ -38,16 +40,15 @@
 ## 示例程序
 
 ```c
-#define buzzer_pin A3  // Set the buzzer port to A3
-void setup() {
-  pinMode(buzzer_pin, OUTPUT);  // Set the buzzer port to output mode
+#define relay_pin A3  //设置继电器端口为A3
+void setup(){
+    pinMode(relay_pin, OUTPUT);  //设置继电器端口为输出模式
 }
-
-void loop()  {
-  digitalWrite(buzzer_pin,HIGH);  // Set the buzzer port to high level
-  delay(1);                       // Delay 1 ms
-  digitalWrite(buzzer_pin,LOW);   // Set the buzzer port to low level
-  delay(1);                       // Delay 1 ms
+void loop(){
+digitalWrite(relay_pin, HIGH); //设置继电器端口为高电平
+delay(1000);
+digitalWrite(relay_pin, LOW);
+delay(1000);
 }
 ```
 
