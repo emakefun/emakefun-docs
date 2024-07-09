@@ -106,7 +106,7 @@ MotorDriverBoard是由 [深圳市易创空间科技有限公司](www.emakefun.co
 
 ## 基础示例程序
 
-[**Gpio_test**](./arduino_lib/examples/base/gpio_test/gpio_test.ino) 控制PCA9685输出口当作普通IO口输出高低电平
+[**Gpio_test**](./motor_driver_board_encoder_motor/gpio_test.zip) 控制PCA9685输出口当作普通IO口输出高低电平
 
 ```c++
 Emakefun_MotorDriver gpio = Emakefun_MotorDriver(0x60);
@@ -116,7 +116,7 @@ gpio.setPin(S1, HIGH);  /*引脚S1(S1~S8)输出高电平*/
 gpio.setPin(S1, LOW);   /*引脚S1(S1~S8)输出低电平*/
 ```
 
-[**PWM_test**](./arduino_lib/examples/base/pwm_test/pwm_test.ino) 这个示例程序为控制PCA9685输出口输出PWM波形
+[**PWM_test**](./motor_driver_board_encoder_motor/pwm_test.zip) 这个示例程序为控制PCA9685输出口输出PWM波形
 
 ```c++
 Emakefun_MotorDriver pwm = Emakefun_MotorDriver(0x60);
@@ -124,7 +124,7 @@ pwm.begin(1500);     /*初始化io口的输出频率为1500Hz*/
 pwm.setPin(S1, 1024);   /*引脚1输出占空比为 1024/4096 的PWM波（0~4096）*/
 ```
 
-[**PS2_test**](./arduino_lib/examples/base/ps2_test/ps2_test.ino)PS2手柄测试程序
+[**PS2_test**](./motor_driver_board_encoder_motor/ps2_test.zip)PS2手柄测试程序
 
 PS2手柄引脚说明：
 
@@ -141,7 +141,7 @@ PS2安装请勿接反，左边是正确安装，右边为PS2接收器接反
 
 ## 电机测试示例
 
-#### [**DC**](./arduino_lib/examples/motor_test/dc/dc.ino)四路直流电机测试程序
+#### [**DC**](./motor_driver_board_encoder_motor/dc.zip)四路直流电机测试程序
 
 ```c++
 Emakefun_MotorDriver mMotor = Emakefun_MotorDriver(0x60);
@@ -163,7 +163,7 @@ void loop()
 
 **接线图**![MotorDriverBoard_dc](./doc/picture/ZH/dc.png)
 
-#### [**Servo**](./arduino_lib/examples/motor_test/servo/servo.ino)八路舵机测试程序
+#### [**Servo**](./motor_driver_board_encoder_motor/servo.zip)八路舵机测试程序
 
 ```c++
 Emakefun_MotorDriver mMotorDriver = Emakefun_MotorDriver(0x60);
@@ -174,7 +174,7 @@ mServo1->writeServo(90, 10);   /*设置舵机角度为0~180，速度为0~100*/
 
 **接线图**![MotorDriverBoard_servo](./doc/picture/ZH/servo.png)
 
-#### [**Stepper**](./arduino_lib/examples/motor_test/stepper/stepper.ino) 步进电机测试程序
+#### [**Stepper**](./motor_driver_board_encoder_motor/stepper.zip) 步进电机测试程序
 
 ```c++
 Emakefun_MotorDriver mMotorDriver = Emakefun_MotorDriver(0x60);
@@ -199,7 +199,7 @@ StepperMotor_1->step(200, FORWARD, SINGLE);
 
 ![MotorDriverBoard_stepper](./doc/picture/ZH/stepper.png)
 
-#### [**Encoder**](./arduino_lib/examples/motor_test/encoder/encoder.ino)四路编码电机测试程序
+#### [**Encoder**](./motor_driver_board_encoder_motor/encoder.zip)四路编码电机测试程序
 
 编码器关键参数如下：
 
@@ -232,7 +232,7 @@ Encoder2Pulse:2
 Encoder1Pulse:3
 ```
 
-[**Encoder_pid**](./arduino_lib/examples/motor_test/encoder_pid/encoder_pid.ino)编码电机PID控制电机速度
+[**Encoder_pid**](./motor_driver_board_encoder_motor/encoder_pid.zip)编码电机PID控制电机速度
 
 ```c++
 PID myPID(&Input, &Output, &Setpoint, Kp, Ki, Kd, DIRECT);
@@ -287,13 +287,13 @@ MsTimer2::start();      /*启动定时器2*/
 
 ## 综合应用
 
-[PS2控制四驱小车](./arduino_lib/examples/comprehensive/ps2_control_4wd/ps2_control_4wd.ino)
+[PS2控制四驱小车](./motor_driver_board_encoder_motor/ps2_control_4wd.zip)
 
-[PS2控制四驱麦克纳姆轮小车](./arduino_lib/examples/comprehensive/ps2_control_mecanum_wheel_car/ps2_control_mecanum_wheel_car.ino)
+[PS2控制四驱麦克纳姆轮小车](./motor_driver_board_encoder_motor/ps2_control_mecanum_wheel_car.zip)
 
-[PS2控制四驱小车加机械臂](./arduino_lib/examples/comprehensive/ps2_control_4wd_with_robotic_arm/ps2_control_4wd_with_robotic_arm.ino)
+[PS2控制四驱小车加机械臂](./motor_driver_board_encoder_motor/ps2_control_4wd_with_robotic_arm.zip)
 
-[蓝牙(WIFI)控制四驱小车](./arduino_lib/examples/comprehensive/bluetooth_wifi_control/bluetooth_wifi_control.ino)
+[蓝牙(WIFI)控制四驱小车](./motor_driver_board_encoder_motor/bluetooth_wifi_control.zip)
 
 蓝牙或者wifi模块请使用数据透传模块，连接到arduino的硬件串口引脚上（0-RXD，1-TXD）
 
