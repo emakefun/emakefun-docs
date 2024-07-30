@@ -94,19 +94,19 @@
 | Arduino Mega 2560 |
 | ESP32 |
 
-- Arduino库和示例程序：[点击此处链接下载](tts_module/emakefun_tts-latest.zip)
-
 - 主类和接口说明：[点击此处链接查看](https://emakefun-arduino-library.github.io/emakefun_tts/classemakefun_1_1_tts.html)
 
 ### Arduino 库示例程序
 
-- 文本播放： [点击此处链接查看](https://emakefun-arduino-library.github.io/emakefun_tts/play_8ino-example.html)
+在使用IDE进行编程前，请先下载并安装Arduino库：[点击此处链接下载](tts_module/emakefun_tts-latest.zip)
 
-- 缓存文本播放： [点击此处链接查看](https://emakefun-arduino-library.github.io/emakefun_tts/play_from_cache_8ino-example.html)
+- 文本播放： [点击此处链接下载](./tts_module/play.zip)
 
-- 播放流程控制： [点击此处链接查看](https://emakefun-arduino-library.github.io/emakefun_tts/play_flow_control_8ino-example.html)
+- 缓存文本播放： [点击此处链接下载](./tts_module/play_from_cache.zip)
 
-- 设置播放参数： [点击此处链接查看](https://emakefun-arduino-library.github.io/emakefun_tts/play_with_parameters_8ino-example.html)
+- 播放流程控制： [点击此处链接下载](./tts_module/play_flow_control.zip)
+
+- 设置播放参数： [点击此处链接下载](./tts_module/play_with_parameters.zip)
 
 ### Mixly示例程序
 
