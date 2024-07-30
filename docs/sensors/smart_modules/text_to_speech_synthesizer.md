@@ -124,7 +124,7 @@
 
 程序解析：语音合成模块初始化播放"hello world"和"我爱创客"，之后一直播报当前的温度。
 
-[点击下载Mind+示例](./tts_module/tts_mindplus.zip)
+[点击下载语音合成Mind+库和示例](./tts_module/tts_mindplus.zip)
 
 ## 语音识别模块和语音合成模块的综合程序(Arduino)
 

@@ -37,7 +37,11 @@ ESP32 IOT是基于乐鑫科技的 [ESP32-WROOM-32](https://www.espressif.com/sit
 - M4定位孔直径：4.7mm，兼容乐高
 - 软件支持Mixly、Arduino IDE、MicroPython
 
-### 2.3 引脚说明
+### 2.3 尺寸说明
+
+![1722306334249](pictures/1722306334249.png)
+
+### 2.4 引脚说明
 
 ![pin](pictures/pin.jpg)
 
