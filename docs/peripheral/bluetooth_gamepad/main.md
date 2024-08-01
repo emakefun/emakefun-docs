@@ -96,9 +96,9 @@ Arduino IDE打开`PS3 Controller Host`的**连接**，示例代码：**Arduino I
 
 ![1722411726600](pictures/10.png)
 
-![1722411752201](E:\coding\emakefun-docs\docs\peripheral\bluetooth_gamepad\pictures\11.png)
+![1722411752201](pictures/11.png)
 
-安装后，在Emakefun—通信模块 类别中可找到PS3相关编程指令。
+安装后，在EmakefunSensors—通信模块 类别中可找到PS3相关编程指令。
 
 ![1722411873696](pictures/12.png)
 
