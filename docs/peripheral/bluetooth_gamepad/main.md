@@ -104,7 +104,7 @@ Arduino IDE打开`PS3 Controller Host`的**连接**，示例代码：**Arduino I
 
 #### 	4.2.2 输入蓝牙配对码并运行示例代码
 
-点击[mixly示例程序下载](./bluetooth_gamepad/ps3手柄读取按键.zip)
+点击此处链接查看[mixly示例程序下载](./bluetooth_gamepad/ps3.zip)
 
 参照示例编写程序或使用示例程序，注意输入手柄背面的蓝牙配对码，每个手柄在出厂时已设置不同的配对码。
 
@@ -121,7 +121,7 @@ Arduino IDE打开`PS3 Controller Host`的**连接**，示例代码：**Arduino I
 
 #### 	4.2.4 按键测试
 
-点击[mixly示例程序下载](./bluetooth_gamepad/ps3手柄读取按键.zip)
+点击点击此处链接查看[mixly示例程序下载](./bluetooth_gamepad/ps3.zip)
 
 经测试，所有按键在按下时反馈数字1，未按下为0；
 
@@ -137,7 +137,7 @@ Arduino IDE打开`PS3 Controller Host`的**连接**，示例代码：**Arduino I
 
 #### 4.3.1 安装库
 
-点击[Mind+示例程序和库文件下载](./bluetooth_gamepad/mind+示例程序.zip)
+点击点击此处链接查看[Mind+示例程序和库文件下载](./bluetooth_gamepad/mind+.zip)
 
 打开Mind+，选择FireBeetle ESP32-E 为主板模式，将ESP32主板与电脑连接。
 
