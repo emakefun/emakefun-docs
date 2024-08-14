@@ -78,7 +78,7 @@ ESP32 DevKit 32E是基于乐鑫科技的 ESP32-WROOM-32基础上开发的一款�
 
 ### 2.4 [原理图](./pictures/ch340G_esp32.pdf)
 
-![ch340G_esp32](pictures\ch340G_esp32.png)
+![ch340G_esp32](pictures/ch340G_esp32.png)
 
 ### 2.5 [产品三维图](./pictures/ch340G_esp32_pico.step)
 
