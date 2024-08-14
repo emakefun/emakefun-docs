@@ -1,0 +1,7 @@
+@INCLUDE_PATH  = doxygen
+@INCLUDE = base.cfg
+PROJECT_NAME     = "Emakefun Button"
+PROJECT_NUMBER   = 1.0
+OUTPUT_LANGUAGE  = English
+INPUT            = src \
+                   examples/button/button.ino
