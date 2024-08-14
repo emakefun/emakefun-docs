@@ -76,7 +76,11 @@ ESP32 DevKit 32E是基于乐鑫科技的 ESP32-WROOM-32基础上开发的一款�
 - 使用 Wi-Fi 时不能使用 ADC2 管脚。因此，如果您使用 Wi-Fi，并且无 法从 ADC2 GPIO 获取值，则可以考虑改用 ADC1 GPIO。
 - 启用（EN）是 3.3V 调节器的启用引脚。它被拉起来了，所以接地使 3.3V 调节器失效。这意味着您可以使用连接到按钮的该管脚来重新启动 ESP32。
 
-### 2.4[产品三维图](./pictures/ch340G_esp32_pico.step)
+### 2.4 [原理图](./pictures/ch340G_esp32.pdf)
+
+![ch340G_esp32](pictures\ch340G_esp32.png)
+
+### 2.5 [产品三维图](./pictures/ch340G_esp32_pico.step)
 
 ## 三、ESP32 DevKit 32E 驱动安装
 
