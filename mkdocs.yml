@@ -148,7 +148,7 @@ nav:
       - maker-uno: open_source_hardware/maker-uno/README_ZH.md
       - rf-nano: open_source_hardware/rf-nano_v3_0.md
       - MotorDriverBoard: open_source_hardware/MotorDriverBoard.md
-      - Arduino可编程手柄: open_source_hardware/Arduino可编程手柄/Arduino可编程手柄使用说明.md
+      - arduino_programmable_controller: open_source_hardware/arduino_programmable_controller/Programmable controller.md
   - 软件:
       - MagicBlock: open_source_software/magicblock.md
       - EmakefunApp: open_source_software/EmakefunApp.md
