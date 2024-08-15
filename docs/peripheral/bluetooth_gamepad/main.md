@@ -20,6 +20,21 @@
 
 - 蓝牙连接距离：约10M
 
+- 支持的MCU型号：
+
+| 型号 | 是否支持 |
+| --- | --- |
+| ESP32 | 是 |
+| ESP32-P4 | 否 |
+| ESP32-S2 | 否 |
+| ESP32-S3 | 否 |
+| ESP32-C2 | 否 |
+| ESP32-C3 | 否 |
+| ESP32-C5 | 否 |
+| ESP32-C6 | 否 |
+| ESP32-H2 | 否 |
+| ESP8266 | 否 |
+
   ![1722406833331](pictures/1722406833331.png)
 
 ## 四、使用步骤
@@ -28,7 +43,7 @@
 
 ### 4.1 Arduino IDE
 
-#### 		4.1.1 安装库
+#### 4.1.1 安装库
 
 先下载安装库`PS3 Controller Host`，这是Arduino官方库，使用Arduino IDE搜索并安装 PS3 Controller Host，该库的相关介绍可以参考官网：<https://www.arduino.cc/reference/en/libraries/ps3-controller-host/>
 
@@ -36,7 +51,7 @@
 
 ![1722407010791](pictures/2.png)
 
-#### 	4.1.2 输入蓝牙配对码并运行示例代码
+#### 4.1.2 输入蓝牙配对码并运行示例代码
 
 将ESP32主板与电脑连接，主板型号选择ESP32-WROOM-DA Module，如下图：
 
@@ -56,7 +71,7 @@ Arduino IDE打开`PS3 Controller Host`的**连接**，示例代码：**Arduino I
 
 ![1722409802804](pictures/6.png)
 
-#### 	4.1.3 配对连接
+#### 4.1.3 配对连接
 
 1. 将PS3手柄与电脑或者电源适配器断开连接，不要插任何数据线或者充电线！
 
@@ -70,7 +85,7 @@ Arduino IDE打开`PS3 Controller Host`的**连接**，示例代码：**Arduino I
 
 5. 连接成功后4个指示灯会一直闪烁，断线后约10秒会自动关机
 
-####   4.1.4 按键测试
+#### 4.1.4 按键测试
 
 手柄按键摇杆等测试，请自行运行和学习`PS3 Controller Host`的测试代码
 
@@ -82,11 +97,9 @@ Arduino IDE打开`PS3 Controller Host`的**连接**，示例代码：**Arduino I
 
 - **注意**，运行这些测试代码，都需要将手柄背部的`蓝牙配对码`输入到`setup`函数中`Ps3.begin("xx:xx:xx:xx:xx:xx")`函数中，如`Ps3.begin("02:00:01:23:45:67");`
 
-  
-
 ### 4.2 Mixly
 
-#### 	4.2.1 安装库
+#### 4.2.1 安装库
 
 打开mixly，选择Arduino ESP32 为主板模式，将ESP32主板与电脑连接。
 
@@ -102,7 +115,7 @@ Arduino IDE打开`PS3 Controller Host`的**连接**，示例代码：**Arduino I
 
 ![1722411873696](pictures/12.png)
 
-#### 	4.2.2 输入蓝牙配对码并运行示例代码
+#### 4.2.2 输入蓝牙配对码并运行示例代码
 
 点击此处链接查看[mixly示例程序下载](./ps3按键测试.zip)
 
@@ -110,7 +123,7 @@ Arduino IDE打开`PS3 Controller Host`的**连接**，示例代码：**Arduino I
 
 ![1722412044330](pictures/13.png)
 
-#### 	4.2.3 配对连接
+#### 4.2.3 配对连接
 
 1. 将PS3手柄与电脑或者电源适配器断开连接，不要插任何数据线或者充电线！
 2. 将ESP32主板下载好程序并保持与电脑连接，打开串口监视器，保持波特率为115200
@@ -119,7 +132,7 @@ Arduino IDE打开`PS3 Controller Host`的**连接**，示例代码：**Arduino I
 
 ![1722412332453](pictures/14.png)
 
-#### 	4.2.4 按键测试
+#### 4.2.4 按键测试
 
 点击点击此处链接查看[mixly示例程序下载](./ps3按键测试.zip)
 
@@ -130,8 +143,6 @@ Arduino IDE打开`PS3 Controller Host`的**连接**，示例代码：**Arduino I
 左右摇杆值为-128-127之间，中间值为0;
 
 ![1722412948170](pictures/16.png)
-
-
 
 ### 4.3 Mind+
 
@@ -188,8 +199,6 @@ Arduino IDE打开`PS3 Controller Host`的**连接**，示例代码：**Arduino I
 左右摇杆值为-128-127之间，中间值为0;
 
 ![1722415593047](pictures/20.png)
-
-
 
 ## 充电说明
 
