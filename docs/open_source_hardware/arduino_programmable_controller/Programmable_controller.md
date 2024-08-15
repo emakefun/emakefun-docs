@@ -432,6 +432,7 @@ enum ButtonType : uint8_t {
     kButtonD = 8,
     kButtonMax,
   };
+//这里只用直接调用你需要判断的按键类型，即可。比如说判断手柄端的A键是否按下，就只用输入emakefun::GamepadModel::kButtonA就行，其他按键的判断按照这样的参数修改ButtonType类型即可。
 ```
 
 #### g_gamepad_model.Tick()
@@ -479,19 +480,31 @@ bool ButtonReleased(const ButtonType button_type) const {
 
 #### 获取摇杆和重力加速度的值
 
-摇杆：
+**摇杆**：
+
+获取X轴上的摇杆值：
 
 `GetJoystickCoordinate().x`
 
+获取Y轴上的摇杆值：
+
 `GetJoystickCoordinate().y`
 
-重力加速度：
+**重力加速度**：
+
+获取X轴上重力加速度值：
 
 `g_gamepad_model.GetGravityAcceleration().x`
 
+获取Y轴上重力加速度值：
+
 `g_gamepad_model.GetGravityAcceleration().y`
 
+获取Z轴上重力加速度值：
+
 `g_gamepad_model.GetGravityAcceleration().z`
+
+
 
 以上函数直接调用即可
 
