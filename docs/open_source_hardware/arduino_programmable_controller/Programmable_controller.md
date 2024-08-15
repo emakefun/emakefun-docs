@@ -414,6 +414,7 @@ bool NewButtonState(const ButtonType button_type) const {
   }
 
 参数：none或者ButtonType类型的参数
+填写参数示例 emakefun::GamepadModel::ButtonType
 返回值：按键状态发生改变就返回1，反之返回0.
 ```
 
@@ -457,6 +458,7 @@ bool ButtonPressed(const ButtonType button_type) const {
     return NewButtonState(button_type) && GetButtonState(button_type);
   }
 
+调用函数示例：g_gamepad_model.ButtonPressed(emakefun::GamepadModel::kButtonA)
 参数：ButtonType类型的参数
 返回值：按键按下返回1，否则为0
 ```
@@ -470,6 +472,7 @@ bool ButtonReleased(const ButtonType button_type) const {
     return NewButtonState(button_type) && !GetButtonState(button_type);
   }
 
+调用函数示例：g_gamepad_model.ButtonReleased(emakefun::GamepadModel::kButtonA)
 参数：ButtonType类型的参数
 返回值：按键释放返回1，否则为0
 ```
