@@ -8,7 +8,7 @@
 
 其中中间可插入BLE-Nano或者RF-Nano，插入时记得TypeC接口朝下。其背面可接入俩节7号电池供电。
 
-![1723537619104](D:\emake_fun\emakefun-docs\docs\open_source_hardware\Arduino可编程手柄\picture\2.png)
+![1723537619104](picture/2.png)
 
 这俩侧可以焊接JDY-16或者ESP-01Wifi模块。手柄左侧是一个摇杆模块，右侧是个4按键，以及中间上下各有俩个按键可供控制。
 
