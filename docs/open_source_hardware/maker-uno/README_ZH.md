@@ -30,6 +30,8 @@ Maker-Uno是基于Arduino Uno R3基础上开发的一款适用于创客的标志
 
 ## Maker Uno原理图
 
+[原理图点击此处下载](./maker-uno/Maker_Uno.pdf/)
+
 ![1723532150122](picture/11.png)
 
 ##  电机功能说明
@@ -91,6 +93,10 @@ void loop() {
 **Mixly 电机测试案例**
 
 ![1723533310321](picture/12.png)
+
+## Mind+电机测试案例
+
+![1723687860610](picture/13.png)
 
 ## 指示灯说明
 
