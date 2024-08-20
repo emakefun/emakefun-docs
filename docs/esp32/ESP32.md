@@ -232,7 +232,7 @@
 
 ## ESP32系列连接使用PS3蓝牙无线手柄
 
-[点击查看ESP32系列连接使用PS3蓝牙无线手柄](./ps3_esp32.md)
+[点击查看ESP32系列连接使用PS3蓝牙无线手柄](../peripheral/bluetooth_gamepad/main.md)
 
 [点击下载PS3控制电机舵机案例](./esp32/esp32_arduino/esp32PS3ControlTest.zip)
 
@@ -253,7 +253,7 @@
    ![](./esp32/mindplusSelectMainBoard.png)
 
    [点击下载电机示例程序](./esp32/esp32_mindplus/esp32MindplusMotor.zip)
-   
+
    [点击下载Maker-esp32Mind+库文件](./esp32/esp32_mindplus/eamkefun-em_maker_esp32-thirdex-V0.0.1.mpext)
 
 ## FAQ
