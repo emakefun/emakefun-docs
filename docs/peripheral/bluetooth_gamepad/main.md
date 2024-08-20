@@ -33,7 +33,7 @@
 | ESP32-H系列 | 否 |
 | ESP8266系列 | 否 |
 
-**请前往乐鑫官网（[https://www.espressif.com.cn/zh-hans/products/socs]）确认你的开发板或者模组对应的芯片系列，此款手柄不能用于ESP32芯片系列以外的芯片。**
+**请前往乐鑫官网（链接：<https://www.espressif.com.cn/zh-hans/products/socs>）确认你的开发板或者模组对应的芯片系列，此款手柄不能用于ESP32芯片系列以外的芯片。**
 
   ![1722406833331](pictures/1722406833331.png)
 
