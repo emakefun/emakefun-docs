@@ -30,9 +30,7 @@ Maker-Uno是基于Arduino Uno R3基础上开发的一款适用于创客的标志
 
 ## Maker Uno原理图
 
-[原理图点击此处下载](./maker-uno/Maker_Uno.pdf/)
-
-![1723532150122](picture/11.png)
+ [原理图点击此处下载](Maker_Uno.pdf) 
 
 ##  电机功能说明
 
