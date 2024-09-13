@@ -78,7 +78,8 @@ Arduino需要控制探头的发光，需要专门的RGB库支持。
 
 ### Mixly
 
-ToDo
+ [点击下载Mixly程序](./rus_04/rus_04_mixly.zip) 
+![rus_04_mixly](rus_04/rus_04_mixly.png)
 
 ### ESP8266/ESP32示例程序
 
