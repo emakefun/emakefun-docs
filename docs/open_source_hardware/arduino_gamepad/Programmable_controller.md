@@ -14,7 +14,7 @@
 
 ## Arduino可编程手柄原理图
 
-[原理图点击此链接进行下载](./Arduino可编程手柄/wirelesshandle.pdf)
+[原理图点击此链接进行下载](wirelesshandle.pdf)
 
 ![1723605437575](picture/3.png)
 
