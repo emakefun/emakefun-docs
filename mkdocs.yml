@@ -66,6 +66,7 @@ nav:
           - 五路循迹传感器v2.0: sensors/sensors/five_way_tracking_sensor_v2.0.md
           - 五路循迹传感器v3.0: sensors/sensors/five_line_tracker_v3/five_line_tracker_v3.md
           - RGB超声波传感器: sensors/sensors/rus_04.md
+          
 
       - 执行器:
           - 有源蜂鸣器模块: sensors/actuators/buzzerModel.md
@@ -108,6 +109,7 @@ nav:
           - 语音合成模块: sensors/smart_modules/text_to_speech_synthesizer.md
           - I2C扩展板模块: sensors/smart_modules/gpio_expansion_board.md
           - RFID-I2C模块: sensors/smart_modules/RFID-I2C.md
+          - NLCS11颜色识别传感器: sensors/smart_modules/NLCS11.md
       - 电源模块:
           - 3.7V升压充电模块: sensors/power_module/3.7v_battery_module.md
           - 7.4V充电电池模块: sensors/power_module/16340_2s_li_battery_module.md
