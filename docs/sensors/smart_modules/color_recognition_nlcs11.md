@@ -1,8 +1,10 @@
 # NLCS11颜色识别模块
 
-## 模块图
 
 
+## 模块实物图
+
+![颜色传感器_斜视图1(1)](C:\Users\lt\Desktop\颜色传感器_斜视图1(1).jpg)
 
 
 
@@ -11,6 +13,8 @@
 
 
 ## 概述
+
+
 
 NLCS11是一款基于颜色的光到数字的转换器，它结合了光电二极管、电流放大器、模拟电路和数字信号处理器。
 
@@ -24,7 +28,10 @@ NLCS11设备可进行色温测量、亮度传感。内部状态机提供了将�
 
 ## 模块参数
 
-* 工作电压：3.3-5V
+
+
+- 工作电压：3.3-5V
+
 * 工作电流：65uA
 * 检测距离：3-10mm
 * 时钟频率：0-400KHZ
@@ -37,6 +44,8 @@ NLCS11设备可进行色温测量、亮度传感。内部状态机提供了将�
 
 ## 引脚定义
 
+
+
 | 引脚名称 | 描述        |
 | -------- | ----------- |
 | G        | GND地线     |
@@ -46,55 +55,25 @@ NLCS11设备可进行色温测量、亮度传感。内部状态机提供了将�
 
 
 
-## Arduino读取RGB示例函数
+## Arduino示例程序（C/C++）
 
-```c
-/**
- * @example read_rgb.ino
- */
 
-#include "color_sensor_nlcs11.h"
 
-#define INFINITE_LOOP_ON_FAILURE InfiniteLoopOnFailure(__FUNCTION__, __LINE__)
+|  支持开发板系列   |
+| :---------------: |
+|  Arduino UNO R3   |
+|   Arduino Nano    |
+| Arduino Mega 2560 |
+|       ESP32       |
 
-namespace {
-emakefun::ColorSensorNlcs11 g_color_sensor;
-void InfiniteLoopOnFailure(const char* function, const uint32_t line_number) {
-  Serial.println(String(F("entering an infinite loop due to failure in ")) + function + F(", at line number: ") + line_number);
-  while (true) {
-    yield();
-  }
-}
 
-}  // namespace
-
-void setup() {
-  Serial.begin(115200);
-  Serial.println(F("setup"));
-
-  Wire.begin();
-
-  Serial.println(String(F("color sensor lib version: ")) + emakefun::ColorSensorNlcs11::kVersionMajor + "." +
-                 emakefun::ColorSensorNlcs11::kVersionMinor + "." + emakefun::ColorSensorNlcs11::kVersionPatch);
-
-  const auto ret = g_color_sensor.Initialize();
-
-  if (emakefun::ColorSensorNlcs11::kOK == ret) {
-    Serial.println(F("color sensor initialization successful"));
-  } else {
-    Serial.println(String(F("color sensor device initialization failed: ")) + ret);
-    INFINITE_LOOP_ON_FAILURE;
-  }
-
-  Serial.println(F("setup successful"));
-}
-
-void loop() {
-  const auto color = g_color_sensor.GetColor();
-  Serial.println(String("r: ") + color.r + ", g: " + color.g + ", b: " + color.b);
-  delay(50);
-}
-```
 
 [点击下载Arduino库以及示例程序](color_recognition_nlcs11/nlcs11_example.zip)
 
+
+
+## Micropython示例程序
+
+
+
+[点击下载Micropython库和示例程序](xx/xx.zip)

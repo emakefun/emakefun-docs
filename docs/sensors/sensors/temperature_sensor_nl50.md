@@ -1,67 +1,66 @@
 # NL50温度传感器
 
-## 实物图
+## 模块实物图
 
-
-
-
-
-
+![NL50模块实物图](temperature_sensor_nl50/nl50.png)
 
 ## 概述
 
-NL50是由我司自主研发的温度传感器，该温度传感器是利用二极管的基本原理来测量已知温度值。随着温度的升高，二极管俩端的电压的已知的速率增加.通过精确放大电压变化，产生与环境温度成正比的电压信号,从而获取相应的温度值。
+NL50是由我司自主研发的温度传感器，该温度传感器是利用二极管的基本原理来测量已知温度值。随着温度的升高，二极管俩端的电压的已知的速率增加.通过精确放大电压变化，产生与环境温度成正比的电压信号，从而获取相应的温度值。
 
-因此NL50传感器具有精确度高，连接方式简单等优点。
+因此NL50传感器具有精确度高，连接方式简单等优点。具有±5℃从0℃到85℃温度范围，比同类市场上的同类兼容设备更准确。
 
+### 原理图
 
+[点击下载NL50原理图](temperature_sensor_nl50/nl50.pdf)
+
+### 芯片规格书
+
+待补充
+
+### 尺寸图
+
+待补充
 
 ## 模块参数
 
+- 供电电压：3.3-5V
+
+- 宽温度测量范围：-40℃至+150℃
+
+- 连接方式：3PIN防反接杜邦线
+
+- 模块尺寸：22.4*38.4mm，兼容乐高积木和M4螺丝固定孔
+
+- 安装方式：M4螺钉兼容乐高插孔固定
+
+## 引脚定义
+
 | 引脚名称 |         描述         |
-| :------: | :------------------: |
+| :------- | :------------------- |
 |    G     |         GND          |
 |    V     |         VCC          |
-|    S     | DATA串行数据，单总线 |
+|    S     | 信号线（模拟输出） |
 
-- 供电电压:3v3/5V
-- 连接方式:4PIN防反接杜邦线
-- 模块尺寸:40 x 22.5 mm
-- 安装方式:M4螺钉兼容乐高插孔固定
+## Arduino示例程序（C/C++）
 
+| 支持开发板系列    |
+| :---------------- |
+| Arduino UNO R3    |
+| Arduino Nano      |
+| Arduino Mega 2560 |
+| ESP32             |
 
+[点击下载Arduino库以及示例程序](temperature_sensor_nl50/emakefun_temperature_sensor_nl50.zip)
 
-## Arduino示例程序
+## Microython示例程序
 
-```c
-/**
- * @example read_temperature.ino
- */
+[点击下载Micropython库和示例程序](temperature_sensor_nl50/nl50_py.zip)
 
-#include "temperature_sensor_nl50.h"
+## Mixly图形化示例
 
-namespace {
-#if defined(ARDUINO_ARCH_ESP32) || defined(ARDUINO_ARCH_ESP32S3)
-constexpr uint8_t kPin = 34;
-#elif defined(ARDUINO_ARCH_AVR)
-constexpr uint8_t kPin = A0;
-#endif
+待补充
 
-emakefun::TemperatureSensorNl50 g_nl50(kPin);
-}  // namespace
+## Mind+图形化示例
 
-void setup() {
-  Serial.begin(115200);
-  Serial.println(String(F("temperature sensor NL50 lib version: ")) + emakefun::TemperatureSensorNl50::Version());
-  g_nl50.Initialize();
-  Serial.println(F("setup successful"));
-}
-
-void loop() {
-  Serial.println(String("temperature: ") + g_nl50.Read());
-  delay(100);
-}
-
-```
-
-[点击下载Arduino库以及示例程序](temperature_sensor_nl50/nl50_example.zip)
+待补充
