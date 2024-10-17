@@ -24,12 +24,12 @@
 
 ## 引脚定义
 
-| 引脚名称 | 描述 |
-|------|---------|
+| 引脚名称 | 描述       |
+| ---- | -------- |
 | V    | 3~5V电源引脚 |
-| G    | GND 地线  |
-| SDA  | IIC数据引脚 |
-| SCL  | IIC时钟引脚 |
+| G    | GND 地线   |
+| SDA  | IIC数据引脚  |
+| SCL  | IIC时钟引脚  |
 
 ## 模块尺寸
 
@@ -51,6 +51,22 @@
 
 ## Mixly图形化块
 
+![loading-ag-147](./pictures/mixly_select.png "米思齐选择五路循迹V3模块")
+
+[点击下载米思齐五路循迹V3.0获取模拟值示例程序](./examples/mixly_get_analog.zip)
+
+[点击下载米思齐五路循迹V3.0获取数字值示例程序](./examples/mixly_get_digital.zip)
+
 ## Mind+图形化
 
+[点击下载Mind+五路循迹V3.0用户库](./libs/emakefun-em_five_tracker_v3-thirdex-V0.0.1.mpext)
+
+![](./pictures/mindplus_select.png "mind+选择五路循迹V3.0")
+
+[点击下载mind+示例](./examples/mindplus_example.mp)
+
 ## Microbit示例程序
+
+敬请期待.....
+
+
