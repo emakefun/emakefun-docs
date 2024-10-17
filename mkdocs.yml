@@ -66,6 +66,7 @@ nav:
           - 五路循迹传感器v2.0: sensors/sensors/five_way_tracking_sensor_v2.0.md
           - 五路循迹传感器v3.0: sensors/sensors/five_line_tracker_v3/five_line_tracker_v3.md
           - RGB超声波传感器: sensors/sensors/rus_04.md
+          - NL50温度传感器: sensors/sensors/temperature_sensor_nl50.md
           
 
       - 执行器:
