@@ -222,7 +222,7 @@
 
 [点击下载PS3手柄Mixly示例](./esp32/esp32_mixly/esp32_ps3_rock_test.zip)
 
-[点击下载PS3手柄 Mind+库](./esp32/esp32_mindplus/emakefun-ps3-V0.0.1.zip)
+[点击下载PS3手柄 Mind+库](./esp32/esp32_mindplus/emakefun-ps3.zip)
 
 [点击下载PS3手柄 Mind+示例](./esp32/esp32_mindplus/ps3_test.zip)
 
@@ -233,7 +233,7 @@
    点击选择FireBeetle ESP32-E主板，如下图
    ![](./esp32/mindplusSelectMainBoard.png)
    [点击下载电机示例程序](./esp32/esp32_mindplus/esp32MindplusMotor.zip)
-   [点击下载Maker-esp32Mind+库文件](./esp32/esp32_mindplus/eamkefun-em_maker_esp32-thirdex-V0.0.1.mpext)
+   [点击下载Maker-esp32Mind+库文件](./esp32/esp32_mindplus/emakefun-em_maker_esp32-thirdex-V0.0.2.mpext)
 
 ## FAQ
 
