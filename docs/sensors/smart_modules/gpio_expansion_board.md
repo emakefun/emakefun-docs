@@ -62,6 +62,10 @@
 
 [示例程序](https://github.com/emakefun-arduino-library/emakefun_gpio_expansion_board#%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F)
 
+### MicroPython示例程序
+
+[示例程序](gpio_expansion_board/io_expansion_board_i2c.zip)
+
 ## Mixly应用场景
 
 ![Mixly示例程序](gpio_expansion_board/gpio_expansion_board_mixly.png)
