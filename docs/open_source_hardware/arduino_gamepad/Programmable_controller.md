@@ -196,7 +196,23 @@ void loop() {
 }
 ```
 
-将示例程序`examples/gamepad_subscribe_rf24/gamepad_subscribe_rf24.ino`下载到接收端, 内容如下:
+将示例程序`examples/gamepad_subscribe_rf24/gamepad_subscribe_rf24.ino`下载到接收端,
+
+*注意*： **Arduino AVR NANO 和 Arduino AVR UNO 的与RF24模块连接的引脚不一样**:
+
+| Arduino AVR UNO | RF2.4 Module |
+| --- | --- |
+| 10 | CE |
+| 9 | CS |
+
+| Arduino AVR NANO | RF2.4 Module |
+| --- | --- |
+| 7 | CE |
+| 8 | CS |
+
+所以烧录的时候选择的Arduino IDE上选择的开发板要选择正确
+
+代码内容如下:
 
 ```c++
 #include <Arduino.h>
@@ -207,9 +223,28 @@ void loop() {
 emakefun::GamepadSubscriberRf24 g_gamepad_subscriber;
 emakefun::GamepadModel g_gamepad_model;
 
+#if defined(ARDUINO_AVR_UNO)
+constexpr uint8_t kRf24CePin = 10;
+constexpr uint8_t kRf24CsPin = 9;
+#elif defined(ARDUINO_AVR_NANO)
+constexpr uint8_t kRf24CePin = 7;
+constexpr uint8_t kRf24CsPin = 8;
+#else
+#error "unsupported board type"
+#endif
+
 void setup() {
   Serial.begin(115200);
-  g_gamepad_subscriber.Initialize(7, 8, 115, 5, 0x0011000011LL);
+#if defined(ARDUINO_AVR_UNO)
+  Serial.println("Arduino AVR UNO");
+#elif defined(ARDUINO_AVR_NANO)
+  Serial.println("Arduino AVR NANO");
+#endif
+  Serial.print("rf24 ce pin: ");
+  Serial.print(kRf24CePin);
+  Serial.print(", cs pin: ");
+  Serial.println(kRf24CsPin);
+  g_gamepad_subscriber.Initialize(kRf24CePin, kRf24CsPin, 115, 5, 0x0011000011LL);
   g_gamepad_subscriber.AttachModel(&g_gamepad_model);
   Serial.println("setup done");
 }
@@ -503,8 +538,6 @@ bool ButtonReleased(const ButtonType button_type) const {
 获取Z轴上重力加速度值：
 
 `g_gamepad_model.GetGravityAcceleration().z`
-
-
 
 以上函数直接调用即可
 
