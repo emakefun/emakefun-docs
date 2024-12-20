@@ -445,23 +445,23 @@ void loop() {
 | TX   | 串口发送端  | 5           |
 | RX   | 串口接收端  | 6           |
 
-![1718674279492](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718674279492.png)
+![loading-ag-1323](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718674279492.png)
 
 #### 2、 Mixly示例程序
 
 在Mixly编程界面右上角点击设置——导入库，选择EmakeFun的库文件从云端导入。[示例程序下载](esp8266_mqtt_pic/uno-mixly示例程序.zip)
 
-![1718675589894](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718675589894.png)
+![loading-ag-1325](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718675589894.png)
 
 参照示例编写程序，在此我们用Emakefun公司的服务器为例。
 
 点击左侧导入的库，在智能模块中找出MQTT相关编程指令。
 
-![1718675962775](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718675962775.png)
+![loading-ag-1327](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718675962775.png)
 
 示例程序。
 
-![1718676041399](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718676041399.png)
+![loading-ag-1329](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718676041399.png)
 
 服务器域名 remote.microprinttech.com 为Emakefun自建服务器，对应端口19824（使用了该服务器就请用提供的参数），用户名和密码如下：注意！！！**一定是用这两个账号**！！！
 
@@ -473,7 +473,7 @@ void loop() {
 
 硬件接收服务器信息示例。
 
-![1718680220437](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718680220437.png)
+![loading-ag-1331](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718680220437.png)
 
 硬件发送信息到服务器示例。
 
@@ -560,13 +560,13 @@ void loop(){
 
 打开电脑浏览器，输入[网页端地址](http://remote.microprinttech.com:19825/#/clients)： http://remote.microprinttech.com:19825/#/clients 端口19825，用户名test002，密码abc123456 ，打开后并登陆，如下图。
 
-![1718677350298](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718677350298.png)
+![loading-ag-1333](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718677350298.png)
 
-![1716255127748](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1716255127748.png)
+![loading-ag-1335](./esp8266_mqtt_pic/esp8266_mqtt_pic/1716255127748.png)
 
 上传程序，等待硬件连接服务器，连接成功后网页端显示如下。
 
-![1718678137090](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718678137090.png)
+![loading-ag-1337](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718678137090.png)
 
 点击工具，选择 websocket，然后再点击“连接”。
 
@@ -576,19 +576,19 @@ void loop(){
 
 **账号2：kxmqttp2 密码 public211**
 
-![1716344674813](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1716344674813.png)
+![loading-ag-1339](./esp8266_mqtt_pic/esp8266_mqtt_pic/1716344674813.png)
 
 硬件接收服务器的信息，在“消息”中填写主题，发送数字或文字，编程软件的串口会打印出信息（串口波特率9600）。
 
-![1718680382099](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718680382099.png)
+![loading-ag-1341](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718680382099.png)
 
-![1718680415670](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718680415670.png)
+![loading-ag-1343](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718680415670.png)
 
 硬件发送信息到服务器。在“主题”中填写主题，点击订阅，会提示订阅成功；然后让硬件发送信息，可以看到订阅消息列表中收到相关的消息。
 
-![1716270156455](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1716270156455.png)
+![loading-ag-1345](./esp8266_mqtt_pic/esp8266_mqtt_pic/1716270156455.png)
 
-![1718680581332](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718680581332.png)
+![loading-ag-1347](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718680581332.png)
 
 ### MicroBit使用教程
 
@@ -601,7 +601,7 @@ void loop(){
 | TX   | 串口发送端  | 15          |
 | RX   | 串口接收端  | 14          |
 
-![1718700370643](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718700370643.png)
+![loading-ag-1349](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718700370643.png)
 
 #### 2、 Microsoft在线编程示例
 
@@ -609,19 +609,19 @@ void loop(){
 
 打开网址，新建项目，命名为“硬件接收服务器信息”。
 
-![1718692918752](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718692918752.png)
+![loading-ag-1351](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718692918752.png)
 
-![1718693264443](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718693264443.png)
+![loading-ag-1353](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718693264443.png)
 
 如上图，打开编程界面后，我们需要导入MQTT库文件，点击“+拓展”，在弹出的界面添加如下网址https://github.com/emakefun/pxt-mqtt，回车，点击出现的库。
 
-![1718695501532](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718695501532.png)
+![loading-ag-1355](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718695501532.png)
 
-![1718693426644](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718693426644.png)
+![loading-ag-1357](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718693426644.png)
 
-![1718693455390](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718693455390.png)
+![loading-ag-1359](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718693455390.png)
 
-![1718693569110](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718693569110.png)
+![loading-ag-1361](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718693569110.png)
 
 注意！！！在使用MQTT模块时，下载完程序后请彻底断电再重启！使用时建议外接电源。
 
@@ -780,5 +780,3 @@ void fail(const char* test, int actual, int expected)
 ![](./esp8266_mqtt_pic/esp8266_mqtt_pic/mqtt_arduino_sub_serialdata.png)
 
 **[[点击下载最新示例程序]](./esp8266_mqtt_pic/esp8266_mqtt_pic/AliyunMqttSendReceive.7z)**
-
-
