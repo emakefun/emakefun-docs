@@ -631,7 +631,7 @@ void loop(){
 
 硬件发送信息到服务器示例。[点击查看microbit发送案例](https://makecode.microbit.org/_87qE3CRh9CUK)
 
-![1718699142535](/D:\project\github\emakefun-docs\docs\sensors\smart_modules\esp8266_mqtt_pic/esp8266_mqtt_pic/1718699142535.png)
+![loading-ag-1363](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718699142535.png)
 
 ### **Arduino连接阿里云案例分析**
 
