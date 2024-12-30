@@ -102,6 +102,10 @@ void loop() {
 
 **![1714961591047](RFID-I2C/1714961591047.png)**
 
+### **1.3.4 在Microbit中运行**
+
+[动手试一试](https://makecode.microbit.org/#editor)
+
 ## **1.4实验结果**
 
 **将卡片靠近RFID模块，此时串口打印出当前读取值。**
