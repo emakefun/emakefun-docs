@@ -104,7 +104,7 @@ void loop() {
 
 ### **1.3.4 在Microbit中运行**
 
-[动手试一试](https://makecode.microbit.org/#editor)
+[动手试一试](https://makecode.microbit.org/S72010-41179-91837-36034)
 
 ## **1.4实验结果**
 
