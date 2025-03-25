@@ -10,11 +10,11 @@
       },
       "platforms": [
 	       {
-          "name": "Nulllab AVR Compatible Boards",
+          "name": "Nulllab_AVR_Compatible_Boards",
           "architecture": "avr",
           "version": "1.0.9",
           "category": "lgt8fx",
-          "url": "http://39.96.172.95:18080/nulllab/nulllab_arduino-1.0.9.zip",
+          "url": "http://39.108.252.158:8089/nulllab/nulllab_arduino-1.0.9.zip",
           "archiveFileName": "nulllab_arduino-1.0.9.zip",
           "checksum": "SHA-256:80a84119bd26379b206d54b9cefec3676ef1c5f03f46f752c8e34b61f5fb72a4",
           "size": "2025110",
@@ -30,11 +30,11 @@
           ]
         },
 	       {
-          "name": "Nulllab AVR Compatible Boards",
+          "name": "Nulllab_AVR_Compatible_Boards",
           "architecture": "avr",
           "version": "1.0.8",
           "category": "lgt8fx",
-          "url": "http://39.96.172.95:18080/nulllab/nulllab_arduino-1.0.8.zip",
+          "url": "http://39.108.252.158:8089/nulllab/nulllab_arduino-1.0.8.zip",
           "archiveFileName": "nulllab_arduino-1.0.8.zip",
           "checksum": "SHA-256:644f548ef133271c677270d6331da720fe31aca4976a2123afa3b345a5bd3394",
           "size": "2025081",
@@ -50,11 +50,11 @@
           ]
         },
         {
-          "name": "Nulllab AVR Compatible Boards",
+          "name": "Nulllab_AVR_Compatible_Boards",
           "architecture": "avr",
           "version": "1.0.7",
           "category": "lgt8fx",
-          "url": "https://emakefun-docs.readthedocs.io/zh-cn/latest/nulllab_arduino-1.0.7.zip",
+          "url": "http://39.108.252.158:8089/nulllab/nulllab_arduino-1.0.7.zip",
           "archiveFileName": "nulllab_arduino-1.0.7.zip",
           "checksum": "SHA-256:55a2fc35f4ba777ef9314e482e1fa9eab4e9aa90122683146b998a9be36c737f",
           "size": "2015756",
@@ -70,7 +70,7 @@
           ]
         },
         {
-          "name": "Nulllab AVR Compatible Boards",
+          "name": "Nulllab_AVR_Compatible_Boards",
           "architecture": "avr",
           "version": "1.0.6",
           "category": "lgt8fx",
@@ -90,7 +90,7 @@
           ]
         },
         {
-          "name": "Nulllab AVR Compatible Boards",
+          "name": "Nulllab_AVR_Compatible_Boards",
           "architecture": "avr",
           "version": "1.0.5",
           "category": "lgt8fx",
@@ -110,7 +110,7 @@
           ]
         },
         {
-          "name": "Nulllab AVR Compatible Boards",
+          "name": "Nulllab_AVR_Compatible_Boards",
           "architecture": "avr",
           "version": "1.0.4",
           "category": "lgt8fx",
@@ -130,7 +130,7 @@
           ]
         },
         {
-          "name": "Nulllab AVR Compatible Boards",
+          "name": "Nulllab_AVR_Compatible_Boards",
           "architecture": "avr",
           "version": "1.0.3",
           "category": "lgt8fx",
@@ -150,7 +150,7 @@
           ]
         },
         {
-          "name": "Nulllab AVR Compatible Boards",
+          "name": "Nulllab_AVR_Compatible_Boards",
           "architecture": "avr",
           "version": "1.0.2",
           "category": "lgt8fx",
@@ -170,7 +170,7 @@
           ]
         },
         {
-          "name": "Nulllab AVR Compatible Boards",
+          "name": "Nulllab_AVR_Compatible_Boards",
           "architecture": "avr",
           "version": "1.0.1",
           "category": "lgt8fx",
@@ -190,7 +190,7 @@
           ]
         },
         {
-          "name": "Nulllab AVR Compatible Boards",
+          "name": "Nulllab_AVR_Compatible_Boards",
           "architecture": "avr",
           "version": "1.0.0",
           "category": "lgt8fx",
