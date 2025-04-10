@@ -4,33 +4,51 @@
 
 ![02](esp8266_mqtt_pic/esp8266.png)
 
-## 概述
+## 一、概述
 
-​        esp8266-mqtt无线模块是emakefun公司基于乐鑫科技的wifi芯片ESP8266基础上重新研发的串口转wifi的物联网模块，该模块采用AT配置方式来支持wifi无线通信，AT指令全面兼容[乐鑫官方指令库（V3.0.0）](https://www.espressif.com/sites/default/files/documentation/4a-esp8266_at_instruction_set_cn.pdf)，在此基础上添加了MQTT指令，并且全部封装成scratch，mixly，Makecode图形化编程块支持arduino，micro:bit。让用户非常容易接收和发送物联网信息，远程物联网控制从未如此简单。
+​        esp8266-mqtt无线模块是emakefun公司基于乐鑫科技的wifi芯片ESP8266基础上重新研发的串口转wifi的物联网模块，该模块采用AT配置方式来支持wifi无线通信，AT指令全面兼容[乐鑫官方指令库（V3.0.0）](https://www.espressif.com/sites/default/files/documentation/4a-esp8266_at_instruction_set_cn.pdf)，在此基础上添加了MQTT指令，并且全部封装成scratch，mixly，Makecode图形化编程块支持arduino，micro:bit。 总而言之，这个模块就像一个无线网卡，但它不仅仅能连接Wi-Fi，还能理解和使用物联网中常用的通信方式，让您的设备轻松接入互联网，实现**远程控制和数据交换**。
 
-## 模块特点：
+## 二、模块特点及参数
+
+特点
 
 - 内置低功率 32 位 CPU：可以兼作应用处理器
+
 - 内置协议：TCP/IP 协议栈
+
 - 加密类型：WPA WPA2/WPA2–PSK
+
 - 支持乐鑫官方AT标准指令集
+
 - 支持连接标准MQTT协议和TTL串口到无线的应用
 
-## 模块参数
+参数
 
 - 工作电压：5V
+
 - 接口速率：9600 bps
+
 - 无线频率：2.4GHz
+
 - 接口类型：PH2.0-4Pin (G V TX TX)
+
 - 无线模式：IEEE802.11b/g/n
+
 - SRAM：160KB
+
 - 外置Flash：4MB
+
 - 支持低功耗：<240mA
+
 - 模块尺寸：4 * 2.1cm
+
 - 安装方式：M4螺钉螺母固定
-- LED指示灯：Link网络连接指示灯和MQTT服务器连接指示灯
+
+- LED指示灯：**Link网络连接指示灯（该灯常亮表示Wifi连接正常）和MQTT服务器连接指示灯（该灯常亮表示MQTT连接正常）**
   
-  
+  ## 三、硬件接口
+
+### 3.1 引脚说明
 
 | 引脚名称 | 描述    |
 |:----:|:-----:|
@@ -39,11 +57,45 @@
 | TX   | 串口发送端 |
 | RX   | 串口接收端 |
 
-## 机械尺寸图
+### 3.2 机械尺寸图
 
 ![size](esp8266_mqtt_pic/esp_8266_SMD.png)
 
-## AT 指令可以细分为四种类型：
+## 四、功能说明
+
+![](esp8266_mqtt_pic/mqtt_diagram.png)
+
+- **主控设备**通过串口：
+
+发送AT指令配置模块（Wi-Fi/MQTT参数）
+
+发送/接收传感器数据或控制指令
+
+- **ESP8266-MQTT模块**：
+
+执行AT指令配置网络连接
+
+将串口数据转换为MQTT协议
+
+作为双向通信枢纽，通过Wi-Fi连接MQTT Broker
+
+- **MQTT Broker**：
+
+接收模块发布的消息并转发给订阅者
+
+将订阅的云端/设备消息转发给模块
+
+- **物联网应用层**：
+
+订阅设备数据主题
+
+发布控制指令主题
+
+进行数据存储/展示/分析
+
+## 五、AT 指令详解
+
+### 5.1 指令类型：
 
 | 类型   | 指令格式         | 描述                          |
 | ---- | ------------ | --------------------------- |
@@ -64,9 +116,7 @@
 
 • AT 指令必须⼤写，并且以回⻋换⾏符结尾（CR LF）。
 
-
-
-## MQTT扩展AT指令汇总
+### 5.2 指令汇总
 
 | 序号  | 指令                                 | 描述                                              |
 | --- | ---------------------------------- | ----------------------------------------------- |
@@ -83,35 +133,11 @@
 | 11  | AT+MQTTUNSUB                       | 取消订阅指定连接的 MQTT 主题, 可多次< br >取消不同订阅 topic        |
 | 12  | AT+MQTTCLEAN                       | 关闭 MQTT Client 为 LinkID 的连接, 并释< br >放内部占用的资源   |
 
-## 串口助手调试AT指令
 
-如果有**TTL串口下载工具**，可以尝试用串口助手来执行下面的操作，若没有就不用测试，直接跳到使用小结那里。
 
-下载并安装[安信可串口调试助手](./esp8266_mqtt_pic/AiThinker Serial Tool V1.2.3.zip)，同时下载[AT指令txt文档](./esp8266_mqtt_pic/SendList_20240228.zip)。
+### 5.3 AT指令详解
 
-![1715069426282](esp8266_mqtt_pic/1715069426282.png)
-
-打开txt文档，对重要参数进行修改，注意文档中不能打中文。如下图：
-
-![1718703576922](esp8266_mqtt_pic/1718703576922.png)
-
-点击串口助手的载入，选择txt文档,电脑插上烧录器和MQTT模块，然后点击打开串口。
-
-![1715070958781](esp8266_mqtt_pic/1715070958781.png)
-
-![1715070987915](esp8266_mqtt_pic/1715070987915.png)
-
-依次点击数字1、2、3、4、5，接收端会弹出连接信息OK，这代表重置后wifi连接成功，用户名设置成功，连接服务器成功，模块的Link灯常亮不再闪烁。
-
-![1715071494501](esp8266_mqtt_pic/1715071494501.png)
-
-在浏览器打开[服务器网址](http://remote.microprinttech.com:19825/#/clients)，刷新后在客户端可看到ESP8266已连接。同时MQTT模块的MQTT灯常亮。
-
-![1715071936312](esp8266_mqtt_pic/1715071936312.png)
-
-## AT指令详解
-
-### 1.AT+CWMODE=1  重置模块
+#### 1.AT+CWMODE=1  重置模块
 
 | 指令：AT+CWMODE=1            |
 | ------------------------- |
@@ -124,7 +150,7 @@
 
 
 
-### 2.AT+RST  复位
+#### 2.AT+RST  复位
 
 | 指令：AT+RST           |
 | ------------------- |
@@ -137,12 +163,12 @@
 
 
 
-### 3.AT+CWJAP_DEF="EmakeFun","12345678"  连接Wifi
+#### 3.AT+CWJAP_DEF="EmakeFun","12345678"  连接Wifi
 
-| 指令：AT+CWJAP_DEF="EmakeFun","12345678" |
-| ------------------------------------- |
-| **功能：**连接wifi                         |
-| **响应：**OK（模块Link灯常亮）或ERROR（模块Link灯闪烁） |
+| 指令：AT+CWJAP_DEF="EmakeFun","12345678"                |
+| ---------------------------------------------------- |
+| **功能：**连接wifi                                        |
+| **响应：**OK（模块Link灯常亮表示连接WIFI）或ERROR（模块Link灯闪烁表示连接服务器） |
 
 | 代码       | 含义                         | 举例       |
 | -------- | -------------------------- | -------- |
@@ -155,7 +181,7 @@
 
 
 
-### 4.AT+MQTTUSERCFG - 配置 MQTT 用户属性
+#### 4.AT+MQTTUSERCFG - 配置 MQTT 用户属性
 
 | 指令：AT+MQTTUSERCFG=LinkID,scheme,"client_id","username","password",cert_key_ID,CA_ID,"path" |
 | ------------------------------------------------------------------------------------------ |
@@ -179,7 +205,7 @@
 
 
 
-### **5.AT+MQTTCONNCFG - 配置 MQTT 连接属性**
+#### **5.AT+MQTTCONNCFG - 配置 MQTT 连接属性**
 
 | 指令：AT+MQTTCONNCFG=LinkID,keepalive,disable_clean_session,"lwt_topic","lwt_msg",lwt_qos,lwt_retain |
 | ------------------------------------------------------------------------------------------------- |
@@ -202,7 +228,7 @@
 
 
 
-### **6.AT+MQTTCONN - 连接服务器的IP地址**
+#### **6.AT+MQTTCONN - 连接服务器的IP地址**
 
 | 指令：AT+MQTTCONN=LinkID,"host",port,reconnect |
 | ------------------------------------------- |
@@ -222,7 +248,7 @@
 
 
 
-### **7.AT+ALIYUN_MQTTCONN?**
+#### **7.AT+ALIYUN_MQTTCONN?**
 
 | 指令：AT+ALIYUN_MQTTCONN="host",port,"ProductKey","DeviceName","DeviceSecret" |
 | -------------------------------------------------------------------------- |
@@ -243,7 +269,7 @@
 
 
 
-### **8.AT+MQTTPUB**
+#### **8.AT+MQTTPUB**
 
 | 指令：AT+MQTTPUB=LinkID,"topic","data",qos,retain                                |
 | ----------------------------------------------------------------------------- |
@@ -264,7 +290,7 @@
 
 
 
-### **9.AT+MQTTPUBRAW**
+#### **9.AT+MQTTPUBRAW**
 
 | 指令：AT+MQTTPUBRAW=LinkID,"topic",length,qos,retain                    |
 | -------------------------------------------------------------------- |
@@ -285,7 +311,7 @@
 
 
 
-### **10.AT+MQTTSUB**
+#### **10.AT+MQTTSUB**
 
 | 指令：AT+MQTTSUB=LinkID,"topic",qos                                                                                                                             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -304,7 +330,7 @@
 
 
 
-### **11.AT+MQTTUNSUB**
+#### **11.AT+MQTTUNSUB**
 
 | 指令：AT+MQTTUNSUB=LinkID,"topic"            |
 | ----------------------------------------- |
@@ -322,7 +348,7 @@
 
 
 
-### **12.AT+MQTTCLEAN**
+#### **12.AT+MQTTCLEAN**
 
 | 指令：AT+MQTTCLEAN=LinkID                         |
 | ---------------------------------------------- |
@@ -339,104 +365,68 @@
 
 
 
-## **arduino 应用场景**
+## **六、Arduino 应用场景**
 
-**AT串口测试**
+### **6.1 AT串口测试**
 
 [下载最新示例程序](./esp8266_mqtt_pic/AT test.zip)
 
-```
+```c++
 #include "Arduino.h"
 #include "SoftwareSerial.h"
-SoftwareSerial Serial1(5, 6); // RX, TX
+SoftwareSerial Serial1(5, 6); // TX-5，RX-6
 
 void setup()
 {
-  Serial.begin(115200); // serial port used for debugging
-  Serial1.begin(9600);  // your ESP's baud rate might be different
+  Serial.begin(115200); // 用于调试的串口
+  Serial1.begin(9600);  // 设备 ESP 的波特率可能不同
 }
 
 void loop()
 {
-  if(Serial1.available())  // check if the ESP is sending a message
+  if(Serial1.available())  // 检查 ESP 是否在发送消息
   {
     while(Serial1.available())
     {
-      int c = Serial1.read(); // read the next character
-      Serial.write((char)c);  // writes data to the serial monitor
+      int c = Serial1.read(); // 读取下一个字符
+      Serial.write((char)c);  // 将数据写入串口监视器
     }
   }
 
   if(Serial.available())
   {
-    // wait to let all the input command in the serial buffer
+    // 等待让所有输入命令在串口缓冲区中
     delay(10);
 
-    // read the input command in a string
+    // 以字符串形式读取输入命令
     String cmd = "";
     while(Serial.available())
     {
       cmd += (char)Serial.read();
     }
 
-    // print the command and send it to the ESP
+    // 打印命令并发送到 ESP
     Serial.println();
     Serial.print(">>>> ");
     Serial.println(cmd);
 
-    // send the read character to the ESP
+    // 将读取的字符发送到 ESP
     Serial1.print(cmd);
   }
 }
 ```
 
-### **arduino示例程序**
+如果 Serial1 (连接 MQTT 模块) 接收到数据，程序会将这些数据读取出来并通过 Serial (调试监视器) 打印出来。
 
-**[下载最新库程序](./esp8266_mqtt_pic/Emakefun_Mqtt.zip)**
+如果 Serial (调试监视器) 接收到数据，程序会将这些数据读取出来并通过 Serial1 发送给 MQTT 模块。
 
-```
-#include "WiFiEsp.h"
-#include "WifiEspMqtt.h"
-#include "SoftwareSerial.h"
-SoftwareSerial esp8266_serial(5, 6);  // RX, TX
-uint32_t _startMillis = 0;
+总的来说，AT串口测试程序允许用户通过 Arduino 的串口监视器与 ESP8266 MQTT 模块进行 AT 指令交互。
 
-WiFiEspMqtt esp8266;
+### **6.2 连接 Wi-Fi 网络并进行 MQTT 通信**
 
-void setup() {
-  Serial.begin(115200);
-  esp8266_serial.begin(9600);
-  WiFi.init(&esp8266_serial);
-  if (WiFi.begin("Emakefun", "12345678") == WL_CONNECTED) {    //在此设置wifi和密码
-    Serial.println("wifi connected");
-    esp8266.mqtt_usercfg("esp8266_client333", "kxmqttp1", "public985");    //个人账号和密码
-    delay(1000);
-    esp8266.mqtt_connect("remote.microprinttech.com", 19824, 0);    //服务器地址和端口
-    delay(1000);
-    esp8266.mqtt_sub("topic_1", 0);  //订阅topic_1主题，qos为0
-  }
-  esp8266.mqtt_public("topic_led", "on", 0);
-  delay(3000);
-}
+#### 6.2.1 ArduinoUno主控板
 
-void loop() {
-  if (esp8266.mqtt_receive()) {
-    Serial.print("topic:");
-    Serial.println(esp8266.mqtt_topic);
-    Serial.print("message:");
-    Serial.println(esp8266.mqtt_message);
-  }
-}
-
-```
-
-
-
-## 实际使用
-
-### Arduino UNO使用教程
-
-#### 1、 接线
+**设备接线**
 
 | 引脚名称 | 描述     | Arduino uno |
 | ---- | ------ | ----------- |
@@ -445,96 +435,93 @@ void loop() {
 | TX   | 串口发送端  | 5           |
 | RX   | 串口接收端  | 6           |
 
-![loadingag1323](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718674279492.png)
+![1718674279492](esp8266_mqtt_pic/esp8266_wiring_diagram.png)
 
-#### 2、 Mixly示例程序
+以下给出Mixly、Arduino IDE两种示例程序，用户可根据需求选择下载到主控设备。
 
-在Mixly编程界面右上角点击设置——导入库，选择EmakeFun的库文件从云端导入。[示例程序下载](esp8266_mqtt_pic/uno-mixly示例程序.zip)
+**Mixly示例程序**
 
-![loadingag1325](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718675589894.png)
+在Mixly编程界面右上角点击设置——导入库，选择EmakeFun的库文件从云端导入。[示例程序下载](./esp8266_mqtt_pic/uno-mixly示例程序.zip)
+
+![1718675589894](./esp8266_mqtt_pic/mixly_importing_library.png)
 
 参照示例编写程序，在此我们用Emakefun公司的服务器为例。
 
-点击左侧导入的库，在智能模块中找出MQTT相关编程指令。![loading-ag-1327](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718675962775.png)
+点击左侧导入的库，在智能模块中找出MQTT相关编程指令。
+
+![](./esp8266_mqtt_pic/mixly_mqtt_instruction.png)
 
 示例程序。
 
-![loadingag1329](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718676041399.png)
+![1718676041399](esp8266_mqtt_pic/sample_program.png)
 
-服务器域名 remote.microprinttech.com 为Emakefun自建服务器，对应端口19824（使用了该服务器就请用提供的参数），用户名和密码如下：注意！！！**一定是用这两个账号**！！！
+服务器域名 **broker.emqx.io** 为默认服务器，对应端口1883（使用了该服务器就请用提供的参数）。
 
-账号1：kxmqttp1 密码 public985
-
-账号2：kxmqttp2 密码 public211
-
-上传完程序，将硬件断电后重连，等待MQTT模块连接上wifi和服务器，连接成功现象为MQTT两个灯Link和MQTT都长亮。
+上传完程序，将硬件断电后重连，等待MQTT模块连接上wifi和服务器，连接成功现象为MQTT模块上的两个指示灯Link和MQTT都长亮。
 
 硬件接收服务器信息示例。
 
-![loadingag1331](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718680220437.png)
+![1718680220437](./esp8266_mqtt_pic/mixly_reception_demo.png)
 
 硬件发送信息到服务器示例。
 
-![loadingag387](esp8266_mqtt_pic/esp8266_mqtt_pic/1718680474102.png)
+![1718680474102](./esp8266_mqtt_pic/mixly_sending_demo.png)
 
-#### 3、 Arduino IDE示例程序
+**Arduino IDE示例程序**
 
-[Arduino IDE示例程序下载](esp8266_mqtt_pic/uno-IDE示例程序.zip)
+[Arduino IDE示例程序下载](./esp8266_mqtt_pic/uno-IDE示例程序.zip)
 
 硬件接收服务器信息示例。
 
-```
-#include <WiFiEsp.h>
+```c++
+#include "WiFiEsp.h"  // 引入 WiFiEsp 库
+
 #include <SoftwareSerial.h>
+SoftwareSerial esp8266_serial(5, 6);  // MQTT模块接口，TX对应5，RX对应6
 
-SoftwareSerial esp8266_serial(5, 6);
-
-#include <WifiEspMqtt.h>
+#include "WifiEspMqtt.h"
 
 WiFiEspMqtt esp8266;
-
-char ssid[] = "K30";
-char passwd[] = "12345678";
-
-char mqtt_host[] = "remote.microprinttech.com";
-uint16_t mqtt_port = 19824;
-
-char mqtt_client_id[] = "emakefun";
-char mqtt_username[] = "kxmqttp1";
+char ssid[] = "K30";    // wifi名称
+char passwd[] = "12345678";  // wifi密码
+char mqtt_host[] = "broker.emqx.io";  // 服务器地址
+uint16_t mqtt_port = 1883;                      // 端口，固定值1883
+char mqtt_client_id[] = "emakefun";              // 客户端ID，随意填
+char mqtt_username[] = "kxmqttp1";               // 账号和密码
 char mqtt_password[] = "public985";
 
 void setup(){
-  esp8266_serial.begin(9600);
-  WiFi.init(&esp8266_serial);
-  WiFi.begin(ssid, passwd);
-  esp8266.mqtt_usercfg(mqtt_client_id, mqtt_username, mqtt_password);
-  esp8266.mqtt_connect(mqtt_host, mqtt_port, 0);
-  esp8266.mqtt_sub(String("testtopic").c_str(), 0);
-  Serial.begin(9600);
+  esp8266_serial.begin(9600);  // 初始化串口通信
+  WiFi.init(&esp8266_serial);   // 初始化 WiFi 模块
+  WiFi.begin(ssid, passwd);   // 连接 WiFi 网络
+  esp8266.mqtt_usercfg(mqtt_client_id, mqtt_username, mqtt_password);  // 配置 MQTT 用户信息
+  esp8266.mqtt_connect(mqtt_host, mqtt_port, 0);      // 连接到 MQTT 服务器
+  Serial.begin(115200);  // 初始化串口通信
+  esp8266.mqtt_sub(String("/emakefun/topic_1").c_str(), 0);  // 订阅指定主题
 }
 
 void loop(){
-  if (esp8266.mqtt_receive()) {
-    Serial.println(esp8266.mqtt_message);
+  if (esp8266.mqtt_receive()) {   // 如果接收到 MQTT 信息
+    Serial.println(esp8266.mqtt_message);  // 打印接收到的信息
   }
 }
 ```
 
-硬件发送信息到服务器示例
+硬件发送信息到服务器示例。
 
-```
-#include <WiFiEsp.h>
+```c++
+#include "WiFiEsp.h"
 #include <SoftwareSerial.h>
-#include <WifiEspMqtt.h>
-
-SoftwareSerial esp8266_serial(5, 6);
+SoftwareSerial esp8266_serial(5, 6);  //MQTT模块接口，TX对应5，RX对应6
+#include "WifiEspMqtt.h"
 WiFiEspMqtt esp8266;
-char ssid[] = "K30";
-char passwd[] = "12345678";
-char mqtt_host[] = "remote.microprinttech.com";
-uint16_t mqtt_port = 19824;
-char mqtt_client_id[] = "emakefun";
-char mqtt_username[] = "kxmqttp1";
+
+char ssid[] = "K30";    //wifi名称
+char passwd[] = "12345678";  //wifi密码
+char mqtt_host[] = "broker.emqx.io";  //服务器地址
+uint16_t mqtt_port = 1883;                      //端口，固定值1883
+char mqtt_client_id[] = "emakefun";              //客户端ID，随意填
+char mqtt_username[] = "kxmqttp1";               //账号和密码，必须为提供的2选1
 char mqtt_password[] = "public985";
 
 void setup(){
@@ -543,234 +530,102 @@ void setup(){
   WiFi.begin(ssid, passwd);
   esp8266.mqtt_usercfg(mqtt_client_id, mqtt_username, mqtt_password);
   esp8266.mqtt_connect(mqtt_host, mqtt_port, 0);
+
 }
 
 void loop(){
-  esp8266.mqtt_public("test", String("你好").c_str(), 0);
+  esp8266.mqtt_public("test/a", String("你好").c_str(), 0);  //要发送的信息，test/a为主题，“你好”为内容
   delay(1000);
-  esp8266.mqtt_public("test", String("Emakefun").c_str(), 0);
+  esp8266.mqtt_public("test/a", String("Emakefun").c_str(), 0);
   delay(1000);
-
 }
 ```
 
-#### 4、 实验现象
+#### 6.2.2 MicroBit主控板
 
-打开电脑浏览器，输入[网页端地址](http://remote.microprinttech.com:19825/#/clients)： http://remote.microprinttech.com:19825/#/clients 端口19825，用户名test002，密码abc123456 ，打开后并登陆，如下图。
+**设备接线**
 
-![](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718677350298.png)
+| 引脚名称 | 描述     | Micro:bit |
+| ---- | ------ | --------- |
+| G    | GND地线  |           |
+| V    | 5V电源引脚 |           |
+| TX   | 串口发送端  | 14        |
+| RX   | 串口接收端  | 15        |
 
-![](./esp8266_mqtt_pic/esp8266_mqtt_pic/1716255127748.png)
+![1718700370643](esp8266_mqtt_pic/microbit_wiring_diagram.png)
 
-上传程序，等待硬件连接服务器，连接成功后网页端显示如下。
-
-![](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718678137090.png)
-
-点击工具，选择 websocket，然后再点击“连接”。
-
-**主机地址默认不用改，端口一定为19829，ID随便填写，用户名与密码只能用以下两个账号：**
-
-**账号1：kxmqttp1 密码 public985**
-
-**账号2：kxmqttp2 密码 public211**
-
-![](./esp8266_mqtt_pic/esp8266_mqtt_pic/1716344674813.png)
-
-硬件接收服务器的信息，在“消息”中填写主题，发送数字或文字，编程软件的串口会打印出信息（串口波特率9600）。
-
-![loadingag1341](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718680382099.png)
-
-![loadingag1343](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718680415670.png)
-
-硬件发送信息到服务器。在“主题”中填写主题，点击订阅，会提示订阅成功；然后让硬件发送信息，可以看到订阅消息列表中收到相关的消息。
-
-![loadingag1345](./esp8266_mqtt_pic/esp8266_mqtt_pic/1716270156455.png)
-
-![loadingag1347](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718680581332.png)
-
-### MicroBit使用教程
-
-#### 1、 接线
-
-| 引脚名称 | 描述     | Arduino uno |
-| ---- | ------ | ----------- |
-| G    | GND地线  |             |
-| V    | 5V电源引脚 |             |
-| TX   | 串口发送端  | 15          |
-| RX   | 串口接收端  | 14          |
-
-![loading-ag-1349](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718700370643.png)
-
-#### 2、 Microsoft在线编程示例
+**Microsoft在线编程示例**
 
 [Microsoft在线编程网址](https://makecode.microbit.org/#)：https://makecode.microbit.org/#
 
 打开网址，新建项目，命名为“硬件接收服务器信息”。
 
-![loadingag1351](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718692918752.png)
+![1718692918752](./esp8266_mqtt_pic/microsoft_homepage.png)
 
-![loadingag1353](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718693264443.png)
+![1718693264443](esp8266_mqtt_pic/microsoft_project_interface.png)
 
 如上图，打开编程界面后，我们需要导入MQTT库文件，点击“+拓展”，在弹出的界面添加如下网址https://github.com/emakefun/pxt-mqtt，回车，点击出现的库。
 
-![](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718695501532.png)
-![](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718693426644.png)
-![](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718693455390.png)
-![](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718693569110.png)
+![1718695501532](esp8266_mqtt_pic/microsoft_extensions.png)
+
+![1718693426644](esp8266_mqtt_pic/microsoft_searching_libraries.png)
+
+
+
+![1718693455390](esp8266_mqtt_pic/microsoft_EMmqtt.png)
+
+![1718693569110](./esp8266_mqtt_pic/microsoft_MQTT.png)
 
 注意！！！在使用MQTT模块时，下载完程序后请彻底断电再重启！使用时建议外接电源。
 
-硬件接收服务器信息示例。[点击查看microbit接收案例](https://makecode.microbit.org/_iF8D9Uav7iva)
+硬件接收服务器信息示例。[https://makecode.microbit.org/_EfEEqtLmuc56](https://makecode.microbit.org/_CrAX2VaKWTXF)
 
-![](esp8266_mqtt_pic/microbit_sub.png)
+![1718699089649](./esp8266_mqtt_pic/microbit_reception_demo.png)
 
-硬件发送信息到服务器示例。[点击查看microbit发送案例](https://makecode.microbit.org/_87qE3CRh9CUK)
-![](./esp8266_mqtt_pic/esp8266_mqtt_pic/1718699142535.png)
+硬件发送信息到服务器示例。[https://makecode.microbit.org/_Lx299LKwK7k2](https://makecode.microbit.org/_hrvXisUEkKW0)
 
-### **Arduino连接阿里云案例分析**
+![1718699142535](./esp8266_mqtt_pic/microbit_sending_demo.png)
 
-[阿里云连接示例下载](esp8266_mqtt_pic/AliyunMqttSendReceive.7z)。
+#### 6.2.3 软件配置
 
-```
-/*
- WiFiEsp test: BasicTest
+    以上硬件程序上传成功，MQTT模块两个指示灯都常亮，我们就可以通过以下工具进行测试，注意：硬件程序中订阅的主题，需在工具中发布，硬件发布的主题，需在工具中订阅，从而达到两个设备相互通信的效果。
 
- Performs basic connectivity test and checks.
-*/
+[下载安装MQTTX工具]( [MQTTX Download](https://mqttx.app/downloads) )——
 
-#include "WiFiEsp.h"
-#include "WifiEspMqtt.h"
-#include "SoftwareSerial.h"
-SoftwareSerial esp8266_serial(5, 6); // RX, TX
-uint32_t _startMillis = 0;
-WiFiEspMqtt esp8266;
-char ssid[] = "emakefun";        // your network SSID (name)
-char passwd[] = "501416wf";        // your network password
-char aliyun_mqtt_host[] = "a1gVfAJo2pv.iot-as-mqtt.cn-shanghai.aliyuncs.com";  // 阿里云物联网服务器host
-uint16_t aliyun_mqtt_port = 1883;    // 阿里云物联网服务器端口
-char product_key[] = "a1gVfAJo2pv";  // 设备所属产品的ProductKey，即物联网平台为产品颁发的全局唯一标识符
-char device_name[] = "emakefun";     // 设备在产品内的唯一标识符。DeviceName与设备所属产品的ProductKey组合，作为设备标识，用来与物联网平台进行连接认证和通信。
-char device_secret[] = "8412c9a3a13d5398fb33afc91a5f4c0c";  // 物联网平台为设备颁发的设备密钥，用于认证加密。需与DeviceName成对使用。
+![](esp8266_mqtt_pic/MQTTX_icon.jpg)
 
-void setup()
-{
-  Serial.begin(115200);
-  esp8266_serial.begin(9600);
-  Serial.println("Aliyun MqttSendReveive Test");
-  WiFi.init(&esp8266_serial);
-  assertEquals("Firmware version", WiFi.firmwareVersion(), "3.0.2");
-  assertEquals("Status is (WL_DISCONNECTED)", WiFi.status(), WL_DISCONNECTED);
-  esp8266.mqtt_connect_aliyun(aliyun_mqtt_host, aliyun_mqtt_port, product_key, device_name, device_secret, 0);
+打开程序后新建服务器，点击“New Connection”
 
-  if (WiFi.begin(ssid, passwd) == WL_CONNECTED)
-  {
-     Serial.println("wifi connected");
+![](esp8266_mqtt_pic/MQTTX_newconnection.png)
 
-     esp8266.mqtt_sub("/a1gVfAJo2pv/emakefun/user/get", 0);   // 订阅topic
-  }
-  esp8266.mqtt_public("/a1gVfAJo2pv/emakefun/user/add", "on", 0); // 发布topic 数据为 "on"
-  delay(10000);
-}
+工具服务名称（本示例命名为test，可以任意填写）
 
-void loop()
-{
-    if (esp8266.mqtt_receive())
-    {
-     Serial.print("topic:");
-     Serial.println(esp8266.mqtt_topic);    // 打印订阅的topic
-     Serial.print("message:");
-     Serial.println(esp8266.mqtt_message);  // 打印订阅的topic的数据
-    }
-}
+Username和Password可以任意填写。注意：MQTTX工具中Client ID与硬件程序中的client ID必须不相同，否则会产生冲突、反复重新连接。
 
-void assertNotEquals(const char* test, int actual, int expected)
-{
-  if(actual!=expected)
-    pass(test);
-  else
-    fail(test, actual, expected);
-}
+点击”连接“。
 
-void assertEquals(const char* test, int actual, int expected)
-{
-  if(actual==expected)
-    pass(test);
-  else
-    fail(test, actual, expected);
-}
+![](esp8266_mqtt_pic/MQTTX_configure_connection.png)
 
-void assertEquals(const char* test, char* actual, char* expected)
-{
-  if(strcmp(actual, expected) == 0)
-    pass(test);
-  else
-    fail(test, actual, expected);
-}
+连接成功后，点击“添加订阅”。
 
+![](esp8266_mqtt_pic\MQTTX_new_topic.png)
 
-void pass(const char* test)
-{
-  Serial.print(F("********** "));
-  Serial.print(test);
-  Serial.println(" > PASSED");
-  Serial.println();
-}
+MQTTX工具订阅硬件发布的主题。添加topic; 这里需填写硬件程序中发布的主题。（本示例命名为test/a）
 
-void fail(const char* test, char* actual, char* expected)
-{
-  Serial.print(F("********** "));
-  Serial.print(test);
-  Serial.print(" > FAILED");
-  Serial.print(" (actual=\"");
-  Serial.print(actual);
-  Serial.print("\", expected=\"");
-  Serial.print(expected);
-  Serial.println("\")");
-  Serial.println();
-  delay(10000);
-}
+![](esp8266_mqtt_pic\MQTTX_configure_topic.jpg)
 
-void fail(const char* test, int actual, int expected)
-{
-  Serial.print(F("********** "));
-  Serial.print(test);
-  Serial.print(" > FAILED");
-  Serial.print(" (actual=");
-  Serial.print(actual);
-  Serial.print(", expected=");
-  Serial.print(expected);
-  Serial.println(")");
-  Serial.println();
-  delay(10000);
-}
-```
+MQTTX工具给硬件发送数据：上面填写硬件程序中订阅的主题（本示例命名为/emakefun/topic_1）
 
+![](esp8266_mqtt_pic\MQTTX_configure_sending_tocpic.png)
 
+#### 6.2.4 实验现象
 
-**当连接上WIFI时，物联网模块的蓝灯会常亮，否则蓝灯会闪烁，同时串口监视器会显示WiFi connected,如下图所示。**
+硬件接收服务器的信息，在“消息”中填写主题，发送数字或文字，编程软件的串口会打印出信息
 
-![](esp8266_mqtt_pic/esp8266_mqtt_pic/mqtt_connect_picture.png)
+![](esp8266_mqtt_pic/recieving_experimental_phenomenon.jpg)
 
-**当连上阿里云服务器时，选择阿里云设备菜单时，会显示当前在线的设备数量，并且所连接的设备的状态为在线状态，如下图所示。**
+![1718680415670](esp8266_mqtt_pic/recieving_serial_phenomenon.jpg)
 
-![](esp8266_mqtt_pic/esp8266_mqtt_pic/mqtt_aliyun_driver_connected.png)
+硬件发送信息到服务器。在“主题”中填写主题，点击订阅，会提示订阅成功；然后让硬件发送信息，可以看到订阅消息列表中收到相关的消息。（若使用MicroBit主板示例程序，则按下A显示“666”，按下B显示“Emakefun”）
 
-**同时在串口监视器里面可以看到是否连接成功，如下图所示。**
-
-![](./esp8266_mqtt_pic/esp8266_mqtt_pic/mqtt_connect_aliyun_success_serial_print.png)
-
-**当前程序会在连接阿里云服务器成功之后，会向服务器发布和订阅相关的主题(topic)。发布: 向云端发送数据。比如温度、湿度、气压值、停车位......可以在阿里云的监控运维->日志服务里面可以看到当前发布的记录，并且点击查看可以看到发送的数据。**
-
-![](./esp8266_mqtt_pic/esp8266_mqtt_pic/mqtt_aliyun_subdata.png)
-
-![](./esp8266_mqtt_pic/esp8266_mqtt_pic/mqtt_aliyun_sub_data.png)
-
-**订阅: 获取云端的数据。比如天气预报.....可在设备的topic列表里找到相应的topic，并且点击发布消息，发布想要发布的数据。**
-
-![](./esp8266_mqtt_pic/esp8266_mqtt_pic/mqtt_pub_data.png)
-
-**同时在串口监视器里面我们可以看到订阅的数据。**
-
-![](./esp8266_mqtt_pic/esp8266_mqtt_pic/mqtt_arduino_sub_serialdata.png)
-
-**[[点击下载最新示例程序]](./esp8266_mqtt_pic/esp8266_mqtt_pic/AliyunMqttSendReceive.7z)**
+![](esp8266_mqtt_pic/result.png)
