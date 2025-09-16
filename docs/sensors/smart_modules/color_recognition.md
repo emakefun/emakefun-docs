@@ -2,7 +2,7 @@
 
 ## 模块图
 
-![color recognition](color_recognition/2.png)
+![color recognition](color_recognition/color_recognition.png)
 
 ## 概述
 
@@ -12,7 +12,7 @@ TCS34725是一款低成本，高性价比的RGB全彩颜色识别传感器，传
 
 ## 原理图
 
-![原理图](color_recognition/1.png)
+![原理图](color_recognition/color_recognition_schematic_diagram.png)
 
 ## 模块参数
 
@@ -24,22 +24,21 @@ TCS34725是一款低成本，高性价比的RGB全彩颜色识别传感器，传
 * 温度范围：-30℃ ~ +70℃
 * 通信方式:  IIC通信，地址0x29
 * 尺 寸：40 * 22 mm，兼容乐高积木和M4螺丝固定孔
-
- 
+  
+  
 
 ## 引脚定义
 
-| 引脚名称 | 描述        |
-| -------- | ----------- |
-| G        | GND地线     |
-| V        | 5V电源引脚  |
-| SDA      | I2C数据引脚 |
-| SCL      | I2C时钟引脚 |
+| 引脚名称 | 描述      |
+| ---- | ------- |
+| G    | GND地线   |
+| V    | 5V电源引脚  |
+| SDA  | I2C数据引脚 |
+| SCL  | I2C时钟引脚 |
 
 ## 详细原理图
 
-  [color recognition.pdf](color_recognition/color recognition.pdf) 
-
+  [color recognition.pdf](color_recognition/color_recognition.pdf) 
 
 ### Arduino函数介绍
 
@@ -78,7 +77,12 @@ void loop()  {
 
 [点击下载Mixly示例](./color_recognition/color_recognition_mixly.zip)
 
+## Mind+图形化示例
+
+[点击下载Mind+颜色识别TCS34725库](./color_recognition/emakefun-em_color_sensor_tcs34725-thirdex-V0.0.1.mpext)
+
+[点击下载Mind+颜色识别TCS34725示例](./color_recognition/color_sensor_TCS34725_get_color.mp)
+
 ## Micro:Bit示例程序
 
   [点击打开MicroBit示例](https://makecode.microbit.org/_9Rk2LufUED6j)
-
